@@ -1,0 +1,7 @@
+name: Squarespace
+vendor: Squarespace, Inc.
+vendorCountry: US
+summary: Website builder and hosting platform that also registers domains.
+website: 'https://www.squarespace.com'
+categories: [web-hosting, domain-registrars]
+aliases: [google domains]

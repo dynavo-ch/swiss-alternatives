@@ -1,0 +1,7 @@
+name: Microsoft Entra ID
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's cloud identity service, formerly Azure Active Directory.
+website: 'https://www.microsoft.com/security/business/identity-access/microsoft-entra-id'
+categories: [iam, authentication]
+aliases: [azure ad, azure active directory, entra]

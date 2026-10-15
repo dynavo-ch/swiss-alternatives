@@ -1,0 +1,13 @@
+---
+/** Renders a CSP-hashed inline script. */
+import { sha256 } from '~/lib/inline-scripts';
+
+interface Props {
+  code: string;
+}
+
+const { code } = Astro.props;
+Astro.csp?.insertScriptHash(sha256(code));
+---
+
+<script is:inline set:html={code} />

@@ -1,0 +1,8 @@
+name: Zoom
+vendor: Zoom Communications, Inc.
+vendorCountry: US
+summary: Video meetings, webinars and team chat platform.
+website: 'https://zoom.us'
+categories: [video-conferencing]
+aliases: [zoom workplace]
+popular: true

@@ -1,0 +1,59 @@
+name: CloudSigma AG
+shortName: CloudSigma
+type: company
+description: >-
+  Zug-based cloud company founded in Zurich in 2009. It develops an IaaS
+  platform that it runs in its own locations and licenses to service providers.
+website: https://www.cloudsigma.com
+founded: 2009
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: CloudSigma states that it was co-founded in Zurich in 2009 and is headquartered in Switzerland.
+headquarters:
+  city: Zug
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-115.204.434
+  url: https://www.zefix.ch/en/search/entity/list/firm/962114
+ownership:
+  swissOwned: unknown
+  parent: CloudSigma Holding AG
+  parentCountry: CH
+  basis: inferred
+  source: zefix-holding
+  note: >-
+    CloudSigma Holding AG, a Zug-registered holding company at the same address,
+    is named in the website copyright notice; its control over CloudSigma AG is
+    inferred, not stated. The ultimate shareholders are not published.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About - CloudSigma
+    url: https://www.cloudsigma.com/pages/about.html
+    publisher: CloudSigma Holding AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Privacy Policy - CloudSigma
+    url: https://www.cloudsigma.com/pages/privacy-policy.html
+    publisher: CloudSigma AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: CLOUDSIGMA AG (CHE-115.204.434) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/962114
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: zefix-holding
+    title: CLOUDSIGMA Holding AG (CHE-130.007.763) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1157409
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

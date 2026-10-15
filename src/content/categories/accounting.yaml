@@ -1,0 +1,10 @@
+name: Accounting
+noun: accounting software
+group: business
+icon: calculator
+summary: Bookkeeping, VAT and financial statements — built for Swiss requirements.
+intro: >-
+  Accounting software handles bookkeeping, Swiss VAT, QR-bills and annual accounts. Swiss
+  products tend to support local requirements such as QR-bills and eBill out of the box.
+related: [invoicing, erp, payroll]
+added: 2026-10-15

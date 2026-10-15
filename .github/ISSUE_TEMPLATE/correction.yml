@@ -1,0 +1,26 @@
+name: Report an error
+description: Something on an entry is wrong or out of date.
+title: 'Correction: '
+labels: [correction]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      description: File or page URL, e.g. products/proton-drive.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Quote the statement and describe the correct information.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links that support the correction.
+    validations:
+      required: true

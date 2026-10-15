@@ -1,0 +1,76 @@
+---
+/** Compact single-line product entry for dense lists. */
+import Footprint from './Footprint.astro';
+import ProductLogo from './ProductLogo.astro';
+import { useTranslations } from '~/i18n';
+import type { Product } from '~/lib/data';
+import { formatDate, isoDate } from '~/lib/format';
+
+interface Props {
+  product: Product;
+  date?: Date | undefined;
+  dateLabel?: string;
+  showCompany?: boolean;
+}
+
+const { product, date, dateLabel, showCompany = true } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+<article class="prow">
+  <ProductLogo
+    name={product.name}
+    logo={product.logo}
+    normalized={product.logoNormalized}
+    size="sm"
+  />
+  <div class="prow__body">
+    <h3 class="prow__name">
+      <a href={product.url} class="prow__link">
+        {product.name}
+      </a>
+      {product.isNew && <span class="badge badge--new">{t('common.new')}</span>}
+    </h3>
+    <p class="prow__desc">
+      {showCompany && <>{product.company.displayName} · </>}
+      {product.data.tagline}
+    </p>
+  </div>
+  <div class="prow__side">
+    <Footprint footprint={product.footprint} />
+    {date && (
+      <span class="mono tnum prow__date">
+        {dateLabel && <span class="visually-hidden">{dateLabel} </span>}
+        <time datetime={isoDate(date)}>{formatDate(date, Astro.currentLocale)}</time>
+      </span>
+    )}
+  </div>
+</article>
+
+<style>
+  .prow__name {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-base);
+  }
+
+  .prow__body {
+    min-width: 0;
+  }
+
+  .prow__date {
+    min-width: 6.5rem;
+    text-align: right;
+  }
+
+  @media (max-width: 36rem) {
+    .prow__side :global(.footprint) {
+      display: none;
+    }
+    .prow__date {
+      min-width: 0;
+      font-size: var(--fs-xs);
+    }
+  }
+</style>

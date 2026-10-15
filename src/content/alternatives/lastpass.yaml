@@ -1,0 +1,7 @@
+name: LastPass
+vendor: LastPass US LP
+vendorCountry: US
+summary: Password manager for individuals and businesses.
+website: 'https://www.lastpass.com'
+categories: [password-managers]
+popular: true

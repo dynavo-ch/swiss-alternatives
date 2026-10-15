@@ -1,0 +1,10 @@
+name: Secure Messaging
+noun: messengers
+group: communication
+icon: message-circle
+summary: Private one-to-one and group messaging apps.
+intro: >-
+  Messengers for personal and work use. End-to-end encryption protects message content;
+  metadata handling and phone-number requirements differ considerably between apps.
+related: [team-chat, video-conferencing]
+added: 2026-10-15

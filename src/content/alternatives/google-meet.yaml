@@ -1,0 +1,8 @@
+name: Google Meet
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's video meeting service, part of Google Workspace.
+website: 'https://meet.google.com'
+categories: [video-conferencing]
+aliases: [hangouts]

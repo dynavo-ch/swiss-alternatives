@@ -1,0 +1,10 @@
+name: File Sharing
+noun: file sharing services
+group: workplace
+icon: folder-open
+summary: Share folders and files with colleagues, clients and partners.
+intro: >-
+  File sharing services let you share documents and folders through links or shared
+  workspaces, often with permissions, expiry dates and audit logs.
+related: [cloud-storage, file-transfer]
+added: 2026-10-15

@@ -1,0 +1,9 @@
+name: Google Workspace
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's office suite for organisations, including Gmail, Drive, Docs, Calendar and Meet.
+website: 'https://workspace.google.com'
+categories: [office-suites, email, cloud-storage]
+aliases: [g suite, gsuite]
+popular: true

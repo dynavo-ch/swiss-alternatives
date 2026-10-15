@@ -1,0 +1,64 @@
+name: cloudscale.ch AG
+shortName: cloudscale
+type: company
+description: >-
+  Zurich-based infrastructure-as-a-service provider founded in 2014 that runs
+  its cloud platform in two data centres in Switzerland.
+website: https://www.cloudscale.ch
+founded: 2014
+swissFounded:
+  value: yes
+  basis: vendor
+  source: ten-years
+  note: cloudscale.ch AG was founded in Zurich in 2014.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-364.780.135
+  url: https://www.zefix.ch/en/search/entity/list/firm/1193640
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: cyberlink
+  note: >-
+    Swiss managed service provider Cyberlink AG acquired 40% of the shares in
+    December 2024. The remaining shareholders are not published; in 2019 the
+    founder and CEO stated that only Swiss private individuals had invested in
+    the company. No foreign shareholder has been reported.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About - cloudscale.ch
+    url: https://www.cloudscale.ch/en/about
+    publisher: cloudscale.ch AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: ten-years
+    title: 10 Years of cloudscale
+    url: https://www.cloudscale.ch/en/news/2024/09/30/10-years-of-cloudscale
+    publisher: cloudscale.ch AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: cyberlink
+    title: cloudscale x Cyberlink
+    url: https://www.cloudscale.ch/en/news/2024/12/12/cloudscale-x-cyberlink
+    publisher: cloudscale.ch AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: investors-2019
+    title: 'Update: Cloudscale liefert jetzt wahlweise aus Rümlang oder Lupfig'
+    url: https://www.netzwoche.ch/news/2019-11-07/update-cloudscale-liefert-jetzt-wahlweise-aus-ruemlang-oder-lupfig
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: zefix
+    title: cloudscale.ch AG (CHE-364.780.135) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1193640
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

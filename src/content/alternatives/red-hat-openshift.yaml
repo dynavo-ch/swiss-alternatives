@@ -1,0 +1,8 @@
+name: Red Hat OpenShift
+vendor: Red Hat, Inc.
+vendorCountry: US
+parent: International Business Machines Corporation (IBM)
+summary: Enterprise Kubernetes platform, self-managed or as managed cloud services such as OpenShift Dedicated and ROSA.
+website: 'https://www.redhat.com/en/technologies/cloud-computing/openshift'
+categories: [kubernetes, paas]
+aliases: [OpenShift, OpenShift Dedicated, ROSA]

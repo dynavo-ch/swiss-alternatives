@@ -1,0 +1,7 @@
+name: ExpressVPN
+vendor: Express Technologies Ltd.
+vendorCountry: VG
+summary: Consumer VPN service.
+website: 'https://www.expressvpn.com'
+categories: [vpn]
+aliases: [express vpn]

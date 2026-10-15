@@ -1,0 +1,9 @@
+name: WhatsApp
+vendor: WhatsApp LLC
+vendorCountry: US
+parent: Meta Platforms, Inc.
+summary: Messaging and calling app owned by Meta.
+website: 'https://www.whatsapp.com'
+categories: [messaging]
+aliases: [whatsapp business]
+popular: true

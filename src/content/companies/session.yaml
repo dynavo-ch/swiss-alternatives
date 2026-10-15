@@ -1,0 +1,69 @@
+name: Session Technology Foundation
+shortName: STF
+type: foundation
+description: >-
+  Non-profit foundation in Zug that has stewarded the Session messenger since
+  October 2024, taking over from the Australian OPTF. Its board members live in
+  Australia, Germany and Canada.
+website: https://session.foundation
+founded: 2024
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    The foundation (registered name "Session Technology Stiftung") was
+    established on 2 July 2024 and entered in the Zug commercial register in
+    July 2024. Session itself was started in 2018 under the Oxen Privacy Tech
+    Foundation (OPTF) in Australia, which handed over stewardship in October 2024.
+headquarters:
+  city: Zug
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-360.761.156
+  url: https://www.zefix.ch/en/search/entity/list/firm/1650256
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    A foundation under Swiss law has no shareholders; it is supervised by the
+    Federal Department of Home Affairs. All four members of the foundation board
+    entered in the register live outside Switzerland (Melbourne, Berlin and
+    Fredericton, Canada); one Swiss resident holds signing authority.
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: Session Technology Stiftung (CHE-360.761.156) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1650256
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: introducing
+    title: Introducing the Session Technology Foundation
+    url: https://getsession.org/introducing-the-session-technology-foundation
+    publisher: Session Technology Foundation
+    kind: vendor
+    accessed: 2026-10-15
+  - id: terms
+    title: Session Terms of Service
+    url: https://getsession.org/terms-of-service
+    publisher: Session Technology Foundation
+    kind: vendor
+    accessed: 2026-10-15
+  - id: future
+    title: The Future of Session
+    url: https://getsession.org/blog/the-future-of-session
+    publisher: Session Technology Foundation
+    kind: vendor
+    accessed: 2026-10-15
+  - id: wikipedia
+    title: Session (software)
+    url: https://en.wikipedia.org/wiki/Session_(software)
+    publisher: Wikipedia
+    kind: independent
+    accessed: 2026-10-15

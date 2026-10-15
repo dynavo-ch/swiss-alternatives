@@ -1,0 +1,10 @@
+name: Team Chat
+noun: team chat tools
+group: communication
+icon: messages-square
+summary: Channels, threads and direct messages for teams.
+intro: >-
+  Team chat tools organise workplace conversations into channels and threads and connect
+  to other tools through integrations.
+related: [messaging, employee-communication, video-conferencing]
+added: 2026-10-15

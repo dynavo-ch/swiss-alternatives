@@ -1,0 +1,9 @@
+name: Google Search
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's web search engine.
+website: 'https://www.google.com'
+categories: [search-engines]
+aliases: [google]
+popular: true

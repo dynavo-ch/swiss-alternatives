@@ -1,0 +1,8 @@
+name: Google Docs
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's browser-based collaborative documents, spreadsheets and slides.
+website: 'https://docs.google.com'
+categories: [office-suites, notes]
+aliases: [google sheets, google slides]

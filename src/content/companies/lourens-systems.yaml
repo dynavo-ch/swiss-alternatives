@@ -1,0 +1,54 @@
+name: Lourens Systems GmbH
+shortName: Lourens Systems
+type: company
+description: >-
+  Zurich-based software company, registered in 2009, that develops and operates
+  the smallinvoice invoicing and CRM service for small businesses.
+website: https://www.lourenssystems.ch
+founded: 2009
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: Entered in the commercial register of the canton of Zurich on 5 November 2009.
+headquarters:
+  city: Zurich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-115.185.110
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE115185110
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    According to commercial register publications, the share capital of CHF
+    20,000 is held in equal parts by the two managing directors, Graem Lourens
+    and Sandro Kunz, both registered with Swiss places of citizenship; no
+    corporate shareholder is recorded. Since 2025 one of the two has been
+    registered as resident in Warsaw, Poland. No acquisition by a larger group
+    was found.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: Impressum - smallinvoice
+    url: https://www.smallinvoice.ch/de/impressum
+    publisher: Lourens Systems GmbH
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Lourens Systems GmbH (CHE-115.185.110) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE115185110
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Lourens Systems GmbH - commercial register data
+    url: https://www.moneyhouse.ch/de/company/lourens-systems-gmbh-12292316711
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15

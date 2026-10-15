@@ -1,0 +1,61 @@
+name: Abacus Research AG
+shortName: Abacus
+type: company
+description: >-
+  Owner-managed software company in Wittenbach SG, founded in 1985, that
+  develops ERP and business software for small and medium-sized organisations.
+website: https://www.abacus.ch
+founded: 1985
+swissFounded:
+  value: yes
+  basis: vendor
+  source: portrait
+  note: >-
+    Founded in 1985 by three graduates of the University of St. Gallen. The
+    current stock corporation has been entered in the St. Gallen commercial
+    register since 29 December 2003.
+headquarters:
+  city: Wittenbach
+  canton: SG
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-110.365.544
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE110365544
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: portrait
+  note: >-
+    Abacus describes itself as an owner-managed ("inhabergeführt"), independent
+    Swiss software company whose three founders still work in the company. The
+    shareholder structure is not published. The group employs around 850
+    people, about 570 of them at Abacus Research AG.
+lastVerified: 2026-10-15
+sources:
+  - id: portrait
+    title: Portrait - Abacus
+    url: https://www.abacus.ch/unternehmen/ueber-uns/portrait
+    publisher: Abacus Research AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Abacus Research AG (CHE-110.365.544) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE110365544
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Abacus Research AG - commercial register data
+    url: https://www.moneyhouse.ch/en/company/abacus-research-ag-11420957631
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: netzwoche-2026
+    title: Abacus bleibt auf Wachstumskurs
+    url: https://www.netzwoche.ch/news/2026-04-07/abacus-bleibt-auf-wachstumskurs
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15

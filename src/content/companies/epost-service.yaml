@@ -1,0 +1,80 @@
+name: ePost Service AG
+shortName: ePost Service
+type: company
+description: >-
+  Lucerne-based subsidiary of Swiss Post, formerly KLARA Business AG, that
+  develops the KLARA business software for SMEs and the ePost digital mail
+  services.
+website: https://www.epost.ch
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    KLARA was founded in 2016 as a subsidiary of Axon Management AG. The legal
+    entity was first entered in the commercial register of the canton of
+    Lucerne on 23 December 1993 under a different name; previous names
+    include Prepress Center AG, Systempuls AG and KLARA Business AG. It took
+    the name ePost Service AG in 2024.
+headquarters:
+  city: Lucerne
+  canton: LU
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-103.727.240
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103727240
+ownership:
+  swissOwned: yes
+  parent: Swiss Post (Die Schweizerische Post AG)
+  parentCountry: CH
+  basis: vendor
+  source: klara
+  note: >-
+    KLARA describes ePost Service AG as a subsidiary of Swiss Post, which is
+    wholly owned by the Swiss Confederation. Swiss Post took a 50.1% majority
+    in KLARA Business AG in September 2020, after holding 9% since 2018; the
+    founders kept 49.9% and KLARA continued as a joint venture of Swiss Post
+    and the Axon group. The current percentages after capital increases in
+    2025 are not published.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: Über uns - ePost
+    url: https://www.epost.ch/de-ch/ueber-uns
+    publisher: ePost Service AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: klara
+    title: KLARA - Business software for SMEs in Switzerland
+    url: https://www.klara.ch/en/
+    publisher: ePost Service AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Impressum - KLARA
+    url: https://www.klara.ch/impressum
+    publisher: ePost Service AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: ePost Service AG (CHE-103.727.240) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103727240
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: ePost Service AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/epost-service-ag-21222916101
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: press-post-majority
+    title: Die Post hat nun das Sagen bei Klara
+    url: https://www.netzwoche.ch/news/2020-09-10/die-post-hat-nun-das-sagen-bei-klara
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15

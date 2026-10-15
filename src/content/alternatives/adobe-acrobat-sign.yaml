@@ -1,0 +1,7 @@
+name: Adobe Acrobat Sign
+vendor: Adobe Inc.
+vendorCountry: US
+summary: Adobe's electronic signature service, integrated with Acrobat.
+website: 'https://www.adobe.com/acrobat/business/sign.html'
+categories: [e-signatures]
+aliases: [adobe sign, echosign]

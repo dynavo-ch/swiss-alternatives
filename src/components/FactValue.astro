@@ -1,0 +1,96 @@
+---
+/**
+ * Renders a fact's state (yes / partly / no / unknown) with its provenance:
+ * basis (verified / vendor claim / inferred), source link and note.
+ */
+import { useTranslations } from '~/i18n';
+import type { Source } from '~/lib/data';
+
+interface Props {
+  value: string | undefined;
+  /** Optional custom text replacing the default state label. */
+  text?: string | undefined;
+  basis?: 'verified' | 'vendor' | 'inferred' | undefined;
+  source?: string | undefined;
+  sources?: Source[];
+  note?: string | undefined;
+  /** Prefix for source anchors, e.g. "src" → #src-infra */
+  anchorPrefix?: string;
+}
+
+const {
+  value = 'unknown',
+  text,
+  basis,
+  source,
+  sources = [],
+  note,
+  anchorPrefix = 'src',
+} = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const label =
+  text ??
+  (value === 'unknown'
+    ? t('state.unknown')
+    : t(`state.${value as 'yes' | 'no' | 'partial' | 'optional'}`));
+const sourceIndex = source ? sources.findIndex((s) => s.id === source) : -1;
+---
+
+<div class="fact">
+  <span class="state" data-state={value}>
+    {label}
+  </span>
+  {value !== 'unknown' && (
+    <span class="fact__prov">
+      <span
+        class="basis"
+        data-basis={basis ?? 'none'}
+        title={basis ? t(`basis.${basis}.desc`) : undefined}
+      >
+        {basis ? t(`basis.${basis}`) : t('basis.none')}
+      </span>
+      {sourceIndex >= 0 && (
+        <a
+          class="fact__src mono"
+          href={`#${anchorPrefix}-${source}`}
+          aria-label={`${t('basis.source')} ${sourceIndex + 1}: ${sources[sourceIndex]!.title}`}
+        >
+          [{sourceIndex + 1}]
+        </a>
+      )}
+    </span>
+  )}
+  {note && <p class="fact__note">{note}</p>}
+</div>
+
+<style>
+  .fact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-1) var(--s-3);
+  }
+
+  .fact__prov {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+  }
+
+  .fact__src {
+    font-size: var(--fs-xs);
+    color: var(--c-red-ink);
+    text-decoration: none;
+  }
+
+  .fact__src:hover {
+    text-decoration: underline;
+  }
+
+  .fact__note {
+    flex-basis: 100%;
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+    color: var(--c-ink-3);
+  }
+</style>

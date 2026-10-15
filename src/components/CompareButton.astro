@@ -1,0 +1,60 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+
+interface Props {
+  id: string;
+  name: string;
+  variant?: 'icon' | 'button';
+}
+
+const { id, name, variant = 'icon' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+{variant === 'icon' ? (
+  <button
+    type="button"
+    class="icon-btn compare-btn js-only"
+    data-compare={id}
+    data-name={name}
+    aria-pressed="false"
+    aria-label={`${t('compare.add')}: ${name}`}
+  >
+    <Icon name="columns-3" class="compare-btn__off" />
+    <Icon name="check" class="compare-btn__on" />
+  </button>
+) : (
+  <button
+    type="button"
+    class="btn action-btn compare-btn js-only"
+    data-compare={id}
+    data-name={name}
+    aria-pressed="false"
+  >
+    <Icon name="columns-3" class="compare-btn__off" />
+    <Icon name="check" class="compare-btn__on" />
+    <span data-label>{t('compare.add')}</span>
+  </button>
+)}
+
+<style is:global>
+  .compare-btn[aria-pressed='false'] .compare-btn__on,
+  .compare-btn[aria-pressed='true'] .compare-btn__off {
+    display: none;
+  }
+
+  .compare-btn.icon-btn[aria-pressed='true'] svg {
+    fill: none;
+  }
+
+  .action-btn[aria-pressed='true'] {
+    --btn-border: var(--c-ink);
+    --btn-bg: var(--c-sunken);
+  }
+
+  .action-btn[data-fav][aria-pressed='true'] svg {
+    fill: var(--c-red);
+    color: var(--c-red);
+  }
+</style>

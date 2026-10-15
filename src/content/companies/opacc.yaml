@@ -1,0 +1,62 @@
+name: Opacc Software AG
+shortName: Opacc
+type: company
+description: >-
+  Software company in Rothenburg LU, founded in 1988, that develops ERP, CRM and
+  online-shop software for trading and service companies and operates its own
+  cloud service.
+website: https://www.opacc.ch
+founded: 1988
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the commercial register of the canton of Lucerne on
+    4 February 1988; no earlier company names are recorded.
+headquarters:
+  city: Rothenburg
+  canton: LU
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-106.244.133
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE106244133
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: about
+  note: >-
+    Opacc lists its shareholders as the board of directors, group management
+    and partners, and describes its financing as self-financed. No outside
+    investor or parent company is named; the nationality of the shareholders
+    is not published. The company has more than 200 employees, a Swiss branch
+    in Münchenstein BL and a German branch in Fürth.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: Über Opacc
+    url: https://www.opacc.ch/uber-uns/opacc
+    publisher: Opacc Software AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Impressum - Opacc
+    url: https://www.opacc.ch/impressum
+    publisher: Opacc Software AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Opacc Software AG (CHE-106.244.133) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE106244133
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Opacc Software AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/opacc-software-ag-3988303581
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15

@@ -1,0 +1,52 @@
+name: cyon AG
+shortName: cyon
+type: company
+description: >-
+  Basel-based web hosting provider founded in 2003 that runs its own hardware in
+  a data centre of the Basel utility IWB.
+website: https://www.cyon.ch
+founded: 2003
+swissFounded:
+  value: yes
+  basis: vendor
+  source: press-2024
+  note: Founded in Basel in 2003 by David Burkardt and Tobias Byland.
+headquarters:
+  city: Basel
+  canton: BS
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-110.588.943
+  url: https://www.zefix.ch/en/search/entity/list/firm/741369
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Founder and CEO David Burkardt was registered as the sole partner of cyon
+    GmbH until the company was converted into cyon AG in June 2025, when the
+    partner received all 100,000 shares. Shareholders of an AG are not shown in
+    the commercial register; no sale has been reported since.
+lastVerified: 2026-10-15
+sources:
+  - id: press-2024
+    title: 'Medienmitteilung: cyon GmbH verstärkt Leadership-Team mit Wachstumsexperten Malte Polzin'
+    url: https://blog.cyon.ch/wp-content/uploads/2024/08/20240829_cyon_MM_Unterstuetzung_Leadership_Team_Malte.pdf
+    publisher: cyon GmbH
+    kind: vendor
+    accessed: 2026-10-15
+  - id: anniversary
+    title: Webhoster Cyon feiert seinen 20. Geburtstag
+    url: https://www.netzwoche.ch/news/2023-02-02/webhoster-cyon-feiert-seinen-20-geburtstag
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: zefix
+    title: cyon AG (CHE-110.588.943) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/741369
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

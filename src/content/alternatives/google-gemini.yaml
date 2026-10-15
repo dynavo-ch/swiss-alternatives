@@ -1,0 +1,8 @@
+name: Google Gemini
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's AI assistant and family of language models.
+website: 'https://gemini.google.com'
+categories: [ai-assistants, language-models]
+aliases: [gemini, bard]

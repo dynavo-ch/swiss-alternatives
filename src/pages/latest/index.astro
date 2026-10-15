@@ -1,0 +1,169 @@
+---
+import CategoryCard from '~/components/CategoryCard.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import ProductRow from '~/components/ProductRow.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory, sortByAdded, sortByUpdated } from '~/lib/data';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+
+const t = useTranslations(Astro.currentLocale);
+const { products, categories } = await getDirectory();
+const added = sortByAdded(products).slice(0, 24);
+const updated = sortByUpdated(
+  products.filter((p) => p.data.updated && p.data.updated > p.data.added),
+).slice(0, 12);
+const verified = [...products]
+  .filter((p) => p.data.lastVerified)
+  .sort(
+    (a, b) =>
+      b.data.lastVerified!.getTime() - a.data.lastVerified!.getTime() ||
+      a.name.localeCompare(b.name),
+  )
+  .slice(0, 12);
+const newCategories = [...categories]
+  .filter((c) => c.products.length > 0)
+  .sort((a, b) => b.data.added.getTime() - a.data.added.getTime() || a.name.localeCompare(b.name))
+  .slice(0, 4);
+
+// Group additions by month for an editorial, scannable list.
+const monthFormat = new Intl.DateTimeFormat('en-CH', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+const byMonth = new Map<string, typeof added>();
+for (const product of added) {
+  const key = monthFormat.format(product.data.added);
+  byMonth.set(key, [...(byMonth.get(key) ?? []), product]);
+}
+
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.latest'), href: paths.latest() },
+];
+---
+
+<BaseLayout
+  title={t('latest.title')}
+  description={t('latest.description')}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.latest')}
+    title={t('latest.heading')}
+    lead={t('latest.lead')}
+  >
+    <p class="feed">
+      <a href="/latest/rss.xml" class="btn btn--sm">
+        <Icon name="rss" />
+        {t('latest.rss')}
+      </a>
+    </p>
+  </PageHeader>
+
+  <section class="section container" aria-labelledby="added-h">
+    <SectionHeader id="added-h" number={1} title={t('latest.added')} />
+    {[...byMonth.entries()].map(([month, list]) => (
+      <div class="month">
+        <h3 class="label month__title">{month}</h3>
+        <div>
+          {list.map((product) => (
+            <ProductRow product={product} date={product.data.added} dateLabel={t('common.added')} />
+          ))}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  {updated.length > 0 && (
+    <section class="section container" aria-labelledby="updated-h">
+      <SectionHeader id="updated-h" number={2} title={t('latest.updated')} />
+      <div class="rows">
+        {updated.map((product) => (
+          <ProductRow
+            product={product}
+            date={product.data.updated}
+            dateLabel={t('common.updated')}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="section container" aria-labelledby="verified-h">
+    <SectionHeader
+      id="verified-h"
+      number={updated.length > 0 ? 3 : 2}
+      title={t('latest.verified')}
+      lead={t('latest.verifiedLead')}
+    />
+    <div class="rows">
+      {verified.map((product) => (
+        <ProductRow
+          product={product}
+          date={product.data.lastVerified}
+          dateLabel={t('common.lastVerified')}
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="cats-h">
+    <SectionHeader
+      id="cats-h"
+      title={t('latest.categories')}
+      href={paths.categories()}
+      linkLabel={t('common.viewAll')}
+    />
+    <ul class="grid-cards grid-cards--sm" role="list">
+      {newCategories.map((c) => (
+        <li>
+          <CategoryCard category={c} />
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .feed {
+    margin-top: var(--s-6);
+  }
+
+  .feed :global(svg) {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .month {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: var(--s-6);
+    border-top: 1px solid var(--c-line);
+  }
+
+  .month + .month {
+    margin-top: var(--s-8);
+  }
+
+  .month__title {
+    padding-top: var(--s-5);
+    color: var(--c-ink);
+  }
+
+  .rows {
+    border-top: 1px solid var(--c-line);
+  }
+
+  @media (max-width: 48rem) {
+    .month {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+</style>

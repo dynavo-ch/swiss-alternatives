@@ -1,0 +1,102 @@
+---
+/** The 26 cantons as a compact grid; cantons with listed companies link to a filtered product view. */
+import { useTranslations } from '~/i18n';
+import { CANTONS } from '~/lib/constants';
+import type { Company } from '~/lib/data';
+import { cantonName } from '~/lib/format';
+import { paths } from '~/lib/paths';
+
+interface Props {
+  companies: Company[];
+}
+
+const { companies } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const counts = new Map<string, number>();
+for (const company of companies) {
+  const canton = company.data.headquarters.canton;
+  if (canton && company.products.length > 0)
+    counts.set(canton, (counts.get(canton) ?? 0) + company.products.length);
+}
+---
+
+<ul class="cantons" role="list">
+  {CANTONS.map((code) => {
+    const n = counts.get(code) ?? 0;
+    return (
+      <li>
+        {n > 0 ? (
+          <a
+            class="canton canton--on"
+            href={`${paths.products()}?canton=${code}`}
+            title={`${cantonName(code)} — ${t('count.products', { count: n })}`}
+          >
+            <span class="canton__code">{code}</span>
+            <span class="canton__n tnum">{n}</span>
+            <span class="visually-hidden">
+              {cantonName(code)}, {t('count.products', { count: n })}
+            </span>
+          </a>
+        ) : (
+          <span class="canton" title={cantonName(code)}>
+            <span class="canton__code">{code}</span>
+            <span class="visually-hidden">{cantonName(code)}</span>
+          </span>
+        )}
+      </li>
+    );
+  })}
+</ul>
+
+<style>
+  .cantons {
+    display: grid;
+    grid-template-columns: repeat(13, minmax(0, 1fr));
+    gap: 2px;
+  }
+
+  .canton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: 1;
+    padding: var(--s-2);
+    background: var(--c-sunken);
+    color: var(--c-ink-3);
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    text-decoration: none;
+  }
+
+  .canton--on {
+    background: var(--c-ink);
+    color: var(--c-inverse);
+    transition: background-color var(--t-fast) var(--ease);
+  }
+
+  .canton--on:hover {
+    background: var(--c-red-fill);
+    color: var(--c-on-red);
+  }
+
+  .canton__n {
+    align-self: flex-end;
+    font-family: var(--font-sans);
+    font-size: var(--fs-lg);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  @media (max-width: 48rem) {
+    .cantons {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 26rem) {
+    .cantons {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+</style>

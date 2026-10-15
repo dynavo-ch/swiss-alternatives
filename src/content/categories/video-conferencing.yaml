@@ -1,0 +1,10 @@
+name: Video Conferencing
+noun: video conferencing tools
+group: workplace
+icon: video
+summary: Video meetings and web conferencing.
+intro: >-
+  Video conferencing tools host online meetings with audio, video and screen sharing.
+  Where the media servers run determines where meeting data passes through.
+related: [team-chat, calendars]
+added: 2026-10-15

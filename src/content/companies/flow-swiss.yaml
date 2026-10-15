@@ -1,0 +1,69 @@
+name: Flow Swiss AG
+shortName: Flow
+type: company
+description: >-
+  Swiss cloud provider founded in 2009, registered in Baar (Zug), offering
+  IaaS, Kubernetes, object storage and Mac hosting; part of the Sonio group.
+website: https://flow.swiss
+founded: 2009
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    Flow states it was founded in 2009. The company was previously registered
+    as innofield GmbH and innofield AG and is entered in the Swiss commercial
+    register; no foreign predecessor is recorded.
+headquarters:
+  city: Baar
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-284.156.502
+  url: https://www.zefix.ch/en/search/entity/list/firm/1048731
+ownership:
+  swissOwned: unknown
+  parent: Sonio AG
+  parentCountry: CH
+  basis: vendor
+  source: about
+  note: >-
+    Flow has been part of the group of Swiss IT service provider Sonio AG
+    (Baar) since September 2024 and keeps its brand and founders. Sonio's
+    earlier mergers were backed by the investor group AH & Capital Partners and
+    Alpha VCX; Sonio's ultimate shareholders are not published.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About us - Flow Swiss
+    url: https://flow.swiss/about-us
+    publisher: Flow Swiss AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Imprint - Flow Swiss
+    url: https://flow.swiss/imprint/
+    publisher: Flow Swiss AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: Flow Swiss AG (CHE-284.156.502) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1048731
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: acquisition
+    title: Sonio übernimmt Flow Swiss
+    url: https://www.netzwoche.ch/news/2024-09-05/sonio-uebernimmt-flow-swiss
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: sonio-investors
+    title: Sonio und BUSINESS IT steigen zusammen zu den Top 5 ICT-Dienstleistern im Bereich IT-Infrastruktur in der Schweiz auf
+    url: https://www.moneycab.com/it/sonio-und-business-it-steigen-zusammen-zu-den-top-5-ict-dienstleistern-im-bereich-it-infrastruktur-in-der-schweiz-auf/amp/
+    publisher: Moneycab
+    kind: press
+    accessed: 2026-10-15

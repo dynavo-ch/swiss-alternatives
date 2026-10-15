@@ -1,0 +1,69 @@
+name: Quad9 Foundation
+shortName: Quad9
+type: foundation
+description: >-
+  Not-for-profit foundation in Zurich that operates the Quad9 public DNS
+  resolver. It moved its headquarters from California to Switzerland in 2021.
+website: https://quad9.net
+swissFounded:
+  value: no
+  basis: vendor
+  source: relocation
+  note: >-
+    Quad9 began as a project of the Global Cyber Alliance, IBM and Packet
+    Clearing House and launched its public service in 2017. In February 2021 it
+    announced the move of its headquarters from California to Zurich; the Swiss
+    foundation (registered name "Quad9") was entered in the Zurich commercial
+    register on 9 June 2021.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-435.091.407
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE435091407
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    A foundation under Swiss law has no shareholders. Quad9 is governed by its
+    foundation council, which includes members from Switzerland and abroad, and
+    is supervised by the Swiss Federal Department of Home Affairs. Its operating
+    budget comes from sponsorships, grants and donations; founding sponsors
+    were the Global Cyber Alliance, IBM and Packet Clearing House.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Quad9 (CHE-435.091.407) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE435091407
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Quad9, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/de/company/quad9-7353329831
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: relocation
+    title: Quad9 public domain name service moves to Switzerland for maximum internet privacy protection
+    url: https://kyodonewsprwire.jp/index.php/release/202102171160
+    publisher: Quad9 (press release via Kyodo News PR Wire)
+    kind: press
+    accessed: 2026-10-15
+  - id: sponsors
+    title: Sponsors
+    url: https://quad9.net/about/sponsors/
+    publisher: Quad9
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Quad9 Data and Privacy Policy
+    url: https://quad9.net/privacy/policy/
+    publisher: Quad9
+    kind: vendor
+    accessed: 2026-10-15

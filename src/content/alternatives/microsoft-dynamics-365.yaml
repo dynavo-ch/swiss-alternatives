@@ -1,0 +1,7 @@
+name: Microsoft Dynamics 365
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's ERP and CRM applications.
+website: 'https://www.microsoft.com/dynamics-365'
+categories: [erp, crm]
+aliases: [dynamics, navision, business central]

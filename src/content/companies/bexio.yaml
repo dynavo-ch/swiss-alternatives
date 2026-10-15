@@ -1,0 +1,63 @@
+name: bexio AG
+shortName: bexio
+type: company
+description: >-
+  Rapperswil-Jona-based software company that develops cloud business software
+  for small businesses in Switzerland. It is a subsidiary of the Swiss insurer
+  Die Mobiliar.
+website: https://www.bexio.com
+founded: 2013
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the commercial register of the canton of St. Gallen on
+    4 December 2013 (earlier name: easySYS AG), with its seat in Rapperswil-Jona.
+headquarters:
+  city: Rapperswil-Jona
+  canton: SG
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-322.646.985
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE322646985
+ownership:
+  swissOwned: yes
+  parent: Die Mobiliar
+  parentCountry: CH
+  basis: vendor
+  source: press-kontera
+  note: >-
+    Die Mobiliar acquired bexio in 2018. In its October 2025 media release on
+    the acquisition of Kontera GmbH, bexio describes itself as a wholly owned
+    subsidiary of Die Mobiliar; Die Mobiliar lists bexio among its group
+    companies.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: bexio AG (CHE-322.646.985) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE322646985
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: bexio AG - commercial register data
+    url: https://www.moneyhouse.ch/en/company/bexio-ag-11290787051
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: press-kontera
+    title: bexio integriert Kontera (media release, 23 October 2025)
+    url: https://www.bexio.com/de-CH/ueber-uns/medienmitteilung-oktober
+    publisher: bexio AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: mobiliar
+    title: bexio - Unternehmen der Gruppe Mobiliar
+    url: https://www.mobiliar.ch/ueber-uns/die-mobiliar/unternehmen-der-gruppe/bexio
+    publisher: Die Mobiliar
+    kind: vendor
+    accessed: 2026-10-15

@@ -1,0 +1,148 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+import type { Category } from '~/lib/data';
+
+interface Props {
+  category: Category;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { category, headingLevel: Heading = 'h3' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const count = category.products.length;
+---
+
+<article class="ccard" data-empty={count === 0 ? '' : undefined}>
+  <div class="ccard__top">
+    <span class="ccard__icon">
+      <Icon name={category.data.icon} />
+    </span>
+    <span class="ccard__count mono tnum" aria-hidden="true">
+      {String(count).padStart(2, '0')}
+    </span>
+  </div>
+  <Heading class="ccard__name">
+    <a href={category.url} class="ccard__link">
+      {category.name}
+    </a>
+  </Heading>
+  <p class="ccard__summary">{category.data.summary}</p>
+  <p class="ccard__meta">{t('count.products', { count })}</p>
+</article>
+
+<style>
+  .ccard {
+    container-type: inline-size;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+    padding: var(--s-5);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+    transition: border-color var(--t-fast) var(--ease);
+  }
+
+  .ccard:hover,
+  .ccard:focus-within {
+    border-color: var(--c-ink);
+  }
+
+  .ccard[data-empty] {
+    background: transparent;
+    border-style: dashed;
+  }
+
+  .ccard__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--s-3);
+  }
+
+  .ccard__icon {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--r-2);
+    background: var(--c-sunken);
+    color: var(--c-ink);
+    transition:
+      background-color var(--t-fast) var(--ease),
+      color var(--t-fast) var(--ease);
+  }
+
+  .ccard:hover .ccard__icon {
+    background: var(--c-red-fill);
+    color: var(--c-on-red);
+  }
+
+  .ccard__icon :global(svg) {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .ccard__count {
+    font-size: var(--fs-2xl);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--c-ink-3);
+  }
+
+  .ccard__name {
+    font-size: var(--fs-md);
+    letter-spacing: -0.02em;
+  }
+
+  .ccard__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ccard__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .ccard__summary {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+    line-height: 1.5;
+  }
+
+  @container (max-width: 12.5rem) {
+    .ccard__summary {
+      display: none;
+    }
+    .ccard__top {
+      margin-bottom: var(--s-1);
+    }
+    .ccard__count {
+      font-size: var(--fs-xl);
+    }
+    .ccard__name {
+      font-size: var(--fs-base);
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .ccard {
+      padding: var(--s-4);
+    }
+  }
+
+  .ccard__meta {
+    margin-top: auto;
+    padding-top: var(--s-2);
+    font-size: var(--fs-xs);
+    font-weight: 560;
+    color: var(--c-ink-2);
+  }
+</style>

@@ -1,0 +1,7 @@
+name: QuickBooks
+vendor: Intuit Inc.
+vendorCountry: US
+summary: Accounting, invoicing and payroll software for small businesses.
+website: 'https://quickbooks.intuit.com'
+categories: [accounting, invoicing, payroll]
+aliases: [intuit]

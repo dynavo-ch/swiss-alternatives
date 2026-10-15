@@ -1,0 +1,72 @@
+name: Any Association
+shortName: Any
+type: association
+description: >-
+  Association registered in Zug that develops and publishes Anytype, a
+  local-first notes and knowledge app. Its team works remotely, with a hub in
+  Berlin run by a German subsidiary.
+website: https://anytype.io
+founded: 2023
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    The association (registered name "Any") adopted its articles on 1 March 2023
+    and was entered in the Zug commercial register in July 2023. The Anytype
+    project predates the association and was previously backed by venture
+    investors listed on the vendor's website.
+headquarters:
+  city: Zug
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+  note: >-
+    Registered seat in Zug; the registered address is c/o Sielva Management SA,
+    Gubelstrasse 11, a corporate service provider.
+jurisdiction: CH
+registry:
+  uid: CHE-255.062.253
+  url: https://www.zefix.ch/en/search/entity/list/firm/1596761
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    An association has no shareholders and is controlled by its members, who
+    are not published. The board members entered in the register live in Berlin
+    and Vienna; a Swiss resident is registered as director. Staff are employed
+    by a Berlin-based subsidiary (Anylab GmbH is named as EU representative).
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: Any (CHE-255.062.253) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1596761
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: terms
+    title: Anytype Terms of Use
+    url: https://anytype.io/terms_of_use
+    publisher: Any Association
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Privacy Policy for Anytype App
+    url: https://anytype.io/app_privacy
+    publisher: Any Association
+    kind: vendor
+    accessed: 2026-10-15
+  - id: faq
+    title: Anytype FAQ
+    url: https://anytype.io/faq
+    publisher: Any Association
+    kind: vendor
+    accessed: 2026-10-15
+  - id: who
+    title: Our digitally sovereign collective
+    url: https://anytype.io/who
+    publisher: Any Association
+    kind: vendor
+    accessed: 2026-10-15

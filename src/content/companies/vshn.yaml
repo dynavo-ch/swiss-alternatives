@@ -1,0 +1,58 @@
+name: VSHN AG
+shortName: VSHN
+type: company
+description: >-
+  Zurich-based DevOps and managed services company founded in 2014 that
+  operates the APPUiO container platform and managed Kubernetes services.
+website: https://www.vshn.ch
+founded: 2014
+swissFounded:
+  value: yes
+  basis: inferred
+  source: our-story
+  note: >-
+    VSHN states it was founded in 2014 and describes itself as a Swiss company;
+    VSHN AG is registered in the commercial register of the canton of Zurich.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-275.566.226
+  url: https://www.zefix.ch/en/search/entity/list/firm/1194754
+ownership:
+  swissOwned: unknown
+  source: management-2021
+  note: >-
+    The shareholders are not published. Co-founders Aarno Aukia and Patrick
+    Mathers moved to the board of directors in 2021. No acquisition or foreign
+    shareholder has been reported. VSHN also has an office in Vancouver, Canada.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: Imprint - VSHN
+    url: https://www.vshn.ch/en/imprint/
+    publisher: VSHN AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: our-story
+    title: Our story - VSHN
+    url: https://www.vshn.ch/en/about/our-story/
+    publisher: VSHN AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: VSHN AG (CHE-275.566.226) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1194754
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: management-2021
+    title: Das ist die neue Geschäftsleitung von VSHN
+    url: https://www.netzwoche.ch/news/2021-02-01/das-ist-die-neue-geschaeftsleitung-von-vshn
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15

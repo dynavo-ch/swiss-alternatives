@@ -1,0 +1,36 @@
+# Top-level category groups. `id` is referenced by categories.
+- id: cloud
+  name: Cloud & Infrastructure
+  summary: Compute, storage, hosting, domains and the infrastructure underneath your services.
+  icon: server
+  order: 1
+- id: workplace
+  name: Workplace & Productivity
+  summary: Email, files, documents, calendars, meetings and the tools teams use every day.
+  icon: briefcase
+  order: 2
+- id: communication
+  name: Communication
+  summary: Messaging, team chat and internal communication.
+  icon: message-square
+  order: 3
+- id: security
+  name: Security & Privacy
+  summary: Password managers, VPNs, identity, authentication and network protection.
+  icon: shield
+  order: 4
+- id: business
+  name: Business Software
+  summary: Accounting, ERP, invoicing, payroll and customer management.
+  icon: building-2
+  order: 5
+- id: ai
+  name: AI & Data
+  summary: AI assistants, language models and analytics.
+  icon: sparkles
+  order: 6
+- id: internet
+  name: Internet & Consumer
+  summary: Search engines, public DNS and other everyday internet services.
+  icon: globe
+  order: 7

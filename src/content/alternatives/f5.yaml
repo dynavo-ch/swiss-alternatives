@@ -1,0 +1,7 @@
+name: F5 Web Application Firewall
+vendor: F5, Inc.
+vendorCountry: US
+summary: Web application and API firewalls from F5, as BIG-IP Advanced WAF appliances or as a cloud service.
+website: 'https://www.f5.com'
+categories: [network-security]
+aliases: [F5, F5 BIG-IP Advanced WAF, BIG-IP ASM, F5 Distributed Cloud WAAP]

@@ -1,0 +1,58 @@
+name: Swiss AI Initiative
+shortName: Swiss AI
+type: public-institution
+description: >-
+  National research initiative launched in 2023 and co-led by EPFL and ETH
+  Zurich, with the Swiss National Supercomputing Centre (CSCS), that develops
+  open AI models such as Apertus.
+website: https://www.swiss-ai.org
+founded: 2023
+swissFounded:
+  value: yes
+  basis: vendor
+  source: swiss-ai
+  note: Launched in December 2023 by the ETH AI Center and the EPFL AI Center.
+headquarters:
+  city: Lausanne
+  canton: VD
+  country: CH
+  basis: inferred
+  source: legal-notice
+  note: >-
+    The initiative is not a separate legal entity; it is co-led by EPFL
+    (Lausanne) and ETH Zurich (Zurich), with CSCS in Lugano providing compute.
+    Lausanne is given because EPFL is named as the owner of the Apertus
+    website; Zurich would be equally defensible.
+jurisdiction: CH
+ownership:
+  swissOwned: yes
+  parent: ETH Domain (EPFL and ETH Zurich)
+  parentCountry: CH
+  basis: vendor
+  source: swiss-ai
+  note: >-
+    The Swiss AI Initiative is the first project of the Swiss National AI
+    Institute, a partnership of the ETH AI Center and the EPFL AI Center. It was
+    seeded with a CHF 20 million grant from the ETH Domain and more than 10
+    million GPU hours on the Alps supercomputer at CSCS. EPFL and ETH Zurich are
+    federal institutes of technology.
+lastVerified: 2026-10-15
+sources:
+  - id: swiss-ai
+    title: Swiss AI Initiative
+    url: https://www.swiss-ai.org/
+    publisher: ETH AI Center and EPFL AI Center
+    kind: vendor
+    accessed: 2026-10-15
+  - id: legal-notice
+    title: Legal notice - Apertus
+    url: https://www.apertus-ai.org/pages/legal/
+    publisher: EPFL
+    kind: vendor
+    accessed: 2026-10-15
+  - id: about-apertus
+    title: About - Apertus
+    url: https://www.apertus-ai.org/pages/about/
+    publisher: Swiss AI Initiative
+    kind: vendor
+    accessed: 2026-10-15

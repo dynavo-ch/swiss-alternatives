@@ -1,0 +1,63 @@
+name: Futurae Technologies AG
+shortName: Futurae
+type: company
+description: >-
+  Zurich-based company, active since 2016, that develops authentication,
+  transaction-confirmation and fraud-detection software for banks, payment
+  providers and fintechs.
+website: https://www.futurae.com
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Futurae Technologies AG was entered in the commercial register of the
+    canton of Zurich on 13 December 2016.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-143.306.985
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE143306985
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: financing-2021
+  note: >-
+    Privately held, venture-backed company; the shareholder structure is not
+    published. Disclosed investors include AXA Venture Partners (France),
+    Euroclear (Belgium), Zürcher Kantonalbank and EquityPitcher Ventures.
+    Co-founder Claudio Marforio is CEO and vice-chairman of the board. The
+    share capital was last increased in July 2024, with three classes of
+    preferred shares, according to the commercial register.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Futurae Technologies AG (CHE-143.306.985) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE143306985
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Futurae Technologies AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/futurae-technologies-ag-4375958531
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: about
+    title: About us
+    url: https://www.futurae.com/about-us/
+    publisher: Futurae Technologies AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: financing-2021
+    title: Futurae Technologies secures further growth financing
+    url: https://www.walderwyss.com/en/news/2021-04-07_futurae-technologies-sichert-sich-weitere-wachstumsfinanzierung
+    publisher: Walder Wyss
+    kind: press
+    accessed: 2026-10-15

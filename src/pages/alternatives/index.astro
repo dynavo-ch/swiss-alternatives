@@ -1,0 +1,94 @@
+---
+import AlternativeCard from '~/components/AlternativeCard.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+
+const t = useTranslations(Astro.currentLocale);
+const { alternatives, groups } = await getDirectory();
+const covered = alternatives.filter((a) => a.products.length > 0);
+const uncovered = alternatives.filter((a) => a.products.length === 0);
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.alternatives'), href: paths.alternatives() },
+];
+
+// Group foreign products by the group of their first category.
+const byGroup = groups
+  .map((group) => ({
+    group,
+    items: covered.filter((a) => a.categories[0]?.group === group),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+
+<BaseLayout
+  title={t('alternatives.title')}
+  description={t('alternatives.description', { count: covered.length })}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('alternatives.eyebrow', { count: covered.length })}
+    title={t('alternatives.heading')}
+    lead={t('alternatives.lead')}
+  />
+
+  {byGroup.map(({ group, items }, i) => (
+    <section class="section container" aria-labelledby={`alt-${group.id}`}>
+      <SectionHeader id={`alt-${group.id}`} number={i + 1} title={group.data.name} />
+      <ul class="grid-cards grid-cards--sm" role="list">
+        {items.map((alternative) => (
+          <li>
+            <AlternativeCard alternative={alternative} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  {uncovered.length > 0 && (
+    <section class="section container" aria-labelledby="alt-missing">
+      <SectionHeader
+        id="alt-missing"
+        title={t('alternatives.missing')}
+        lead={t('alternatives.missingLead')}
+        href={paths.suggest()}
+        linkLabel={t('nav.suggest')}
+      />
+      <ul class="missing" role="list">
+        {uncovered.map((a) => (
+          <li>
+            <a href={a.url}>{a.name}</a>
+            <span class="mono muted">{a.data.vendorCountry}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .missing {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    border-top: 1px solid var(--c-line);
+  }
+
+  .missing li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--s-3);
+    padding: var(--s-3) var(--s-4) var(--s-3) 0;
+    border-bottom: 1px solid var(--c-line);
+    font-size: var(--fs-sm);
+  }
+
+  .missing .mono {
+    font-size: var(--fs-xs);
+  }
+</style>

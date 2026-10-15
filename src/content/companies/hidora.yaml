@@ -1,0 +1,49 @@
+name: Hidora SA
+shortName: Hidora
+type: company
+description: >-
+  Geneva-area cloud and DevOps managed service provider founded in 2016 that
+  operates the Hikube cloud platform in three Swiss data centres.
+website: https://hidora.io
+founded: 2016
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: Hidora states it was founded in Geneva in 2016 by Matthieu Robin.
+headquarters:
+  city: Lancy
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-286.910.173
+  url: https://www.zefix.ch/en/search/entity/list/firm/1277960
+ownership:
+  swissOwned: unknown
+  source: about
+  note: >-
+    Shareholders are not published. Founder Matthieu Robin is CEO; no
+    acquisition or foreign shareholder has been reported.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About Hidora
+    url: https://hidora.io/en/about
+    publisher: Hidora SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: legal
+    title: Mentions légales - Hidora
+    url: https://hidora.io/fr/legal
+    publisher: Hidora SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: HIDORA SA (CHE-286.910.173) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1277960
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

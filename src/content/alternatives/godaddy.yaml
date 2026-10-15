@@ -1,0 +1,6 @@
+name: GoDaddy
+vendor: GoDaddy Inc.
+vendorCountry: US
+summary: Domain registrar and web hosting provider.
+website: 'https://www.godaddy.com'
+categories: [domain-registrars, web-hosting]

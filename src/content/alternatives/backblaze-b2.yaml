@@ -1,0 +1,7 @@
+name: Backblaze B2
+vendor: Backblaze, Inc.
+vendorCountry: US
+summary: S3-compatible cloud object storage, often used for backups.
+website: 'https://www.backblaze.com/cloud-storage'
+categories: [object-storage, backup]
+aliases: [backblaze]

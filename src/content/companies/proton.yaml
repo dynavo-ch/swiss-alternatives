@@ -1,0 +1,80 @@
+name: Proton AG
+shortName: Proton
+type: company
+description: >-
+  Company based in Plan-les-Ouates near Geneva that develops encrypted email,
+  calendar, cloud storage, password manager, VPN and AI assistant services.
+  Its primary shareholder is the non-profit Proton Foundation.
+website: https://proton.me
+founded: 2014
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Proton states it was founded in Switzerland in 2014 by scientists who met at
+    CERN. The company, formerly Proton Technologies AG, is entered in the Geneva
+    commercial register (renamed Proton AG in 2021).
+headquarters:
+  city: Plan-les-Ouates
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-354.686.492
+  url: https://www.zefix.ch/en/search/entity/list/firm/1189263
+ownership:
+  swissOwned: yes
+  parent: Proton Foundation (Fondation Proton)
+  parentCountry: CH
+  basis: vendor
+  source: ownership
+  note: >-
+    Proton states that the non-profit Proton Foundation is the primary
+    shareholder of Proton AG; since June 2024 it has been the largest voting
+    shareholder, endowed with shares donated by co-founders Andy Yen and Jason
+    Stockman and first employee Dingchao Lu. The foundation is registered in
+    Plan-les-Ouates (Fondation Proton, CHE-418.863.304). Employees hold most of
+    the remaining shares; smaller stakes are held by the Geneva non-profit
+    FONGIT and by Proton users. Proton says it has no venture capital investors.
+    Exact percentages are not published.
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: Proton AG (CHE-354.686.492) - Zefix commercial register
+    url: https://www.zefix.ch/en/search/entity/list/firm/1189263
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: zefix-foundation
+    title: Fondation Proton (CHE-418.863.304) - Zefix commercial register
+    url: https://www.zefix.ch/en/search/entity/list/firm/1568928
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: about
+    title: About Proton
+    url: https://proton.me/about
+    publisher: Proton AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: ownership
+    title: Who owns Proton Mail?
+    url: https://proton.me/support/who-owns-protonmail
+    publisher: Proton AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: foundation
+    title: Proton's transition to a non-profit foundation structure (17 June 2024)
+    url: https://proton.me/blog/proton-non-profit-foundation
+    publisher: Proton AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: terms
+    title: Proton Terms of Service
+    url: https://proton.me/legal/terms
+    publisher: Proton AG
+    kind: vendor
+    accessed: 2026-10-15

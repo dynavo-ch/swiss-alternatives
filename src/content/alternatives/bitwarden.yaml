@@ -1,0 +1,6 @@
+name: Bitwarden
+vendor: Bitwarden Inc.
+vendorCountry: US
+summary: Open-source password manager with cloud and self-hosted options.
+website: 'https://bitwarden.com'
+categories: [password-managers]

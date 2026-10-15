@@ -1,0 +1,70 @@
+name: Beekeeper AG
+shortName: Beekeeper
+type: company
+description: >-
+  Zurich-based developer of a mobile app for frontline employees, founded in
+  2012 as an ETH Zurich spin-off and part of the French software company LumApps
+  since 2025.
+website: https://www.lumapps.com/beekeeper
+founded: 2012
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Founded in 2012 as a spin-off of ETH Zurich; entered in the Zurich
+    commercial register on 12 March 2012 (earlier name: Spocal GmbH).
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-463.727.038
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE463727038
+ownership:
+  swissOwned: no
+  parent: LumApps
+  parentCountry: FR
+  basis: vendor
+  source: deal
+  note: >-
+    In July 2025 Beekeeper and the French intranet software company LumApps
+    agreed to combine in a deal backed by the UK private equity firm Bridgepoint;
+    LumApps remains majority owned by funds managed by Bridgepoint. LumApps now
+    presents Beekeeper as part of LumApps, and LumApps CEO Sébastien Ricard was
+    entered on Beekeeper AG's board in November 2025.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Beekeeper AG (CHE-463.727.038) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE463727038
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Beekeeper AG - commercial register data
+    url: https://www.moneyhouse.ch/en/company/beekeeper-ag-13827622301
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: deal
+    title: Beekeeper to Join Forces with LumApps, in Deal Backed by Bridgepoint
+    url: https://ventures.swisscom.com/beekeeper-to-join-forces-with-lumapps-in-deal-backed-by-bridgepoint/
+    publisher: Swisscom Ventures (Business Wire release)
+    kind: press
+    accessed: 2026-10-15
+  - id: lumapps
+    title: Beekeeper is now part of LumApps
+    url: https://www.lumapps.com/beekeeper
+    publisher: LumApps
+    kind: vendor
+    accessed: 2026-10-15
+  - id: baker-mckenzie
+    title: LumApps - legal due diligence for merger with Beekeeper
+    url: https://bakermckenzie.com/en/newsroom/2025/07/lumapps-legal-due-diligence-for-merger-with-beekeeper
+    publisher: Baker McKenzie
+    kind: press
+    accessed: 2026-10-15

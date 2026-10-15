@@ -1,0 +1,10 @@
+name: Email
+noun: email providers
+group: workplace
+icon: mail
+summary: Email hosting for individuals, custom domains and organisations.
+intro: >-
+  Email providers host your mailbox and, for business plans, your own domain. Privacy-focused
+  providers add encryption at rest or end-to-end encryption between users.
+related: [office-suites, calendars]
+added: 2026-10-15

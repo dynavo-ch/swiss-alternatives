@@ -1,0 +1,10 @@
+name: CRM
+noun: CRM systems
+group: business
+icon: contact
+summary: Manage contacts, deals and customer relationships.
+intro: >-
+  Customer relationship management (CRM) tools track contacts, companies, deals and
+  interactions.
+related: [invoicing, erp]
+added: 2026-10-15

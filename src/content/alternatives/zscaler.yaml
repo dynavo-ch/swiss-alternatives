@@ -1,0 +1,7 @@
+name: Zscaler
+vendor: Zscaler, Inc.
+vendorCountry: US
+summary: Cloud security platform for secure web gateway, zero-trust access and SASE services.
+website: 'https://www.zscaler.com'
+categories: [network-security]
+aliases: [Zscaler Internet Access, Zscaler Private Access, ZIA, ZPA]

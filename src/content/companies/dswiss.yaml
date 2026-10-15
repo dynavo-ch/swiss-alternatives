@@ -1,0 +1,66 @@
+name: DSwiss AG
+shortName: DSwiss
+type: company
+description: >-
+  Zurich-based software company founded in 2008 that develops and operates
+  SecureSafe, a platform for encrypted password and document storage and secure
+  data exchange.
+website: https://securesafe.com
+founded: 2008
+swissFounded:
+  value: yes
+  basis: vendor
+  source: launch-2011
+  note: DSwiss describes itself as founded in 2008 as an independent stock corporation based in Zurich.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid
+jurisdiction: CH
+registry:
+  uid: CHE-112.888.238
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE112888238
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: imprint
+  note: >-
+    According to the imprint, DSwiss AG is owned by its founders, members of the
+    management team, employees, the Zurich multi-family office Verium, Zühlke
+    Ventures and Zürcher Kantonalbank. All named institutional shareholders are
+    Swiss; no single controlling shareholder is published. In 2019 Verium was
+    reported as the largest shareholder.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: SecureSafe imprint
+    url: https://www.securesafe.com/imprint
+    publisher: DSwiss AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid
+    title: DSwiss AG (CHE-112.888.238) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE112888238
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: launch-2011
+    title: DSwiss bringt SecureSafe auf den Markt
+    url: https://www.prnewswire.com/news-releases/dswiss-bringt-securesafe-auf-den-markt-und-kombiniert-damit-verbesserten-online-speicher-mit-dem-beliebten-datainherit-dienst-132120988.html
+    publisher: DSwiss AG via PR Newswire
+    kind: press
+    accessed: 2026-10-15
+  - id: brand-2026
+    title: DSwiss AG unifies brands under SecureSafe
+    url: https://securesafe.com/news/securesafe-brand-unification-2026
+    publisher: DSwiss AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: verium-2019
+    title: Zürcher Family Office steigt gross bei Digitaltresor-Betreiber ein
+    url: https://www.finews.ch/news/finanzplatz/39118-dswiss-verium-tobias-christen-beteiligung
+    publisher: finews.ch
+    kind: press
+    accessed: 2026-10-15

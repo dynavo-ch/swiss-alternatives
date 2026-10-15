@@ -1,0 +1,11 @@
+name: VPN
+noun: VPN services
+group: security
+icon: shield-check
+summary: Encrypt your connection and route traffic through another location.
+intro: >-
+  Consumer VPNs encrypt traffic between your device and the provider's servers. Exit
+  servers are located worldwide, so "Swiss" here refers to the operating company and its
+  jurisdiction, not the location of every server.
+related: [password-managers, dns-resolvers]
+added: 2026-10-15

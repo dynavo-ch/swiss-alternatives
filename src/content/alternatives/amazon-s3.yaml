@@ -1,0 +1,8 @@
+name: Amazon S3
+vendor: Amazon Web Services, Inc.
+vendorCountry: US
+parent: Amazon.com, Inc.
+summary: Amazon's object storage service and the de facto standard S3 API.
+website: 'https://aws.amazon.com/s3/'
+categories: [object-storage, backup]
+aliases: [s3]

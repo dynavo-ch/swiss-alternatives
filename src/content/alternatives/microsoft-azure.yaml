@@ -1,0 +1,8 @@
+name: Microsoft Azure
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's cloud platform for compute, storage, databases and AI services.
+website: 'https://azure.microsoft.com'
+categories: [cloud-platforms, kubernetes, object-storage]
+aliases: [azure]
+popular: true

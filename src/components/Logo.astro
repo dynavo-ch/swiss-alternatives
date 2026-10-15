@@ -1,0 +1,66 @@
+---
+/**
+ * Swiss Alternatives mark: a Swiss cross framed by viewfinder brackets —
+ * "finding" something Swiss. Works in colour or monochrome (`mono`).
+ */
+import { site } from '~/config/site';
+
+interface Props {
+  variant?: 'full' | 'mark';
+  mono?: boolean;
+  size?: number;
+  class?: string;
+}
+
+const { variant = 'full', mono = false, size = 28, class: className } = Astro.props;
+---
+
+<span class:list={['logo', className, { 'logo--mono': mono }]}>
+  <svg
+    class="logo__mark"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path
+      d="M2 8V2h6M16 2h6v6M22 16v6h-6M8 22H2v-6"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="square"
+    ></path>
+    <path class="logo__cross" d="M10.2 6h3.6v4.2H18v3.6h-4.2V18h-3.6v-4.2H6v-3.6h4.2z"></path>
+  </svg>
+  {variant === 'full' && <span class="logo__word">{site.name}</span>}
+</span>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--c-ink);
+  }
+
+  .logo__mark {
+    flex: none;
+  }
+
+  .logo__cross {
+    fill: var(--c-red);
+  }
+
+  .logo--mono .logo__cross {
+    fill: currentColor;
+  }
+
+  .logo__word {
+    font-size: 1.0625rem;
+    font-weight: 660;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+</style>

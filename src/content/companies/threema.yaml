@@ -1,0 +1,95 @@
+name: Threema AG
+shortName: Threema
+type: company
+description: >-
+  Company based in Pfäffikon SZ (municipality of Freienbach) that develops the
+  Threema end-to-end encrypted messenger for private users and organisations.
+  Owned by German investment firm Comitis Capital since early 2026.
+website: https://threema.com
+founded: 2012
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    The app was released in December 2012 by three Swiss developers in Zurich;
+    Threema GmbH was set up in spring 2014. In July 2026 Threema GmbH was merged
+    into the former Threema Holding AG, which was renamed Threema AG.
+headquarters:
+  city: Pfäffikon SZ
+  canton: SZ
+  country: CH
+  basis: verified
+  source: uid
+jurisdiction: CH
+registry:
+  uid: CHE-487.082.806
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE487082806
+ownership:
+  swissOwned: no
+  parent: Comitis Capital GmbH
+  parentCountry: DE
+  basis: vendor
+  source: owners
+  note: >-
+    Frankfurt-based private equity firm Comitis Capital acquired Threema from
+    Afinum Management and the founders; the deal was announced in January 2026.
+    Afinum had held a majority stake since 2020, and the founders left the
+    company in 2024. Threema states that its headquarters, servers and
+    management remain in Switzerland.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About Threema
+    url: https://threema.com/en/about
+    publisher: Threema AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: owners
+    title: Who owns Threema?
+    url: https://threema.com/en/faq/owners
+    publisher: Threema AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Threema privacy policy
+    url: https://threema.com/en/privacy-policy
+    publisher: Threema AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid
+    title: Threema AG (CHE-487.082.806) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE487082806
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: uid-gmbh
+    title: Threema GmbH (CHE-221.440.104, deleted) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE221440104
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: sogc
+    title: Threema AG - commercial register extract and SOGC publications
+    url: https://www.moneyhouse.ch/en/company/threema-holding-ag-11629015751
+    publisher: Moneyhouse
+    kind: registry
+    accessed: 2026-10-15
+  - id: heise
+    title: Comitis Capital acquires Threema
+    url: https://www.heise.de/en/news/Comitis-Capital-acquires-Threema-11138748.html
+    publisher: heise online
+    kind: press
+    accessed: 2026-10-15
+  - id: srf
+    title: Threema setzt auch mit neuem Besitzer auf Swissness
+    url: https://www.srf.ch/news/wirtschaft/messenger-mit-datenschutz-threema-setzt-auch-mit-neuem-besitzer-auf-swissness
+    publisher: SRF
+    kind: press
+    accessed: 2026-10-15
+  - id: privacyguides
+    title: Another private equity firm acquires Threema
+    url: https://www.privacyguides.org/news/2026/01/16/another-private-equity-firm-acquires-threema/
+    publisher: Privacy Guides
+    kind: independent
+    accessed: 2026-10-15

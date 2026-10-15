@@ -1,0 +1,77 @@
+name: Calenso AG
+shortName: Calenso
+type: company
+description: >-
+  Software company in Rothenburg near Lucerne that develops the Calenso
+  appointment-booking platform. Part of the US group jrni Holdings, Inc. since
+  2025.
+website: https://calenso.com
+founded: 2016
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Calenso states it was founded in Lucerne in 2016 by three founders. The
+    current company, Calenso AG, was entered in the Lucerne commercial register
+    in May 2022 (seat Neuenkirch) and moved its seat to Rothenburg in 2023.
+headquarters:
+  city: Rothenburg
+  canton: LU
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-360.668.485
+  url: https://www.zefix.ch/en/search/entity/list/firm/1536238
+ownership:
+  swissOwned: no
+  parent: jrni Holdings, Inc.
+  parentCountry: US
+  basis: vendor
+  source: privacy
+  note: >-
+    Calenso's privacy policy states that Calenso is part of jrni Holdings, Inc.
+    The combination with the US customer-interaction platform JRNI and with Event
+    Farm was announced in early 2025; Calenso said its Lucerne team and brand
+    would remain. Since 2025 the board president and a board member entered in
+    the commercial register are US residents.
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: Calenso AG (CHE-360.668.485) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1536238
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: imprint
+    title: Impressum - Calenso
+    url: https://calenso.com/impressum
+    publisher: Calenso AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: about
+    title: Über uns - Calenso
+    url: https://calenso.com/ueber-uns/
+    publisher: Calenso AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Datenschutzerklärung - Calenso
+    url: https://calenso.com/datenschutzerklaerung
+    publisher: Calenso AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: netzwoche
+    title: Calenso wird Teil der JRNI-Gruppe
+    url: https://www.netzwoche.ch/news/2025-03-07/calenso-wird-teil-der-jrni-gruppe
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: itreseller
+    title: Calenso wird Teil der Jrni-Gruppe
+    url: https://www.itreseller.ch/Artikel/102695/Calenso_wird_Teil_der_Jrni-Gruppe.html
+    publisher: IT Reseller
+    kind: press
+    accessed: 2026-10-15

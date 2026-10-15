@@ -1,0 +1,319 @@
+---
+/**
+ * Search field used in the hero, the command palette and on /search/.
+ * Without JavaScript it is a plain GET form to /search/, which lists the
+ * complete A–Z index.
+ */
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+import { paths } from '~/lib/paths';
+
+interface Props {
+  variant: 'hero' | 'dialog' | 'page';
+  id: string;
+  initial?: string;
+}
+
+const { variant, id, initial = '' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const listId = `${id}-list`;
+---
+
+<div
+  class:list={['search', `search--${variant}`]}
+  data-search-inline={variant === 'hero' ? '' : variant === 'page' ? 'eager' : undefined}
+  data-search-mode={variant === 'page' ? 'page' : undefined}
+>
+  <form class="search__form" role="search" action={paths.search()} method="get">
+    <label for={id} class="visually-hidden">
+      {t('search.label')}
+    </label>
+    <Icon name="search" class="search__glass" />
+    <input
+      id={id}
+      class="search__input"
+      type="search"
+      name="q"
+      value={initial}
+      placeholder={variant === 'dialog' ? t('search.placeholderShort') : t('search.placeholder')}
+      autocomplete="off"
+      autocapitalize="off"
+      spellcheck="false"
+      enterkeyhint="search"
+    />
+    {variant === 'dialog' ? (
+      <button
+        type="button"
+        class="search__esc kbd"
+        data-search-close
+        aria-label={t('search.close')}
+      >
+        esc
+      </button>
+    ) : (
+      <button type="submit" class="search__submit btn btn--primary">
+        <span>{t('search.open')}</span>
+      </button>
+    )}
+  </form>
+  <div class="search__panel" hidden>
+    <div id={listId} role="listbox" aria-label={t('search.label')} class="search__list"></div>
+    {variant === 'dialog' && (
+      <div class="search__hints" aria-hidden="true">
+        <span>
+          <span class="kbd">↑</span>
+          <span class="kbd">↓</span> {t('search.hint.navigate')}
+        </span>
+        <span>
+          <span class="kbd">↵</span> {t('search.hint.open')}
+        </span>
+        <span>
+          <span class="kbd">esc</span> {t('search.hint.close')}
+        </span>
+      </div>
+    )}
+  </div>
+  <p class="visually-hidden" aria-live="polite" data-search-status></p>
+</div>
+
+<style is:global>
+  .search {
+    position: relative;
+  }
+
+  .search__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    background: var(--c-surface);
+    border: 1px solid var(--c-control);
+    border-radius: var(--r-2);
+    padding: 0 var(--s-2) 0 var(--s-4);
+    transition: border-color var(--t-fast) var(--ease);
+  }
+
+  .search__form:focus-within {
+    border-color: var(--c-ink);
+    box-shadow: 0 0 0 1px var(--c-ink);
+  }
+
+  .search__glass {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex: none;
+    color: var(--c-ink-3);
+  }
+
+  .search__input {
+    flex: 1;
+    min-width: 0;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    font-size: var(--fs-md);
+    outline: none;
+  }
+
+  /* The surrounding form shows the focus state. */
+  .search__input:focus-visible {
+    outline: none;
+  }
+
+  .search__input::placeholder {
+    color: var(--c-ink-3);
+  }
+
+  .search__input::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  .search--hero .search__form {
+    padding-left: var(--s-5);
+    border-color: var(--c-ink);
+  }
+
+  .search--hero .search__input {
+    height: 3.75rem;
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.1875rem);
+  }
+
+  .search--hero .search__glass {
+    width: 1.35rem;
+    height: 1.35rem;
+    color: var(--c-ink);
+  }
+
+  .search__submit {
+    min-height: 2.75rem;
+  }
+
+  @media (max-width: 30rem) {
+    .search--hero .search__submit {
+      display: none;
+    }
+    .search--hero .search__form {
+      padding-right: var(--s-3);
+    }
+  }
+
+  /* Panel ----------------------------------------------------------- */
+  .search--hero .search__panel {
+    position: absolute;
+    z-index: 40;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    max-height: min(26rem, 60vh);
+    overflow-y: auto;
+    background: var(--c-raised);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-2);
+    box-shadow: var(--shadow-pop);
+    padding: var(--s-2);
+    text-align: left;
+  }
+
+  .search--page .search__panel {
+    margin-top: var(--s-4);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+    padding: var(--s-2);
+  }
+
+  .search__group + .search__group {
+    margin-top: var(--s-2);
+    padding-top: var(--s-2);
+    border-top: 1px solid var(--c-line);
+  }
+
+  .search__group-label {
+    padding: var(--s-2) var(--s-3) var(--s-1);
+  }
+
+  .search__option {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: var(--s-3);
+    padding: var(--s-2) var(--s-3);
+    border-radius: var(--r-2);
+    text-decoration: none;
+    color: var(--c-ink);
+    scroll-margin: var(--s-2);
+  }
+
+  .search__option[aria-selected='true'] {
+    background: var(--c-sunken);
+    box-shadow: inset 2px 0 0 var(--c-red);
+  }
+
+  .search__icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    color: var(--c-ink-2);
+    background: var(--c-surface);
+  }
+
+  .search__icon svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .search__text {
+    display: grid;
+    min-width: 0;
+  }
+
+  .search__title {
+    font-weight: 580;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .search__title mark {
+    background: none;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--c-red);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+  }
+
+  .search__sub {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .search__type {
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--c-ink-3);
+    white-space: nowrap;
+  }
+
+  .search__count {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: var(--fs-sm);
+    font-weight: 560;
+    color: var(--c-red-ink);
+    white-space: nowrap;
+  }
+
+  .search__count svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    .search__type,
+    .search__count {
+      display: none;
+    }
+  }
+
+  .search__empty {
+    display: grid;
+    gap: var(--s-1);
+    padding: var(--s-6) var(--s-3);
+    color: var(--c-ink-3);
+  }
+
+  .search__empty strong {
+    color: var(--c-ink);
+  }
+
+  .search__hints {
+    display: flex;
+    gap: var(--s-4);
+    padding: var(--s-3) var(--s-4);
+    border-top: 1px solid var(--c-line);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .search__hints > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  @media (pointer: coarse) {
+    .search__hints {
+      display: none;
+    }
+  }
+</style>

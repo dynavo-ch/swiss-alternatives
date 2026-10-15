@@ -1,0 +1,6 @@
+name: Auth0
+vendor: Okta, Inc.
+vendorCountry: US
+summary: Customer identity platform for login, registration and authorisation in apps.
+website: 'https://auth0.com'
+categories: [iam, authentication]

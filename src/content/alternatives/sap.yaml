@@ -1,0 +1,7 @@
+name: SAP S/4HANA
+vendor: SAP SE
+vendorCountry: DE
+summary: SAP's ERP suite for finance, logistics, procurement and manufacturing.
+website: 'https://www.sap.com/products/erp/s4hana.html'
+categories: [erp]
+aliases: [sap erp, s/4hana, sap business one]

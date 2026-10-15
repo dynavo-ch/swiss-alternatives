@@ -1,0 +1,198 @@
+---
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { site } from '~/config/site';
+import { sponsors } from '~/config/sponsors';
+import { useTranslations } from '~/i18n';
+import { getDirectory } from '~/lib/data';
+import { formatDate } from '~/lib/format';
+import { paths } from '~/lib/paths';
+
+const t = useTranslations(Astro.currentLocale);
+const { buildDate } = await getDirectory();
+
+const columns = [
+  {
+    title: t('footer.explore'),
+    links: [
+      { href: paths.products(), label: t('nav.products') },
+      { href: paths.categories(), label: t('nav.categories') },
+      { href: paths.alternatives(), label: t('nav.alternatives') },
+      { href: paths.companies(), label: t('nav.companies') },
+      { href: paths.latest(), label: t('nav.latest') },
+    ],
+  },
+  {
+    title: t('footer.project'),
+    links: [
+      { href: paths.about(), label: t('nav.about') },
+      { href: paths.methodology(), label: t('nav.methodology') },
+      { href: paths.contribute(), label: t('nav.contribute') },
+      { href: paths.suggest(), label: t('nav.suggest') },
+      { href: paths.sponsors(), label: t('nav.sponsors') },
+    ],
+  },
+  {
+    title: t('footer.connect'),
+    links: [
+      { href: paths.contact(), label: t('nav.contact') },
+      { href: `mailto:${site.contactEmail}`, label: site.contactEmail },
+      { href: site.repository, label: t('footer.source'), external: true },
+      { href: paths.rss(), label: t('footer.rss') },
+      ...site.related
+        .filter((r) => r.footer)
+        .map((r) => ({ href: r.url, label: `${r.name} ↗`, external: true })),
+    ],
+  },
+  {
+    title: t('footer.legal'),
+    links: [
+      { href: paths.privacy(), label: t('footer.privacy') },
+      { href: paths.imprint(), label: t('footer.imprint') },
+    ],
+  },
+];
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <Logo />
+        <p class="footer__mission">{t('footer.mission')}</p>
+        <a href={paths.products()} class="arrow-link" data-random>
+          {t('common.random')}
+          <Icon name="arrow-right" />
+        </a>
+      </div>
+      {columns.map((column) => (
+        <nav class="footer__col" aria-label={column.title}>
+          <h2 class="label">{column.title}</h2>
+          <ul role="list">
+            {column.links.map((link) => (
+              <li>
+                <a href={link.href} rel={link.external ? 'noopener' : undefined}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      ))}
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__meta">
+        <span>
+          © {buildDate.getUTCFullYear()} {site.name}
+        </span>
+        <span>{t('footer.dataAsOf', { date: formatDate(buildDate, Astro.currentLocale) })}</span>
+        <span class="footer__private">
+          <span class="cross" aria-hidden="true"></span>
+          {t('footer.noTracking')}
+        </span>
+      </p>
+      {sponsors.length > 0 && (
+        <p class="footer__sponsors">
+          <a href={paths.sponsors()}>{t('nav.sponsors')}</a>:{' '}
+          {sponsors.map((s, i) => (
+            <>
+              {i > 0 && ', '}
+              <a href={s.url} rel="sponsored noopener">
+                {s.name}
+              </a>
+            </>
+          ))}
+        </p>
+      )}
+      <p class="footer__disclaimer">{t('footer.disclaimer')}</p>
+    </div>
+  </div>
+</footer>
+<style>
+  .footer {
+    margin-top: var(--section);
+    border-top: 1px solid var(--c-ink);
+    background: var(--c-bg);
+    font-size: var(--fs-sm);
+  }
+
+  .footer__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) repeat(4, minmax(0, 1fr));
+    gap: var(--s-8) var(--grid-gap);
+    padding-block: var(--s-12);
+  }
+
+  .footer__brand {
+    display: grid;
+    align-content: start;
+    justify-items: start;
+    gap: var(--s-4);
+    max-width: 26rem;
+  }
+
+  .footer__mission {
+    color: var(--c-ink-2);
+    font-size: var(--fs-base);
+  }
+
+  .footer__col h2 {
+    margin-bottom: var(--s-3);
+  }
+
+  .footer__col li + li {
+    margin-top: var(--s-2);
+  }
+
+  .footer__col a {
+    overflow-wrap: anywhere;
+    text-decoration: none;
+    color: var(--c-ink-2);
+  }
+
+  .footer__col a:hover {
+    color: var(--c-red-ink);
+    text-decoration: underline;
+  }
+
+  .footer__bottom {
+    display: grid;
+    gap: var(--s-2);
+    padding-block: var(--s-6) var(--s-8);
+    border-top: 1px solid var(--c-line);
+    color: var(--c-ink-3);
+  }
+
+  .footer__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2) var(--s-6);
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+  }
+
+  .footer__private {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+  }
+
+  .footer__disclaimer {
+    font-size: var(--fs-xs);
+  }
+
+  @media (max-width: 64rem) {
+    .footer__top {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .footer__brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 30rem) {
+    .footer__top {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

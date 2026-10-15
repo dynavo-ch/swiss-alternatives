@@ -1,0 +1,41 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+
+interface Props {
+  withLabel?: boolean;
+}
+const { withLabel = false } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+<button
+  type="button"
+  class:list={[
+    withLabel ? 'btn btn--ghost theme-toggle--label' : 'icon-btn',
+    'theme-toggle js-only',
+  ]}
+  data-theme-toggle
+  aria-pressed="false"
+  aria-label={withLabel ? undefined : t('theme.toggle')}
+  title={t('theme.toggle')}
+>
+  <Icon name="moon" class="theme-toggle__moon" />
+  <Icon name="sun" class="theme-toggle__sun" />
+  {withLabel && <span>{t('theme.toggle')}</span>}
+</button>
+
+<style is:global>
+  .theme-toggle[aria-pressed='true'] .theme-toggle__moon,
+  .theme-toggle[aria-pressed='false'] .theme-toggle__sun {
+    display: none;
+  }
+
+  .theme-toggle.icon-btn[aria-pressed='true'] {
+    color: var(--c-ink-2);
+  }
+
+  .theme-toggle.icon-btn[aria-pressed='true'] svg {
+    fill: none;
+  }
+</style>

@@ -1,0 +1,10 @@
+name: E-Signatures
+noun: e-signature services
+group: workplace
+icon: signature
+summary: Sign documents electronically, including qualified signatures under Swiss law.
+intro: >-
+  E-signature services collect legally binding signatures online. Under Swiss law
+  (ZertES), only a qualified electronic signature (QES) is equivalent to a handwritten one.
+related: [file-sharing]
+added: 2026-10-15

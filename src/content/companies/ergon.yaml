@@ -1,0 +1,77 @@
+name: Ergon Informatik AG
+shortName: Ergon
+type: company
+description: >-
+  Zurich-based software company, founded in 1984, that builds custom software
+  and develops the Airlock application-security and identity products.
+website: https://www.ergon.ch
+founded: 1984
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Ergon Informatik AG has been entered in the commercial register of the
+    canton of Zurich since 13 August 1984.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-103.638.369
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103638369
+ownership:
+  swissOwned: no
+  parent: Afinum (fund Afinum X)
+  parentCountry: DE
+  basis: vendor
+  source: afinum-press
+  note: >-
+    In January 2026 the private equity investor Afinum became majority
+    shareholder, replacing the founder and the long-standing anchor
+    shareholders; management and many employees remain shareholders. The
+    acquiring fund, Afinum X, is a German investment partnership managed by
+    Afinum Management GmbH in Munich, which also has a Zurich office (Afinum
+    Management AG). Airlock is a brand and product line of Ergon, not a
+    separate company.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Ergon Informatik AG (CHE-103.638.369) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103638369
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Ergon Informatik AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/ergon-informatik-ag-21450008791
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: afinum-press
+    title: Ergon Informatik AG gains a new majority shareholder in Afinum
+    url: https://www.airlock.com/fileadmin/content/07_Airlock-PDFs/Presse/250114_Ergon_press-release_majority-shareholder.pdf
+    publisher: Ergon Informatik AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: annual-2025
+    title: Ergon boosts turnover and gains significantly more new customers
+    url: https://www.ergon.ch/dam/jcr:65745384-732a-41db-98c7-81f93faf8838/Ergon%20Jahresmeldung%202025%20EN.pdf
+    publisher: Ergon Informatik AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: afinum-funds
+    title: Afinum funds
+    url: https://afinum.de/en/funds/
+    publisher: Afinum Management GmbH
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Airlock imprint
+    url: https://www.airlock.com/en/imprint
+    publisher: Ergon Informatik AG
+    kind: vendor
+    accessed: 2026-10-15

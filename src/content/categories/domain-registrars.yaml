@@ -1,0 +1,10 @@
+name: Domain Registrars
+noun: domain registrars
+group: cloud
+icon: at-sign
+summary: Register and manage .ch and international domain names and DNS.
+intro: >-
+  Domain registrars register domain names on your behalf and usually provide DNS hosting.
+  Registrars accredited for .ch and .li domains are listed by SWITCH.
+related: [web-hosting]
+added: 2026-10-15

@@ -1,0 +1,10 @@
+name: Network Security
+noun: network security services
+group: security
+icon: shield
+summary: Protection for networks, gateways and web applications.
+intro: >-
+  Network security products protect traffic and applications — from web application
+  firewalls to DNS-based threat blocking.
+related: [dns-resolvers, iam]
+added: 2026-10-15

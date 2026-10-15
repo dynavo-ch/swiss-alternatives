@@ -1,0 +1,7 @@
+name: Dropbox
+vendor: Dropbox, Inc.
+vendorCountry: US
+summary: Cloud storage and file synchronisation service with sharing and collaboration features.
+website: 'https://www.dropbox.com'
+categories: [cloud-storage, file-sharing]
+popular: true

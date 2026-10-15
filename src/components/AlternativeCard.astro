@@ -1,0 +1,149 @@
+---
+/** Card for a foreign product with the number of Swiss alternatives. */
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+import type { Alternative } from '~/lib/data';
+import { monogram } from '~/lib/format';
+
+interface Props {
+  alternative: Alternative;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { alternative, headingLevel: Heading = 'h3' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const count = alternative.products.length;
+const preview = alternative.products.slice(0, 4);
+---
+
+<article class="acard">
+  <p class="acard__vendor label">
+    {alternative.data.vendor} · {alternative.data.vendorCountry}
+  </p>
+  <Heading class="acard__name">
+    <a href={alternative.url} class="acard__link">
+      <span class="visually-hidden">{t('alt.srPrefix')} </span>
+      {alternative.name}
+    </a>
+  </Heading>
+  <div class="acard__foot">
+    <span class="acard__count">
+      <Icon name="arrow-right" />
+      {count > 0 ? t('count.swissAlternatives', { count }) : t('common.none')}
+    </span>
+    {preview.length > 0 && (
+      <span class="acard__stack" aria-hidden="true">
+        {preview.map(({ product }) =>
+          product.logo ? (
+            <span class="logo-tile logo-tile--sm logo-tile--img">
+              <Image src={product.logo} alt="" width={52} height={52} loading="lazy" />
+            </span>
+          ) : (
+            <span class="logo-tile logo-tile--mono logo-tile--sm">{monogram(product.name)}</span>
+          ),
+        )}
+      </span>
+    )}
+  </div>
+</article>
+
+<style>
+  .acard {
+    container-type: inline-size;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+    padding: var(--s-5);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+    transition: border-color var(--t-fast) var(--ease);
+  }
+
+  .acard:hover,
+  .acard:focus-within {
+    border-color: var(--c-ink);
+  }
+
+  .acard__name {
+    font-size: var(--fs-xl);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  .acard__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .acard__link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .acard__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    margin-top: auto;
+    padding-top: var(--s-4);
+  }
+
+  .acard__count {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-size: var(--fs-sm);
+    font-weight: 580;
+    color: var(--c-red-ink);
+  }
+
+  .acard__count :global(svg) {
+    width: 1rem;
+    height: 1rem;
+    transition: transform var(--t-fast) var(--ease);
+  }
+
+  .acard:hover .acard__count :global(svg) {
+    transform: translateX(3px);
+  }
+
+  .acard__stack {
+    display: flex;
+  }
+
+  @container (max-width: 12.5rem) {
+    .acard__name {
+      font-size: var(--fs-md);
+    }
+    .acard__vendor {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .acard__stack {
+      display: none;
+    }
+    .acard__foot {
+      padding-top: var(--s-2);
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .acard {
+      padding: var(--s-4);
+    }
+  }
+
+  .acard__stack .logo-tile {
+    --size: 1.625rem;
+    border: 2px solid var(--c-surface);
+    margin-left: -0.4rem;
+    font-size: 0.6rem;
+  }
+</style>

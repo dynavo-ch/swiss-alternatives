@@ -1,0 +1,10 @@
+name: Employee Communication
+noun: employee communication platforms
+group: communication
+icon: megaphone
+summary: Internal communication for frontline and distributed workforces.
+intro: >-
+  Employee communication platforms reach staff who do not sit at a desk — with news feeds,
+  chat, shift information and surveys in a mobile app.
+related: [team-chat]
+added: 2026-10-15

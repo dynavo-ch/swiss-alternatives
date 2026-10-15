@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schemas/categories.schema.json
+# Category template — copy to src/content/categories/<slug>.yaml.
+
+name: Example Category
+noun: example tools # plural, used in sentences: "Swiss example tools"
+group: workplace # id from src/content/groups.yaml
+icon: box # Lucide icon name — https://lucide.dev/icons
+summary: Short summary for cards (max 140 characters).
+intro: >-
+  One to three sentences shown at the top of the category page.
+related: [] # other category slugs
+added: 2026-01-01

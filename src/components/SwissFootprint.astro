@@ -1,0 +1,224 @@
+---
+/**
+ * The Swiss footprint table: headquarters, jurisdiction, ownership,
+ * development, hosting, data locations and infrastructure — each with its
+ * own state and provenance. This is deliberately not collapsed into a
+ * single "Swiss" yes/no.
+ */
+import FactValue from './FactValue.astro';
+import Footprint from './Footprint.astro';
+import { useTranslations } from '~/i18n';
+import type { Product } from '~/lib/data';
+import { cantonName, countryName, list } from '~/lib/format';
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const company = product.company;
+const c = company.data;
+const d = product.data;
+const hq = c.headquarters;
+const infra = d.swiss.infrastructure;
+
+const hqText = [
+  hq.city,
+  hq.canton ? `${cantonName(hq.canton)} (${hq.canton})` : undefined,
+  countryName(hq.country, locale),
+]
+  .filter(Boolean)
+  .join(', ');
+
+const parentText = c.ownership.parent
+  ? `${c.ownership.parent}${c.ownership.parentCountry ? ` · ${countryName(c.ownership.parentCountry, locale)}` : ''}`
+  : undefined;
+
+const ownershipValue = c.ownership.swissOwned;
+const ownershipText =
+  ownershipValue === 'unknown'
+    ? undefined
+    : `${t(`state.${ownershipValue}`)}${parentText ? ` — ${parentText}` : ''}`;
+
+const dataLocations = d.swiss.dataLocations.map((code) => countryName(code, locale));
+const infraValue = infra?.swissOwned ?? 'unknown';
+const infraText = infra?.provider
+  ? `${infra.provider}${infra.providerCountry ? ` · ${countryName(infra.providerCountry, locale)}` : ''}`
+  : undefined;
+
+type Row = {
+  key: string;
+  label: string;
+  question?: string;
+  value: string;
+  text?: string | undefined;
+  basis?: 'verified' | 'vendor' | 'inferred' | undefined;
+  source?: string | undefined;
+  note?: string | undefined;
+  company?: boolean;
+};
+
+const rows: Row[] = [
+  {
+    key: 'headquarters',
+    label: t('footprint.headquarters'),
+    question: t('footprint.headquarters.q'),
+    value: product.footprint.headquarters,
+    text: hqText,
+    basis: hq.basis,
+    source: hq.source,
+    note: hq.note,
+    company: true,
+  },
+  {
+    key: 'jurisdiction',
+    label: t('company.jurisdiction'),
+    value: c.jurisdiction ? (c.jurisdiction === 'CH' ? 'yes' : 'no') : 'unknown',
+    text: c.jurisdiction ? countryName(c.jurisdiction, locale) : undefined,
+    basis: hq.basis,
+    source: hq.source,
+    note: c.registry?.uid ? `UID ${c.registry.uid}` : undefined,
+    company: true,
+  },
+  {
+    key: 'ownership',
+    label: t('footprint.ownership'),
+    question: t('footprint.ownership.q'),
+    value: ownershipValue,
+    text: ownershipText,
+    basis: c.ownership.basis,
+    source: c.ownership.source,
+    note: c.ownership.note,
+    company: true,
+  },
+  {
+    key: 'development',
+    label: t('footprint.development'),
+    question: t('footprint.development.q'),
+    value: d.swiss.developed?.value ?? 'unknown',
+    basis: d.swiss.developed?.basis,
+    source: d.swiss.developed?.source,
+    note: d.swiss.developed?.note,
+  },
+  {
+    key: 'hosting',
+    label: t('footprint.hosting'),
+    question: t('footprint.hosting.q'),
+    value: d.swiss.hosted?.value ?? 'unknown',
+    text:
+      d.swiss.hosted && d.swiss.hosted.value !== 'unknown' && dataLocations.length
+        ? `${t(`state.${d.swiss.hosted.value}`)} — ${list(dataLocations, locale)}`
+        : undefined,
+    basis: d.swiss.hosted?.basis,
+    source: d.swiss.hosted?.source,
+    note: d.swiss.hosted?.note,
+  },
+  {
+    key: 'infrastructure',
+    label: t('footprint.infrastructure'),
+    question: t('footprint.infrastructure.q'),
+    value: infraValue,
+    text:
+      infraValue !== 'unknown' && infraText
+        ? `${t(`state.${infraValue}`)} — ${infraText}`
+        : undefined,
+    basis: infra?.basis,
+    source: infra?.source,
+    note: [infra?.note, infra?.facility ? `${t('product.facility')}: ${infra.facility}` : undefined]
+      .filter(Boolean)
+      .join(' '),
+  },
+];
+---
+
+<div class="fp">
+  <div class="fp__summary">
+    <Footprint footprint={product.footprint} size="lg" />
+    <p>
+      <strong>{t(`class.${product.classification}`)}.</strong>{' '}
+      {t(`class.${product.classification}.desc`)}
+    </p>
+  </div>
+  <dl class="fp__table">
+    {rows.map((row) => (
+      <div class="fp__row">
+        <dt>
+          <span class="fp__label">{row.label}</span>
+          {row.question && <span class="fp__q">{row.question}</span>}
+        </dt>
+        <dd>
+          <FactValue
+            value={row.value}
+            text={row.text}
+            basis={row.basis}
+            source={row.source}
+            sources={row.company ? c.sources : d.sources}
+            anchorPrefix={row.company ? 'csrc' : 'src'}
+            note={row.note || undefined}
+          />
+        </dd>
+      </div>
+    ))}
+  </dl>
+</div>
+
+<style>
+  .fp__summary {
+    display: flex;
+    align-items: center;
+    gap: var(--s-4);
+    padding: var(--s-4) var(--s-5);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2) var(--r-2) 0 0;
+    background: var(--c-sunken);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-2);
+  }
+
+  .fp__summary strong {
+    color: var(--c-ink);
+  }
+
+  .fp__table {
+    border: 1px solid var(--c-line);
+    border-top: 0;
+    border-radius: 0 0 var(--r-2) var(--r-2);
+    background: var(--c-surface);
+  }
+
+  .fp__row {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    gap: var(--s-2) var(--s-6);
+    padding: var(--s-4) var(--s-5);
+  }
+
+  .fp__row + .fp__row {
+    border-top: 1px solid var(--c-line);
+  }
+
+  .fp__label {
+    display: block;
+    font-weight: 600;
+  }
+
+  .fp__q {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: var(--fs-xs);
+    line-height: 1.45;
+    color: var(--c-ink-3);
+  }
+
+  @media (max-width: 40rem) {
+    .fp__row {
+      grid-template-columns: 1fr;
+    }
+    .fp__summary {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

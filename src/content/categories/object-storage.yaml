@@ -1,0 +1,11 @@
+name: Object Storage
+noun: object storage services
+group: cloud
+icon: database
+summary: S3-compatible storage for files, backups, media and application data.
+intro: >-
+  Object storage keeps large amounts of unstructured data behind an HTTP API, most often
+  compatible with Amazon S3. Data location is usually chosen per bucket, so check which
+  zones are in Switzerland.
+related: [backup, cloud-platforms]
+added: 2026-10-15

@@ -1,0 +1,75 @@
+name: Divio AG
+shortName: Divio
+type: company
+description: >-
+  Zurich-registered company that operates the Divio platform-as-a-service. It is
+  a wholly owned subsidiary of Divio Technologies AB, headquartered in Stockholm.
+website: https://www.divio.com
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    Registered in the commercial register of the canton of Zurich, previously
+    under the name Divio GmbH; VAT-registered in Switzerland since May 2006. The
+    founding year itself was not confirmed from the sources consulted.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-102.142.700
+  url: https://www.zefix.ch/en/search/entity/list/firm/608875
+ownership:
+  swissOwned: no
+  parent: Divio Technologies AB (publ)
+  parentCountry: SE
+  basis: vendor
+  source: report-2023q4
+  note: >-
+    According to the group's Q4 2023 report, Divio AG is a wholly owned
+    subsidiary of the Swedish parent Divio Technologies AB (publ), and the
+    group's operating activities are conducted mainly within Divio AG. The
+    parent is listed on Nasdaq First North Growth Market (DIVIO B) and states
+    that its headquarters are in Stockholm, with offices in Zurich and New York.
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: Divio AG (CHE-102.142.700) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/608875
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Divio AG (CHE-102.142.700) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE102142700
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: site-notice
+    title: Site notice - Divio
+    url: https://www.divio.com/terms-and-policies/site-notice/
+    publisher: Divio Technologies AB
+    kind: vendor
+    accessed: 2026-10-15
+  - id: terms
+    title: Terms of Service - Divio
+    url: https://www.divio.com/terms-and-policies/terms/
+    publisher: Divio AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: investors
+    title: Investor Relations - Divio
+    url: https://www.divio.com/company/investors/
+    publisher: Divio Technologies AB
+    kind: vendor
+    accessed: 2026-10-15
+  - id: report-2023q4
+    title: Divio Technologies AB (publ) - Q4 2023 report
+    url: https://storage.mfn.se/ed54ca25-550f-4dc0-b963-812d450d4080/2023q4-report-divio.pdf
+    publisher: Divio Technologies AB
+    kind: vendor
+    accessed: 2026-10-15

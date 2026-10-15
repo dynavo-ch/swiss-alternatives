@@ -1,0 +1,186 @@
+---
+/**
+ * Root layout: document head (SEO, social, theme bootstrap), header, footer,
+ * search dialog and comparison tray.
+ */
+import interLatin from '@fontsource-variable/inter/files/inter-latin-opsz-normal.woff2?url';
+import '~/styles/tokens.css';
+import '~/styles/base.css';
+import '~/styles/components.css';
+import CompareTray from '~/components/CompareTray.astro';
+import InlineScript from '~/components/InlineScript.astro';
+import Footer from '~/components/Footer.astro';
+import Header from '~/components/Header.astro';
+import SearchDialog from '~/components/SearchDialog.astro';
+import { site } from '~/config/site';
+import { localeTags } from '~/i18n/config';
+import { clientStrings, resolveLocale, useTranslations } from '~/i18n';
+import { sha256, shortcutLabel, themeBootstrap } from '~/lib/inline-scripts';
+import { absolute, type JsonLd } from '~/lib/seo';
+
+interface Props {
+  /** Page title without the site suffix. Omit on the home page. */
+  title?: string;
+  /** Full document title override (used by the home page). */
+  documentTitle?: string;
+  description: string;
+  /** Canonical path; defaults to the current path. */
+  canonical?: string;
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: JsonLd | JsonLd[];
+  ogType?: 'website' | 'article';
+}
+
+const {
+  title,
+  documentTitle,
+  description,
+  canonical = Astro.url.pathname,
+  image = '/og-default.png',
+  noindex = false,
+  jsonLd,
+  ogType = 'website',
+} = Astro.props;
+
+// Register hashes of all inline scripts before <head> is rendered.
+for (const code of [themeBootstrap, shortcutLabel]) Astro.csp?.insertScriptHash(sha256(code));
+
+const analytics = site.analytics;
+if (analytics) Astro.csp?.insertScriptResource(new URL(analytics.src).origin);
+
+const locale = resolveLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const fullTitle = documentTitle ?? (title ? `${title} · ${site.name}` : site.name);
+const canonicalUrl = absolute(canonical);
+const imageUrl = absolute(image);
+const ld = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+const strings = clientStrings(locale, [
+  'fav.add',
+  'fav.remove',
+  'compare.add',
+  'compare.remove',
+  'compare.limit',
+  'common.linkCopied',
+  'common.copied',
+  'search.empty',
+  'search.emptyHint',
+  'search.suggestLink',
+  'search.tryLabel',
+  'search.results',
+  'search.type.alternative',
+  'search.type.product',
+  'search.type.category',
+  'search.type.company',
+  'search.group.alternative',
+  'search.group.product',
+  'search.group.category',
+  'search.group.company',
+  'count.products',
+  'count.swissAlternatives',
+  'filter.showing',
+  'filter.apply',
+  'filter.clear',
+]);
+---
+
+<!doctype html>
+<html lang={localeTags[locale]} class="no-js" data-compare-limit={site.compareLimit}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <InlineScript code={themeBootstrap} />
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0f10" media="(prefers-color-scheme: dark)" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${site.name} — ${t('nav.latest')}`}
+      href="/latest/rss.xml"
+    />
+    <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title ?? fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={localeTags[locale]?.replace('-', '_')} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title ?? fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
+    {ld.map((data) => (
+      <script type="application/ld+json" set:html={JSON.stringify(data)} />
+    ))}
+    <script type="application/json" id="sa-i18n" set:html={JSON.stringify(strings)} />
+    {analytics && (
+      <script
+        is:inline
+        defer
+        src={analytics.src}
+        data-domain={
+          analytics.provider === 'plausible' ? (analytics.domain ?? site.domain) : undefined
+        }
+        data-website-id={analytics.provider === 'umami' ? analytics.websiteId : undefined}
+      />
+    )}
+    <slot name="head" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">
+      {t('nav.skip')}
+    </a>
+    <Header />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+    <SearchDialog />
+    <CompareTray />
+    <script>
+      import '~/scripts/app';
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  .skip-link {
+    position: absolute;
+    z-index: 100;
+    top: var(--s-2);
+    left: var(--s-2);
+    padding: var(--s-2) var(--s-4);
+    background: var(--c-ink);
+    color: var(--c-inverse);
+    border-radius: var(--r-2);
+    font-weight: 600;
+    text-decoration: none;
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: none;
+  }
+
+  main:focus {
+    outline: none;
+  }
+</style>

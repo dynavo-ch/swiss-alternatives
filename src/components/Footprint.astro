@@ -1,0 +1,32 @@
+---
+/**
+ * Five-cell Swiss footprint indicator:
+ * headquarters · ownership · development · hosting · infrastructure.
+ */
+import { useTranslations } from '~/i18n';
+import { FOOTPRINT_DIMENSIONS, type Footprint } from '~/lib/signals';
+
+interface Props {
+  footprint: Footprint;
+  size?: 'sm' | 'lg';
+}
+
+const { footprint, size = 'sm' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const stateLabel = (state: string) =>
+  state === 'unknown' ? t('state.unknownShort') : t(`state.${state as 'yes'}`);
+const summary = FOOTPRINT_DIMENSIONS.map(
+  (d) => `${t(`footprint.${d}`)}: ${stateLabel(footprint[d])}`,
+).join(', ');
+---
+
+<span
+  class:list={['footprint', size === 'lg' && 'footprint--lg']}
+  role="img"
+  aria-label={t('footprint.aria', { summary })}
+  title={summary}
+>
+  {FOOTPRINT_DIMENSIONS.map((d) => (
+    <span class="footprint__cell" data-state={footprint[d]} />
+  ))}
+</span>

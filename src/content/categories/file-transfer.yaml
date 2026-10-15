@@ -1,0 +1,10 @@
+name: File Transfer
+noun: file transfer services
+group: workplace
+icon: send
+summary: Send large files by link, without a shared folder.
+intro: >-
+  File transfer services upload a file once and send a time-limited download link —
+  the classic use case of WeTransfer.
+related: [file-sharing, cloud-storage]
+added: 2026-10-15

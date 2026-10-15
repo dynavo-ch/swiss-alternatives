@@ -1,0 +1,10 @@
+name: Web Analytics
+noun: web analytics tools
+group: ai
+icon: chart-line
+summary: Measure website traffic and audiences.
+intro: >-
+  Web analytics tools measure visits, referrers and conversions. Privacy-friendly tools
+  avoid cookies and personal data, which can remove the need for a consent banner.
+related: []
+added: 2026-10-15

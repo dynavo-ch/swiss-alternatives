@@ -1,0 +1,10 @@
+name: Calendars
+noun: calendar services
+group: workplace
+icon: calendar
+summary: Hosted calendars with sharing, invitations and device sync.
+intro: >-
+  Calendar services store events and sync them across devices, usually via CalDAV or the
+  provider's own apps.
+related: [email, scheduling]
+added: 2026-10-15

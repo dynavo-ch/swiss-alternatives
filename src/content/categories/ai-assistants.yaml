@@ -1,0 +1,11 @@
+name: AI Assistants
+noun: AI assistants
+group: ai
+icon: bot
+summary: Chat assistants for writing, research and everyday questions.
+intro: >-
+  AI assistants answer questions, draft text and summarise documents using large language
+  models. Where prompts are processed and whether they are used for training differs
+  between services.
+related: [language-models]
+added: 2026-10-15

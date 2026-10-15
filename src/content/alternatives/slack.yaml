@@ -1,0 +1,8 @@
+name: Slack
+vendor: Slack Technologies, LLC
+vendorCountry: US
+parent: Salesforce, Inc.
+summary: Team chat platform with channels, threads and integrations.
+website: 'https://slack.com'
+categories: [team-chat]
+popular: true

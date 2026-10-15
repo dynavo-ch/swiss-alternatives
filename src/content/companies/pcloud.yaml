@@ -1,0 +1,87 @@
+name: pCloud International AG
+shortName: pCloud
+type: company
+description: >-
+  Cloud storage provider registered in Baar (canton of Zug), founded in 2013 by a
+  Bulgarian team. Customer data is stored in Luxembourg or the United States.
+website: https://www.pcloud.com
+founded: 2013
+swissFounded:
+  value: unknown
+  basis: inferred
+  source: wikipedia
+  note: >-
+    pCloud gives 2013 as its founding year and Wikipedia states it was founded in
+    Switzerland; the earlier Swiss entity pCloud AG (CHE-291.350.765) was entered
+    in the Zug commercial register in October 2014. The founding team was
+    Bulgarian, and the location of the 2013 founding could not be confirmed.
+headquarters:
+  city: Baar
+  canton: ZG
+  country: CH
+  basis: verified
+  source: uid
+jurisdiction: CH
+registry:
+  uid: CHE-404.425.843
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE404425843
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: sogc
+  note: >-
+    The shareholders of pCloud International AG and pCloud AG are not published.
+    The contracting entity pCloud International AG was registered in July 2022;
+    pCloud AG, registered in 2014, is at the same address. Bulgarian business
+    media reported USD 3 million in funding in 2015; current ownership is not
+    disclosed.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About pCloud
+    url: https://www.pcloud.com/company/about.html
+    publisher: pCloud International AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: terms
+    title: pCloud terms and conditions
+    url: https://www.pcloud.com/terms_and_conditions.html
+    publisher: pCloud International AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid
+    title: pCloud International AG (CHE-404.425.843) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE404425843
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: uid-pcloud-ag
+    title: pCloud AG (CHE-291.350.765) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE291350765
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: sogc
+    title: pCloud International AG - commercial register extract
+    url: https://www.moneyhouse.ch/en/company/pcloud-international-ag-18468420081
+    publisher: Moneyhouse
+    kind: registry
+    accessed: 2026-10-15
+  - id: sogc-pcloud-ag
+    title: pCloud AG - commercial register extract
+    url: https://www.moneyhouse.ch/it/company/pcloud-ag-12786552821
+    publisher: Moneyhouse
+    kind: registry
+    accessed: 2026-10-15
+  - id: capital-2015
+    title: Създадената от българи pCloud получи 3 млн. долара финансиране
+    url: https://www.capital.bg/biznes/startup/2015/08/13/2589985_suzdadenata_ot_bulgari_pcloud_poluchi_3_mln_dolara/
+    publisher: Capital
+    kind: press
+    accessed: 2026-10-15
+  - id: wikipedia
+    title: pCloud
+    url: https://en.wikipedia.org/wiki/PCloud
+    publisher: Wikipedia
+    kind: independent
+    accessed: 2026-10-15

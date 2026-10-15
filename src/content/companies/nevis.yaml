@@ -1,0 +1,93 @@
+name: Nevis Security AG
+shortName: Nevis
+type: company
+description: >-
+  Zurich-based software company, spun off from AdNovum and independent since
+  2020, that develops customer identity and access management and
+  authentication products.
+website: https://www.nevis.net
+founded: 2019
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    NEVIS Security AG was entered in the commercial register of the canton of
+    Zurich on 13 December 2019. The Nevis security suite was previously a
+    business unit of the Zurich software company AdNovum Informatik AG and has
+    operated as an independent company since the start of 2020.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-299.693.105
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE299693105
+ownership:
+  swissOwned: yes
+  parent: IHAG Holding AG
+  parentCountry: CH
+  basis: verified
+  source: itreseller-spinoff
+  note: >-
+    The commercial register does not publish shareholders. When AdNovum spun
+    off Nevis in December 2019, IT-Reseller reported that the Nevis group
+    remained owned by IHAG Holding, and KuppingerCole's October 2024 report
+    still describes Nevis as a private company owned by IHAG Holding. An IHAG
+    Holding investment director sits on the Nevis board; Nevis describes IHAG
+    as a family-owned group of companies. IHAG Holding AG is registered in
+    Zurich. No later change of control was found. Nevis has subsidiaries in
+    Germany (Berlin) and Hungary (Budapest) and a branch in London.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: NEVIS Security AG (CHE-299.693.105) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE299693105
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: NEVIS Security AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/nevis-security-ag-1215849041
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: itreseller-spinoff
+    title: Adnovum stellt sich neu auf, entlässt Nevis in die Unabhängigkeit
+    url: https://www.itreseller.ch/Artikel/90592/Adnovum_stellt_sich_neu_auf_entlaesst_Nevis_in_die_Unabhaengigkeit.html
+    publisher: IT-Reseller
+    kind: press
+    accessed: 2026-10-15
+  - id: kuppingercole
+    title: Nevis Identity Suite and Authentication Cloud - Executive View
+    url: https://www.kuppingercole.com/research/ev81371/nevis-identity-suite-and-authentication-cloud
+    publisher: KuppingerCole Analysts AG
+    kind: independent
+    accessed: 2026-10-15
+  - id: management
+    title: Nevis management team and board of directors
+    url: https://www.nevis.net/en/management-team
+    publisher: Nevis Security AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: ihag
+    title: IHAG Holding AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/ihag-holding-ag-14582598221
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: legal-disclosure
+    title: Legal disclosure
+    url: https://www.nevis.net/en/legal-disclosure
+    publisher: Nevis Security AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: iso-certificate
+    title: ISO/IEC 27001:2022 certificate, NEVIS Security AG
+    url: https://www.nevis.net/hubfs/2023/Images/ISO/NEVIS%20AG%20-%20IWS%20Certificate_2024.pdf
+    publisher: IWS Solutions Ltd.
+    kind: independent
+    accessed: 2026-10-15

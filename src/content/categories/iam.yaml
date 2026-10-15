@@ -1,0 +1,10 @@
+name: Identity & Access Management
+noun: IAM platforms
+group: security
+icon: user-check
+summary: Login, single sign-on, user management and access control.
+intro: >-
+  Identity and access management (IAM) products handle registration, login, single
+  sign-on and authorisation for employees or customers.
+related: [authentication]
+added: 2026-10-15

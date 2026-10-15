@@ -1,0 +1,9 @@
+name: Scheduling
+noun: scheduling tools
+group: workplace
+icon: calendar-check
+summary: Find meeting times, run polls and offer booking pages.
+intro: >-
+  Scheduling tools help groups agree on a date or let others book time in your calendar.
+related: [calendars]
+added: 2026-10-15

@@ -1,0 +1,34 @@
+---
+/**
+ * Signal badge. With `interactive`, the badge is focusable and reveals its
+ * definition in a tooltip on hover and keyboard focus.
+ */
+import { useTranslations } from '~/i18n';
+import { SWISS_SIGNALS, type SignalKey } from '~/lib/signals';
+
+interface Props {
+  signal: SignalKey;
+  interactive?: boolean;
+}
+
+const { signal, interactive = false } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const swiss = SWISS_SIGNALS.includes(signal);
+const label = t(`signal.${signal}`);
+const description = t(`signal.${signal}.desc`);
+---
+
+{interactive ? (
+  <span class:list={['badge', 'has-tip', swiss ? 'badge--swiss' : 'badge--neutral']} tabindex="0">
+    {swiss && <span class="cross" aria-hidden="true" />}
+    {label}
+    <span class="tip" role="tooltip">
+      {description}
+    </span>
+  </span>
+) : (
+  <span class:list={['badge', swiss ? 'badge--swiss' : 'badge--neutral']} title={description}>
+    {swiss && <span class="cross" aria-hidden="true" />}
+    {label}
+  </span>
+)}

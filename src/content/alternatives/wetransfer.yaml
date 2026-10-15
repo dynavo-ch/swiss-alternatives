@@ -1,0 +1,8 @@
+name: WeTransfer
+vendor: WeTransfer B.V.
+vendorCountry: NL
+parent: Bending Spoons S.p.A.
+summary: Service for sending large files by download link.
+website: 'https://wetransfer.com'
+categories: [file-transfer]
+popular: true

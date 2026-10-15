@@ -1,0 +1,75 @@
+name: Akenes SA
+shortName: Exoscale
+type: company
+description: >-
+  Lausanne-based company that operates the Exoscale cloud platform. It is a
+  member of A1 Digital, part of the Austrian A1 Telekom Austria Group.
+website: https://www.exoscale.com
+founded: 2011
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the Vaud commercial register on 31 October 2011; the registered
+    seat moved from Crissier to Lausanne in January 2019.
+headquarters:
+  city: Lausanne
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-423.524.322
+  url: https://www.zefix.ch/en/search/entity/list/firm/1037419
+ownership:
+  swissOwned: no
+  parent: A1 Digital International GmbH (A1 Telekom Austria Group)
+  parentCountry: AT
+  basis: vendor
+  source: about
+  note: >-
+    Exoscale is a trademark of Akenes SA, which describes itself as a member of
+    A1 Digital, part of A1 Telekom Austria Group. A1 Digital acquired a majority
+    stake in 2017, including the shares of Swisscom Ventures and Anaroll
+    Holding. Telekom Austria AG is listed in Vienna; at the end of 2025 América
+    Móvil (Mexico) held 60.9% and the Republic of Austria, via ÖBAG, 28.4%.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About Us - Exoscale
+    url: https://www.exoscale.com/about-us/
+    publisher: Akenes SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: contact
+    title: Contact Exoscale
+    url: https://www.exoscale.com/contact/
+    publisher: Akenes SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: Akenes SA (CHE-423.524.322) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1037419
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Akenes SA, Lausanne - commercial register data
+    url: https://www.moneyhouse.ch/en/company/akenes-sa-1785861931
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: acquisition
+    title: Telekom Austria übernimmt Exoscale
+    url: https://www.netzwoche.ch/news/2017-09-01/telekom-austria-uebernimmt-exoscale
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: a1-annual-report
+    title: Annual Financial Report 2025, Telekom Austria AG
+    url: https://a1.com/wp-content/uploads/sites/6/2026/05/A1-Group-Annual-financial-report-2025.pdf
+    publisher: Telekom Austria AG
+    kind: vendor
+    accessed: 2026-10-15

@@ -1,0 +1,10 @@
+name: Authentication & MFA
+noun: authentication platforms
+group: security
+icon: fingerprint
+summary: Multi-factor authentication, passkeys and fraud-resistant login.
+intro: >-
+  Authentication platforms add strong, phishing-resistant login and transaction
+  confirmation to apps and websites — typically via SDKs and APIs.
+related: [iam, password-managers]
+added: 2026-10-15

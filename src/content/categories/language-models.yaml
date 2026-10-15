@@ -1,0 +1,10 @@
+name: Language Models
+noun: language models
+group: ai
+icon: brain
+summary: Large language models you can download, run or build on.
+intro: >-
+  Large language models (LLMs) power AI assistants and applications. Open-weight models can
+  be run on your own infrastructure, which keeps prompts and data in a location you choose.
+related: [ai-assistants]
+added: 2026-10-15

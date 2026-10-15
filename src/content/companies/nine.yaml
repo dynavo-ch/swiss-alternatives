@@ -1,0 +1,51 @@
+name: Nine Internet Solutions AG
+shortName: Nine
+type: company
+description: >-
+  Zurich-based cloud and managed hosting provider founded in 2000, operating
+  its own infrastructure in two data centres in the canton of Zurich.
+website: https://www.nine.ch
+founded: 2000
+swissFounded:
+  value: yes
+  basis: vendor
+  source: llms
+  note: Founded in 2000; incorporated as a stock corporation (AG) on 5 July 2002.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-109.656.377
+  url: https://www.zefix.ch/en/search/entity/list/firm/679768
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: self-declaration
+  note: >-
+    Nine states that it is 100 percent employee-owned (self-declaration as of
+    September 2026). Founder Thomas Hug is CEO. A Canadian subsidiary, Nine
+    Internet Solutions Ltd., is wholly owned by the Swiss company.
+lastVerified: 2026-10-15
+sources:
+  - id: self-declaration
+    title: Disclaimer and company self-declaration - Nine
+    url: https://www.nine.ch/en/disclaimer/
+    publisher: Nine Internet Solutions AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: llms
+    title: Nine - company and product overview (llms-full.txt)
+    url: https://www.nine.ch/en/llms-full.txt
+    publisher: Nine Internet Solutions AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: zefix
+    title: Nine Internet Solutions AG (CHE-109.656.377) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/679768
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

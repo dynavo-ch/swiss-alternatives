@@ -1,0 +1,80 @@
+---
+/**
+ * Editorial section heading: numbered mono label, title, optional lead and
+ * an optional "view all" link aligned to the right.
+ */
+import Icon from './Icon.astro';
+
+interface Props {
+  number?: number | string;
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  href?: string;
+  linkLabel?: string;
+  id?: string;
+  level?: 'h2' | 'h3';
+}
+
+const { number, eyebrow, title, lead, href, linkLabel, id, level: Heading = 'h2' } = Astro.props;
+const num = typeof number === 'number' ? String(number).padStart(2, '0') : number;
+---
+
+<header class="shead">
+  <div class="shead__main">
+    {(num || eyebrow) && (
+      <p class="shead__eyebrow label">
+        {num && <span class="shead__num">{num}</span>}
+        {eyebrow}
+      </p>
+    )}
+    <Heading class="shead__title h2" id={id}>
+      {title}
+    </Heading>
+    {lead && <p class="shead__lead">{lead}</p>}
+  </div>
+  {href && linkLabel && (
+    <a href={href} class="arrow-link shead__link">
+      {linkLabel}
+      <Icon name="arrow-right" />
+    </a>
+  )}
+</header>
+
+<style>
+  .shead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s-4) var(--s-8);
+    flex-wrap: wrap;
+    margin-bottom: var(--s-8);
+    padding-top: var(--s-4);
+    border-top: 1px solid var(--c-ink);
+  }
+
+  .shead__main {
+    max-width: 48rem;
+  }
+
+  .shead__eyebrow {
+    display: flex;
+    gap: var(--s-3);
+    margin-bottom: var(--s-3);
+  }
+
+  .shead__num {
+    color: var(--c-red-ink);
+  }
+
+  .shead__lead {
+    margin-top: var(--s-3);
+    color: var(--c-ink-2);
+    font-size: var(--fs-md);
+    max-width: 60ch;
+  }
+
+  .shead__link {
+    flex: none;
+  }
+</style>

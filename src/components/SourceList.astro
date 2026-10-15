@@ -1,0 +1,75 @@
+---
+import { useTranslations } from '~/i18n';
+import type { Source } from '~/lib/data';
+import { displayHost, formatDate, isoDate } from '~/lib/format';
+
+interface Props {
+  sources: Source[];
+  anchorPrefix?: string;
+}
+
+const { sources, anchorPrefix = 'src' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+<ol class="sources" role="list">
+  {sources.map((source, i) => (
+    <li id={`${anchorPrefix}-${source.id}`} class="sources__item">
+      <span class="sources__num mono tnum">[{i + 1}]</span>
+      <div>
+        <a href={source.url} rel="noopener nofollow" class="sources__title">
+          {source.title}
+        </a>
+        <p class="sources__meta">
+          <span class="basis">{t(`source.kind.${source.kind}`)}</span>
+          <span>{source.publisher ?? displayHost(source.url)}</span>
+          {source.accessed && (
+            <span>
+              {t('common.lastVerified')}{' '}
+              <time datetime={isoDate(source.accessed)}>
+                {formatDate(source.accessed, Astro.currentLocale)}
+              </time>
+            </span>
+          )}
+        </p>
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .sources__item {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: var(--s-2);
+    padding: var(--s-3) 0;
+    border-bottom: 1px solid var(--c-line);
+    scroll-margin-top: calc(var(--header-h) + var(--s-8));
+  }
+
+  .sources__item:target {
+    background: var(--c-red-tint);
+    box-shadow:
+      -0.5rem 0 0 var(--c-red-tint),
+      0.5rem 0 0 var(--c-red-tint);
+  }
+
+  .sources__num {
+    color: var(--c-ink-3);
+    font-size: var(--fs-sm);
+  }
+
+  .sources__title {
+    font-weight: 540;
+    overflow-wrap: anywhere;
+  }
+
+  .sources__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1) var(--s-3);
+    margin-top: var(--s-1);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+</style>

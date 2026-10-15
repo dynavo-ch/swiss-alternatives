@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+import { paths } from '~/lib/paths';
+
+const t = useTranslations(Astro.currentLocale);
+---
+
+<aside id="compare-tray" class="tray" aria-label={t('compare.tray')} hidden>
+  <span class="tray__label">
+    <Icon name="columns-3" />
+    <span>{t('compare.tray')}</span>
+    <span class="tray__count tnum" data-compare-count>
+      0
+    </span>
+  </span>
+  <a href={paths.compare()} class="btn btn--primary btn--sm" data-compare-link>
+    {t('compare.cta')}
+    <Icon name="arrow-right" />
+  </a>
+  <button type="button" class="btn btn--ghost btn--sm tray__clear" data-compare-clear>
+    {t('compare.clear')}
+  </button>
+</aside>
+
+<style>
+  .tray {
+    position: fixed;
+    z-index: 45;
+    left: 50%;
+    bottom: max(var(--s-4), env(safe-area-inset-bottom));
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    padding: var(--s-2) var(--s-2) var(--s-2) var(--s-4);
+    border: 1px solid var(--c-ink);
+    border-radius: var(--r-2);
+    background: var(--c-raised);
+    box-shadow: var(--shadow-pop);
+    font-size: var(--fs-sm);
+  }
+
+  .tray__label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    margin-right: var(--s-2);
+    font-weight: 560;
+  }
+
+  .tray__label svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .tray__count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    border-radius: var(--r-1);
+    background: var(--c-red-fill);
+    color: var(--c-on-red);
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+  }
+
+  :global(body:has(.compare-page)) .tray {
+    display: none;
+  }
+
+  /* Keep the end of the page reachable while the tray is visible. */
+  :global(body:has(#compare-tray:not([hidden]))) {
+    padding-bottom: 4.5rem;
+  }
+</style>

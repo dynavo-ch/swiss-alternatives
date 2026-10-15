@@ -1,0 +1,8 @@
+name: Microsoft Teams
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's team chat and video meeting platform, part of Microsoft 365.
+website: 'https://www.microsoft.com/microsoft-teams'
+categories: [team-chat, video-conferencing]
+aliases: [ms teams, teams]
+popular: true

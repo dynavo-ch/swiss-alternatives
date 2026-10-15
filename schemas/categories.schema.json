@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "noun": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "intro": {
+      "type": "string"
+    },
+    "related": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "added": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": ["name", "group", "icon", "summary", "intro", "added"]
+}

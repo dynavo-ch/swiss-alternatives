@@ -1,0 +1,23 @@
+---
+import ProsePage from '~/components/ProsePage.astro';
+import { site } from '~/config/site';
+const o = site.operator;
+---
+
+<ProsePage slug="imprint">
+  <Fragment slot="before">
+    <h2>Operator</h2>
+    <p>
+      {o.name}
+      <br />
+      {o.street}
+      <br />
+      {o.postalCode} {o.city}
+      <br />
+      {o.country}
+    </p>
+    <p>
+      Email: <a href={`mailto:${o.email}`}>{o.email}</a>
+    </p>
+  </Fragment>
+</ProsePage>

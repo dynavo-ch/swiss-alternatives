@@ -1,0 +1,89 @@
+name: BSI Business Systems Integration AG
+shortName: BSI
+type: company
+description: >-
+  Baden-based software company, founded in 1996, that develops the BSI Customer
+  Suite CRM and customer-experience platform for banks, insurers, retailers and
+  utilities. Majority-owned by funds advised by Bregal Unternehmerkapital.
+website: https://www.bsi-software.com
+founded: 1996
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: Entered in the commercial register of the canton of Aargau on 4 January 1996.
+headquarters:
+  city: Baden
+  canton: AG
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-108.405.424
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE108405424
+ownership:
+  swissOwned: no
+  parent: Funds advised by Bregal Unternehmerkapital
+  parentCountry: DE
+  basis: verified
+  source: press-bregal
+  note: >-
+    In July 2024 funds advised by Munich-based Bregal Unternehmerkapital agreed
+    to acquire a majority stake in BSI from Capvis Equity V, which had held the
+    majority since 2020; completion was subject to regulatory approval. The
+    deal was reported by the press and by the parties' legal advisers. The
+    founders, management and employees remain shareholders. The website imprint
+    names the holding company BSI Software AG (Baden, registered in 2020),
+    while the privacy policy names BSI Business Systems Integration AG as
+    controller.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: Über BSI Software
+    url: https://www.bsi-software.com/de/ueber-bsi
+    publisher: BSI Software AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Impressum - BSI
+    url: https://www.bsi-software.com/de-ch/impressum
+    publisher: BSI Software AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Datenschutz - BSI
+    url: https://www.bsi-software.com/de/datenschutz
+    publisher: BSI Business Systems Integration AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: BSI Business Systems Integration AG (CHE-108.405.424) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE108405424
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: BSI Business Systems Integration AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/bsi-business-systems-integration-ag-20675327141
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: holding-registry
+    title: BSI Software AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/bsi-software-ag-13218982691
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: press-bregal
+    title: BSI hat einen neuen Mehrheitseigner
+    url: https://www.netzwoche.ch/news/2024-07-05/bsi-hat-einen-neuen-mehrheitseigner
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: walderwyss
+    title: Bregal Unternehmerkapital acquires majority stake in BSI Software from Capvis
+    url: https://www.walderwyss.com/en/news/2024-07-05_bregal-unternehmerkapital-acquires-majority-stake-in-bsi-software-from-capvis
+    publisher: Walder Wyss
+    kind: press
+    accessed: 2026-10-15

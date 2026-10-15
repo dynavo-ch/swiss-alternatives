@@ -1,0 +1,7 @@
+name: Llama
+vendor: Meta Platforms, Inc.
+vendorCountry: US
+summary: Meta's family of open-weight large language models.
+website: 'https://www.llama.com'
+categories: [language-models]
+aliases: [llama 3, llama 4]

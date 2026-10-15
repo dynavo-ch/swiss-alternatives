@@ -1,0 +1,11 @@
+name: Public DNS Resolvers
+noun: DNS resolvers
+group: internet
+icon: network
+summary: Encrypted public DNS, often with malware and phishing blocking.
+intro: >-
+  Public DNS resolvers translate domain names into IP addresses for your devices. Choosing a
+  resolver decides who sees which domains you visit; encrypted DNS (DoH/DoT) protects these
+  lookups in transit.
+related: [vpn, network-security]
+added: 2026-10-15

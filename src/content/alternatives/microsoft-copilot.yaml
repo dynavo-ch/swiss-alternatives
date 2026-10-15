@@ -1,0 +1,7 @@
+name: Microsoft Copilot
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's AI assistant, integrated into Windows, Edge and Microsoft 365.
+website: 'https://copilot.microsoft.com'
+categories: [ai-assistants]
+aliases: [copilot, bing chat]

@@ -1,0 +1,8 @@
+name: Google Cloud
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's cloud platform for compute, storage, Kubernetes (GKE) and data services.
+website: 'https://cloud.google.com'
+categories: [cloud-platforms, kubernetes, object-storage]
+aliases: [gcp, google cloud platform]

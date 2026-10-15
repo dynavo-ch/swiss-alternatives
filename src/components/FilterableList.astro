@@ -1,0 +1,549 @@
+---
+/**
+ * Product grid with client-side filtering and sorting.
+ *
+ * All cards are rendered statically (A–Z) so the list is complete without
+ * JavaScript. With JavaScript, four primary filter chips, a "More filters"
+ * drawer and a sort menu are enabled, and the state is mirrored in the URL
+ * so filtered views can be shared, e.g.
+ *   /category/password-managers/?f=swiss-hosted,open-source
+ */
+import EmptyState from './EmptyState.astro';
+import Icon from './Icon.astro';
+import ProductCard from './ProductCard.astro';
+import { useTranslations } from '~/i18n';
+import { AUDIENCES, PLATFORMS } from '~/lib/constants';
+import type { Product } from '~/lib/data';
+import { cantonName } from '~/lib/format';
+import { CLASSIFICATIONS } from '~/lib/signals';
+
+interface Props {
+  products: Product[];
+  id?: string;
+  /** Offer a category facet (used on /products/). */
+  categoryFacet?: boolean;
+  /** Show a text field that filters by name. */
+  nameFilter?: boolean;
+  headingLevel?: 'h2' | 'h3';
+}
+
+const {
+  products,
+  id = 'list',
+  categoryFacet = false,
+  nameFilter = false,
+  headingLevel = 'h2',
+} = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+
+/** Flags carried by each product (signals plus a few product attributes). */
+function flags(product: Product): string[] {
+  const list = Object.entries(product.signals)
+    .filter(([, on]) => on)
+    .map(([key]) => key);
+  if (product.data.openSource?.value === 'partial') list.push('open-source-partial');
+  if (product.data.deployment.includes('saas')) list.push('saas');
+  if (product.data.pricing?.freeTrial === 'yes') list.push('free-trial');
+  if (product.data.pricing?.enterprise === 'yes') list.push('enterprise');
+  return list;
+}
+
+const count = (predicate: (p: Product) => boolean) => products.filter(predicate).length;
+const flagCount = (flag: string) => count((p) => flags(p).includes(flag));
+
+const PRIMARY = [
+  { key: 'swiss-hosted', label: t('signal.swiss-hosted'), icon: 'map-pin' },
+  { key: 'open-source', label: t('signal.open-source'), icon: 'code' },
+  { key: 'free-plan', label: t('signal.free-plan'), icon: 'gift' },
+  { key: 'self-hostable', label: t('signal.self-hostable'), icon: 'server' },
+];
+
+type Option = { name: string; value: string; label: string; count: number };
+type Group = { title: string; options: Option[] };
+
+const flagOption = (key: string, label: string): Option => ({
+  name: 'f',
+  value: key,
+  label,
+  count: flagCount(key),
+});
+
+const groups: Group[] = [
+  {
+    title: t('filter.group.company'),
+    options: [
+      flagOption('swiss-owned', t('signal.swiss-owned')),
+      flagOption('swiss-developed', t('signal.swiss-developed')),
+    ],
+  },
+  {
+    title: t('filter.group.infrastructure'),
+    options: [
+      flagOption('swiss-hosted', t('signal.swiss-hosted')),
+      flagOption('swiss-residency', t('signal.swiss-residency')),
+      flagOption('swiss-infrastructure', t('signal.swiss-infrastructure')),
+    ],
+  },
+  {
+    title: t('filter.group.product'),
+    options: [
+      flagOption('open-source', t('signal.open-source')),
+      flagOption('open-source-partial', t('filter.ossPartial')),
+      flagOption('self-hostable', t('signal.self-hostable')),
+      flagOption('saas', t('filter.saas')),
+      flagOption('free-plan', t('signal.free-plan')),
+      flagOption('free-trial', t('filter.freeTrial')),
+      flagOption('enterprise', t('filter.enterprise')),
+    ],
+  },
+  {
+    title: t('filter.group.pricing'),
+    options: (['free', 'freemium', 'paid'] as const).map((tier) => ({
+      name: 'pricing',
+      value: tier,
+      label: t(`pricing.tier.${tier}`),
+      count: count((p) => p.pricingTier === tier),
+    })),
+  },
+  {
+    title: t('filter.group.audience'),
+    options: AUDIENCES.map((a) => ({
+      name: 'audience',
+      value: a,
+      label: t(`audience.${a}`),
+      count: count((p) => p.data.audience.includes(a)),
+    })),
+  },
+  {
+    title: t('filter.group.platform'),
+    options: PLATFORMS.filter((p) => !['cli', 'api'].includes(p)).map((pl) => ({
+      name: 'platform',
+      value: pl,
+      label: t(`platform.${pl}`),
+      count: count((p) => p.data.platforms.includes(pl)),
+    })),
+  },
+  {
+    title: t('filter.group.classification'),
+    options: CLASSIFICATIONS.map((c) => ({
+      name: 'class',
+      value: c,
+      label: t(`class.${c}`),
+      count: count((p) => p.classification === c),
+    })),
+  },
+  {
+    title: t('filter.group.canton'),
+    options: [
+      ...new Set(
+        products.map((p) => p.company.data.headquarters.canton).filter(Boolean) as string[],
+      ),
+    ]
+      .sort((a, b) => cantonName(a).localeCompare(cantonName(b)))
+      .map((c) => ({
+        name: 'canton',
+        value: c,
+        label: `${cantonName(c)} (${c})`,
+        count: count((p) => p.company.data.headquarters.canton === c),
+      })),
+  },
+];
+
+if (categoryFacet) {
+  const categories = [
+    ...new Map(products.flatMap((p) => p.categories).map((c) => [c.id, c])).values(),
+  ].sort((a, b) => a.name.localeCompare(b.name));
+  groups.push({
+    title: t('filter.group.category'),
+    options: categories.map((c) => ({
+      name: 'cat',
+      value: c.id,
+      label: c.name,
+      count: count((p) => p.categories.includes(c)),
+    })),
+  });
+}
+
+const visibleGroups = groups
+  .map((g) => ({ ...g, options: g.options.filter((o) => o.count > 0) }))
+  .filter((g) => g.options.length > 0);
+
+const sorts = [
+  { value: 'name', label: t('sort.name') },
+  { value: 'footprint', label: t('sort.footprint') },
+  { value: 'added', label: t('sort.added') },
+  { value: 'verified', label: t('sort.verified') },
+];
+---
+
+<div class="flist" data-filter-list id={id}>
+  <div class="flist__bar js-only" role="group" aria-label={t('filter.label')}>
+    {nameFilter && (
+      <label class="flist__name">
+        <span class="visually-hidden">{t('filter.search')}</span>
+        <Icon name="search" />
+        <input
+          type="search"
+          class="input"
+          data-name-filter
+          placeholder={t('filter.search')}
+          autocomplete="off"
+        />
+      </label>
+    )}
+    <div class="flist__chips">
+      {PRIMARY.filter((f) => flagCount(f.key) > 0).map((f) => (
+        <button type="button" class="chip" data-chip={f.key} aria-pressed="false">
+          <Icon name={f.icon} />
+          {f.label}
+          <span class="chip__n tnum" data-n aria-hidden="true">
+            {flagCount(f.key)}
+          </span>
+        </button>
+      ))}
+      <button
+        type="button"
+        class="chip"
+        data-drawer-open
+        aria-haspopup="dialog"
+        aria-controls={`${id}-drawer`}
+      >
+        <Icon name="sliders-horizontal" />
+        {t('filter.more')}
+        <span class="chip__count" data-active-count hidden>
+          0
+        </span>
+      </button>
+    </div>
+    <div class="flist__tools">
+      <label class="flist__sort">
+        <span class="label">{t('sort.label')}</span>
+        <select class="select" data-sort>
+          {sorts.map((s) => (
+            <option value={s.value}>{s.label}</option>
+          ))}
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div class="flist__status js-only">
+    <p class="flist__count" aria-live="polite" data-count>
+      {t('count.products', { count: products.length })}
+    </p>
+    <div class="flist__active" data-active-list></div>
+    <button type="button" class="btn btn--ghost btn--sm flist__share" data-share hidden>
+      <Icon name="link" />
+      {t('filter.share')}
+    </button>
+  </div>
+
+  <ul class="grid-cards flist__grid" role="list" data-items>
+    {products.map((product) => (
+      <li
+        data-item
+        data-id={product.id}
+        data-name={product.name.toLowerCase()}
+        data-search={`${product.name} ${product.company.name} ${product.data.aliases.join(' ')}`.toLowerCase()}
+        data-added={product.data.added.getTime()}
+        data-verified={(product.data.lastVerified ?? product.data.added).getTime()}
+        data-score={product.footprintScore}
+        data-f={flags(product).join(' ')}
+        data-audience={product.data.audience.join(' ')}
+        data-platform={product.data.platforms.join(' ')}
+        data-class={product.classification}
+        data-pricing={product.pricingTier}
+        data-canton={product.company.data.headquarters.canton ?? ''}
+        data-cat={product.categories.map((c) => c.id).join(' ')}
+      >
+        <ProductCard product={product} headingLevel={headingLevel} />
+      </li>
+    ))}
+  </ul>
+
+  <div data-empty hidden>
+    <EmptyState title={t('filter.noResults')} text={t('filter.noResultsHint')}>
+      <button type="button" class="btn" data-clear>
+        {t('filter.clear')}
+      </button>
+    </EmptyState>
+  </div>
+
+  <dialog class="drawer" id={`${id}-drawer`} aria-labelledby={`${id}-drawer-title`}>
+    <form method="dialog" class="drawer__inner">
+      <header class="drawer__head">
+        <h2 class="h3" id={`${id}-drawer-title`}>
+          {t('filter.label')}
+        </h2>
+        <button type="button" class="icon-btn" data-drawer-close aria-label={t('filter.close')}>
+          <Icon name="x" />
+        </button>
+      </header>
+      <div class="drawer__body">
+        {visibleGroups.map((group) => (
+          <fieldset class="drawer__group">
+            <legend class="label">{group.title}</legend>
+            {group.options.map((option) => (
+              <label class="check">
+                <input type="checkbox" name={option.name} value={option.value} />
+                <span>{option.label}</span>
+                <span class="check__count" data-n>
+                  {option.count}
+                </span>
+              </label>
+            ))}
+          </fieldset>
+        ))}
+      </div>
+      <footer class="drawer__foot">
+        <button type="button" class="btn" data-clear>
+          {t('filter.clear')}
+        </button>
+        <button
+          type="button"
+          class="btn btn--primary"
+          data-drawer-close
+          data-apply-label={t('filter.apply')}
+        >
+          {t('filter.apply', { count: products.length })}
+        </button>
+      </footer>
+    </form>
+  </dialog>
+</div>
+
+<script>
+  import { initFilterList } from '~/scripts/filters';
+  document.querySelectorAll<HTMLElement>('[data-filter-list]').forEach(initFilterList);
+</script>
+
+<style>
+  .flist__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    margin-bottom: var(--s-4);
+  }
+
+  .flist__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+
+  .flist__name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: min(16rem, 100%);
+  }
+
+  .flist__name :global(svg) {
+    position: absolute;
+    left: 0.65rem;
+    width: 0.95rem;
+    height: 0.95rem;
+    color: var(--c-ink-3);
+    pointer-events: none;
+  }
+
+  .flist__name .input {
+    min-height: 2.25rem;
+    padding-left: 2rem;
+    font-size: var(--fs-sm);
+  }
+
+  .flist__tools {
+    margin-left: auto;
+  }
+
+  .flist__sort {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+  }
+
+  .flist__sort .select {
+    min-height: 2.25rem;
+    width: auto;
+    font-size: var(--fs-sm);
+  }
+
+  .flist__status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-2) var(--s-4);
+    min-height: 2.25rem;
+    margin-bottom: var(--s-4);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .flist__count {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+  }
+
+  .flist__active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1);
+  }
+
+  .flist__active :global(.active-tag) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+    min-height: 1.75rem;
+    padding: 0 var(--s-1) 0 var(--s-2);
+    border: 1px solid var(--c-ink);
+    border-radius: var(--r-1);
+    background: var(--c-surface);
+    color: var(--c-ink);
+    font-size: var(--fs-xs);
+    font-weight: 540;
+  }
+
+  .flist__active :global(.active-tag svg) {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .flist__active :global(.active-tag:hover) {
+    background: var(--c-sunken);
+  }
+
+  .flist__share {
+    margin-left: auto;
+  }
+
+  .flist__grid > li {
+    display: flex;
+  }
+
+  .flist__grid > li > :global(*) {
+    flex: 1;
+  }
+
+  /* Drawer: side sheet on wide screens, bottom sheet on phones ------ */
+  .drawer {
+    width: min(26rem, 100vw);
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0 0 0 auto;
+    padding: 0;
+    border: 0;
+    border-left: 1px solid var(--c-line-strong);
+    background: var(--c-bg);
+    color: var(--c-ink);
+  }
+
+  .drawer::backdrop {
+    background: var(--c-overlay);
+  }
+
+  .drawer__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .drawer__head,
+  .drawer__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    padding: var(--s-4) var(--s-5);
+  }
+
+  .drawer__head {
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .drawer__foot {
+    border-top: 1px solid var(--c-line);
+    background: var(--c-surface);
+  }
+
+  .drawer__foot .btn--primary {
+    flex: 1;
+  }
+
+  .drawer__body {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--s-2) var(--s-5) var(--s-6);
+  }
+
+  .drawer__group {
+    margin: 0;
+    padding: var(--s-4) 0;
+    border: 0;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .drawer__group legend {
+    padding: 0;
+    margin-bottom: var(--s-2);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .drawer[open] {
+      animation: drawer-in var(--t-med) var(--ease);
+    }
+    @keyframes drawer-in {
+      from {
+        translate: 24px 0;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .drawer {
+      width: 100vw;
+      height: auto;
+      max-height: 88dvh;
+      margin: auto 0 0;
+      border-left: 0;
+      border-top: 1px solid var(--c-line-strong);
+      border-radius: var(--r-3) var(--r-3) 0 0;
+    }
+    .drawer__inner {
+      max-height: 88dvh;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes drawer-in {
+        from {
+          translate: 0 24px;
+          opacity: 0;
+        }
+      }
+    }
+    .flist__name {
+      width: 100%;
+    }
+    .flist__chips {
+      flex-wrap: nowrap;
+      width: calc(100% + 2 * var(--gutter));
+      overflow-x: auto;
+      margin-inline: calc(var(--gutter) * -1);
+      padding-inline: var(--gutter);
+      scrollbar-width: none;
+    }
+    /* Keep "More filters" visible at the start of the scrolling row. */
+    .flist__chips [data-drawer-open] {
+      order: -1;
+    }
+    .flist__tools {
+      width: 100%;
+    }
+  }
+</style>

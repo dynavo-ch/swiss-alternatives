@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "./schemas/companies.schema.json": "src/content/companies/*.yaml",
+    "./schemas/categories.schema.json": "src/content/categories/*.yaml",
+    "./schemas/alternatives.schema.json": "src/content/alternatives/*.yaml",
+    "./schemas/groups.schema.json": "src/content/groups.yaml"
+  }
+}

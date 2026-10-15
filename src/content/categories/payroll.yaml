@@ -1,0 +1,10 @@
+name: Payroll
+noun: payroll software
+group: business
+icon: wallet
+summary: Salary processing, payslips and social insurance reporting.
+intro: >-
+  Payroll software calculates salaries and deductions and reports to Swiss social
+  insurances, ideally via the Swissdec standard.
+related: [accounting, erp]
+added: 2026-10-15

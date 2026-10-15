@@ -1,0 +1,55 @@
+---
+import { useTranslations } from '~/i18n';
+import type { Crumb } from '~/lib/seo';
+
+interface Props {
+  crumbs: Crumb[];
+}
+
+const { crumbs } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+<nav class="crumbs" aria-label={t('nav.breadcrumbs')}>
+  <ol role="list">
+    {crumbs.map((crumb, i) => (
+      <li>
+        {i < crumbs.length - 1 ? (
+          <a href={crumb.href}>{crumb.label}</a>
+        ) : (
+          <span aria-current="page">{crumb.label}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .crumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1) 0;
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .crumbs li:not(:last-child)::after {
+    content: '/';
+    margin-inline: var(--s-2);
+    color: var(--c-line-strong);
+  }
+
+  .crumbs a {
+    color: var(--c-ink-3);
+    text-decoration: none;
+  }
+
+  .crumbs a:hover {
+    color: var(--c-ink);
+    text-decoration: underline;
+  }
+
+  .crumbs [aria-current] {
+    color: var(--c-ink-2);
+  }
+</style>

@@ -1,0 +1,9 @@
+name: Amazon Web Services
+vendor: Amazon Web Services, Inc.
+vendorCountry: US
+parent: Amazon.com, Inc.
+summary: Amazon's cloud platform with compute (EC2), storage (S3), managed Kubernetes and hundreds of services.
+website: 'https://aws.amazon.com'
+categories: [cloud-platforms, object-storage, kubernetes, vps-hosting]
+aliases: [aws, amazon cloud, ec2, lightsail]
+popular: true

@@ -1,0 +1,54 @@
+---
+/** Header block for index and detail pages. */
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Crumb } from '~/lib/seo';
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  crumbs?: Crumb[];
+  size?: 'lg' | 'md';
+}
+
+const { eyebrow, title, lead, crumbs, size = 'lg' } = Astro.props;
+---
+
+<header class:list={['phead', `phead--${size}`]}>
+  <div class="container">
+    {crumbs && <Breadcrumbs crumbs={crumbs} />}
+    {eyebrow && <p class="label phead__eyebrow">{eyebrow}</p>}
+    <h1 class="h1 phead__title">{title}</h1>
+    {lead && <p class="lead phead__lead">{lead}</p>}
+    <slot />
+  </div>
+</header>
+
+<style>
+  .phead {
+    padding-block: var(--s-8) var(--s-10);
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .phead--lg {
+    padding-bottom: var(--s-12);
+  }
+
+  .phead__eyebrow {
+    margin-top: var(--s-8);
+    margin-bottom: var(--s-3);
+  }
+
+  .phead__title {
+    max-width: 20ch;
+  }
+
+  .phead--md .phead__title {
+    font-size: var(--fs-2xl);
+    max-width: none;
+  }
+
+  .phead__lead {
+    margin-top: var(--s-4);
+  }
+</style>

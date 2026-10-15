@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "vendorCountry": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "categories": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "aliases": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "popular": {
+      "default": false,
+      "type": "boolean"
+    },
+    "status": {
+      "default": "active",
+      "type": "string",
+      "enum": ["active", "discontinued"]
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": ["name", "vendor", "vendorCountry", "summary", "website", "categories"]
+}

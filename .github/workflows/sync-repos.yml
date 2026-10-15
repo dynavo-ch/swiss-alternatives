@@ -1,0 +1,33 @@
+# Weekly refresh of GitHub statistics (stars, forks, licence, last commit) for
+# open-source products. Opens a pull request instead of committing directly.
+name: Sync repository statistics
+
+on:
+  schedule:
+    - cron: '17 4 * * 1' # Mondays 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run sync:repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/sync-repository-stats
+          commit-message: 'chore: refresh GitHub repository statistics'
+          title: 'Refresh GitHub repository statistics'
+          body: Automated weekly update of `src/data/repositories.json`.
+          add-paths: src/data/repositories.json

@@ -1,0 +1,37 @@
+---
+import Icon from './Icon.astro';
+import { useTranslations } from '~/i18n';
+
+interface Props {
+  id: string;
+  name: string;
+  variant?: 'icon' | 'button';
+}
+
+const { id, name, variant = 'icon' } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+---
+
+{variant === 'icon' ? (
+  <button
+    type="button"
+    class="icon-btn js-only"
+    data-fav={id}
+    data-name={name}
+    aria-pressed="false"
+    aria-label={`${t('fav.add')}: ${name}`}
+  >
+    <Icon name="heart" />
+  </button>
+) : (
+  <button
+    type="button"
+    class="btn action-btn js-only"
+    data-fav={id}
+    data-name={name}
+    aria-pressed="false"
+  >
+    <Icon name="heart" />
+    <span data-label>{t('fav.add')}</span>
+  </button>
+)}

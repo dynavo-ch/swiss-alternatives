@@ -1,0 +1,6 @@
+name: Heroku
+vendor: Salesforce, Inc.
+vendorCountry: US
+summary: Platform as a service for deploying applications from Git.
+website: 'https://www.heroku.com'
+categories: [paas]

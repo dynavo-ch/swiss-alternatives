@@ -1,0 +1,67 @@
+---
+import Icon from '~/components/Icon.astro';
+import SearchBox from '~/components/SearchBox.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { paths } from '~/lib/paths';
+
+const t = useTranslations(Astro.currentLocale);
+const { alternatives } = await getDirectory();
+const popular = alternatives.filter((a) => a.data.popular && a.products.length > 0).slice(0, 6);
+---
+
+<BaseLayout title={t('notFound.title')} description={t('notFound.text')} noindex>
+  <section class="container nf">
+    <p class="nf__code mono" aria-hidden="true">
+      404
+    </p>
+    <h1 class="h1">{t('notFound.title')}</h1>
+    <p class="lead">{t('notFound.text')}</p>
+    <div class="nf__search">
+      <SearchBox variant="hero" id="nf-search" />
+    </div>
+    <ul class="nf__links" role="list">
+      {popular.map((a) => (
+        <li>
+          <a href={a.url}>
+            {t('alt.srPrefix')} {a.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p>
+      <a href={paths.home()} class="arrow-link">
+        {t('nav.home')}
+        <Icon name="arrow-right" />
+      </a>
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf {
+    padding-block: var(--section);
+    display: grid;
+    gap: var(--s-5);
+    justify-items: start;
+  }
+
+  .nf__code {
+    font-size: var(--fs-micro);
+    color: var(--c-red-ink);
+    letter-spacing: var(--tracking-label);
+  }
+
+  .nf__search {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .nf__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2) var(--s-5);
+    font-size: var(--fs-sm);
+  }
+</style>

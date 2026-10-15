@@ -1,0 +1,10 @@
+name: Platform as a Service
+noun: PaaS providers
+group: cloud
+icon: layers
+summary: Deploy applications from code or containers without managing servers.
+intro: >-
+  Platform-as-a-service offerings build and run applications from a Git repository or
+  container image, handling servers, scaling and TLS.
+related: [kubernetes, cloud-platforms]
+added: 2026-10-15

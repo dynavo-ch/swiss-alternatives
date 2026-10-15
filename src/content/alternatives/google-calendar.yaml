@@ -1,0 +1,8 @@
+name: Google Calendar
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's calendar service, part of Google Workspace.
+website: 'https://calendar.google.com'
+categories: [calendars]
+aliases: [gcal]

@@ -1,0 +1,78 @@
+name: Open Systems AG
+shortName: Open Systems
+type: company
+description: >-
+  Zurich-based network security company, founded in 1990 and owned by Swiss
+  Post since 2024, that operates managed SASE and secure networking services.
+website: https://www.open-systems.com
+founded: 1990
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Open Systems AG was entered in the commercial register of the canton of
+    Zurich on 25 October 1990.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-106.697.233
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE106697233
+ownership:
+  swissOwned: yes
+  parent: Die Schweizerische Post AG (Swiss Post)
+  parentCountry: CH
+  basis: verified
+  source: bankinfosecurity
+  note: >-
+    Swiss Post announced in 2024 that it would buy Open Systems from the
+    private equity firm EQT, majority owner since 2017; Open Systems
+    states that the acquisition closed on 21 October 2024 and that the company
+    continues to operate under its own brand. Trade press in 2026 still
+    describes Open Systems as part of Swiss Post, and the board was replaced in
+    November 2024. Swiss Post is owned by the Swiss Confederation. Open Systems'
+    former managed detection and response business had been split off as
+    Ontinue, which stayed with EQT.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Open Systems AG (CHE-106.697.233) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE106697233
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Open Systems AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/open-systems-ag-5180549011
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: bankinfosecurity
+    title: Swiss Post to Strengthen Cybersecurity With Open Systems Buy
+    url: https://www.bankinfosecurity.com/swiss-post-to-strengthen-cybersecurity-open-systems-buy-a-26312
+    publisher: Information Security Media Group
+    kind: press
+    accessed: 2026-10-15
+  - id: press-acquisition
+    title: Swiss Post Acquires Open Systems, Accelerating Innovation in Managed SASE Services
+    url: https://open-systems.com/blog/press-release/swiss-post-acquires-open-systems-accelerating-innovation-in-managed-sase-services/
+    publisher: Open Systems AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: channelpartner
+    title: Allnet bietet Co-Managed-SASE-Plattform von Open Systems an
+    url: https://www.channelpartner.de/article/4153653/allnet-bietet-co-managed-sase-plattform-von-open-systems-an.html
+    publisher: ChannelPartner
+    kind: press
+    accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Open Systems - swiss made software
+    url: https://www.swissmadesoftware.org/en/companies/open-systems/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-15

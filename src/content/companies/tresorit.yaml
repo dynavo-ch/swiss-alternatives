@@ -1,0 +1,82 @@
+name: Tresorit AG
+shortName: Tresorit
+type: company
+description: >-
+  Zurich-based provider of end-to-end encrypted cloud storage and file sharing,
+  founded in 2011 by Hungarian developers and wholly owned by Swiss Post. Offices
+  in Zurich, Munich and Budapest.
+website: https://tresorit.com
+founded: 2011
+swissFounded:
+  value: no
+  basis: inferred
+  source: gleif
+  note: >-
+    Tresorit was founded in 2011 by Hungarian developers; the Hungarian company
+    Tresorit Kft. (Budapest) was incorporated on 15 September 2011. Tresorit AG
+    in Zurich has been registered for VAT since 2013 and is now the contracting
+    entity and head office.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid
+jurisdiction: CH
+registry:
+  uid: CHE-349.825.210
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE349825210
+ownership:
+  swissOwned: yes
+  parent: Die Schweizerische Post AG (Swiss Post)
+  parentCountry: CH
+  basis: vendor
+  source: post-subsidiaries
+  note: >-
+    Swiss Post acquired a majority stake in July 2021 and lists Tresorit AG,
+    Tresorit GmbH (Germany) and Tresorit Kft. (Hungary) as 100% participations
+    as at 30 September 2026. Swiss Post is owned by the Swiss Confederation.
+lastVerified: 2026-10-15
+sources:
+  - id: about
+    title: About Tresorit
+    url: https://tresorit.com/about-us
+    publisher: Tresorit AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Tresorit privacy policy
+    url: https://tresorit.com/legal/privacy-policy
+    publisher: Tresorit AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid
+    title: Tresorit AG (CHE-349.825.210) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE349825210
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: gleif
+    title: Tresorit Kft. LEI record (2330003NQ9D859481M09)
+    url: https://search.gleif.org/#/record/2330003NQ9D859481M09
+    publisher: Global Legal Entity Identifier Foundation
+    kind: registry
+    accessed: 2026-10-15
+  - id: post-subsidiaries
+    title: Swiss Post Group companies - overview
+    url: https://site.post.ch/en/about-us/company/governance/organisation/subsidiaries
+    publisher: Swiss Post
+    kind: vendor
+    accessed: 2026-10-15
+  - id: post-2021
+    title: Post übernimmt Mehrheit an Tresorit
+    url: https://site.post.ch/de/ueber-uns/medienstelle/medienmitteilungen/post-ubernimmt-mehrheit-an-tresorit
+    publisher: Swiss Post
+    kind: press
+    accessed: 2026-10-15
+  - id: wikipedia
+    title: Tresorit
+    url: https://en.wikipedia.org/wiki/Tresorit
+    publisher: Wikipedia
+    kind: independent
+    accessed: 2026-10-15

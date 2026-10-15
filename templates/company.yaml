@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../schemas/companies.schema.json
+# Company template — copy to src/content/companies/<slug>.yaml.
+# Company facts are written once and shared by all of the company's products.
+
+name: Example AG # legal name as in the commercial register
+shortName: Example # optional, used in compact UI
+type: company # company | foundation | association | cooperative | public-institution
+description: >-
+  One or two factual sentences about the organisation.
+website: https://example.ch
+founded: 2015 # optional
+swissFounded:
+  value: unknown # yes | no | unknown — founded in Switzerland?
+  basis: verified
+  source: zefix
+headquarters:
+  city: Zürich
+  canton: ZH # two-letter canton code
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH # where the operating legal entity is incorporated
+registry:
+  uid: CHE-000.000.000
+  url: https://www.zefix.ch/en/search/entity/list/firm/0000000
+ownership:
+  swissOwned: unknown # yes | no | partial | unknown — is the ultimate owner Swiss?
+  # parent: Parent Holding Ltd   # controlling entity, if any
+  # parentCountry: DE
+  # parentCompany: parent-slug   # if the parent is also listed
+  basis: vendor
+  source: about
+  note: ''
+lastVerified: 2026-01-01
+sources:
+  - id: zefix
+    title: Example AG — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/0000000
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-01-01
+  - id: about
+    title: About Example
+    url: https://example.ch/about
+    kind: vendor
+    accessed: 2026-01-01

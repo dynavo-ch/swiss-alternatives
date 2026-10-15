@@ -1,0 +1,79 @@
+name: Suiteify Service AG
+shortName: Suiteify Service
+type: company
+description: >-
+  Stäfa-based company, until 2026 named Run my Accounts AG, that operates the
+  Run my Accounts online bookkeeping service and software. It belongs to the
+  Suiteify group (formerly Infoniqa).
+website: https://www.runmyaccounts.ch
+founded: 2008
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the Zurich commercial register on 23 June 2008. Earlier company
+    names include Run my Accounts GmbH and Run my Accounts AG; the name changed
+    to Suiteify Service AG with effect from the amendment of the articles on
+    15 September 2026.
+headquarters:
+  city: Stäfa
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-114.367.720
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE114367720
+ownership:
+  swissOwned: no
+  parent: Suiteify group (formerly Infoniqa group)
+  parentCountry: AT
+  basis: vendor
+  source: press-acquisition
+  note: >-
+    The Austrian Infoniqa group acquired 100% of Run my Accounts in 2021,
+    according to its announcement. In September 2026 the group merged its
+    companies and brands under the name Suiteify. The group imprint names
+    Suiteify Group Holding GmbH in Wels, Austria, as its main entity and also
+    lists a shareholder address in Böblingen, Germany. According to press
+    reports the group is backed by the US investor Warburg Pincus.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: Impressum - Run my Accounts
+    url: https://www.runmyaccounts.ch/kontakt/
+    publisher: Suiteify Service AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Suiteify Service AG (CHE-114.367.720) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE114367720
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Suiteify Service AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/suiteify-service-ag-3972046291
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: press-acquisition
+    title: Österreichische Infoniqa übernimmt Schweizer Firma "Run my Accounts"
+    url: https://www.netzwoche.ch/news/2021-12-02/oesterreichische-infoniqa-uebernimmt-schweizer-firma-run-my-accounts
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: press-suiteify
+    title: Infoniqa-Gruppe fusioniert Unternehmen und Marken zu Suiteify
+    url: https://www.netzwoche.ch/news/2026-09-16/infoniqa-gruppe-fusioniert-unternehmen-und-marken-zu-suiteify
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: suiteify-imprint
+    title: Impressum - Suiteify
+    url: https://www.suiteify.com/legal/impressum
+    publisher: Infoniqa Group Holding GmbH
+    kind: vendor
+    accessed: 2026-10-15

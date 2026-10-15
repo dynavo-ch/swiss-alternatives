@@ -1,0 +1,58 @@
+name: Hostpoint AG
+shortName: Hostpoint
+type: company
+description: >-
+  Web hosting provider and ICANN-accredited domain registrar founded in 2001 in
+  Rapperswil-Jona, owned and managed by its founders.
+website: https://www.hostpoint.ch
+founded: 2001
+swissFounded:
+  value: yes
+  basis: vendor
+  source: anniversary
+  note: Founded in Rapperswil-Jona in 2001, originally as Hostpoint GmbH.
+headquarters:
+  city: Rapperswil-Jona
+  canton: SG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-101.974.997
+  url: https://www.zefix.ch/en/search/entity/list/firm/605838
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: anniversary
+  note: >-
+    Owner-managed. Since the end of 2017, co-founder and CEO Markus Gebert and
+    managing director Claudius Röllin have each held half of the share capital.
+    In May 2026 the CEO stated that Hostpoint remains independent while other
+    providers have been acquired by international groups.
+lastVerified: 2026-10-15
+sources:
+  - id: company
+    title: Company - Hostpoint
+    url: https://www.hostpoint.ch/en/hostpoint/company.html
+    publisher: Hostpoint AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: anniversary
+    title: Hostpoint bekennt sich zum Firmenjubiläum zum Standort Schweiz
+    url: https://www.itreseller.ch/Artikel/105397/Hostpoint_bekennt_sich_zum_Firmenjubilaeum_zum_Standort_Schweiz.html
+    publisher: IT Reseller
+    kind: press
+    accessed: 2026-10-15
+  - id: ownership-2017
+    title: Hostpoint bleibt 100% inhabergeführt
+    url: https://www.moneycab.com/?p=1016873
+    publisher: Moneycab
+    kind: press
+    accessed: 2026-10-15
+  - id: zefix
+    title: Hostpoint AG (CHE-101.974.997) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/605838
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15

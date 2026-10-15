@@ -1,0 +1,6 @@
+name: Microsoft Bing
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's web search engine.
+website: 'https://www.bing.com'
+categories: [search-engines]

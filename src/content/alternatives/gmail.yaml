@@ -1,0 +1,9 @@
+name: Gmail
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's email service for personal accounts, also included in Google Workspace.
+website: 'https://mail.google.com'
+categories: [email]
+aliases: [google mail, googlemail]
+popular: true

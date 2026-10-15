@@ -1,0 +1,10 @@
+name: Backup
+noun: backup services
+group: cloud
+icon: archive-restore
+summary: Off-site backup for computers, servers and cloud data.
+intro: >-
+  Backup services keep independent copies of your data so you can recover from deletion,
+  hardware failure or ransomware. Look at where copies are stored and who holds the keys.
+related: [object-storage, cloud-storage]
+added: 2026-10-15

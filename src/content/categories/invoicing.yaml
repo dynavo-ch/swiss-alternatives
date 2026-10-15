@@ -1,0 +1,10 @@
+name: Invoicing
+noun: invoicing tools
+group: business
+icon: receipt
+summary: Quotes, invoices, QR-bills and payment reminders.
+intro: >-
+  Invoicing tools create quotes and invoices, track payments and send reminders. In
+  Switzerland, support for QR-bills is essential.
+related: [accounting, crm]
+added: 2026-10-15

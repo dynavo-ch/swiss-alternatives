@@ -1,0 +1,10 @@
+name: ERP
+noun: ERP systems
+group: business
+icon: blocks
+summary: Integrated finance, HR, payroll, inventory and operations.
+intro: >-
+  Enterprise resource planning (ERP) systems combine finance, HR, payroll, purchasing,
+  inventory and production in one platform.
+related: [accounting, payroll, crm]
+added: 2026-10-15

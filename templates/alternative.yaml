@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schemas/alternatives.schema.json
+# Foreign product template — copy to src/content/alternatives/<slug>.yaml.
+# Swiss products link to it from their `alternativesTo` list; the
+# "Swiss alternatives to …" page is generated automatically.
+
+name: Example Cloud
+vendor: Example Inc.
+vendorCountry: US
+# parent: Example Holdings Inc.
+summary: One factual sentence describing what the product does.
+website: https://example.com
+categories: [category-slug]
+aliases: [] # search synonyms
+popular: false # featured on the home page
+status: active # active | discontinued

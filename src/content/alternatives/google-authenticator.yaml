@@ -1,0 +1,8 @@
+name: Google Authenticator
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's app for time-based one-time passwords (TOTP).
+website: 'https://support.google.com/accounts/answer/1066447'
+categories: [authentication]
+aliases: [authenticator]

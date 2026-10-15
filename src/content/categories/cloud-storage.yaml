@@ -1,0 +1,11 @@
+name: Cloud Storage
+noun: cloud storage services
+group: workplace
+icon: hard-drive
+summary: Sync, store and access files across devices.
+intro: >-
+  Cloud storage services sync files between your devices and keep a copy online. Some
+  encrypt files on your device before upload (end-to-end encryption), which means the
+  provider cannot read them.
+related: [file-sharing, backup, file-transfer]
+added: 2026-10-15

@@ -1,0 +1,7 @@
+name: Salesforce
+vendor: Salesforce, Inc.
+vendorCountry: US
+summary: Cloud CRM platform for sales, service and marketing.
+website: 'https://www.salesforce.com'
+categories: [crm]
+aliases: [sales cloud]

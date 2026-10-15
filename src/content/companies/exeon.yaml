@@ -1,0 +1,63 @@
+name: Exeon Analytics AG
+shortName: Exeon
+type: company
+description: >-
+  Zurich-based cybersecurity company, founded in 2016 with roots at ETH Zurich,
+  that develops network detection and response software.
+website: https://exeon.com
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Exeon Analytics AG was entered in the commercial register of the canton of
+    Zurich on 10 August 2016. Exeon states that the company started at ETH
+    Zurich.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-196.534.272
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE196534272
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: about
+  note: >-
+    Privately held; the shareholder structure and investors are not
+    published. Co-founder David Gugelmann chairs the board, which also includes
+    Markus Eugster, Beat Schillig and Felix Haldner. No acquisition was found
+    in register publications or press reports up to October 2026; the most
+    recent capital increases (December 2024 and December 2025) came from
+    conditional capital.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Exeon Analytics AG (CHE-196.534.272) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE196534272
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Exeon Analytics AG, Zürich - commercial register data
+    url: https://www.moneyhouse.ch/en/company/exeon-analytics-ag-10107807951
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: about
+    title: About Exeon
+    url: https://exeon.com/about/
+    publisher: Exeon Analytics AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Imprint
+    url: https://exeon.com/imprint/
+    publisher: Exeon Analytics AG
+    kind: vendor
+    accessed: 2026-10-15

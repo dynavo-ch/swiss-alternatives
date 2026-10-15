@@ -1,0 +1,8 @@
+name: Docusign
+vendor: Docusign, Inc.
+vendorCountry: US
+summary: Electronic signature and agreement management platform.
+website: 'https://www.docusign.com'
+categories: [e-signatures]
+aliases: [docu sign]
+popular: true

@@ -1,0 +1,7 @@
+name: iCloud
+vendor: Apple Inc.
+vendorCountry: US
+summary: Apple's cloud service for file storage, photos, mail, calendars and device backups.
+website: 'https://www.icloud.com'
+categories: [cloud-storage, email, calendars]
+aliases: [icloud drive, icloud mail]

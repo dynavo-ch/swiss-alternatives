@@ -1,0 +1,6 @@
+name: Signal
+vendor: Signal Technology Foundation
+vendorCountry: US
+summary: End-to-end encrypted messenger operated by a US non-profit foundation.
+website: 'https://signal.org'
+categories: [messaging]

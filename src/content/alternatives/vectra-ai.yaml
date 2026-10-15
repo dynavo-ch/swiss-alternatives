@@ -1,0 +1,7 @@
+name: Vectra AI
+vendor: Vectra AI, Inc.
+vendorCountry: US
+summary: Network detection and response platform using AI to detect attacks across network, identity and cloud.
+website: 'https://www.vectra.ai'
+categories: [network-security]
+aliases: [Vectra, Vectra NDR, Vectra Cognito]

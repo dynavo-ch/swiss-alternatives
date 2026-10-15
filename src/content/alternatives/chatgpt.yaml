@@ -1,0 +1,8 @@
+name: ChatGPT
+vendor: OpenAI
+vendorCountry: US
+summary: OpenAI's AI chat assistant.
+website: 'https://chatgpt.com'
+categories: [ai-assistants]
+aliases: [openai, gpt]
+popular: true

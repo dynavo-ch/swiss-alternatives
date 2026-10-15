@@ -1,0 +1,8 @@
+name: NordVPN
+vendor: nordvpn S.A.
+vendorCountry: PA
+parent: Nord Security
+summary: Consumer VPN service.
+website: 'https://nordvpn.com'
+categories: [vpn]
+aliases: [nord vpn]

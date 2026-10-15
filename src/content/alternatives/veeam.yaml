@@ -1,0 +1,8 @@
+name: Veeam Data Platform
+vendor: Veeam Software
+vendorCountry: US
+parent: Insight Partners
+summary: Backup and recovery software for virtual, physical, cloud and Microsoft 365 workloads.
+website: 'https://www.veeam.com'
+categories: [backup]
+aliases: [Veeam, Veeam Backup & Replication]

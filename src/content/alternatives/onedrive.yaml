@@ -1,0 +1,7 @@
+name: Microsoft OneDrive
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's cloud storage and file sync service, integrated into Windows and Microsoft 365.
+website: 'https://onedrive.live.com'
+categories: [cloud-storage, file-sharing]
+aliases: [onedrive, skydrive]

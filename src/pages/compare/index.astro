@@ -1,0 +1,342 @@
+---
+/**
+ * Comparison of up to four products. Selection comes from the URL
+ * (?products=a,b,c — shareable) or, if absent, from the local comparison
+ * list. Rendered client-side from /data/products.json.
+ */
+import EmptyState from '~/components/EmptyState.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import { site } from '~/config/site';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { paths } from '~/lib/paths';
+
+const t = useTranslations(Astro.currentLocale);
+const { products } = await getDirectory();
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.compare'), href: paths.compare() },
+];
+
+const labels = {
+  overview: t('compare.group.overview'),
+  footprint: t('footprint.title'),
+  product: t('compare.group.product'),
+  pricing: t('product.pricing'),
+  security: t('product.security'),
+  rows: {
+    company: t('product.company'),
+    location: t('company.headquarters'),
+    category: t('compare.row.category'),
+    classification: t('class.label'),
+    footprint: t('footprint.title'),
+    swissCompany: t('signal.swiss-company'),
+    owned: t('footprint.ownership'),
+    developed: t('footprint.development'),
+    hosted: t('footprint.hosting'),
+    dataLocations: t('product.dataLocations'),
+    infrastructure: t('footprint.infrastructure'),
+    infraProvider: t('product.infraProvider'),
+    openSource: t('product.openSource'),
+    selfHostable: t('signal.self-hostable'),
+    platforms: t('product.platforms'),
+    audience: t('product.audience'),
+    languages: t('product.languages'),
+    pricingTier: t('pricing.tier'),
+    pricingModel: t('pricing.model'),
+    price: t('pricing.startingAt'),
+    freePlan: t('pricing.freePlan'),
+    freeTrial: t('pricing.freeTrial'),
+    enterprise: t('pricing.enterprise'),
+    chfBilling: t('pricing.chfBilling'),
+    e2ee: t('feature.e2ee'),
+    mfa: t('feature.mfa'),
+    sso: t('feature.sso'),
+    scim: t('feature.scim'),
+    api: t('feature.api'),
+    dataExport: t('feature.dataExport'),
+    certifications: t('product.certifications'),
+    lastVerified: t('common.lastVerified'),
+  },
+  states: {
+    yes: t('state.yes'),
+    no: t('state.no'),
+    partial: t('state.partial'),
+    optional: t('state.optional'),
+    unknown: t('state.unknown'),
+  },
+  none: t('common.none'),
+  remove: t('compare.remove'),
+  add: t('compare.addProduct'),
+};
+---
+
+<BaseLayout title={t('compare.title')} description={t('compare.description')} noindex>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.compare')}
+    title={t('compare.heading')}
+    lead={t('compare.lead', { count: site.compareLimit })}
+    size="md"
+  />
+
+  <section class="section container compare-page" data-compare-page data-limit={site.compareLimit}>
+    <noscript>
+      <EmptyState title={t('compare.noJs')} text={t('compare.noJsText')}>
+        <a href={paths.products()} class="btn">
+          {t('nav.products')}
+        </a>
+      </EmptyState>
+    </noscript>
+
+    <div class="cmp-toolbar js-only">
+      <label class="cmp-add">
+        <span class="visually-hidden">{t('compare.addProduct')}</span>
+        <select class="select" data-add>
+          <option value="">{t('compare.addProduct')}…</option>
+          {products.map((p) => (
+            <option value={p.id}>
+              {p.name} — {p.company.displayName}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label class="check">
+        <input type="checkbox" data-diff />
+        <span>{t('compare.diffOnly')}</span>
+      </label>
+      <button type="button" class="btn btn--sm" data-copy-compare>
+        <Icon name="link" />
+        {t('common.copyLink')}
+      </button>
+    </div>
+
+    <div data-compare-root class="js-only"></div>
+
+    <div data-compare-empty hidden>
+      <EmptyState title={t('compare.emptyTitle')} text={t('compare.emptyText')}>
+        <a href={paths.products()} class="btn btn--primary">
+          {t('nav.products')}
+          <Icon name="arrow-right" />
+        </a>
+      </EmptyState>
+    </div>
+
+    <div data-compare-error hidden>
+      <EmptyState title={t('compare.errorTitle')} text={t('compare.errorText')}>
+        <a href={paths.compare()} class="btn">
+          {t('compare.retry')}
+        </a>
+      </EmptyState>
+    </div>
+
+    <script type="application/json" data-compare-labels set:html={JSON.stringify(labels)} />
+  </section>
+</BaseLayout>
+
+<script>
+  import { initCompare } from '~/scripts/compare';
+  const root = document.querySelector<HTMLElement>('[data-compare-page]');
+  if (root) {
+    initCompare(root).catch((error: unknown) => {
+      console.error(error);
+      root.querySelector<HTMLElement>('[data-compare-root]')!.hidden = true;
+      root.querySelector<HTMLElement>('[data-compare-error]')!.hidden = false;
+    });
+  }
+</script>
+
+<style is:global>
+  /* Reserve space while the table loads, so the footer does not jump (CLS). */
+  [data-compare-root]:empty {
+    min-height: 100vh;
+  }
+
+  .cmp-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-3) var(--s-5);
+    margin-bottom: var(--s-6);
+  }
+
+  .cmp-add {
+    width: min(22rem, 100%);
+  }
+
+  .cmp-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+  }
+
+  .cmp {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: var(--fs-sm);
+  }
+
+  .cmp col.cmp__label-col {
+    width: 13rem;
+  }
+
+  .cmp th,
+  .cmp td {
+    padding: var(--s-3) var(--s-4);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .cmp thead th {
+    position: sticky;
+    top: var(--header-h);
+    z-index: 2;
+    background: var(--c-surface);
+    border-bottom: 1px solid var(--c-ink);
+    vertical-align: bottom;
+  }
+
+  .cmp__head {
+    display: grid;
+    gap: var(--s-2);
+  }
+
+  .cmp__head-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--s-2);
+  }
+
+  .cmp__name {
+    font-size: var(--fs-md);
+    font-weight: 640;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+
+  .cmp__name:hover {
+    color: var(--c-red-ink);
+  }
+
+  .cmp__tag {
+    font-size: var(--fs-xs);
+    font-weight: 400;
+    color: var(--c-ink-3);
+  }
+
+  .cmp tbody th {
+    font-weight: 520;
+    color: var(--c-ink-2);
+    background: var(--c-surface);
+  }
+
+  .cmp__group th {
+    padding-top: var(--s-6);
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--c-ink);
+    border-bottom: 1px solid var(--c-ink);
+  }
+
+  .cmp__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+  }
+
+  .cmp__sub {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .cmp tr[data-same] {
+    color: var(--c-ink-3);
+  }
+
+  .cmp--diff tr[data-same] {
+    display: none;
+  }
+
+  /* Phones: one card per attribute, values stacked per product. */
+  @media (max-width: 44rem) {
+    .cmp-wrap {
+      border: 0;
+      background: none;
+      overflow: visible;
+    }
+    .cmp,
+    .cmp tbody,
+    .cmp tr,
+    .cmp th,
+    .cmp td {
+      display: block;
+      width: auto;
+    }
+    .cmp colgroup {
+      display: none;
+    }
+    .cmp thead {
+      display: flex;
+      gap: var(--s-2);
+      overflow-x: auto;
+      position: sticky;
+      top: var(--header-h);
+      z-index: 3;
+      padding: var(--s-2) 0;
+      background: var(--c-bg);
+    }
+    .cmp thead tr {
+      display: contents;
+    }
+    .cmp thead th {
+      position: static;
+      flex: 1 0 9rem;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-2);
+    }
+    .cmp thead td {
+      display: none;
+    }
+    .cmp tbody tr {
+      margin-bottom: var(--s-2);
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-2);
+      background: var(--c-surface);
+    }
+    .cmp tbody tr.cmp__group {
+      border: 0;
+      background: none;
+      margin: var(--s-6) 0 var(--s-2);
+    }
+    .cmp tbody th {
+      border-bottom: 1px solid var(--c-line);
+    }
+    .cmp tbody td {
+      display: grid;
+      grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr);
+      gap: var(--s-3);
+    }
+    .cmp tbody td::before {
+      content: attr(data-product);
+      font-weight: 600;
+      color: var(--c-ink);
+    }
+    .cmp tbody tr > *:last-child {
+      border-bottom: 0;
+    }
+    .cmp--diff tr[data-same] {
+      display: none;
+    }
+  }
+</style>

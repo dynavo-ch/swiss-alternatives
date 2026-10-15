@@ -1,0 +1,182 @@
+---
+import { Image } from 'astro:assets';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import { site } from '~/config/site';
+import { sponsors } from '~/config/sponsors';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { displayHost, formatDate } from '~/lib/format';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+
+const t = useTranslations(Astro.currentLocale);
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.sponsors'), href: paths.sponsors() },
+];
+const mailto = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Sponsorship')}`;
+---
+
+<BaseLayout
+  title={t('sponsors.title')}
+  description={t('sponsors.description')}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.sponsors')}
+    title={t('sponsors.heading')}
+    lead={t('sponsors.lead')}
+  />
+
+  <section class="section container" aria-labelledby="current-h">
+    <h2 class="label" id="current-h">
+      {t('sponsors.current')}
+    </h2>
+    {sponsors.length > 0 ? (
+      <ul class="sponsors" role="list">
+        {sponsors.map((s) => (
+          <li class="sponsor">
+            {s.logo && <Image src={s.logo} alt="" width={160} height={64} class="sponsor__logo" />}
+            <p class="sponsor__kind label">{t(`sponsors.kind.${s.kind}`)}</p>
+            <h3>
+              <a href={s.url} rel="sponsored noopener">
+                {s.name}
+              </a>
+            </h3>
+            <p>{s.contribution}</p>
+            <p class="sponsor__meta mono">
+              {displayHost(s.url)} · {t('sponsors.since', { date: formatDate(new Date(s.since)) })}
+            </p>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="sponsors-empty">{t('sponsors.none')}</p>
+    )}
+  </section>
+
+  <section class="section container" aria-labelledby="policy-h">
+    <div class="policy">
+      <div>
+        <h2 class="h2" id="policy-h">
+          {t('sponsors.policy')}
+        </h2>
+        <p class="lead">{t('sponsors.policyLead')}</p>
+        <p class="policy__cta">
+          <a href={mailto} class="btn btn--primary">
+            <Icon name="mail" />
+            {t('sponsors.cta')}
+          </a>
+        </p>
+      </div>
+      <ol class="rules" role="list">
+        <li>
+          <strong>Listings cannot be bought.</strong> Inclusion follows the published{' '}
+          <a href={paths.methodology()}>listing criteria</a> only.
+        </li>
+        <li>
+          <strong>No influence on data or order.</strong> Sponsors cannot change classifications,
+          badges, footprint facts or sort order. Corrections need sources, like everyone else’s.
+        </li>
+        <li>
+          <strong>Always labelled.</strong> Sponsors appear on this page and in the footer, marked
+          as sponsors. Any sponsored or affiliate link on a product page is disclosed next to the
+          link.
+        </li>
+        <li>
+          <strong>No tracking.</strong> Sponsorship never adds cookies, trackers or third-party
+          scripts to the site.
+        </li>
+        <li>
+          <strong>Public record.</strong> Sponsors and partners are listed here with the date and
+          the kind of support.
+        </li>
+      </ol>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--s-4);
+  }
+
+  .sponsor {
+    display: grid;
+    gap: var(--s-2);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    background: var(--c-surface);
+  }
+
+  .sponsor__meta {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .sponsors-empty {
+    margin-top: var(--s-4);
+    padding: var(--s-6);
+    border: 1px dashed var(--c-line-strong);
+    color: var(--c-ink-3);
+    max-width: 48rem;
+  }
+
+  .policy {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: var(--s-12);
+    padding-top: var(--s-8);
+    border-top: 1px solid var(--c-ink);
+  }
+
+  .policy .lead {
+    margin-top: var(--s-4);
+  }
+
+  .policy__cta {
+    margin-top: var(--s-6);
+  }
+
+  .rules {
+    display: grid;
+    gap: var(--s-4);
+    counter-reset: rule;
+  }
+
+  .rules li {
+    counter-increment: rule;
+    position: relative;
+    padding-left: 2.5rem;
+    padding-bottom: var(--s-4);
+    border-bottom: 1px solid var(--c-line);
+    color: var(--c-ink-2);
+  }
+
+  .rules li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: counter(rule, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--c-red-ink);
+    padding-top: 0.2rem;
+  }
+
+  .rules strong {
+    color: var(--c-ink);
+  }
+
+  @media (max-width: 56rem) {
+    .policy {
+      grid-template-columns: 1fr;
+      gap: var(--s-8);
+    }
+  }
+</style>

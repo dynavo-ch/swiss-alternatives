@@ -1,0 +1,118 @@
+/*
+ * Design tokens.
+ *
+ * Colours use `light-dark()` so each token is defined once for both themes.
+ * The theme follows the operating system unless the visitor picks one, which
+ * sets `data-theme` on <html> (persisted in localStorage).
+ *
+ * Contrast (WCAG 2.2), measured against --c-bg / --c-surface:
+ *   ink 17.0 / 18.7 · ink-2 10.2 / 11.2 · ink-3 5.9 / 6.5 (light)
+ *   ink 16.4 / 15.3 · ink-2 11.1 / 10.4 · ink-3 6.8 / 6.4 (dark)
+ *   red-ink 6.0 / 6.6 (light) · 7.5 / 7.0 (dark)
+ *   on-red text on red-fill: 5.0 (light) · 4.7 (dark)
+ */
+
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces ------------------------------------------------------- */
+  --c-bg: light-dark(#f5f4f0, #0e0f10);
+  --c-surface: light-dark(#ffffff, #16171a);
+  --c-sunken: light-dark(#edece7, #1c1d20);
+  --c-raised: light-dark(#ffffff, #1f2023);
+  --c-overlay: light-dark(rgb(18 18 18 / 0.32), rgb(0 0 0 / 0.6));
+
+  /* Ink ------------------------------------------------------------ */
+  --c-ink: light-dark(#121212, #eeede9);
+  --c-ink-2: light-dark(#3b3b39, #c7c5bf);
+  --c-ink-3: light-dark(#5f5e5a, #9c9a93);
+  --c-inverse: light-dark(#f5f4f0, #0e0f10);
+
+  /* Lines ---------------------------------------------------------- */
+  --c-line: light-dark(#dcdad3, #2a2b2f);
+  --c-line-strong: light-dark(#bdbab1, #3e3f44);
+  /* UI control borders need ≥ 3:1 against the background (WCAG 1.4.11). */
+  --c-control: light-dark(#8e8c85, #6f6e69);
+
+  /* Swiss red ------------------------------------------------------ */
+  --c-red: light-dark(#d52b1e, #e8483b); /* marks, rules, focus */
+  --c-red-ink: light-dark(#b5221a, #ff7a6b); /* red text and links */
+  --c-red-fill: light-dark(#d52b1e, #d63a2e); /* solid backgrounds */
+  --c-on-red: #ffffff;
+  --c-red-tint: light-dark(#fbecea, #2a1715);
+  --c-red-line: light-dark(#f0c4bf, #5a2621);
+
+  /* Functional ----------------------------------------------------- */
+  --c-pos: light-dark(#1e6b47, #5fc08f);
+  --c-pos-tint: light-dark(#e6f2ec, #12261c);
+  --c-focus: var(--c-red);
+
+  /* Typography ----------------------------------------------------- */
+  --font-sans:
+    'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-mono:
+    ui-monospace, 'SF Mono', SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono',
+    monospace;
+
+  --fs-micro: 0.6875rem; /* 11px — mono labels */
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-sm: 0.8125rem; /* 13px */
+  --fs-base: 0.9375rem; /* 15px — UI */
+  --fs-md: 1.0625rem; /* 17px — reading */
+  --fs-lg: 1.25rem;
+  --fs-xl: clamp(1.375rem, 1.2rem + 0.6vw, 1.625rem);
+  --fs-2xl: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  --fs-3xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.75rem);
+  --fs-display: clamp(2.875rem, 1.4rem + 6.2vw, 7rem);
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.6;
+
+  --tracking-display: -0.045em;
+  --tracking-tight: -0.025em;
+  --tracking-label: 0.06em;
+
+  /* Spacing (4 px base) -------------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+  --section: clamp(3.5rem, 2rem + 5vw, 7rem);
+
+  /* Layout --------------------------------------------------------- */
+  --container: 82.5rem; /* 1320px */
+  --container-narrow: 46rem;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --grid-gap: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
+  --header-h: 4rem;
+
+  /* Shape & depth -------------------------------------------------- */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 6px;
+  --shadow-pop:
+    0 1px 2px rgb(0 0 0 / 0.06), 0 12px 32px -8px light-dark(rgb(0 0 0 / 0.18), rgb(0 0 0 / 0.6));
+
+  /* Motion --------------------------------------------------------- */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --t-fast: 120ms;
+  --t-med: 200ms;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

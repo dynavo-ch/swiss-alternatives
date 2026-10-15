@@ -1,0 +1,56 @@
+# Claude on GitHub — research help for contributions.
+#
+# • Mention @claude in an issue or pull request comment to ask for help.
+# • Add the `research` label to a "Suggest a product" issue: Claude researches
+#   the product following CLAUDE.md and docs/CONTENT.md and opens a pull request
+#   for human review. Nothing is merged automatically.
+#
+# Setup (repository admin): install the Claude GitHub app — run `claude` and
+# `/install-github-app`, or add a secret manually:
+#   CLAUDE_CODE_OAUTH_TOKEN  from `claude setup-token` (uses a Claude subscription), or
+#   ANTHROPIC_API_KEY        an API key from console.anthropic.com
+name: Claude
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+  issues:
+    types: [opened, assigned, labeled]
+
+jobs:
+  claude:
+    # Only run for maintainers' mentions or the research label (avoids spending
+    # credits on drive-by comments).
+    if: |
+      (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'research') ||
+      (contains(github.event.comment.body, '@claude') &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) ||
+      (contains(github.event.review.body, '@claude') &&
+        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.review.author_association))
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          label_trigger: research
+          claude_args: |
+            --max-turns 60

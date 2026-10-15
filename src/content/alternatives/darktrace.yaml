@@ -1,0 +1,7 @@
+name: Darktrace
+vendor: Darktrace Holdings Limited
+vendorCountry: GB
+parent: Thoma Bravo
+summary: AI-based threat detection and response for networks, email, cloud and endpoints.
+website: 'https://www.darktrace.com'
+categories: [network-security]

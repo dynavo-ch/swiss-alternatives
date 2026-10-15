@@ -1,0 +1,69 @@
+name: AlpineAI AG
+shortName: AlpineAI
+type: company
+description: >-
+  Davos-based AI company founded in 2023, with an office in Zurich, that builds
+  the SwissGPT platform for healthcare, public administration and higher
+  education.
+website: https://alpineai.swiss
+founded: 2023
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Incorporated in Davos with articles dated 11 July 2023 and entered in the
+    Graubünden commercial register in July 2023. A branch office in Zurich was
+    registered in 2025.
+headquarters:
+  city: Davos
+  canton: GR
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-455.068.989
+  url: https://www.zefix.ch/en/search/entity/list/firm/1597818
+ownership:
+  swissOwned: unknown
+  basis: vendor
+  source: seed-round
+  note: >-
+    The shareholder register of a Swiss AG is not public. Four of the five board
+    members entered in the register live in Switzerland, including board
+    president and CEO Pascal Kaufmann. A seed round closed in April 2026 was led by Swiss KMU
+    Partners AG together with an unnamed international syndicate of tech
+    investors. No controlling parent company was found.
+lastVerified: 2026-10-15
+sources:
+  - id: zefix
+    title: AlpineAI AG (CHE-455.068.989) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1597818
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-15
+  - id: imprint
+    title: Impressum - AlpineAI
+    url: https://alpineai.swiss/impressum/
+    publisher: AlpineAI AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: about
+    title: Über uns - AlpineAI
+    url: https://alpineai.swiss/ueber-uns/
+    publisher: AlpineAI AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: seed-round
+    title: Kellerhals Carrard advises AlpineAI AG on successful Seed Financing Round
+    url: https://kellerhals-carrard.ch/de/deals/kellerhals-carrard-advises-alpine-ai-ag
+    publisher: Kellerhals Carrard
+    kind: press
+    accessed: 2026-10-15
+  - id: portrait
+    title: 'Schweizer Antwort auf ChatGPT: Vom Bergbunker in die Arztpraxis'
+    url: https://alpineai.swiss/schweizer-antwort-auf-chatgpt-vom-bergbunker-in-die-arztpraxis/
+    publisher: AlpineAI AG
+    kind: vendor
+    accessed: 2026-10-15

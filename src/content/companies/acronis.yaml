@@ -1,0 +1,74 @@
+name: Acronis International GmbH
+shortName: Acronis
+type: company
+description: >-
+  Backup and cybersecurity software company founded in Singapore in 2003,
+  headquartered in Schaffhausen and majority-owned by EQT since 2025.
+website: https://www.acronis.com
+founded: 2003
+swissFounded:
+  value: no
+  basis: inferred
+  source: wikipedia
+  note: >-
+    Acronis was founded in Singapore in 2003 as a spin-off of SWsoft. The Swiss
+    entity Acronis International GmbH was entered in the commercial register
+    of the canton of Schaffhausen on 5 June 2007.
+headquarters:
+  city: Schaffhausen
+  canton: SH
+  country: CH
+  basis: verified
+  source: uid-register
+  note: >-
+    Acronis states that it is headquartered in Schaffhausen. The UID register
+    lists the business address of Acronis International GmbH as Rheinweg 9,
+    8200 Schaffhausen, with the legal seat in the municipality of Neuhausen am
+    Rheinfall. According to its registered purpose, the GmbH provides
+    financing, strategy, marketing and IP licensing services to the Acronis
+    group. Acronis's research and development centres are in Bulgaria, the
+    United States, Israel and Singapore.
+jurisdiction: CH
+registry:
+  uid: CHE-113.666.835
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE113666835
+ownership:
+  swissOwned: no
+  parent: EQT (fund EQT X)
+  parentCountry: SE
+  basis: vendor
+  source: eqt-press
+  note: >-
+    In August 2024 Acronis and EQT announced that the EQT X fund would acquire
+    a majority stake, with closing expected in the first half of 2025;
+    independent reporting records EQT as majority owner from 2025, and an EQT
+    partner sits on the Acronis board. The founders, management and earlier
+    investors, including funds managed by CVC, Springcoast and BlackRock
+    Private Equity Partners, remain significant minority shareholders. EQT is
+    a Swedish investment firm based in Stockholm.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Acronis International GmbH (CHE-113.666.835) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE113666835
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Acronis International GmbH, Schaffhausen - commercial register data
+    url: https://www.moneyhouse.ch/en/company/acronis-international-gmbh-4044403931
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: eqt-press
+    title: EQT to acquire a majority stake in Acronis
+    url: https://www.acronis.com/en/pr/2024/eqt-to-acquire-a-majority-stake-in-acronis/
+    publisher: Acronis International GmbH
+    kind: vendor
+    accessed: 2026-10-15
+  - id: wikipedia
+    title: Acronis
+    url: https://en.wikipedia.org/wiki/Acronis
+    publisher: Wikipedia
+    kind: independent
+    accessed: 2026-10-15

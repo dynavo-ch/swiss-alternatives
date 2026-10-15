@@ -1,0 +1,11 @@
+name: Office Suites
+noun: office suites
+group: workplace
+icon: layout-grid
+summary: Integrated email, calendar, documents and file storage for teams.
+intro: >-
+  Office suites bundle email, calendar, contacts, file storage and collaborative documents
+  under one account. They are the most common replacement for Google Workspace and
+  Microsoft 365.
+related: [email, cloud-storage, calendars]
+added: 2026-10-15

@@ -1,0 +1,60 @@
+name: Friendly GmbH
+shortName: Friendly
+type: company
+description: >-
+  Company in Hergiswil (Nidwalden) that develops and sells Friendly Analytics,
+  a Matomo-based web analytics service hosted in Switzerland.
+website: https://friendly.ch
+founded: 2021
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Friendly GmbH was entered in the commercial register of the canton of
+    Nidwalden on 4 January 2021. The Friendly Analytics product was announced
+    in March 2020 by the digital agency Wortspiel.
+headquarters:
+  city: Hergiswil
+  canton: NW
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-145.851.644
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE145851644
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    According to the commercial register, all capital shares of the GmbH are
+    held by a single partner, a Swiss citizen who is also the managing
+    director.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Friendly GmbH (CHE-145.851.644) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE145851644
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Friendly GmbH, Hergiswil - commercial register data
+    url: https://www.moneyhouse.ch/en/company/friendly-gmbh-19347526841
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: imprint
+    title: Imprint
+    url: https://friendly.ch/en/imprint
+    publisher: Friendly GmbH
+    kind: vendor
+    accessed: 2026-10-15
+  - id: launch
+    title: Wordplay launches Google Analytics alternative
+    url: https://www.markt-kom.com/en/digital/wortspiel-lanciert-google-analytics-alternative
+    publisher: Markt & Kommunikation
+    kind: press
+    accessed: 2026-10-15

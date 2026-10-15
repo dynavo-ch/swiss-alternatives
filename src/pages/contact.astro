@@ -1,0 +1,159 @@
+---
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import { site } from '~/config/site';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+
+const t = useTranslations(Astro.currentLocale);
+const email = site.contactEmail;
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.contact'), href: paths.contact() },
+];
+const mail = (subject: string) => `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+
+const topics = [
+  {
+    icon: 'plus',
+    title: 'Suggest a product',
+    text: 'Know a Swiss product that should be listed? The suggestion page prepares a GitHub issue or an email with everything we need.',
+    href: paths.suggest(),
+    label: 'Suggest a product',
+  },
+  {
+    icon: 'flag',
+    title: 'Report an error',
+    text: 'Every product page has a “Report an error” link. Please include a source — we update entries when the evidence supports it.',
+    href: `${site.repository}/issues/new?template=correction.yml`,
+    label: 'Open a correction',
+  },
+  {
+    icon: 'building-2',
+    title: 'Vendors',
+    text: 'Correct your listing, send an official logo or tell us about hosting changes. Listings are free and cannot be bought; please disclose that you represent the vendor.',
+    href: mail('Vendor: '),
+    label: 'Email us as a vendor',
+  },
+  {
+    icon: 'handshake',
+    title: 'Sponsorship & partnerships',
+    text: 'Support the project without influencing it. Sponsorship never affects inclusion, classification or ordering.',
+    href: paths.sponsors(),
+    label: 'Sponsorship policy',
+  },
+  {
+    icon: 'newspaper',
+    title: 'Press',
+    text: 'Questions about the project, the data or the methodology.',
+    href: mail('Press: '),
+    label: 'Email the team',
+  },
+  {
+    icon: 'shield-alert',
+    title: 'Security',
+    text: 'Found a vulnerability in this website? Please report it privately by email before disclosing it.',
+    href: mail('Security report'),
+    label: 'Report privately',
+  },
+];
+---
+
+<BaseLayout
+  title={t('contact.title')}
+  description={t('contact.description', { email })}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.contact')}
+    title={t('contact.heading')}
+    lead={t('contact.lead')}
+  >
+    <p class="contact-mail">
+      <a href={`mailto:${email}`} class="btn btn--primary btn--lg">
+        <Icon name="mail" />
+        {email}
+      </a>
+    </p>
+  </PageHeader>
+
+  <section class="section container" aria-labelledby="topics-h">
+    <h2 class="label" id="topics-h">
+      {t('contact.topics')}
+    </h2>
+    <ul class="topics" role="list">
+      {topics.map((topic) => (
+        <li class="topic">
+          <Icon name={topic.icon} class="topic__icon" />
+          <h3>{topic.title}</h3>
+          <p>{topic.text}</p>
+          <a href={topic.href} class="arrow-link">
+            {topic.label}
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="contact-note">{t('contact.note')}</p>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-mail {
+    margin-top: var(--s-6);
+  }
+
+  .topics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--s-4);
+  }
+
+  .topic {
+    display: grid;
+    align-content: start;
+    justify-items: start;
+    gap: var(--s-3);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    border-top: 2px solid var(--c-ink);
+    background: var(--c-surface);
+  }
+
+  .topic :global(.topic__icon) {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .topic h3 {
+    font-size: var(--fs-md);
+  }
+
+  .topic p {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-2);
+  }
+
+  .contact-note {
+    margin-top: var(--s-8);
+    max-width: 62ch;
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  @media (max-width: 60rem) {
+    .topics {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 36rem) {
+    .topics {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,11 @@
+name: VPS & Virtual Servers
+noun: VPS providers
+group: cloud
+icon: server
+summary: Virtual private servers and simple virtual machines billed by the hour or month.
+intro: >-
+  Virtual private servers give you a dedicated slice of a physical machine with root access.
+  They suit websites, small applications and self-hosted tools that do not need a full cloud
+  platform.
+related: [cloud-platforms, web-hosting]
+added: 2026-10-15

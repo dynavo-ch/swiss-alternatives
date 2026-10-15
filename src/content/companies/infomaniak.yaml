@@ -1,0 +1,95 @@
+name: Infomaniak Network SA
+shortName: Infomaniak
+type: company
+description: >-
+  Geneva-based cloud provider that runs its own data centres in Switzerland and
+  offers web hosting, cloud infrastructure, collaboration tools and AI services.
+  Its group holding has been listed on SIX Swiss Exchange since October 2026.
+website: https://www.infomaniak.com
+founded: 1994
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Infomaniak dates its origins to Geneva in 1994. The operating company,
+    Infomaniak Network SA, has been entered in the Geneva commercial register
+    since 9 January 1996.
+headquarters:
+  city: Geneva
+  canton: GE
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-103.167.648
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103167648
+ownership:
+  swissOwned: yes
+  parent: Infomaniak SA (controlled by the Infomaniak Foundation)
+  parentCountry: CH
+  basis: vendor
+  source: investors
+  note: >-
+    In May 2026 founder Boris Siegenthaler transferred the majority of voting
+    rights to the Infomaniak Foundation, a Swiss public-interest foundation. In
+    September 2026 the SIX-listed Perrot Duval Holding SA acquired 100% of
+    Infomaniak Group SA in a reverse takeover and was renamed Infomaniak SA
+    (ticker INFO, trading since 1 October 2026). The Foundation holds all
+    unlisted, non-transferable Class A shares and the majority of voting rights;
+    the listed Class B shares carry a minority of votes. The founder and about 30
+    employees also hold shares. Infomaniak Network SA is the group's operating
+    company and contracting entity; its place under Infomaniak Group SA is
+    inferred from the shared address, management and group references rather
+    than stated explicitly in the sources consulted.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: INFOMANIAK NETWORK SA (CHE-103.167.648) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE103167648
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: INFOMANIAK NETWORK SA, Genève - commercial register data
+    url: https://www.moneyhouse.ch/en/company/infomaniak-network-sa-20045987161
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: investors
+    title: Infomaniak on the stock market - investor relations
+    url: https://www.infomaniak.com/en/investors
+    publisher: Infomaniak SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: foundation
+    title: Infomaniak secures its independence and its DNA for the long term
+    url: https://news.infomaniak.com/en/infomaniak-foundation-sovereign-cloud/
+    publisher: Infomaniak
+    kind: vendor
+    accessed: 2026-10-15
+  - id: six
+    title: Swiss Cloud Pioneer Infomaniak Joins SIX Swiss Exchange
+    url: https://www.six-group.com/en/newsroom/media-releases/2026/20261001-infomaniak-listing.html
+    publisher: SIX Group
+    kind: press
+    accessed: 2026-10-15
+  - id: adhoc
+    title: Ad hoc announcement pursuant to Art. 53 LR of 2 September 2026
+    url: https://www.infomaniak.com/documents/financial/ad-hoc-announcement-art-53-lr-02.09.2026.pdf
+    publisher: Perrot Duval Holding SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: privacy
+    title: Confidentiality policy
+    url: https://www.infomaniak.com/en/legal/confidentiality-policy
+    publisher: Infomaniak Network SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: about
+    title: About us
+    url: https://www.infomaniak.com/en/about
+    publisher: Infomaniak Network SA
+    kind: vendor
+    accessed: 2026-10-15

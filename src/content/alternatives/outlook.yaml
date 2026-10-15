@@ -1,0 +1,7 @@
+name: Outlook
+vendor: Microsoft Corporation
+vendorCountry: US
+summary: Microsoft's email and calendar service (Outlook.com) and email client, part of Microsoft 365.
+website: 'https://outlook.com'
+categories: [email, calendars]
+aliases: [hotmail, outlook.com, exchange online]

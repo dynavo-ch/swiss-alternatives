@@ -1,0 +1,11 @@
+name: Search Engines
+noun: search engines
+group: internet
+icon: search
+summary: Web search without profiling.
+intro: >-
+  Search engines index the web and answer queries. Few operate a fully independent index;
+  many privacy-focused engines combine their own technology with results licensed from
+  larger providers.
+related: [dns-resolvers]
+added: 2026-10-15

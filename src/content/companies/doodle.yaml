@@ -1,0 +1,64 @@
+name: Doodle AG
+shortName: Doodle
+type: company
+description: >-
+  Zurich-based company behind the Doodle scheduling service, founded in 2007 by
+  two ETH Zurich students and today a subsidiary of the Swiss media group TX
+  Group.
+website: https://doodle.com
+founded: 2007
+swissFounded:
+  value: yes
+  basis: vendor
+  source: history
+  note: >-
+    Founded in 2007 by ETH Zurich students Michael Näf and Paul E. Sevinç. The
+    company has been entered in the Zurich commercial register since March 2007
+    (earlier name: Inturico Engineering GmbH).
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-113.479.003
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE113479003
+ownership:
+  swissOwned: yes
+  parent: TX Group AG
+  parentCountry: CH
+  basis: vendor
+  source: imprint
+  note: >-
+    Tamedia (now TX Group) took a minority stake in 2011 and a majority stake in
+    2014. Doodle's imprint describes the company as a subsidiary of TX Group AG,
+    the Zurich-based media group. No later sale was found in reporting up to
+    October 2026.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: Website imprint - Doodle
+    url: https://doodle.com/en/website-imprint/
+    publisher: Doodle AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: history
+    title: The History of Doodle
+    url: https://doodle.com/en/resources/blog/the-history-of-doodle/
+    publisher: Doodle AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Doodle AG (CHE-113.479.003) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE113479003
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Doodle AG - commercial register data
+    url: https://www.moneyhouse.ch/en/company/doodle-ag-4606935841
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15

@@ -1,0 +1,58 @@
+name: Banana.ch SA
+shortName: Banana
+type: company
+description: >-
+  Lugano-based software company that has developed the Banana Accounting
+  desktop software since 1989.
+website: https://www.banana.ch
+founded: 1989
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Banana dates the launch of its software to 1989. The company has been
+    entered in the Ticino commercial register since 21 June 1990, with its seat
+    in Lugano (earlier name: Parsec System SA).
+headquarters:
+  city: Lugano
+  canton: TI
+  country: CH
+  basis: verified
+  source: uid-register
+  note: Registered address Via la Santa 7, 6962 Viganello (municipality of Lugano).
+jurisdiction: CH
+registry:
+  uid: CHE-101.734.967
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE101734967
+ownership:
+  swissOwned: unknown
+  note: >-
+    No ownership information is published. The company page names Domenico
+    Zucchetti as the company's founder.
+lastVerified: 2026-10-15
+sources:
+  - id: company
+    title: Company - Banana Accounting Software
+    url: https://www.banana.ch/en/company
+    publisher: Banana.ch SA
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: banana.ch SA (CHE-101.734.967) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE101734967
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: banana.ch SA - commercial register data
+    url: https://www.moneyhouse.ch/en/company/banana-ch-sa-3985092681
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: privacy
+    title: Privacy Policy - Banana Accounting Software
+    url: https://www.banana.ch/en/privacypolicy
+    publisher: Banana.ch SA
+    kind: vendor
+    accessed: 2026-10-15

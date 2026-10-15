@@ -1,0 +1,83 @@
+name: Forterro Schweiz Proffix AG
+shortName: Proffix
+type: company
+description: >-
+  Software company in Altendorf SZ, originally PROFFIX Software AG, that develops
+  the Proffix ERP software for Swiss SMEs. It has been part of the London-based
+  Forterro group since 2023.
+website: https://www.proffix.ch
+founded: 2001
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the commercial register on 7 February 2001 under the earlier
+    name PROFFIX Software AG; until 2026 its seat was Vilters-Wangs SG.
+    Proffix describes its origins as four business partners who set out to
+    build business software for Swiss SMEs.
+headquarters:
+  city: Altendorf
+  canton: SZ
+  country: CH
+  basis: verified
+  source: uid-register
+  note: >-
+    The registered seat moved from Vilters-Wangs SG to Altendorf SZ in 2026
+    (articles amended 25 June 2026).
+jurisdiction: CH
+registry:
+  uid: CHE-101.791.706
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE101791706
+ownership:
+  swissOwned: no
+  parent: Forterro
+  parentCountry: GB
+  basis: vendor
+  source: imprint
+  note: >-
+    Proffix states that it is part of Forterro, a European ERP software group
+    headquartered in London. Forterro announced the acquisition of Proffix in
+    August 2023, and the company was renamed from PROFFIX Software AG to
+    Forterro Schweiz Proffix AG in November 2024. In March 2022 Forterro
+    announced that it had been acquired by Partners Group, a Swiss
+    private-markets firm, acting on behalf of its clients; the current
+    shareholder structure of the Forterro group was not re-verified.
+lastVerified: 2026-10-15
+sources:
+  - id: imprint
+    title: Impressum - Proffix
+    url: https://www.proffix.ch/impressum
+    publisher: Forterro Schweiz Proffix AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: company
+    title: Unternehmen - Proffix
+    url: https://www.proffix.ch/de/unternehmen
+    publisher: Forterro Schweiz Proffix AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: uid-register
+    title: Forterro Schweiz Proffix AG (CHE-101.791.706) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE101791706
+    publisher: Swiss Federal Statistical Office
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Forterro Schweiz Proffix AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/forterro-schweiz-proffix-ag-4039589121
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: press-acquisition
+    title: Forterro übernimmt Proffix
+    url: https://www.netzwoche.ch/news/2023-08-16/forterro-uebernimmt-proffix
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-15
+  - id: forterro-partners-group
+    title: Forterro gains new investor Partners Group (press release, 1 March 2022)
+    url: https://www.forterro.com/news/forterro-gains-investor-partners-group
+    publisher: Forterro
+    kind: vendor
+    accessed: 2026-10-15

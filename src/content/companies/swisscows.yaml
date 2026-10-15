@@ -1,0 +1,69 @@
+name: Swisscows AG
+shortName: Swisscows
+type: company
+description: >-
+  Company in Egnach (Thurgau) that operates the Swisscows search engine, first
+  launched in 2014, and related privacy services. A subsidiary of Hulbee AG.
+website: https://swisscows.com
+founded: 2019
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Swisscows AG was entered in the commercial register of the canton of
+    Thurgau on 11 June 2019. The search engine itself started in 2014 as a
+    project of Hulbee AG, also based in Egnach.
+headquarters:
+  city: Egnach
+  canton: TG
+  country: CH
+  basis: verified
+  source: uid-register
+jurisdiction: CH
+registry:
+  uid: CHE-220.068.700
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE220068700
+ownership:
+  swissOwned: yes
+  parent: Hulbee AG
+  parentCountry: CH
+  basis: inferred
+  source: company
+  note: >-
+    Swisscows AG describes itself as a subsidiary of Hulbee AG in Egnach.
+    Founder and CEO Andreas Wiebe, who lives in eastern Switzerland, was
+    described in 2022 as owner of Hulbee and Swisscows. The full shareholder
+    structure is not published.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: Swisscows AG (CHE-220.068.700) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE220068700
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: Swisscows AG, Egnach - commercial register data
+    url: https://www.moneyhouse.ch/en/company/swisscows-ag-9916553491
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: company
+    title: About Swisscows AG
+    url: https://company.swisscows.com/en
+    publisher: Swisscows AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: imprint
+    title: Imprint
+    url: https://swisscows.com/en/imprint
+    publisher: Swisscows AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: portrait-2022
+    title: 'Der Kinderfreund: Andreas Wiebe, Inhaber und Geschäftsführer von Hulbee und Swisscows'
+    url: https://www.itreseller.ch/artikel/96044/Der_Kinderfreund_Andreas_Wiebe_Inhaber_und_Geschaeftsfuehrer_von_Hulbee_und_Swisscows.html
+    publisher: IT-Reseller
+    kind: press
+    accessed: 2026-10-15

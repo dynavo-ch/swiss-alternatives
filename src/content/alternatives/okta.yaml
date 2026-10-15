@@ -1,0 +1,6 @@
+name: Okta
+vendor: Okta, Inc.
+vendorCountry: US
+summary: Identity platform for workforce single sign-on, MFA and lifecycle management.
+website: 'https://www.okta.com'
+categories: [iam, authentication]

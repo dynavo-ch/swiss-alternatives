@@ -1,0 +1,7 @@
+name: Cloudflare
+vendor: Cloudflare, Inc.
+vendorCountry: US
+summary: Edge network for CDN, DDoS protection, web application firewall and zero-trust access.
+website: 'https://www.cloudflare.com'
+categories: [network-security]
+aliases: [Cloudflare WAF, Cloudflare One, Cloudflare Zero Trust]

@@ -1,0 +1,9 @@
+name: Google Drive
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's cloud storage and file sync service, part of Google Workspace and Google One.
+website: 'https://drive.google.com'
+categories: [cloud-storage, file-sharing]
+aliases: [gdrive, google one]
+popular: true

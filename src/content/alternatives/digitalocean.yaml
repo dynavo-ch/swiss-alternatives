@@ -1,0 +1,8 @@
+name: DigitalOcean
+vendor: DigitalOcean, LLC
+vendorCountry: US
+parent: DigitalOcean Holdings, Inc.
+summary: Developer-focused cloud with virtual machines (Droplets), managed Kubernetes and object storage.
+website: 'https://www.digitalocean.com'
+categories: [vps-hosting, cloud-platforms, kubernetes]
+aliases: [droplets]

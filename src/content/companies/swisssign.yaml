@@ -1,0 +1,73 @@
+name: SwissSign AG
+shortName: SwissSign
+type: company
+description: >-
+  Swiss Post subsidiary in Glattbrugg and a recognised trust service provider
+  for certificates, electronic signatures and the SwissID login.
+website: https://www.swisssign.com
+founded: 2001
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    SwissSign AG was entered in the commercial register of the canton of
+    Zurich on 9 October 2001.
+headquarters:
+  city: Glattbrugg
+  canton: ZH
+  country: CH
+  basis: verified
+  source: uid-register
+  note: >-
+    The registered municipality is Opfikon; the address is Sägereistrasse 25,
+    8152 Glattbrugg. SwissSign also has a branch in Lausanne, registered in
+    December 2022.
+jurisdiction: CH
+registry:
+  uid: CHE-109.357.012
+  url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE109357012
+ownership:
+  swissOwned: yes
+  parent: Die Schweizerische Post AG (Swiss Post)
+  parentCountry: CH
+  basis: vendor
+  source: post-press
+  note: >-
+    Swiss Post increased its stake in the former joint venture SwissSign Group
+    AG from 17 per cent to full ownership with effect from 1 October 2021 and
+    runs it as an independent subsidiary. The register does not publish
+    SwissSign AG's shareholders; SwissSign presents itself as a data security
+    specialist by Swiss Post. Swiss Post is owned by the Swiss Confederation.
+lastVerified: 2026-10-15
+sources:
+  - id: uid-register
+    title: SwissSign AG (CHE-109.357.012) - UID register
+    url: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE109357012
+    publisher: Swiss Federal Statistical Office (UID register)
+    kind: registry
+    accessed: 2026-10-15
+  - id: moneyhouse
+    title: SwissSign AG, Opfikon - commercial register data
+    url: https://www.moneyhouse.ch/en/company/swisssign-ag-12039848741
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-15
+  - id: post-press
+    title: Swiss Post acquires SwissSign Group Ltd.
+    url: https://site.post.ch/en/about-us/media/press-releases/swiss-post-acquires-swisssign-group-ltd
+    publisher: Die Schweizerische Post AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: digital-signatures
+    title: Digital signatures overview
+    url: https://www.swisssign.com/en/digital-signatures.html
+    publisher: SwissSign AG
+    kind: vendor
+    accessed: 2026-10-15
+  - id: terms
+    title: SwissSign Terms and Conditions of Use for Qualified Electronic Signature and Simple Electronic Signature (v1.6)
+    url: https://www.swisssign.com/en/dam/jcr:9b8a5d50-5fe4-4dd0-b666-81b215334cf8/Terms%20of%20Use%20SwissSign%20Signature%20Service%20V1.6%20ESigA.pdf
+    publisher: SwissSign AG
+    kind: vendor
+    accessed: 2026-10-15

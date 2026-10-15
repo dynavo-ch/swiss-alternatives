@@ -1,0 +1,7 @@
+name: Duo
+vendor: Cisco Systems, Inc.
+vendorCountry: US
+summary: Multi-factor authentication and access security, part of Cisco.
+website: 'https://duo.com'
+categories: [authentication]
+aliases: [duo security, cisco duo]

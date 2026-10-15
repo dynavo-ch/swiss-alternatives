@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "type": {
+      "default": "company",
+      "type": "string",
+      "enum": ["company", "foundation", "association", "cooperative", "public-institution"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "founded": {
+      "type": "integer",
+      "minimum": 1800,
+      "maximum": 2100
+    },
+    "swissFounded": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": ["yes", "no", "partial", "unknown"]
+            },
+            "basis": {
+              "type": "string",
+              "enum": ["verified", "vendor", "inferred"]
+            },
+            "source": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": ["value"]
+        }
+      ]
+    },
+    "headquarters": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "canton": {
+          "type": "string",
+          "enum": [
+            "AG",
+            "AI",
+            "AR",
+            "BE",
+            "BL",
+            "BS",
+            "FR",
+            "GE",
+            "GL",
+            "GR",
+            "JU",
+            "LU",
+            "NE",
+            "NW",
+            "OW",
+            "SG",
+            "SH",
+            "SO",
+            "SZ",
+            "TG",
+            "TI",
+            "UR",
+            "VD",
+            "VS",
+            "ZG",
+            "ZH"
+          ]
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["verified", "vendor", "inferred"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": ["country"]
+    },
+    "jurisdiction": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "registry": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "ownership": {
+      "default": {
+        "swissOwned": "unknown"
+      },
+      "type": "object",
+      "properties": {
+        "swissOwned": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "parent": {
+          "type": "string"
+        },
+        "parentCountry": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "parentCompany": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["verified", "vendor", "inferred"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "lastVerified": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "kind": {
+            "default": "vendor",
+            "type": "string",
+            "enum": ["vendor", "registry", "documentation", "press", "independent"]
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": ["id", "title", "url"]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": ["name", "description", "website", "headquarters"]
+}

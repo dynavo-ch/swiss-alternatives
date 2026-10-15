@@ -1,0 +1,92 @@
+---
+/**
+ * Primary product card. Shows at most three badges — the full set lives on
+ * the product page. `data-*` attributes on the wrapping element feed the
+ * client-side filters (see FilterableList.astro).
+ */
+import Badge from './Badge.astro';
+import CompareButton from './CompareButton.astro';
+import FavButton from './FavButton.astro';
+import Footprint from './Footprint.astro';
+import Icon from './Icon.astro';
+import ProductLogo from './ProductLogo.astro';
+import { useTranslations } from '~/i18n';
+import type { Product } from '~/lib/data';
+import { shortLocation } from '~/lib/format';
+import { CARD_SIGNAL_PRIORITY } from '~/lib/signals';
+
+interface Props {
+  product: Product;
+  headingLevel?: 'h2' | 'h3' | 'h4';
+  maxBadges?: number;
+  showCategory?: boolean;
+}
+
+const { product, headingLevel: Heading = 'h3', maxBadges = 3, showCategory = true } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const hq = product.company.data.headquarters;
+const location = shortLocation(hq, Astro.currentLocale);
+const badges = CARD_SIGNAL_PRIORITY.filter((key) => product.signals[key]).slice(0, maxBadges);
+---
+
+<article class="pcard">
+  <div class="pcard__head">
+    <ProductLogo name={product.name} logo={product.logo} normalized={product.logoNormalized} />
+    <div class="pcard__titles">
+      <Heading class="pcard__name">
+        <a href={product.url} class="pcard__link">
+          {product.name}
+        </a>
+      </Heading>
+      <p class="pcard__meta">
+        {product.company.displayName} · {location}
+      </p>
+    </div>
+    <div class="pcard__actions">
+      <FavButton id={product.id} name={product.name} />
+      <CompareButton id={product.id} name={product.name} />
+    </div>
+  </div>
+
+  <p class="pcard__tagline">{product.data.tagline}</p>
+
+  <p class="pcard__class">
+    <Footprint footprint={product.footprint} />
+    <span>{t(`class.${product.classification}`)}</span>
+  </p>
+
+  {(badges.length > 0 || product.isNew || product.data.status !== 'active') && (
+    <ul class="badges" role="list">
+      {product.isNew && (
+        <li>
+          <span class="badge badge--new">{t('common.new')}</span>
+        </li>
+      )}
+      {product.data.status === 'beta' && (
+        <li>
+          <span class="badge">{t('common.beta')}</span>
+        </li>
+      )}
+      {product.data.status === 'discontinued' && (
+        <li>
+          <span class="badge">{t('common.discontinued')}</span>
+        </li>
+      )}
+      {badges.map((signal) => (
+        <li>
+          <Badge signal={signal} />
+        </li>
+      ))}
+    </ul>
+  )}
+
+  {showCategory && (
+    <div class="pcard__foot">
+      <span class="pcard__cat">{product.primaryCategory.name}</span>
+      {product.pricingTier !== 'unknown' && (
+        <span class="pcard__tier">{t(`pricing.tier.${product.pricingTier}`)}</span>
+      )}
+      <Icon name="arrow-right" />
+    </div>
+  )}
+</article>

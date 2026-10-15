@@ -1,0 +1,9 @@
+name: Google Analytics
+vendor: Google LLC
+vendorCountry: US
+parent: Alphabet Inc.
+summary: Google's website and app analytics service.
+website: 'https://marketingplatform.google.com/about/analytics/'
+categories: [web-analytics]
+aliases: [ga4, ga]
+popular: true

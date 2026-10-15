@@ -1,0 +1,10 @@
+name: Web Hosting
+noun: web hosts
+group: cloud
+icon: globe
+summary: Shared and managed hosting for websites, WordPress and email.
+intro: >-
+  Web hosting packages bundle web space, databases, email accounts and often domains. They
+  are the simplest way for small organisations to publish a website on Swiss servers.
+related: [domain-registrars, vps-hosting]
+added: 2026-10-15

@@ -1,0 +1,10 @@
+name: Managed Kubernetes
+noun: managed Kubernetes services
+group: cloud
+icon: boxes
+summary: Managed Kubernetes clusters with the control plane operated for you.
+intro: >-
+  Managed Kubernetes services run the cluster control plane and node lifecycle so teams can
+  deploy containers without operating Kubernetes themselves.
+related: [cloud-platforms, paas]
+added: 2026-10-15

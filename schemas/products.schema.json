@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "company": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "tagline": {
+      "type": "string",
+      "maxLength": 110
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 220
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "screenshots": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "src": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        },
+        "required": ["src", "alt"]
+      }
+    },
+    "status": {
+      "default": "active",
+      "type": "string",
+      "enum": ["active", "beta", "discontinued"]
+    },
+    "launched": {
+      "type": "integer",
+      "minimum": 1970,
+      "maximum": 2100
+    },
+    "categories": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "alternativesTo": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": ["id"]
+          }
+        ]
+      }
+    },
+    "audience": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["consumer", "business", "enterprise", "public-sector", "developer"]
+      }
+    },
+    "deployment": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["saas", "self-hosted", "on-premises", "managed"]
+      }
+    },
+    "platforms": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "web",
+          "windows",
+          "macos",
+          "linux",
+          "ios",
+          "android",
+          "browser-extension",
+          "cli",
+          "api"
+        ]
+      }
+    },
+    "languages": {
+      "default": {
+        "interface": [],
+        "support": []
+      },
+      "type": "object",
+      "properties": {
+        "interface": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+          }
+        },
+        "support": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+          }
+        }
+      }
+    },
+    "swiss": {
+      "type": "object",
+      "properties": {
+        "developed": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["yes", "no", "partial", "unknown"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "enum": ["yes", "no", "partial", "unknown"]
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": ["verified", "vendor", "inferred"]
+                },
+                "source": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": ["value"]
+            }
+          ]
+        },
+        "hosted": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["yes", "no", "partial", "optional", "unknown"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "enum": ["yes", "no", "partial", "optional", "unknown"]
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": ["verified", "vendor", "inferred"]
+                },
+                "source": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": ["value"]
+            }
+          ]
+        },
+        "dataLocations": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "infrastructure": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string"
+            },
+            "providerCountry": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            },
+            "type": {
+              "default": "unknown",
+              "type": "string",
+              "enum": ["self-operated", "colocation", "public-cloud", "mixed", "unknown"]
+            },
+            "swissOwned": {
+              "default": "unknown",
+              "type": "string",
+              "enum": ["yes", "no", "partial", "unknown"]
+            },
+            "facility": {
+              "type": "string"
+            },
+            "basis": {
+              "type": "string",
+              "enum": ["verified", "vendor", "inferred"]
+            },
+            "source": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "openSource": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "license": {
+          "type": "string"
+        },
+        "repository": {
+          "type": "string",
+          "format": "uri"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["verified", "vendor", "inferred"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "free",
+            "freemium",
+            "subscription",
+            "usage-based",
+            "one-time",
+            "quote",
+            "donation"
+          ]
+        },
+        "freePlan": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "freeTrial": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "enterprise": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "chfBilling": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "startingPrice": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "enum": ["CHF", "EUR", "USD"]
+            },
+            "period": {
+              "type": "string",
+              "enum": ["month", "year", "one-time", "hour", "usage"]
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": ["amount", "currency", "period"]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "checked": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["verified", "vendor", "inferred"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "features": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "e2ee": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "encryptionAtRest": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "encryptionInTransit": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "mfa": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "sso": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "scim": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "api": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        },
+        "dataExport": {
+          "default": "unknown",
+          "type": "string",
+          "enum": ["yes", "no", "partial", "unknown"]
+        }
+      }
+    },
+    "certifications": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "iso-27001",
+          "iso-27017",
+          "iso-27018",
+          "iso-27701",
+          "iso-9001",
+          "iso-14001",
+          "iso-50001",
+          "iso-22301",
+          "soc-1",
+          "soc-2",
+          "bsi-c5",
+          "pci-dss",
+          "hipaa",
+          "tisax",
+          "isae-3402",
+          "isae-3000",
+          "finma",
+          "hds"
+        ]
+      }
+    },
+    "sustainability": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string",
+          "enum": ["verified", "vendor", "inferred"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": ["summary"]
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affiliate": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": ["url"]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sponsored": {
+      "default": false,
+      "type": "boolean"
+    },
+    "added": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastVerified": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "kind": {
+            "default": "vendor",
+            "type": "string",
+            "enum": ["vendor", "registry", "documentation", "press", "independent"]
+          },
+          "accessed": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": ["id", "title", "url"]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": ["name", "company", "tagline", "description", "website", "categories", "added"]
+}
