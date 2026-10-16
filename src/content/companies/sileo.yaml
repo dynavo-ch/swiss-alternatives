@@ -1,0 +1,65 @@
+name: Sileo AG
+shortName: Sileo
+type: company
+description: >-
+  IT service provider in Fahrwangen (Aargau) that runs its own data centres in
+  Switzerland and offers colocation, cloud backup, cloud storage, virtual
+  servers and IT support for SMEs.
+website: https://sileo.swiss
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    The company is entered in the commercial register of the canton of Aargau.
+    Earlier names recorded there include Westag, Bamatik AG, I-TOPS AG and,
+    until March 2026, Sileo Information Management AG; no foreign predecessor
+    is recorded.
+headquarters:
+  city: Fahrwangen
+  canton: AG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-107.824.793
+  url: https://www.zefix.ch/en/search/entity/list/firm/370793
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: swissmadesoftware
+  note: >-
+    The member profile names Silvio Frick as CEO and owner; the commercial
+    register lists him as a Swiss citizen and board member. The shareholders of
+    the stock corporation are not published in the register. No acquisition was
+    found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Sileo AG (CHE-107.824.793) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/370793
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - SILEO AG
+    url: https://sileo.swiss/impressum/
+    publisher: Sileo AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Sileo Information Management AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/sileo-information-management-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Dienstleister in Fahrwangen (Aargau), der eigene Rechenzentren in der Schweiz betreibt und KMU Colocation, Cloud-Backup, Cloud-Speicher, virtuelle Server und IT-Support anbietet.'
+    notes:
+      swissFounded.note: 'Das Unternehmen ist im Handelsregister des Kantons Aargau eingetragen. Zu den dort verzeichneten früheren Namen gehören Westag, Bamatik AG, I-TOPS AG und bis März 2026 Sileo Information Management AG; eine ausländische Vorgängerin ist nicht verzeichnet.'
+      ownership.note: 'Das Mitgliederprofil nennt Silvio Frick als CEO und Inhaber; das Handelsregister führt ihn als Schweizer Bürger und Verwaltungsrat. Die Aktionäre der Aktiengesellschaft werden im Register nicht veröffentlicht. Bis Oktober 2026 wurde keine Übernahme gemeldet.'

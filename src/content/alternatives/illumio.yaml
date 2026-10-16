@@ -1,0 +1,10 @@
+name: Illumio
+vendor: Illumio, Inc.
+vendorCountry: US
+summary: Microsegmentation platform that limits traffic between workloads, endpoints and OT devices to contain breaches.
+website: 'https://www.illumio.com'
+categories: [network-security]
+aliases: [Illumio Segmentation, Illumio Core]
+i18n:
+  de:
+    summary: 'Mikrosegmentierungsplattform, die den Verkehr zwischen Workloads, Endgeräten und OT-Geräten einschränkt, um Angriffe einzudämmen.'
