@@ -1,6 +1,7 @@
 // Cloudflare deployment (Workers with static assets).
 //   Git integration: Workers & Pages → Create → Import a repository →
 //     build command `npm run build`, deploy command `npx wrangler deploy`.
+//   Pull requests get a Preview build (`npx wrangler preview`).
 //   Manual: `npm run build && npx wrangler deploy`
 // The site is fully static: no Worker script runs, assets are served from the
 // edge. public/_headers (security and cache headers) is applied automatically.
@@ -14,4 +15,7 @@
     "html_handling": "force-trailing-slash",
   },
   "observability": { "enabled": false },
+  // Required by `wrangler preview`, which Workers Builds runs for non-production
+  // branches. Empty: previews use the same static assets and settings.
+  "previews": {},
 }
