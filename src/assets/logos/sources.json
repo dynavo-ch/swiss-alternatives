@@ -9,6 +9,16 @@
     "method": "favicon service",
     "fetched": "2026-10-16"
   },
+  "airlock-gateway": {
+    "source": "manual/airlock-gateway.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
+  "airlock-iam": {
+    "source": "manual/airlock-iam.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
   "alphosting": {
     "source": "https://www.google.com/s2/favicons?domain=www.alphosting.ch&sz=256",
     "method": "favicon service",
@@ -86,6 +96,11 @@
   },
   "cloudsigma": {
     "source": "manual/cloudsigma.webp",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
+  "company--abacus": {
+    "source": "manual/company--abacus.svg",
     "method": "manual",
     "fetched": "2026-10-16"
   },
@@ -209,15 +224,20 @@
     "method": "favicon service",
     "fetched": "2026-10-15"
   },
+  "company--ergon": {
+    "source": "manual/company--ergon.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
   "company--evenito": {
     "source": "https://cdn.prod.website-files.com/68db18539bb456d1a9b91987/68db18539bb456d1a9b919e3_webclip.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
   "company--exeon": {
-    "source": "https://exeon.com/wp-content/uploads/2025/07/AlpineGuard-white-300x300.png",
-    "method": "apple-touch-icon",
-    "fetched": "2026-10-15"
+    "source": "manual/company--exeon.png",
+    "method": "manual",
+    "fetched": "2026-10-16"
   },
   "company--exoscale": {
     "source": "https://www.exoscale.com/static/safari-pinned-tab.svg",
