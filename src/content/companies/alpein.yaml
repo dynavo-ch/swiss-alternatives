@@ -1,0 +1,78 @@
+name: ALPEIN Software SWISS AG
+shortName: ALPEIN Software
+type: company
+description: >-
+  Software company in Stein am Rhein SH that develops the PassSecurium password
+  manager and provides SAP consulting, software development and IT services.
+website: https://www.alpeinsoft.ch
+founded: 2014
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    ALPEIN states that the company was founded in 2014. It was first registered
+    with its seat in Kerns OW and moved its seat to Stein am Rhein SH in 2018.
+headquarters:
+  city: Stein am Rhein
+  canton: SH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-136.786.077
+  url: https://www.zefix.ch/en/search/entity/list/firm/1204964
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholder structure is not published. The president of the board
+    entered in the commercial register is a German national living in Stein am
+    Rhein. ALPEIN describes itself as a group of companies; its data processing
+    agreement names ALPEIN Software GmbH & Co. KG in Munich as a subcontractor.
+    How the two companies are related is not stated.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: ALPEIN Software SWISS AG (CHE-136.786.077) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1204964
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - ALPEIN Software
+    url: https://www.alpeinsoft.ch/ueberuns
+    publisher: ALPEIN Software SWISS AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - ALPEIN Software
+    url: https://www.alpeinsoft.ch/impressum
+    publisher: ALPEIN Software SWISS AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: dpa
+    title: PassSecurium data processing agreement (DPA)
+    url: https://www.pass-securium.ch/en/dpa
+    publisher: ALPEIN Software SWISS AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: ALPEIN Software SWISS AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/alpein-software-swiss-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Stein am Rhein SH, das den Passwort-Manager PassSecurium entwickelt und SAP-Beratung, Softwareentwicklung und IT-Dienstleistungen anbietet.'
+    notes:
+      swissFounded.note: 'ALPEIN gibt an, dass das Unternehmen 2014 gegründet wurde. Es war zunächst mit Sitz in Kerns OW eingetragen und verlegte seinen Sitz 2018 nach Stein am Rhein SH.'
+      ownership.note: 'Die Aktionärsstruktur wird nicht veröffentlicht. Der im Handelsregister eingetragene Verwaltungsratspräsident ist deutscher Staatsangehöriger mit Wohnsitz in Stein am Rhein. ALPEIN bezeichnet sich als Unternehmensgruppe; sein Auftragsverarbeitungsvertrag nennt die ALPEIN Software GmbH & Co. KG in München als Unterauftragnehmerin. Wie die beiden Unternehmen zusammenhängen, wird nicht angegeben.'

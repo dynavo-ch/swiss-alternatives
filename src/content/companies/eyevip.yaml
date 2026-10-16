@@ -1,0 +1,73 @@
+name: eyevip cloud AG
+shortName: eyevip
+type: company
+description: >-
+  Zurich-based company, spun off from the software firm .eyecatcher AG in 2016,
+  that develops the eyevip event and invitation management software.
+website: https://www.eyevip.com
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in December 2016
+    as eyeVIP AG and renamed eyevip cloud AG in 2020. According to eyevip, the
+    product was originally developed by .eyecatcher AG, a custom software
+    company active since 1998.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-492.074.362
+  url: https://www.zefix.ch/en/search/entity/list/firm/1288718
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    Privately held; the shareholder structure is not published. The board
+    members entered in the commercial register live in Switzerland, and the
+    share capital was increased to CHF 200,000 in 2021. No acquisition was
+    found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: eyevip cloud AG (CHE-492.074.362) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1288718
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - eyevip
+    url: https://eyevip.com/en/imprint
+    publisher: eyevip cloud AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: faq
+    title: Questions & Answers - eyevip
+    url: https://eyevip.com/en/faq
+    publisher: eyevip cloud AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: eyevip cloud AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/eyevip-cloud-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, 2016 aus der Softwarefirma .eyecatcher AG ausgegliedert, das die Event- und Einladungsmanagement-Software eyevip entwickelt.'
+    notes:
+      swissFounded.note: 'Im Dezember 2016 als eyeVIP AG im Handelsregister des Kantons Zürich eingetragen und 2020 in eyevip cloud AG umbenannt. Laut eyevip wurde das Produkt ursprünglich von der .eyecatcher AG entwickelt, einem seit 1998 tätigen Unternehmen für Individualsoftware.'
+      ownership.note: "In Privatbesitz; die Aktionärsstruktur wird nicht veröffentlicht. Die im Handelsregister eingetragenen Verwaltungsratsmitglieder wohnen in der Schweiz, und das Aktienkapital wurde 2021 auf CHF 200'000 erhöht. Bis Oktober 2026 wurde keine Übernahme gemeldet."

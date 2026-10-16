@@ -3,3 +3,4 @@
 # file in manual/ instead if one is available from the vendor.
 exeon-ndr          # site icon is a product illustration, not the logo
 company--exeon
+company--alpein     # site icon is a 48 px favicon, unreadable when scaled

@@ -1,0 +1,69 @@
+name: Razoon AG
+shortName: Razoon
+type: company
+description: >-
+  IT company in Winterthur that develops the waave identity and access
+  management solution and provides IAM implementation and operations services.
+website: https://www.razoon.com
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Razoon describes itself as a Swiss IT company in Winterthur that has been
+    developing software since 2000 and waave since 2017.
+headquarters:
+  city: Winterthur
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-101.295.519
+  url: https://www.zefix.ch/en/search/entity/list/firm/592802
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: moneyhouse
+  note: >-
+    The shareholder structure is not published. CEO Lukas Engel is the only
+    member of the board entered in the commercial register, whose last change
+    dates from 2013. No acquisition was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Razoon AG (CHE-101.295.519) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/592802
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: moneyhouse
+    title: Razoon AG - commercial register data
+    url: https://www.moneyhouse.ch/en/company/razoon-ag-2609304331
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About us - Razoon
+    url: https://www.razoon.com/en/about-us/overview
+    publisher: Razoon AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Razoon AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/razoon-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Unternehmen in Winterthur, das die Lösung für Identitäts- und Zugriffsmanagement waave entwickelt und IAM-Einführungen und -Betrieb als Dienstleistung anbietet.'
+    notes:
+      swissFounded.note: 'Razoon beschreibt sich als Schweizer IT-Unternehmen in Winterthur, das seit 2000 Software und seit 2017 waave entwickelt.'
+      ownership.note: 'Die Aktionärsstruktur wird nicht veröffentlicht. CEO Lukas Engel ist das einzige im Handelsregister eingetragene Verwaltungsratsmitglied; die letzte Änderung des Eintrags stammt aus dem Jahr 2013. Bis Oktober 2026 wurde keine Übernahme gemeldet.'

@@ -1,0 +1,66 @@
+name: Whisperit SA
+shortName: Whisperit
+type: company
+description: >-
+  Company in Prilly near Lausanne, registered in 2024, that develops Whisperit,
+  an AI workspace for lawyers, notaries and in-house legal teams.
+website: https://whisperit.ai
+founded: 2024
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Whisperit SA was entered in the commercial register of the canton of Vaud
+    in October 2024, with articles of association dated 27 September 2024 and
+    a share capital of CHF 500,000.
+headquarters:
+  city: Prilly
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+  note: The team works at the Unlimitrust campus in Prilly near Lausanne.
+jurisdiction: CH
+registry:
+  uid: CHE-450.115.788
+  url: https://www.zefix.ch/en/search/entity/list/firm/1660775
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholder structure is not published. Founder and CEO Romain de
+    Wolff, a Swiss citizen, was entered in 2024 as the board member with sole
+    signing authority. No external funding round or acquisition was found in
+    reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Whisperit SA (CHE-450.115.788) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1660775
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About - Whisperit
+    url: https://whisperit.ai/en/about
+    publisher: Whisperit SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Whisperit SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/whisperit-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen in Prilly bei Lausanne, 2024 eingetragen, das Whisperit entwickelt, einen KI-Arbeitsbereich für Anwältinnen und Anwälte, Notariate und Rechtsabteilungen.'
+    notes:
+      swissFounded.note: "Die Whisperit SA wurde im Oktober 2024 im Handelsregister des Kantons Waadt eingetragen, mit Statuten vom 27. September 2024 und einem Aktienkapital von CHF 500'000."
+      headquarters.note: 'Das Team arbeitet auf dem Unlimitrust-Campus in Prilly bei Lausanne.'
+      ownership.note: 'Die Aktionärsstruktur wird nicht veröffentlicht. Gründer und CEO Romain de Wolff, Schweizer Bürger, wurde 2024 als Verwaltungsratsmitglied mit Einzelunterschrift eingetragen. Bis Oktober 2026 wurde weder eine externe Finanzierungsrunde noch eine Übernahme gemeldet.'

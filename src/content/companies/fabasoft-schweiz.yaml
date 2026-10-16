@@ -1,0 +1,74 @@
+name: Fabasoft Schweiz AG
+shortName: Fabasoft Schweiz
+type: company
+description: >-
+  Bern-based software company, formed in 2022 from 4teamwork AG and the former
+  Fabasoft Schweiz AG, majority-owned by the Austrian Fabasoft group.
+website: https://www.fabasoft.ch
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    The legal entity began as Habacom GmbH in Muri bei Bern, renamed H7 Holding
+    in 2019, whose partner was 4teamwork CEO Pascal Habegger. In 2022 it became
+    an AG, absorbed 4teamwork AG and the previous Fabasoft Schweiz AG and was
+    renamed Fabasoft 4teamwork AG; it has been called Fabasoft Schweiz AG since
+    2025.
+headquarters:
+  city: Bern
+  canton: BE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.639.752
+  url: https://www.zefix.ch/en/search/entity/list/firm/930712
+ownership:
+  swissOwned: no
+  parent: Fabasoft AG
+  parentCountry: AT
+  basis: vendor
+  source: acquisition
+  note: >-
+    In 2022 Fabasoft AG of Linz, Austria, announced that after the acquisition
+    and merger it would hold 70% of Fabasoft 4teamwork AG, with former
+    4teamwork CEO Pascal Habegger retaining 30%. No later change to these
+    shares was found. A managing director entered in the commercial register
+    in 2026 lives in Linz.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Fabasoft Schweiz AG (CHE-114.639.752) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/930712
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: acquisition
+    title: Fabasoft Acquires Majority Stake in the Swiss Software and Technology Company 4teamwork AG
+    url: https://www.businesswire.com/news/home/20220902005147/en/Fabasoft-Acquires-Majority-Stake-in-the-Swiss-Software-and-Technology-Company-4teamwork-AG
+    publisher: Fabasoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: netzwoche
+    title: Fabasoft übernimmt Berner Dienstleister 4teamwork
+    url: https://www.netzwoche.ch/news/2022-09-06/fabasoft-uebernimmt-berner-dienstleister-4teamwork
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Fabasoft Schweiz AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/Fabasoft-Schweiz-AG/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Berner Softwareunternehmen, 2022 aus der 4teamwork AG und der früheren Fabasoft Schweiz AG hervorgegangen, mehrheitlich im Besitz der österreichischen Fabasoft-Gruppe.'
+    notes:
+      swissFounded.note: 'Die Rechtseinheit entstand als Habacom GmbH in Muri bei Bern, 2019 in H7 Holding umbenannt, deren Gesellschafter 4teamwork-CEO Pascal Habegger war. 2022 wurde sie zur AG, übernahm die 4teamwork AG und die bisherige Fabasoft Schweiz AG und wurde in Fabasoft 4teamwork AG umbenannt; seit 2025 heisst sie Fabasoft Schweiz AG.'
+      ownership.note: 'Die Fabasoft AG aus Linz (Österreich) kündigte 2022 an, nach Übernahme und Fusion 70 % der Fabasoft 4teamwork AG zu halten, während der frühere 4teamwork-CEO Pascal Habegger 30 % behalte. Eine spätere Änderung dieser Anteile wurde nicht gefunden. Ein 2026 im Handelsregister eingetragener Geschäftsführer wohnt in Linz.'

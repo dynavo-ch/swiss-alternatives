@@ -1,0 +1,64 @@
+name: Ticinocom SA
+shortName: Ticinocom
+type: company
+description: >-
+  Internet service provider in Muralto TI, active since 1996, offering fibre and
+  mobile internet, VoIP telephony, TV, web hosting and domain registration.
+website: https://www.ticino.com
+founded: 1996
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Ticinocom states that ticino.com started as an internet service provider in
+    Ticino in March 1996.
+headquarters:
+  city: Muralto
+  canton: TI
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-102.025.968
+  url: https://www.zefix.ch/en/search/entity/list/firm/606461
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders are not published; the bearer shares were converted into
+    registered shares in 2021. All members of the board entered in the
+    commercial register belong to the Frankeser family, Swiss citizens living
+    in Muralto, who also run the company. No sale was found in reporting up to
+    October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Ticinocom SA (CHE-102.025.968) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/606461
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Chi Siamo - Ticinocom SA
+    url: https://ticino.com/about/
+    publisher: Ticinocom SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Ticinocom SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/ticinocom-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Internetanbieter in Muralto TI, seit 1996 tätig, mit Glasfaser- und Mobilinternet, VoIP-Telefonie, TV, Webhosting und Domainregistrierung.'
+    notes:
+      swissFounded.note: 'Ticinocom gibt an, dass ticino.com im März 1996 als Internetanbieter im Tessin startete.'
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht; die Inhaberaktien wurden 2021 in Namenaktien umgewandelt. Alle im Handelsregister eingetragenen Verwaltungsratsmitglieder gehören der Familie Frankeser an, Schweizer Bürger mit Wohnsitz in Muralto, die das Unternehmen auch leiten. Bis Oktober 2026 wurde kein Verkauf gemeldet.'

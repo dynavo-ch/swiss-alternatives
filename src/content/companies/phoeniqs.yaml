@@ -1,0 +1,76 @@
+name: Phoenix Technologies AG
+shortName: PHOENIQS
+type: company
+description: >-
+  Swiss sovereign cloud and AI provider based in Freienbach SZ, operating under
+  the PHOENIQS brand since 2026, with its data centre in Basel.
+website: https://www.phoeniqs.com
+founded: 2018
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zug in November 2018 as
+    a holding company. It absorbed the subsidiaries Kore Technologies AG and
+    Arpia AG in 2024 and Phoenix Systems AG, the original operator of the kvant
+    cloud, in 2026, and moved its seat to Freienbach in 2026.
+headquarters:
+  city: Freienbach
+  canton: SZ
+  country: CH
+  basis: verified
+  source: zefix
+  note: Further offices are at uptownBasel in Arlesheim and in Zurich.
+jurisdiction: CH
+registry:
+  uid: CHE-478.932.618
+  url: https://www.zefix.ch/en/search/entity/list/firm/1371783
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholder structure is not published. Co-founder Thomas Taroni, a
+    Swiss citizen, is president of the board and executive chairman; the board
+    also includes a German national living in Germany. QAI Ventures, linked to
+    the uptownBasel campus, announced an investment in 2024. No acquisition by
+    another group was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Phoenix Technologies AG (CHE-478.932.618) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1371783
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: rebrand
+    title: Phoenix Technologies becomes PHOENIQS
+    url: https://www.phoeniqs.com/en/news/phoenix-technologies-becomes-phoeniqs
+    publisher: Phoenix Technologies AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: qai
+    title: Phoenix Technologies Unlock AI And Cloud Opportunities for Emerging Ventures
+    url: https://thequantuminsider.com/2024/04/29/phoenix-technologies-unlock-ai-and-cloud-opportunities-for-emerging-ventures
+    publisher: The Quantum Insider
+    kind: press
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Phoenix Systems AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/phoenix-systems-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Schweizer Anbieter für souveräne Cloud- und KI-Dienste mit Sitz in Freienbach SZ, seit 2026 unter der Marke PHOENIQS tätig, mit eigenem Rechenzentrum in Basel.'
+    notes:
+      swissFounded.note: 'Im November 2018 als Holdinggesellschaft im Handelsregister des Kantons Zug eingetragen. Das Unternehmen übernahm 2024 die Tochtergesellschaften Kore Technologies AG und Arpia AG sowie 2026 die Phoenix Systems AG, die ursprüngliche Betreiberin der kvant-Cloud, und verlegte 2026 seinen Sitz nach Freienbach.'
+      headquarters.note: 'Weitere Büros befinden sich in uptownBasel in Arlesheim und in Zürich.'
+      ownership.note: 'Die Aktionärsstruktur wird nicht veröffentlicht. Mitgründer Thomas Taroni, Schweizer Bürger, ist Verwaltungsratspräsident und Executive Chairman; dem Verwaltungsrat gehört zudem ein deutscher Staatsangehöriger mit Wohnsitz in Deutschland an. QAI Ventures, verbunden mit dem Campus uptownBasel, gab 2024 eine Investition bekannt. Bis Oktober 2026 wurde keine Übernahme durch eine andere Gruppe gemeldet.'

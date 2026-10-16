@@ -1,0 +1,70 @@
+name: Deeplink SA
+shortName: Deeplink
+type: company
+description: >-
+  Lausanne company founded in 2019 that develops an AI platform for SMEs and
+  public administrations, based on open-source language models hosted in
+  Switzerland.
+website: https://www.deeplink.ai
+founded: 2019
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Vaud in May 2019, with
+    articles of association dated 20 May 2019. Deeplink states that it was
+    founded on 3 June 2019 by Jérôme Berthier, its CEO.
+headquarters:
+  city: Lausanne
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+  note: The offices are on the Unlimitrust campus in Prilly near Lausanne.
+jurisdiction: CH
+registry:
+  uid: CHE-443.749.249
+  url: https://www.zefix.ch/en/search/entity/list/firm/1394922
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    Privately held; the shareholder structure is not published. The founder was
+    entered in the register in 2019 as a French national living in Lausanne. The
+    share capital of CHF 142,900 includes preference shares created in a 2020
+    capital increase, which indicates outside investors. No acquisition was
+    found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Deeplink SA (CHE-443.749.249) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1394922
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About Us - Deeplink.ai
+    url: https://www.deeplink.ai/en/about-us/
+    publisher: Deeplink SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Deeplink — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/deeplink/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Lausanner Unternehmen, 2019 gegründet, das eine KI-Plattform für KMU und öffentliche Verwaltungen entwickelt, basierend auf in der Schweiz gehosteten Open-Source-Sprachmodellen.'
+    notes:
+      swissFounded.note: 'Im Mai 2019 im Handelsregister des Kantons Waadt eingetragen, mit Statuten vom 20. Mai 2019. Deeplink gibt an, am 3. Juni 2019 von Jérôme Berthier, seinem CEO, gegründet worden zu sein.'
+      headquarters.note: 'Die Büros befinden sich auf dem Unlimitrust-Campus in Prilly bei Lausanne.'
+      ownership.note: "In Privatbesitz; die Aktionärsstruktur wird nicht veröffentlicht. Der Gründer wurde 2019 als französischer Staatsangehöriger mit Wohnsitz in Lausanne eingetragen. Das Aktienkapital von CHF 142'900 umfasst Vorzugsaktien aus einer Kapitalerhöhung von 2020, was auf externe Investoren hindeutet. Bis Oktober 2026 wurde keine Übernahme gemeldet."

@@ -1,0 +1,80 @@
+name: Worldsoft AG
+shortName: Worldsoft
+type: company
+description: >-
+  Hosting and software company in Pfäffikon SZ, founded in 2000, offering
+  website building, CRM, email marketing, invoicing and email hosting for small
+  businesses.
+website: https://www.worldsoft.info
+founded: 2000
+swissFounded:
+  value: yes
+  basis: vendor
+  source: shareholders
+  note: >-
+    Worldsoft states that it was founded on 1 September 2000 by Helmut J. Ament
+    and Gert F. Lang. It is registered in the commercial register of the canton
+    of Schwyz with its seat in Freienbach.
+headquarters:
+  city: Freienbach
+  canton: SZ
+  country: CH
+  basis: verified
+  source: zefix
+  note: The offices are in Pfäffikon SZ, part of the municipality of Freienbach.
+jurisdiction: CH
+registry:
+  uid: CHE-101.027.829
+  url: https://www.zefix.ch/en/search/entity/list/firm/535761
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: shareholders
+  note: >-
+    Worldsoft has a share capital of CHF 300,000 in 30 million registered
+    shares that are not listed on a stock exchange; the shareholders are not
+    published. Co-founder Gert F. Lang, a Swiss citizen, sits on the board, and
+    CEO Oliver Greiner, an Austrian national living in Switzerland, has led the
+    company since 2019. About 57% of customers were in Germany in 2018.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Worldsoft AG (CHE-101.027.829) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/535761
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - Worldsoft
+    url: https://www.worldsoft.info/ueber-uns
+    publisher: Worldsoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: shareholders
+    title: Aktionäre - Worldsoft
+    url: https://www.worldsoft.info/aktionaere
+    publisher: Worldsoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: wbs-2018
+    title: Übersicht über die Datenverarbeitung mit der Worldsoft Business Suite (March 2018)
+    url: https://www.worldsoft.info/files/folder.6/worldsoft-wbs-daten-2018.pdf
+    publisher: Worldsoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Worldsoft AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/worldsoft-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Hosting- und Softwareunternehmen in Pfäffikon SZ, gegründet 2000, mit Website-Baukasten, CRM, E-Mail-Marketing, Fakturierung und E-Mail-Hosting für kleine Unternehmen.'
+    notes:
+      swissFounded.note: 'Worldsoft gibt an, am 1. September 2000 von Helmut J. Ament und Gert F. Lang gegründet worden zu sein. Das Unternehmen ist im Handelsregister des Kantons Schwyz mit Sitz in Freienbach eingetragen.'
+      headquarters.note: 'Die Büros befinden sich in Pfäffikon SZ, einem Ortsteil der Gemeinde Freienbach.'
+      ownership.note: "Worldsoft hat ein Aktienkapital von CHF 300'000, aufgeteilt in 30 Millionen Namenaktien, die nicht an einer Börse gehandelt werden; die Aktionäre werden nicht veröffentlicht. Mitgründer Gert F. Lang, Schweizer Bürger, ist Mitglied des Verwaltungsrats, und CEO Oliver Greiner, österreichischer Staatsangehöriger mit Wohnsitz in der Schweiz, leitet das Unternehmen seit 2019. 2018 befanden sich rund 57 % der Kunden in Deutschland."

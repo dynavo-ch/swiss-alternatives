@@ -99,6 +99,11 @@
     "method": "manual",
     "fetched": "2026-10-16"
   },
+  "cmi": {
+    "source": "https://cmi.ch/wp-content/uploads/2020/05/cropped-cmi-fav-1-300x300.webp",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--abacus": {
     "source": "manual/company--abacus.svg",
     "method": "manual",
@@ -184,6 +189,11 @@
     "method": "manual",
     "fetched": "2026-10-16"
   },
+  "company--cmi": {
+    "source": "https://cmi.ch/wp-content/uploads/2020/05/cropped-cmi-fav-1-300x300.webp",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--csti": {
     "source": "https://www.google.com/s2/favicons?domain=www.csti.ch&sz=256",
     "method": "favicon service",
@@ -196,6 +206,11 @@
   },
   "company--deepcloud": {
     "source": "https://www.deepcloud.swiss/wp-content/themes/deepcloud/public/images/apple-touch-icon.18941c.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--deeplink": {
+    "source": "https://www.deeplink.ai/wp-content/uploads/2026/01/cropped-favicon-180x180.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
@@ -247,6 +262,16 @@
   "company--exxas": {
     "source": "https://cdn.prod.website-files.com/66fab42a1422b41e45f941e0/67ceb5273a28462cd439d792_512_favicon_ex_white.gif",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--eyevip": {
+    "source": "https://www.google.com/s2/favicons?domain=eyevip.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "company--fabasoft-schweiz": {
+    "source": "https://www.google.com/s2/favicons?domain=www.fabasoft.com&sz=256",
+    "method": "favicon service",
     "fetched": "2026-10-16"
   },
   "company--fidentity": {
@@ -374,6 +399,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-15"
   },
+  "company--phoeniqs": {
+    "source": "https://www.phoeniqs.com/img/Phoeniqs_You_Tube_714415b815.png?q=eyJyZXNpemUiOnsid2lkdGgiOjE4MCwiaGVpZ2h0IjoxODAsImZpdCI6ImNvbnRhaW4ifX0=",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--pilae": {
     "source": "https://pilae.com/favicon/favicon.svg",
     "method": "svg icon",
@@ -398,6 +428,11 @@
     "source": "https://quad9.net/favicon.svg",
     "method": "svg icon",
     "fetched": "2026-10-15"
+  },
+  "company--razoon": {
+    "source": "https://www.razoon.com/favicons/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
   },
   "company--sedion": {
     "source": "https://www.sedion.ch/templates/t4_bs5_blank/local/images/favicons/safari-pinned-tab.svg",
@@ -454,6 +489,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--ticinocom": {
+    "source": "https://www.google.com/s2/favicons?domain=ticino.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
   "company--timestatement": {
     "source": "https://timestatement.com/public/tstouch.png",
     "method": "apple-touch-icon",
@@ -494,6 +534,16 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "company--whisperit": {
+    "source": "https://whisperit.ai/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
+  "company--worldsoft": {
+    "source": "https://worldsoft.info/favicon.ico?v=d1fb9a10",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--xelon": {
     "source": "https://www.google.com/s2/favicons?domain=www.xelon.ch&sz=256",
     "method": "favicon service",
@@ -521,6 +571,11 @@
   },
   "deepbox": {
     "source": "https://www.deepbox.swiss/wp-content/themes/deepbox-system/public/images/deepbox/apple-touch-icon.f08930.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "deeplink": {
+    "source": "https://www.deeplink.ai/wp-content/uploads/2026/01/cropped-favicon-180x180.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
@@ -562,6 +617,16 @@
   "exxas": {
     "source": "https://cdn.prod.website-files.com/66fab42a1422b41e45f941e0/67ceb5273a28462cd439d792_512_favicon_ex_white.gif",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "eyevip": {
+    "source": "https://www.google.com/s2/favicons?domain=eyevip.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "fabasoft-onegov": {
+    "source": "https://www.google.com/s2/favicons?domain=www.fabasoft.com&sz=256",
+    "method": "favicon service",
     "fetched": "2026-10-16"
   },
   "fidentity": {
@@ -729,6 +794,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-15"
   },
+  "phoeniqs-cloud": {
+    "source": "https://www.phoeniqs.com/img/Phoeniqs_You_Tube_714415b815.png?q=eyJyZXNpemUiOnsid2lkdGgiOjE4MCwiaGVpZ2h0IjoxODAsImZpdCI6ImNvbnRhaW4ifX0=",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "pilae": {
     "source": "https://pilae.com/favicon/favicon.svg",
     "method": "svg icon",
@@ -864,6 +934,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "ticinocom-hosting": {
+    "source": "https://www.google.com/s2/favicons?domain=ticino.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
   "timestatement": {
     "source": "https://timestatement.com/public/tstouch.png",
     "method": "apple-touch-icon",
@@ -894,14 +969,29 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "waave": {
+    "source": "https://www.razoon.com/favicons/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "walkingtoweb-nextcloud": {
     "source": "https://www.walkingtoweb.com/media/site/e076d38923-1789650412/walkingtoweb-180x-crop.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "whisperit": {
+    "source": "https://whisperit.ai/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "woelkli": {
     "source": "https://woelkli.com/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
+    "fetched": "2026-10-16"
+  },
+  "worldsoft-business-suite": {
+    "source": "https://worldsoft.info/favicon.ico?v=d1fb9a10",
+    "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
   "xelon-cloud": {

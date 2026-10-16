@@ -1,0 +1,67 @@
+name: CM Informatik AG
+shortName: CMI
+type: company
+description: >-
+  Software company in Schwerzenbach ZH that develops records management,
+  meeting and specialist applications for Swiss cantons, municipalities,
+  schools and archives.
+website: https://cmi.ch
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    CMI states that it began as the sole proprietorship CM Informatik (Computer
+    Management Informatik), which Peter Bosshard converted into a stock
+    corporation, and that it has more than 35 years of experience.
+headquarters:
+  city: Schwerzenbach
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-106.264.207
+  url: https://www.zefix.ch/en/search/entity/list/firm/36125
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders are not published. A 2024 merger notice in the commercial
+    register states that a single shareholder holds all shares of CMI and of
+    the absorbed PMI AG; it is not named. The board members entered in the
+    register since 2021 are Swiss citizens. CMI itself acquired several Swiss software
+    companies between 2020 and 2025; no acquisition of CMI was found.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: CM Informatik AG (CHE-106.264.207) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/36125
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Unternehmen - CMI
+    url: https://cmi.ch/unternehmen/
+    publisher: CM Informatik AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: CM Informatik AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/cm-informatik-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Schwerzenbach ZH, das Geschäftsverwaltungs-, Sitzungs- und Fachanwendungen für Schweizer Kantone, Gemeinden, Schulen und Archive entwickelt.'
+    notes:
+      swissFounded.note: 'CMI gibt an, als Einzelfirma CM Informatik (Computer Management Informatik) begonnen zu haben, die Peter Bosshard in eine Aktiengesellschaft umwandelte, und über mehr als 35 Jahre Erfahrung zu verfügen.'
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht. Eine Fusionsmeldung von 2024 im Handelsregister gibt an, dass eine einzige Aktionärin sämtliche Aktien der CMI und der übernommenen PMI AG hält; sie wird nicht genannt. Die seit 2021 im Register eingetragenen Verwaltungsratsmitglieder sind Schweizer Bürger. CMI selbst übernahm zwischen 2020 und 2025 mehrere Schweizer Softwareunternehmen; eine Übernahme von CMI wurde nicht gefunden.'
