@@ -132,6 +132,12 @@ i18n:
   de:
     tagline: 'Customer Identity and Access Management mit passwortloser Anmeldung, On-Premises oder als SaaS.'
     description: 'Nevis ID ist eine Plattform für Customer Identity and Access Management der Zürcher Nevis Security, die vor allem von Banken, Versicherungen und Behörden genutzt wird.'
+    notes:
+      swiss.developed.note: 'Nevis hat seinen Hauptsitz in Zürich. Sein ISO/IEC 27001-Zertifikat umfasst sichere Softwareentwicklung und SaaS-Betrieb in Zürich, Budapest (Nevis Security Kft.) und London, und der Head of Engineering vertritt die ungarische Tochtergesellschaft. Wie die Entwicklungsarbeit auf die Standorte verteilt ist, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'Die Nevis Identity Suite wird in der Regel vom Kunden installiert, auf Linux-Servern, OpenShift oder Microsoft Azure, daher hängt der Datenstandort von der Bereitstellung ab. Für die vom Anbieter betriebene Authentication Cloud nennt Nevis Microsoft Azure, Cloudflare und Google Firebase Cloud Messaging als Unterauftragsverarbeiter, veröffentlicht jedoch die Hosting-Region nicht. Die nachstehenden Angaben zur Infrastruktur beziehen sich auf die Authentication Cloud.'
+      openSource.note: 'Kommerziell lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.auth0.note: 'Ausgerichtet auf regulierte Grossunternehmen, häufig auf Kundeninfrastruktur installiert; keine Self-Service-Pläne oder veröffentlichten Preise.'
+      alternativesTo.okta.note: 'Positioniert für Kundenidentitäten (CIAM) statt für Mitarbeiteridentitäten.'
 ---
 
 Nevis ID is a customer identity and access management (CIAM) platform from

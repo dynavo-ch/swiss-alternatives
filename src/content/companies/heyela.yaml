@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, gegründet 2025, das HeyEla entwickelt, eine Plattform für Sitzungen und Protokolle von Verwaltungsräten und Geschäftsleitungen.'
+    notes:
+      ownership.note: "Das Aktienbuch einer Schweizer AG ist nicht öffentlich. Die drei im Register eingetragenen Verwaltungsratsmitglieder, darunter Präsident Richard Lauper (auf der Website des Anbieters als Mitgründer genannt), sind Schweizer Staatsangehörige mit Wohnsitz in der Schweiz. Das Aktienkapital wurde im Juli 2026 von CHF 100'000 auf CHF 150'000 erhöht und ein bedingtes Kapital geschaffen; die Investoren werden nicht genannt. Es wurde keine beherrschende Muttergesellschaft gefunden."
+      swissFounded.note: 'In Zürich mit Statuten vom 9. September 2025 gegründet; der Eintrag im Handelsregister des Kantons Zürich wurde am 16. September 2025 im SHAB publiziert.'

@@ -140,6 +140,15 @@ i18n:
   de:
     tagline: 'IaaS auf Basis von OpenStack mit Instanzen, GPU, Block- und Objektspeicher, betrieben in der Schweiz.'
     description: 'Infomaniak Public Cloud ist eine IaaS auf Basis von OpenStack mit VMs, GPUs, Block- und S3-kompatiblem Objektspeicher sowie Managed Kubernetes in Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'Infomaniak gibt an, dass die Plattform intern von seinem Cloud-Team in der Schweiz entwickelt wurde; sie basiert auf der Open-Source-Software OpenStack.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass die Infrastruktur ausschliesslich in der Schweiz betrieben wird, über mehrere Regionen und Verfügbarkeitszonen in eigenen Rechenzentren.'
+      openSource.note: 'Basiert auf dem Open-Source-Projekt OpenStack (Nova, Cinder, Swift, Neutron, Heat) und Ceph; die eigene Verwaltungsoberfläche und die Tools von Infomaniak werden nicht vollständig veröffentlicht.'
+      sustainability.summary: 'Gemäss Infomaniak laufen die Rechenzentren mit erneuerbarem Strom ohne Klimaanlage, und das Rechenzentrum D4 in Genf speist seine gesamte Abwärme ins Fernwärmenetz ein.'
+      alternativesTo.aws.note: 'Deckt Compute, GPU, Block- und Object Storage, Netzwerk, Managed Kubernetes und Datenbanken ab; deutlich kleineres Dienstangebot.'
+      alternativesTo.microsoft-azure.note: 'Deckt grundlegendes IaaS, Managed Kubernetes und Datenbanken ab; deutlich kleineres Dienstangebot.'
+      alternativesTo.google-cloud.note: 'Deckt grundlegendes IaaS, Managed Kubernetes und Datenbanken ab; deutlich kleineres Dienstangebot.'
+      alternativesTo.amazon-s3.note: 'Über S3-kompatiblen Object Storage auf Basis von OpenStack Swift.'
 ---
 
 Infomaniak Public Cloud is an infrastructure-as-a-service platform based on

@@ -124,6 +124,14 @@ i18n:
   de:
     tagline: 'Verwaltete private Nextcloud-Server für Dateien, Kalender und Chat, gehostet in Zürich.'
     description: 'walkingtoweb Collaboration Cloud ist ein verwalteter privater Nextcloud-Server für Dateien, Kalender und Team-Chat, betrieben auf eigener Hardware des Zürcher Hosters in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Der Dienst nutzt Nextcloud, Open-Source-Software, die vom deutschen Unternehmen Nextcloud GmbH entwickelt wird. walkingtoweb richtet die Server ein, hostet und wartet sie.'
+      swiss.hosted.note: 'walkingtoweb gibt an, dass alle Daten ausschliesslich in der Schweiz gespeichert werden, auf eigenen Servern in Zürich, mit Backups auf zwei getrennten Systemen und einem zweiten Rechenzentrum in Genf für Backups und Failover.'
+      swiss.infrastructure.note: 'Die Eigentumsverhältnisse folgen dem Unternehmen: zwei Gesellschafter mit deutscher Staatsangehörigkeit, der Mehrheitsgesellschafter wohnhaft in Zürich. Der Standort in Zürich wird von NTT betrieben, einem japanischen Konzern.'
+      openSource.note: 'walkingtoweb installiert die Community Edition von Nextcloud; das eigene Hosting-Setup ist nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Nextcloud BRONZE mit 25 GB, Nettopreis zuzüglich Schweizer MWST; einmalige Einrichtungsgebühr von CHF 50'
+      sustainability.summary: 'Infrastruktur mit erneuerbarem Strom betrieben, hauptsächlich Schweizer Wasser- und Windkraft.'
+      alternativesTo.dropbox.note: 'Jeder Kunde erhält einen privaten Nextcloud-Server mit eigenem Admin-Zugang; Speicher wird pro Server statt pro Benutzer verkauft.'
 ---
 
 walkingtoweb Collaboration Cloud is a managed Nextcloud service: each customer

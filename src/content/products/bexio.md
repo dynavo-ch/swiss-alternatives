@@ -133,6 +133,14 @@ i18n:
   de:
     tagline: 'Cloud-basierte Unternehmenssoftware für Schweizer Kleinunternehmen, von der Rechnungsstellung bis zum Lohn.'
     description: 'bexio ist Cloud-basierte Unternehmenssoftware aus Rapperswil-Jona für Schweizer Kleinunternehmen mit Buchhaltung, Rechnungsstellung, Lohnbuchhaltung und Kontaktverwaltung.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der bexio AG in Rapperswil-Jona; das Unternehmen veröffentlicht keine Aufschlüsselung seiner Entwicklungsstandorte.'
+      swiss.hosted.note: 'bexio gibt an, dass die Daten in der Software ausschliesslich in der Schweiz gespeichert und verarbeitet werden und dass sich seine Server in der Schweiz befinden. Verschlüsselte Backups werden in mehreren Rechenzentren in der Schweiz und im Ausland aufbewahrt; die ausländischen Standorte werden nicht genannt. Einige Hilfsdienste können auf Servern in anderen Ländern laufen.'
+      swiss.infrastructure.note: 'Die Liste der Unterauftragnehmer von bexio nennt die Google Switzerland GmbH, Zürich, für Rechenzentrumsdienste und Datenhosting. Die OriginStamp AG (Kreuzlingen) ist für die revisionssichere Archivierung von Belegen und Dokumenten aufgeführt.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Basic-Plan (1 Benutzer) bei jährlicher Abrechnung, exkl. MWST; CHF 45 pro Monat bei monatlicher Abrechnung'
+      alternativesTo.quickbooks.note: 'Für Schweizer Kleinunternehmen sowie die Schweizer Praxis in Buchhaltung, MWST und Lohn entwickelt.'
+      alternativesTo.xero.note: 'Für Schweizer Kleinunternehmen sowie die Schweizer Praxis in Buchhaltung, MWST und Lohn entwickelt.'
 ---
 
 bexio is a cloud-based business software for small businesses, start-ups and

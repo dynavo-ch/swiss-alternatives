@@ -67,3 +67,6 @@ sources:
 i18n:
   de:
     description: 'Inhabergeführtes Softwareunternehmen in Kleinlützel SO, 2023 in Reinach BL gegründet, das ambera entwickelt, eine modulare webbasierte Unternehmensanwendung für Schweizer KMU.'
+    notes:
+      ownership.note: 'Gemäss Handelsregister hält der Geschäftsführer Antoine de Courten (Schweizer Staatsangehöriger, Heimatort Sierre) alle 200 Stammanteile zu CHF 100. ambera bezeichnet ihn als Inhaber.'
+      swissFounded.note: 'Im Juli 2023 im Handelsregister des Kantons Basel-Landschaft eingetragen (Statuten vom 22. Juni 2023), mit Sitz in Reinach BL. Im April 2026 wurde der Sitz nach Kleinlützel SO verlegt.'

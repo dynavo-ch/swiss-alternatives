@@ -114,6 +114,11 @@ i18n:
   de:
     tagline: 'Einfache, fortgeschrittene und qualifizierte E-Signaturen nach ZertES und eIDAS, in der Schweiz gehostet.'
     description: 'DeepSign ist ein Dienst für elektronische Signaturen von DeepCloud, einem Abacus-Spin-off in Wittenbach SG, mit SES, AES und QES nach Verbrauch und in der Schweiz gehosteten Daten.'
+    notes:
+      swiss.developed.note: 'DeepCloud führt Software-Engineering, Projektmanagement und Support an seinem Hauptsitz in Wittenbach sowie die Identitätsprüfung in Lugano auf.'
+      swiss.hosted.note: 'DeepCloud gibt an, dass die für DeepSign eingesetzten Hosting- und Dienstleister Serverstandorte in der Schweiz nutzen. Die Sicherheitsseite nennt Rechenzentrums- und Backup-Standorte in Biel/Bienne, Gland, Plan-les-Ouates (Genf) und Morbio Inferiore sowie ein externes Backup in Bern. Die Anbieter werden nicht genannt. Qualifizierte und fortgeschrittene Zertifikate werden von anerkannten Vertrauensdiensteanbietern ausgestellt, die DeepCloud auf diesen Seiten nicht nennt.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Pro einfacher elektronischer Signatur (EES), Pay-per-Use, exkl. MWST'
 ---
 
 DeepSign is a web-based service for signing PDF documents electronically. It

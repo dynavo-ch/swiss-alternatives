@@ -87,3 +87,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen hinter der Sitzungssoftware Sherpany für Verwaltungsräte und Geschäftsleitungen, gegründet 2011 und seit 2024 im Besitz der US-amerikanischen Datasite-Gruppe.'
+    notes:
+      ownership.note: 'Datasite (Minneapolis, USA) gab im Februar 2024 die Übernahme von Sherpany bekannt; gemäss der Datenschutzerklärung von Sherpany ist die Agilentia AG Teil der Datasite LLC und ihrer verbundenen Unternehmen. Datasite ist seit 2020 mehrheitlich im Besitz von Fonds, die von der Private-Equity-Gesellschaft CapVest Partners LLP (London) verwaltet werden. Die Agilentia AG ist die Holdinggesellschaft der Sherpany-Gruppe, zu der die Sherpany AG (CHE-375.771.063, Dienstleistungen für Generalversammlungen) gehört.'
+      swissFounded.note: 'Datasite beschreibt Sherpany als 2011 gegründetes Unternehmen mit Sitz in Zürich. Die operative Holdinggesellschaft Agilentia AG ist im Handelsregister des Kantons Zürich eingetragen.'

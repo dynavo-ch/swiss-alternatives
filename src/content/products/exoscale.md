@@ -153,6 +153,16 @@ i18n:
   de:
     tagline: 'Europäische IaaS-Cloud mit Rechenleistung, Objektspeicher, Managed Kubernetes und Datenbanken.'
     description: 'Exoscale ist eine IaaS-Cloud der Akenes SA mit Sitz in Lausanne, Teil der österreichischen A1 Group, mit zwei Schweizer Zonen unter acht Zonen in Europa.'
+    notes:
+      swiss.developed.note: 'Firmensitz in Lausanne, Exoscale beschreibt sein Team jedoch als über Europa verteilt und rekrutiert Ingenieure in anderen Ländern.'
+      swiss.hosted.note: 'Ressourcen werden in einer vom Kunden gewählten Zone erstellt. Zwei von acht Zonen liegen in der Schweiz (CH-GVA-2 Genf, CH-DK-2 Zürich); die übrigen liegen in Österreich, Deutschland, Bulgarien und Kroatien, und eine Zone in Madrid wurde angekündigt.'
+      swiss.infrastructure.note: 'Die Akenes SA gehört zu A1 Digital (A1 Telekom Austria Group); die Telekom Austria AG ist mehrheitlich im Besitz von América Móvil (Mexiko).'
+      openSource.note: 'Das CLI und das Go-SDK (egoscale) sind Open Source; die Cloud-Plattform selbst ist proprietär.'
+      pricing.startingPrice.note: 'Micro-Instanz (512 MB RAM, 1 Kern); lokaler Speicher und Steuern zusätzlich; gleicher Tarif in EUR und USD'
+      alternativesTo.aws.note: 'Umfasst Compute, Block- und Object-Storage, Kubernetes und verwaltete Datenbanken; deutlich kleineres Dienstangebot.'
+      alternativesTo.google-cloud.note: 'Umfasst grundlegendes IaaS, Kubernetes und verwaltete Datenbanken; deutlich kleineres Dienstangebot.'
+      alternativesTo.microsoft-azure.note: 'Umfasst grundlegendes IaaS, Kubernetes und verwaltete Datenbanken; deutlich kleineres Dienstangebot.'
+      alternativesTo.amazon-s3.note: 'Über den S3-kompatiblen Exoscale Object Storage (SOS).'
 ---
 
 Exoscale is an infrastructure-as-a-service cloud operated by Akenes SA in

@@ -79,6 +79,11 @@ i18n:
   de:
     tagline: 'Zusätzliches Backup kritischer Unternehmensdaten über eine Box vor Ort in einen Schweizer Bunker.'
     description: 'Sedion Backup ergänzt ein bestehendes Backup: Eine Secure Box vor Ort scannt und verschlüsselt ausgewählte kritische Daten und repliziert sie auf Sedion-Server in einem Bunker.'
+    notes:
+      swiss.developed.note: 'Sedion gibt an, in der Schweiz zu entwickeln und dass die Software der Secure Box nativ ohne Softwarepakete von Drittanbietern programmiert ist.'
+      swiss.hosted.note: 'Sedion gibt an, dass die Kerndaten ausschliesslich in der Schweiz gespeichert werden und keine externen Cloud-Server oder -Dienste genutzt werden.'
+      swiss.infrastructure.note: 'Gemäss dem swiss made software-Profil von Sedion wird das Replikat in einem ehemaligen Militärbunker in der Zentralschweiz aufbewahrt; laut Unternehmensseite werden die Daten dort redundant und verschlüsselt gespeichert. Standort und Betreiber des Bunkers werden nicht veröffentlicht.'
+      alternativesTo.veeam.note: 'Ergänzt ein vollständiges Backup-System, statt es zu ersetzen; deckt nur als geschäftskritisch eingestufte Daten ab, die über eine Secure Box vor Ort repliziert werden.'
 ---
 
 Sedion Backup is an additional backup for business-critical data, offered by

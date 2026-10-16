@@ -72,3 +72,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Schlieren ZH, das Exxas entwickelt und betreibt, eine Cloud-Unternehmensplattform für KMU mit ERP, CRM, Buchhaltung und HR.'
+    notes:
+      ownership.note: 'Bei der Gründung 2020 waren die Mitgründer Stefan Dettwiler (150 von 200 Stammanteilen) und Pascal Jenni (50), beide Schweizer Staatsangehörige, die Gesellschafter. Bei der Umwandlung der GmbH in eine AG im Jahr 2022 gingen die Aktien an die bisherigen Gesellschafter. Stefan Dettwiler ist Verwaltungsratspräsident, Pascal Jenni Verwaltungsratsmitglied. Die aktuellen Aktionäre werden nicht veröffentlicht, und es wird weder eine Muttergesellschaft noch ein externer Investor genannt. Das frühere IT-Dienstleistungsunternehmen der Gründer, die exxo it-services AG, wurde 2023 von der Sequotech-Gruppe übernommen; Exxas stellt es als separates Geschäft dar, und das Handelsregister zeigt keine damit zusammenhängende Änderung bei der Exxas AG.'
+      swissFounded.note: 'Im April 2020 als Exxas GmbH im Handelsregister des Kantons Zürich eingetragen (Statuten vom 9. März 2020) und im Mai 2022 in die Exxas AG umgewandelt. Gemäss Unternehmen gründeten die Gründer 2009 die IT-Dienstleistungsfirma Exxo und veröffentlichten 2011 die erste Version von Exxas, bevor das Produkt in ein eigenes Unternehmen überführt wurde.'

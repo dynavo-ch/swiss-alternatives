@@ -93,3 +93,7 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Altendorf SZ, ursprünglich PROFFIX Software AG, das die ERP-Software Proffix für Schweizer KMU entwickelt. Es gehört seit 2023 zur Londoner Forterro-Gruppe.'
+    notes:
+      headquarters.note: 'Der eingetragene Sitz wurde 2026 von Vilters-Wangs SG nach Altendorf SZ verlegt (Statutenänderung vom 25. Juni 2026).'
+      ownership.note: 'Proffix gibt an, Teil von Forterro zu sein, einer europäischen ERP-Softwaregruppe mit Hauptsitz in London. Forterro gab die Übernahme von Proffix im August 2023 bekannt, und das Unternehmen wurde im November 2024 von PROFFIX Software AG in Forterro Schweiz Proffix AG umbenannt. Im März 2022 gab Forterro bekannt, von Partners Group, einer Schweizer Private-Markets-Gesellschaft, im Auftrag ihrer Kunden übernommen worden zu sein; die aktuelle Aktionärsstruktur der Forterro-Gruppe wurde nicht erneut überprüft.'
+      swissFounded.note: 'Am 7. Februar 2001 unter dem früheren Namen PROFFIX Software AG ins Handelsregister eingetragen; bis 2026 war der Sitz in Vilters-Wangs SG. Proffix beschreibt seine Anfänge mit vier Geschäftspartnern, die sich zum Ziel setzten, Unternehmenssoftware für Schweizer KMU zu entwickeln.'

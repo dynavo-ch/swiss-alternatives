@@ -116,6 +116,10 @@ i18n:
   de:
     tagline: 'Elektronische Signaturen (SES, AES, QES) mit lokaler Dokumentverarbeitung und optionaler E2E-Verschlüsselung.'
     description: 'Certifaction ist ein in Zürich entwickelter Dienst für elektronische Signaturen (SES, AES, QES), der Dokumente lokal verarbeitet; Speicherung in der Schweiz, in der EU oder On-Premises.'
+    notes:
+      swiss.developed.note: 'Certifaction gibt an, dass die Lösung in der Schweiz mit einem lokalen Entwicklungs- und Supportteam gebaut wird. Das Unternehmen hat zudem eine Tochtergesellschaft in München.'
+      swiss.hosted.note: 'Certifaction bietet Dokumentenspeicherung in ISO 27001-zertifizierten Rechenzentren in der Schweiz oder der EU oder beim Kunden vor Ort an. Der Standardstandort und die Betreiber der Rechenzentren werden nicht veröffentlicht. Gemäss Datenschutzerklärung können Personendaten an Dienstleister in der EU/im EWR und in den USA übermittelt werden.'
+      openSource.note: 'Die Signaturplattform ist proprietär. Certifaction veröffentlicht einige Hilfskomponenten auf GitHub, etwa ein Verifizierungstool und einen PDF-Viewer unter der MIT-Lizenz.'
 ---
 
 Certifaction is an electronic signature service for simple (SES), advanced

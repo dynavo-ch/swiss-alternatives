@@ -71,3 +71,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Entwickler einer mobilen App für Frontline-Mitarbeitende, 2012 als Spin-off der ETH Zürich gegründet und seit 2025 Teil des französischen Softwareunternehmens LumApps.'
+    notes:
+      ownership.note: 'Im Juli 2025 vereinbarten Beekeeper und das französische Intranet-Softwareunternehmen LumApps einen Zusammenschluss in einer Transaktion, die vom britischen Private-Equity-Unternehmen Bridgepoint unterstützt wurde; LumApps bleibt mehrheitlich im Besitz von Fonds, die von Bridgepoint verwaltet werden. LumApps stellt Beekeeper inzwischen als Teil von LumApps dar, und LumApps-CEO Sébastien Ricard wurde im November 2025 in den Verwaltungsrat der Beekeeper AG eingetragen.'
+      swissFounded.note: '2012 als Spin-off der ETH Zürich gegründet; am 12. März 2012 im Handelsregister des Kantons Zürich eingetragen (früherer Name: Spocal GmbH).'

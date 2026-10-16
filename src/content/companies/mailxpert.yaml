@@ -76,3 +76,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen, das die E-Mail-Marketing-Software mailXpert, den Newsletter-Dienst Swiss Newsletter und den Versanddienst mailomat entwickelt und betreibt.'
+    notes:
+      ownership.note: 'Gesellschaft mit beschränkter Haftung (GmbH) in Privatbesitz; ihre Gesellschafter konnten anhand öffentlicher Quellen nicht bestätigt werden. Das Impressum nennt Patrick Gsell (Geschäftsführer) und Patrick Landolt (Leiter Entwicklung) als Vertreter. In der Berichterstattung bis Oktober 2026 wurde keine Übernahme und keine ausländische Muttergesellschaft gefunden.'
+      swissFounded.note: 'Das Produkt mailXpert wurde 2016 in die neu gegründete mailXpert GmbH überführt. Die erste Version wurde 2004 von der Zürcher Webagentur ARTACK WebLab GmbH entwickelt, die 2002 gegründet wurde und an derselben Adresse eingetragen ist.'

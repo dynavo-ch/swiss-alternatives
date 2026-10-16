@@ -84,3 +84,7 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Basel, Teil des Konzerns der Schweizerischen Post, das Software für sicheres Messaging, Video und Co-Browsing für Banken und Vermögensverwalter entwickelt.'
+    notes:
+      ownership.note: 'Die Schweizerische Post erwarb im November 2022 eine Mehrheitsbeteiligung an Unblu; Unblu ist weiterhin als Tochtergesellschaft unter eigener Marke tätig und bezeichnet sich als Teil des Konzerns Post. Die Post gehört der Schweizerischen Eidgenossenschaft. 2023 und 2025 übernahm die unblu inc. durch Fusion ihre Tochtergesellschaften Unblu Cloud GmbH und Unblu adiacom AG, und im Mai 2025 wurden ihre Statuten geändert, um konzerninterne Finanzierungen zu ermöglichen. Die deutsche Tochtergesellschaft Unblu GmbH hat ihren Sitz in Frankfurt am Main.'
+      ownership.parent: 'Die Schweizerische Post AG (Schweizerische Post)'
+      swissFounded.note: 'Unblu gibt an, 2008 in Basel gegründet worden zu sein. Trotz des «inc.» im Namen ist das Unternehmen eine Schweizer Aktiengesellschaft; gemäss Handelsregister befand sich der Sitz bis zur Verlegung nach Basel im Dezember 2017 in Sarnen (OW).'

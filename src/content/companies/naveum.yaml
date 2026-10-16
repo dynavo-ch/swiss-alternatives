@@ -79,3 +79,6 @@ sources:
 i18n:
   de:
     description: 'Cloud-Anbieter aus Adliswil, gegründet 2017, der IT-Dienstleistern und Wiederverkäufern Infrastructure as a Service, Private Clouds und Backup anbietet.'
+    notes:
+      ownership.note: 'Die Truecore AG, ein IT-Dienstleistungsunternehmen in Adliswil, bezeichnet die Naveum AG als ihre Tochtergesellschaft. Die Aktionäre von Truecore werden seit der Umwandlung in eine AG im Jahr 2022 nicht veröffentlicht; als GmbH führte das Register zwei Schweizer Bürger als Gesellschafter, darunter Thomas Lüssi-Pataki, der auch Verwaltungsratspräsident von Naveum ist. Es wurde kein ausländischer Aktionär gemeldet.'
+      swissFounded.note: 'Im Mai 2017 ins Handelsregister in Zürich eingetragen; der Sitz wurde 2018 nach Adliswil verlegt.'

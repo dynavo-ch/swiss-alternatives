@@ -73,3 +73,7 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Familienbesitz in Volketswil ZH, das seit 2006 Software für Finanzbuchhaltung und Lohn für Schweizer Treuhandbüros und KMU entwickelt.'
+    notes:
+      headquarters.note: 'Eingetragener Sitz in Volketswil. Eine 2017 in Lausanne eingetragene Zweigniederlassung wurde 2023 nach Jorat-Mézières VD verlegt.'
+      ownership.note: 'Topal bezeichnet sich als familiengeführten Schweizer Softwarehersteller. Im Handelsregister ist keine Muttergesellschaft eingetragen; die Aktionäre der AG werden nicht veröffentlicht.'
+      swissFounded.note: 'Am 8. Mai 2006 im Handelsregister eingetragen. Topal bezeichnet sich als Familienunternehmen aus dem Kanton Zürich, das seine Software seit 2006 entwickelt.'

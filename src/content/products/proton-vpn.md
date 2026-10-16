@@ -177,6 +177,11 @@ i18n:
   de:
     tagline: 'No-Logs-VPN mit kostenloser Version, Open-Source-Apps und Multi-Hop-Routing über Secure Core.'
     description: 'Proton VPN ist ein VPN-Dienst der Proton AG mit kostenlosem Plan, Open-Source-Apps, jährlichen No-Logs-Audits und Servern in mehr als 140 Ländern.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Hauptsitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Hosting bezieht sich hier auf Kontodaten und Kernsysteme, nicht auf VPN-Exit-Server, die sich bewusst in mehr als 140 Ländern befinden. Gemäss der VPN-Datenschutzerklärung von Proton werden Kontodaten verschlüsselt auf Proton-Servern gespeichert, die sich ausschliesslich in der Schweiz, in Deutschland oder in Norwegen befinden, ohne Aufschlüsselung nach Land. Secure-Core-Eingangsserver, die Proton nach eigenen Angaben besitzt und betreibt, befinden sich in der Schweiz, in Island und in Schweden. Seit Juli 2025 verlagert Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz und verweist dabei auf die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT).'
+      swiss.infrastructure.note: 'Proton gibt an, seine Server-Hardware zu besitzen. Gemäss einem Bericht von watson.ch (August 2026) mietet Proton gesicherte Flächen bei nicht genannten Rechenzentrumsbetreibern, statt eigene Rechenzentren in der Schweiz, in Deutschland oder in Norwegen zu betreiben.'
+      openSource.note: 'Die Apps für Windows, macOS/iOS und Android werden unter GPL-3.0 veröffentlicht; die serverseitigen Systeme sind nicht veröffentlicht.'
 ---
 
 Proton VPN is a VPN service with apps for Windows, macOS, Linux, iOS, Android

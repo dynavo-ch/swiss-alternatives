@@ -81,3 +81,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen mit Sitz in Plan-les-Ouates bei Genf, das verschlüsselte Dienste für E-Mail, Kalender, Cloud-Speicher, Passwort-Manager, VPN und KI-Assistent entwickelt. Hauptaktionärin ist die gemeinnützige Proton Foundation.'
+    notes:
+      ownership.note: 'Proton gibt an, dass die gemeinnützige Proton Foundation die Hauptaktionärin der Proton AG ist; seit Juni 2024 ist sie die grösste stimmberechtigte Aktionärin, ausgestattet mit Aktien, die von den Mitgründern Andy Yen und Jason Stockman sowie dem ersten Mitarbeitenden Dingchao Lu gespendet wurden. Die Stiftung ist in Plan-les-Ouates eingetragen (Fondation Proton, CHE-418.863.304). Die Mitarbeitenden halten den Grossteil der übrigen Aktien; kleinere Beteiligungen halten die Genfer Non-Profit-Organisation FONGIT sowie Proton-Nutzer. Proton gibt an, keine Risikokapitalgeber zu haben. Genaue Prozentsätze werden nicht veröffentlicht.'
+      swissFounded.note: 'Proton gibt an, 2014 in der Schweiz von Wissenschaftlern gegründet worden zu sein, die sich am CERN kennengelernt hatten. Das Unternehmen, früher Proton Technologies AG, ist im Handelsregister des Kantons Genf eingetragen (2021 in Proton AG umbenannt).'

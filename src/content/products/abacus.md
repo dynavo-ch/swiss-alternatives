@@ -108,6 +108,13 @@ i18n:
   de:
     tagline: 'Modulare ERP-Suite für Schweizer KMU mit Finanzen, HR, Lohn, CRM und Logistik.'
     description: 'Abacus ist eine modulare ERP-Suite aus Wittenbach SG für Finanzen, HR und Lohn, CRM und Logistik, betrieben On-Premises oder über Partner in der Schweiz gehostet.'
+    notes:
+      swiss.developed.note: 'Abacus gibt an, dass alle Module in der Schweiz entwickelt werden. Die Entwicklung ist am Firmensitz in Wittenbach angesiedelt, mit weiteren Schweizer Standorten in St. Gallen, Winterthur, Biel, Lugano und Genf.'
+      swiss.hosted.note: 'Von der Abacus Hosting AG gehostete Abacus-Installationen laufen auf Servern in Schweizer Rechenzentren, und Abacus gibt an, dass seine Module in der Schweiz betrieben werden. Gehosteter Betrieb wird auch von Abacus-Partnern angeboten; bei einer On-Premises-Lizenz entscheidet der Kunde, wo die Daten gespeichert werden.'
+      swiss.infrastructure.note: 'Die Abacus Hosting AG in Wittenbach (2025 als Abacus Host AG eingetragen, 2026 umbenannt) wird in der Datenschutzerklärung von Abacus als Hosting-Anbieter für Kunden und Gruppengesellschaften genannt. Die Betreiber der Rechenzentren werden nicht genannt.'
+      openSource.note: 'Proprietäre, lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.sap.note: 'Richtet sich hauptsächlich an kleine und mittelgrosse Organisationen in der Schweiz; Vertrieb und Einführung über ein Partnernetz.'
+      alternativesTo.microsoft-dynamics-365.note: 'Richtet sich hauptsächlich an kleine und mittelgrosse Organisationen in der Schweiz; Vertrieb und Einführung über ein Partnernetz.'
 ---
 
 Abacus is an ERP and business software suite developed by Abacus Research AG in

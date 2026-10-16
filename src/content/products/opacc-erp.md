@@ -117,6 +117,13 @@ i18n:
   de:
     tagline: 'ERP-Software für Schweizer Handels- und Dienstleistungsunternehmen, On-Premises oder in der Opacc-Cloud.'
     description: 'Opacc ERP ist Unternehmenssoftware aus Rothenburg LU für Handels-, Dienstleistungs- und Produktionsunternehmen, betrieben On-Premises oder in der eigenen Schweizer Cloud von Opacc.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Opacc Software AG mit Firmensitz in Rothenburg LU. Opacc veröffentlicht nicht, wo seine Entwicklungsteams arbeiten; das Unternehmen hat zudem eine Niederlassung in Fürth, Deutschland.'
+      swiss.hosted.note: 'Opacc betreibt die Opacc Cloud georedundant an zwei Standorten und gibt an, dass die Datenhaltung in der Schweiz «100% garantiert» ist. Kunden können die Software alternativ On-Premises betreiben und bestimmen dann selbst, wo die Daten liegen.'
+      swiss.infrastructure.note: 'Opacc gibt an, dass sämtliche Daten auf eigenen, von eigenem Personal gewarteten Systemen in der gemieteten White Space im CKW-Rechenzentrum in Luzern-Littau laufen. Der zweite Standort wird nicht genannt.'
+      openSource.note: 'Proprietäre lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.sap.note: 'Richtet sich vor allem an mittelgrosse Schweizer Handels- und Dienstleistungsunternehmen; keine öffentlichen Preise.'
+      alternativesTo.microsoft-dynamics-365.note: 'Richtet sich vor allem an mittelgrosse Schweizer Handels- und Dienstleistungsunternehmen; keine öffentlichen Preise.'
 ---
 
 Opacc ERP is business software for trading, service and manufacturing

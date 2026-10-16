@@ -117,6 +117,13 @@ i18n:
   de:
     tagline: 'Browserbasiertes CRM und KYC-Dokumentation für Vermögensverwalter.'
     description: 'Netfolio CRM ist ein browserbasiertes CRM für Vermögensverwalter der Alphasys aus Winterthur, mit KYC- und AML-Dokumentation und in der Schweiz gehosteten Daten.'
+    notes:
+      swiss.developed.note: 'Alphasys bezeichnet sich als Schweizer Unternehmen in Winterthur, das Softwareentwicklung mit Finanzexpertise verbindet und Netfolio seit 2003 entwickelt. Es gibt nicht separat an, wo seine Entwickler arbeiten.'
+      swiss.hosted.note: 'Alphasys gibt an, dass seine Software auf der Cloud-Infrastruktur seines IT-Partners exxo läuft und vollständig in der Schweiz betrieben wird; die CRM-Seite sagt, die Daten würden in der Schweiz oder beim Kunden gehostet. Der Datenschutzbereich der Website enthält keinen Text.'
+      swiss.infrastructure.note: 'exxo betreibt für Alphasys die Betriebssysteme, Datenbanken, Netzwerke und Backups. Gemäss Alphasys sind die Rechenzentren FINMA-konform sowie nach ISO 27001 und ISO 9001 zertifiziert; ihre Betreiber und Standorte werden nicht genannt. exxo mit Sitz in Schlieren gibt an, zur Sequotech-Gruppe zu gehören, deren Eigentumsverhältnisse hier nicht verifiziert wurden.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.salesforce.note: 'Auf Vermögensverwalter beschränkt, mit KYC- und AML-Dokumentation, Bankschnittstellen und optionalem Portfoliomanagementsystem; Preise werden nicht veröffentlicht.'
+      alternativesTo.microsoft-dynamics-365.note: 'Auf Vermögensverwalter beschränkt, mit KYC- und AML-Dokumentation, Bankschnittstellen und optionalem Portfoliomanagementsystem; Preise werden nicht veröffentlicht.'
 ---
 
 Netfolio CRM is a customer relationship management tool for asset managers.

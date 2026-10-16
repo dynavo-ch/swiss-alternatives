@@ -69,3 +69,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen, als Spin-off der ETH Zürich gegründet, das E-Mail-Sicherheitssoftware für Organisationen mit hohen Sicherheitsanforderungen entwickelt.'
+    notes:
+      ownership.note: 'Durch Risikokapital finanziert; die Aktionärsstruktur wird nicht veröffentlicht. Die am 1. September 2026 angekündigte Series-A+-Runde über EUR 5 Millionen wurde vom bestehenden Investor Spicehaus Partners angeführt, unter Beteiligung von Grapha Holding, EquityPitcher Ventures und ZKB Start-up Finance; alle offengelegten Investoren haben ihren Sitz in der Schweiz. Mitgründer Antonio Barresi ist CEO und Präsident des Verwaltungsrats. In Berichterstattung und Registerpublikationen bis Oktober 2026 wurde keine Übernahme gefunden.'
+      swissFounded.note: 'Die xorlab AG ist im Handelsregister des Kantons Zürich eingetragen; die früheste in Zefix referenzierte Registerpublikation datiert vom 3. August 2015. swiss made software beschreibt das Unternehmen als ETH-Spin-off.'

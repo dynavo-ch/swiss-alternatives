@@ -64,3 +64,6 @@ sources:
 i18n:
   de:
     description: 'Basler Webhosting-Anbieter, gegründet 2003, der seine eigene Hardware in einem Rechenzentrum des Basler Versorgungsunternehmens IWB betreibt.'
+    notes:
+      ownership.note: "Gründer und CEO David Burkardt war als einziger Gesellschafter der cyon GmbH eingetragen, bis das Unternehmen im Juni 2025 in die cyon AG umgewandelt wurde, wobei der Gesellschafter sämtliche 100'000 Aktien erhielt. Die Aktionäre einer AG sind im Handelsregister nicht ersichtlich; seither wurde kein Verkauf gemeldet."
+      swissFounded.note: '2003 in Basel von David Burkardt und Tobias Byland gegründet.'

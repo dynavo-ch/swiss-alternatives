@@ -120,6 +120,12 @@ i18n:
   de:
     tagline: 'KI-Assistenzplattform für regulierte Branchen, die Open-Source-Modelle in der Schweiz ausführt.'
     description: 'SwissGPT ist die KI-Plattform von AlpineAI für Gesundheitswesen, Behörden und Hochschulen; sie führt Open-Source-Sprachmodelle auf eigener Hardware in Schweizer Rechenzentren aus.'
+    notes:
+      swiss.developed.note: 'Die Plattform wird von AlpineAI in Davos und Zürich entwickelt, die Sprachmodelle sind jedoch Open-Source-Modelle von Dritten; AlpineAI nennt Mistral Large 3 des französischen Unternehmens Mistral AI als aktuelles Hauptmodell.'
+      swiss.hosted.note: 'AlpineAI gibt an, dass Inhalte in der Schweiz auf eigener Hardware gespeichert und verarbeitet werden. Der Auftragsverarbeitungsvertrag erlaubt die Verarbeitung in der Schweiz und im EWR, und die optionale Websuche sendet Anfragen an einen externen Suchanbieter.'
+      pricing.startingPrice.note: 'Standardlizenz pro Benutzer für Behörden und Hochschulen, bei jährlicher Abrechnung (CHF 79 bei monatlicher Abrechnung); MWST-Behandlung nicht angegeben'
+      alternativesTo.chatgpt.note: 'Wird pro Benutzer an Organisationen verkauft; betreibt Open-Source-Modelle (derzeit Mistral Large 3) auf Hardware von AlpineAI.'
+      alternativesTo.microsoft-copilot.note: 'Bietet ein Outlook-Add-in und eine API; eine Integration in die übrigen Microsoft-365-Apps wird nicht beschrieben.'
 ---
 
 SwissGPT is an AI platform for organisations in healthcare, public

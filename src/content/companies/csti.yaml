@@ -58,3 +58,6 @@ sources:
 i18n:
   de:
     description: 'IT-Dienstleister in Thônex (Genf), gegründet 2009, mit Hosting, Managed IT Services, Beratung und Hardwareverkauf für kleine und mittlere Unternehmen.'
+    notes:
+      ownership.note: 'CSTI bezeichnet sich als «a 100% Swiss SME», das von seinen beiden Gründern geführt wird. Die Aktionäre einer SA werden im Handelsregister nicht veröffentlicht; es wurde kein Verkauf und keine Übernahme gemeldet.'
+      swissFounded.note: '2009 von zwei IT-Spezialisten gegründet; das Unternehmen wird von Rémy Duchet und Yves Oberhansli geführt und hat seither seinen Sitz im Kanton Genf.'

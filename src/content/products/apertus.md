@@ -115,6 +115,12 @@ i18n:
   de:
     tagline: 'Offene mehrsprachige Sprachmodelle (8B und 70B) mit veröffentlichten Gewichten, Daten und Code.'
     description: 'Apertus ist eine Familie offener mehrsprachiger Sprachmodelle (8B und 70B) von EPFL, ETH Zürich und CSCS, veröffentlicht unter Apache 2.0 mit dokumentiertem Training.'
+    notes:
+      swiss.developed.note: 'Entwickelt von Forschenden der EPFL, der ETH Zürich und des Schweizerischen Hochleistungsrechenzentrums (CSCS) im Rahmen der Swiss AI Initiative.'
+      swiss.hosted.note: 'Apertus wird als herunterladbare Gewichte verteilt und läuft dort, wo es bereitgestellt wird. Gehostete APIs aus Schweizer Rechenzentren sind für Swisscom, Infomaniak, PHOENIQS, Safe Swiss Cloud, OnPrem.ai und stepping stone aufgeführt, mit Deployment-Anleitungen für Exoscale; auch Public AI, Featherless und die grossen US-Cloud-Plattformen bieten es an. Die Infrastrukturangaben unten beziehen sich auf das Training des Modells.'
+      swiss.infrastructure.note: "Apertus 1.0 wurde mit mehr als 10 Millionen GPU-Stunden auf Alps trainiert, mit bis zu 4'096 NVIDIA-GH200-GPUs."
+      openSource.note: 'Die Modellgewichte sind auf Hugging Face unter Apache 2.0 veröffentlicht; für den Download muss eine Acceptable Use Policy akzeptiert werden. Der technische Bericht, der Trainingscode (ein Fork von Megatron-LM) und Skripte zur Rekonstruktion der Pretraining-Daten sind auf GitHub veröffentlicht.'
+      alternativesTo.meta-llama.note: 'Nur in den Grössen 8B und 70B verfügbar; zusätzlich sind Skripte zur Rekonstruktion der Trainingsdaten und der Trainingscode veröffentlicht.'
 ---
 
 Apertus is a family of open large language models developed by EPFL, ETH Zurich

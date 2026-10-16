@@ -131,6 +131,15 @@ i18n:
   de:
     tagline: 'Managed Kubernetes, App-Plattform, Datenbanken und Server auf Schweizer Infrastruktur.'
     description: 'Nine ist ein Zürcher Cloud-Anbieter mit Managed Kubernetes (NKE), der App-Plattform Deploio, verwalteten Datenbanken, Objektspeicher und Servern in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Von Zürich aus betrieben und entwickelt; der Bereitschaftssupport ausserhalb der Geschäftszeiten wird über eine hundertprozentige Tochtergesellschaft in Kanada erbracht.'
+      swiss.hosted.note: 'Die Dienste laufen auf der eigenen Infrastruktur von Nine in zwei Rechenzentren im Kanton Zürich. Ein älteres verwaltetes GKE-Angebot auf Google Cloud ist für Neukunden nicht mehr erhältlich.'
+      openSource.note: 'Das Kommandozeilen-Tool nctl ist Open Source, und die verwalteten Stacks basieren auf Open-Source-Software; das Cockpit-Portal und die Plattform sind proprietär.'
+      pricing.startingPrice.note: 'On-Demand MySQL oder PostgreSQL Single DB (1 GB), minutengenaue Abrechnung; NKE ab CHF 305.30/Monat'
+      alternativesTo.heroku.note: 'Über Deploio, eine verwaltete App-Plattform, die bei einem Git-Push baut und deployt.'
+      alternativesTo.google-cloud.note: 'Deckt verwaltetes Kubernetes, Datenbanken, Object Storage und Server ab; deutlich kleinerer Dienstkatalog.'
+      alternativesTo.aws.note: 'Deckt verwaltetes Kubernetes, Datenbanken, Object Storage und Server ab; deutlich kleinerer Dienstkatalog.'
+      alternativesTo.amazon-s3.note: 'Über den S3-kompatiblen Object Storage von Nine.'
 ---
 
 Nine is a managed cloud and hosting provider from Zurich. Its main offerings are

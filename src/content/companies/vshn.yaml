@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen für DevOps und Managed Services, gegründet 2014, das die Container-Plattform APPUiO und Managed-Kubernetes-Dienste betreibt.'
+    notes:
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht. Die Mitgründer Aarno Aukia und Patrick Mathers wechselten 2021 in den Verwaltungsrat. Es wurde weder eine Übernahme noch ein ausländischer Aktionär gemeldet. VSHN hat zudem ein Büro in Vancouver, Kanada.'
+      swissFounded.note: 'VSHN gibt an, 2014 gegründet worden zu sein, und bezeichnet sich als Schweizer Unternehmen; die VSHN AG ist im Handelsregister des Kantons Zürich eingetragen.'

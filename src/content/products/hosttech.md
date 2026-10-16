@@ -108,6 +108,13 @@ i18n:
   de:
     tagline: 'Webhosting, Domains und virtuelle Server aus eigenen Rechenzentren in der Schweiz.'
     description: 'hosttech ist ein Webhosting-Anbieter aus Richterswil mit Shared- und WordPress-Hosting, Domains, E-Mail und Servern aus eigenen Rechenzentren in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Firmensitz und Datenspeicherung sind in der Schweiz; hosttech gibt an, dass sein Website-Baukasten Website Creator von seinem Schweizer Team entwickelt wurde.'
+      swiss.hosted.note: 'Webhosting wird mit Serverstandort Schweiz beworben. Das Profil bei swiss made software gibt an, dass Hosting-, WordPress- und E-Mail-Daten sowie Backups in hosttechs eigenen Rechenzentren in der Schweiz gespeichert werden.'
+      swiss.infrastructure.note: 'Die Unternehmensseite gibt zudem an, dass ein Teil der Serverinfrastruktur in Rechenzentren ausgewählter Partner läuft, ohne diese zu nennen.'
+      pricing.startingPrice.note: 'Hosting Smart Deal (50 GB), inkl. MWST, 12-Monats-Vertrag, zuzüglich einmaliger Einrichtungsgebühr von CHF 9.90'
+      sustainability.summary: 'hosttech gibt an, 100 % zertifizierten erneuerbaren Strom zu nutzen.'
+      alternativesTo.ionos.note: 'Deckt Webhosting, Domains und Server ab; hosttech hat keine mit IONOS Cloud vergleichbare Public-Cloud-Plattform.'
 ---
 
 hosttech is a web hosting provider founded in 2004 in Richterswil on Lake Zurich.

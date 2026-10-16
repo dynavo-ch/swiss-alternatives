@@ -112,6 +112,12 @@ i18n:
   de:
     tagline: 'CRM- und Customer-Experience-Plattform für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen.'
     description: 'BSI Customer Suite ist eine Plattform für CRM, Marketing-Automatisierung und Kundendaten aus Baden für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen, angeboten als SaaS.'
+    notes:
+      swiss.developed.note: 'Das ISO/IEC-27001-Zertifikat von BSI umfasst Entwicklung, Betrieb und Support an den Schweizer Standorten (Baden, Baar, Bern) und an deutschen Standorten, darunter Darmstadt und Düsseldorf. BSI hat zudem Niederlassungen in Österreich und Italien. Wie die Entwicklungsarbeit auf die Länder verteilt ist, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'BSI gibt an, dass Daten ausschliesslich in zertifizierten Rechenzentren in der Schweiz oder in Deutschland verarbeitet werden und keine Cloud-Dienste genutzt werden, die Daten in die USA übermitteln. Schweizer Kunden wie Raiffeisen geben an, dass ihre Daten nur in der Schweiz gespeichert und verarbeitet werden. Gemäss BSI können Kunden den Cloud-Anbieter unter der Software wählen; die Anbieter und Rechenzentren werden nicht genannt.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode der Customer Suite veröffentlicht.'
+      alternativesTo.salesforce.note: 'Auf Banken, Versicherungen, Detailhandel und Energieunternehmen ausgerichtet; keine Self-Service-Pläne und keine öffentlichen Preise.'
+      alternativesTo.microsoft-dynamics-365.note: 'Umfasst nur die CRM- und Marketing-Anwendungen, kein ERP; auf Banken, Versicherungen, Detailhandel und Energieunternehmen ausgerichtet.'
 ---
 
 The BSI Customer Suite is a CRM and customer-experience platform for large

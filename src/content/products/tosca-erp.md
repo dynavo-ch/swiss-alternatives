@@ -111,6 +111,12 @@ i18n:
   de:
     tagline: 'ERP-Suite für KMU aus Handel, Produktion und Dienstleistung, entwickelt in Solothurn.'
     description: 'tosca ist eine ERP-Suite der dynasoft AG in Solothurn für KMU aus Handel, Produktion und Dienstleistung, mit Verkauf, Einkauf, Logistik, CRM und Buchhaltung.'
+    notes:
+      swiss.developed.note: 'dynasoft gibt an, tosca selbst zu entwickeln und kein Wiederverkäufer zu sein. Das Unternehmen hat seinen Firmensitz in Solothurn, eine Niederlassung in Frauenfeld und einen deutschen Standort in Langenzenn bei Nürnberg; es veröffentlicht nicht, wo seine Entwickler arbeiten.'
+      swiss.hosted.note: 'dynasoft gibt an, tosca zu entwickeln, einzuführen und zu betreiben, die Website sagt jedoch nicht, wo betriebene Installationen laufen oder wer die Server bereitstellt. Das swiss made software-Profil des Unternehmens trägt das swiss hosting-Label, das verspricht, dass gehostete Daten nur unter Schweizer Rechtsprechung zugänglich sind. Der tosca-Eintrag im selben Profil nennt eine Oracle-Datenbank und Java unter Windows oder Linux als Technologie.'
+      openSource.note: 'Proprietäre lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.sap.note: 'Richtet sich an Schweizer und deutsche KMU; vom Anbieter selbst eingeführt und betrieben; keine öffentlichen Preise.'
+      alternativesTo.microsoft-dynamics-365.note: 'Richtet sich an Schweizer und deutsche KMU; vom Anbieter selbst eingeführt und betrieben; keine öffentlichen Preise.'
 ---
 
 tosca is an ERP suite developed by dynasoft AG for small and mid-sized

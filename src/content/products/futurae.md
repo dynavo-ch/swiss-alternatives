@@ -121,6 +121,11 @@ i18n:
   de:
     tagline: 'Multi-Faktor-Authentifizierung und Transaktionsbestätigung für Banken und Fintechs.'
     description: 'Futurae ist eine in Zürich entwickelte Authentifizierungsplattform für Banken und Fintechs mit Anmeldung per Push, QR, TOTP und FIDO2 sowie Transaktionssignierung per App oder SDK.'
+    notes:
+      swiss.developed.note: 'Futurae beschreibt das Produkt als «crafted in Zurich»; dort haben das Unternehmen und seine Geschäftsleitung ihren Sitz.'
+      swiss.hosted.note: 'Der Dienst läuft auf der Google Cloud Platform; die Subprozessorenliste von Futurae nennt die Schweiz als Verarbeitungsort für das Hosting, und die Sicherheitsseite gibt Datenresidenz in der Schweiz an. Cloudflare (globales Netzwerk) stellt DDoS-Schutz und eine Web Application Firewall bereit, und SMS-Codes werden über Anbieter in Polen und Dänemark versendet.'
+      pricing.startingPrice.note: "Integrated-Plan, pro monatlich aktivem Benutzer, für 1'000 bis 10'000 MAU"
+      alternativesTo.duo-security.note: 'Deckt Push-, Einmalcode-, FIDO2- und Hardware-Token-MFA über eine API ab, richtet sich jedoch an kundenseitige Apps im Finanzdienstleistungsbereich; Funktionen für Mitarbeitenden-SSO oder Device Trust werden nicht aufgeführt.'
 ---
 
 Futurae is an authentication platform from Futurae Technologies AG in Zurich,

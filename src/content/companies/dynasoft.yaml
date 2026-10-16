@@ -71,3 +71,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Mitarbeiterbesitz in Solothurn, das die ERP-Suite tosca für Handels-, Produktions- und Dienstleistungsunternehmen in der Schweiz und in Deutschland entwickelt, einführt und betreibt.'
+    notes:
+      ownership.note: 'dynasoft bezeichnet sich als unabhängiges Schweizer Softwareunternehmen im Besitz seiner Mitarbeitenden: Mehr als die Hälfte der Belegschaft hält Aktien, die Hauptaktionäre sind zugleich die Geschäftsführer, und es gibt keine externen Investoren. Die im Handelsregister eingetragenen Verwaltungsrats- und Geschäftsleitungsmitglieder sind grösstenteils Schweizer Bürger. dynasoft hat eine Zweigniederlassung in Frauenfeld; der deutsche Standort in Langenzenn bei Nürnberg wird von einer separaten Gesellschaft, der dynasoft GmbH (HRB 20240, Nürnberg), betrieben, deren Gesellschafter nicht angegeben sind.'
+      swissFounded.note: 'Als Aktiengesellschaft (AG) mit Sitz in Solothurn eingetragen. Das Gründungsdatum ist weder auf der Website noch in den auf Zefix verfügbaren Registerpublikationen angegeben; dynasoft gibt an, über mehr als 40 Jahre Erfahrung mit ERP-Software zu verfügen.'

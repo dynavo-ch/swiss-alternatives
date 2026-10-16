@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Schweizer Cloud-Anbieter, gegründet 2009 und in Baar (Zug) eingetragen, mit IaaS, Kubernetes, Objektspeicher und Mac-Hosting; Teil der Sonio-Gruppe.'
+    notes:
+      ownership.note: 'Flow gehört seit September 2024 zur Gruppe des Schweizer IT-Dienstleisters Sonio AG (Baar) und behält seine Marke und seine Gründer. Frühere Zusammenschlüsse von Sonio wurden von der Investorengruppe AH & Capital Partners und Alpha VCX unterstützt; die letztlichen Aktionäre von Sonio werden nicht veröffentlicht.'
+      swissFounded.note: 'Flow gibt an, 2009 gegründet worden zu sein. Das Unternehmen war früher als innofield GmbH und innofield AG eingetragen und ist im Schweizer Handelsregister eingetragen; eine ausländische Vorgängergesellschaft ist nicht verzeichnet.'

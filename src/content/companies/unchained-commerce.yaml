@@ -66,3 +66,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher E-Commerce- und Digitalagentur, die die Open-Source-Software Unchained Engine entwickelt sowie Onlineshops, B2B-Portale und Webanwendungen baut und betreibt.'
+    notes:
+      ownership.note: "Gemäss den Publikationen des Handelsregisters wird das Stammkapital von CHF 60'000 zu gleichen Teilen von den beiden geschäftsführenden Gesellschaftern Pascal Kaufmann und Vedran Rudelj gehalten, beide Schweizer Staatsbürger (Stand des Eintrags vom Januar 2022; eine spätere Änderung der Gesellschafter wurde nicht publiziert)."
+      swissFounded.note: 'Gemäss Handelsregister im April 2016 in Zürich als Reactive Code GmbH eingetragen und im April 2019 in Unchained Commerce GmbH umbenannt.'

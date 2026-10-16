@@ -107,6 +107,12 @@ i18n:
   de:
     tagline: 'Webanalyse auf Basis von Matomo, gehostet in der Schweiz, standardmässig ohne Cookies.'
     description: 'Friendly Analytics ist ein Webanalyse-Dienst auf Basis von Open-Source-Matomo, betrieben von der Friendly GmbH in Hergiswil und gehostet in Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'Die Friendly GmbH in der Schweiz entwickelt und betreibt den Dienst, dessen Kern ist jedoch die Open-Source-Plattform Matomo, die vom internationalen Matomo-Projekt entwickelt wird.'
+      swiss.hosted.note: 'Friendly gibt an, dass der Dienst ausschliesslich in Schweizer Rechenzentren gehostet wird, die von Infomaniak, Netstream und Hosttech betrieben werden. Der Enterprise-Plan kann stattdessen EU-Hosting, eine dedizierte Instanz oder eine On-Premises-Installation nutzen.'
+      openSource.note: 'Der Dienst basiert auf Matomo, das unter GPL-3.0 Open Source ist. Friendly gibt nicht an, ob seine eigenen Erweiterungen veröffentlicht werden.'
+      pricing.startingPrice.note: "Essential-Plan, monatliche Abrechnung, exkl. MWST; bis 100'000 Hits pro Monat, eine Website"
+      alternativesTo.google-analytics.note: 'Basiert auf Matomo; der Import historischer Google-Analytics-Daten ist eine manuelle Dienstleistung, die nach Aufwand verrechnet wird.'
 ---
 
 Friendly Analytics is a web analytics service from Friendly GmbH in Hergiswil

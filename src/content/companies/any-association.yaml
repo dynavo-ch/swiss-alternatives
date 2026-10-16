@@ -73,3 +73,7 @@ sources:
 i18n:
   de:
     description: 'In Zug eingetragener Verein, der Anytype entwickelt und veröffentlicht, eine Local-first-App für Notizen und Wissen. Das Team arbeitet remote, mit einem Standort in Berlin, der von einer deutschen Tochtergesellschaft betrieben wird.'
+    notes:
+      headquarters.note: 'Eingetragener Sitz in Zug; die Domiziladresse ist c/o Sielva Management SA, Gubelstrasse 11, ein Corporate-Service-Anbieter.'
+      ownership.note: 'Ein Verein hat keine Aktionäre und wird von seinen Mitgliedern kontrolliert, die nicht veröffentlicht werden. Die im Handelsregister eingetragenen Vorstandsmitglieder wohnen in Berlin und Wien; eine in der Schweiz wohnhafte Person ist als Geschäftsführer eingetragen. Die Mitarbeitenden sind bei einer Tochtergesellschaft in Berlin angestellt (die Anylab GmbH wird als EU-Vertreterin genannt).'
+      swissFounded.note: 'Der Verein (eingetragener Name «Any») gab sich am 1. März 2023 seine Statuten und wurde im Juli 2023 ins Handelsregister des Kantons Zug eingetragen. Das Projekt Anytype ist älter als der Verein und wurde zuvor von Risikokapitalgebern unterstützt, die auf der Website des Anbieters aufgeführt sind.'

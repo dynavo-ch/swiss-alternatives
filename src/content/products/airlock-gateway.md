@@ -122,6 +122,12 @@ i18n:
   de:
     tagline: 'Web-Application- und API-Firewall mit Reverse Proxy, betrieben auf Kundeninfrastruktur.'
     description: 'Airlock Gateway ist eine Web-Application- und API-Firewall der Zürcher Ergon Informatik, die Kunden selbst als virtuelle Appliance oder Cloud-Image installieren.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Ergon Informatik AG in Zürich.'
+      swiss.hosted.note: 'Airlock Gateway wird vom Kunden oder einem Partner installiert, On-Premises, auf VMware oder anderen Virtualisierungsplattformen oder als Cloud-Image in einer Public Cloud; der Datenstandort hängt daher vom Deployment ab. Eine vom Anbieter gehostete Edition des Gateways ist nicht aufgeführt; der im April 2026 lancierte Managed Service von Airlock umfasst Airlock IAM.'
+      openSource.note: 'Airlock Gateway ist Teil der kommerziell lizenzierten Premium Edition. Nur Airlock Microgateway wird als kostenlose Community Edition angeboten.'
+      alternativesTo.f5.note: 'Deckt die Funktionen der Web Application Firewall und API-Firewall ab, nicht aber die weitergehenden Application-Delivery- und Netzwerkprodukte von F5.'
+      alternativesTo.cloudflare.note: 'Vergleichbar mit der Web Application Firewall und dem Bot-Schutz von Cloudflare, wird aber vom Kunden installiert und betrieben, ohne globales CDN oder Edge-Netzwerk.'
 ---
 
 Airlock Gateway is a web application and API protection (WAAP) product from

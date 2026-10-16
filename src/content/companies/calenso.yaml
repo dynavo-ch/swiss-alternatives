@@ -78,3 +78,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Rothenburg bei Luzern, das die Terminbuchungsplattform Calenso entwickelt. Seit 2025 Teil der US-Gruppe jrni Holdings, Inc.'
+    notes:
+      ownership.note: 'Die Datenschutzerklärung von Calenso gibt an, dass Calenso Teil der jrni Holdings, Inc. ist. Der Zusammenschluss mit der US-Plattform für Kundeninteraktion JRNI und mit Event Farm wurde Anfang 2025 angekündigt; Calenso erklärte, das Team in Luzern und die Marke blieben bestehen. Seit 2025 sind der Verwaltungsratspräsident und ein im Handelsregister eingetragenes Verwaltungsratsmitglied in den USA wohnhaft.'
+      swissFounded.note: 'Calenso gibt an, 2016 in Luzern von drei Gründern gegründet worden zu sein. Das heutige Unternehmen, die Calenso AG, wurde im Mai 2022 im Handelsregister des Kantons Luzern eingetragen (Sitz Neuenkirch) und verlegte seinen Sitz 2023 nach Rothenburg.'

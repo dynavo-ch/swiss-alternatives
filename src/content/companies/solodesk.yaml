@@ -67,3 +67,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Vernier GE, gegründet 2026, das SoloDesk entwickelt, einen Buchhaltungs- und Rechnungsdienst für Schweizer Einzelunternehmen, Kleinunternehmen und Treuhandbüros.'
+    notes:
+      ownership.note: 'Gemäss dem Gründungseintrag im Handelsregister hält der einzige Gesellschafter und Geschäftsführer, Oleksiy Chubatyuk (Schweizer Staatsbürger, Heimatort Versoix), sämtliche 200 Stammanteile zu CHF 100. Es werden keine Investoren genannt.'
+      swissFounded.note: 'Im Juli 2026 im Handelsregister des Kantons Genf eingetragen (Statuten vom 22. Juni 2026). Der Gründer gibt an, dass SoloDesk auf dem Kern von LedgerPeek und auf zwölf Jahren Erfahrung in der Führung eines Buchhaltungsbüros aufbaut.'

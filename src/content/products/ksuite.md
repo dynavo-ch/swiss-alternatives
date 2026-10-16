@@ -146,6 +146,14 @@ i18n:
   de:
     tagline: 'Kollaborationssuite mit E-Mail, Kalender, Cloud-Speicher, Office-Bearbeitung, Chat und Video.'
     description: 'kSuite ist die Kollaborationssuite von Infomaniak mit Mail, Kalender, kDrive-Speicher, Bearbeitung in OnlyOffice, kChat, kMeet und dem Assistenten Euria, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Infomaniak gibt an, dass kSuite in der Schweiz entwickelt wird. Einige Komponenten bauen auf Open-Source-Projekten auf: OnlyOffice für die Dokumentbearbeitung, Mattermost für kChat und Jitsi Meet für kMeet.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass kSuite-Daten ausschliesslich in der Schweiz gehostet und verarbeitet und nicht ausserhalb der eigenen Infrastruktur übertragen werden.'
+      openSource.note: 'Die Mobile-Apps (Mail, kDrive, Calendar, kMeet) und der kDrive-Desktop-Client werden unter GPL-3.0 veröffentlicht; die kChat-Clients sind Mattermost-Forks. Die serverseitigen Dienste werden nicht vollständig veröffentlicht.'
+      pricing.startingPrice.note: 'my kSuite+ (1 TB), jährliche Abrechnung, inkl. MWST; kSuite Pro Standard CHF 1.76/Benutzer/Monat exkl. MWST'
+      sustainability.summary: 'Gemäss Infomaniak laufen die Rechenzentren mit erneuerbarem Strom ohne Klimaanlage, und das Rechenzentrum D4 in Genf speist seine gesamte Abwärme ins Fernwärmenetz ein.'
+      alternativesTo.google-workspace.note: 'Dokumente werden mit OnlyOffice bearbeitet; Organisationsfunktionen wie kChat sind den kSuite-Pro-Plänen vorbehalten.'
+      alternativesTo.microsoft-365.note: 'Keine Office-Desktop-Apps; die Bearbeitung mit Microsoft Office Online ist nur in höheren kSuite-Pro-Stufen verfügbar.'
 ---
 
 kSuite bundles Infomaniak's collaboration services: Mail with calendar and

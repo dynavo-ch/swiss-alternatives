@@ -127,6 +127,11 @@ i18n:
   de:
     tagline: 'Java-basiertes Enterprise-CMS und Digital-Experience-Plattform, selbst gehostet oder als Managed Service.'
     description: 'Magnolia DXP ist eine Enterprise-Plattform für Content-Management und Digital Experience aus Basel, erhältlich selbst gehostet oder als Managed Cloud Service.'
+    notes:
+      swiss.developed.note: 'Der Hauptsitz befindet sich in Münchenstein bei Basel; Magnolia hat zudem Gruppengesellschaften in Deutschland, Grossbritannien, den USA, Spanien, Tschechien, Singapur, Vietnam und China. Der Anteil der in der Schweiz geleisteten Entwicklung wird nicht veröffentlicht.'
+      swiss.hosted.note: 'DX Core läuft auf der eigenen Infrastruktur des Kunden. Die verwaltete DX Cloud kann auf AWS, Azure, Google Cloud, Aliyun in China oder auf von Magnolia so bezeichneten dedizierten Schweizer und europäischen Clouds (die Preisseite nennt Mironet und Hetzner) bereitgestellt werden. Der Hosting-Standort wird pro Kunde gewählt.'
+      openSource.note: 'Die kostenlose Community Edition wird unter GPLv3 (neben dem Magnolia Network Agreement) veröffentlicht; Version 6.4.11 erschien im Oktober 2026. Die kommerziellen Editionen DX Core und DX Cloud werden unter einer proprietären Vereinbarung lizenziert.'
+      pricing.startingPrice.note: 'DX Core (selbst gehostet), als «ab»-Preis aufgeführt'
 ---
 
 Magnolia DXP is a Java-based content management system and digital experience

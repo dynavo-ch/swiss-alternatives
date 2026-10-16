@@ -127,6 +127,12 @@ i18n:
   de:
     tagline: 'Eventmanagement-Software für Einladungen, Anmeldung, Ticketing und Check-in.'
     description: 'evenito ist Eventmanagement-Software aus Zürich für Corporate-Event-Teams, mit Einladungen, Anmeldung, Ticketing, Check-in und Online-Events.'
+    notes:
+      swiss.developed.note: 'evenito beschreibt sich als Schweizer Tech-Unternehmen und seine Plattform als in der Schweiz entwickelte Software. Das Unternehmen hat zudem ein Büro in Hamburg.'
+      swiss.hosted.note: 'evenito gibt an, dass die Plattform auf Infrastruktur von Google Cloud läuft und Gästedaten in der Schweiz gespeichert werden; auch das swiss made software-Profil führt die Produkte als in der Schweiz gehostet. Kartenzahlungen werden von Datatrans abgewickelt, und evenito gibt an, selbst keine Kartendaten zu speichern.'
+      openSource.note: 'Es wird kein Quellcode veröffentlicht.'
+      alternativesTo.cvent.note: 'Deckt Gästemanagement, Event-Websites, E-Mail-Einladungen, Ticketing, Check-in und virtuelle Events ab, Funktionen für Location-Suche oder Hotelbuchung sind jedoch nicht aufgeführt.'
+      alternativesTo.eventbrite.note: 'Richtet sich an Unternehmen mit Firmenanlässen auf Einladung, mit Gästegruppen, CRM-Integration und Sponsorenkontingenten; Tickets werden über die eigenen Event-Seiten des Veranstalters verkauft, und es gibt keinen Gratis-Plan.'
 ---
 
 evenito is an event management platform developed by Evenito AG in Zurich for

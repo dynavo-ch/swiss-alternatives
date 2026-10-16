@@ -59,3 +59,7 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Lugano, das seit 1989 die Desktop-Software Banana Accounting entwickelt.'
+    notes:
+      headquarters.note: 'Eingetragene Adresse Via la Santa 7, 6962 Viganello (Gemeinde Lugano).'
+      ownership.note: 'Es werden keine Angaben zu den Eigentumsverhältnissen veröffentlicht. Die Unternehmensseite nennt Domenico Zucchetti als Gründer des Unternehmens.'
+      swissFounded.note: 'Banana datiert die Lancierung seiner Software auf 1989. Das Unternehmen ist seit dem 21. Juni 1990 im Handelsregister des Kantons Tessin eingetragen, mit Sitz in Lugano (früherer Name: Parsec System SA).'

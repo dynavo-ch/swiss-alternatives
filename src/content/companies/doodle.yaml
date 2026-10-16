@@ -65,3 +65,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen hinter dem Terminplanungsdienst Doodle, 2007 von zwei Studenten der ETH Zürich gegründet und heute eine Tochtergesellschaft der Schweizer Mediengruppe TX Group.'
+    notes:
+      ownership.note: 'Tamedia (heute TX Group) übernahm 2011 eine Minderheitsbeteiligung und 2014 eine Mehrheitsbeteiligung. Das Impressum von Doodle bezeichnet das Unternehmen als Tochtergesellschaft der TX Group AG, der Mediengruppe mit Sitz in Zürich. Ein späterer Verkauf wurde in der Berichterstattung bis Oktober 2026 nicht gefunden.'
+      swissFounded.note: '2007 von den ETH-Zürich-Studenten Michael Näf und Paul E. Sevinç gegründet. Das Unternehmen ist seit März 2007 im Handelsregister des Kantons Zürich eingetragen (früherer Name: Inturico Engineering GmbH).'

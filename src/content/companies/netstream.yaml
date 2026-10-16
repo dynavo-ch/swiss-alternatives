@@ -88,3 +88,6 @@ sources:
 i18n:
   de:
     description: 'Anbieter von Cloud, Konnektivität und TV-Streaming, gegründet 1998, mit Sitz in Wallisellen und eigenen Rechenzentren in Dübendorf.'
+    notes:
+      ownership.note: 'Netstream stellt die Netstream AG und die Netstream Cloud AG (Dübendorf) als Tochtergesellschaften der 2022 in Zug eingetragenen Netstream Holding AG dar. Die Aktionäre der Holding werden nicht veröffentlicht. Die im Handelsregister aufgeführten Verwaltungsratsmitglieder sind Schweizer Staatsbürger, und eine Übernahme wurde nicht gemeldet.'
+      swissFounded.note: '1998 gegründet; die Mitgründer Alexis Caceda (CEO) und Reto Kasser (CTO) leiten das Unternehmen weiterhin. Das Handelsregister führt Netstream GmbH als früheren Namen auf.'

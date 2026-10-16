@@ -105,6 +105,10 @@ i18n:
   de:
     tagline: 'Rapport-App für Handwerk und Aussendienst, mit Planung und Rechnungsstellung.'
     description: 'amacos ist eine Rapport-App aus Gipf-Oberfrick zur Erfassung von Arbeitszeit, Material und Leistungen vor Ort, verknüpft mit Planung, Disposition und Rechnungsstellung.'
+    notes:
+      swiss.developed.note: 'amacos ist eine Marke der Martha-Software GmbH in Gipf-Oberfrick, deren veröffentlichtes Team einen Software Engineer und Projektleiter umfasst und die das Label swiss made software trägt. Wo die gesamte Entwicklung stattfindet, wird nicht ausdrücklich angegeben.'
+      swiss.hosted.note: 'Gemäss Datenschutzerklärung werden die Daten auf Servern im Eigentum von Martha Software in einem Rechenzentrum in der Schweiz gespeichert; die Startseite verweist auf Partner mit Servern in der Schweiz. Das Rechenzentrum wird nicht genannt.'
+      alternativesTo.harvest.note: 'Ausgelegt auf die Arbeit vor Ort in Handwerk, Dienstleistung und Lohnunternehmen in der Landwirtschaft, mit Offline-Erfassung von Material und Maschinenstunden; Formulare werden für jeden Kunden angepasst, und Preise werden auf Anfrage offeriert.'
 ---
 
 amacos is a reporting app for companies whose staff work on site, such as

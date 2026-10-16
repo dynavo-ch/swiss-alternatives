@@ -66,3 +66,5 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Gipf-Oberfrick (AG), das die Rapport-App amacos für Arbeiten im Aussendienst sowie Software für Schweinezucht und Viehhandel entwickelt.'
+    notes:
+      ownership.note: 'Seit April 2025 ist die beeSnap GmbH aus Freienbach (SZ) einzige Gesellschafterin der GmbH; deren einziger Gesellschafter und Geschäftsführer, Daniel Santos Ribeiro, ist portugiesischer Staatsangehöriger mit Wohnsitz in Freienbach; er ist zudem Geschäftsführer der Martha-Software GmbH. Als in Schweizer Besitz erfasst, weil die Eigentümerschaft über ein Schweizer Unternehmen zu einem in der Schweiz wohnhaften Eigentümer führt. beeSnap übernahm die zuvor von Viktor und Claudia Schmid gehaltenen Stammanteile.'

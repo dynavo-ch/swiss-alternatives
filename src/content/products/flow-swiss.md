@@ -129,6 +129,16 @@ i18n:
   de:
     tagline: 'Cloud-Server, Kubernetes, Objektspeicher und Mac-Hosting aus Schweizer Rechenzentren.'
     description: 'Flow Swiss bietet virtuelle Maschinen, Managed Kubernetes, eine App-Plattform, S3-kompatiblen Objektspeicher und Mac Bare Metal aus Rechenzentren in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Flow wird von seinen Gründern aus der Schweiz geführt und pflegt eigene CLI- und API-Clients; der Entwicklungsstandort wird nicht ausdrücklich angegeben.'
+      swiss.hosted.note: 'Flow gibt an, dass Kundendaten ausschliesslich in der Schweiz gehostet werden. Die Dokumentation nennt drei Regionen: ZRH1 (Zürich), ALP1 (Luzern) und ALP2, ein Bunker-Rechenzentrum in der Zentralschweiz.'
+      swiss.infrastructure.note: 'Flow nennt externe Betreiber für seine Rechenzentren, daher wird angenommen, dass die Plattform in Colocation läuft. Der Betreiber von ALP2 wird nicht angegeben. Flow gehört zur Schweizer Sonio-Gruppe, deren letztliche Aktionäre nicht veröffentlicht werden.'
+      openSource.note: 'Das CLI, der Go-Client und der CSI-Treiber sind Open Source; die Cloud-Plattform selbst ist proprietär.'
+      pricing.startingPrice.note: 'Object Storage, ab CHF 0.0138 pro Stunde; Compute ab CHF 29/Monat (CHF 0.04/Stunde); stündliche Abrechnung, ohne Mindestlaufzeit'
+      alternativesTo.aws.note: 'Deckt Compute, Managed Kubernetes, Object Storage, Load Balancer und VPN ab; deutlich kleineres Dienstangebot.'
+      alternativesTo.digitalocean.note: 'Deckt virtuelle Maschinen, Managed Kubernetes, eine App-Plattform und Object Storage ab.'
+      alternativesTo.amazon-s3.note: 'Über den S3-kompatiblen Object Storage von Flow.'
+      alternativesTo.heroku.note: 'Über App Engine, eine verwaltete Container-Hosting-Plattform.'
 ---
 
 Flow Swiss provides a self-service cloud with virtual machines (up to 32 vCPUs

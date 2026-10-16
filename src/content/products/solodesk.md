@@ -132,6 +132,14 @@ i18n:
   de:
     tagline: 'KI-gestützte Buchhaltung, Rechnungsstellung und MWST für Schweizer Einzelunternehmen und kleine Firmen.'
     description: 'SoloDesk ist ein Buchhaltungsdienst aus Vernier GE, der Belege mit KI ausliest, QR-Rechnungen ausstellt und MWST-Abrechnungen vorbereitet, mit kostenlosem Plan und Daten in Zürich.'
+    notes:
+      swiss.developed.note: 'SoloDesk gibt an, dass die Software rund um das KI-Modell eine Eigenentwicklung ist. Das Unternehmen hat seinen Sitz in Vernier GE; wo die Entwicklungsarbeit stattfindet, wird sonst nicht angegeben. Das KI-Modell ist ein Google-Gemini-Modell eines Drittanbieters.'
+      swiss.hosted.note: 'Anwendung, Datenbank und hochgeladene Dokumente werden auf Google Cloud in der Region Zürich (europe-west6) gehostet. Für das KI-gestützte Auslesen von Dokumenten, eine Kernfunktion, wird jede hochgeladene Datei über den globalen Endpunkt an Google Cloud Vertex AI gesendet, was laut SoloDesk eine Verarbeitung ausserhalb der Schweiz einschliessen kann (Zero Data Retention konfiguriert). Auch Stripe, SendGrid und Sentry können Personendaten ausserhalb der Schweiz verarbeiten.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Mid-Plan, 25 eingehende Dokumente pro Monat und Lohnabrechnung für eine Person, exkl. 8,1% MWST'
+      alternativesTo.quickbooks.note: 'Nur für in der Schweiz registrierte Unternehmen; ausgerichtet auf Schweizer MWST, QR-Rechnungen und den Schweizer KMU-Kontenrahmen.'
+      alternativesTo.xero.note: 'Nur für in der Schweiz registrierte Unternehmen; ausgerichtet auf Schweizer MWST, QR-Rechnungen und den Schweizer KMU-Kontenrahmen.'
+      alternativesTo.freshbooks.note: 'Nur für in der Schweiz registrierte Unternehmen; umfasst doppelte Buchhaltung und MWST-Abrechnungen.'
 ---
 
 SoloDesk is a browser and mobile service for bookkeeping, invoicing and VAT,

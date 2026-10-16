@@ -176,6 +176,12 @@ i18n:
   de:
     tagline: 'Verschlüsselte E-Mail mit Ende-zu-Ende-Verschlüsselung zwischen Proton-Nutzenden.'
     description: 'Proton Mail ist ein verschlüsselter E-Mail-Dienst der Proton AG bei Genf mit Web-, Mobile- und Desktop-Apps. Die Daten werden in der Schweiz, in Deutschland und in Norwegen gespeichert.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Hauptsitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Die Datenschutzerklärung von Proton Mail (zuletzt geändert im September 2026) gibt an, dass die Daten verschlüsselt auf Proton-Servern gespeichert werden, die sich ausschliesslich in der Schweiz, in Deutschland oder in Norwegen befinden, ohne Aufschlüsselung nach Land. Protons Vorfallbericht vom August 2026 beschreibt primäre Datenbanken, die auf Frankfurt und Zürich verteilt sind. Seit Juli 2025 verlagert Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz und verweist dabei auf die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT); Anfang 2026 wartete diese Revision auf eine zweite Vernehmlassung.'
+      swiss.infrastructure.note: 'Proton sagt, dass ihm seine Server-Hardware gehört. Gemäss einem Bericht von watson.ch (August 2026) mietet es gesicherte Flächen bei Rechenzentrumsbetreibern, die es nicht nennt, statt eigene Rechenzentren in der Schweiz, in Deutschland oder in Norwegen zu betreiben.'
+      openSource.note: 'Der Web-Client, die Android-App und Proton Mail Bridge sind unter GPL-3.0 veröffentlicht; die Serverseite ist nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Mail Plus, bei monatlicher Abrechnung (USD 3.99/Monat bei jährlicher Abrechnung); auch Preise in CHF und EUR'
 ---
 
 Proton Mail is an email service operated by Proton AG. Messages between Proton

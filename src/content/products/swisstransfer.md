@@ -118,6 +118,10 @@ i18n:
   de:
     tagline: 'Kostenlose Übertragung von Dateien bis 50 GB ohne Konto, gespeichert in der Schweiz.'
     description: 'SwissTransfer ist der kostenlose Dienst von Infomaniak zum Versenden von Dateien bis 50 GB pro Übertragung ohne Konto, mit bis zu 30 Tage gültigen Links, gespeichert in der Schweiz.'
+    notes:
+      swiss.hosted.note: 'Infomaniak gibt an, dass Dateien ausschliesslich in seinen eigenen Rechenzentren in der Schweiz gespeichert werden, ohne externe Hosting-Anbieter.'
+      openSource.note: 'Die Android- und iOS-Apps und ihre gemeinsame Kernbibliothek stehen unter GPL-3.0; der Webdienst wird nicht veröffentlicht.'
+      sustainability.summary: 'Infomaniak gibt an, dass seine Rechenzentren mit erneuerbarem Strom ohne Klimaanlage laufen und sein Rechenzentrum D4 in Genf seine gesamte Abwärme ins Fernwärmenetz einspeist.'
 ---
 
 SwissTransfer sends files of up to 50 GB per transfer, free of charge and

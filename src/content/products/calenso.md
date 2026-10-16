@@ -114,6 +114,11 @@ i18n:
   de:
     tagline: 'Online-Terminbuchung für Unternehmen und Behörden.'
     description: 'Calenso ist eine Plattform für Online-Terminbuchungen für Unternehmen und Behörden der Calenso AG aus der Nähe von Luzern, mit Servern in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Calenso beschreibt sich als Schweizer Softwareunternehmen mit Sitz in Luzern und einem Team von rund 20 Personen. Beim Beitritt zur JRNI-Gruppe 2025 gab das Unternehmen an, das Luzerner Team bleibe bestehen.'
+      swiss.hosted.note: 'Als teilweise erfasst, weil sich die Datenschutzerklärung nicht ausschliesslich auf die Schweiz festlegt. Calenso gibt an, dass seine Server in einem nach ISO 27001 und BSI C5 zertifizierten Rechenzentrum in der Schweiz gehostet werden. Die Datenschutzerklärung ist weniger konkret: Personendaten werden «primär» in der Schweiz und der EU gespeichert und können an Unternehmen der JRNI-Gruppe sowie an Dienstleister wie Twilio (SMS), SendGrid (E-Mail) und Zendesk weitergegeben werden, auch in den USA.'
+      swiss.infrastructure.note: 'Die Datenschutzerklärung nennt AWS als Beispiel für die Hosting-Anbieter, die für den Betrieb der Plattform eingesetzt werden; das Schweizer Rechenzentrum wird nicht genannt.'
+      alternativesTo.calendly.note: 'Richtet sich eher an Organisationen als an Einzelpersonen; Preise werden nicht veröffentlicht.'
 ---
 
 Calenso is an online booking platform that lets customers book appointments

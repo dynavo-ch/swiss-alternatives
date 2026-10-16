@@ -64,3 +64,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen aus Lausanne, gegründet 2026, das Open-Source-Anwendungen und private KI für Organisationen betreibt, auf deren eigenen Servern oder in seiner eigenen Cloud.'
+    notes:
+      ownership.note: 'Pilae gibt an, ein Schweizer Unternehmen ohne US-Muttergesellschaft oder -Tochtergesellschaft zu sein. Seine Aktionäre werden nicht veröffentlicht.'
+      swissFounded.note: 'Im April 2026 als neue Aktiengesellschaft im Handelsregister des Kantons Waadt eingetragen, mit Statuten vom 31. März 2026.'

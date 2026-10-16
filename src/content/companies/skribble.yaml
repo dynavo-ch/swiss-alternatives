@@ -77,3 +77,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Anbieter von Diensten für elektronische Signaturen, gegründet 2018, mit einer deutschen Tochtergesellschaft in Karlsruhe.'
+    notes:
+      ownership.note: 'Durch Venture Capital finanziert; die Aktionärsstruktur wird nicht veröffentlicht. Die Series-A-Runde vom September 2022 über EUR 10 Millionen wurde von Acton Capital (München, Deutschland) mit VI Partners (Altendorf, Schweiz) als Co-Lead angeführt, sodass zu den Aktionären sowohl Schweizer als auch ausländische Investoren gehören. In der Berichterstattung bis Oktober 2026 wurde keine Übernahme von Skribble gefunden.'
+      swissFounded.note: 'Skribble gibt an, 2018 gegründet worden zu sein; das Unternehmen ist in Zürich eingetragen.'

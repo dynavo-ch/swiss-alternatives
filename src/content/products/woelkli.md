@@ -115,6 +115,13 @@ i18n:
   de:
     tagline: 'Cloud-Speicher auf Basis von Nextcloud mit Kalender und Kontakten, gehostet in Basel.'
     description: 'wölkli ist ein Cloud-Speicherdienst auf Basis von Nextcloud, betrieben von oriented.net im eigenen Rechenzentrum in der Schweiz, mit kostenlosem 1-GB-Plan und kostenpflichtigen Plänen in CHF.'
+    notes:
+      swiss.developed.note: 'wölkli basiert auf Nextcloud, das von der Nextcloud GmbH in Deutschland entwickelt wird; oriented.net hostet und betreibt den Dienst in der Schweiz.'
+      swiss.hosted.note: 'oriented.net gibt an, dass sich alle wölkli-Server und der gesamte Dateispeicher in einem nach ISO/IEC 27001 zertifizierten Rechenzentrum in der Schweiz befinden.'
+      swiss.infrastructure.note: 'Die Funktionsseite beschreibt ein eigenes Rechenzentrum in der Schweiz; die Seite zum Server-Housing von oriented.net verortet dessen Rechenzentrum in Basel.'
+      pricing.startingPrice.note: 'Level CB (10 GB, ein Benutzer), als befristetes Angebot gekennzeichnet; der nächste Plan bietet 100 GB für CHF 180 pro Jahr; exkl. 8.1 % MWST'
+      alternativesTo.dropbox.note: 'Läuft auf Nextcloud; Dateien werden serverseitig statt Ende-zu-Ende verschlüsselt, und Kalender, Kontakte und Notizen sind enthalten.'
+      alternativesTo.google-drive.note: 'Speicher, Synchronisation und Freigabe mit Nextcloud-Apps; Online-Bearbeitung von Dokumenten ist über Collabora Online oder ONLYOFFICE verfügbar.'
 ---
 
 wölkli ("small cloud" in Swiss German) is a cloud storage service that Basel

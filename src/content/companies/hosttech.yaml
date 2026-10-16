@@ -66,3 +66,6 @@ sources:
 i18n:
   de:
     description: 'Webhosting- und Domain-Anbieter, 2004 in Richterswil gegründet, geführt von seinen zwei Gründern und mit eigenen Rechenzentren in der Schweiz.'
+    notes:
+      ownership.note: 'Das Impressum nennt die Gründer Manuel Kälin und Marius Meuwly als Gesellschafter der GmbH; gemäss dem Unternehmen amtieren sie als CEO und CTO. Das Handelsregister führt Manuel Kälin, Schweizer Staatsbürger, als Gesellschafter auf. Für die jeweiligen Märkte sind in Salzburg (AT) und Berlin (DE) separate Gesellschaften mit dem Namen hosttech GmbH eingetragen. Eine Übernahme wurde nicht gemeldet.'
+      swissFounded.note: '2004 in Richterswil am Zürichsee von Marius Meuwly und Manuel Kälin gegründet.'

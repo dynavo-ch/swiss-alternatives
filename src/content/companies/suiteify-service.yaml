@@ -80,3 +80,7 @@ sources:
 i18n:
   de:
     description: 'Unternehmen aus Stäfa, bis 2026 unter dem Namen Run my Accounts AG, das den Online-Buchhaltungsdienst und die Software Run my Accounts betreibt. Es gehört zur Suiteify-Gruppe (früher Infoniqa).'
+    notes:
+      ownership.note: 'Die österreichische Infoniqa-Gruppe übernahm gemäss ihrer Mitteilung 2021 100 % von Run my Accounts. Im September 2026 führte die Gruppe ihre Unternehmen und Marken unter dem Namen Suiteify zusammen. Das Impressum der Gruppe nennt die Suiteify Group Holding GmbH in Wels, Österreich, als Hauptgesellschaft und führt zudem eine Gesellschafteradresse in Böblingen, Deutschland, auf. Gemäss Presseberichten wird die Gruppe vom US-Investor Warburg Pincus unterstützt.'
+      ownership.parent: 'Suiteify-Gruppe (ehemals Infoniqa-Gruppe)'
+      swissFounded.note: 'Am 23. Juni 2008 im Handelsregister des Kantons Zürich eingetragen. Frühere Firmennamen sind unter anderem Run my Accounts GmbH und Run my Accounts AG; der Name wurde mit Wirkung der Statutenänderung vom 15. September 2026 in Suiteify Service AG geändert.'

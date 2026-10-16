@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Webhosting-Anbieter und ICANN-akkreditierter Domain-Registrar, 2001 in Rapperswil-Jona gegründet, im Besitz seiner Gründer und von ihnen geführt.'
+    notes:
+      ownership.note: 'Inhabergeführt. Seit Ende 2017 halten Mitgründer und CEO Markus Gebert und Geschäftsführer Claudius Röllin je die Hälfte des Aktienkapitals. Im Mai 2026 erklärte der CEO, Hostpoint bleibe unabhängig, während andere Anbieter von internationalen Gruppen übernommen worden seien.'
+      swissFounded.note: '2001 in Rapperswil-Jona gegründet, ursprünglich als Hostpoint GmbH.'

@@ -117,6 +117,13 @@ i18n:
   de:
     tagline: 'Newsletter-Dienst für kleine Unternehmen und Vereine, mit kostenloser Stufe.'
     description: 'Swiss Newsletter ist ein Newsletter-Dienst der Zürcher mailXpert für kleine Unternehmen und Vereine, mit kostenloser Stufe und Datenhaltung in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Swiss Newsletter läuft auf derselben Plattform wie mailXpert, dessen Kernsoftware von eigenen Entwicklern von mailXpert in der Schweiz entwickelt wird.'
+      swiss.hosted.note: 'Der Anbieter gibt an, dass Adressdaten der Kunden in der Schweiz bleiben. Da der Dienst die Plattform von mailXpert nutzt, gilt die Angabe von mailXpert, dass alle Daten in Schweizer Rechenzentren mit einem Backup an einem zweiten Schweizer Standort gespeichert werden; die Rechenzentrumsbetreiber werden nicht genannt.'
+      openSource.note: 'Es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: "2'000 E-Mails pro Monat, exkl. 8,1 % MWST; bei jährlicher Zahlung 10 % Rabatt. Die kostenlose Version erlaubt bis zu 200 E-Mails pro Monat."
+      alternativesTo.mailchimp.note: 'Umfasst Newsletter, Anmeldeformulare, Segmentierung und Reporting; E-Mail-Automatisierung ist erst nach einem Wechsel auf einen mailXpert-Plan verfügbar.'
+      alternativesTo.brevo.note: 'Kostenlose Stufe auf 200 E-Mails pro Monat beschränkt; kostenpflichtige Pläne werden nach monatlichem E-Mail-Volumen in CHF berechnet. Automatisierung erfordert einen mailXpert-Plan, und transaktionale E-Mails werden separat über mailomat angeboten.'
 ---
 
 Swiss Newsletter is a newsletter service operated by mailXpert GmbH in Zurich

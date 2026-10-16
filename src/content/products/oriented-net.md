@@ -143,6 +143,14 @@ i18n:
   de:
     tagline: 'Managed Linux-Hosting, VPS, ARM-Server und Kubernetes aus dem eigenen Rechenzentrum in Basel.'
     description: 'oriented.net ist ein Basler Hosting-Anbieter mit Webhosting, x86- und ARM-VPS, physischen Servern, Managed Kubernetes und Colocation im eigenen Rechenzentrum.'
+    notes:
+      swiss.developed.note: 'Die Dienste werden vom Team von oriented.net in Basel auf Open-Source-Software wie Linux und dem Xen-Hypervisor betrieben; eigene Softwareentwicklung wird nicht beschrieben.'
+      swiss.hosted.note: 'Hosting- und Serverprodukte nennen die Schweiz als Serverstandort; die Seite zum Server-Housing nennt das Rechenzentrum von oriented.net in Basel.'
+      swiss.infrastructure.note: 'oriented.net gibt an, dass seine gesamte Netzwerk- und IT-Infrastruktur im Eigentum des Unternehmens ist, und beschreibt ein eigenes, nach ISO 27001 zertifiziertes Rechenzentrum in Basel; wem das Gebäude gehört, wird nicht angegeben.'
+      pricing.startingPrice.note: 'PHP-Webhosting Level W1 (10 GB); VPS ab CHF 40 pro Monat (ARM) oder CHF 50 pro Monat (x86); MWST nicht angegeben'
+      sustainability.summary: 'oriented.net gibt an, ausschliesslich erneuerbaren Strom, hauptsächlich aus Wasserkraft, und keinen Atomstrom zu nutzen.'
+      alternativesTo.digitalocean.note: 'Feste VPS-Pakete auf Xen mit optionaler Betreuung durch Engineers von oriented.net; Kubernetes läuft auf dedizierten ARM-Servern und wird individuell offeriert.'
+      alternativesTo.ionos.note: 'Deckt Webhosting, VPS, physische Server und Colocation ab, mit Schwerpunkt auf verwalteten Linux- und Open-Source-Setups.'
 ---
 
 oriented.net is a managed hosting and server provider founded in Basel in 2002.

@@ -67,3 +67,6 @@ sources:
 i18n:
   de:
     description: 'IT-Dienstleister in Pratteln (Basel-Landschaft), gegründet 1997, mit IT-Betrieb und Outsourcing, in der Schweiz gehosteten Cloud-Diensten und Softwareentwicklung.'
+    notes:
+      ownership.note: 'Gemäss dem Unternehmen setzt sich sein Name aus dem Namen seines Inhabers, Markus Arpagaus, zusammen. Die Aktionäre einer AG werden im Handelsregister nicht veröffentlicht. Das Register zeigt, dass Armacom ihre hundertprozentigen Tochtergesellschaften net-solution informatik ag, NetDefender GmbH (2021) und Clinx GmbH (2022) durch Fusion übernommen hat; ein Verkauf von Armacom selbst wurde nicht gemeldet.'
+      swissFounded.note: '1997 als GmbH in Reinach (BL) gegründet und zwei Jahre später in eine AG umgewandelt; rund zehn Jahre danach zog das Unternehmen nach Pratteln.'

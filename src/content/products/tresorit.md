@@ -149,6 +149,12 @@ i18n:
   de:
     tagline: 'Ende-zu-Ende-verschlüsselter Cloud-Speicher und Dateifreigabe auf Microsoft Azure.'
     description: 'Tresorit ist Ende-zu-Ende-verschlüsselter Cloud-Speicher und Dateifreigabe der Tresorit AG, einer Tochter der Schweizerischen Post, gehostet auf Microsoft Azure mit wählbaren Datenregionen.'
+    notes:
+      swiss.developed.note: 'Tresorit wurde von ungarischen Entwicklern gegründet, und seine Engineering-Stellen (Backend, Sicherheit, Windows und Android) werden in Budapest ausgeschrieben. Hauptsitz und Vertragspartnerin sind in Zürich.'
+      swiss.hosted.note: 'Verschlüsselte Dateiinhalte von Kunden mit Sitz in der Schweiz werden standardmässig in Azure-Rechenzentren in der Schweiz gespeichert; für andere Kunden ist Irland der Standard. Kunden mit Business, Business Pro und Enterprise können unter Azure-Standorten wählen, darunter die Schweiz. Nutzungs- und zugriffsbezogene Metadaten werden immer in Azure-Rechenzentren in Irland gespeichert.'
+      openSource.note: 'Für die Clients und den Server wurde kein Quellcode veröffentlicht.'
+      alternativesTo.google-drive.note: 'Kein integrierter Editor für Office-Dokumente, der mit Google Docs vergleichbar ist.'
+      alternativesTo.onedrive.note: 'Nur Dateien; keine gemeinsame Bearbeitung mit Microsoft 365 innerhalb des verschlüsselten Speichers.'
 ---
 
 Tresorit provides end-to-end encrypted cloud storage, file sync and sharing for

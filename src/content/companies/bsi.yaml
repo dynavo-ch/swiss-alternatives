@@ -99,3 +99,7 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Baden, gegründet 1996, das die CRM- und Customer-Experience-Plattform BSI Customer Suite für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen entwickelt. Mehrheitlich im Besitz von Fonds, die von Bregal Unternehmerkapital beraten werden.'
+    notes:
+      ownership.note: 'Im Juli 2024 vereinbarten von der Münchner Bregal Unternehmerkapital beratene Fonds den Erwerb einer Mehrheitsbeteiligung an BSI von Capvis Equity V, die seit 2020 die Mehrheit hielt; der Abschluss stand unter dem Vorbehalt behördlicher Genehmigungen. Über die Transaktion berichteten die Presse und die Rechtsberater der Parteien. Die Gründer, das Management und die Mitarbeitenden bleiben Aktionäre. Das Impressum der Website nennt die Holdinggesellschaft BSI Software AG (Baden, 2020 eingetragen), während die Datenschutzerklärung die BSI Business Systems Integration AG als Verantwortliche nennt.'
+      ownership.parent: 'Von Bregal Unternehmerkapital beratene Fonds'
+      swissFounded.note: 'Am 4. Januar 1996 ins Handelsregister des Kantons Aargau eingetragen.'

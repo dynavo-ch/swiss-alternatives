@@ -147,6 +147,15 @@ i18n:
   de:
     tagline: 'KI-Assistent, der Open-Weight-Modelle auf der Schweizer Infrastruktur von Infomaniak ausführt.'
     description: 'Euria ist der KI-Chat-Assistent von Infomaniak, kostenlos im Web und mobil nutzbar und in kSuite integriert; er führt Open-Weight-Modelle in den Schweizer Rechenzentren von Infomaniak aus.'
+    notes:
+      swiss.developed.note: 'Der Assistent und seine Integrationen werden von Infomaniak entwickelt, die zugrunde liegenden Sprachmodelle stammen jedoch von Dritten. Infomaniak nennt Mistral, Llama, DeepSeek, Granite und Whisper als Standard sowie das Schweizer Modell Apertus als wählbare Option.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass Verarbeitung, Speicherung und Hosting ausschliesslich in den eigenen Rechenzentren in der Schweiz erfolgen, ohne externe Anbieter. Die Lancierungsmitteilung bringt Euria mit dem Rechenzentrum D4 in Genf in Verbindung.'
+      openSource.note: 'Die Android- und iOS-Apps stehen unter GPL-3.0, und die verwendeten Modelle sind Open-Weight-Modelle; der Euria-Dienst selbst ist nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Über my kSuite+ (unbegrenzte Projekte und Unterhaltungen), jährliche Abrechnung, inkl. MWST'
+      sustainability.summary: 'Euria läuft im Rechenzentrum D4 von Infomaniak in Genf, das gemäss Anbieter die gesamte verbrauchte Energie als Wärme für das Fernwärmenetz wiederverwendet.'
+      alternativesTo.chatgpt.note: 'Nutzt von Infomaniak ausgewählte Open-Weight-Modelle statt proprietärer Frontier-Modelle.'
+      alternativesTo.google-gemini.note: 'Nutzt von Infomaniak ausgewählte Open-Weight-Modelle; in kSuite statt in Google Workspace integriert.'
+      alternativesTo.microsoft-copilot.note: 'In die kSuite-Apps (Mail, kDrive, kChat) statt in Microsoft 365 integriert.'
 ---
 
 Euria is an AI chat assistant launched in December 2025. It can be used without

@@ -113,6 +113,13 @@ i18n:
   de:
     tagline: 'VPS, gehostete Exchange-Postfächer und Veeam-Backup aus Rechenzentren in der Schweiz.'
     description: 'CSTI ist ein Anbieter aus der Region Genf für VPS, Microsoft-Exchange-Postfächer, Veeam-Backup und Dateisynchronisation, betrieben aus eigenen Rechenzentren in der Schweiz, mit Preisen in CHF.'
+    notes:
+      swiss.developed.note: 'CSTI betreibt die Dienste vom Kanton Genf aus; E-Mail läuft auf Microsoft Exchange und Backup auf Veeam. Eine eigene Softwareentwicklung wird nicht beschrieben.'
+      swiss.hosted.note: 'CSTI gibt an, dass sich seine Rechenzentren ausschliesslich in der Schweiz befinden und dass Exchange-Server und E-Mail-Daten nur in der Schweiz gehostet werden.'
+      swiss.infrastructure.note: 'In einem 2026 auf seiner Website wiederveröffentlichten Interview sagt CSTI, es betreibe eigene Rechenzentren für eine vollständig schweizerische Cloud. Deren Standorte und allfällige Colocation-Partner werden nicht genannt.'
+      pricing.startingPrice.note: 'Hosted-Exchange-Postfach mit 20 GB, 14 Tagen Backup und Basis-Support, exkl. MWST'
+      alternativesTo.digitalocean.note: 'VPS nach CPU, RAM und Speicher konfiguriert, monatlich in CHF abgerechnet, optional mit Georedundanz.'
+      alternativesTo.microsoft-365.note: 'Deckt nur Exchange-Postfächer ab, von CSTI in der Schweiz gehostet; keine Office-Apps. CSTI verwaltet zudem Microsoft-365-Tenants von Kunden.'
 ---
 
 CSTI is an IT service provider in Thônex (Geneva), founded in 2009, that hosts

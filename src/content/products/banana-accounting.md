@@ -111,6 +111,13 @@ i18n:
   de:
     tagline: 'Desktop-Buchhaltungssoftware mit tabellenähnlicher Oberfläche, entwickelt in Lugano.'
     description: 'Banana Accounting ist Buchhaltungssoftware aus Lugano für Windows, macOS und Linux; die Dateien werden dort gespeichert, wo die Nutzenden es wählen, nicht in einer Cloud des Herstellers.'
+    notes:
+      swiss.developed.note: 'Seit 1989 von der Banana.ch SA in Lugano entwickelt.'
+      swiss.hosted.note: 'Im üblichen Sinn nicht anwendbar: Banana.ch gibt an, dass Banana Buchhaltung kein Cloud-System bereitstellt. Buchhaltungsdateien werden dort gespeichert, wo der Benutzer es wählt, zum Beispiel auf einer lokalen Festplatte, einem Netzwerkserver oder bei einem Cloud-Dienst eines Drittanbieters wie OneDrive oder Dropbox.'
+      openSource.note: 'Wird unter der eigenen Benutzerlizenz von Banana.ch vertrieben; es wird kein Quellcode der Anwendung veröffentlicht.'
+      pricing.startingPrice.note: 'Professional-Plan, Jahresabonnement (Schweiz); internationaler Preis EUR 84 pro Jahr zzgl. MWST'
+      alternativesTo.quickbooks.note: 'Installierte Software, die mit lokalen Dateien arbeitet; kein vom Anbieter gehosteter Cloud-Speicher und keine integrierte Online-Zusammenarbeit.'
+      alternativesTo.xero.note: 'Installierte Software, die mit lokalen Dateien arbeitet; kein vom Anbieter gehosteter Cloud-Speicher und keine integrierte Online-Zusammenarbeit.'
 ---
 
 Banana Accounting is double-entry and cash-book accounting software developed by

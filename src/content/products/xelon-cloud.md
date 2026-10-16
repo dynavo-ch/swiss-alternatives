@@ -119,6 +119,14 @@ i18n:
   de:
     tagline: 'Public und Private Cloud, Kubernetes und Cloud-Backup aus Schweizer Rechenzentren.'
     description: 'Xelon Cloud ist eine IaaS-Plattform der Xelon AG mit Sitz in Zug, mit virtuellen Servern, Managed Kubernetes und Backup mit Veeam oder Acronis, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Die Verwaltungsplattform Xelon HQ wurde vom Unternehmen selbst entwickelt, dessen Firmensitz und Team sich in Zug befinden.'
+      swiss.hosted.note: 'Die Public- und Private-Cloud-Infrastruktur läuft in zwei Rechenzentren in der Schweiz (Lupfig AG und Rümlang ZH), die per Glasfaser verbunden sind.'
+      swiss.infrastructure.note: 'Die Rechenzentrumsseite nennt diese beiden Standorte; die Über-uns-Seite des Unternehmens spricht von drei Schweizer Rechenzentren in Zug und Zürich.'
+      openSource.note: 'Der Terraform-Provider, das Packer-Plugin, das Go-SDK und der Kubernetes-CSI-Treiber sind auf GitHub veröffentlicht; die Plattform Xelon HQ ist nicht Open Source.'
+      alternativesTo.aws.note: 'Deckt virtuelle Server, Netzwerke, Kubernetes und Backup ab; verwaltete Datenbanken gehören nicht zum veröffentlichten Portfolio.'
+      alternativesTo.microsoft-azure.note: 'Auf virtuelle Maschinen, Private Clouds und Kubernetes für IT-Dienstleister und SaaS-Unternehmen ausgerichtet.'
+      alternativesTo.digitalocean.note: 'Virtuelle Server und Kubernetes nach Verbrauch abgerechnet; öffentliche Preise werden nicht veröffentlicht.'
 ---
 
 Xelon Cloud is the infrastructure-as-a-service offering of Xelon AG in Zug. It

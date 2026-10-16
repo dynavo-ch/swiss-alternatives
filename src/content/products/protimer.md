@@ -166,6 +166,13 @@ i18n:
   de:
     tagline: 'Zeit- und Präsenzerfassung in der Cloud mit eigenen Terminals für Schweizer KMU.'
     description: 'ProTimer ist Software für Zeit- und Präsenzerfassung in der Cloud aus Degersheim mit eigenen Terminals, Absenzenverwaltung und optionaler Lohnbuchhaltung, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'ProTimer gibt an, dass seine Software in der Schweiz programmiert wurde und weiterhin wird. Die Terminals werden im eigenen Haus montiert, die Gehäuse im Unternehmen im 3D-Druck hergestellt.'
+      swiss.hosted.note: 'ProTimer betreibt eigene redundante Server in einem Schweizer Rechenzentrum der Hostpoint AG, mit stündlichen Backups und einem zusätzlichen wöchentlichen Backup in den Räumlichkeiten des Unternehmens. Gemäss Impressum werden die Daten von einem zertifizierten Hosting-Anbieter in der Schweiz gehostet.'
+      swiss.infrastructure.note: 'ProTimer beschreibt die Server als eigene, die in einem Hostpoint-Rechenzentrum stehen; ob es sich um gemietete dedizierte Server oder um Hardware in Colocation handelt, wird nicht angegeben. Die Hostpoint AG in Rapperswil-Jona gehört ihren Gründern.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Grundbetrag des Rundum-Sorglos-Pakets, zuzüglich CHF 4 pro Mitarbeitenden und Monat für bis zu 5 Mitarbeitende (tiefere Ansätze bei mehr Mitarbeitenden), exkl. MWST'
+      alternativesTo.clockify.note: 'Auf Arbeitszeiterfassung nach Schweizer Arbeitsrecht und Gesamtarbeitsverträgen ausgerichtet, mit eigenen Stempelterminals.'
 ---
 
 ProTimer is a cloud-based time and attendance system for small and

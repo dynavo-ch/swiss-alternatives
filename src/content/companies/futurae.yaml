@@ -73,3 +73,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen, seit 2016 tätig, das Software für Authentifizierung, Transaktionsbestätigung und Betrugserkennung für Banken, Zahlungsdienstleister und Fintechs entwickelt.'
+    notes:
+      ownership.note: 'Privat gehaltenes, mit Risikokapital finanziertes Unternehmen; die Aktionärsstruktur wird nicht veröffentlicht. Zu den offengelegten Investoren gehören AXA Venture Partners (Frankreich), Euroclear (Belgien), die Zürcher Kantonalbank und EquityPitcher Ventures. Mitgründer Claudio Marforio ist CEO und Vizepräsident des Verwaltungsrats. Das Aktienkapital wurde gemäss Handelsregister zuletzt im Juli 2024 erhöht, mit drei Kategorien von Vorzugsaktien.'
+      swissFounded.note: 'Die Futurae Technologies AG wurde am 13. Dezember 2016 im Handelsregister des Kantons Zürich eingetragen.'

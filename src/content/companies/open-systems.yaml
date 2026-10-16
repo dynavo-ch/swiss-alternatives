@@ -82,3 +82,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen für Netzwerksicherheit, gegründet 1990 und seit 2024 im Besitz der Schweizerischen Post, das Managed SASE und Dienste für sichere Vernetzung betreibt.'
+    notes:
+      ownership.note: 'Die Schweizerische Post kündigte 2024 an, Open Systems von der Private-Equity-Firma EQT, seit 2017 Mehrheitseigentümerin, zu kaufen; Open Systems gibt an, dass die Übernahme am 21. Oktober 2024 abgeschlossen wurde und das Unternehmen unter eigener Marke weitergeführt wird. Die Fachpresse beschreibt Open Systems 2026 weiterhin als Teil der Post, und der Verwaltungsrat wurde im November 2024 ersetzt. Die Post ist im Besitz der Schweizerischen Eidgenossenschaft. Das frühere Geschäft von Open Systems für Managed Detection and Response war als Ontinue abgespalten worden und blieb bei EQT.'
+      swissFounded.note: 'Die Open Systems AG wurde am 25. Oktober 1990 im Handelsregister des Kantons Zürich eingetragen.'

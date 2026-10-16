@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Gemeinnützige Stiftung in Zürich, die den öffentlichen DNS-Resolver Quad9 betreibt. Sie verlegte ihren Hauptsitz 2021 von Kalifornien in die Schweiz.'
+    notes:
+      ownership.note: 'Eine Stiftung nach Schweizer Recht hat keine Aktionäre. Quad9 wird von seinem Stiftungsrat geführt, dem Mitglieder aus der Schweiz und dem Ausland angehören, und untersteht der Aufsicht des Eidgenössischen Departements des Innern. Das Betriebsbudget stammt aus Sponsoring, Fördermitteln und Spenden; Gründungssponsoren waren die Global Cyber Alliance, IBM und Packet Clearing House.'
+      swissFounded.note: 'Quad9 begann als Projekt der Global Cyber Alliance, von IBM und Packet Clearing House und startete seinen öffentlichen Dienst 2017. Im Februar 2021 kündigte Quad9 die Verlegung seines Hauptsitzes von Kalifornien nach Zürich an; die Schweizer Stiftung (eingetragener Name «Quad9») wurde am 9. Juni 2021 im Handelsregister des Kantons Zürich eingetragen.'

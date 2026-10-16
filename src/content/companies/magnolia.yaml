@@ -92,3 +92,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen, 1997 in Basel gegründet, das die Content-Management- und Digital-Experience-Plattform Magnolia entwickelt; seit 2022 mehrheitlich im Besitz von GENUI.'
+    notes:
+      ownership.note: 'Magnolia gibt an, dass die Beteiligungsgesellschaft GENUI 2022 eine Mehrheitsbeteiligung erworben hat. Die GENUI GmbH hat ihren Sitz in Hamburg, Deutschland, und führt Magnolia weiterhin unter ihren Beteiligungen. GENUI kaufte die Beteiligung vom Private-Equity-Investor Elvaston. In der Berichterstattung bis Oktober 2026 wurde kein späterer Kontrollwechsel gefunden.'
+      swissFounded.note: 'Magnolia gibt an, 1997 in Basel von Boris Kraft und Pascal Mangold gegründet worden zu sein. Das Unternehmen verwendet den eingetragenen englischen Namen «Magnolia International Ltd»; die Rechtseinheit ist die Magnolia International AG.'

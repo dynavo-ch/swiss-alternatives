@@ -72,3 +72,7 @@ sources:
 i18n:
   de:
     description: 'IT-Dienstleister in Saland (Gemeinde Bauma ZH), der das Open-Source-ERP-System ERPNext einführt, hostet und erweitert und die Lokalisierung ERPNextSwiss pflegt.'
+    notes:
+      headquarters.note: 'Die eingetragene Adresse lautet Bodenwis 22c, 8493 Saland, in der Gemeinde Bauma.'
+      ownership.note: "Bei der Umwandlung der libracore GmbH in eine AG im Juli 2019 gingen alle 100'000 Namenaktien an die bisherigen Gesellschafter Lars Müller (195 von 200 Stammanteilen) und Joël Mesmer (5), beide Schweizer Bürger. Lars Müller ist Präsident des Verwaltungsrats und CEO; dem Verwaltungsrat gehören zudem Stefan Fink, ein österreichischer Staatsbürger, der die libracore-Kundin Fink Zeitsysteme GmbH führt, sowie Alfred Schneider an. Die aktuellen Aktionäre der AG werden nicht veröffentlicht, und es wird weder eine Muttergesellschaft noch ein externer Investor genannt."
+      swissFounded.note: 'Im Juli 2017 als libracore GmbH ins Handelsregister des Kantons Zürich eingetragen (Statuten vom 29. Juni 2017) und im Juli 2019 in die libracore AG umgewandelt.'

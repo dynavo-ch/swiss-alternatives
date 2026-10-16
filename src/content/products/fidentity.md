@@ -111,6 +111,12 @@ i18n:
   de:
     tagline: 'Automatisierte Online-Identitätsprüfung und qualifizierte E-Signaturen für regulierte Unternehmen.'
     description: 'fidentity ist ein in Bern entwickelter Dienst für automatisierte Identitätsprüfung und qualifizierte elektronische Signaturen, der von Banken genutzt und in der Schweiz gehostet wird.'
+    notes:
+      swiss.developed.note: 'fidentity gibt an, dass die gesamte Entwicklung und Wartung in seinen Büros bei Bern erfolgt, ohne Near- oder Offshoring. Die Partnerliste nennt zudem externe Firmen für App-Entwicklung (Approppo) und Softwareentwicklung (XToniq).'
+      swiss.hosted.note: 'fidentity gibt an, dass Daten und Prozesse das Schweizer Rechenzentrum nie verlassen, und nennt die BEGASOFT AG in Bern als Hosting- und Betriebspartner. Die allgemeine Datenschutzerklärung führt zudem Exoscale und Microsoft Azure als Infrastrukturanbieter auf, ohne anzugeben, welche Dienste diese nutzen.'
+      alternativesTo.docusign.note: 'Signiert nur mit qualifizierten elektronischen Signaturen, mit integrierter Identitätsprüfung, und wird über eine API in die eigenen Prozesse eines Unternehmens eingebunden; ein eigenständiger Dokumenten-Workflow oder eine Vorlagenverwaltung wird nicht beschrieben.'
+      alternativesTo.onfido.note: 'Auf den Schweizer und den EU-Markt ausgerichtet, mit KPMG-Prüfungen gemäss FINMA-Rundschreiben, und kombiniert Identifikation mit qualifizierten Signaturen.'
+      alternativesTo.idnow.note: 'Identifikationsentscheide trifft eine automatisierte KI-Engine; eine von Mitarbeitenden geführte Videoidentifikation wird nicht beschrieben.'
 ---
 
 fidentity provides identification and signing services that banks and other

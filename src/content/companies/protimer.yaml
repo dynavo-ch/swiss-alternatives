@@ -84,3 +84,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Degersheim SG, das seit 1997 die Software ProTimer für Zeit- und Präsenzerfassung entwickelt. Seit August 2025 gehört es zur Vierwald Software AG.'
+    notes:
+      ownership.note: 'Die ProTimer GmbH wurde am 12. August 2025 im Rahmen einer Nachfolgeregelung an die Vierwald Software AG verkauft; Gründer Roland Schärli bleibt Geschäftsführer. Das Handelsregister (SHAB, 1. Oktober 2025) führt die Vierwald Software AG, eine 2024 in Risch (Rotkreuz) ZG eingetragene Holdinggesellschaft, als einzige Gesellschafterin. Die Aktionäre von Vierwald werden nicht veröffentlicht, die letztliche Eigentümerschaft ist daher unbekannt.'
+      swissFounded.note: 'Am 2. November 2001 im Handelsregister eingetragen. Gemäss ProTimer wurde die Software bereits seit 1997 zusammen mit Treuhandfirmen entwickelt, bevor das Unternehmen gegründet wurde.'

@@ -83,3 +83,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Anbieter von Ende-zu-Ende-verschlüsseltem Cloud-Speicher und Dateifreigabe, 2011 von ungarischen Entwicklern gegründet und vollständig im Besitz der Schweizerischen Post. Büros in Zürich, München und Budapest.'
+    notes:
+      ownership.note: 'Die Schweizerische Post erwarb im Juli 2021 eine Mehrheitsbeteiligung und führt die Tresorit AG, die Tresorit GmbH (Deutschland) und die Tresorit Kft. (Ungarn) per 30. September 2026 als 100-%-Beteiligungen. Die Schweizerische Post gehört der Schweizerischen Eidgenossenschaft.'
+      swissFounded.note: 'Tresorit wurde 2011 von ungarischen Entwicklern gegründet; die ungarische Gesellschaft Tresorit Kft. (Budapest) wurde am 15. September 2011 gegründet. Die Tresorit AG in Zürich ist seit 2013 für die MWST registriert und ist heute Vertragspartnerin und Hauptsitz.'

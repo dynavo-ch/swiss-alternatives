@@ -132,6 +132,14 @@ i18n:
   de:
     tagline: 'Local-first-App für Notizen und Wissen mit Verschlüsselung auf dem Gerät und Peer-to-Peer-Synchronisation.'
     description: 'Anytype ist eine Local-first-App für Notizen, Dokumente und Aufgaben der Any Association mit Sitz in Zug, mit Verschlüsselung auf dem Gerät und optional selbst gehosteter Synchronisation.'
+    notes:
+      swiss.developed.note: 'Any beschreibt sich als Remote-Team mit einem Standort in Berlin, wo die Mitarbeitenden bei einer deutschen Tochtergesellschaft des Schweizer Vereins angestellt sind.'
+      swiss.hosted.note: 'Any gibt an, das Anytype Network (seine Backup- und Sync-Nodes) in der Schweiz und in der Europäischen Union zu betreiben; die dort gespeicherten Inhalte sind Ende-zu-Ende-verschlüsselt. Analyse- (Amplitude), Zahlungs- (Stripe) und E-Mail-Anbieter verarbeiten Kontodaten in den USA. Benutzer können auch nur innerhalb eines lokalen Netzwerks synchronisieren oder ein eigenes Netzwerk betreiben.'
+      openSource.note: 'Das any-sync-Protokoll und sein Self-Hosting-Setup stehen unter der MIT-Lizenz. Die Desktop- und Mobile-Apps sowie die Middleware werden unter der «Any Source Available License 1.0» veröffentlicht, die nichtkommerzielle Nutzung erlaubt und kommerzielle Nutzung nur in von der Any Association genehmigten Netzwerken; dies ist keine von der OSI anerkannte Open-Source-Lizenz.'
+      pricing.startingPrice.note: 'Plus-Plan (1 GB Remote-Speicher), bei jährlicher Abrechnung; USD 5 pro Monat bei monatlicher Abrechnung'
+      alternativesTo.notion.note: 'Daten werden zuerst auf dem Gerät gespeichert und vor der Synchronisierung verschlüsselt; Apps gibt es für Desktop und Mobile.'
+      alternativesTo.obsidian.note: 'Synchronisierung und Freigabe sind integriert; der Gratis-Plan enthält 100 MB Remote-Speicher.'
+      alternativesTo.evernote.note: 'Deckt Notizen und Organisation ab; vor einer Migration die Importoptionen prüfen.'
 ---
 
 Anytype is a local-first app for notes, documents, tasks and linked objects,

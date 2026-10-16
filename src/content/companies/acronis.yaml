@@ -75,3 +75,8 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen für Backup und Cybersicherheit, 2003 in Singapur gegründet, mit Hauptsitz in Schaffhausen und seit 2025 mehrheitlich im Besitz von EQT.'
+    notes:
+      headquarters.note: 'Acronis gibt an, seinen Hauptsitz in Schaffhausen zu haben. Das UID-Register führt die Geschäftsadresse der Acronis International GmbH als Rheinweg 9, 8200 Schaffhausen, mit rechtlichem Sitz in der Gemeinde Neuhausen am Rheinfall. Gemäss ihrem eingetragenen Zweck erbringt die GmbH Finanzierungs-, Strategie-, Marketing- und IP-Lizenzierungsdienstleistungen für die Acronis-Gruppe. Die Forschungs- und Entwicklungszentren von Acronis befinden sich in Bulgarien, den Vereinigten Staaten, Israel und Singapur.'
+      ownership.note: 'Im August 2024 gaben Acronis und EQT bekannt, dass der Fonds EQT X eine Mehrheitsbeteiligung erwerben werde, mit einem erwarteten Abschluss im ersten Halbjahr 2025; unabhängige Berichte führen EQT ab 2025 als Mehrheitseigentümerin, und ein EQT-Partner sitzt im Verwaltungsrat von Acronis. Die Gründer, das Management und frühere Investoren, darunter von CVC, Springcoast und BlackRock Private Equity Partners verwaltete Fonds, bleiben bedeutende Minderheitsaktionäre. EQT ist eine schwedische Investmentgesellschaft mit Sitz in Stockholm.'
+      ownership.parent: 'EQT (Fonds EQT X)'
+      swissFounded.note: 'Acronis wurde 2003 in Singapur als Spin-off von SWsoft gegründet. Die Schweizer Gesellschaft Acronis International GmbH wurde am 5. Juni 2007 ins Handelsregister des Kantons Schaffhausen eingetragen.'

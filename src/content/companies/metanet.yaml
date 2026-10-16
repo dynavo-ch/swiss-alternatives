@@ -97,3 +97,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Webhosting- und Domain-Anbieter, seit 2000 tätig und seit 2022 Teil der europäischen Hosting-Gruppe group.one.'
+    notes:
+      ownership.note: "METANET kam im Januar 2022 zur deutschen dogado-Gruppe; dogado war damals ein Unternehmen von European Directories, einer Portfoliogesellschaft von Triton. dogado fusionierte später mit one.com zu group.one, deren Impressum die one.com Group AB in Malmö, Schweden, nennt. Die Datenschutzerklärung von METANET nennt die dogado GmbH als 100%-Muttergesellschaft innerhalb von group.one. Im Dezember 2022 vereinbarten der Seventh Cinven Fund (Vereinigtes Königreich) und der Ontario Teachers' Pension Plan (Kanada), group.ONE und dogado zu übernehmen und zusammenzuführen; ihre aktuelle Beteiligung wurde für 2026 nicht erneut bestätigt."
+      swissFounded.note: 'Ursprünglich als METANET GmbH im Schweizer Handelsregister eingetragen; Gründer Mirco Schnarwiler. Das Profil des Unternehmens bei swiss made software gibt an, dass es seit 2000 tätig ist.'

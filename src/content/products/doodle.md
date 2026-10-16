@@ -116,6 +116,12 @@ i18n:
   de:
     tagline: 'Gruppenumfragen, Buchungsseiten und Anmeldelisten zur Terminfindung.'
     description: 'Doodle ist ein Terminplanungsdienst der Zürcher Doodle AG für Gruppenumfragen, Buchungsseiten und Anmeldelisten; die Daten werden auf AWS in Irland und der EU gehostet.'
+    notes:
+      swiss.developed.note: 'Der Hauptsitz von Doodle ist in Zürich, mit weiteren Büros in Berlin, Belgrad und den USA; das Team von knapp 80 Personen verteilt sich auf vier Länder.'
+      swiss.hosted.note: 'Doodle speichert Produktivdaten in Irland und Vorproduktionsdaten in Deutschland, auf Amazon Web Services; als Cloud-Datenbank wird MongoDB Atlas (Deutschland, Irland) genutzt. Mehrere Unterauftragsverarbeiter, darunter für Zahlungsabwicklung, Analytics und ein E-Mail-Versanddienst, befinden sich in den USA.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Pro-Plan, pro Platz, bei jährlicher Abrechnung; in USD angezeigt, mit Währungsauswahl'
+      alternativesTo.calendly.note: 'Bietet zusätzlich Gruppenumfragen zur Terminfindung; der kostenlose Plan ist werbefinanziert.'
 ---
 
 Doodle is a web-based scheduling service. Its group polls let participants vote

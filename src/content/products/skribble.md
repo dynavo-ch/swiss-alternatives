@@ -140,6 +140,12 @@ i18n:
   de:
     tagline: 'Elektronische Signaturen (SES, AES, QES) nach Schweizer ZertES und EU-eIDAS.'
     description: 'Skribble ist ein Dienst für elektronische Signaturen mit Sitz in Zürich für einfache, fortgeschrittene und qualifizierte Signaturen; Konten bei der Schweizer Gesellschaft werden in Zürich gehostet.'
+    notes:
+      swiss.developed.note: 'Die Skribble AG hat ihren Sitz in Zürich; ihre Tochtergesellschaft Skribble Deutschland GmbH in Karlsruhe ist als Subprozessor für Forschung und Entwicklung sowie Support aufgeführt.'
+      swiss.hosted.note: 'Für Kunden mit Vertrag mit der Skribble AG (Schweiz) werden Hosting und Infrastruktur von der cloudscale.ch AG und der VSHN AG in Zürich bereitgestellt. Kunden der Skribble Deutschland GmbH werden von der IONOS SE in Deutschland gehostet (verfügbar seit September 2024). Hilfsdienste wie Benachrichtigungs-E-Mails, CRM, Abrechnung und Netzwerkschutz nutzen Anbieter in der EU, in Grossbritannien und in den USA.'
+      swiss.infrastructure.note: 'Gilt für Konten bei der Skribble AG. Beide Anbieter sind Unternehmen mit Sitz in Zürich. Skribble beschreibt sein Hosting als zwei georedundante Tier-IV-Rechenzentren in der Schweiz mit ISO 27001-Zertifizierung.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Team-Plan, pro Benutzer, bei jährlicher Abrechnung, exkl. MWST'
 ---
 
 Skribble is a web-based service for signing PDF documents electronically. It

@@ -119,6 +119,11 @@ i18n:
   de:
     tagline: 'Werbefinanzierte Websuche ohne Nutzerprofile, mit optionaler kostenpflichtiger werbefreier Stufe.'
     description: 'Swisscows ist eine Websuchmaschine der Swisscows AG aus Egnach, die keine Nutzerprofile erstellt, explizite Inhalte filtert und eine kostenpflichtige werbefreie Stufe anbietet.'
+    notes:
+      swiss.developed.note: 'Die Swisscows AG hat ihren Sitz in Egnach und entwickelt eigene Suchtechnologie, gibt aber nicht an, wo ihr Entwicklungsteam arbeitet. Für ihre Ergebnisse arbeitet sie zudem mit dem US-Suchanbieter Brave zusammen.'
+      swiss.hosted.note: 'Swisscows gibt an, eigene Server in einem Rechenzentrum in den Schweizer Alpen zu betreiben, ohne Cloud- oder Drittanbieter-Hosting, und die Datenschutzerklärung gibt an, dass Daten auf den Servern in der Schweiz gespeichert werden. In der kostenlosen Version werden die Suchanfrage, eine maskierte IP-Adresse und ein bereinigter User-Agent an die Werbepartner Microsoft Bing und Google weitergegeben.'
+      pricing.startingPrice.note: 'Swisscows Pro, jährliche Abrechnung zu CHF 38.00'
+      alternativesTo.google-search.note: 'Explizite Inhalte werden herausgefiltert, und Swisscows veröffentlicht nicht, welchen Anteil seines Webindex es selbst aufbaut.'
 ---
 
 Swisscows is a web search engine operated by Swisscows AG in Egnach, a

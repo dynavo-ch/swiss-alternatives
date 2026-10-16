@@ -127,6 +127,11 @@ i18n:
   de:
     tagline: 'Cloud-Software für Personalverleih- und Personalvermittlungsfirmen, vom Einsatz bis zum Lohn.'
     description: 'Apriko ist Cloud-Software aus Zürich für Personalverleih- und Personalvermittlungsfirmen, mit Einsätzen, Zeiterfassung, Lohnabrechnung und Fakturierung.'
+    notes:
+      swiss.developed.note: 'Apriko beschreibt die Software als in der Schweiz entwickelt und gehostet sowie als Swiss made. Wo seine Entwickler arbeiten, gibt Apriko nicht an.'
+      swiss.hosted.note: 'Die Softwareseite gibt an, dass der Dienst in der Schweiz gehostet wird, und das Profil bei swiss made software nennt Hosting in der Schweiz. Keine der beiden Quellen nennt den Hosting-Anbieter oder das Rechenzentrum. Die Nutzungsbedingungen nennen keinen Speicherort und erlauben Apriko, Tochter- und Partnerunternehmen beizuziehen; auf der Website ist keine separate Datenschutzerklärung verlinkt.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.bullhorn.note: 'Für den Schweizer Personalverleih entwickelt, mit täglicher Lohnabrechnung und Quellensteuer; eine Swissdec-Lohnanbindung ist als geplant aufgeführt. Preise werden nicht veröffentlicht.'
 ---
 
 Apriko is software for personnel service providers such as staff-leasing

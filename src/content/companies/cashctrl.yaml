@@ -73,3 +73,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Münchenstein BL, das CashCtrl entwickelt und betreibt, eine Cloud-Buchhaltungs- und Unternehmenssoftware für KMU, Vereine und Treuhandbüros.'
+    notes:
+      ownership.note: 'Bei der Umwandlung der REPIX GmbH in die CashCtrl AG im Januar 2022 waren ihre beiden Gesellschafter die Gründer Raphael Amport und Sebastian Hoogenberk, die heute den Verwaltungsrat bilden. CashCtrl bezeichnet sich als unabhängig. Die aktuellen Aktionäre der AG werden nicht veröffentlicht.'
+      swissFounded.note: 'Am 30. Mai 2008 unter dem früheren Namen REPIX Dürig & Hoogenberk, später REPIX GmbH, im Handelsregister des Kantons Basel-Landschaft eingetragen. Im Januar 2022 in die CashCtrl AG umgewandelt. CashCtrl entwickelt seine Buchhaltungssoftware seit 2013.'

@@ -76,3 +76,6 @@ sources:
 i18n:
   de:
     description: 'In Zürich eingetragenes Unternehmen, das die Platform as a Service von Divio betreibt. Es ist eine hundertprozentige Tochtergesellschaft der Divio Technologies AB mit Hauptsitz in Stockholm.'
+    notes:
+      ownership.note: 'Gemäss dem Q4-Bericht 2023 der Gruppe ist die Divio AG eine hundertprozentige Tochtergesellschaft der schwedischen Muttergesellschaft Divio Technologies AB (publ), und die operative Tätigkeit der Gruppe erfolgt hauptsächlich innerhalb der Divio AG. Die Muttergesellschaft ist am Nasdaq First North Growth Market (DIVIO B) kotiert und gibt an, ihren Hauptsitz in Stockholm zu haben, mit Büros in Zürich und New York.'
+      swissFounded.note: 'Im Handelsregister des Kantons Zürich eingetragen, früher unter dem Namen Divio GmbH; seit Mai 2006 in der Schweiz MWST-pflichtig registriert. Das Gründungsjahr selbst konnte anhand der konsultierten Quellen nicht bestätigt werden.'

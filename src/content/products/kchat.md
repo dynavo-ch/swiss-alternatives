@@ -135,6 +135,13 @@ i18n:
   de:
     tagline: 'Team-Messaging mit Kanälen, Threads und Gastzugang, in kSuite enthalten.'
     description: 'kChat ist die Team-Messaging-App von Infomaniak mit öffentlichen und privaten Kanälen und Gastzugang. Sie ist Teil von kSuite und in den Schweizer Rechenzentren von Infomaniak gehostet.'
+    notes:
+      swiss.developed.note: 'Infomaniak gibt an, dass kChat in der Schweiz entwickelt wird. Die veröffentlichten Web-, Desktop- und Mobile-Clients sind Forks der Open-Source-Plattform Mattermost, die ursprünglich in den USA entwickelt wurde.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass kChat-Daten und Backups verschlüsselt in der Schweiz gespeichert werden.'
+      openSource.note: 'Web-, Desktop- und Mobile-Clients sind als Mattermost-Forks veröffentlicht (Desktop und Mobile unter Apache-2.0); ob der Server veröffentlicht ist, wird nicht angegeben.'
+      pricing.startingPrice.note: 'Pro Benutzer, kSuite Standard bei jährlicher Abrechnung, exkl. MWST; kChat wird nicht separat verkauft'
+      sustainability.summary: 'Infomaniak gibt an, dass seine Rechenzentren mit erneuerbarem Strom und ohne Klimaanlage betrieben werden und dass sein Rechenzentrum D4 in Genf seine gesamte Abwärme ins Fernwärmenetz einspeist.'
+      alternativesTo.microsoft-teams.note: 'Deckt Team-Chat ab; Videokonferenzen laufen über den separaten Dienst kMeet.'
 ---
 
 kChat is a team messaging service with public and private channels, threads,

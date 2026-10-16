@@ -79,3 +79,6 @@ sources:
 i18n:
   de:
     description: 'KI-Unternehmen mit Sitz in Davos und Büro in Zürich, gegründet 2023, das die Plattform SwissGPT für Gesundheitswesen, öffentliche Verwaltung und Hochschulen entwickelt.'
+    notes:
+      ownership.note: 'Das Aktienbuch einer Schweizer AG ist nicht öffentlich. Vier der fünf im Handelsregister eingetragenen Verwaltungsratsmitglieder wohnen in der Schweiz, darunter Verwaltungsratspräsident und CEO Pascal Kaufmann. Eine im April 2026 abgeschlossene Seed-Runde wurde von der Swiss KMU Partners AG zusammen mit einem nicht genannten internationalen Syndikat von Tech-Investoren angeführt. Eine beherrschende Muttergesellschaft wurde nicht gefunden.'
+      swissFounded.note: 'In Davos gegründet mit Statuten vom 11. Juli 2023 und im Juli 2023 im Handelsregister des Kantons Graubünden eingetragen. Eine Zweigniederlassung in Zürich wurde 2025 eingetragen.'

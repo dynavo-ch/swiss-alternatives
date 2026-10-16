@@ -136,6 +136,13 @@ i18n:
   de:
     tagline: 'E-Mail-Marketing- und Newsletter-Software mit Automatisierung, entwickelt in Zürich.'
     description: 'mailXpert ist ein E-Mail-Marketing-Dienst aus Zürich für Newsletter, automatisierte E-Mail-Abläufe und Umfragen, mit Datenspeicherung in Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'mailXpert gibt an, dass die gesamte Entwicklung des Software-Kerns und der Datenbanken durch eigene Entwickler in der Schweiz erfolgt, mit Sitz des Teams in Zürich-Oerlikon.'
+      swiss.hosted.note: 'mailXpert gibt an, dass alle Daten ausschliesslich in professionellen Rechenzentren in der Schweiz gespeichert und an einem zweiten Schweizer Standort gesichert werden. Die Betreiber der Rechenzentren werden nicht genannt. Auf Anfrage können Kunden mailXpert in Rechenzentren ihrer Wahl oder auf dedizierter Hardware betreiben.'
+      openSource.note: 'Es wird kein Quellcode veröffentlicht; die Software wird als Dienst oder lizenzierte Installation vertrieben.'
+      pricing.startingPrice.note: "LITE-Plan mit 240'000 E-Mails pro Jahr und einem Automations-Flow, zuzüglich einer einmaligen Einrichtungsgebühr von CHF 390. Ein 30-tägiges kostenloses Testkonto ist verfügbar."
+      alternativesTo.mailchimp.note: 'Deckt Newsletter, Automations-Flows, Anmeldeformulare, Umfragen und Reporting ab, hat aber keinen Gratisplan; die veröffentlichten Pläne sind pro Jahr in CHF bepreist und mit einer einmaligen Einrichtungsgebühr verbunden.'
+      alternativesTo.brevo.note: 'Bietet Newsletter und Automation sowie eine Versand-API und ein SMTP-Relay über den Schwesterdienst mailomat; Kontaktdaten lassen sich mit Abacus, bexio oder, über Zapier, anderen Geschäftsanwendungen verbinden.'
 ---
 
 mailXpert is an email marketing service developed by mailXpert GmbH in Zurich.

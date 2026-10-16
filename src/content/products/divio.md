@@ -137,6 +137,12 @@ i18n:
   de:
     tagline: 'Container-basierte PaaS für Webanwendungen, mit Wahl von Cloud und Region.'
     description: 'Divio ist eine PaaS für Docker-basierte Web-Apps der Zürcher Divio AG, betrieben auf AWS, Exoscale oder Azure, mit der AWS-Region Zürich als Hosting-Option in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Die operative Tätigkeit der Gruppe findet hauptsächlich in der Divio AG in Zürich statt (Bericht Q4 2023), während die börsenkotierte Muttergesellschaft und ihre Geschäftsleitung in Stockholm ansässig sind. In der Fusszeile der Website steht «Built in Switzerland. Designed in Sweden.»'
+      swiss.hosted.note: 'Anwendungen laufen in einem pro Projekt gewählten «cloudspace». Für Hosting in der Schweiz bietet Divio die AWS-Region Europe (Zurich) an; gemäss Dokumentation nutzen kostenlose Projekte im Developer-Plan einen nordamerikanischen cloudspace auf AWS. Seit Februar 2026 vermarktet Divio zudem eine rein europäische Option mit Infrastruktur ausschliesslich in der EU oder der Schweiz.'
+      swiss.infrastructure.note: 'Divio betreibt keine eigenen Rechenzentren. Die von Divio genannte Schweizer Region ist AWS Europe (Zurich), betrieben von der US-amerikanischen Amazon Web Services. Exoscale gehört zur österreichischen A1 Telekom Austria Group; welche Exoscale-Zonen Divio nutzt, wurde nicht bestätigt.'
+      openSource.note: 'Die Divio CLI ist auf GitHub veröffentlicht; Plattform und Control Panel sind proprietär.'
+      alternativesTo.heroku.note: 'Docker-basierte Deployments mit Test- und Live-Umgebungen; läuft auf Clouds von Drittanbietern statt auf eigener Infrastruktur.'
 ---
 
 Divio is a platform-as-a-service for deploying containerised web applications;

@@ -174,6 +174,12 @@ i18n:
   de:
     tagline: 'Ende-zu-Ende-verschlüsselter Passwort-Manager mit Passkeys und E-Mail-Aliassen.'
     description: 'Proton Pass ist ein Ende-zu-Ende-verschlüsselter Passwort-Manager der Proton AG mit Passkey-Unterstützung, integrierten 2FA-Codes und Hide-my-email-Aliassen auf allen Plattformen.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Firmensitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Die Datenschutzerklärung von Proton Pass gibt an, dass Daten verschlüsselt auf Proton-Servern gespeichert werden, die sich ausschliesslich in der Schweiz, in Deutschland oder in Norwegen befinden, ohne Aufteilung nach Ländern. Die Weiterleitung von Hide-my-email-Aliassen läuft teilweise auf europäischen Cloud-Servern, die über Protons französische Tochtergesellschaft SimpleLogin SAS beauftragt sind; diese leiten E-Mails weiter und speichern sie nicht. Seit Juli 2025 verlagert Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz und nennt als Grund die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT).'
+      swiss.infrastructure.note: 'Proton gibt an, seine Server-Hardware selbst zu besitzen. Gemäss einem Bericht von watson.ch (August 2026) mietet Proton gesicherte Flächen bei nicht genannten Rechenzentrumsbetreibern, statt eigene Rechenzentren in der Schweiz, in Deutschland oder in Norwegen zu betreiben.'
+      openSource.note: 'Die Android- und iOS-Apps sowie die Web-App und die Browser-Erweiterungen (im Repository ProtonMail/WebClients) sind unter GPL-3.0 veröffentlicht; die Serverseite ist nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Pass Plus, jährliche Abrechnung (USD 2.99/Monat); Preise in CHF und EUR ebenfalls verfügbar'
 ---
 
 Proton Pass is a password manager that encrypts logins, notes, credit cards and

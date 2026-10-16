@@ -152,6 +152,14 @@ i18n:
   de:
     tagline: 'Cloud-ERP- und CRM-Plattform für Schweizer KMU, betrieben in Schweizer Rechenzentren.'
     description: 'Exxas ist eine Cloud-Unternehmensplattform aus Schlieren ZH, die ERP, CRM, Buchhaltung, Lohn und Servicemanagement für KMU vereint, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Die Exxas AG mit Sitz in Schlieren ZH bezeichnet sich als Herstellerin und Betreiberin von Exxas; ihr Entwicklungsteam wird von Mitgründer Pascal Jenni geleitet. Das Unternehmen veröffentlicht nicht, wo alle seine Entwickler arbeiten.'
+      swiss.hosted.note: 'Exxas gibt an, dass die Applikations-, Datenbank- und Speichercluster georedundant in Rechenzentren in Dielsdorf (Zürich-Nord) und Gland laufen, mit einem Hot-Standby-Standort in Lupfig AG und Backups an weiteren Schweizer Standorten. Gemäss Datenschutzerklärung werden die von Exxas erhobenen Personendaten in der Schweiz gespeichert und verarbeitet, während Daten aus der Website-Analyse und dem Newsletter in jedem Land verarbeitet werden können. Der gesamte Datenverkehr zu Exxas wird über Cloudflare geleitet.'
+      swiss.infrastructure.note: 'Exxas gibt an, für den Betrieb verantwortlich zu sein und mit Partnern unter Enterprise-Verträgen zusammenzuarbeiten, sagt aber nicht, ob es eigene Hardware betreibt, und nennt den Betreiber des Standorts Gland nicht.'
+      openSource.note: 'Proprietärer Cloud-Dienst; eine API wird angeboten, aber es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: "Basic-Plan, pro gleichzeitigem Benutzer, inkl. 5'000 Buchungen"
+      alternativesTo.microsoft-dynamics-365.note: 'Nur als Cloud-Dienst, auf Schweizer KMU ausgerichtet; Lizenzierung pro gleichzeitigem Benutzer mit veröffentlichten Preisen.'
+      alternativesTo.salesforce.note: 'CRM ist ein Teil einer Plattform, die auch Buchhaltung, Lohn, Projekte und Lager abdeckt; auf Schweizer KMU ausgerichtet.'
 ---
 
 Exxas is a cloud business platform for small and medium-sized companies that

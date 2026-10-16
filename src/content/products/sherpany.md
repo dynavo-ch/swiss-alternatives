@@ -112,6 +112,10 @@ i18n:
   de:
     tagline: 'Meeting-Management für Verwaltungsräte und Geschäftsleitungen, gehostet in Schweizer Rechenzentren.'
     description: 'Sherpany ist Meeting-Software für Verwaltungsräte und Geschäftsleitungen aus Zürich, Teil der US-amerikanischen Datasite-Gruppe, mit Datenhaltung in Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'Firmensitz und ein Teil des Teams sind in Zürich; Sherpany hat zudem Büros in Lissabon und Berlin und gibt an, dass sein Team von mehr als 140 Personen über 20 Länder umfasst. Wo das Produkt hauptsächlich entwickelt wird, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'Sherpany gibt an, dass sich seine Rechenzentren in der Schweiz befinden, georedundant aufgebaut und in ISO 27001-zertifizierten Anlagen. Die Betreiber der Rechenzentren werden nicht genannt. Eine Hybrid-Cloud-Option belässt die Dokumentenablage in den Räumlichkeiten des Kunden.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
 ---
 
 Sherpany is a meeting management platform for boards of directors, executive

@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Winterthur, gegründet 2003, das die Portfoliomanagement- und CRM-Software Netfolio für Vermögensverwalter entwickelt.'
+    notes:
+      ownership.note: 'Alphasys gibt an, vollständig im Besitz seiner Gründer und der Geschäftsleitung zu sein und keine externen Investoren aufgenommen zu haben. Die Aktionäre der AG werden nicht veröffentlicht. Im Oktober 2026 wurden Lukas Bachmann und Rafael Umbricht, beide Schweizer Staatsangehörige mit Wohnsitz im Kanton Zürich, als Verwaltungsratsmitglieder im Handelsregister eingetragen. In den Registerpublikationen bis Oktober 2026 wurde keine Übernahme gefunden.'
+      swissFounded.note: 'Alphasys gibt an, 2003 von Andreas Bachmann und Fabrizio De Ambroggi gegründet worden zu sein. Das Unternehmen wurde als Alphasys IT Services AG eingetragen und 2019 in Alphasys AG umbenannt; im selben Jahr zog es an seine heutige Adresse in Winterthur.'

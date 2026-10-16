@@ -76,3 +76,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, gegründet 2008, das SecureSafe entwickelt und betreibt, eine Plattform für die verschlüsselte Aufbewahrung von Passwörtern und Dokumenten und den sicheren Datenaustausch.'
+    notes:
+      ownership.note: 'Gemäss Impressum ist die DSwiss AG im Besitz ihrer Gründer, von Mitgliedern der Geschäftsleitung, von Mitarbeitenden, des Zürcher Multi-Family-Office Verium, von Zühlke Ventures und der Zürcher Kantonalbank. Alle genannten institutionellen Aktionäre sind schweizerisch; ein einzelner beherrschender Aktionär wird nicht veröffentlicht. 2019 wurde Verium als grösster Aktionär genannt.'
+      swissFounded.note: 'DSwiss bezeichnet sich als 2008 gegründete, unabhängige Aktiengesellschaft mit Sitz in Zürich.'

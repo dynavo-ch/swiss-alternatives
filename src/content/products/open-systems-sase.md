@@ -105,6 +105,12 @@ i18n:
   de:
     tagline: 'Managed SASE-Dienst mit SD-WAN, Firewall, Secure Web Gateway, CASB und ZTNA.'
     description: 'Open Systems SASE ist ein Managed-Angebot für Secure Access Service Edge der Zürcher Open Systems, rund um die Uhr betrieben von den eigenen Ingenieuren des Anbieters.'
+    notes:
+      swiss.developed.note: 'Open Systems hat seinen Firmensitz in Zürich, eine Niederlassung in Bern und trägt das Label swiss made software. Das 24x7-Operations-Center arbeitet nach dem Follow-the-Sun-Prinzip in mehreren Ländern, und der Anteil der ausserhalb der Schweiz geleisteten Entwicklung wird nicht veröffentlicht.'
+      swiss.hosted.note: 'In seinem Eintrag bei swiss made software kennzeichnet Open Systems Hosting in der Schweiz als verfügbar für seine Dienste Secure Web Gateway, E-Mail-Sicherheit, ZTNA und globale Konnektivität. Als globaler Netzwerkdienst wird der Datenverkehr an Points of Presence und Edge-Geräten weltweit verarbeitet; Standard-Datenstandorte und die genutzten Cloud-Anbieter werden nicht veröffentlicht.'
+      openSource.note: 'Proprietärer Managed Service; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.zscaler.note: 'Als voll oder gemeinsam verwalteter Dienst inklusive SD-WAN und 24x7-Betrieb verkauft, nicht als Self-Service-Cloud-Plattform.'
+      alternativesTo.cloudflare.note: 'Umfasst Zero-Trust-Zugriff und Secure-Web-Gateway-Funktionen, nicht die CDN- oder Web-Application-Firewall-Dienste von Cloudflare.'
 ---
 
 Open Systems SASE is a managed secure access service edge (SASE) offering from

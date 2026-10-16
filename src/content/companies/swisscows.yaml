@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen in Egnach (Thurgau), das die 2014 erstmals lancierte Suchmaschine Swisscows und verwandte Datenschutzdienste betreibt. Eine Tochtergesellschaft der Hulbee AG.'
+    notes:
+      ownership.note: 'Die Swisscows AG bezeichnet sich als Tochtergesellschaft der Hulbee AG in Egnach. Gründer und CEO Andreas Wiebe, der in der Ostschweiz lebt, wurde 2022 als Eigentümer von Hulbee und Swisscows beschrieben. Die vollständige Aktionärsstruktur wird nicht veröffentlicht.'
+      swissFounded.note: 'Die Swisscows AG wurde am 11. Juni 2019 im Handelsregister des Kantons Thurgau eingetragen. Die Suchmaschine selbst startete 2014 als Projekt der Hulbee AG, die ebenfalls in Egnach ansässig ist.'

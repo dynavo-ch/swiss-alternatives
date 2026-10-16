@@ -105,3 +105,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen mit Sitz in Pfäffikon SZ (Gemeinde Freienbach), das den Ende-zu-Ende-verschlüsselten Messenger Threema für Privatpersonen und Organisationen entwickelt. Seit Anfang 2026 im Besitz der deutschen Investmentgesellschaft Comitis Capital.'
+    notes:
+      ownership.note: 'Die Private-Equity-Gesellschaft Comitis Capital mit Sitz in Frankfurt hat Threema von Afinum Management und den Gründern übernommen; die Transaktion wurde im Januar 2026 angekündigt. Afinum hielt seit 2020 eine Mehrheitsbeteiligung, und die Gründer verliessen das Unternehmen 2024. Threema gibt an, dass Hauptsitz, Server und Geschäftsleitung in der Schweiz bleiben.'
+      swissFounded.note: 'Die App wurde im Dezember 2012 von drei Schweizer Entwicklern in Zürich veröffentlicht; die Threema GmbH wurde im Frühling 2014 gegründet. Im Juli 2026 wurde die Threema GmbH mit der ehemaligen Threema Holding AG fusioniert, die in Threema AG umbenannt wurde.'

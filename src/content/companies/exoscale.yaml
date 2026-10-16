@@ -76,3 +76,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen aus Lausanne, das die Cloud-Plattform Exoscale betreibt. Es gehört zu A1 Digital, einem Teil der österreichischen A1 Telekom Austria Group.'
+    notes:
+      ownership.note: 'Exoscale ist eine Marke der Akenes SA, die sich als Mitglied von A1 Digital, Teil der A1 Telekom Austria Group, bezeichnet. A1 Digital erwarb 2017 eine Mehrheitsbeteiligung, einschliesslich der Anteile von Swisscom Ventures und Anaroll Holding. Die Telekom Austria AG ist in Wien kotiert; Ende 2025 hielt América Móvil (Mexiko) 60,9 % und die Republik Österreich über die ÖBAG 28,4 %.'
+      swissFounded.note: 'Am 31. Oktober 2011 im Handelsregister des Kantons Waadt eingetragen; der Sitz wurde im Januar 2019 von Crissier nach Lausanne verlegt.'

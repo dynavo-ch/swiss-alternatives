@@ -116,6 +116,11 @@ i18n:
   de:
     tagline: 'Dokumentablage und -austausch mit KI-Datenerfassung und ERP-Anbindung, gehostet in der Schweiz.'
     description: 'DeepBox ist eine Plattform zur Ablage und zum Austausch von Dokumenten des Abacus-Spin-offs DeepCloud, mit KI-Datenerfassung, ERP- und Bankanbindungen und Hosting in der Schweiz.'
+    notes:
+      swiss.developed.note: 'DeepCloud führt Software Engineering, Projektmanagement und Support an ihrem Hauptsitz in Wittenbach auf.'
+      swiss.hosted.note: 'DeepCloud gibt an, dass in DeepBox abgelegte Dokumente bei einem vertraglich beauftragten, nach ISO 27001 zertifizierten Cloud-Anbieter mit Serverstandorten in der Schweiz gespeichert werden. Der Anbieter wird nicht genannt. Die Sicherheitsseite von DeepCloud führt Rechenzentrums- und Backup-Standorte in Biel/Bienne, Gland, Plan-les-Ouates (Genf) und Morbio Inferiore sowie ein externes Backup in Bern auf.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Single-Plan für Einzelpersonen (1 Benutzer, 50 GB), exkl. MWST'
 ---
 
 DeepBox is a cloud platform for storing, organising and sharing business

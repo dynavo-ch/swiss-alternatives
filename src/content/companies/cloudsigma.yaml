@@ -60,3 +60,6 @@ sources:
 i18n:
   de:
     description: 'Cloud-Unternehmen mit Sitz in Zug, 2009 in Zürich gegründet. Es entwickelt eine IaaS-Plattform, die es an eigenen Standorten betreibt und an Dienstleister lizenziert.'
+    notes:
+      ownership.note: 'Die CloudSigma Holding AG, eine im Kanton Zug eingetragene Holdinggesellschaft an derselben Adresse, wird im Copyright-Vermerk der Website genannt; ihre Kontrolle über die CloudSigma AG ist abgeleitet, nicht angegeben. Die letztlichen Aktionäre werden nicht veröffentlicht.'
+      swissFounded.note: 'CloudSigma gibt an, 2009 in Zürich mitgegründet worden zu sein und seinen Firmensitz in der Schweiz zu haben.'

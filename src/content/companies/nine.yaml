@@ -63,3 +63,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Anbieter von Cloud- und Managed Hosting, gegründet 2000, mit eigener Infrastruktur in zwei Rechenzentren im Kanton Zürich.'
+    notes:
+      ownership.note: 'Nine gibt an, zu 100 Prozent im Besitz der Mitarbeitenden zu sein (Selbstdeklaration, Stand September 2026). Gründer Thomas Hug ist CEO. Eine kanadische Tochtergesellschaft, die Nine Internet Solutions Ltd., ist vollständig im Besitz des Schweizer Unternehmens.'
+      swissFounded.note: '2000 gegründet; am 5. Juli 2002 als Aktiengesellschaft (AG) eingetragen.'

@@ -74,3 +74,7 @@ sources:
 i18n:
   de:
     description: 'Unternehmen mit Sitz in Liebefeld bei Bern, gegründet 2016, das Dienste für Online-Identitätsprüfung und qualifizierte elektronische Signaturen für Banken und andere regulierte Unternehmen entwickelt.'
+    notes:
+      headquarters.note: 'Die Geschäftsadresse lautet Waldeggstrasse 30, 3097 Liebefeld (Gemeinde Köniz).'
+      ownership.note: 'Das Aktienbuch einer Schweizer AG ist nicht öffentlich. Thorsten Hau und Edgar Spring, die das Unternehmen seit seiner Eintragung führen, sitzen im Verwaltungsrat. Bei der Umwandlung in eine AG im Jahr 2021 nahm das Unternehmen externe Investoren auf, mit dem Venture-Investor Spicehaus Partners als Lead-Investor (gemäss der Meilenstein-Seite von fidentity); das Register weist nach einer Kapitalerhöhung im Dezember 2023 drei Kategorien von Vorzugsaktien aus. Alle vier aktuellen Verwaltungsratsmitglieder, einschliesslich Präsident Benjamin Hirt, sind Schweizer Bürger mit Wohnsitz in der Schweiz. Es wurde keine kontrollierende Muttergesellschaft gefunden.'
+      swissFounded.note: 'Im November 2016 als fidentity GmbH in Kaufdorf (BE) ins Handelsregister eingetragen; im Juni 2021 in eine Aktiengesellschaft (AG) umgewandelt und später mit Sitz nach Köniz verlegt.'

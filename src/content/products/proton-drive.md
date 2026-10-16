@@ -181,6 +181,15 @@ i18n:
   de:
     tagline: 'Ende-zu-Ende-verschlüsselter Cloud-Speicher mit Dateifreigabe und Dokumenteditoren.'
     description: 'Proton Drive ist ein Ende-zu-Ende-verschlüsselter Cloud-Speicher- und Dateifreigabedienst der Proton AG mit Sync-Apps und integrierten Editoren für Dokumente und Tabellen.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Hauptsitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Die Datenschutzerklärung von Proton Drive (zuletzt geändert im August 2026) hält fest, dass Daten verschlüsselt auf Proton-Servern gespeichert werden, die sich ausschliesslich in der Schweiz, in Deutschland oder in Norwegen befinden, ohne Aufschlüsselung nach Land. Seit Juli 2025 verlagert Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz und verweist dabei auf die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT); sein Vorfallbericht vom August 2026 beschreibt Kerndatenbanken, die auf Frankfurt und Zürich verteilt sind.'
+      swiss.infrastructure.note: 'Proton gibt an, seine Server-Hardware selbst zu besitzen. Gemäss einem Bericht von watson.ch (August 2026) mietet es gesicherte Flächen bei Rechenzentrumsbetreibern, die es nicht nennt, statt eigene Rechenzentren in der Schweiz, in Deutschland oder in Norwegen zu betreiben.'
+      openSource.note: 'Die Windows-, Android- und iOS-Apps sowie der Web-Client (im Repository ProtonMail/WebClients) sind unter GPL-3.0 veröffentlicht; die Serverseite wird nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Drive Plus (200 GB), monatliche Abrechnung; auch Preise in CHF und EUR'
+      alternativesTo.dropbox.note: 'Keine Linux-Sync-App; Linux wird über ein Kommandozeilentool unterstützt.'
+      alternativesTo.icloud.note: 'Deckt Datei- und Fotospeicherung ab; keine Geräte-Backups und keine Apple-Systemintegration.'
+      alternativesTo.google-docs.note: 'Dokumente und Tabellen über Proton Docs und Proton Sheets, als verschlüsselte Dateien in Drive gespeichert.'
 ---
 
 Proton Drive is a cloud storage service in which files and file names are

@@ -112,6 +112,12 @@ i18n:
   de:
     tagline: 'Cloud-Backup für Geräte über Acronis oder S3-, Swift- und SFTP-Speicher, in der Schweiz aufbewahrt.'
     description: 'Swiss Backup ist das Cloud-Backup von Infomaniak, mit Acronis-Software für Geräte oder S3-, Swift- und SFTP-Speicher und drei Kopien in zwei Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'Infomaniak gibt an, dass die Speicherinfrastruktur intern entwickelt wurde; Geräte-Backups nutzen Acronis Cyber Protect Cloud, eine Drittanbieter-Software.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass Daten auf mindestens drei Speichermedien in zwei seiner Rechenzentren in der Schweiz kopiert werden.'
+      pricing.startingPrice.note: '1 TB Backup-Kapazität bei jährlicher Abrechnung, exkl. MWST; Gebühren pro Gerät zusätzlich (ab CHF 0.72/Monat)'
+      sustainability.summary: 'Gemäss Infomaniak laufen die Rechenzentren mit erneuerbarem Strom ohne Klimaanlage, und das Rechenzentrum D4 in Genf speist seine gesamte Abwärme ins Fernwärmenetz ein.'
+      alternativesTo.backblaze-b2.note: 'Auf Backup ausgerichteter Speicher über S3, Swift oder SFTP, abgerechnet nach reservierter Kapazität statt pro genutztem GB.'
 ---
 
 Swiss Backup offers two ways to back up data to Infomaniak's cloud. The first

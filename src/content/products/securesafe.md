@@ -141,6 +141,12 @@ i18n:
   de:
     tagline: 'Verschlüsselter Passwort-Manager und Dokumententresor, gehostet in der Schweiz.'
     description: 'SecureSafe der Zürcher DSwiss ist ein Passwort-Manager und verschlüsselter Dateitresor für Privatpersonen und Organisationen, gehostet in Schweizer Rechenzentren.'
+    notes:
+      swiss.developed.note: 'DSwiss gibt an, dass die Plattform seit 2008 in Zürich entwickelt wird.'
+      swiss.hosted.note: 'DSwiss gibt an, dass die Daten ausschliesslich in Rechenzentren in der Schweiz gespeichert und verarbeitet werden, mit einem Backup-Standort in einer ehemaligen Militäranlage in den Alpen. Die Rechenzentrumsbetreiber werden nicht genannt.'
+      openSource.note: 'Für die Apps und die Plattform wurde kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Pass Solo (nur Passwörter, ein Benutzer), bei jährlicher Abrechnung; die Seite nennt auch CHF 2.40 pro Benutzer und Monat'
+      alternativesTo.bitwarden.note: 'Proprietär und ohne kostenlosen Plan.'
 ---
 
 SecureSafe is an online vault for passwords and documents operated by DSwiss AG

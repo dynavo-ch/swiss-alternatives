@@ -141,6 +141,13 @@ i18n:
   de:
     tagline: 'Ende-zu-Ende-verschlüsselter Messenger, nutzbar ohne Telefonnummer, mit Einmalkauf.'
     description: 'Threema ist ein Ende-zu-Ende-verschlüsselter Messenger mit Open-Source-Apps, nutzbar ohne Telefonnummer oder E-Mail-Adresse, mit Servern in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Threema gibt an, dass seine Apps in der Schweiz entwickelt werden.'
+      swiss.hosted.note: 'Threema betreibt eigene Server in zwei Rechenzentren eines nach ISO 27001 zertifizierten Colocation-Partners im Raum Zürich. Media-Router für einige Gruppenanrufe können sich im Ausland befinden; diese Streams sind Ende-zu-Ende-verschlüsselt.'
+      openSource.note: 'Die Clients für Android, iOS, Desktop und Web werden unter der AGPL-3.0 veröffentlicht; die Server-Software ist proprietär.'
+      pricing.startingPrice.note: 'Android-Lizenz direkt im Threema Shop gekauft; App-Store-Preise variieren je nach Store und Land'
+      alternativesTo.signal.note: 'Kostenpflichtiger Einmalkauf statt kostenlos; die Server-Software ist nicht Open Source.'
+      alternativesTo.telegram.note: 'Nicht für grosse öffentliche Kanäle oder Gruppen ausgelegt; alle Chats sind Ende-zu-Ende-verschlüsselt.'
 ---
 
 Threema is an instant messenger for text, voice and video calls, group chats,

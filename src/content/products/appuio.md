@@ -138,6 +138,17 @@ i18n:
   de:
     tagline: 'Managed Container-Plattform auf Basis von Red Hat OpenShift, betrieben in Schweizer Cloud-Zonen.'
     description: 'APPUiO ist eine Kubernetes-Container-Plattform auf Basis von Red Hat OpenShift, betrieben von der Zürcher VSHN auf Zonen von cloudscale und Exoscale in der Schweiz.'
+    notes:
+      swiss.developed.note: 'VSHN betreibt die Plattform von Zürich aus und entwickelt deren Portal, Abrechnung und Tooling, die Kernplattform ist jedoch Red Hat OpenShift, entwickelt vom US-Unternehmen Red Hat. APPUiO wurde 2016 von VSHN zusammen mit Puzzle ITC lanciert; 2024 übernahm VSHN es vollständig.'
+      swiss.hosted.note: 'APPUiO Cloud wird in Zonen auf der Infrastruktur von cloudscale und Exoscale angeboten; VSHN gibt an, dass die Daten in ISO 27001-zertifizierten Rechenzentren in der Schweiz gespeichert werden.'
+      swiss.infrastructure.note: 'APPUiO läuft auf IaaS von Drittanbietern. cloudscale ist ein Anbieter in Schweizer Besitz; Exoscale wird von der Akenes SA mit Sitz in Lausanne betrieben, die zur österreichischen A1 Telekom Austria Group gehört.'
+      openSource.note: 'Das Portal und die Control-API von APPUiO Cloud sowie der K8up-Backup-Operator von VSHN sind Open Source; Red Hat OpenShift selbst ist ein kommerzielles Subscription-Produkt.'
+      pricing.startingPrice.note: 'Pro GiB RAM und Minute auf cloudscale-Flex- oder Exoscale-Standard-Nodes (rund CHF 49 pro GiB für 30 Tage), exkl. MWST; Speicher zusätzlich'
+      alternativesTo.red-hat-openshift.note: 'APPUiO basiert selbst auf Red Hat OpenShift; es ersetzt die gehosteten OpenShift-Dienste von Red Hat, nicht die Software.'
+      alternativesTo.heroku.note: 'Anwendungen werden als OpenShift-/Kubernetes-Workloads statt als Heroku-Dynos bereitgestellt.'
+      alternativesTo.aws.note: 'Nur als Alternative zu verwaltetem Kubernetes und Container-Hosting (EKS, ECS).'
+      alternativesTo.google-cloud.note: 'Nur als Alternative zu verwaltetem Kubernetes und Container-Hosting (GKE, Cloud Run).'
+      alternativesTo.microsoft-azure.note: 'Nur als Alternative zu verwaltetem Kubernetes und Container-Hosting (AKS, Azure Red Hat OpenShift).'
 ---
 
 APPUiO is a container platform based on Red Hat OpenShift, operated by VSHN AG in

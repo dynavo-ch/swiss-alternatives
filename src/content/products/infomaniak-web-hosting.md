@@ -101,6 +101,12 @@ i18n:
   de:
     tagline: 'Shared Webhosting und Domainregistrierung bei einem ICANN-akkreditierten Schweizer Registrar.'
     description: 'Infomaniak bietet Shared Webhosting für WordPress und andere PHP-Websites und registriert Domains unter über 500 Endungen, betrieben in eigenen Rechenzentren in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Infomaniak gibt an, dass seine Lösungen intern in Genf und Zürich entwickelt werden.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass sein Webhosting in Rechenzentren in der Schweiz läuft und Backups in einem anderen Rechenzentrum aufbewahrt werden.'
+      pricing.startingPrice.note: 'Web Hosting (250 GB SSD, 20 Websites), exkl. MWST; 30 Tage kostenlos testen mit Kreditkarte; Domains separat'
+      sustainability.summary: 'Infomaniak gibt an, 100% erneuerbare Energie zu nutzen, 200% seiner CO2-Emissionen zu kompensieren, Rechenzentren ohne Klimaanlage zu betreiben und Server bis zu 15 Jahre lang einzusetzen.'
+      alternativesTo.squarespace.note: 'Teilweise; Infomaniak bietet neben klassischem Hosting den Website-Baukasten Site Creator an.'
 ---
 
 Infomaniak's shared web hosting includes 250 GB of SSD storage and up to 20

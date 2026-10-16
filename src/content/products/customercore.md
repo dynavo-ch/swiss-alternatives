@@ -156,6 +156,13 @@ i18n:
   de:
     tagline: 'Cloud-basierte Unternehmenssoftware für Schweizer KMU mit Buchhaltung, CRM, Rechnungsstellung und E-Banking.'
     description: 'CustomerCore ist Cloud-basierte Unternehmenssoftware der Zürcher Coresection für Schweizer KMU, die Buchhaltung, CRM, Offerten, Rechnungen und Bankanbindungen vereint.'
+    notes:
+      swiss.developed.note: 'Coresection gibt an, dass CustomerCore vom Schweizer Unternehmen Coresection GmbH entwickelt wurde, und beschreibt ein Team von mehr als 15 Personen in der Schweiz und im Ausland. Wo die Entwickler arbeiten, wird nicht angegeben.'
+      swiss.hosted.note: 'Als «teilweise» erfasst, weil die Datenschutzerklärung Ausnahmen zulässt. Die Website und der Auftragsverarbeitungsvertrag geben an, dass Kundendaten ausschliesslich in der Schweiz gespeichert werden, und die Datenschutzerklärung nennt Amazon Web Services in Zürich für Hosting und Backup. Dieselbe Erklärung hält fest, dass verschlüsselte Backups in Rechenzentren in der Schweiz und im Ausland aufbewahrt werden, dass bestimmte Dienste auf Servern in anderen Ländern laufen können und dass Supportdaten in Europa verarbeitet werden können (Zammad, Deutschland). Die Belegerkennung im Buchhaltungsmodul nutzt Google Gemini.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Standard-Plan für bis zu 2 Benutzer und 1 Firma, bei jährlicher Abrechnung, inkl. MWST; CHF 49 bei monatlicher Abrechnung'
+      alternativesTo.quickbooks.note: 'Für Schweizer KMU entwickelt, mit Schweizer MWST-Formularen, Bankanbindung über SIX bLink und einem Lohnmodul in den höheren Plänen.'
+      alternativesTo.xero.note: 'Für Schweizer KMU entwickelt, mit Schweizer MWST-Formularen, Bankanbindung über SIX bLink und einem Lohnmodul in den höheren Plänen.'
 ---
 
 CustomerCore is business software for small and medium-sized companies in

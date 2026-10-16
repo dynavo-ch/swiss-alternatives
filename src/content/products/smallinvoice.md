@@ -121,6 +121,13 @@ i18n:
   de:
     tagline: 'Online-Rechnungsstellung mit Kontaktverwaltung, Zeiterfassung und QR-Rechnungen für kleine Unternehmen.'
     description: 'smallinvoice ist ein Dienst für Online-Rechnungsstellung und CRM aus Zürich mit QR-Rechnungen, Offerten, Mahnungen, Zeiterfassung und Buchhaltungsexporten sowie einem kostenlosen Plan.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Lourens Systems GmbH, einem kleinen Unternehmen mit Sitz in Zürich. Es veröffentlicht nicht, wo seine Entwickler arbeiten; einer seiner beiden Geschäftsführer ist mit Wohnsitz in Warschau eingetragen, und auch sein EU-Datenschutzvertreter hat dort seinen Sitz.'
+      swiss.hosted.note: 'smallinvoice gibt an, dass Kundendaten ausschliesslich in der Schweiz verarbeitet werden. Die veröffentlichte Liste der Unterauftragnehmer (Stand April 2019) nennt zudem US-Anbieter für Support-Tickets, transaktionale E-Mails und SMS-Benachrichtigungen, welche die für diese Funktionen nötigen Daten erhalten.'
+      swiss.infrastructure.note: 'Die Liste der Unterauftragnehmer vom 1. April 2019 nennt die cloudscale.ch AG, Akenes SA (Exoscale), Hostpoint AG, Swisscom (Schweiz) AG und VSHN AG für Hosting, Speicher und Monitoring, ohne anzugeben, welcher Anbieter was hostet. Exoscale gehört zur österreichischen A1 Telekom Austria Group; die anderen sind in Schweizer Besitz. Die Liste ist möglicherweise veraltet.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Starter-Plan mit 1 Benutzer, monatlich nachschüssig abgerechnet; EUR 13 bei Abrechnung in Euro'
+      alternativesTo.freshbooks.note: 'Kein vollständiges Buchhaltungsmodul; Buchungsdaten werden in Buchhaltungssoftware wie Banana oder Topal exportiert.'
 ---
 
 smallinvoice is a web-based invoicing service for small businesses. It

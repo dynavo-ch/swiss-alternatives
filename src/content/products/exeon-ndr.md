@@ -100,6 +100,12 @@ i18n:
   de:
     tagline: 'Network Detection and Response auf Basis von Flow- und Log-Metadaten, betrieben auf Kundensystemen.'
     description: 'Exeon.NDR ist Software für Network Detection and Response der Zürcher Exeon, die Metadaten des Datenverkehrs mit maschinellem Lernen analysiert, On-Premises oder in der Cloud.'
+    notes:
+      swiss.developed.note: 'Exeon bezeichnet seine Plattform als Swiss-made; das Unternehmen und seine Geschäftsleitung haben ihren Sitz in Zürich.'
+      swiss.hosted.note: 'Exeon.NDR läuft auf einer vom Kunden gewählten Infrastruktur, On-Premises, in einer Private oder Public Cloud oder in Air-Gapped-Netzwerken, und Exeon gibt an, dass die Datenverarbeitung On-Premises bleibt. Es wurde keine vom Anbieter gehostete SaaS-Edition gefunden, daher hängt der Datenstandort von der Bereitstellung des Kunden ab.'
+      openSource.note: 'Kommerziell lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.darktrace.note: 'Deckt nur Network Detection and Response ab; analysiert Metadaten bestehender Geräte statt gespiegelten Datenverkehrs und hat keine E-Mail- oder Endpoint-Produkte.'
+      alternativesTo.vectra-ai.note: 'Analysiert Flow- und Log-Metadaten bestehender Geräte statt dedizierter Netzwerksensoren.'
 ---
 
 Exeon.NDR is a network detection and response (NDR) product from Exeon

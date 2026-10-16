@@ -95,6 +95,12 @@ i18n:
   de:
     tagline: 'Webhosting, Domainregistrierung und E-Mail-Hosting mit Servern in der Schweiz.'
     description: 'Hostpoint ist ein Webhosting-Anbieter und Domain-Registrar aus Rapperswil-Jona mit Shared Hosting, Domains, E-Mail und Managed Servern, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Softwareentwicklung, Support und Administration sind in Rapperswil-Jona angesiedelt.'
+      swiss.hosted.note: 'Web-, E-Mail- und Datenbankdaten werden auf Hostpoint-Servern in einem Rechenzentrum von Digital Realty in Glattbrugg bei Zürich gespeichert. Hostpoint gibt an, dass einige Komponenten des SEO-Tools rankingCoach eines Drittanbieters eine Ausnahme bilden.'
+      pricing.startingPrice.note: 'Webhosting Standard (100 GB), inkl. MWST; Domains separat'
+      sustainability.summary: 'Das Rechenzentrum wird mit Strom aus erneuerbaren Quellen betrieben.'
+      alternativesTo.squarespace.note: 'Teilweise; Hostpoint bietet neben klassischem Hosting einen Website-Baukasten (Sites) und einen Webshop an.'
 ---
 
 Hostpoint is a web hosting provider based in Rapperswil-Jona. Its portfolio

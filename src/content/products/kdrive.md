@@ -135,6 +135,13 @@ i18n:
   de:
     tagline: 'Cloud-Speicher und Dateifreigabe mit Online-Dokumentbearbeitung, gehostet in der Schweiz.'
     description: 'kDrive ist der Cloud-Speicher- und Dateifreigabedienst von Infomaniak mit Sync-Apps, Bearbeitung in OnlyOffice und WebDAV-Zugriff, gehostet in den Schweizer Rechenzentren von Infomaniak.'
+    notes:
+      swiss.hosted.note: 'Infomaniak gibt an, dass jede Datei auf drei Speichergeräten in zwei seiner Rechenzentren in der Schweiz repliziert wird.'
+      openSource.note: 'Der Desktop-Sync-Client sowie die Android- und iOS-Apps sind Open Source unter GPL-3.0; Server und Web-App sind nicht veröffentlicht.'
+      pricing.startingPrice.note: 'kDrive Solo (3 TB, 1 Benutzer) bei 1-jähriger Abrechnung, exkl. MWST; CHF 5.54 bei monatlicher Abrechnung'
+      sustainability.summary: 'Infomaniak gibt an, dass seine Rechenzentren mit erneuerbarem Strom und ohne Klimaanlage betrieben werden und dass sein Rechenzentrum D4 in Genf seine gesamte Abwärme ins Fernwärmenetz einspeist.'
+      alternativesTo.icloud.note: 'Deckt Datei- und Fotospeicherung ab; keine vollständigen iPhone- oder iPad-Backups und keine Integration ins Apple-System.'
+      alternativesTo.google-docs.note: 'Office-Dokumente werden im Browser mit den integrierten OnlyOffice-Editoren bearbeitet.'
 ---
 
 kDrive is Infomaniak's cloud storage service for files and photos. It offers

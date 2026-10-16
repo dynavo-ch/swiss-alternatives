@@ -109,6 +109,11 @@ i18n:
   de:
     tagline: 'IaaS-Cloud mit frei dimensionierbaren virtuellen Servern und einem Standort in der Schweiz.'
     description: 'CloudSigma ist eine IaaS-Cloud der CloudSigma AG mit Sitz in Zug, mit Abrechnung pro Ressource und Standorten weltweit, darunter einem in Genf in der Schweiz.'
+    notes:
+      swiss.hosted.note: 'Kunden nutzen einen bestimmten Standort. Die öffentliche Standort-API von CloudSigma führt einen Schweizer Standort auf, «Geneva, Switzerland» (Standort-ID ZRH), neben Standorten unter der Marke CloudSigma in Deutschland, Australien, Japan, Malaysia und auf den Philippinen sowie von Partnern betriebenen Clouds in anderen Ländern.'
+      swiss.infrastructure.note: 'CloudSigma veröffentlicht derzeit nicht, welches Rechenzentrum für seinen Schweizer Standort genutzt wird, und seine Aktionäre werden nicht veröffentlicht.'
+      alternativesTo.aws.note: 'Deckt nur virtuelle Server, Speicher, Netzwerk und GPUs ab; deutlich kleinerer Dienstkatalog.'
+      alternativesTo.digitalocean.note: 'Virtuelle Server werden nach CPU, RAM und Speicher dimensioniert statt nach festen Plänen.'
 ---
 
 CloudSigma is an infrastructure-as-a-service platform from a company founded in

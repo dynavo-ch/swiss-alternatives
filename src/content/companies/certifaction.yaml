@@ -78,3 +78,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Anbieter von Software für elektronische Signaturen, gegründet 2020, mit einer Tochtergesellschaft in München (Deutschland).'
+    notes:
+      ownership.note: 'Certifaction bezeichnet sich als eigentümergeführt und von Investoren unterstützt; die Aktionärsstruktur wird nicht veröffentlicht. Die erste Finanzierungsrunde 2020 wurde vom Schweizer Seed-Fonds Wingman Ventures (heute Founderful) mit Seedcamp (London) und Angel Invest Ventures (Berlin) angeführt; bei einer Seed-Runde 2022 werden zudem HV Capital und Expa genannt. Zu den Aktionären gehören somit Schweizer und ausländische Investoren. Eine Übernahme von Certifaction wurde in der Berichterstattung bis Oktober 2026 nicht gefunden.'
+      swissFounded.note: 'Im März 2020 im Handelsregister des Kantons Zürich eingetragen (Statuten vom 21. Februar 2020). Certifaction gibt an, 2020 gegründet worden zu sein.'

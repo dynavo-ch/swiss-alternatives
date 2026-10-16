@@ -142,6 +142,12 @@ i18n:
   de:
     tagline: 'Verschlüsselter Open-Source-Messenger ohne Telefonnummer, geroutet über dezentrale Knoten.'
     description: 'Session ist ein Ende-zu-Ende-verschlüsselter Open-Source-Messenger, der keine Telefonnummer benötigt und Nachrichten über ein dezentrales Netzwerk von Community-Knoten leitet.'
+    notes:
+      swiss.developed.note: 'Seit Mitte 2026 wird Session von zwei bis drei Entwicklern gepflegt, geleitet von Chief Software Architect Jason Rhinelander, der mit Wohnsitz in Fredericton, Kanada, eingetragen ist. Das frühere Team stammte von der australischen OPTF. Ein Entwicklungsteam in der Schweiz wird nicht beschrieben.'
+      swiss.hosted.note: 'Nachrichten werden in Schwärmen von Session Nodes gespeichert, die von einer Gemeinschaft unabhängiger Betreiber weltweit betrieben werden; ein Schweizer Speicherort wird nicht angegeben. Die Stiftung betreibt die Seed-Nodes, die neue Clients zuerst kontaktieren.'
+      openSource.note: 'Die Android-, iOS- und Desktop-Clients sowie Session Router stehen unter GPL-3.0; der auf Session Nodes laufende Storage-Server steht unter der MIT-Lizenz.'
+      alternativesTo.whatsapp.note: 'Keine Telefonnummer nötig; die Entwicklungskapazität wurde seit 2026 stark reduziert.'
+      alternativesTo.signal.note: 'Nutzt ein dezentrales Node-Netzwerk statt zentraler Server; dem aktuellen Protokoll fehlt Forward Secrecy.'
 ---
 
 Session is a messenger for one-to-one and group chats that can be used without

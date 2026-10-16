@@ -144,6 +144,12 @@ i18n:
   de:
     tagline: 'E-Mail-Sicherheit gegen Phishing, BEC und Malware für Microsoft 365 oder On-Premises-Mailserver.'
     description: 'xorlab ist eine E-Mail-Sicherheitsplattform aus Zürich, die Phishing, BEC und Malware mittels Verhaltensanalyse erkennt, angeboten als SaaS oder On-Premises.'
+    notes:
+      swiss.developed.note: 'Die xorlab AG und ihr Führungsteam haben ihren Sitz in Zürich, sie bietet Support durch technische Fachleute in der Schweiz an, und das Unternehmen trägt das Label swiss made software. xorlab selbst beschreibt das Produkt als in Europa gebaut.'
+      swiss.hosted.note: 'Als teilweise erfasst, weil Kunden ausserhalb der Schweiz aus Deutschland bedient werden. Gemäss der Liste der Unterauftragsverarbeiter von xorlab werden SaaS-Kunden in der Schweiz aus der Schweizer Region von Microsoft Azure (Mail Transfer Agent, Sprachanalyse, Logs) und von Green Datacenter in der Schweiz (Sandbox, Analyse von Anhängen, Reputationsdienst) bedient. Kunden ausserhalb der Schweiz werden von Hetzner in Deutschland und Azure West Europe bedient. Cloudflare übernimmt DNS. On-Premises-Kunden verarbeiten und speichern E-Mail-Daten auf ihrer eigenen Infrastruktur.'
+      openSource.note: 'Es wird kein Quellcode veröffentlicht.'
+      alternativesTo.proofpoint.note: 'Konzentriert sich auf den Schutz eingehender E-Mails und die Automatisierung von Abuse-Postfächern für Microsoft 365 und On-Premises-Mail; E-Mail-Archivierung und Data Loss Prevention für ausgehende E-Mails gehören nicht zu den aufgeführten Produkten.'
+      alternativesTo.mimecast.note: 'Deckt Filterung eingehender E-Mails, Sandboxing von Anhängen, Warnbanner und Self-Service-Quarantäne ab; E-Mail-Archivierung und Continuity-Dienste gehören nicht zu den aufgeführten Produkten.'
 ---
 
 xorlab is an email security platform developed by xorlab AG in Zurich. It

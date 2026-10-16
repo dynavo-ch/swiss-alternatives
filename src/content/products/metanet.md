@@ -103,6 +103,12 @@ i18n:
   de:
     tagline: 'Webhosting, Domains, E-Mail und virtuelle Server, gehostet in Schweizer Rechenzentren.'
     description: 'METANET ist ein Zürcher Webhosting-Anbieter, Teil von group.one, mit Shared Hosting, Domains, E-Mail und virtuellen Servern aus Rechenzentren in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Betrieb und Support werden von rund 30 Mitarbeitenden in der Schweiz geleistet; das Shared Hosting basiert auf dem Control Panel Plesk eines Drittanbieters.'
+      swiss.hosted.note: 'METANET gibt an, dass alle Webhosting-Server in Schweizer Rechenzentren stehen und tägliche Backups in ein separates Schweizer Rechenzentrum gehen.'
+      swiss.infrastructure.note: 'Rund 60 Racks sind an fünf Standorten von drei Rechenzentrumsbetreibern gemietet. METANET gehört zur Gruppe group.one, deren Muttergesellschaft in Schweden registriert ist.'
+      pricing.startingPrice.note: 'METAhost S (50 GB), inkl. MWST, Mindestlaufzeit 12 Monate, jährliche Abrechnung'
+      alternativesTo.ionos.note: 'Umfasst Webhosting, Domains und virtuelle Server; METANET hat keine mit IONOS Cloud vergleichbare Public-Cloud-Plattform.'
 ---
 
 METANET is a web hosting provider based in Zurich. It offers domain

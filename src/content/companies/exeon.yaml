@@ -73,3 +73,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Cybersicherheitsunternehmen, 2016 mit Wurzeln an der ETH Zürich gegründet, das Software für Network Detection and Response entwickelt.'
+    notes:
+      ownership.note: 'In Privatbesitz; Aktionärsstruktur und Investoren werden nicht veröffentlicht. Mitgründer David Gugelmann präsidiert den Verwaltungsrat, dem zudem Markus Eugster, Beat Schillig und Felix Haldner angehören. In Registerpublikationen und Presseberichten bis Oktober 2026 wurde keine Übernahme gefunden; die jüngsten Kapitalerhöhungen (Dezember 2024 und Dezember 2025) erfolgten aus bedingtem Kapital.'
+      swissFounded.note: 'Die Exeon Analytics AG wurde am 10. August 2016 im Handelsregister des Kantons Zürich eingetragen. Exeon gibt an, dass das Unternehmen an der ETH Zürich entstanden ist.'

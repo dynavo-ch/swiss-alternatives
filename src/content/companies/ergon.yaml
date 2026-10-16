@@ -87,3 +87,7 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, gegründet 1984, das Individualsoftware baut und die Airlock-Produkte für Anwendungssicherheit und Identität entwickelt.'
+    notes:
+      ownership.note: 'Im Januar 2026 wurde der Private-Equity-Investor Afinum Mehrheitsaktionär und löste den Gründer und die langjährigen Ankeraktionäre ab; Geschäftsleitung und viele Mitarbeitende bleiben Aktionäre. Der erwerbende Fonds, Afinum X, ist eine deutsche Investmentgesellschaft, die von der Afinum Management GmbH in München verwaltet wird, die auch ein Büro in Zürich hat (Afinum Management AG). Airlock ist eine Marke und Produktlinie von Ergon, kein separates Unternehmen.'
+      ownership.parent: 'Afinum (Fonds Afinum X)'
+      swissFounded.note: 'Die Ergon Informatik AG ist seit dem 13. August 1984 im Handelsregister des Kantons Zürich eingetragen.'

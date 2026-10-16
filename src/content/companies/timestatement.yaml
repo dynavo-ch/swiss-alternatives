@@ -63,3 +63,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Baar ZG, das TimeStatement entwickelt, einen Cloud-Dienst für Arbeits- und Projektzeiterfassung, Absenzenverwaltung und Rechnungsstellung.'
+    notes:
+      ownership.note: 'Im Handelsregister ist keine Muttergesellschaft verzeichnet, und auf der Website von TimeStatement wird keine genannt; die Aktionäre der AG werden nicht veröffentlicht. Die Datenschutzerklärung erwähnt eine «TimeStatement-Gruppe», ohne Gruppengesellschaften zu nennen.'
+      swissFounded.note: 'Als Aktiengesellschaft mit Sitz in Baar gegründet (Statuten vom 12. Mai 2017) und im Mai 2017 ins Handelsregister des Kantons Zug eingetragen.'

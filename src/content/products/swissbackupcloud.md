@@ -89,6 +89,12 @@ i18n:
   de:
     tagline: 'Externes Backup mit Veeam Cloud Connect oder Barracuda, repliziert an zwei Schweizer Standorte.'
     description: 'Swissbackupcloud ist ein externer Backup-Dienst der Armacom in Pratteln mit Veeam Cloud Connect oder Barracuda-Appliances, repliziert nach Pratteln und Bern.'
+    notes:
+      swiss.developed.note: 'Armacom hat den Dienst in der Schweiz konzipiert und betreibt ihn dort; die Backup-Software stammt von den US-Anbietern Veeam und Barracuda.'
+      swiss.hosted.note: 'Backup-Daten werden in zwei Schweizer Rechenzentren repliziert, in Pratteln (Region Basel) und in Bern.'
+      swiss.infrastructure.note: 'Armacom gibt an, seit 2010 eine eigene Cloud-Infrastruktur in der Schweiz zu betreiben, die georedundant über die Colocation-Standorte ColoBâle und ColoBern aufgebaut ist.'
+      pricing.startingPrice.note: 'Veeam Cloud Connect, pro 500 GB Speicher, zzgl. CHF 16 pro VM oder Agent; Barracuda Box to Box kostet CHF 200 pro 500 GB; MWST nicht angegeben'
+      alternativesTo.backblaze-b2.note: 'Ein externes Ziel für bestehende Veeam- oder Barracuda-Backups statt eines allgemeinen S3-Object-Storage; Managed Backup ist erhältlich.'
 ---
 
 Swissbackupcloud is the off-site backup service of Armacom, an IT service

@@ -73,3 +73,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Rapperswil-Jona, das Cloud-basierte Unternehmenssoftware für Kleinunternehmen in der Schweiz entwickelt. Es ist eine Tochtergesellschaft der Schweizer Versicherung Die Mobiliar.'
+    notes:
+      ownership.note: 'Die Mobiliar übernahm bexio im Jahr 2018. In ihrer Medienmitteilung vom Oktober 2025 zur Übernahme der Kontera GmbH bezeichnet sich bexio als hundertprozentige Tochtergesellschaft der Mobiliar; Die Mobiliar führt bexio unter ihren Gruppengesellschaften auf.'
+      swissFounded.note: 'Am 4. Dezember 2013 ins Handelsregister des Kantons St. Gallen eingetragen (früherer Name: easySYS AG), mit Sitz in Rapperswil-Jona.'

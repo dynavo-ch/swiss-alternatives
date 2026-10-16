@@ -65,3 +65,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, gegründet 2016, das CustomerCore entwickelt, eine Cloud-basierte Unternehmenssoftware für kleine und mittlere Schweizer Unternehmen.'
+    notes:
+      ownership.note: 'Gemäss Handelsregister hält Geschäftsführer Rehan Beg Mirza, Schweizer Bürger mit Wohnsitz in Zürich, alle 200 Stammanteile zu CHF 100 der GmbH. Von 2018 bis 2022 wurden sie von Mohammad Mirza gehalten, ebenfalls Schweizer Bürger.'
+      swissFounded.note: 'Im November 2016 ins Handelsregister des Kantons Zürich eingetragen. Der Sitz wurde 2022 nach Gontenschwil (AG) und 2023 zurück nach Zürich verlegt.'

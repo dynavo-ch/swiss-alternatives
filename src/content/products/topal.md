@@ -151,6 +151,13 @@ i18n:
   de:
     tagline: 'Mehrmandantenfähige Software für Finanzbuchhaltung und Lohn für Schweizer Treuhandbüros und KMU.'
     description: 'Topal ist Software für Finanzbuchhaltung und Swissdec-zertifizierte Lohnbuchhaltung aus Volketswil, ausgelegt für Schweizer Treuhandbüros und KMU mit unbeschränkter Mandantenzahl.'
+    notes:
+      swiss.developed.note: 'Die Topal Solutions AG entwickelt die Software in Volketswil, ihre Liste der Subunternehmer nennt jedoch Volo LLC (Jerewan, Armenien) und LLC Next Solutions (Kiew, Ukraine) für die Entwicklung und Wartung ihrer Produkte.'
+      swiss.hosted.note: 'Die Kernsoftware wird lizenziert oder gemietet und läuft auf Servern des Kunden oder eines Hosting-Partners; die Mietpreise verstehen sich ohne ASP- und Hosting-Gebühren. Topal nennt die Inovatec AG in Volketswil als Betreiberin ihrer eigenen IT-Infrastruktur und SaaS-/Cloud-Dienste (Server, Backup, Rechenzentrumsdienste), gibt auf ihrer Website jedoch den Standort des Rechenzentrums nicht an. Ihr swiss made software-Profil führt die Produkte als in der Schweiz gehostet auf.'
+      openSource.note: 'Proprietäre lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Basispaket Finanzbuchhaltung (2 Benutzer, mobiler Benutzer, 5 Mandanten) im Mietmodell, Mindestlaufzeit 12 Monate, exkl. MWST und exkl. ASP-/Hosting-Gebühren; gemäss der auf der Produktseite verlinkten Preisliste vom Januar 2022'
+      alternativesTo.quickbooks.note: 'Ausgelegt auf die Schweizer Buchhaltungs-, MWST- und Lohnpraxis sowie auf Treuhänder, die viele Mandanten betreuen.'
+      alternativesTo.xero.note: 'Ausgelegt auf die Schweizer Buchhaltungs-, MWST- und Lohnpraxis sowie auf Treuhänder, die viele Mandanten betreuen.'
 ---
 
 Topal is accounting software for fiduciaries (Treuhand) and small and

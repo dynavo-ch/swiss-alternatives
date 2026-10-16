@@ -88,3 +88,6 @@ sources:
 i18n:
   de:
     description: 'Anbieter von Cloud-Speicher, eingetragen in Baar (Kanton Zug), 2013 von einem bulgarischen Team gegründet. Kundendaten werden in Luxemburg oder in den USA gespeichert.'
+    notes:
+      ownership.note: 'Die Aktionäre der pCloud International AG und der pCloud AG werden nicht veröffentlicht. Die Vertragspartnerin pCloud International AG wurde im Juli 2022 eingetragen; die 2014 eingetragene pCloud AG hat dieselbe Adresse. Bulgarische Wirtschaftsmedien berichteten 2015 über eine Finanzierung von USD 3 Millionen; die aktuellen Eigentumsverhältnisse werden nicht offengelegt.'
+      swissFounded.note: 'pCloud nennt 2013 als Gründungsjahr, und Wikipedia gibt an, das Unternehmen sei in der Schweiz gegründet worden; die frühere Schweizer Gesellschaft pCloud AG (CHE-291.350.765) wurde im Oktober 2014 ins Handelsregister des Kantons Zug eingetragen. Das Gründerteam war bulgarisch, und der Ort der Gründung 2013 konnte nicht bestätigt werden.'

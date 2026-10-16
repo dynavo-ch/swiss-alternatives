@@ -135,6 +135,10 @@ i18n:
   de:
     tagline: 'Kostenloser öffentlicher DNS-Resolver, der bekannte schädliche Domains blockiert.'
     description: 'Quad9 ist ein kostenloser öffentlicher DNS-Resolver einer gemeinnützigen Stiftung mit Sitz in Zürich. Er blockiert schädliche Domains, validiert DNSSEC und unterstützt DoH und DoT.'
+    notes:
+      swiss.developed.note: 'Quad9 wird von Zürich aus geführt, die Netzwerkinfrastruktur stellen jedoch Packet Clearing House und weitere Partner bereit, und Quad9 veröffentlicht nicht, wo seine Engineering-Mitarbeitenden arbeiten.'
+      swiss.hosted.note: 'Quad9 ist ein Anycast-Dienst: Anfragen werden am nächstgelegenen von über 245 Standorten in über 115 Ländern beantwortet, daher ist der Dienst nicht als solcher in der Schweiz gehostet. Quad9 gibt an, keine IP-Adressen von Benutzern zu erfassen und dass Client-IP-Daten den Standort, an dem die Anfrage eingeht, nicht verlassen, abgesehen von begrenzten Daten zur Abwehr von Angriffen.'
+      openSource.note: 'Die Resolver laufen mit Open-Source-DNS-Software (dnsdist, PowerDNS Recursor, Unbound und, Stand 2020, BIND 9). Die Threat-Intelligence-Sperrlisten stammen von Drittpartnern und werden nicht veröffentlicht.'
 ---
 
 Quad9 is a free public recursive DNS resolver operated by the Quad9 Foundation,

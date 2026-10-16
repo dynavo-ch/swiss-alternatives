@@ -100,6 +100,10 @@ i18n:
   de:
     tagline: 'Plattform für Chatbots, KI-Agenten und E-Mail-Automatisierung für Kundenservice-Teams.'
     description: 'aiaibot ist eine Schweizer Plattform für Chatbots, KI-Agenten und E-Mail-Automatisierung im Kundenservice, basierend auf GPT-Modellen von OpenAI, mit in Zürich gespeicherten Wissensdatenbanken.'
+    notes:
+      swiss.developed.note: 'Die swiss moonshot AG entwickelt die Plattform in der Schweiz, die Sprachmodelle stammen jedoch von Dritten: In den meisten Projekten nutzt aiaibot GPT-Modelle des US-Unternehmens OpenAI, die über Microsoft Azure betrieben werden.'
+      swiss.hosted.note: 'Die Wissensdatenbank sowie Kunden- und Benutzerdaten werden auf Google Cloud in der Region Zürich gespeichert. Prompts werden von OpenAI-Modellen auf Microsoft Azure verarbeitet; die Azure-Region wird nicht angegeben, und der Anbieter gibt an, dass Anfragen nicht für das Training verwendet und nach höchstens 30 Tagen gelöscht werden. Gemäss der Plattformseite wird die Wissensdatenbank «je nach Anforderungen» in der Schweiz gehostet.'
+      alternativesTo.intercom.note: 'Konzentriert sich auf automatisierte Antworten und Prozessautomatisierung auf Basis der eigenen Dokumente des Kunden; das Ticketing läuft über angebundene Systeme wie ServiceNow oder Jira.'
 ---
 
 aiaibot is a platform for automating routine customer and internal enquiries.

@@ -83,3 +83,7 @@ sources:
 i18n:
   de:
     description: 'Tochtergesellschaft der Schweizerischen Post in Glattbrugg und anerkannter Vertrauensdiensteanbieter für Zertifikate, elektronische Signaturen und das SwissID-Login.'
+    notes:
+      headquarters.note: 'Die eingetragene Sitzgemeinde ist Opfikon; die Adresse lautet Sägereistrasse 25, 8152 Glattbrugg. SwissSign hat zudem eine Zweigniederlassung in Lausanne, eingetragen im Dezember 2022.'
+      ownership.note: 'Die Schweizerische Post erhöhte ihre Beteiligung am ehemaligen Joint Venture SwissSign Group AG mit Wirkung per 1. Oktober 2021 von 17 Prozent auf das vollständige Eigentum und führt es als eigenständige Tochtergesellschaft. Das Register veröffentlicht die Aktionäre der SwissSign AG nicht; SwissSign präsentiert sich als Datensicherheitsspezialistin der Schweizerischen Post. Die Schweizerische Post ist im Besitz der Schweizerischen Eidgenossenschaft.'
+      swissFounded.note: 'Die SwissSign AG wurde am 9. Oktober 2001 ins Handelsregister des Kantons Zürich eingetragen.'

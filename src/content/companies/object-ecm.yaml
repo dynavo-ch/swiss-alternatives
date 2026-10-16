@@ -73,3 +73,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Software- und Integrationsunternehmen für Dokumentenmanagement, Workflows und elektronische Signaturen, gegründet 2009, mit einer Tochtergesellschaft in Hamburg.'
+    notes:
+      ownership.note: 'Die Aktionärsstruktur wird nicht veröffentlicht. Gründer Oliver Huser mit Wohnsitz in Zürich ist CEO und Präsident des Verwaltungsrats; dem Verwaltungsrat gehört zudem ein deutscher Staatsangehöriger mit Wohnsitz in Hamburg an. Die OBJECT ECM GmbH in Hamburg ist eine Tochtergesellschaft. Eine Übernahme des Unternehmens wurde in der Berichterstattung bis Oktober 2026 nicht gefunden.'
+      swissFounded.note: 'OBJECT gibt an, dass die Object ECM AG 2009 in Zürich gegründet wurde und 2015 die deutsche Tochtergesellschaft in Hamburg folgte. Das Unternehmen ist im Handelsregister des Kantons Zürich eingetragen.'

@@ -141,6 +141,14 @@ i18n:
   de:
     tagline: 'Cloud-Server, Objektspeicher und Load Balancer im Self-Service, gehostet in der Schweiz.'
     description: 'cloudscale ist eine IaaS-Cloud mit Sitz in Zürich, die virtuelle Server, GPU-Server, S3-kompatiblen Objektspeicher und Load Balancer aus zwei Schweizer Rechenzentren anbietet.'
+    notes:
+      swiss.developed.note: 'Plattform und Control Panel werden vom Team des Unternehmens in Zürich entwickelt.'
+      swiss.hosted.note: 'Die gesamte Cloud-Infrastruktur wird in zwei Rechenzentren in der Schweiz betrieben (Lupfig AG und Rümlang ZH).'
+      openSource.note: 'Basiert auf OpenStack und Ceph; CLI, Terraform-Provider und Kubernetes-Integrationen sind Open Source, das Control Panel ist proprietär.'
+      pricing.startingPrice.note: 'Server Flex-4-1 (1 vCPU, 4 GB RAM, 10 GB SSD), CHF 1.10 pro 24 Stunden, sekundengenau abgerechnet aus Prepaid-Guthaben'
+      alternativesTo.aws.note: 'Umfasst nur virtuelle Server, Volumes, Object Storage und Load Balancer; keine verwalteten Datenbanken oder Kubernetes von cloudscale selbst.'
+      alternativesTo.digitalocean.note: 'Kein verwaltetes Kubernetes und keine verwalteten Datenbanken von cloudscale selbst; Partnerdienste werden über den Marketplace angeboten.'
+      alternativesTo.amazon-s3.note: 'Über den S3-kompatiblen Object Storage von cloudscale.'
 ---
 
 cloudscale is an infrastructure-as-a-service platform from cloudscale.ch AG in

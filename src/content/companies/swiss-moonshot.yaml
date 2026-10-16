@@ -74,3 +74,6 @@ sources:
 i18n:
   de:
     description: 'Tochtergesellschaft der Schweizer POLYDATA-Gruppe mit Sitz in Dübendorf, gegründet 2019, die die Plattform aiaibot für Chatbots, KI-Agenten und E-Mail-Automatisierung entwickelt.'
+    notes:
+      ownership.note: 'aiaibot bezeichnet die swiss moonshot AG als Tochtergesellschaft der POLYDATA-Gruppe, 2019 für die aiaibot-Produkte gegründet. Die POLYDATA Aktiengesellschaft ist eine in Dübendorf eingetragene Holdinggesellschaft (CHE-105.825.681); Verwaltungsratsmitglied Daniel Haller und Zeichnungsberechtigter Mark Hauri sind bei beiden Gesellschaften im Handelsregister eingetragen. Die Aktionäre von POLYDATA selbst werden nicht veröffentlicht.'
+      swissFounded.note: 'In Zürich gegründet, mit Statuten vom 12. Juni 2019; der Sitz wurde im Dezember 2020 nach Dübendorf verlegt.'

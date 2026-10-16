@@ -130,6 +130,14 @@ i18n:
   de:
     tagline: 'Modulare Cloud-Unternehmenssoftware für Schweizer KMU, von Buchhaltung und Rechnungsstellung bis Lohn.'
     description: 'KLARA ist Cloud-basierte Unternehmenssoftware aus Luzern für Schweizer KMU mit Buchhaltung, Rechnungsstellung, Lohn, CRM und Kassensystem. Sie gehört zu ePost der Schweizerischen Post.'
+    notes:
+      swiss.developed.note: 'KLARA gibt an, dass die Software vollständig in der Schweiz entwickelt und betrieben wird.'
+      swiss.hosted.note: 'KLARA gibt an, dass alle Daten ausschliesslich in Schweizer Rechenzentren gespeichert, georedundant über mehrere Standorte in der Schweiz gespiegelt und alle Personen- und Inhaltsdaten in der Schweiz verarbeitet und gespeichert werden. Gemäss der Liste der Unterauftragsverarbeiter können Informationssicherheitsdienste weltweit tätig sein; SMS- und Kundensupport-Anbieter haben ihren Sitz in der EU.'
+      swiss.infrastructure.note: 'Google Cloud Ireland Ltd. ist der einzige Hosting- und Infrastrukturanbieter auf der Liste der Unterauftragsverarbeiter von KLARA. KLARA nennt die Google-Cloud-Region nicht; gemäss eigenen Angaben werden die Daten in der Schweiz gespeichert.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Business Basic mit 2-Jahres-Plan bei jährlicher Zahlung, exkl. MWST; CHF 55 pro Monat mit 1-Jahres-Plan und CHF 69 bei monatlicher Abrechnung'
+      alternativesTo.quickbooks.note: 'Für Schweizer KMU und die Schweizer Praxis in Buchhaltung, MWST und Lohn entwickelt.'
+      alternativesTo.xero.note: 'Für Schweizer KMU und die Schweizer Praxis in Buchhaltung, MWST und Lohn entwickelt.'
 ---
 
 KLARA is cloud-based business software for small and medium-sized businesses

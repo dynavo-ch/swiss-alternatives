@@ -106,6 +106,12 @@ i18n:
   de:
     tagline: 'Virtuelle Rechenzentren, Hosted Private Clouds und Backup aus Schweizer Rechenzentren.'
     description: 'Naveum ist ein Cloud-Anbieter aus Adliswil mit VMware-basierten virtuellen Rechenzentren, Hosted Private Clouds, Backup und Disaster Recovery in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Naveum betreibt den Dienst von Adliswil aus auf VMware Cloud Director oder Huawei FusionCompute und gibt an, dass seine Performance-Monitoring-Plattform intern entwickelt wurde.'
+      swiss.hosted.note: 'Naveum garantiert die Datenspeicherung in der Schweiz; Backups werden in einem anderen Schweizer Rechenzentrum als die Produktivsysteme aufbewahrt.'
+      swiss.infrastructure.note: 'Die Rechenzentrumsseite nennt vier Schweizer Rechenzentren bei Equinix und Digital Realty; die IaaS-Seite verweist auf drei.'
+      alternativesTo.aws.note: 'Deckt virtuelle Maschinen, Private Clouds, Backup und Disaster Recovery ab; wird hauptsächlich über IT-Dienstleister und Wiederverkäufer vertrieben.'
+      alternativesTo.microsoft-azure.note: 'Virtuelle Rechenzentren auf VMware Cloud Director statt einer Hyperscaler-Plattform; Preise werden auf Anfrage offeriert.'
 ---
 
 Naveum is a cloud provider in Adliswil near Zurich that sells mainly to IT

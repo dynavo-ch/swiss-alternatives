@@ -122,6 +122,13 @@ i18n:
   de:
     tagline: 'Cloud-Buchhaltung und Unternehmenssoftware mit kostenlosem Plan, gehostet in der Schweiz.'
     description: 'CashCtrl ist Cloud-Buchhaltungssoftware aus Münchenstein mit Auftragsbearbeitung, Lohnbuchhaltung und Mehrmandantenfähigkeit, einem kostenlosen Plan und in der Schweiz gehosteten Daten.'
+    notes:
+      swiss.developed.note: 'CashCtrl gibt an, dass die gesamte Entwicklung intern erfolgt und der Dienst ausschliesslich in der Schweiz entwickelt und betrieben wird.'
+      swiss.hosted.note: 'Gemäss CashCtrl werden die Daten ausschliesslich auf Servern in der Schweiz gespeichert, und auch Backups und hochgeladene Dateien verbleiben in Schweizer Rechenzentren. Der Hosting-Anbieter wird nicht genannt. Für die Website-Analyse wird eine selbst gehostete Matomo-Instanz in der Schweiz verwendet.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'CashCtrl PRO mit 3 Benutzern/Mitarbeitenden, 2 Organisationen und 1 GB Speicher, für ein Jahr im Voraus bezahlt, inkl. MWST; zusätzliche Benutzer CHF 80 und Organisationen CHF 40 pro Jahr'
+      alternativesTo.quickbooks.note: 'Auf die Schweizer Buchhaltungspraxis und QR-Rechnungen ausgerichtet; Gratis-Plan für einen Benutzer und eine Organisation.'
+      alternativesTo.xero.note: 'Auf die Schweizer Buchhaltungspraxis und QR-Rechnungen ausgerichtet; Gratis-Plan für einen Benutzer und eine Organisation.'
 ---
 
 CashCtrl is a browser-based accounting and business software for self-employed

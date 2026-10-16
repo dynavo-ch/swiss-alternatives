@@ -136,6 +136,14 @@ i18n:
   de:
     tagline: 'Plattform für CRM, digitales Onboarding und Portfoliomanagement für Finanzinstitute.'
     description: 'InvestGlass ist eine Plattform für CRM und Kunden-Onboarding aus Genf für Banken, Vermögensverwalter und Versicherer, gehostet in der Schweiz oder On-Premises installiert.'
+    notes:
+      swiss.developed.note: 'InvestGlass gibt an, dass seine Lösungen in der Schweiz konzipiert und gehostet werden und dass Infrastruktur und Betrieb vollständig schweizerisch sind. Wo die Entwickler arbeiten, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'Gemäss Datenschutzerklärung (zuletzt 2019 überarbeitet) werden Personendaten auf Servern in der Schweiz gespeichert, die von STACK Infrastructure und der Exoscale SA verwaltet werden, wobei der Dienst in Plan-les-Ouates gehostet wird; die Preisseite beschreibt die Tools als in Genf gehostet. Einige Dienstleister, etwa das Support-Tool Intercom, können sich in den USA befinden.'
+      swiss.infrastructure.note: 'Exoscale wird von der Akenes SA betrieben, die zu A1 Digital und der österreichischen A1 Telekom Austria Group gehört. Die Eigentumsverhältnisse des Rechenzentrums von STACK Infrastructure wurden hier nicht überprüft.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Starter-Plan, pro Benutzer und Monat, bei monatlicher Abrechnung; MWST-Behandlung nicht angegeben'
+      alternativesTo.salesforce.note: 'Auf regulierte Finanzinstitute ausgerichtet, mit integriertem KYC, Onboarding und Portfoliomanagement.'
+      alternativesTo.microsoft-dynamics-365.note: 'Auf regulierte Finanzinstitute ausgerichtet, mit integriertem KYC, Onboarding und Portfoliomanagement.'
 ---
 
 InvestGlass is a client relationship management platform aimed at banks,

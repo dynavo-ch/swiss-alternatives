@@ -124,6 +124,12 @@ i18n:
   de:
     tagline: 'Kostenlose Videomeetings auf Basis von Jitsi Meet, betrieben auf Infomaniak-Servern in der Schweiz.'
     description: 'kMeet ist ein kostenloser Videokonferenzdienst von Infomaniak auf Basis von Jitsi Meet, mit Browser-, Desktop- und Mobile-Apps; Anrufe laufen über die Schweizer Server von Infomaniak.'
+    notes:
+      swiss.developed.note: 'Infomaniak entwickelt und betreibt kMeet, beschreibt es jedoch als auf der Open-Source-Software Jitsi Meet basierend, die ausserhalb der Schweiz entwickelt wird.'
+      swiss.hosted.note: 'Infomaniak gibt an, dass die Kommunikation ausschliesslich über seine Server in der Schweiz läuft.'
+      openSource.note: 'Die Android- und iOS-Apps sind unter GPL-3.0 veröffentlicht und der Dienst baut auf dem Open-Source-Projekt Jitsi Meet auf; die Serverkonfiguration von Infomaniak wird nicht veröffentlicht.'
+      sustainability.summary: 'Infomaniak gibt an, dass seine Rechenzentren mit erneuerbarem Strom ohne Klimaanlage laufen und sein Rechenzentrum D4 in Genf seine gesamte Abwärme ins Fernwärmenetz einspeist.'
+      alternativesTo.microsoft-teams.note: 'Deckt nur Videokonferenzen ab; dauerhafter Team-Chat wird von kChat bereitgestellt.'
 ---
 
 kMeet is a free video conferencing service that works in Chromium- and

@@ -168,6 +168,13 @@ i18n:
   de:
     tagline: 'Verschlüsselter Kalender, in jedem Proton-Konto enthalten.'
     description: 'Proton Calendar ist ein verschlüsselter Kalender der Proton AG, der Titel, Beschreibungen, Orte und Teilnehmende von Terminen verschlüsselt, mit Web- und Mobile-Apps.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Firmensitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Gemäss der Datenschutzerklärung von Proton Calendar werden Daten verschlüsselt auf Proton-Servern gespeichert, die sich ausschliesslich in der Schweiz, in Deutschland oder in Norwegen befinden, ohne Aufschlüsselung nach Ländern. Seit Juli 2025 verlagert Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz und verweist dabei auf die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT); sein Vorfallbericht vom August 2026 beschreibt zentrale Datenbanken, die auf Frankfurt und Zürich verteilt sind.'
+      swiss.infrastructure.note: 'Proton gibt an, Eigentümer seiner Server-Hardware zu sein. Gemäss einem Bericht von watson.ch (August 2026) mietet Proton gesicherte Flächen bei Rechenzentrumsbetreibern, die es nicht nennt, statt eigene Rechenzentren in der Schweiz, in Deutschland oder in Norwegen zu betreiben.'
+      openSource.note: 'Der Web-Client (im Repository ProtonMail/WebClients) und die Android-App sind unter GPL-3.0 veröffentlicht; die Serverseite ist nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Mail Plus (inkl. Calendar), monatliche Abrechnung; Preise auch in CHF und EUR'
+      alternativesTo.outlook.note: 'Deckt den Kalenderteil von Outlook ab; E-Mail wird separat über Proton Mail angeboten.'
 ---
 
 Proton Calendar is a calendar service included with every Proton account. Event

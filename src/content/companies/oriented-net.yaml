@@ -67,3 +67,6 @@ sources:
 i18n:
   de:
     description: 'Anbieter von Managed Hosting und Servern in Basel, gegründet 2002, mit Schwerpunkt auf Linux und Open-Source-Software und eigenem Rechenzentrum in Basel.'
+    notes:
+      ownership.note: "Das Unternehmen bezeichnet sich als «a 100% Swiss company». Das Handelsregister führt Marc Bigler, Schweizer Staatsbürger, als Gesellschafter und Geschäftsführer mit zwei Stammanteilen zu CHF 10'000 auf; Mitgründer Dominique Jaeggi ist im Dezember 2022 aus dem Unternehmen ausgeschieden. Eine Übernahme wurde nicht gemeldet."
+      swissFounded.note: 'Im Sommer 2002 durch den Zusammenschluss zweier kleinerer Unternehmen, Net Oriented und Pentragon.Net, gegründet. Das Register führt den früheren Namen «oriented.net Bigler & Jaeggi» auf.'

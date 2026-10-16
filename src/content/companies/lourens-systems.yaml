@@ -55,3 +55,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, eingetragen 2009, das den Rechnungs- und CRM-Dienst smallinvoice für Kleinunternehmen entwickelt und betreibt.'
+    notes:
+      ownership.note: "Gemäss Publikationen des Handelsregisters wird das Stammkapital von CHF 20'000 zu gleichen Teilen von den beiden Geschäftsführern Graem Lourens und Sandro Kunz gehalten, beide mit Schweizer Heimatort eingetragen; ein Unternehmen als Gesellschafter ist nicht eingetragen. Seit 2025 ist einer der beiden als wohnhaft in Warschau, Polen, eingetragen. Eine Übernahme durch eine grössere Gruppe wurde nicht gefunden."
+      swissFounded.note: 'Am 5. November 2009 im Handelsregister des Kantons Zürich eingetragen.'

@@ -134,6 +134,13 @@ i18n:
   de:
     tagline: 'Qualifizierte elektronische Signaturen nach Schweizer Recht von einem Vertrauensdiensteanbieter der Post.'
     description: 'Der Signaturdienst von SwissSign, einer Tochtergesellschaft der Schweizerischen Post, stellt qualifizierte und einfache elektronische Signaturen per Web, REST-API oder On-Premises-Integration aus.'
+    notes:
+      swiss.developed.note: 'SwissSign nennt nur Glattbrugg und Lausanne als Unternehmensstandorte und bezeichnet seine Infrastruktur als selbst verwaltet; ob Teile der Softwareentwicklung ausgelagert sind, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'SwissSign gibt an, dass sich seine selbst verwaltete, georedundante Infrastruktur ausschliesslich in der Schweiz befindet und dass Zertifikats- und Kundendaten nur in Schweizer Rechenzentren verarbeitet werden. Die Betreiber der Rechenzentren werden nicht genannt.'
+      swiss.infrastructure.note: 'Die Betreiber der Rechenzentren werden nicht veröffentlicht.'
+      openSource.note: 'Proprietärer Dienst; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.docusign.note: 'Auf qualifizierte Signaturen nach Schweizer Recht ausgerichtet; Unterzeichnende benötigen ein SwissID-Konto, und Funktionen für Vertragsabläufe und Vertragsmanagement sind nicht aufgeführt.'
+      alternativesTo.adobe-acrobat-sign.note: 'Auf qualifizierte Signaturen nach Schweizer Recht ausgerichtet; eIDAS-Signaturen im Webdienst sind als geplant aufgeführt.'
 ---
 
 SwissSign's signature service lets people and organisations sign PDF documents

@@ -60,3 +60,6 @@ sources:
 i18n:
   de:
     description: 'Kleines Hosting-Unternehmen in Crissier bei Lausanne, gegründet 2002, das die Webhosting-Marke AlpHosting betreibt.'
+    notes:
+      ownership.note: 'Seit März 2020 führt das Handelsregister Florian Blaser mit Wohnsitz in Crissier als einzigen Gesellschafter und Geschäftsführer, der alle 200 Stammanteile hält, nachdem der frühere Mitgesellschafter seinen Anteil an ihn übertragen hatte. Blasers Staatsangehörigkeit ist im veröffentlichten Eintrag nicht ersichtlich. Eine Übernahme wurde nicht gemeldet.'
+      swissFounded.note: 'Das Unternehmen gibt an, 2002 gegründet worden zu sein und seit 2004 Hosting unter dem Namen AlpHosting anzubieten. Sein Sitz war bis zum Umzug nach Crissier (VD) im Jahr 2020 in Hauterive (NE).'

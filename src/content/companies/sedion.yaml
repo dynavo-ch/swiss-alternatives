@@ -70,3 +70,7 @@ sources:
 i18n:
   de:
     description: 'Cybersicherheitsunternehmen aus der Zentralschweiz mit Büros in Cham, das ein zusätzliches externes Backup kritischer Unternehmensdaten in einem ehemaligen Militärbunker anbietet.'
+    notes:
+      headquarters.note: 'Das Handelsregister führt eine weitere Adresse an der Hammergut 9, 6330 Cham (ZG), die das Unternehmen als Büro nutzt.'
+      ownership.note: 'Die Aktionäre einer AG werden nicht veröffentlicht. Seit September 2024 wird der Verwaltungsrat von Geschäftsführer Alexander Huser präsidiert; die vier in diesem Registereintrag genannten Verwaltungsratsmitglieder sind Schweizer Staatsangehörige. Vor der Fusion 2024 hielt die Codebase AG alle Aktien der ursprünglichen Sedion AG. Ein ausländischer Aktionär wurde nicht gemeldet.'
+      swissFounded.note: 'Die heutige juristische Person wurde in Luzern als codeBase GmbH eingetragen, später Codebase AG. 2024 übernahm sie durch Fusion die ursprüngliche Sedion AG aus Ennetbürgen (CHE-485.497.177), übernahm deren Namen und verlegte ihren Sitz nach Ennetbürgen.'

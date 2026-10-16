@@ -70,3 +70,6 @@ sources:
 i18n:
   de:
     description: 'Gemeinnützige Stiftung in Zug, die den Messenger Session seit Oktober 2024 verantwortet und ihn von der australischen OPTF übernommen hat. Ihre Stiftungsratsmitglieder leben in Australien, Deutschland und Kanada.'
+    notes:
+      ownership.note: 'Eine Stiftung nach Schweizer Recht hat keine Aktionäre; sie untersteht der Aufsicht des Eidgenössischen Departements des Innern. Alle vier im Handelsregister eingetragenen Mitglieder des Stiftungsrats wohnen ausserhalb der Schweiz (Melbourne, Berlin und Fredericton, Kanada); eine in der Schweiz wohnhafte Person ist zeichnungsberechtigt.'
+      swissFounded.note: 'Die Stiftung (eingetragener Name «Session Technology Stiftung») wurde am 2. Juli 2024 errichtet und im Juli 2024 ins Handelsregister des Kantons Zug eingetragen. Session selbst wurde 2018 unter der Oxen Privacy Tech Foundation (OPTF) in Australien gestartet, die die Verantwortung im Oktober 2024 übergab.'

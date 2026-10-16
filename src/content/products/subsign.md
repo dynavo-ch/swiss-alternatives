@@ -112,6 +112,11 @@ i18n:
   de:
     tagline: 'Qualifizierte elektronische Signaturen und Siegel über Swisscom Trust Services, gehostet in der Schweiz.'
     description: 'Subsign ist ein Webportal für qualifizierte elektronische Signaturen und fortgeschrittene Siegel nach ZertES und eIDAS der Zürcher OBJECT, gehostet in einem Schweizer Rechenzentrum.'
+    notes:
+      swiss.developed.note: 'OBJECT gibt an, dass Subsign vollständig in der Schweiz konzipiert und entwickelt wurde. Die «Über uns»-Seite nennt externe Partner für Frontend-Entwicklung und UX-Design; der aufgeführte Softwarearchitekt ist zugleich Geschäftsführer der deutschen Tochtergesellschaft.'
+      swiss.hosted.note: 'OBJECT gibt an, dass Subsign in einem Schweizer Rechenzentrum betrieben wird, das nach FINMA-Anforderungen gebaut und nach ISO 27001 zertifiziert ist. Der Betreiber des Rechenzentrums wird nicht genannt. Signaturen und Siegel werden von der Swisscom Trust Services AG als Vertrauensdiensteanbieterin erstellt.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'SwissSign-Paket «light» (1 Benutzer, 50 QES pro Jahr), jährliche Abrechnung, exkl. MWST'
 ---
 
 Subsign is a web portal for signing documents with qualified electronic

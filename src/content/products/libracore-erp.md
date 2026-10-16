@@ -116,6 +116,12 @@ i18n:
   de:
     tagline: 'Open-Source-ERPNext mit Schweizer Lokalisierung, eingeführt und gehostet von libracore.'
     description: 'libracore ERP ist das Open-Source-System ERPNext mit der Erweiterung ERPNextSwiss von libracore, betrieben On-Premises oder gehostet von der libracore AG aus Bauma ZH.'
+    notes:
+      swiss.developed.note: 'libracore entwickelt die Erweiterungen ERPNextSwiss und ERPNextAustria sowie kundenspezifische Anpassungen; seine GitHub-Organisation gibt die Schweiz als Standort an. Die Anwendung ERPNext selbst und das zugrunde liegende Frappe-Framework werden von Frappe Technologies mit Sitz in Indien und einer Open-Source-Community entwickelt.'
+      swiss.hosted.note: 'libracore bietet ERPNextSwiss On-Premises oder als gehostete Lösung an, gibt auf seiner Website aber nicht an, wo gehostete Instanzen laufen oder wer die Server betreibt. Sein Profil bei swiss made software trägt das Label swiss hosting, das verspricht, dass gehostete Daten nur unter Schweizer Rechtsprechung zugänglich sind. Bei On-Premises-Installationen entscheidet der Kunde, wo die Daten liegen.'
+      openSource.note: 'ERPNextSwiss ist unter der AGPL-3.0 veröffentlicht; ERPNext, auf dem es aufbaut, wird von Frappe unter der GPL-3.0 veröffentlicht.'
+      alternativesTo.sap.note: 'Basiert auf dem Open-Source-ERPNext ohne Lizenzgebühren; libracore verrechnet Einführung, Hosting und Support.'
+      alternativesTo.microsoft-dynamics-365.note: 'Basiert auf dem Open-Source-ERPNext ohne Lizenzgebühren; libracore verrechnet Einführung, Hosting und Support.'
 ---
 
 libracore ERP is the open-source ERP system ERPNext as implemented and extended

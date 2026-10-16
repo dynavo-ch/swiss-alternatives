@@ -120,6 +120,12 @@ i18n:
   de:
     tagline: 'Aufzeichnung von Verwaltungsratssitzungen, KI-Protokollentwürfe und Dokumentenablage, gehostet in der Schweiz.'
     description: 'HeyEla ist eine in Zürich entwickelte Plattform für Verwaltungsräte, die Sitzungen aufzeichnet, Protokolle mit KI entwirft und Dokumente und Aufgaben auf Schweizer Infrastruktur ablegt.'
+    notes:
+      swiss.developed.note: 'Die HeyEla AI AG entwickelt die Plattform und ihre KI-Orchestrierung in Zürich und nennt das Zürcher Studio mühlemann+popp als Technologiepartner für Entwicklung und Betrieb. Die Sprach-, Speech-to-Text-, Embedding- und OCR-Modelle sind Modelle von Drittanbietern, teilweise mit offenen Gewichten; HeyEla trainiert kein eigenes Basismodell und nennt die verwendeten Modelle nicht.'
+      swiss.hosted.note: 'Plattformdaten (Aufnahmen, Transkripte, Protokolle, Dokumente) werden bei der Nine Internet Solutions AG in Zürich gespeichert, mit Backups an separaten Standorten desselben Anbieters. Die KI-Inferenz läuft in der Schweiz auf eigenen GPUs von HeyEla und bei PHOENIQS (Phoenix Technologies AG, Pfäffikon SZ), mit Infomaniak als Fallback. Mistral AI in Paris ist als inaktive Notfall-Inferenzoption aufgeführt, und transaktionale E-Mails können im EWR verarbeitet werden.'
+      swiss.infrastructure.note: 'Bezieht sich auf Nine, das angibt, im Besitz der Mitarbeitenden zu sein. Die Eigentumsverhältnisse der Phoenix Technologies AG, die einen Teil der KI-Inferenz betreibt, wurden nicht verifiziert.'
+      alternativesTo.diligent-boards.note: 'Auf die Aufzeichnung von Sitzungen und das Verfassen von Protokollen mit KI ausgerichtet; Signaturen sind einfache elektronische Signaturen, und native Mobile-Apps werden nicht aufgeführt.'
+      alternativesTo.microsoft-copilot.note: 'Beschränkt auf Sitzungsprotokolle, Aufgaben und Dokumente von Verwaltungsräten und Gremien; kein allgemeiner Assistent für andere Microsoft-365-Apps.'
 ---
 
 HeyEla is a meeting platform for boards of directors, executive committees and

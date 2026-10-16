@@ -107,3 +107,7 @@ sources:
 i18n:
   de:
     description: 'Cloud-Anbieter aus Genf mit eigenen Rechenzentren in der Schweiz, der Webhosting, Cloud-Infrastruktur, Kollaborationstools und KI-Dienste anbietet. Seine Gruppenholding ist seit Oktober 2026 an der SIX Swiss Exchange kotiert.'
+    notes:
+      ownership.note: 'Im Mai 2026 übertrug Gründer Boris Siegenthaler die Mehrheit der Stimmrechte an die Infomaniak Foundation, eine gemeinnützige Schweizer Stiftung. Im September 2026 übernahm die an der SIX kotierte Perrot Duval Holding SA in einem Reverse Takeover 100 % der Infomaniak Group SA und wurde in Infomaniak SA umbenannt (Ticker INFO, Handel seit 1. Oktober 2026). Die Stiftung hält alle nicht kotierten, nicht übertragbaren Aktien der Klasse A und die Mehrheit der Stimmrechte; die kotierten Aktien der Klasse B verfügen über eine Minderheit der Stimmen. Auch der Gründer und rund 30 Mitarbeitende halten Aktien. Die Infomaniak Network SA ist die operative Gesellschaft und Vertragspartnerin der Gruppe; ihre Stellung unter der Infomaniak Group SA wird aus der gemeinsamen Adresse, der gemeinsamen Geschäftsleitung und Verweisen auf die Gruppe abgeleitet und ist in den konsultierten Quellen nicht ausdrücklich angegeben.'
+      ownership.parent: 'Infomaniak SA (kontrolliert von der Infomaniak Foundation)'
+      swissFounded.note: 'Infomaniak führt seine Anfänge auf 1994 in Genf zurück. Die operative Gesellschaft, die Infomaniak Network SA, ist seit dem 9. Januar 1996 im Handelsregister des Kantons Genf eingetragen.'

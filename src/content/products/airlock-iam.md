@@ -127,6 +127,12 @@ i18n:
   de:
     tagline: 'Identitäts- und Zugriffsmanagement für Kunden, selbst gehostet oder als in der Schweiz gehosteter Dienst.'
     description: 'Airlock IAM ist ein Produkt für Customer Identity and Access Management der Zürcher Ergon Informatik, betrieben auf Kundeninfrastruktur oder als Managed Cloud Service.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Ergon Informatik AG in Zürich.'
+      swiss.hosted.note: 'Airlock IAM wird meist auf einer vom Kunden oder einem Partner gewählten Infrastruktur installiert, der Hosting-Standort hängt daher vom Deployment ab. Das vom Anbieter betriebene Airlock IAM as a Service (seit April 2026) wird in der Schweiz gehostet; IT-Reseller berichtete unter Berufung auf Airlock, dass es in der Schweizer Region von Microsoft Azure läuft. Die untenstehenden Angaben zur Infrastruktur beziehen sich auf diese SaaS-Edition.'
+      openSource.note: 'Airlock IAM ist Teil der kommerziell lizenzierten Premium Edition. Nur Airlock Microgateway wird als kostenlose Community Edition angeboten.'
+      alternativesTo.auth0.note: 'Hauptsächlich vom Kunden installiert und betrieben; die verwaltete SaaS-Edition wurde im April 2026 lanciert und wird hauptsächlich über Partner verkauft.'
+      alternativesTo.okta.note: 'Eher auf Kundenidentitäten (cIAM) als auf Mitarbeiteridentitäten ausgerichtet.'
 ---
 
 Airlock IAM is a customer identity and access management (cIAM) product from

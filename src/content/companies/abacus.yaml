@@ -71,3 +71,6 @@ sources:
 i18n:
   de:
     description: 'Inhabergeführtes Softwareunternehmen in Wittenbach SG, gegründet 1985, das ERP- und Unternehmenssoftware für kleine und mittlere Organisationen entwickelt.'
+    notes:
+      ownership.note: 'Abacus bezeichnet sich als «inhabergeführtes», unabhängiges Schweizer Softwareunternehmen, dessen drei Gründer noch im Unternehmen tätig sind. Die Aktionärsstruktur wird nicht veröffentlicht. Die Gruppe beschäftigt rund 850 Personen, davon etwa 570 bei der Abacus Research AG.'
+      swissFounded.note: '1985 von drei Absolventen der Universität St. Gallen gegründet. Die heutige Aktiengesellschaft ist seit dem 29. Dezember 2003 im Handelsregister des Kantons St. Gallen eingetragen.'

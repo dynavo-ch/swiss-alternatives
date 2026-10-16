@@ -94,3 +94,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Softwareunternehmen, aus AdNovum ausgegliedert und seit 2020 eigenständig, das Produkte für Customer Identity and Access Management und Authentifizierung entwickelt.'
+    notes:
+      ownership.note: 'Das Handelsregister veröffentlicht keine Aktionäre. Als AdNovum Nevis im Dezember 2019 ausgliederte, berichtete IT-Reseller, dass die Nevis-Gruppe im Besitz der IHAG Holding bleibe, und der Bericht von KuppingerCole vom Oktober 2024 beschreibt Nevis weiterhin als privates Unternehmen im Besitz der IHAG Holding. Ein Investment Director der IHAG Holding sitzt im Verwaltungsrat von Nevis; Nevis bezeichnet IHAG als familiengeführte Unternehmensgruppe. Die IHAG Holding AG ist in Zürich eingetragen. Ein späterer Kontrollwechsel wurde nicht gefunden. Nevis hat Tochtergesellschaften in Deutschland (Berlin) und Ungarn (Budapest) sowie eine Niederlassung in London.'
+      swissFounded.note: 'Die NEVIS Security AG wurde am 13. Dezember 2019 im Handelsregister des Kantons Zürich eingetragen. Die Nevis-Security-Suite war zuvor ein Geschäftsbereich des Zürcher Softwareunternehmens AdNovum Informatik AG und ist seit Anfang 2020 ein eigenständiges Unternehmen.'

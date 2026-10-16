@@ -75,3 +75,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen, gegründet 2016, das die Eventmanagement-Software evenito für Corporate-Event-Teams entwickelt, mit einem weiteren Büro in Hamburg.'
+    notes:
+      ownership.note: 'In Privatbesitz; die Aktionärsstruktur wird nicht veröffentlicht. Die erste Finanzierungsrunde über CHF 1.7 Millionen (angekündigt im Februar 2020) stammte von mehreren nicht genannten Privatinvestoren. Die im Handelsregister eingetragenen Verwaltungsratsmitglieder sind Schweizer Staatsangehörige, darunter Markus Popp als Delegierter des Verwaltungsrats. Im Mai 2025 wurden die Statuten geändert, um der Gesellschaft zu erlauben, Verpflichtungen ihrer Aktionäre zu finanzieren oder sicherzustellen, und im August 2026 wurden zwei neue Verwaltungsratsmitglieder eingetragen. Eine Übernahme wurde in der Berichterstattung bis Oktober 2026 nicht gefunden.'
+      swissFounded.note: 'Die Evenito AG wurde im Dezember 2016 im Handelsregister des Kantons Zürich eingetragen; ihre Statuten datieren vom 18. November 2016.'

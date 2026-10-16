@@ -136,6 +136,12 @@ i18n:
   de:
     tagline: 'Cloud-Speicher mit Lifetime-Plänen und optionaler clientseitiger Verschlüsselung, Speicherung in EU oder USA.'
     description: 'pCloud ist ein Cloud-Speicher- und Dateifreigabedienst eines in Baar registrierten Unternehmens, mit Datenspeicherung in Luxemburg oder Texas und optionaler kostenpflichtiger Verschlüsselung.'
+    notes:
+      swiss.developed.note: 'pCloud wird von Sofia, Bulgarien, aus betrieben und wurde von einem bulgarischen Team entwickelt; die Schweizer Gesellschaften in Baar sind die rechtlichen Einheiten und Vertragspartner.'
+      swiss.hosted.note: 'Kunden wählen bei der Registrierung eine Speicherregion: Europäische Union (Luxemburg) oder USA (Dallas, Texas). Eine Schweizer Region wird nicht angeboten. Ein späterer Wechsel der Region kostet eine einmalige Gebühr.'
+      openSource.note: 'Die aktuellen Apps und der Dienst sind proprietär. pCloud veröffentlicht einige ältere Client-Komponenten, Dokumentation und Plugins auf GitHub.'
+      alternativesTo.google-drive.note: 'Kein integrierter Office-Dokumenteditor vergleichbar mit Google Docs.'
+      alternativesTo.onedrive.note: 'Keine Microsoft-365-Integration und keine gemeinsame Bearbeitung.'
 ---
 
 pCloud offers cloud storage with desktop sync, a virtual drive, mobile apps with

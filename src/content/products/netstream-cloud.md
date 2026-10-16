@@ -120,6 +120,14 @@ i18n:
   de:
     tagline: 'Virtuelle Rechenzentren, Managed Kubernetes, S3-Speicher und Backup aus Schweizer Rechenzentren.'
     description: 'Netstream Cloud bietet Unternehmen virtuelle Rechenzentren, Managed Kubernetes, S3-kompatiblen Objektspeicher und Backup aus Rechenzentren in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Netstream betreibt eine eigene OpenStack-Plattform für Kubernetes und betreibt alle Systeme mit einem eigenen Engineering-Team; das virtuelle Rechenzentrum basiert auf VMware Cloud Director, der Object Storage auf Cloudian HyperStore.'
+      swiss.hosted.note: 'Netstream gibt an, dass alle Dienste in der Schweiz betrieben und Systemdaten in eigenen Rechenzentren gespeichert und verarbeitet werden.'
+      swiss.infrastructure.note: 'Die letztlichen Aktionäre von Netstream werden nicht veröffentlicht, die Eigentumsverhältnisse des Infrastrukturbetreibers sind daher nicht verifiziert.'
+      sustainability.summary: 'Rechenzentrum und Büros in Dübendorf seit 2018 mit Solarstrom betrieben; prognostizierte PUE von 1,23.'
+      alternativesTo.aws.note: 'Umfasst virtuelle Maschinen, Kubernetes, S3-kompatiblen Speicher und Backup; verwaltete Datenbanken sind nicht Teil des veröffentlichten Portfolios.'
+      alternativesTo.microsoft-azure.note: 'Virtuelle Rechenzentren laufen auf VMware Cloud Director statt auf einer Hyperscaler-Plattform; nur für Unternehmen angeboten.'
+      alternativesTo.amazon-s3.note: 'Über den S3-kompatiblen Netstream Object Storage, mit Object Lock.'
 ---
 
 Netstream Cloud is the business cloud offering of Netstream, a Wallisellen-based

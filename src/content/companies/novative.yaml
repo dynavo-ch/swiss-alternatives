@@ -69,3 +69,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen für HR- und Lohnsoftware sowie Outsourcing in Nyon, gegründet 1993, das die HR-Plattform Nova Smart NG entwickelt und Kunden in rund 30 Ländern betreut.'
+    notes:
+      ownership.note: 'In Privatbesitz; die Aktionäre der SA werden nicht veröffentlicht, und die Website macht keine Angaben zu den Eigentumsverhältnissen. Handelsregisterpublikationen von 2023 bis Oktober 2026 verzeichnen nur eine Adressänderung und das Ausscheiden eines Verwaltungsratsmitglieds; in Registerpublikationen und Berichterstattung wurde keine Übernahme gefunden. Novative gibt an, 2020 Büros in Afrika eröffnet zu haben.'
+      swissFounded.note: 'Novative gibt an, 1993 in der Schweiz gegründet worden zu sein. Das Unternehmen war früher als Techsass SA eingetragen und verlegte seinen Sitz 2017 von Ballaigues nach Nyon.'

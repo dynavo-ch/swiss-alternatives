@@ -74,3 +74,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen in Rothenburg LU, gegründet 1988, das ERP-, CRM- und Onlineshop-Software für Handels- und Dienstleistungsunternehmen entwickelt und einen eigenen Cloud-Dienst betreibt.'
+    notes:
+      ownership.note: 'Opacc nennt als Aktionäre den Verwaltungsrat, die Gruppenleitung und Partner und bezeichnet ihre Finanzierung als eigenfinanziert. Es wird weder ein externer Investor noch eine Muttergesellschaft genannt; die Nationalität der Aktionäre wird nicht veröffentlicht. Das Unternehmen hat mehr als 200 Mitarbeitende, eine Schweizer Zweigniederlassung in Münchenstein BL und eine deutsche Niederlassung in Fürth.'
+      swissFounded.note: 'Am 4. Februar 1988 ins Handelsregister des Kantons Luzern eingetragen; es sind keine früheren Firmennamen verzeichnet.'

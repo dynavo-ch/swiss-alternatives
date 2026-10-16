@@ -120,6 +120,14 @@ i18n:
   de:
     tagline: 'Arbeits- und Projektzeiterfassung mit Absenzen, Spesen und Rechnungsstellung.'
     description: 'TimeStatement ist ein Cloud-Dienst zur Zeiterfassung aus Baar für Arbeitszeiten, Projekte, Absenzen und Spesen, mit Rechnungsstellung und kostenlosem Plan für Einzelnutzer.'
+    notes:
+      swiss.developed.note: 'Die TimeStatement AG bezeichnet sich als Schweizer Anbieterin und Entwicklerin von Zeiterfassungssoftware, gibt aber nicht an, wo ihr Entwicklungsteam arbeitet.'
+      swiss.hosted.note: 'Als teilweise erfasst, weil das internationale Angebot in der EU gehostet wird. Die Schweizer Preisseite nennt «hosted in Switzerland» für alle Pläne, und das Profil bei swiss made software ergänzt, dass andere Standorte auf Anfrage verfügbar sind; die internationale Website nennt Hosting in der EU. Der Hosting-Anbieter wird nicht genannt. Gemäss Datenschutzerklärung können sich Dienstleister wie Microsoft, Amazon und Google auch anderswo in Europa oder in den USA befinden.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Plan Starter, pro Benutzer und Monat bei jährlicher Abrechnung; CHF 5.90 bei monatlicher Abrechnung'
+      alternativesTo.toggl.note: 'Ergänzt Einhaltung des Schweizer Arbeitszeitrechts, Abwesenheitsverwaltung und Rechnungsstellung mit QR-Rechnungen.'
+      alternativesTo.harvest.note: 'Ergänzt Einhaltung des Schweizer Arbeitszeitrechts, Abwesenheitsverwaltung und Integrationen mit Schweizer Buchhaltungssoftware.'
+      alternativesTo.clockify.note: 'Ergänzt Einhaltung des Schweizer Arbeitszeitrechts, Abwesenheitsverwaltung und Integrationen mit Schweizer Buchhaltungssoftware.'
 ---
 
 TimeStatement is a cloud service for recording working hours, project time

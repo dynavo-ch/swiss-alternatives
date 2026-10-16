@@ -71,3 +71,6 @@ sources:
 i18n:
   de:
     description: 'Cloud-Anbieter aus Zug, gegründet 2016, der Public- und Private-Cloud-Infrastruktur, Kubernetes und Cloud-Backup aus Rechenzentren in der Schweiz anbietet.'
+    notes:
+      ownership.note: 'Gründer Michael Dudli ist Präsident des Verwaltungsrats und Mehrheitsaktionär, gemäss der Mitteilung des Unternehmens zum CEO-Wechsel im November 2025. Das Handelsregister führt ihn als Schweizer Staatsangehörigen.'
+      swissFounded.note: 'Offiziell 2016 als Xelon Hosting GmbH gegründet und 2019 in Xelon AG umbenannt; das Handelsregister führt Xelon Hosting GmbH als früheren Namen.'

@@ -111,6 +111,10 @@ i18n:
   de:
     tagline: 'Open-Source-Framework für Headless E-Commerce mit GraphQL-API, entwickelt in Zürich.'
     description: 'Unchained Engine ist ein Open-Source-Framework für Headless E-Commerce aus Zürich für Node.js und MongoDB, selbst gehostet oder vom Entwickler in der Schweiz betrieben.'
+    notes:
+      swiss.developed.note: 'Die Engine wird von der Unchained Commerce GmbH in Zürich entwickelt und gepflegt, die sie als Swiss made bezeichnet.'
+      swiss.hosted.note: 'Als selbst gehostete Software läuft die Engine dort, wo der Betreiber sie installiert; ein One-Click-Deployment auf Railway wird angeboten. Unchained Commerce gibt an, die Shops, die es für Kunden betreibt, in der Schweiz statt auf AWS, Google Cloud oder Azure zu hosten; der Rechenzentrumsbetreiber wird nicht genannt.'
+      alternativesTo.shopify.note: 'Ein Headless-Framework statt eines gehosteten Shop-Baukastens: Storefronts werden separat gebaut (eine Next.js-Vorlage wird bereitgestellt), und die Software wird selbst gehostet oder von Unchained Commerce betrieben, ohne Lizenz- oder Transaktionsgebühren.'
 ---
 
 Unchained Engine is an open-source e-commerce framework developed by

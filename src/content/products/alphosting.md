@@ -103,6 +103,12 @@ i18n:
   de:
     tagline: 'Webhosting, VPS, dedizierte Server und Zimbra-E-Mail auf Servern bei Lausanne.'
     description: 'AlpHosting ist ein von TiZoo in Crissier betriebener Webhosting-Anbieter mit PHP-, Java- und WordPress-Hosting, VPS, dedizierten Servern und E-Mail auf Servern in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Der Dienst wird von TiZoo in Crissier betrieben. Das Shared Hosting läuft auf dem Drittanbieter-Control-Panel cPanel und auf LiteSpeed-Webservern; eine eigene Softwareentwicklung wird nicht beschrieben.'
+      swiss.hosted.note: 'AlpHosting gibt an, dass alle Dateien in der Schweiz gespeichert und gesichert werden, ausser ein Kunde bestellt GeoHosting, das Kopien einer Website auf Servern in bis zu 11 weiteren Ländern ablegt.'
+      swiss.infrastructure.note: 'Das swiss made software-Profil des Unternehmens nennt BrainServe als Rechenzentrum (Stand August 2020); gemäss der Backup-Seite stehen die Server in der Nähe von Lausanne.'
+      pricing.startingPrice.note: 'MINI-Hosting (5 GB, 10 E-Mail-Konten, eine Domain inklusive), inkl. MWST; Preise können auch in EUR oder USD angezeigt werden'
+      alternativesTo.ionos.note: 'Deckt Shared Hosting, VPS und dedizierte Server ab; AlpHosting hat keine mit IONOS Cloud vergleichbare Public-Cloud-Plattform.'
 ---
 
 AlpHosting is the hosting brand of TiZoo, a small company founded in 2002 and

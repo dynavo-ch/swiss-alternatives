@@ -124,6 +124,13 @@ i18n:
   de:
     tagline: 'Windows-basierte ERP-Software für Schweizer KMU, von Buchhaltung und Lohn bis Lagerverwaltung.'
     description: 'Proffix Px5 ist modulare ERP-Software für Schweizer KMU mit Buchhaltung, Lohn, Auftragsbearbeitung und Lagerverwaltung. Sie läuft auf Windows und SQL Server.'
+    notes:
+      swiss.developed.note: 'Proffix gibt an, eine eigene Entwicklungsabteilung in der Schweiz zu haben. Gemäss der Datenschutzerklärung von Forterro können Mitarbeitende von Tochtergesellschaften der Gruppe in Indien, den Vereinigten Staaten und Marokko zu Supportzwecken Lesezugriff auf Daten haben.'
+      swiss.hosted.note: 'Proffix Px5 wird auf dem eigenen Windows-Server oder Arbeitsplatzrechner des Kunden installiert, sodass der Kunde entscheidet, wo die Daten liegen. Die Website von Proffix beschreibt die Software als «100% Swiss made & hosted», Proffix gibt jedoch an, kein natives Cloud-Produkt anzubieten; der Fernbetrieb auf einem Windows-Server wird vom Kunden oder von Proffix-Partnern eingerichtet, deren Rechenzentrumsstandorte von Proffix nicht veröffentlicht werden.'
+      openSource.note: 'Proprietäre lizenzierte Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Buchhaltungspaket (Finanz-, Debitoren- und Kreditorenbuchhaltung, Adressverwaltung), Nutzungsgebühr pro Benutzer und Monat bei 12-Monats-Vertrag; MWST-Behandlung nicht angegeben'
+      alternativesTo.sap.note: 'Vergleichbar mit SAP Business One für kleine Unternehmen; nur für Windows und auf den Schweizer Markt ausgerichtet.'
+      alternativesTo.microsoft-dynamics-365.note: 'Vergleichbar mit Business Central für kleine Unternehmen; nur für Windows und auf den Schweizer Markt ausgerichtet.'
 ---
 
 Proffix Px5 is modular ERP and business software for small and medium-sized

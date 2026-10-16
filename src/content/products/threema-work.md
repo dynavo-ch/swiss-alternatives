@@ -154,6 +154,15 @@ i18n:
   de:
     tagline: 'Verschlüsselter Business-Messenger mit zentraler Benutzerverwaltung und On-Premises-Option.'
     description: 'Threema Work ist die Business-Version des Messengers Threema mit zentraler Benutzerverwaltung, MDM-Unterstützung und API, betrieben auf den Servern von Threema in der Schweiz.'
+    notes:
+      swiss.developed.note: 'Threema gibt an, dass seine Apps in der Schweiz entwickelt werden.'
+      swiss.hosted.note: 'Der Cloud-Dienst läuft ausschliesslich auf eigenen Servern von Threema in Colocation-Rechenzentren im Raum Zürich. Mit Threema OnPrem hosten Organisationen den Server selbst an einem Standort ihrer Wahl.'
+      openSource.note: 'Die Client-Apps, einschliesslich der Build-Varianten Work und OnPrem, sind unter AGPL-3.0 veröffentlicht; der Server und das Management-Cockpit sind proprietär.'
+      pricing.startingPrice.note: 'Work Core, pro Benutzer und Monat, bei jährlicher Abrechnung; EUR- und USD-Preise werden eins zu eins umgerechnet'
+      alternativesTo.whatsapp.note: 'Ersetzt die Nutzung von WhatsApp für berufliche Chats durch zentral verwaltete Konten.'
+      alternativesTo.microsoft-teams.note: 'Umfasst nur Chat und Anrufe; keine Zusammenarbeit an Dokumenten, keine Sitzungsplanung und keine Integration mit Microsoft 365.'
+      alternativesTo.slack.note: 'Mobile-First-Messenger; kein kanalbasierter Workspace und kein mit Slack vergleichbarer Marktplatz für App-Integrationen.'
+      alternativesTo.workplace-from-meta.note: 'Umfasst Chat und Broadcast-Nachrichten an Mitarbeitende; kein News-Feed und keine Intranet-Funktionen.'
 ---
 
 Threema Work is the organisational edition of the Threema messenger, launched

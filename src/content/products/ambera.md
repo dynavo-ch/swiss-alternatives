@@ -140,6 +140,13 @@ i18n:
   de:
     tagline: 'Modulare Unternehmenssoftware für Schweizer KMU, von Offerten und Rechnungen bis zu Zeit und Lager.'
     description: 'ambera ist modulare, webbasierte Unternehmenssoftware aus Kleinlützel SO für Offerten, Rechnungen, Zeiterfassung, Projekte und Lager, gehostet in der Schweiz.'
+    notes:
+      swiss.developed.note: 'ambera gibt an, dass die Software von der AMBERA GmbH in der Schweiz entwickelt wird. Das Unternehmen ist inhabergeführt und hat seinen Sitz in Kleinlützel SO.'
+      swiss.hosted.note: 'ambera gibt an, dass die Anwendung in der Schweiz hergestellt und gehostet wird und die Daten dort bleiben; gemäss Datenschutzerklärung wird die Anwendung in der Schweiz entwickelt und betrieben, mit einer separaten Datenbank pro Kunde und zwei unabhängigen Server-Backups in der Schweiz (Infomaniak Swiss Backup und Acronis). Der Anbieter der Anwendungsserver wird nicht genannt. Cloudflare ist der Anwendung für TLS und DDoS-Schutz vorgeschaltet und verarbeitet Verbindungsdaten. Die Marketing-Website wird von METANET in Zürich gehostet.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Solo-Plan, ein Benutzerkonto, alle Module inbegriffen, exkl. MWST'
+      alternativesTo.freshbooks.note: 'Für Schweizer KMU mit QR-Rechnungen und Schweizer MWST entwickelt; führt die Buchhaltung nicht selbst, sondern exportiert nach Bexio, Abacus oder Banana.'
+      alternativesTo.harvest.note: 'Die Zeiterfassung ist ein Modul einer umfassenderen Geschäftsanwendung mit Kontakten, Offerten, Rechnungen, Projekten und Lager.'
 ---
 
 ambera is a browser-based business application for small Swiss businesses. It

@@ -74,3 +74,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Unternehmen, das Cloud-Software für Personalverleih- und Personalvermittlungsfirmen entwickelt und für diese Backoffice-Dienstleistungen in Lohn und Buchhaltung erbringt.'
+    notes:
+      ownership.note: 'In Privatbesitz; die Aktionäre der AG werden nicht veröffentlicht. Der im Juni 2026 im Handelsregister eingetragene Verwaltungsrat besteht aus Benjamin Leuzinger (Präsident), Thayaruban Selvarajah und Delil Yilmaz, alle Schweizer Staatsangehörige mit Wohnsitz in der Schweiz. Die Website führt Leuzinger, Selvarajah und Christian Pfleghart als Partner auf. In Registerpublikationen und Berichterstattung bis Oktober 2026 wurden keine Übernahme und kein externer Investor gefunden.'
+      swissFounded.note: 'Im März 2021 als Proaxive AG im Handelsregister des Kantons Zürich eingetragen; im Juli 2023 wurde das Unternehmen in Apriko AG umbenannt. Im Oktober 2026 wurde eine Zweigniederlassung in Basel eingetragen.'

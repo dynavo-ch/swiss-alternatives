@@ -72,3 +72,6 @@ sources:
 i18n:
   de:
     description: 'Unternehmen in Hergiswil (Nidwalden), das Friendly Analytics entwickelt und vertreibt, einen in der Schweiz gehosteten Webanalyse-Dienst auf Basis von Matomo.'
+    notes:
+      ownership.note: 'Gemäss Handelsregister werden sämtliche Stammanteile der GmbH von einem einzigen Gesellschafter gehalten, einem Schweizer Staatsbürger, der zugleich Geschäftsführer ist.'
+      swissFounded.note: 'Die Friendly GmbH wurde am 4. Januar 2021 im Handelsregister des Kantons Nidwalden eingetragen. Das Produkt Friendly Analytics wurde im März 2020 von der Digitalagentur Wortspiel angekündigt.'

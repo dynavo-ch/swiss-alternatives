@@ -134,6 +134,14 @@ i18n:
   de:
     tagline: 'Cloud-Buchhaltung, Rechnungsstellung und Zeiterfassung für Selbstständige in der Schweiz.'
     description: 'MILKEE ist Cloud-Buchhaltungssoftware aus Winterthur für Selbstständige und kleine Firmen, mit QR-Rechnungen, Zeiterfassung und einer App zum Scannen von Belegen.'
+    notes:
+      swiss.developed.note: 'MILKEE gibt an, dass die Software in Winterthur von einem kleinen Kernteam entwickelt wird, ergänzt durch Freelancer für Design, Entwicklung und Marketing.'
+      swiss.hosted.note: 'Als teilweise erfasst, weil sich die Datenschutzerklärung nur auf «primär» die Schweiz und die EU festlegt. MILKEE gibt an, dass Kundendaten in der Schweiz gehostet und verschlüsselt übertragen werden. Gemäss Datenschutzerklärung werden Personendaten primär in der Schweiz und der EU gespeichert und bearbeitet und können in andere Länder übermittelt werden, insbesondere in die USA. Der Hosting-Anbieter wird nicht genannt.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Basic-Plan (2 Benutzer, 120 KI-Belegscans pro Jahr), bei jährlicher Abrechnung, exkl. MWST; CHF 29.90 bei monatlicher Abrechnung'
+      alternativesTo.quickbooks.note: 'Für Schweizer Einzelunternehmen und GmbHs gebaut, mit einfacher Buchhaltung und QR-Rechnungen.'
+      alternativesTo.xero.note: 'Für Schweizer Einzelunternehmen und GmbHs gebaut, mit einfacher Buchhaltung und QR-Rechnungen.'
+      alternativesTo.freshbooks.note: 'Richtet sich an Schweizer Freelancer; ergänzt Schweizer MWST-Abrechnungen, QR-Rechnungen und Bankverbindungen zu Schweizer Banken.'
 ---
 
 MILKEE is a cloud accounting tool for self-employed people with a sole

@@ -59,3 +59,8 @@ sources:
 i18n:
   de:
     description: 'Nationale Forschungsinitiative, 2023 gestartet und gemeinsam von EPFL und ETH Zürich geleitet, mit dem Schweizerischen Nationalen Hochleistungsrechenzentrum (CSCS), die offene KI-Modelle wie Apertus entwickelt.'
+    notes:
+      headquarters.note: 'Die Initiative ist keine eigene juristische Person; sie wird gemeinsam von der EPFL (Lausanne) und der ETH Zürich (Zürich) geleitet, wobei das CSCS in Lugano die Rechenleistung bereitstellt. Lausanne wird angegeben, weil die EPFL als Inhaberin der Apertus-Website genannt ist; Zürich wäre ebenso vertretbar.'
+      ownership.note: 'Die Swiss AI Initiative ist das erste Projekt des Swiss National AI Institute, einer Partnerschaft des ETH AI Center und des EPFL AI Center. Sie wurde mit einem Beitrag von CHF 20 Millionen aus dem ETH-Bereich und mehr als 10 Millionen GPU-Stunden auf dem Supercomputer Alps am CSCS angeschoben. EPFL und ETH Zürich sind Eidgenössische Technische Hochschulen.'
+      ownership.parent: 'ETH-Bereich (EPFL und ETH Zürich)'
+      swissFounded.note: 'Im Dezember 2023 vom ETH AI Center und vom EPFL AI Center lanciert.'

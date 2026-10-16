@@ -197,6 +197,15 @@ i18n:
   de:
     tagline: 'KI-Chat-Assistent mit verschlüsseltem Chatverlauf, betrieben auf Proton-Servern in Europa.'
     description: 'Lumo ist der KI-Assistent von Proton. Er führt Open-Weight-Sprachmodelle auf von Proton kontrollierten Servern in Europa aus und speichert gesicherte Chats mit Zero-Access-Verschlüsselung.'
+    notes:
+      swiss.developed.note: 'Entwickelt von der Proton AG mit Firmensitz bei Genf. Die Datenschutzerklärung von Proton führt zudem Tochtergesellschaften in Nordmazedonien und Taiwan als Auftragsverarbeiter auf, und Proton betreibt ein F&E-Büro in Vilnius. Proton veröffentlicht nicht, wie die Entwicklungsarbeit auf die Standorte verteilt ist.'
+      swiss.hosted.note: 'Gemäss Protons Lancierungsbeitrag (Juli 2025) wird Lumo aus Protons europäischen Rechenzentren betrieben und ist das erste Produkt, das verlagert wird, während Proton den Grossteil seiner physischen Infrastruktur aus der Schweiz abzieht; als Grund nennt Proton die geplante Revision der Schweizer Überwachungsverordnung (VÜPF/OSCPT). CEO Andy Yen sagte der Nachrichtenagentur Keystone-SDA im Juli 2025, dass für die Server von Lumo Deutschland statt der Schweiz gewählt wurde und weitere Kapazitäten in Norwegen aufgebaut werden. Protons aktuelle Lumo-Seiten geben nur an, dass Lumo auf Servern in Europa läuft, die vollständig von Proton kontrolliert werden, und nennen keine Aufteilung nach Ländern. Betreiberin und Vertragspartnerin bleibt die Proton AG nach Schweizer Recht.'
+      swiss.infrastructure.note: 'Abgeleitet aus Protons Aussage, dass Lumo auf von Proton kontrollierten Servern in Europa läuft, sowie aus einem Bericht von watson.ch vom August 2026, wonach Proton gesicherte Flächen bei Rechenzentrumsbetreibern mietet, statt eigene Rechenzentren zu betreiben.'
+      openSource.note: 'Die Android- und iOS-Apps sowie der Web-Client (im Repository ProtonMail/WebClients) sind unter GPL-3.0 veröffentlicht. Der serverseitige Code ist nicht veröffentlicht; bei den Sprachmodellen handelt es sich um Open-Weight-Modelle von Dritten.'
+      pricing.startingPrice.note: 'Lumo Plus, monatliche Abrechnung (USD 119.88 pro Jahr bei jährlicher Abrechnung); Preise in CHF und EUR ebenfalls verfügbar'
+      alternativesTo.chatgpt.note: 'Nutzt Open-Weight-Modelle (etwa Qwen, GLM und Apertus) statt der eigenen Modelle von OpenAI.'
+      alternativesTo.google-gemini.note: 'Deckt den eigenständigen Chat-Assistenten ab, nicht die Integration in Google Workspace.'
+      alternativesTo.microsoft-copilot.note: 'Deckt den eigenständigen Chat-Assistenten ab, nicht die Integration in Microsoft 365.'
 ---
 
 Lumo is an AI chat assistant launched by Proton in July 2025. Proton lists the

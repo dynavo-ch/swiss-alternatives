@@ -116,6 +116,13 @@ i18n:
   de:
     tagline: 'Verwaltete Open-Source-Apps und private KI, auf eigenen Servern oder in einer Schweizer Region.'
     description: 'Pilae betreibt rund 40 Open-Source-Apps und private KI-Modelle für Organisationen, auf deren eigenen Servern oder auf dedizierten Maschinen in Zürich oder anderen Regionen.'
+    notes:
+      swiss.developed.note: 'Die Pilae SA hat ihren Sitz in Lausanne; wo Plattform und Agent entwickelt werden, wird nicht angegeben.'
+      swiss.hosted.note: 'Apps laufen standardmässig auf den eigenen Servern des Kunden oder auf dedizierten Maschinen in einer von 12 Pilae-Cloud-Regionen. Zürich ist die Region für Daten, die in der Schweiz bleiben müssen; Backups gehen an einen zweiten Standort in derselben Rechtsordnung.'
+      swiss.infrastructure.note: 'Pilae gibt an, dass Maschinen in Schweizer und EU-Regionen von europäischen Rechenzentrumsbetreibern in ISO 27001-zertifizierten Rechenzentren betrieben werden. Der öffentliche Netzwerk-Edge und der E-Mail-Versand nutzen einen Anbieter in US-Besitz.'
+      pricing.startingPrice.note: 'Paket Startup Stack für Start-ups, zuzüglich externer Nutzung; andere Pläne bestehen aus einem festen Onboarding-Preis und einem individuell offerierten Monatspreis pro verwalteter App'
+      alternativesTo.chatgpt.note: 'Private Chat-Assistenten wie Open WebUI oder LibreChat mit offenen Modellen, betrieben auf vom Kunden gewählter Infrastruktur.'
+      alternativesTo.microsoft-365.note: 'Teilweise; Pilae betreibt Open-Source-Kollaborationsapps wie Nextcloud, Collabora Online und Jitsi Meet, statt eine eigene Office-Suite zu entwickeln.'
 ---
 
 Pilae is a managed service from Pilae SA in Lausanne, founded in 2026, that

@@ -61,3 +61,6 @@ sources:
 i18n:
   de:
     description: 'Anbieter von Cloud- und DevOps-Managed-Services aus der Region Genf, gegründet 2016, der die Cloud-Plattform Hikube in drei Schweizer Rechenzentren betreibt.'
+    notes:
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht. Gründer Matthieu Robin ist CEO; eine Übernahme oder ein ausländischer Aktionär wurde nicht gemeldet.'
+      swissFounded.note: 'Hidora gibt an, 2016 in Genf von Matthieu Robin gegründet worden zu sein.'

@@ -84,6 +84,9 @@ i18n:
   de:
     tagline: 'Webhosting, Domains und Agentur-Server, betrieben auf eigener Hardware in Basel.'
     description: 'cyon ist ein Basler Webhosting-Anbieter mit Shared Hosting inklusive E-Mail, Domainregistrierung, Agentur-Servern und Managed Servern auf eigener Hardware in Basel.'
+    notes:
+      swiss.developed.note: 'Das cyon-Team in Basel entwickelt seine eigene Hosting-Software auf Basis von Open-Source-Frameworks.'
+      swiss.hosted.note: 'cyon betreibt eigene Server, Speicher und Netzwerk im Rechenzentrum der Basler Energieversorgerin IWB und gibt an, dass keine Public Clouds beteiligt sind.'
 ---
 
 cyon is a web hosting provider from Basel, founded in 2003. Its offering covers

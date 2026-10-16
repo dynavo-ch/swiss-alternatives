@@ -142,6 +142,11 @@ i18n:
   de:
     tagline: 'Plattform für sicheres Messaging, Video und Co-Browsing für Banken, Vermögensverwalter und Versicherer.'
     description: 'Unblu Spark ist eine Plattform für Kundenkommunikation aus Basel für Finanzinstitute, die sicheren Chat, Video, Co-Browsing und KI-Assistenten vereint.'
+    notes:
+      swiss.developed.note: 'Unblu hat seinen Hauptsitz in Basel, sein Team verteilt sich jedoch auf fünf Länder, mit zentralen Büros in Basel und Sofia (Bulgarien); wie die Entwicklungsarbeit auf die Standorte verteilt ist, wird nicht veröffentlicht.'
+      swiss.hosted.note: 'Die vom Anbieter betriebene Unblu Financial Cloud läuft auf der Google Cloud Platform in Regionen in Europa, Nordamerika und im asiatisch-pazifischen Raum, mit einer vom Kunden wählbaren Failover-Region, oder auf der IBM Financial Services Cloud. Die Option Unblu Swiss Sovereign Cloud läuft auf der Swiss Open Telekom Cloud, gehostet von der T-Systems Schweiz AG in zwei Rechenzentren in Zollikofen und Bern. Banken können Unblu auch auf ihrer eigenen Infrastruktur installieren. Die nachstehenden Infrastrukturangaben beziehen sich auf die Schweizer Option.'
+      openSource.note: 'Es wird kein Quellcode veröffentlicht; die Plattform wird kommerziell lizenziert.'
+      alternativesTo.intercom.note: 'Ausschliesslich für Banken, Vermögensverwalter und Versicherer entwickelt, mit authentifiziertem Messaging, Video und Co-Browsing, eingebettet in die eigenen Web- und Mobile-Apps des Instituts; kann auch selbst gehostet werden, bietet aber keine veröffentlichten Self-Service-Pläne.'
 ---
 
 Unblu Spark is a client communication platform developed by Basel-based unblu

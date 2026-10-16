@@ -76,3 +76,6 @@ sources:
 i18n:
   de:
     description: 'Zürcher Infrastructure-as-a-Service-Anbieter, gegründet 2014, der seine Cloud-Plattform in zwei Rechenzentren in der Schweiz betreibt.'
+    notes:
+      ownership.note: 'Der Schweizer Managed Service Provider Cyberlink AG erwarb im Dezember 2024 40% der Aktien. Die übrigen Aktionäre werden nicht veröffentlicht; 2019 gab der Gründer und CEO an, dass ausschliesslich Schweizer Privatpersonen in das Unternehmen investiert hätten. Es wurde kein ausländischer Aktionär gemeldet.'
+      swissFounded.note: 'Die cloudscale.ch AG wurde 2014 in Zürich gegründet.'

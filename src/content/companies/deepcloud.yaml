@@ -75,3 +75,6 @@ sources:
 i18n:
   de:
     description: 'Cloud-Softwareunternehmen aus Wittenbach, 2020 als Spin-off von Abacus Research gegründet, mit Diensten für Dokumentenaustausch, elektronische Signaturen und digitale Identität.'
+    notes:
+      ownership.note: 'DeepCloud bezeichnet die Abacus Research AG (Wittenbach SG) als Muttergesellschaft. Die genaue Beteiligung wird nicht veröffentlicht. Abacus bezeichnet sich als inhabergeführtes Schweizer Softwareunternehmen.'
+      swissFounded.note: 'Im Januar 2020 im Handelsregister eingetragen, mit Sitz in Biel/Bienne; im Dezember 2020 wurde der Sitz nach Wittenbach SG verlegt. DeepCloud bezeichnet sich als 2020 gegründetes Spin-off von Abacus.'

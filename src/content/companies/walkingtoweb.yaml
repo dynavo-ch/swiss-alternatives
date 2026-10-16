@@ -69,3 +69,6 @@ sources:
 i18n:
   de:
     description: 'Inhabergeführtes Zürcher Hosting-Unternehmen, eingetragen 2017, das verwaltete Server für Nextcloud, E-Mail mit Kerio Connect und Claris FileMaker auf eigener Hardware in Schweizer Rechenzentren betreibt.'
+    notes:
+      ownership.note: 'Gemäss Handelsregister sind die beiden Gesellschafter der GmbH deutsche Staatsangehörige: Geschäftsführer Thomas Hahn, wohnhaft in Zürich, hält 15 der 20 Stammanteile, und Johann Martin Dinges, wohnhaft in Berlin, hält 5. Als teilweise erfasst, weil der Mehrheitsgesellschafter in der Schweiz und der Minderheitsgesellschafter im Ausland wohnhaft ist. Das Unternehmen bezeichnet sich als inhabergeführt; es gibt keine Muttergesellschaft.'
+      swissFounded.note: 'Die walkingtoweb GmbH wurde im Juli 2017 im Handelsregister des Kantons Zürich eingetragen (Statuten vom 7. Juli 2017). Das Unternehmen gibt an, seit mehr als 30 Jahren Hosting-Dienstleistungen anzubieten; ein früheres Geschäft konnte im Handelsregister nicht identifiziert werden.'

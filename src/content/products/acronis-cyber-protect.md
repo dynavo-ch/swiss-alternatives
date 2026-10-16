@@ -133,6 +133,11 @@ i18n:
   de:
     tagline: 'Backup, Disaster Recovery und Endpoint-Schutz für Geräte und Server in Unternehmen.'
     description: 'Acronis Cyber Protect vereint Backup, Disaster Recovery und Malware-Schutz für Endgeräte, Server und Microsoft 365, verwaltet aus der Cloud oder On-Premises.'
+    notes:
+      swiss.developed.note: 'Acronis hat seinen Hauptsitz in Schaffhausen, seine Forschungs- und Entwicklungszentren befinden sich jedoch in Bulgarien, den USA, Israel und Singapur.'
+      swiss.hosted.note: 'Für 2026 nicht verifiziert. Kunden wählen die Rechenzentrumsregion von Acronis für Cloud-Backups. Acronis nahm 2016 ein Rechenzentrum in Zürich-West in Betrieb, das von einem Schweizer Rechenzentrumsanbieter betrieben wird, und führt die Schweiz seither unter seinen Rechenzentrumsländern auf. Die aktuellen Seiten zu Rechenzentren und Unterauftragsverarbeitern nennen keine Standorte, daher konnte die gegenwärtige Verfügbarkeit einer Schweizer Region nicht bestätigt werden. Acronis betreibt eigene Rechenzentren sowie Regionen auf Google Cloud und Microsoft Azure. Bei lokaler Bereitstellung können Backups und der Management-Server vollständig auf der Infrastruktur des Kunden verbleiben.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      pricing.startingPrice.note: 'Cyber Protect Standard, pro Gerät, Einstiegspreis'
 ---
 
 Acronis Cyber Protect is backup and endpoint security software for businesses

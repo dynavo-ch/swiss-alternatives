@@ -132,6 +132,13 @@ i18n:
   de:
     tagline: 'Ausgelagerte Online-Buchhaltung für Schweizer KMU, kombiniert mit eigener Buchhaltungssoftware.'
     description: 'Run my Accounts ist ein Dienst für ausgelagerte Online-Buchhaltung für Schweizer KMU, der Buchhaltungs- und Rechnungssoftware mit Buchführung durch das eigene Team kombiniert.'
+    notes:
+      swiss.developed.note: 'Die Teamseite führt ein Entwicklungsteam auf, nennt aber nicht dessen Standort. Der Open-Source-Buchhaltungskern ist im GitHub-Konto ledger123 als «SQL-Ledger customizations by Run My Accounts» veröffentlicht.'
+      swiss.hosted.note: 'Run my Accounts gibt an, dass Daten in der Schweiz gehalten werden, in Rechenzentren in Bern an zwei Standorten. Der Rechenzentrumsbetreiber wird nicht genannt. Gemäss Datenschutzerklärung werden Personendaten grundsätzlich in der Schweiz bearbeitet, können aber auch ins Ausland bekanntgegeben werden; Website-Tools wie HubSpot und Google Analytics beziehen US-Anbieter ein.'
+      openSource.note: 'Run my Accounts gibt an, dass seine Buchhaltungssoftware als Quellcode unter der GPL veröffentlicht ist und von Kunden installiert werden kann, die ihre Daten unabhängig halten möchten; sie basiert auf SQL-Ledger. Run my Accounts unterstützt keine selbst gehosteten Installationen. Komponenten des gehosteten Dienstes wie die Belegerkennung werden nicht als Open Source beschrieben.'
+      pricing.startingPrice.note: 'Paket S: keine monatliche Grundgebühr, CHF 1.80 pro verarbeitetem Element (Beleg, zusätzliche Zeile, Zahlung, Upload, Bankbuchung), exkl. MWST'
+      alternativesTo.quickbooks.note: 'Als Buchhaltungsdienstleistung mit inbegriffener Software verkauft; Neukunden können die Software nicht allein kaufen.'
+      alternativesTo.xero.note: 'Als Buchhaltungsdienstleistung mit inbegriffener Software verkauft; Neukunden können die Software nicht allein kaufen.'
 ---
 
 Run my Accounts combines online accounting software with an outsourced

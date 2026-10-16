@@ -137,6 +137,11 @@ i18n:
   de:
     tagline: 'E-Mail-Hosting mit Kalender und Kontakten, für kostenlose Adressen oder die eigene Domain.'
     description: 'Infomaniak Mail ist ein E-Mail-Dienst mit Kalender und Kontakten, angeboten als kostenlose Adressen oder kostenpflichtige Postfächer mit eigener Domain, von Infomaniak in der Schweiz gehostet.'
+    notes:
+      swiss.hosted.note: 'Infomaniak gibt an, dass Postfächer in zwei seiner Rechenzentren gespeichert werden und sich die Daten ausschliesslich in der Schweiz befinden.'
+      openSource.note: 'Die Android- und iOS-Apps sind Open Source unter GPL-3.0; Webmail und Mailserver sind nicht veröffentlicht.'
+      pricing.startingPrice.note: 'Mail Service für Adressen mit eigener Domain, Ab-Preis, exkl. MWST'
+      sustainability.summary: 'Infomaniak gibt an, dass seine Rechenzentren mit erneuerbarem Strom und ohne Klimaanlage betrieben werden und dass das Rechenzentrum D4 in Genf seine gesamte Abwärme ins Fernwärmenetz einspeist.'
 ---
 
 Infomaniak Mail is the email service behind both the free my kSuite addresses

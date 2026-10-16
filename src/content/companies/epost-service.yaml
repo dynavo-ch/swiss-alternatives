@@ -81,3 +81,7 @@ sources:
 i18n:
   de:
     description: 'Tochtergesellschaft der Schweizerischen Post mit Sitz in Luzern, früher KLARA Business AG, die die Unternehmenssoftware KLARA für KMU und die digitalen Postdienste von ePost entwickelt.'
+    notes:
+      ownership.note: 'KLARA bezeichnet die ePost Service AG als Tochtergesellschaft der Schweizerischen Post, die vollständig im Besitz der Schweizerischen Eidgenossenschaft ist. Die Post übernahm im September 2020 eine Mehrheit von 50,1% an der KLARA Business AG, nachdem sie seit 2018 9% gehalten hatte; die Gründer behielten 49,9%, und KLARA wurde als Joint Venture der Post und der Axon-Gruppe weitergeführt. Die aktuellen Anteile nach Kapitalerhöhungen im Jahr 2025 werden nicht veröffentlicht.'
+      ownership.parent: 'Schweizerische Post (Die Schweizerische Post AG)'
+      swissFounded.note: 'KLARA wurde 2016 als Tochtergesellschaft der Axon Management AG gegründet. Die Rechtseinheit wurde erstmals am 23. Dezember 1993 unter einem anderen Namen ins Handelsregister des Kantons Luzern eingetragen; frühere Namen sind unter anderem Prepress Center AG, Systempuls AG und KLARA Business AG. Den Namen ePost Service AG trägt sie seit 2024.'

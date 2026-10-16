@@ -104,6 +104,11 @@ i18n:
   de:
     tagline: 'Mobile Kommunikations- und Workflow-App für Frontline-Mitarbeitende, heute Teil von LumApps.'
     description: 'Beekeeper ist eine mobile App für Frontline-Mitarbeitende und Personal ohne Büroarbeitsplatz mit Messaging, Mitteilungen, Schichtplänen und Lohnabrechnungen; sie gehört seit 2025 zu LumApps.'
+    notes:
+      swiss.developed.note: 'Beekeeper wurde ursprünglich in Zürich entwickelt. Seit der Fusion 2025 baut LumApps schrittweise ein vereinheitlichtes Produkt; aktuelle Entwicklungsstandorte werden nicht veröffentlicht.'
+      swiss.hosted.note: 'Beekeeper gab früher an, dass Kunden die Datenspeicherung in der Schweiz, der EU oder den USA in ISO 27001-zertifizierten Rechenzentren wählen konnten. Seit der Fusion leitet beekeeper.io auf LumApps weiter, und es konnten keine aktuellen Angaben zu Hosting oder Unterauftragsverarbeitern von Beekeeper abgerufen werden.'
+      openSource.note: 'Proprietärer Cloud-Dienst; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.microsoft-teams.note: 'Auf Kommunikation und Arbeitsabläufe für Mitarbeitende ohne Büroarbeitsplatz ausgerichtet statt auf allgemeine Teamzusammenarbeit und Meetings.'
 ---
 
 Beekeeper is a mobile-first platform for frontline and deskless workers that

@@ -141,6 +141,12 @@ i18n:
   de:
     tagline: 'HR- und Lohnplattform mit Swissdec-zertifizierter Lohnabrechnung und Unterstützung mehrerer Länder.'
     description: 'Nova Smart NG ist eine HR- und Lohnplattform der Novative aus Nyon mit Swissdec-zertifizierter Schweizer Lohnabrechnung und Hosting in einem Swisscom-Rechenzentrum.'
+    notes:
+      swiss.developed.note: 'Novative beschreibt die Software als in der Schweiz entwickelt und gehostet. Das Unternehmen hat seit 2020 Büros in Afrika und gibt nicht an, wo seine Entwickler arbeiten.'
+      swiss.hosted.note: 'Die Website nennt ein Swisscom-Rechenzentrum und gibt an, dass alle Daten in Schweizer Rechenzentren gehostet werden. Die Datenschutzerklärung gilt nur für die Website und äussert sich nicht dazu, wo Kundendaten der HR-Plattform gespeichert werden.'
+      swiss.infrastructure.note: 'Ob Novative Server mietet oder eigene Hardware im Swisscom-Rechenzentrum per Colocation betreibt, wird nicht angegeben. Die Swisscom ist mehrheitlich im Besitz der Schweizerischen Eidgenossenschaft.'
+      openSource.note: 'Proprietäre Software; es wird kein Quellcode veröffentlicht.'
+      alternativesTo.personio.note: 'Swissdec-zertifizierte Schweizer Lohnabrechnung sowie Lohnabrechnung für mehrere Länder und Gesellschaften; auf grössere Arbeitgeber ausgerichtet, Preise nur auf Anfrage.'
 ---
 
 Nova Smart NG is an integrated HR and payroll system. Its modules cover

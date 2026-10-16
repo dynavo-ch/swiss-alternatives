@@ -72,3 +72,6 @@ sources:
 i18n:
   de:
     description: 'Softwareunternehmen aus Genf, gegründet 2014, das eine Plattform für CRM, Kunden-Onboarding und Portfoliomanagement für Banken und andere Finanzinstitute entwickelt.'
+    notes:
+      ownership.note: 'InvestGlass bezeichnet sich als «100% Swiss owned» und gibt an, dass die Familie Gaillard den Betrieb führt; Alexandre Gaillard ist einer der Gründer. Im Handelsregister ist keine Muttergesellschaft eingetragen, und die Aktionäre der SA werden nicht veröffentlicht.'
+      swissFounded.note: 'Am 12. März 2014 mit Sitz in Plan-les-Ouates im Handelsregister des Kantons Genf eingetragen; der Sitz wurde 2019 in die Stadt Genf verlegt.'
