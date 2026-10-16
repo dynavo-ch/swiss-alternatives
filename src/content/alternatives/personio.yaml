@@ -1,0 +1,9 @@
+name: Personio
+vendor: Personio SE & Co. KG
+vendorCountry: DE
+summary: HR software for small and medium-sized companies, with absence management and payroll.
+website: 'https://www.personio.com'
+categories: [payroll, time-tracking]
+i18n:
+  de:
+    summary: 'HR-Software für kleine und mittlere Unternehmen, mit Absenzenverwaltung und Lohnabrechnung.'

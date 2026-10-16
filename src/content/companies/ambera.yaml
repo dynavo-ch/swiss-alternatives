@@ -1,0 +1,69 @@
+name: AMBERA GmbH
+shortName: ambera
+type: company
+description: >-
+  Owner-managed software company in Kleinlützel SO, founded in Reinach BL in
+  2023, that develops ambera, a modular web-based business application for
+  Swiss SMEs.
+website: https://ambera.ch
+founded: 2023
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of Basel-Landschaft in July 2023 (articles
+    dated 22 June 2023) with its seat in Reinach BL. The seat moved to
+    Kleinlützel SO in April 2026.
+headquarters:
+  city: Kleinlützel
+  canton: SO
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-311.203.081
+  url: https://www.zefix.ch/en/search/entity/list/firm/1595828
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, the managing director Antoine de
+    Courten (Swiss citizen, place of origin Sierre) holds all 200 capital
+    contributions of CHF 100. ambera describes him as the owner.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: AMBERA GmbH — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1595828
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über ambera
+    url: https://ambera.ch/ueber-uns/
+    publisher: AMBERA GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum — ambera
+    url: https://ambera.ch/impressum/
+    publisher: AMBERA GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: ambera gmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/ambera-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Inhabergeführtes Softwareunternehmen in Kleinlützel SO, 2023 in Reinach BL gegründet, das ambera entwickelt, eine modulare webbasierte Unternehmensanwendung für Schweizer KMU.'

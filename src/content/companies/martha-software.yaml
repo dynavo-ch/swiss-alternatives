@@ -1,0 +1,68 @@
+name: Martha-Software GmbH
+shortName: Martha Software
+type: company
+description: >-
+  Software company in Gipf-Oberfrick (AG) that develops the amacos reporting app
+  for field work as well as software for pig breeding and livestock trading.
+website: https://masoft.ch
+headquarters:
+  city: Gipf-Oberfrick
+  canton: AG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-108.395.292
+  url: https://www.zefix.ch/en/search/entity/list/firm/367883
+ownership:
+  swissOwned: yes
+  parent: beeSnap GmbH
+  parentCountry: CH
+  basis: verified
+  source: zefix
+  note: >-
+    Since April 2025 the sole partner of the GmbH is beeSnap GmbH of Freienbach
+    (SZ), whose sole partner and managing director, Daniel Santos Ribeiro, is a
+    Portuguese citizen living in Freienbach; he is also managing director of
+    Martha-Software GmbH. Recorded as Swiss-owned because ownership runs
+    through a Swiss company to an owner resident in Switzerland. beeSnap took
+    over the capital shares previously held by Viktor and Claudia Schmid.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Martha-Software GmbH (CHE-108.395.292) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/367883
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: zefix-beesnap
+    title: beeSnap GmbH (CHE-271.952.748) - commercial register entry
+    url: https://www.zefix.ch/en/search/entity/list/firm/1592829
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - amacos
+    url: https://amacos.ch/de/impressum/
+    publisher: Martha-Software GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: contact
+    title: Ihre Ansprechpartner - amacos
+    url: https://amacos.ch/de/kontakt/ansprechpartner/
+    publisher: Martha-Software GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Martha Software GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/martha-software-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Gipf-Oberfrick (AG), das die Rapport-App amacos für Arbeiten im Aussendienst sowie Software für Schweinezucht und Viehhandel entwickelt.'

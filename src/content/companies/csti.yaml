@@ -1,0 +1,60 @@
+name: CSTI SA
+shortName: CSTI
+type: company
+description: >-
+  IT service provider in Thônex (Geneva), founded in 2009, offering hosting,
+  managed IT services, consulting and hardware sales to small and medium-sized
+  businesses.
+website: https://www.csti.ch
+founded: 2009
+swissFounded:
+  value: yes
+  basis: vendor
+  source: swissmadesoftware
+  note: >-
+    Founded in 2009 by two IT specialists; the company is run by Rémy Duchet and
+    Yves Oberhansli and has been based in the canton of Geneva since then.
+headquarters:
+  city: Thônex
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.686.964
+  url: https://www.zefix.ch/en/search/entity/list/firm/933895
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: swissmadesoftware
+  note: >-
+    CSTI describes itself as "a 100% Swiss SME" managed by its two founders.
+    Shareholders of an SA are not published in the commercial register; no sale
+    or acquisition has been reported.
+labels:
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: profile
+    title: 'CSTI SA : une expertise sur mesure pour la gestion des systèmes informatiques des entreprises'
+    url: https://www.csti.ch/about/news/2
+    publisher: CSTI SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: CSTI SA (CHE-114.686.964) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/933895
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: CSTI SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/csti-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Dienstleister in Thônex (Genf), gegründet 2009, mit Hosting, Managed IT Services, Beratung und Hardwareverkauf für kleine und mittlere Unternehmen.'

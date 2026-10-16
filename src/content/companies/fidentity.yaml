@@ -1,0 +1,76 @@
+name: fidentity AG
+shortName: fidentity
+type: company
+description: >-
+  Company based in Liebefeld near Bern, founded in 2016, that develops online
+  identity verification and qualified electronic signature services for banks
+  and other regulated businesses.
+website: https://fidentity.ch
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register in November 2016 as fidentity GmbH in
+    Kaufdorf (BE); converted into a company limited by shares (AG) in June 2021
+    and later moved its registered seat to Köniz.
+headquarters:
+  city: Köniz
+  canton: BE
+  country: CH
+  basis: verified
+  source: zefix
+  note: The business address is Waldeggstrasse 30, 3097 Liebefeld (municipality of Köniz).
+jurisdiction: CH
+registry:
+  uid: CHE-260.185.275
+  url: https://www.zefix.ch/en/search/entity/list/firm/1284316
+ownership:
+  swissOwned: unknown
+  basis: verified
+  source: zefix
+  note: >-
+    The shareholder register of a Swiss AG is not public. Thorsten Hau and
+    Edgar Spring, who have run the company since its registration, sit on the
+    board. On its conversion into an AG in 2021 the company took on external
+    investors, with the venture investor Spicehaus Partners as lead
+    investor (according to fidentity's milestones page); the register
+    shows three classes of preferred shares after a capital increase in
+    December 2023. All four current board members, including president
+    Benjamin Hirt, are Swiss citizens living in Switzerland. No controlling
+    parent company was found.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: fidentity AG (CHE-260.185.275) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1284316
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: company
+    title: Company - fidentity
+    url: https://fidentity.ch/en/company
+    publisher: fidentity AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - fidentity
+    url: https://fidentity.ch/en/imprint
+    publisher: fidentity AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: fidentity AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/fidentity-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen mit Sitz in Liebefeld bei Bern, gegründet 2016, das Dienste für Online-Identitätsprüfung und qualifizierte elektronische Signaturen für Banken und andere regulierte Unternehmen entwickelt.'

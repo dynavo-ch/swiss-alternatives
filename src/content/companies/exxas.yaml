@@ -1,0 +1,74 @@
+name: Exxas AG
+shortName: Exxas
+type: company
+description: >-
+  Software company in Schlieren ZH that develops and operates Exxas, a cloud
+  business platform for SMEs covering ERP, CRM, accounting and HR.
+website: https://www.exxas.net
+founded: 2020
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in April 2020 as
+    Exxas GmbH (articles dated 9 March 2020) and converted into Exxas AG in
+    May 2022. According to the company, the founders started the IT services
+    firm Exxo in 2009 and released the first version of Exxas in 2011, before
+    the product moved into its own company.
+headquarters:
+  city: Schlieren
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-253.259.046
+  url: https://www.zefix.ch/en/search/entity/list/firm/1432944
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    At founding in 2020 the partners were the co-founders Stefan Dettwiler
+    (150 of 200 capital contributions) and Pascal Jenni (50), both Swiss
+    citizens. When the GmbH was converted into an AG in 2022, the shares went to
+    the existing partners. Stefan Dettwiler chairs the board and Pascal Jenni is
+    a board member. The current shareholders are not published, and no parent
+    company or outside investor is named. The founders' former IT services
+    company, exxo it-services AG, was acquired by the Sequotech group in 2023;
+    Exxas presents it as a separate business, and the register shows no related
+    change at Exxas AG.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Exxas AG — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1432944
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Das Unternehmen hinter der Business Plattform - Exxas
+    url: https://www.exxas.net/unternehmen
+    publisher: Exxas AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Exxas
+    url: https://www.exxas.net/impressum
+    publisher: Exxas AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Exxas — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/exxas/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Schlieren ZH, das Exxas entwickelt und betreibt, eine Cloud-Unternehmensplattform für KMU mit ERP, CRM, Buchhaltung und HR.'

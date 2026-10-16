@@ -1,0 +1,74 @@
+name: libracore AG
+shortName: libracore
+type: company
+description: >-
+  IT services company in Saland (municipality of Bauma ZH) that implements,
+  hosts and extends the open-source ERP system ERPNext and maintains the
+  ERPNextSwiss localisation.
+website: https://www.libracore.com
+founded: 2017
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in July 2017 as
+    libracore GmbH (articles dated 29 June 2017) and converted into libracore
+    AG in July 2019.
+headquarters:
+  city: Bauma
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: The registered address is Bodenwis 22c, 8493 Saland, in the municipality of Bauma.
+jurisdiction: CH
+registry:
+  uid: CHE-209.526.054
+  url: https://www.zefix.ch/en/search/entity/list/firm/1313207
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    When libracore GmbH was converted into an AG in July 2019, all 100,000
+    registered shares went to the existing partners, Lars Müller (195 of 200
+    capital contributions) and Joël Mesmer (5), both Swiss citizens. Lars Müller
+    is chairman of the board and CEO; the board also includes Stefan Fink, an
+    Austrian citizen who runs the libracore customer Fink Zeitsysteme GmbH, and
+    Alfred Schneider. The current shareholders of the AG are not published, and
+    no parent company or outside investor is named.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: libracore AG — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1313207
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Ihr ERPNext Spezialist - libracore
+    url: https://www.libracore.com/ueber-uns/
+    publisher: libracore AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: privacy
+    title: Datenschutzerklärung - libracore
+    url: https://www.libracore.com/datenschutzerklaerung/
+    publisher: libracore AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: libracore AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/libracore-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Dienstleister in Saland (Gemeinde Bauma ZH), der das Open-Source-ERP-System ERPNext einführt, hostet und erweitert und die Lokalisierung ERPNextSwiss pflegt.'

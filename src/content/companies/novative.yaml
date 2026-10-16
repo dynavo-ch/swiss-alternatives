@@ -1,0 +1,71 @@
+name: Novative SA
+shortName: Novative
+type: company
+description: >-
+  HR and payroll software and outsourcing company in Nyon, founded in 1993,
+  that develops the Nova Smart NG HR platform and serves clients in about 30
+  countries.
+website: https://www.novative.com
+founded: 1993
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Novative states that it was founded in Switzerland in 1993. The company
+    was earlier registered as Techsass SA and moved its seat from Ballaigues
+    to Nyon in 2017.
+headquarters:
+  city: Nyon
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-107.457.134
+  url: https://www.zefix.ch/en/search/entity/list/firm/314974
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    Privately held; the shareholders of the SA are not published and the
+    website makes no statement about ownership. Register publications from
+    2023 to October 2026 record only an address change and the departure of a
+    board member; no acquisition was found in register publications or
+    reporting. Novative says it opened offices in Africa in 2020.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Novative SA (CHE-107.457.134) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/314974
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: À propos - Novative
+    url: https://www.novative.com/a-propos-rh-novative/
+    publisher: Novative SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: privacy
+    title: Politique de confidentialité - Novative
+    url: https://www.novative.com/politique-de-confidentialite-novative/
+    publisher: Novative SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Novative SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/novative-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen für HR- und Lohnsoftware sowie Outsourcing in Nyon, gegründet 1993, das die HR-Plattform Nova Smart NG entwickelt und Kunden in rund 30 Ländern betreut.'

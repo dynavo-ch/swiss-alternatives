@@ -1,0 +1,12 @@
+name: Onfido
+vendor: Entrust Corporation
+vendorCountry: US
+summary: >-
+  Automated identity verification with document checks and biometric liveness
+  detection, now sold by Entrust as Entrust Identity Verification.
+website: 'https://www.entrust.com/products/identity-verification'
+categories: [authentication]
+aliases: [entrust identity verification, onfido idv]
+i18n:
+  de:
+    summary: 'Automatisierte Identitätsprüfung mit Dokumentenprüfung und biometrischer Lebenderkennung, heute von Entrust als Entrust Identity Verification vertrieben.'

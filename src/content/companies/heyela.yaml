@@ -1,0 +1,72 @@
+name: HeyEla AI AG
+shortName: HeyEla
+type: company
+description: >-
+  Zurich-based software company founded in 2025 that develops HeyEla, a meeting
+  and minutes platform for boards of directors and executive committees.
+website: https://www.heyela.ai
+founded: 2025
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Incorporated in Zurich with articles dated 9 September 2025; the entry in
+    the commercial register of the canton of Zurich was published in the SOGC
+    on 16 September 2025.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-473.973.432
+  url: https://www.zefix.ch/en/search/entity/list/firm/1711312
+ownership:
+  swissOwned: unknown
+  basis: verified
+  source: zefix
+  note: >-
+    The shareholder register of a Swiss AG is not public. The three board
+    members entered in the register, including president Richard Lauper (named
+    as a co-founder on the vendor's website), are Swiss citizens living in
+    Switzerland. The share capital was
+    raised from CHF 100,000 to CHF 150,000 in July 2026 and conditional capital
+    was created; the investors are not named. No controlling parent company was
+    found.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: HeyEla AI AG (CHE-473.973.432) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1711312
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - HeyEla
+    url: https://www.heyela.ai/impressum
+    publisher: HeyEla AI AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: website
+    title: HeyEla - Your AI Board Assistant
+    url: https://www.heyela.ai/
+    publisher: HeyEla AI AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: HeyEla AI AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/heyela-ai-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, gegründet 2025, das HeyEla entwickelt, eine Plattform für Sitzungen und Protokolle von Verwaltungsräten und Geschäftsleitungen.'

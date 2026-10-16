@@ -1,0 +1,73 @@
+name: Dynasoft AG
+shortName: dynasoft
+type: company
+description: >-
+  Employee-owned software company in Solothurn that develops, implements and
+  operates the ERP suite tosca for trading, production and service companies in
+  Switzerland and Germany.
+website: https://www.dynasoft.ch
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    Registered as a public limited company (AG) with its seat in Solothurn. The
+    founding date is not stated on the website or in the register publications
+    available on Zefix; dynasoft states that it has more than 40 years of
+    experience with ERP software.
+headquarters:
+  city: Solothurn
+  canton: SO
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-103.067.219
+  url: https://www.zefix.ch/en/search/entity/list/firm/48350
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    dynasoft describes itself as an independent Swiss software company owned by
+    its employees: more than half of the staff hold shares, the main
+    shareholders are also the managing directors, and there are no external
+    investors. The board and management entered in the commercial register are
+    largely Swiss citizens. dynasoft has a branch in Frauenfeld; its German
+    location in Langenzenn near Nuremberg is run by a separate company,
+    dynasoft GmbH (HRB 20240, Nuremberg), whose shareholders are not stated.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Dynasoft AG — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/48350
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Unternehmen – tosca. ERP – dynasoft AG
+    url: https://www.dynasoft.ch/unternehmen/
+    publisher: Dynasoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum – tosca. ERP – dynasoft AG
+    url: https://www.dynasoft.ch/impressum/
+    publisher: Dynasoft AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: dynasoft AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/dynasoft-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Mitarbeiterbesitz in Solothurn, das die ERP-Suite tosca für Handels-, Produktions- und Dienstleistungsunternehmen in der Schweiz und in Deutschland entwickelt, einführt und betreibt.'

@@ -1,0 +1,71 @@
+name: walkingtoweb GmbH
+shortName: walkingtoweb
+type: company
+description: >-
+  Owner-managed Zurich hosting company, registered in 2017, that runs managed
+  Nextcloud, Kerio Connect e-mail and Claris FileMaker servers on its own
+  hardware in Swiss data centres.
+website: https://www.walkingtoweb.com
+founded: 2017
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    walkingtoweb GmbH was entered in the commercial register of the canton of
+    Zurich in July 2017 (articles dated 7 July 2017). The company says it has
+    offered hosting services for more than 30 years; an earlier business could
+    not be identified in the register.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-358.408.489
+  url: https://www.zefix.ch/en/search/entity/list/firm/1313940
+ownership:
+  swissOwned: partial
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, the two partners of the GmbH are
+    German citizens: managing director Thomas Hahn, who lives in Zürich, holds
+    15 of the 20 capital shares, and Johann Martin Dinges, who lives in Berlin,
+    holds 5. Recorded as partial because the majority partner is resident in
+    Switzerland and the minority partner abroad. The company describes itself
+    as owner-managed; there is no parent company.
+labels:
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: walkingtoweb GmbH (CHE-358.408.489) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1313940
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - walkingtoweb
+    url: https://www.walkingtoweb.com/de/walkingtoweb
+    publisher: walkingtoweb GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: partners
+    title: Unsere Partner - walkingtoweb
+    url: https://www.walkingtoweb.com/de/walkingtoweb/walkingtoweb-partner
+    publisher: walkingtoweb GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: walkingtoweb GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/walkingtoweb-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Inhabergeführtes Zürcher Hosting-Unternehmen, eingetragen 2017, das verwaltete Server für Nextcloud, E-Mail mit Kerio Connect und Claris FileMaker auf eigener Hardware in Schweizer Rechenzentren betreibt.'

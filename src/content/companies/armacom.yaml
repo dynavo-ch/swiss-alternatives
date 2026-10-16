@@ -1,0 +1,69 @@
+name: Armacom AG
+shortName: Armacom
+type: company
+description: >-
+  IT service provider in Pratteln (Basel-Landschaft), founded in 1997, offering IT
+  operations and outsourcing, Swiss-hosted cloud services and software development.
+website: https://www.armacom.ch
+founded: 1997
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Founded in 1997 as a GmbH in Reinach (BL) and converted into an AG two years
+    later; the company moved to Pratteln about ten years after that.
+headquarters:
+  city: Pratteln
+  canton: BL
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-108.549.891
+  url: https://www.zefix.ch/en/search/entity/list/firm/394626
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    According to the company, its name is formed from the name of its owner
+    (Inhaber), Markus Arpagaus. Shareholders of an AG are not published in the
+    commercial register. The register shows that Armacom absorbed its wholly
+    owned subsidiaries net-solution informatik ag, NetDefender GmbH (2021) and
+    Clinx GmbH (2022) by merger; no sale of Armacom itself has been reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: about
+    title: Über uns – Armacom
+    url: https://www.armacom.ch/unternehmen/ueber-uns
+    publisher: Armacom AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum – Armacom
+    url: https://www.armacom.ch/rechtliches/impressum
+    publisher: Armacom AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: Armacom AG (CHE-108.549.891) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/394626
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Armacom AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/armacom-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Dienstleister in Pratteln (Basel-Landschaft), gegründet 1997, mit IT-Betrieb und Outsourcing, in der Schweiz gehosteten Cloud-Diensten und Softwareentwicklung.'

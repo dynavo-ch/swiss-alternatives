@@ -1,0 +1,76 @@
+name: swiss moonshot AG
+shortName: aiaibot
+type: company
+description: >-
+  Dübendorf-based subsidiary of the Swiss POLYDATA group, founded in 2019, that
+  develops the aiaibot platform for chatbots, AI agents and e-mail automation.
+website: https://www.aiaibot.com
+founded: 2019
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Incorporated in Zurich with articles dated 12 June 2019; the registered
+    seat moved to Dübendorf in December 2020.
+headquarters:
+  city: Dübendorf
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-326.048.530
+  url: https://www.zefix.ch/en/search/entity/list/firm/1397305
+ownership:
+  swissOwned: unknown
+  parent: POLYDATA Aktiengesellschaft
+  parentCountry: CH
+  basis: vendor
+  source: history
+  note: >-
+    aiaibot describes swiss moonshot AG as a subsidiary of the POLYDATA group,
+    founded in 2019 for the aiaibot products. POLYDATA Aktiengesellschaft is a
+    holding company registered in Dübendorf (CHE-105.825.681); board member
+    Daniel Haller and authorised signatory Mark Hauri are entered in the
+    register for both companies. POLYDATA's own shareholders are not
+    published.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: swiss moonshot AG (CHE-326.048.530) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1397305
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: zefix-polydata
+    title: POLYDATA Aktiengesellschaft (CHE-105.825.681) - commercial register entry
+    url: https://www.zefix.ch/en/search/entity/list/firm/138194
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: history
+    title: Das aiaibot Team & unsere Geschichte
+    url: https://www.aiaibot.com/de/team-und-history
+    publisher: swiss moonshot AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - aiaibot
+    url: https://www.aiaibot.com/de/impressum
+    publisher: swiss moonshot AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: swiss moonshot AG / aiaibot — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/swiss-moonshot-ag-aiaibot/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Tochtergesellschaft der Schweizer POLYDATA-Gruppe mit Sitz in Dübendorf, gegründet 2019, die die Plattform aiaibot für Chatbots, KI-Agenten und E-Mail-Automatisierung entwickelt.'

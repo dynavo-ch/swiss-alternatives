@@ -4,6 +4,26 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "aiaibot": {
+    "source": "https://www.google.com/s2/favicons?domain=www.aiaibot.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "alphosting": {
+    "source": "https://www.google.com/s2/favicons?domain=www.alphosting.ch&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "amacos": {
+    "source": "https://amacos.ch/amacos-wGlobal/wGlobal/layout/images/site-icons/amacos-favicon-152x152.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "ambera": {
+    "source": "https://ambera.ch/wp-content/themes/ambera/assets/img/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "anytype": {
     "source": "https://anytype.io/android-chrome-512x512.png",
     "method": "manifest 512x512",
@@ -18,6 +38,11 @@
     "source": "https://www.google.com/s2/favicons?domain=www.appuio.ch&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-15"
+  },
+  "apriko": {
+    "source": "https://apriko.com/en/wp-content/uploads/sites/3/2024/04/apple-touch-icon-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
   },
   "banana-accounting": {
     "source": "https://www.banana.ch/themes/custom/bootstrap_sass_banana/images/favicons/Banana_apple_touchicon60x60.png",
@@ -60,24 +85,44 @@
     "fetched": "2026-10-15"
   },
   "cloudsigma": {
-    "source": "https://www.google.com/s2/favicons?domain=www.cloudsigma.com&sz=256",
-    "method": "favicon service",
-    "fetched": "2026-10-15"
+    "source": "manual/cloudsigma.webp",
+    "method": "manual",
+    "fetched": "2026-10-16"
   },
   "company--acronis": {
     "source": "https://www.acronis.com/public/favicon/favicon.svg",
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--alphasys": {
+    "source": "https://cdn.prod.website-files.com/683d589885929f51355c6540/68bb0dcc0ce674b79c524da9_alp_webclip.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--alpineai": {
     "source": "https://772ac846.delivery.rocketcdn.me/wp-content/uploads/2025/06/Favicon-300x300.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-15"
   },
+  "company--ambera": {
+    "source": "https://ambera.ch/wp-content/themes/ambera/assets/img/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--any-association": {
     "source": "https://anytype.io/android-chrome-512x512.png",
     "method": "manifest 512x512",
     "fetched": "2026-10-15"
+  },
+  "company--apriko": {
+    "source": "https://apriko.com/en/wp-content/uploads/sites/3/2024/04/apple-touch-icon-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--armacom": {
+    "source": "https://www.google.com/s2/favicons?domain=www.armacom.ch&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
   },
   "company--banana": {
     "source": "https://www.banana.ch/themes/custom/bootstrap_sass_banana/images/favicons/Banana_apple_touchicon60x60.png",
@@ -120,9 +165,14 @@
     "fetched": "2026-10-15"
   },
   "company--cloudsigma": {
-    "source": "https://www.google.com/s2/favicons?domain=www.cloudsigma.com&sz=256",
+    "source": "manual/company--cloudsigma.webp",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
+  "company--csti": {
+    "source": "https://www.google.com/s2/favicons?domain=www.csti.ch&sz=256",
     "method": "favicon service",
-    "fetched": "2026-10-15"
+    "fetched": "2026-10-16"
   },
   "company--cyon": {
     "source": "https://www.cyon.ch/apple-touch-icon.png",
@@ -149,6 +199,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--dynasoft": {
+    "source": "https://www.dynasoft.ch/wp-content/uploads/2022/10/cropped-tosca_favicon-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--epost-service": {
     "source": "https://www.google.com/s2/favicons?domain=www.epost.ch&sz=256",
     "method": "favicon service",
@@ -169,6 +224,16 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--exxas": {
+    "source": "https://cdn.prod.website-files.com/66fab42a1422b41e45f941e0/67ceb5273a28462cd439d792_512_favicon_ex_white.gif",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--fidentity": {
+    "source": "https://fidentity.ch/icons/favicon/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--flow-swiss": {
     "source": "https://www.google.com/s2/favicons?domain=flow.swiss&sz=256",
     "method": "favicon service",
@@ -183,6 +248,11 @@
     "source": "https://www.futurae.com/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
+  },
+  "company--heyela": {
+    "source": "https://www.heyela.ai/icon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
   },
   "company--hidora": {
     "source": "https://hidora.io/apple-icon.png?apple-icon.3oqibl6f96tik.png",
@@ -207,6 +277,16 @@
   "company--investglass": {
     "source": "https://www.investglass.com/wp-content/uploads/2022/06/investglass-round.png",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--libracore": {
+    "source": "https://www.libracore.com/wp-content/uploads/2026/06/cropped-libracore_ac_250x250-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--lourens-systems": {
+    "source": "manual/company--lourens-systems.png",
+    "method": "manual",
     "fetched": "2026-10-16"
   },
   "company--magnolia": {
@@ -249,6 +329,11 @@
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
   },
+  "company--novative": {
+    "source": "https://www.novative.com/wp-content/themes/novative/Assets/Icons/favicon-96.png",
+    "method": "icon 96px",
+    "fetched": "2026-10-16"
+  },
   "company--opacc": {
     "source": "https://www.opacc.ch/frontend/favicon/safari-pinned-tab.svg",
     "method": "svg icon",
@@ -258,6 +343,11 @@
     "source": "https://www.google.com/s2/favicons?domain=www.open-systems.com&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-15"
+  },
+  "company--oriented-net": {
+    "source": "https://www.google.com/s2/favicons?domain=oriented.net&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
   },
   "company--pcloud": {
     "source": "https://pcdn-www.pcloud.com/ZWqZ4/images/favicons/apple-icon-180x180.png",
@@ -289,6 +379,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--sedion": {
+    "source": "https://www.sedion.ch/templates/t4_bs5_blank/local/images/favicons/safari-pinned-tab.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--session": {
     "source": "https://session.foundation/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
@@ -304,6 +399,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--solodesk": {
+    "source": "https://solodesk.ch/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--suiteify-service": {
     "source": "https://www.runmyaccounts.ch/wp-content/uploads/2024/12/cropped-Favicon-RMA-180x180.jpg",
     "method": "apple-touch-icon",
@@ -313,6 +413,11 @@
     "source": "https://static.wixstatic.com/media/a4c5cd_88a29f649c544ede9e02e755c510aab4%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/a4c5cd_88a29f649c544ede9e02e755c510aab4%7Emv2.png",
     "method": "apple-touch-icon",
     "fetched": "2026-10-15"
+  },
+  "company--swiss-moonshot": {
+    "source": "https://www.google.com/s2/favicons?domain=www.aiaibot.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
   },
   "company--swisscows": {
     "source": "https://swisscows.com/favicon-192.png",
@@ -332,6 +437,11 @@
   "company--timestatement": {
     "source": "https://timestatement.com/public/tstouch.png",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--tizoo": {
+    "source": "https://www.google.com/s2/favicons?domain=www.alphosting.ch&sz=256",
+    "method": "favicon service",
     "fetched": "2026-10-16"
   },
   "company--topal": {
@@ -359,6 +469,11 @@
     "method": "favicon service",
     "fetched": "2026-10-15"
   },
+  "company--walkingtoweb": {
+    "source": "https://www.walkingtoweb.com/media/site/e076d38923-1789650412/walkingtoweb-180x-crop.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--xelon": {
     "source": "https://www.google.com/s2/favicons?domain=www.xelon.ch&sz=256",
     "method": "favicon service",
@@ -366,6 +481,16 @@
   },
   "company--xorlab": {
     "source": "https://www.google.com/s2/favicons?domain=www.xorlab.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "csti": {
+    "source": "https://www.google.com/s2/favicons?domain=www.csti.ch&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "customercore": {
+    "source": "https://www.google.com/s2/favicons?domain=customercore.ch&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-16"
   },
@@ -414,6 +539,16 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "exxas": {
+    "source": "https://cdn.prod.website-files.com/66fab42a1422b41e45f941e0/67ceb5273a28462cd439d792_512_favicon_ex_white.gif",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "fidentity": {
+    "source": "https://fidentity.ch/icons/favicon/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "flow-swiss": {
     "source": "https://www.google.com/s2/favicons?domain=flow.swiss&sz=256",
     "method": "favicon service",
@@ -428,6 +563,11 @@
     "source": "https://www.futurae.com/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
+  },
+  "heyela": {
+    "source": "https://www.heyela.ai/icon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
   },
   "hikube": {
     "source": "https://hikube.cloud/icon.svg?icon.2zo0j6m0hp1ez.svg",
@@ -489,6 +629,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-15"
   },
+  "libracore-erp": {
+    "source": "https://www.libracore.com/wp-content/uploads/2026/06/cropped-libracore_ac_250x250-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "lumo": {
     "source": "https://lumo.proton.me/assets/static/favicon.c3c7c9e00e0d5ffdc91f.svg",
     "method": "svg icon",
@@ -519,6 +664,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "netfolio-crm": {
+    "source": "https://cdn.prod.website-files.com/683d589885929f51355c6540/68bb0dcc0ce674b79c524da9_alp_webclip.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "netstream-cloud": {
     "source": "https://netstream.ch/android-chrome-512x512.png",
     "method": "manifest 512x512",
@@ -534,6 +684,11 @@
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
   },
+  "nova-smart-ng": {
+    "source": "https://www.novative.com/wp-content/themes/novative/Assets/Icons/favicon-96.png",
+    "method": "icon 96px",
+    "fetched": "2026-10-16"
+  },
   "opacc-erp": {
     "source": "https://www.opacc.ch/frontend/favicon/safari-pinned-tab.svg",
     "method": "svg icon",
@@ -543,6 +698,11 @@
     "source": "https://www.google.com/s2/favicons?domain=www.open-systems.com&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-15"
+  },
+  "oriented-net": {
+    "source": "https://www.google.com/s2/favicons?domain=oriented.net&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
   },
   "pcloud": {
     "source": "https://pcdn-www.pcloud.com/ZWqZ4/images/favicons/apple-icon-180x180.png",
@@ -604,6 +764,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "sedion-backup": {
+    "source": "https://www.sedion.ch/templates/t4_bs5_blank/local/images/favicons/safari-pinned-tab.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "session": {
     "source": "https://getsession.org/safari-pinned-tab.svg",
     "method": "svg icon",
@@ -619,6 +784,16 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "smallinvoice": {
+    "source": "manual/smallinvoice.png",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
+  "solodesk": {
+    "source": "https://solodesk.ch/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "subsign": {
     "source": "https://www.subsign.ch/favicon.svg",
     "method": "svg icon",
@@ -632,6 +807,11 @@
   "swiss-newsletter": {
     "source": "https://www.swissnewsletter.ch/android-chrome-512x512.png",
     "method": "manifest 512x512",
+    "fetched": "2026-10-16"
+  },
+  "swissbackupcloud": {
+    "source": "https://www.google.com/s2/favicons?domain=www.armacom.ch&sz=256",
+    "method": "favicon service",
     "fetched": "2026-10-16"
   },
   "swisscows": {
@@ -674,6 +854,11 @@
     "method": "manifest 192x192",
     "fetched": "2026-10-16"
   },
+  "tosca-erp": {
+    "source": "https://www.dynasoft.ch/wp-content/uploads/2022/10/cropped-tosca_favicon-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "tresorit": {
     "source": "https://tresorit.com/hubfs/tresorit-favicon.svg",
     "method": "svg icon",
@@ -687,6 +872,16 @@
   "unchained-engine": {
     "source": "https://unchained.shop/img/apple-icon.png",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "walkingtoweb-nextcloud": {
+    "source": "https://www.walkingtoweb.com/media/site/e076d38923-1789650412/walkingtoweb-180x-crop.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "woelkli": {
+    "source": "https://woelkli.com/apple-touch-icon.png",
+    "method": "/apple-touch-icon.png",
     "fetched": "2026-10-16"
   },
   "xelon-cloud": {

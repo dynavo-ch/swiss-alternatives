@@ -1,0 +1,69 @@
+name: oriented.net GmbH
+shortName: oriented.net
+type: company
+description: >-
+  Managed hosting and server provider in Basel, founded in 2002, focused on Linux
+  and open-source software and operating its own data centre in Basel.
+website: https://oriented.net
+founded: 2002
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Founded in summer 2002 through the merger of two smaller companies, Net
+    Oriented and Pentragon.Net. The register lists the former name "oriented.net
+    Bigler & Jaeggi".
+headquarters:
+  city: Basel
+  canton: BS
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-110.474.156
+  url: https://www.zefix.ch/en/search/entity/list/firm/733065
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    The company describes itself as "a 100% Swiss company". The commercial
+    register lists Marc Bigler, a Swiss citizen, as partner and managing director
+    with two capital contributions of CHF 10,000; co-founder Dominique Jaeggi
+    left the company in December 2022. No acquisition has been reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: about
+    title: About – oriented.net
+    url: https://oriented.net/company/about
+    publisher: oriented.net GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: contact
+    title: Contact us – oriented.net
+    url: https://oriented.net/company/contact
+    publisher: oriented.net GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: oriented.net GmbH (CHE-110.474.156) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/733065
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: oriented.net GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/oriented.net-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Anbieter von Managed Hosting und Servern in Basel, gegründet 2002, mit Schwerpunkt auf Linux und Open-Source-Software und eigenem Rechenzentrum in Basel.'

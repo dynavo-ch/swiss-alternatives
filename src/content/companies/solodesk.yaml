@@ -1,0 +1,69 @@
+name: Solodesk Sàrl
+shortName: SoloDesk
+type: company
+description: >-
+  Software company in Vernier GE, founded in 2026, that develops SoloDesk,
+  an accounting and invoicing service for Swiss sole proprietors, small
+  businesses and fiduciaries.
+website: https://solodesk.ch
+founded: 2026
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Geneva in July 2026
+    (articles dated 22 June 2026). The founder states that SoloDesk builds on
+    the core of LedgerPeek and on twelve years of experience running an
+    accounting practice.
+headquarters:
+  city: Vernier
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-405.886.543
+  url: https://www.zefix.ch/en/search/entity/list/firm/1758391
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the founding entry in the commercial register, the sole
+    partner and managing director, Oleksiy Chubatyuk (Swiss citizen, place of
+    origin Versoix), holds all 200 capital contributions of CHF 100. No
+    investors are named.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Solodesk Sàrl — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1758391
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About SoloDesk
+    url: https://solodesk.ch/en-ch/about
+    publisher: Solodesk Sàrl
+    kind: vendor
+    accessed: 2026-10-16
+  - id: privacy
+    title: Privacy Policy - SoloDesk
+    url: https://solodesk.ch/en-ch/privacy-policy
+    publisher: Solodesk Sàrl
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Solodesk Sàrl — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/solodesk-s-rl/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Vernier GE, gegründet 2026, das SoloDesk entwickelt, einen Buchhaltungs- und Rechnungsdienst für Schweizer Einzelunternehmen, Kleinunternehmen und Treuhandbüros.'

@@ -1,0 +1,9 @@
+name: Bullhorn
+vendor: Bullhorn, Inc.
+vendorCountry: US
+summary: Software for staffing and recruitment agencies, from applicant tracking to payroll and billing.
+website: 'https://www.bullhorn.com'
+categories: [crm, payroll]
+i18n:
+  de:
+    summary: 'Software für Personaldienstleister und Personalvermittler, von der Bewerberverwaltung bis zu Lohnabrechnung und Fakturierung.'

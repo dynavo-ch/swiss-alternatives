@@ -1,0 +1,72 @@
+name: Sedion AG
+shortName: Sedion
+type: company
+description: >-
+  Central Swiss cybersecurity company with offices in Cham that offers an
+  additional off-site backup of critical company data stored in a former
+  military bunker.
+website: https://www.sedion.ch
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    The current legal entity was registered in Lucerne as codeBase GmbH, later
+    Codebase AG. In 2024 it absorbed the original Sedion AG of Ennetbürgen
+    (CHE-485.497.177) by merger, took over its name and moved its seat to
+    Ennetbürgen.
+headquarters:
+  city: Ennetbürgen
+  canton: NW
+  country: CH
+  basis: verified
+  source: zefix
+  note: The register lists a further address at Hammergut 9, 6330 Cham (ZG), which the company uses as its office.
+jurisdiction: CH
+registry:
+  uid: CHE-113.836.066
+  url: https://www.zefix.ch/en/search/entity/list/firm/885317
+ownership:
+  swissOwned: unknown
+  basis: verified
+  source: zefix
+  note: >-
+    Shareholders of an AG are not published. Since September 2024 the board is
+    chaired by managing director Alexander Huser; the four board members named
+    in that register entry are Swiss citizens. Before the 2024 merger, Codebase
+    AG held all shares of the original Sedion AG. No foreign shareholder has
+    been reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: company
+    title: Unternehmen – Sedion
+    url: https://www.sedion.ch/unternehmen
+    publisher: Sedion AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum – Sedion
+    url: https://www.sedion.ch/impressum
+    publisher: Sedion AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: Sedion AG (CHE-113.836.066) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/885317
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Sedion AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/sedion-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Cybersicherheitsunternehmen aus der Zentralschweiz mit Büros in Cham, das ein zusätzliches externes Backup kritischer Unternehmensdaten in einem ehemaligen Militärbunker anbietet.'

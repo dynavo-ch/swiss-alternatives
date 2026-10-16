@@ -1,0 +1,67 @@
+name: Coresection GmbH
+shortName: Coresection
+type: company
+description: >-
+  Zurich-based software company founded in 2016 that develops CustomerCore,
+  a cloud business software for Swiss small and medium-sized companies.
+website: https://www.coresection.ch
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in November
+    2016. The seat moved to Gontenschwil (AG) in 2022 and back to Zurich in
+    2023.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-285.365.830
+  url: https://www.zefix.ch/en/search/entity/list/firm/1283507
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, managing director Rehan Beg Mirza, a
+    Swiss citizen resident in Zurich, holds all 200 capital contributions of
+    CHF 100 of the GmbH. From 2018 to 2022 they were held by Mohammad Mirza,
+    also a Swiss citizen.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Coresection GmbH (CHE-285.365.830) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1283507
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - CustomerCore
+    url: https://customercore.ch/ueber-uns
+    publisher: Coresection GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - CustomerCore
+    url: https://customercore.ch/impressum
+    publisher: Coresection GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Coresection GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/coresection-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, gegründet 2016, das CustomerCore entwickelt, eine Cloud-basierte Unternehmenssoftware für kleine und mittlere Schweizer Unternehmen.'

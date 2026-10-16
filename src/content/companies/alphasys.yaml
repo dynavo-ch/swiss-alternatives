@@ -1,0 +1,72 @@
+name: Alphasys AG
+shortName: Alphasys
+type: company
+description: >-
+  Winterthur-based software company founded in 2003 that develops the Netfolio
+  portfolio management and CRM software for asset managers.
+website: https://www.alphasys.ch
+founded: 2003
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Alphasys states that it was founded in 2003 by Andreas Bachmann and
+    Fabrizio De Ambroggi. The company was registered as Alphasys IT Services
+    AG and renamed Alphasys AG in 2019, when it also moved to its current
+    address in Winterthur.
+headquarters:
+  city: Winterthur
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-110.352.501
+  url: https://www.zefix.ch/en/search/entity/list/firm/731051
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    Alphasys states that it is wholly owned by its founders and management and
+    has not taken outside investors. The shareholders of the AG are not
+    published. In October 2026 Lukas Bachmann and Rafael Umbricht, both Swiss
+    citizens resident in the canton of Zurich, were entered in the commercial
+    register as board members. No acquisition was found in register
+    publications up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Alphasys AG (CHE-110.352.501) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/731051
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - Alphasys AG
+    url: https://www.alphasys.ch/about
+    publisher: Alphasys AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Alphasys AG
+    url: https://www.alphasys.ch/impressum
+    publisher: Alphasys AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Alphasys AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/alphasys-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Winterthur, gegründet 2003, das die Portfoliomanagement- und CRM-Software Netfolio für Vermögensverwalter entwickelt.'

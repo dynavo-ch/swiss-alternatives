@@ -1,0 +1,62 @@
+name: TiZoo sàrl
+shortName: TiZoo
+type: company
+description: >-
+  Small hosting company in Crissier near Lausanne, founded in 2002, that runs the
+  web hosting brand AlpHosting.
+website: https://www.alphosting.ch
+founded: 2002
+swissFounded:
+  value: yes
+  basis: vendor
+  source: swissmadesoftware
+  note: >-
+    The company states that it was founded in 2002 and has offered hosting under
+    the AlpHosting name since 2004. Its registered seat was in Hauterive (NE)
+    until it moved to Crissier (VD) in 2020.
+headquarters:
+  city: Crissier
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-109.596.723
+  url: https://www.zefix.ch/en/search/entity/list/firm/675733
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Since March 2020 the commercial register lists Florian Blaser, resident in
+    Crissier, as the only partner and managing director, holding all 200 capital
+    shares, after the previous co-partner transferred his share to him. Blaser's
+    citizenship is not shown in the published entry. No acquisition has been
+    reported.
+labels:
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: TiZoo sàrl (CHE-109.596.723) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/675733
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: terms
+    title: AlpHosting – Terms and conditions
+    url: https://www.alphosting.ch/en/terms-and-conditions/
+    publisher: TiZoo sàrl
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: AlpHosting - TiZoo GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/alphosting---tizoo-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Kleines Hosting-Unternehmen in Crissier bei Lausanne, gegründet 2002, das die Webhosting-Marke AlpHosting betreibt.'

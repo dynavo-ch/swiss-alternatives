@@ -1,0 +1,13 @@
+name: IDnow
+vendor: IDnow GmbH
+vendorCountry: DE
+parent: Corsair Capital
+summary: >-
+  Identity verification platform with automated and video-based identification,
+  authentication and qualified electronic signatures.
+website: 'https://idnow.io'
+categories: [authentication, e-signatures]
+aliases: [idnow videoident, idnow autoident]
+i18n:
+  de:
+    summary: 'Plattform zur Identitätsprüfung mit automatisierter und videobasierter Identifikation, Authentifizierung und qualifizierten elektronischen Signaturen.'

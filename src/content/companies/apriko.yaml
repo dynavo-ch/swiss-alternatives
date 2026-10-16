@@ -1,0 +1,76 @@
+name: Apriko AG
+shortName: Apriko
+type: company
+description: >-
+  Zurich-based company that develops cloud software for staff-leasing and
+  recruitment agencies and provides payroll and accounting back-office services
+  for them.
+website: https://apriko.com
+founded: 2021
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in March 2021
+    as Proaxive AG; the company was renamed Apriko AG in July 2023. A branch
+    office in Basel was entered in October 2026.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-403.626.988
+  url: https://www.zefix.ch/en/search/entity/list/firm/1476442
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    Privately held; the shareholders of the AG are not published. The board
+    entered in the commercial register in June 2026 consists of Benjamin
+    Leuzinger (chair), Thayaruban Selvarajah and Delil Yilmaz, all Swiss
+    citizens resident in Switzerland. The website lists Leuzinger, Selvarajah
+    and Christian Pfleghart as partners. No acquisition or outside investor was found in
+    register publications or reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Apriko AG (CHE-403.626.988) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1476442
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - Apriko
+    url: https://apriko.com/en/imprint/
+    publisher: Apriko AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: team
+    title: Team - Apriko
+    url: https://apriko.com/en/team/
+    publisher: Apriko AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: memberships
+    title: Memberships & certificates - Apriko
+    url: https://apriko.com/en/memberships-certificates/
+    publisher: Apriko AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Apriko AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/apriko-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, das Cloud-Software für Personalverleih- und Personalvermittlungsfirmen entwickelt und für diese Backoffice-Dienstleistungen in Lohn und Buchhaltung erbringt.'
