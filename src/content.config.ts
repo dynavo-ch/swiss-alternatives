@@ -71,6 +71,13 @@ function translations<T extends z.ZodRawShape>(shape: T) {
   return z.record(z.string().regex(/^[a-z]{2}$/), z.object(shape).partial()).optional();
 }
 
+/**
+ * Translated research notes, keyed by field path: `swiss.hosted.note`,
+ * `alternativesTo.<id>.note`, `ownership.parent`. Paths are checked against
+ * the entry in `scripts/lint-content.mjs`; see docs/CONTENT.md.
+ */
+const notes = z.record(z.string().regex(/^[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+$/), z.string().min(1));
+
 const source = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
@@ -158,7 +165,7 @@ const companies = defineCollection({
         .default({ swissOwned: 'unknown' }),
       /** Third-party labels (e.g. "swiss made software"), each with the source that lists it. */
       labels: z.array(z.object({ label: z.enum(LABELS), source: z.string() })).default([]),
-      i18n: translations({ description: z.string() }),
+      i18n: translations({ description: z.string(), notes }),
       lastVerified: date.optional(),
       sources: z.array(source).default([]),
     }),
@@ -286,8 +293,12 @@ const products = defineCollection({
       updated: date.optional(),
       lastVerified: date.optional(),
       sources: z.array(source).default([]),
-      /** Optional translated short texts; the long description stays in the Markdown body. */
-      i18n: translations({ tagline: z.string().max(110), description: z.string().max(220) }),
+      /** Optional translated short texts and notes; the long description stays in the Markdown body. */
+      i18n: translations({
+        tagline: z.string().max(110),
+        description: z.string().max(220),
+        notes,
+      }),
     }),
 });
 

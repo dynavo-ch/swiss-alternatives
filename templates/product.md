@@ -119,6 +119,10 @@ i18n:
   de:
     tagline: Deutsche Kurzbeschreibung (max. 110 Zeichen).
     description: Deutsche Beschreibung (max. 220 Zeichen).
+    notes: # one entry per English note above, keyed by its field path
+      swiss.developed.note: Deutsche Fassung der Notiz.
+      swiss.hosted.note: Deutsche Fassung der Notiz.
+      alternativesTo.other-foreign-product.note: Deutsche Fassung der Notiz.
 ---
 
 Two or three short, neutral paragraphs: what the product does, who it is for,

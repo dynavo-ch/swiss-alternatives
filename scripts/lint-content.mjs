@@ -27,13 +27,59 @@ const TRANSLATED = {
   alternatives: ['summary'],
   groups: ['name', 'summary'],
 };
+// Research notes (`i18n.<locale>.notes`), keyed by field path. `ownership.parent`
+// can be translated too but is usually a proper name, so it is not required.
+const NOTES = {
+  products: [
+    'swiss.developed.note',
+    'swiss.hosted.note',
+    'swiss.infrastructure.note',
+    'openSource.note',
+    'pricing.startingPrice.note',
+    'sustainability.summary',
+    'sustainability.note',
+    'affiliate.note',
+  ],
+  companies: ['headquarters.note', 'ownership.note', 'swissFounded.note'],
+};
+const OPTIONAL_NOTES = ['ownership.parent'];
 const untranslated = Object.fromEntries(LOCALES.map((l) => [l, []]));
+
+/** Value at a dotted path; inside arrays a segment matches an element's `id`. */
+function at(data, path) {
+  let value = data;
+  for (const key of path.split('.')) {
+    if (Array.isArray(value)) value = value.find((item) => item?.id === key);
+    else if (value && typeof value === 'object') value = value[key];
+    else return undefined;
+  }
+  return value;
+}
+
+/** Paths of the research notes an entry contains. */
+function notePaths(collection, data) {
+  const paths = (NOTES[collection] ?? []).filter((p) => typeof at(data, p) === 'string');
+  for (const ref of collection === 'products' ? (data.alternativesTo ?? []) : []) {
+    if (ref?.note) paths.push(`alternativesTo.${ref.id}.note`);
+  }
+  return paths;
+}
 
 function checkTranslations(file, collection, data) {
   for (const locale of LOCALES) {
     const fields = data.i18n?.[locale] ?? {};
-    const missing = TRANSLATED[collection].filter((f) => data[f] && !fields[f]);
+    const { notes = {}, ...texts } = fields;
+    const missing = TRANSLATED[collection].filter((f) => data[f] && !texts[f]);
+    const missingNotes = notePaths(collection, data).filter((p) => !notes[p]);
+    if (missingNotes.length) missing.push(`${missingNotes.length} note(s)`);
     if (missing.length) untranslated[locale].push(`${file} (${missing.join(', ')})`);
+    for (const path of Object.keys(notes)) {
+      const known = [...(NOTES[collection] ?? []), ...OPTIONAL_NOTES];
+      if (!known.includes(path) && !/^alternativesTo\.[a-z0-9-]+\.note$/.test(path))
+        warn(file, `i18n.${locale}.notes: "${path}" is not a translatable note`);
+      else if (typeof at(data, path) !== 'string')
+        warn(file, `i18n.${locale}.notes: "${path}" has no English text to translate`);
+    }
     // Swiss Standard German has no «ß».
     if (locale === 'de' && /ß/.test(JSON.stringify(fields))) warn(file, 'German text contains «ß»');
   }

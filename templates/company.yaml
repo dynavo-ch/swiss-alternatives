@@ -50,3 +50,7 @@ sources:
 i18n:
   de:
     description: Deutsche Fassung der Beschreibung.
+    notes: # one entry per English note above, keyed by its field path
+      headquarters.note: Deutsche Fassung der Notiz.
+      ownership.note: Deutsche Fassung der Notiz.
+      swissFounded.note: Deutsche Fassung der Notiz.

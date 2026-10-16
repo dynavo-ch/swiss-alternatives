@@ -8,7 +8,7 @@
 import FactValue from './FactValue.astro';
 import Footprint from './Footprint.astro';
 import { useTranslations } from '~/i18n';
-import type { Product } from '~/lib/data';
+import { noteLang, type Product } from '~/lib/data';
 import { cantonName, countryName, list } from '~/lib/format';
 
 interface Props {
@@ -57,6 +57,7 @@ type Row = {
   basis?: 'verified' | 'vendor' | 'inferred' | undefined;
   source?: string | undefined;
   note?: string | undefined;
+  noteLang?: string | undefined;
   company?: boolean;
 };
 
@@ -70,6 +71,7 @@ const rows: Row[] = [
     basis: hq.basis,
     source: hq.source,
     note: hq.note,
+    noteLang: noteLang(c, 'headquarters.note', locale),
     company: true,
   },
   {
@@ -91,6 +93,7 @@ const rows: Row[] = [
     basis: c.ownership.basis,
     source: c.ownership.source,
     note: c.ownership.note,
+    noteLang: noteLang(c, 'ownership.note', locale),
     company: true,
   },
   {
@@ -101,6 +104,7 @@ const rows: Row[] = [
     basis: d.swiss.developed?.basis,
     source: d.swiss.developed?.source,
     note: d.swiss.developed?.note,
+    noteLang: noteLang(d, 'swiss.developed.note', locale),
   },
   {
     key: 'hosting',
@@ -114,6 +118,7 @@ const rows: Row[] = [
     basis: d.swiss.hosted?.basis,
     source: d.swiss.hosted?.source,
     note: d.swiss.hosted?.note,
+    noteLang: noteLang(d, 'swiss.hosted.note', locale),
   },
   {
     key: 'infrastructure',
@@ -129,6 +134,7 @@ const rows: Row[] = [
     note: [infra?.note, infra?.facility ? `${t('product.facility')}: ${infra.facility}` : undefined]
       .filter(Boolean)
       .join(' '),
+    noteLang: infra?.note ? noteLang(d, 'swiss.infrastructure.note', locale) : undefined,
   },
 ];
 ---
@@ -157,6 +163,7 @@ const rows: Row[] = [
             sources={row.company ? c.sources : d.sources}
             anchorPrefix={row.company ? 'csrc' : 'src'}
             note={row.note || undefined}
+            noteLang={row.noteLang}
           />
         </dd>
       </div>

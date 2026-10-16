@@ -3,8 +3,7 @@
  * Renders a fact's state (yes / partly / no / unknown) with its provenance:
  * basis (verified / vendor claim / inferred), source link and note.
  */
-import { resolveLocale, useTranslations } from '~/i18n';
-import { defaultLocale } from '~/i18n/config';
+import { useTranslations } from '~/i18n';
 import type { Source } from '~/lib/data';
 
 interface Props {
@@ -15,6 +14,8 @@ interface Props {
   source?: string | undefined;
   sources?: Source[];
   note?: string | undefined;
+  /** Language of the note when it differs from the page (untranslated notes are English). */
+  noteLang?: string | undefined;
   /** Prefix for source anchors, e.g. "src" → #src-infra */
   anchorPrefix?: string;
 }
@@ -26,11 +27,10 @@ const {
   source,
   sources = [],
   note,
+  noteLang,
   anchorPrefix = 'src',
 } = Astro.props;
 const t = useTranslations(Astro.currentLocale);
-// Notes are researched in English and not translated.
-const noteLang = resolveLocale(Astro.currentLocale) === defaultLocale ? undefined : defaultLocale;
 const label =
   text ??
   (value === 'unknown'

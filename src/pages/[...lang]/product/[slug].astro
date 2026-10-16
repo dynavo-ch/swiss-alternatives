@@ -16,7 +16,7 @@ import { useTranslations } from '~/i18n';
 import { defaultLocale } from '~/i18n/config';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { CERTIFICATION_LABELS, FEATURE_KEYS } from '~/lib/constants';
-import { getDirectory, similarProducts, type Product } from '~/lib/data';
+import { getDirectory, noteLang, similarProducts, type Product } from '~/lib/data';
 import {
   cantonName,
   placeName,
@@ -111,7 +111,7 @@ const description =
         alternatives: list(altNames.slice(0, 3), locale),
       }).slice(0, 300)
     : d.description;
-/** English-only content (Markdown body, notes) is marked up as such on other locales. */
+/** The Markdown body is English-only and marked up as such on other locales. */
 const englishOnly = locale === defaultLocale ? undefined : defaultLocale;
 const escape = (value: string) => value.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`);
 const operatedBy = t(company.isSwiss ? 'product.operatedBySwiss' : 'product.operatedBy', {
@@ -186,7 +186,12 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
             {d.affiliate && (
               <p class="product__disclosure">
                 {t('common.affiliate')}
-                {d.affiliate.note ? ` — ${d.affiliate.note}` : ''}
+                {d.affiliate.note && (
+                  <>
+                    {' — '}
+                    <span lang={noteLang(d, 'affiliate.note', locale)}>{d.affiliate.note}</span>
+                  </>
+                )}
               </p>
             )}
           </div>
@@ -325,7 +330,10 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
                         {alternative.data.vendor} · {alternative.data.vendorCountry}
                       </span>
                       {note && (
-                        <span class="replaces__note" lang={englishOnly}>
+                        <span
+                          class="replaces__note"
+                          lang={noteLang(d, `alternativesTo.${alternative.id}.note`, locale)}
+                        >
                           {note}
                         </span>
                       )}
@@ -493,7 +501,10 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
                   <span class="label">{t('pricing.startingAt')}</span>
                   <span class="price__value tnum">{priceText}</span>
                   {price?.note && (
-                    <span class="price__note" lang={englishOnly}>
+                    <span
+                      class="price__note"
+                      lang={noteLang(d, 'pricing.startingPrice.note', locale)}
+                    >
                       {price.note}
                     </span>
                   )}
@@ -577,6 +588,7 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
                     source={d.openSource.source}
                     sources={d.sources}
                     note={d.openSource.note}
+                    noteLang={noteLang(d, 'openSource.note', locale)}
                   />
                 </dd>
               </div>
@@ -668,6 +680,7 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
               source={d.sustainability.source}
               sources={d.sources}
               note={d.sustainability.note}
+              noteLang={noteLang(d, 'sustainability.note', locale)}
             />
           </section>
         )}

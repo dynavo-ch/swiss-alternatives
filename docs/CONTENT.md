@@ -269,23 +269,43 @@ Swiss products are linked to an alternative from the **product** side
 ## Translations
 
 The site is published in English and German (`/de/`). Facts are language-neutral; only short texts
-are translated, in an optional `i18n` block at the end of the entry. Untranslated fields fall back
-to English, so a new entry can be added in English only.
+and research notes are translated, in an optional `i18n` block at the end of the entry.
+Untranslated fields fall back to English, so a new entry can be added in English only.
 
 | Collection   | Translatable fields (`i18n.de.*`)  |
 | ------------ | ---------------------------------- |
-| Products     | `tagline`, `description`           |
-| Companies    | `description`                      |
+| Products     | `tagline`, `description`, `notes`  |
+| Companies    | `description`, `notes`             |
 | Categories   | `name`, `noun`, `summary`, `intro` |
 | Groups       | `name`, `summary`                  |
 | Alternatives | `summary`                          |
+
+Research notes are translated in a flat `notes` map keyed by the path of the English field:
+
+```yaml
+i18n:
+  de:
+    tagline: …
+    notes:
+      swiss.hosted.note: 'Die Daten liegen in Rechenzentren in Zürich und Genf.'
+      alternativesTo.slack.note: 'Ohne Telefonie.' # array items are addressed by id
+```
+
+| Collection | Note paths                                                                                                                                                                                                               |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Products   | `swiss.developed.note`, `swiss.hosted.note`, `swiss.infrastructure.note`, `openSource.note`, `pricing.startingPrice.note`, `sustainability.summary`, `sustainability.note`, `affiliate.note`, `alternativesTo.<id>.note` |
+| Companies  | `headquarters.note`, `ownership.note`, `swissFounded.note`, `ownership.parent` (only when it contains more than a proper name)                                                                                           |
+
+A translated note replaces the English one on German pages; an untranslated note is shown in English
+and marked `lang="en"`. Update the translation whenever you change the English note.
 
 - Translate, do not rewrite: no facts added, dropped or softened.
 - Swiss Standard German: `ss` instead of `ß`, quotation marks «…», neutral tone.
 - A category `noun` is used inside sentences («{count} {noun} von Schweizer Unternehmen»), so give a
   generic plural or mass noun such as «Buchhaltungssoftware» or «Passwort-Manager».
 - The Markdown body of a product stays English; German pages label it as English.
-- `npm run lint:content` lists entries that still lack a German translation.
+- `npm run lint:content` lists entries that still lack a German translation, including notes, and
+  warns about note paths that do not match an English field.
 
 ## Derived values (never typed by hand)
 

@@ -165,15 +165,71 @@ export function getDirectory(locale?: string): Promise<Directory> {
   return directory;
 }
 
-/** Overlays `data.i18n[locale]` onto `data`. */
+/** Field paths whose `i18n.<locale>.notes` translation was applied, per localised entry. */
+const translatedNotes = new WeakMap<object, Set<string>>();
+
+/**
+ * Returns a copy of `data` with the string at `path` replaced. Path segments
+ * address object keys; inside an array they match an element's `id`
+ * (`alternativesTo.slack.note`). Returns undefined when the path does not
+ * lead to an existing string, so stale translations are ignored.
+ */
+function setPath(data: unknown, path: string[], value: string): unknown {
+  const [key, ...rest] = path;
+  if (key === undefined || !data || typeof data !== 'object') return undefined;
+  if (Array.isArray(data)) {
+    const index = data.findIndex((item: unknown) => (item as { id?: unknown })?.id === key);
+    if (index < 0) return undefined;
+    const child = setPath(data[index], rest, value);
+    return child === undefined ? undefined : data.with(index, child);
+  }
+  const record = data as Record<string, unknown>;
+  if (rest.length === 0) {
+    return typeof record[key] === 'string' ? { ...record, [key]: value } : undefined;
+  }
+  const child = setPath(record[key], rest, value);
+  return child === undefined ? undefined : { ...record, [key]: child };
+}
+
+/**
+ * Overlays `data.i18n[locale]` onto `data`. The `notes` map translates
+ * research notes nested anywhere in the entry, keyed by field path
+ * (`swiss.hosted.note`, `ownership.parent`).
+ */
 function localise<T extends { i18n?: Record<string, object> | undefined }>(
   data: T,
   locale: string,
 ): T {
   const overlay = locale === defaultLocale ? undefined : data.i18n?.[locale];
-  return overlay
-    ? { ...data, ...Object.fromEntries(Object.entries(overlay).filter(([, v]) => v !== undefined)) }
-    : data;
+  if (!overlay) return data;
+  const { notes, ...fields } = overlay as { notes?: Record<string, string> };
+  let result = {
+    ...data,
+    ...Object.fromEntries(Object.entries(fields).filter(([, v]) => v !== undefined)),
+  } as T;
+  const applied = new Set<string>();
+  for (const [path, text] of Object.entries(notes ?? {})) {
+    const next = setPath(result, path.split('.'), text);
+    if (next === undefined) continue;
+    result = next as T;
+    applied.add(path);
+  }
+  translatedNotes.set(result, applied);
+  return result;
+}
+
+/**
+ * The `lang` attribute for a research note shown on a page: undefined when
+ * the note is in the page's language, otherwise the default locale, since
+ * untranslated notes fall back to English.
+ */
+export function noteLang(
+  data: object,
+  path: string,
+  locale: string | undefined,
+): Locale | undefined {
+  if (resolveLocale(locale) === defaultLocale) return undefined;
+  return translatedNotes.get(data)?.has(path) ? undefined : defaultLocale;
 }
 
 async function buildDirectory(locale: Locale): Promise<Directory> {

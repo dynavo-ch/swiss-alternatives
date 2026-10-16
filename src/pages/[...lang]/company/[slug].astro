@@ -7,7 +7,7 @@ import SectionHeader from '~/components/SectionHeader.astro';
 import SourceList from '~/components/SourceList.astro';
 import { useTranslations } from '~/i18n';
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { getDirectory, type Company } from '~/lib/data';
+import { getDirectory, noteLang, type Company } from '~/lib/data';
 import { cantonName, countryName, displayHost, formatDate, isoDate } from '~/lib/format';
 import { paths } from '~/lib/paths';
 import { breadcrumbLd, companyLd } from '~/lib/seo';
@@ -97,6 +97,7 @@ const description = [
               sources={c.sources}
               anchorPrefix="csrc"
               note={hq.note}
+              noteLang={noteLang(c, 'headquarters.note', locale)}
             />
           </dd>
         </div>
@@ -125,6 +126,7 @@ const description = [
               sources={c.sources}
               anchorPrefix="csrc"
               note={c.ownership.note}
+              noteLang={noteLang(c, 'ownership.note', locale)}
             />
           </dd>
         </div>
@@ -146,6 +148,7 @@ const description = [
               sources={c.sources}
               anchorPrefix="csrc"
               note={c.swissFounded?.note}
+              noteLang={noteLang(c, 'swissFounded.note', locale)}
             />
           </dd>
         </div>

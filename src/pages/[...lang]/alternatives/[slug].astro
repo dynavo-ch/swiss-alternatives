@@ -9,7 +9,7 @@ import SectionHeader from '~/components/SectionHeader.astro';
 import { site } from '~/config/site';
 import { useTranslations } from '~/i18n';
 import BaseLayout from '~/layouts/BaseLayout.astro';
-import { getDirectory, relatedAlternatives, type Alternative } from '~/lib/data';
+import { getDirectory, noteLang, relatedAlternatives, type Alternative } from '~/lib/data';
 import { countryName, displayHost, formatPrice, list } from '~/lib/format';
 import { paths } from '~/lib/paths';
 import { alternativeLd, breadcrumbLd } from '~/lib/seo';
@@ -220,7 +220,14 @@ const stateLabel = (value: string | undefined) =>
                         <span class="muted">—</span>
                       )}
                     </td>
-                    <td class="glance__note">
+                    <td
+                      class="glance__note"
+                      lang={
+                        note
+                          ? noteLang(product.data, `alternativesTo.${alternative.id}.note`, locale)
+                          : undefined
+                      }
+                    >
                       {note ?? <span class="muted">{t('alt.noNote')}</span>}
                     </td>
                   </tr>
