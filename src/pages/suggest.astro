@@ -4,12 +4,14 @@
  * an email or a ready-to-commit YAML snippet entirely in the browser;
  * nothing is sent until the visitor submits it on GitHub or in their mail app.
  */
+import Email from '~/components/Email.astro';
 import Icon from '~/components/Icon.astro';
 import PageHeader from '~/components/PageHeader.astro';
 import { site } from '~/config/site';
 import { useTranslations } from '~/i18n';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { CANTONS } from '~/lib/constants';
+import { encodeEmail } from '~/lib/email';
 import { getDirectory } from '~/lib/data';
 import { cantonName } from '~/lib/format';
 import { paths } from '~/lib/paths';
@@ -23,7 +25,6 @@ const crumbs = [
 ];
 const issueUrl = `${site.repository}/issues/new?template=suggest-product.yml`;
 const mailBody = `Product name:\nWebsite:\nCompany (legal name):\nHeadquarters (city, canton):\nCategory:\nWhy it qualifies:\nWhere is customer data hosted?\nSources (URLs):\n`;
-const mailUrl = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Product suggestion')}&body=${encodeURIComponent(mailBody)}`;
 ---
 
 <BaseLayout
@@ -57,10 +58,9 @@ const mailUrl = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Produ
           <span class="way__num mono">02</span>
           <h3>{t('suggest.email')}</h3>
           <p>{t('suggest.emailText')}</p>
-          <a href={mailUrl} class="btn">
-            <Icon name="mail" />
-            {site.contactEmail}
-          </a>
+          <Email class="btn" subject="Product suggestion" body={mailBody}>
+            <Icon name="mail" slot="before" />
+          </Email>
         </li>
         <li class="way">
           <span class="way__num mono">03</span>
@@ -98,7 +98,7 @@ const mailUrl = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Produ
         class="helper__form"
         data-suggest
         data-repo={site.repository}
-        data-email={site.contactEmail}
+        data-email={encodeEmail(site.contactEmail)}
       >
         <div class="field">
           <label class="field__label" for="s-name">
@@ -200,6 +200,7 @@ const mailUrl = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Produ
 </BaseLayout>
 
 <script>
+  import { emailOf } from '~/scripts/email';
   import { copyText, t, toast } from '~/scripts/store';
 
   const form = document.querySelector<HTMLFormElement>('[data-suggest]');
@@ -272,7 +273,7 @@ const mailUrl = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Produ
         .action;
       if (action === 'email') {
         if (!form.reportValidity()) return;
-        location.href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(`Product suggestion: ${value('name')}`)}&body=${encodeURIComponent(body())}`;
+        location.href = `mailto:${emailOf(form)}?subject=${encodeURIComponent(`Product suggestion: ${value('name')}`)}&body=${encodeURIComponent(body())}`;
       } else if (action === 'yaml') {
         if (!form.reportValidity()) return;
         void copyText(yaml()).then((ok) => ok && toast(t('common.copied')));

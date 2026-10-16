@@ -442,6 +442,80 @@
   border-color: var(--c-line-strong);
 }
 
+/* Footprints sit above stretched card links so they can be hovered. */
+.footprint[data-fp] {
+  position: relative;
+  z-index: 2;
+  cursor: help;
+  padding: 3px;
+  margin: -3px;
+}
+
+/* Shared footprint tooltip (src/scripts/footprint-tip.ts) */
+.fp-tip {
+  position: fixed;
+  z-index: 90;
+  width: 15rem;
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-2);
+  background: var(--c-ink);
+  color: var(--c-inverse);
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+  box-shadow: var(--shadow-pop);
+  pointer-events: none;
+}
+
+.fp-tip ul {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0;
+  list-style: none;
+}
+
+.fp-tip__title {
+  margin-bottom: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.fp-tip__row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--s-2);
+  opacity: 0.75;
+}
+
+.fp-tip__row.is-active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.fp-tip .footprint__cell {
+  border-color: color-mix(in srgb, var(--c-inverse) 55%, transparent);
+}
+
+.fp-tip .footprint__cell[data-state='yes'],
+.fp-tip .footprint__cell[data-state='partial'] {
+  border-color: var(--c-red);
+}
+
+.fp-tip__state {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+}
+
+.fp-tip__q {
+  margin-top: var(--s-2);
+  padding-top: var(--s-2);
+  border-top: 1px solid color-mix(in srgb, var(--c-inverse) 25%, transparent);
+  opacity: 0.85;
+}
+
 /* State marks (yes / partial / no / unknown) ----------------------- */
 .state {
   display: inline-flex;

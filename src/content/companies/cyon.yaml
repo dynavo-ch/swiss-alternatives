@@ -30,6 +30,11 @@ ownership:
     GmbH until the company was converted into cyon AG in June 2025, when the
     partner received all 100,000 shares. Shareholders of an AG are not shown in
     the commercial register; no sale has been reported since.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: press-2024
@@ -50,3 +55,9 @@ sources:
     publisher: Federal Office of Justice (Zefix)
     kind: registry
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: cyon AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/cyon-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

@@ -18,7 +18,7 @@ function row(p: ProductRecord, removable: string | null, removeLabel: string): s
       <p class="prow__desc">${escapeHtml(p.company)} · ${escapeHtml(p.tagline)}</p>
     </div>
     <div class="prow__side">
-      <span class="footprint" aria-hidden="true">${cells}</span>
+      <span class="footprint" data-fp aria-hidden="true">${cells}</span>
       <span class="muted">${escapeHtml(p.classification)}</span>
       ${
         removable

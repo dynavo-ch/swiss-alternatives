@@ -31,6 +31,11 @@ ownership:
     with VI Partners (Altendorf, Switzerland) as co-lead, so shareholders
     include both Swiss and foreign investors. No acquisition of Skribble was
     found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: about
@@ -63,3 +68,9 @@ sources:
     publisher: IT Reseller
     kind: press
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Skribble AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/skribble-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

@@ -1,0 +1,87 @@
+name: Netstream AG
+shortName: Netstream
+type: company
+description: >-
+  Cloud, connectivity and TV streaming provider founded in 1998, based in
+  Wallisellen and operating its own data centres in Dübendorf.
+website: https://netstream.ch
+founded: 1998
+swissFounded:
+  value: yes
+  basis: vendor
+  source: team
+  note: >-
+    Founded in 1998; co-founders Alexis Caceda (CEO) and Reto Kasser (CTO) still
+    lead the company. The commercial register lists Netstream GmbH as a former
+    name.
+headquarters:
+  city: Wallisellen
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-105.160.120
+  url: https://www.zefix.ch/en/search/entity/list/firm/444080
+ownership:
+  swissOwned: unknown
+  parent: Netstream Holding AG
+  parentCountry: CH
+  basis: vendor
+  source: holding
+  note: >-
+    Netstream presents Netstream AG and Netstream Cloud AG (Dübendorf) as
+    subsidiaries of Netstream Holding AG, registered in Zug in 2022. The
+    shareholders of the holding are not published. The board members listed in
+    the commercial register are Swiss citizens and no acquisition has been
+    reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: company
+    title: Netstream AG - unser Unternehmen
+    url: https://netstream.ch/unternehmen/
+    publisher: Netstream AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: team
+    title: Team - Netstream
+    url: https://netstream.ch/team/
+    publisher: Netstream AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: holding
+    title: Netstream Holding AG
+    url: https://netstream.ch/holding/
+    publisher: Netstream Holding AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Netstream
+    url: https://netstream.ch/impressum/
+    publisher: Netstream AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: Netstream AG (CHE-105.160.120) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/444080
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: zefix-holding
+    title: Netstream Holding AG (CHE-273.830.659) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1565953
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Netstream AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/netstream-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

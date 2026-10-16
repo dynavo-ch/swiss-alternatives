@@ -1,4 +1,5 @@
 ---
+import Email from '~/components/Email.astro';
 import ProsePage from '~/components/ProsePage.astro';
 import { site } from '~/config/site';
 const o = site.operator;
@@ -10,14 +11,18 @@ const o = site.operator;
     <p>
       {o.name}
       <br />
-      {o.street}
-      <br />
+      {o.street && (
+        <>
+          {o.street}
+          <br />
+        </>
+      )}
       {o.postalCode} {o.city}
       <br />
       {o.country}
     </p>
     <p>
-      Email: <a href={`mailto:${o.email}`}>{o.email}</a>
+      Email: <Email address={o.email} />
     </p>
   </Fragment>
 </ProsePage>

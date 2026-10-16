@@ -1,0 +1,10 @@
+name: E-Commerce
+noun: e-commerce platforms
+group: business
+icon: shopping-cart
+summary: Online shops, product catalogues and checkout.
+intro: >-
+  E-commerce platforms run online shops: product catalogues, carts, checkout and integrations with
+  payment and logistics providers.
+related: [cms, invoicing]
+added: 2026-10-16

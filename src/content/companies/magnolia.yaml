@@ -1,0 +1,91 @@
+name: Magnolia International AG
+shortName: Magnolia
+type: company
+description: >-
+  Software company founded in Basel in 1997 that develops the Magnolia content
+  management and digital experience platform; majority-owned by GENUI since 2022.
+website: https://www.magnolia-cms.com
+founded: 1997
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Magnolia states that it was founded in Basel in 1997 by Boris Kraft and
+    Pascal Mangold. The company uses the registered English name "Magnolia
+    International Ltd"; the legal entity is Magnolia International AG.
+headquarters:
+  city: Münchenstein
+  canton: BL
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-107.607.534
+  url: https://www.zefix.ch/en/search/entity/list/firm/401255
+ownership:
+  swissOwned: no
+  parent: GENUI
+  parentCountry: DE
+  basis: vendor
+  source: about
+  note: >-
+    Magnolia states that the investment company GENUI acquired a majority stake
+    in 2022. GENUI GmbH is based in Hamburg, Germany, and still lists Magnolia
+    among its holdings. GENUI bought the stake from the private equity investor
+    Elvaston. No later change of control was found in reporting up to October
+    2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Magnolia International AG (CHE-107.607.534) - commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/401255
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About Magnolia DXP
+    url: https://www.magnolia-cms.com/about.html
+    publisher: Magnolia International AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: contact
+    title: Contact us - Magnolia DXP
+    url: https://www.magnolia-cms.com/about/contact.html
+    publisher: Magnolia International AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: walderwyss-2022
+    title: Elvaston sells Magnolia International AG to GENUI
+    url: https://www.walderwyss.com/en/news/2022-07-28_elvaston-sells-magnolia-international-ag-to-genui
+    publisher: Walder Wyss
+    kind: press
+    accessed: 2026-10-16
+  - id: cms-2022
+    title: CMS advised GENUI on the acquisition of a majority stake in Magnolia
+    url: https://cms.law/en/che/news-information/cms-advised-genui-on-the-acquisition-of-a-majority-stake-in-magnolia
+    publisher: CMS
+    kind: press
+    accessed: 2026-10-16
+  - id: genui
+    title: Beteiligungen - GENUI
+    url: https://www.genui.de/beteiligungen
+    publisher: GENUI GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: genui-imprint
+    title: Impressum - GENUI
+    url: https://www.genui.de/impressum
+    publisher: GENUI GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Magnolia International Ltd. — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/magnolia-international-ltd./home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

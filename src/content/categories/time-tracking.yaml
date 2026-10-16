@@ -1,0 +1,10 @@
+name: Time Tracking
+noun: time tracking tools
+group: business
+icon: timer
+summary: Record working time, project hours and absences.
+intro: >-
+  Time tracking tools record hours for projects, clients and payroll. Swiss tools often cover the
+  legal requirements for recording working time.
+related: [payroll, invoicing, erp]
+added: 2026-10-16

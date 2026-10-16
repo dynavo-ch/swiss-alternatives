@@ -106,6 +106,9 @@ ownership:
   source: about
   note: >-
     The non-profit Proton Foundation is the majority shareholder.
+labels: # optional third-party labels, each with the source that lists the membership
+  - label: swiss-made-software # swiss-made-software | swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources: […]
 ```

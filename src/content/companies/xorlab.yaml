@@ -1,0 +1,68 @@
+name: xorlab AG
+shortName: xorlab
+type: company
+description: >-
+  Zurich-based company, founded as an ETH Zurich spin-off, that develops email
+  security software for organisations with high security requirements.
+website: https://www.xorlab.com
+founded: 2015
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    xorlab AG is registered in the commercial register of the canton of
+    Zurich; the earliest register publication referenced in Zefix dates from
+    3 August 2015. swiss made software describes the company as an ETH
+    spin-off.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-469.333.241
+  url: https://www.zefix.ch/en/search/entity/list/firm/1231282
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: financing-2026
+  note: >-
+    Venture-backed; the shareholder structure is not published. The EUR 5
+    million Series A+ round announced on 1 September 2026 was led by the
+    existing investor Spicehaus Partners, with Grapha Holding, EquityPitcher
+    Ventures and ZKB Start-up Finance participating; all disclosed investors
+    are based in Switzerland. Co-founder Antonio Barresi is CEO and chairman of
+    the board. No acquisition was found in reporting or register publications
+    up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: xorlab AG (CHE-469.333.241) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1231282
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About xorlab
+    url: https://www.xorlab.com/en/about
+    publisher: xorlab AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: financing-2026
+    title: xorlab Raises EUR 5 Million to Build Europe's Leading Sovereign Email Security Platform
+    url: https://www.xorlab.com/en/blog/xorlab-raises-eur-5-million-to-build-europes-leading-sovereign-email-security-platform
+    publisher: xorlab AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: xorlab AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/xorlab-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

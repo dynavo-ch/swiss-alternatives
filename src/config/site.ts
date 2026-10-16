@@ -17,20 +17,17 @@ export const site = {
   description:
     'An independent directory of software, cloud services and digital products from Swiss companies — with transparent information about ownership, hosting and data residency.',
   /** Public source repository. Used for "Suggest a product" and "Edit this entry" links. */
-  repository: 'https://github.com/swiss-alternatives/directory',
+  repository: 'https://github.com/dynavo-ch/swiss-alternatives',
   /** Branch that holds the content, used for "edit on GitHub" links. */
   repositoryBranch: 'main',
   /** One public mailbox for suggestions, corrections, vendors, press and partnerships. */
   contactEmail: `info@${domain}`,
-  /**
-   * Legal operator shown on the imprint page. Replace before launch —
-   * Swiss law (Art. 3 UWG) requires a complete identification of the operator.
-   */
+  /** Operator shown on the imprint page. */
   operator: {
-    name: 'Swiss Alternatives (operator to be confirmed)',
-    street: 'Street and number',
-    postalCode: '0000',
-    city: 'City',
+    name: 'Dynavo',
+    street: '',
+    postalCode: '9000',
+    city: 'St. Gallen',
     country: 'Switzerland',
     email: `info@${domain}`,
   },

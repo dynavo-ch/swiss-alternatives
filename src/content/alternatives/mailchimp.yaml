@@ -1,0 +1,8 @@
+name: Mailchimp
+vendor: The Rocket Science Group LLC
+vendorCountry: US
+parent: Intuit Inc.
+summary: Email marketing and marketing automation platform for newsletters, campaigns and audiences.
+website: 'https://mailchimp.com'
+categories: [email-marketing]
+aliases: [intuit mailchimp]

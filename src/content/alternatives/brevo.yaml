@@ -1,0 +1,7 @@
+name: Brevo
+vendor: Sendinblue SAS
+vendorCountry: FR
+summary: Email marketing, transactional email and CRM platform, formerly known as Sendinblue.
+website: 'https://www.brevo.com'
+categories: [email-marketing]
+aliases: [sendinblue]

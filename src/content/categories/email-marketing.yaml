@@ -1,0 +1,11 @@
+name: Email Marketing
+noun: email marketing tools
+group: business
+icon: mail-plus
+summary: Newsletters, campaigns and mailing-list management.
+intro: >-
+  Email marketing tools manage subscriber lists and send newsletters and campaigns, with templates,
+  automation and reporting. Consent handling and where subscriber data is stored matter under data
+  protection law.
+related: [crm]
+added: 2026-10-16

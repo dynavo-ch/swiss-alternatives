@@ -1,0 +1,7 @@
+name: Mimecast
+vendor: Mimecast Services Limited
+vendorCountry: GB
+parent: Permira
+summary: Cloud email security service with filtering, archiving and continuity features.
+website: 'https://www.mimecast.com'
+categories: [email-security]

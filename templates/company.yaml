@@ -31,6 +31,7 @@ ownership:
   basis: vendor
   source: about
   note: ''
+labels: [] # e.g. - { label: swiss-made-software, source: swissmadesoftware } — needs a source
 lastVerified: 2026-01-01
 sources:
   - id: zefix

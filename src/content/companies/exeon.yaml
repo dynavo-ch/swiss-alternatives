@@ -35,6 +35,9 @@ ownership:
     in register publications or press reports up to October 2026; the most
     recent capital increases (December 2024 and December 2025) came from
     conditional capital.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: uid-register
@@ -61,3 +64,9 @@ sources:
     publisher: Exeon Analytics AG
     kind: vendor
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Exeon Analytics AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/exeon-analytics-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

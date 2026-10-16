@@ -1,0 +1,75 @@
+name: mailXpert GmbH
+shortName: mailXpert
+type: company
+description: >-
+  Zurich-based company that develops and operates the email marketing software
+  mailXpert, the newsletter service Swiss Newsletter and the sending service
+  mailomat.
+website: https://mailxpert.ch
+founded: 2016
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    The mailXpert product was transferred into the newly formed mailXpert GmbH
+    in 2016. Its first version was developed in 2004 by the Zurich web agency
+    ARTACK WebLab GmbH, which was founded in 2002 and is registered at the
+    same address.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-166.546.141
+  url: https://www.zefix.ch/en/search/entity/list/firm/1251310
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: imprint
+  note: >-
+    Privately held limited liability company (GmbH); its partners could not
+    be confirmed from public sources. The imprint names Patrick Gsell
+    (managing director) and Patrick Landolt (head of development) as
+    representatives. No acquisition or foreign parent was found in reporting
+    up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: mailXpert GmbH (CHE-166.546.141) - commercial register entry
+    url: https://www.zefix.ch/en/search/entity/list/firm/1251310
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Unternehmen - mailXpert
+    url: https://mailxpert.ch/%C3%BCber-uns/unternehmen
+    publisher: mailXpert GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - mailXpert
+    url: https://mailxpert.ch/impressum
+    publisher: mailXpert GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: team
+    title: Team - mailXpert
+    url: https://mailxpert.ch/%C3%BCber-uns/team
+    publisher: mailXpert GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: mailXpert GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/mailxpert-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

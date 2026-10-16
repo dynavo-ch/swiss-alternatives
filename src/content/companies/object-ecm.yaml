@@ -1,0 +1,72 @@
+name: Object ECM AG
+shortName: OBJECT
+type: company
+description: >-
+  Zurich-based software and integration company for document management,
+  workflows and electronic signatures, founded in 2009, with a subsidiary in Hamburg.
+website: https://www.object.ch
+founded: 2009
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    OBJECT states that Object ECM AG was founded in Zurich in 2009 and that its
+    German subsidiary in Hamburg followed in 2015. The company is entered in the
+    Zurich commercial register.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.796.328
+  url: https://www.zefix.ch/en/search/entity/list/firm/940570
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: team
+  note: >-
+    The shareholder structure is not published. Founder Oliver Huser, based in
+    Zurich, is CEO and chairman of the board; the board also includes a German
+    national based in Hamburg. OBJECT ECM GmbH in Hamburg is a subsidiary. No
+    acquisition of the company was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Object ECM AG (CHE-114.796.328) - commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/940570
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - OBJECT
+    url: https://www.object.ch/de/unternehmen/uber-uns/
+    publisher: Object ECM AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: team
+    title: Team - OBJECT
+    url: https://www.object.ch/de/unternehmen/team/
+    publisher: Object ECM AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Subsign
+    url: https://www.subsign.ch/imprint
+    publisher: Object ECM AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: OBJECT ECM AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/object-ecm-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

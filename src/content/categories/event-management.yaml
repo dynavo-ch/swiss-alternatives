@@ -1,0 +1,10 @@
+name: Event Management
+noun: event management platforms
+group: business
+icon: calendar-days
+summary: Invitations, registration, ticketing and check-in for events.
+intro: >-
+  Event management platforms handle invitations, registration, ticketing, check-in and
+  communication for conferences and corporate events.
+related: [email-marketing, crm]
+added: 2026-10-16

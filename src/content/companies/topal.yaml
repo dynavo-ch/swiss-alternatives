@@ -1,0 +1,72 @@
+name: Topal Solutions AG
+shortName: Topal
+type: company
+description: >-
+  Family-owned software company in Volketswil ZH that has developed financial
+  accounting and payroll software for Swiss fiduciaries and SMEs since 2006.
+website: https://www.topal.ch
+founded: 2006
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the commercial register on 8 May 2006. Topal describes itself as
+    a family business from the canton of Zurich that has developed its software
+    since 2006.
+headquarters:
+  city: Volketswil
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: >-
+    Registered seat in Volketswil. A branch registered in Lausanne in 2017 moved
+    to Jorat-Mézières VD in 2023.
+jurisdiction: CH
+registry:
+  uid: CHE-112.920.190
+  url: https://www.zefix.ch/en/search/entity/list/firm/836700
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    Topal describes itself as a family-owned Swiss software manufacturer. No
+    parent company is recorded in the commercial register; the shareholders of
+    the AG are not published.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Topal Solutions AG — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/836700
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: moneyhouse
+    title: Topal Solutions AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/topal-solutions-ag-12099359971
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über Topal
+    url: https://www.topal.ch/de/ueber-uns/ueber-topal.html
+    publisher: Topal Solutions AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Topal
+    url: https://www.topal.ch/de/impressum.html
+    publisher: Topal Solutions AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Topal Solutions AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/topal-solutions-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

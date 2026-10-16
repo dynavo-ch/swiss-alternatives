@@ -1,0 +1,7 @@
+name: Eventbrite
+vendor: Eventbrite, Inc.
+vendorCountry: US
+parent: Bending Spoons S.p.A.
+summary: Self-service ticketing and event registration platform with a public event marketplace.
+website: 'https://www.eventbrite.com'
+categories: [event-management]

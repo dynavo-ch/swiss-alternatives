@@ -29,6 +29,11 @@ ownership:
     Nine states that it is 100 percent employee-owned (self-declaration as of
     September 2026). Founder Thomas Hug is CEO. A Canadian subsidiary, Nine
     Internet Solutions Ltd., is wholly owned by the Swiss company.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: self-declaration
@@ -49,3 +54,9 @@ sources:
     publisher: Federal Office of Justice (Zefix)
     kind: registry
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Nine Internet Solutions AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/nine-internet-solutions-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

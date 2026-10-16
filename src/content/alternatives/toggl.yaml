@@ -1,0 +1,7 @@
+name: Toggl Track
+vendor: Toggl OÜ
+vendorCountry: EE
+summary: Cloud time tracker for freelancers and teams, with project reports and billable rates.
+website: 'https://toggl.com/track/'
+categories: [time-tracking]
+aliases: [toggl]

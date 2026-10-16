@@ -140,6 +140,30 @@ const description =
             />
           </dd>
         </div>
+        {c.labels.length > 0 && (
+          <div>
+            <dt>{t('company.labels')}</dt>
+            <dd>
+              <ul class="labels" role="list">
+                {c.labels.map((l) => {
+                  const src = c.sources.find((s) => s.id === l.source);
+                  return (
+                    <li>
+                      {src ? (
+                        <a href={src.url} rel="noopener nofollow">
+                          {t(`label.${l.label}`)}
+                        </a>
+                      ) : (
+                        t(`label.${l.label}`)
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+              <p class="labels__note">{t('company.labelsNote')}</p>
+            </dd>
+          </div>
+        )}
         {c.founded && (
           <div>
             <dt>{t('common.founded')}</dt>
@@ -222,6 +246,25 @@ const description =
   }
 
   .co-facts dt {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1);
+  }
+
+  .labels li {
+    padding: 0.05rem 0.5rem;
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-1);
+    font-size: var(--fs-sm);
+  }
+
+  .labels__note {
+    margin-top: var(--s-1);
     font-size: var(--fs-xs);
     color: var(--c-ink-3);
   }

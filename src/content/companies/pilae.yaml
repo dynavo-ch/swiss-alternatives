@@ -1,0 +1,63 @@
+name: Pilae SA
+shortName: Pilae
+type: company
+description: >-
+  Lausanne-based company founded in 2026 that operates open-source applications
+  and private AI for organisations, on their own servers or in its own cloud.
+website: https://pilae.com
+founded: 2026
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Vaud as a new company
+    limited by shares in April 2026, with statutes dated 31 March 2026.
+headquarters:
+  city: Lausanne
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-419.492.386
+  url: https://www.zefix.ch/en/search/entity/list/firm/1747275
+ownership:
+  swissOwned: unknown
+  basis: vendor
+  source: jurisdiction
+  note: >-
+    Pilae states that it is a Swiss company with no US parent or subsidiary. Its
+    shareholders are not published.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: company
+    title: About Pilae
+    url: https://pilae.com/company
+    publisher: Pilae SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: jurisdiction
+    title: 'CLOUD Act and jurisdiction: a Swiss operator, no US parent'
+    url: https://pilae.com/trust/jurisdiction
+    publisher: Pilae SA
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: Pilae SA (CHE-419.492.386) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1747275
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Pilae SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/pilae-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

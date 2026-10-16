@@ -1,0 +1,8 @@
+name: IONOS
+vendor: IONOS SE
+vendorCountry: DE
+parent: United Internet AG
+summary: Web hosting, domain, server and cloud provider from Montabaur, part of the United Internet group.
+website: 'https://www.ionos.com'
+categories: [web-hosting, domain-registrars, vps-hosting]
+aliases: [1&1 IONOS, 1&1]

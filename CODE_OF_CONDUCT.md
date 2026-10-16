@@ -27,7 +27,7 @@ experience.
 
 Maintainers may edit, hide or reject contributions, and may temporarily or
 permanently exclude people who violate this code. Report problems privately to
-**info@swiss-alternatives.ch**; reports are handled confidentially.
+the address on the [contact page](https://swiss-alternatives.ch/contact/); reports are handled confidentially.
 
 This code of conduct is adapted in spirit from the
 [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1.

@@ -6,7 +6,7 @@ export const GET: APIRoute = () => {
   const expires = new Date(Date.now() + 365 * 86_400_000).toISOString();
   return new Response(
     [
-      `Contact: mailto:${site.contactEmail}`,
+      `Contact: ${new URL('/contact/', site.url).href}`,
       `Expires: ${expires}`,
       'Preferred-Languages: en, de, fr, it',
       `Canonical: ${new URL('/.well-known/security.txt', site.url).href}`,

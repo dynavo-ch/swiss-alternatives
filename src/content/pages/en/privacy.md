@@ -2,7 +2,7 @@
 title: Privacy
 eyebrow: Legal
 description: Swiss Alternatives sets no cookies, uses no trackers and loads no third-party resources. Favourites and comparisons stay in your browser.
-updated: 2026-10-15
+updated: 2026-10-16
 ---
 
 **Short version:** we do not collect personal data. There are no cookies, no analytics, no advertising and no third-party scripts or fonts on this website.
@@ -20,9 +20,11 @@ Some features remember your choices **locally in your browser** using `localStor
 
 This information never leaves your device and is not transmitted to us or anyone else. You can delete it at any time by clearing your browser's site data, or with the "Clear" buttons on the favourites page.
 
-## Server logs
+## Hosting and server logs
 
-This site is served as static files. The hosting provider may process technical data (such as IP address, time of request and user agent) in short-lived server logs to deliver the site and protect it from abuse. We do not combine this data with other sources or use it for profiling.
+This site is served as static files through the network of **Cloudflare, Inc.** (USA), which acts as our hosting provider. To deliver the site and protect it from abuse, Cloudflare processes technical data such as IP addresses, request times and browser information in short-lived logs. This processing can take place in data centres outside Switzerland, including the United States; Cloudflare relies on standard contractual clauses and is certified under the Swiss-U.S. Data Privacy Framework. See Cloudflare's [privacy policy](https://www.cloudflare.com/privacypolicy/).
+
+We do not use Cloudflare's analytics, cookies or tracking features, and we do not combine server data with other sources or use it for profiling.
 
 ## Links to other websites
 

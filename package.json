@@ -8,7 +8,7 @@
   "homepage": "https://swiss-alternatives.ch",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swiss-alternatives/directory.git"
+    "url": "git+https://github.com/dynavo-ch/swiss-alternatives.git"
   },
   "keywords": [
     "switzerland",

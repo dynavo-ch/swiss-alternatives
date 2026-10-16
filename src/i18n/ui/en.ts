@@ -305,6 +305,11 @@ export const en = {
   'company.registry': 'Commercial register',
   'company.products': 'Products',
   'company.type': 'Organisation type',
+  'company.labels': 'Labels',
+  'company.labelsNote':
+    'Third-party labels awarded by their label organisations on their own criteria. Listed for information; not verified by us.',
+  'label.swiss-made-software': 'swiss made software',
+  'label.swiss-hosting': 'swiss hosting',
 
   /* Actions --------------------------------------------------------- */
   'fav.add': 'Save to favourites',
@@ -578,7 +583,7 @@ export const en = {
   'contact.title': 'Contact',
   'contact.heading': 'Get in touch',
   'contact.description':
-    'Contact Swiss Alternatives at {email} — suggestions, corrections, vendor requests, press and partnerships.',
+    'Contact Swiss Alternatives — suggestions, corrections, vendor requests, press and partnerships.',
   'contact.lead':
     'One mailbox for everything: suggestions, corrections, vendor requests, press and partnerships. Public suggestions on GitHub are just as welcome.',
   'contact.topics': 'What can we help with?',

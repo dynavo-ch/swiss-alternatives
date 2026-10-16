@@ -1,0 +1,65 @@
+name: Unchained Commerce GmbH
+shortName: Unchained Commerce
+type: company
+description: >-
+  Zurich-based e-commerce and digital agency that develops the open-source
+  Unchained Engine and builds and operates online shops, B2B portals and web
+  applications.
+website: https://unchained.shop
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Registered in Zurich in April 2016 as Reactive Code GmbH and renamed
+    Unchained Commerce GmbH in April 2019, according to the commercial
+    register.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-244.383.397
+  url: https://www.zefix.ch/en/search/entity/list/firm/1260398
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register publications, the share capital of
+    CHF 60,000 is held in equal parts by the two managing partners, Pascal
+    Kaufmann and Vedran Rudelj, both Swiss citizens (status of the January
+    2022 entry; no later change of partners has been published).
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Unchained Commerce GmbH (CHE-244.383.397) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1260398
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - Unchained Commerce
+    url: https://unchained.shop/imprint
+    publisher: Unchained Commerce GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: agency
+    title: Unchained - E-Commerce & Digitalagentur Zürich
+    url: https://unchained.ch/
+    publisher: Unchained Commerce GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Unchained Commerce — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/unchained-commerce/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

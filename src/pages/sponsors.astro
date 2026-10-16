@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import Email from '~/components/Email.astro';
 import Icon from '~/components/Icon.astro';
 import PageHeader from '~/components/PageHeader.astro';
-import { site } from '~/config/site';
 import { sponsors } from '~/config/sponsors';
 import { useTranslations } from '~/i18n';
 import BaseLayout from '~/layouts/BaseLayout.astro';
@@ -15,7 +15,6 @@ const crumbs = [
   { label: t('nav.home'), href: paths.home() },
   { label: t('nav.sponsors'), href: paths.sponsors() },
 ];
-const mailto = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Sponsorship')}`;
 ---
 
 <BaseLayout
@@ -65,10 +64,9 @@ const mailto = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Sponso
         </h2>
         <p class="lead">{t('sponsors.policyLead')}</p>
         <p class="policy__cta">
-          <a href={mailto} class="btn btn--primary">
-            <Icon name="mail" />
-            {t('sponsors.cta')}
-          </a>
+          <Email class="btn btn--primary" subject="Sponsorship" label={t('sponsors.cta')}>
+            <Icon name="mail" slot="before" />
+          </Email>
         </p>
       </div>
       <ol class="rules" role="list">

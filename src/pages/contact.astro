@@ -1,4 +1,5 @@
 ---
+import Email from '~/components/Email.astro';
 import Icon from '~/components/Icon.astro';
 import PageHeader from '~/components/PageHeader.astro';
 import { site } from '~/config/site';
@@ -8,12 +9,10 @@ import { paths } from '~/lib/paths';
 import { breadcrumbLd } from '~/lib/seo';
 
 const t = useTranslations(Astro.currentLocale);
-const email = site.contactEmail;
 const crumbs = [
   { label: t('nav.home'), href: paths.home() },
   { label: t('nav.contact'), href: paths.contact() },
 ];
-const mail = (subject: string) => `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 
 const topics = [
   {
@@ -34,7 +33,7 @@ const topics = [
     icon: 'building-2',
     title: 'Vendors',
     text: 'Correct your listing, send an official logo or tell us about hosting changes. Listings are free and cannot be bought; please disclose that you represent the vendor.',
-    href: mail('Vendor: '),
+    subject: 'Vendor: ',
     label: 'Email us as a vendor',
   },
   {
@@ -48,14 +47,14 @@ const topics = [
     icon: 'newspaper',
     title: 'Press',
     text: 'Questions about the project, the data or the methodology.',
-    href: mail('Press: '),
+    subject: 'Press: ',
     label: 'Email the team',
   },
   {
     icon: 'shield-alert',
     title: 'Security',
     text: 'Found a vulnerability in this website? Please report it privately by email before disclosing it.',
-    href: mail('Security report'),
+    subject: 'Security report',
     label: 'Report privately',
   },
 ];
@@ -63,7 +62,7 @@ const topics = [
 
 <BaseLayout
   title={t('contact.title')}
-  description={t('contact.description', { email })}
+  description={t('contact.description')}
   jsonLd={breadcrumbLd(crumbs)}
 >
   <PageHeader
@@ -73,10 +72,9 @@ const topics = [
     lead={t('contact.lead')}
   >
     <p class="contact-mail">
-      <a href={`mailto:${email}`} class="btn btn--primary btn--lg">
-        <Icon name="mail" />
-        {email}
-      </a>
+      <Email class="btn btn--primary btn--lg">
+        <Icon name="mail" slot="before" />
+      </Email>
     </p>
   </PageHeader>
 
@@ -90,10 +88,16 @@ const topics = [
           <Icon name={topic.icon} class="topic__icon" />
           <h3>{topic.title}</h3>
           <p>{topic.text}</p>
-          <a href={topic.href} class="arrow-link">
-            {topic.label}
-            <Icon name="arrow-right" />
-          </a>
+          {'subject' in topic ? (
+            <Email class="arrow-link" subject={topic.subject} label={topic.label}>
+              <Icon name="arrow-right" slot="after" />
+            </Email>
+          ) : (
+            <a href={topic.href} class="arrow-link">
+              {topic.label}
+              <Icon name="arrow-right" />
+            </a>
+          )}
         </li>
       ))}
     </ul>

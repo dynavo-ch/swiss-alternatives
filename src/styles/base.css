@@ -440,3 +440,8 @@ a {
   color: var(--c-ink);
   font-weight: 600;
 }
+
+/* Protected email address: assembled from data attributes (src/lib/email.ts). */
+.eml:empty::before {
+  content: attr(data-u) '\0040' attr(data-d);
+}

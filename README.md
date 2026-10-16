@@ -114,22 +114,45 @@ The dev server runs at <http://localhost:4321>.
 
 ## Deployment
 
-`npm run build` produces a fully static site in `dist/`. Any static host works.
+`npm run build` produces a fully static site in `dist/` (≈ 13 MB, ~450 files). Any static host
+works; the reference setup is **Cloudflare** (free plan: unlimited bandwidth and requests for static
+assets, 20,000 files, 25 MiB per file).
 
-| Host                 | Settings                                                                                                                                    |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Cloudflare Pages** | Build command `npm run build`, output `dist`. `public/_headers` is applied automatically.                                                   |
-| **Netlify**          | Build command `npm run build`, publish directory `dist`. `public/_headers` is applied automatically.                                        |
-| **Vercel**           | Framework preset "Astro" (or "Other"), output `dist`.                                                                                       |
-| **GitHub Pages**     | Build with Actions and upload `dist`. Use a custom domain or a user/organisation page — the site expects to be served from the domain root. |
-| **Any web server**   | Upload `dist/`. Serve `404.html` for unknown paths.                                                                                         |
+### Cloudflare (recommended)
+
+1. Push the repository to GitHub.
+2. Cloudflare dashboard → **Workers & Pages → Create → Import a repository** → select
+   `dynavo-ch/swiss-alternatives`.
+3. Build command `npm run build`, deploy command `npx wrangler deploy` (uses
+   [`wrangler.jsonc`](wrangler.jsonc)). Node.js 22 is picked up from `.nvmrc`.
+4. Add the custom domain `swiss-alternatives.ch` (and `www`, redirected) once the domain's name
+   servers point to Cloudflare.
+5. **Turn off features that inject scripts** — they would be blocked by the Content-Security-Policy
+   and contradict the no-tracking promise:
+   - Scrape Shield → **Email Address Obfuscation**: off (the site protects addresses itself)
+   - Speed → **Rocket Loader**: off
+   - **Web Analytics** automatic setup: off
+   - Security → Bot Fight Mode JavaScript detections: off (or exclude the zone)
+
+Every push to `main` then rebuilds and deploys automatically. `public/_headers` (security and cache
+headers) is applied, `404.html` is served for unknown paths, and URLs without a trailing slash are
+redirected.
+
+Alternatively use **Cloudflare Pages** with build command `npm run build` and output directory
+`dist`.
+
+### Other hosts
+
+| Host               | Settings                                                                                      |
+| ------------------ | --------------------------------------------------------------------------------------------- |
+| **Netlify**        | Build command `npm run build`, publish directory `dist`. `public/_headers` is applied.        |
+| **Vercel**         | Framework preset "Astro" (or "Other"), output `dist`.                                         |
+| **GitHub Pages**   | Build with Actions and upload `dist`; use a custom domain (the site expects the domain root). |
+| **Codeberg Pages** | EU-based, non-profit; push the contents of `dist/` to a `pages` branch.                       |
+| **Any web server** | Upload `dist/` (mind upload size limits). Serve `404.html` for unknown paths.                 |
 
 Set the canonical URL with `PUBLIC_SITE_URL` for preview deployments, otherwise `site.url` from
 `src/config/site.ts` is used for canonical links, Open Graph URLs, the sitemap and JSON-LD.
-
-Before launch, fill in the operator details in `site.operator` (shown on `/imprint/`), and set
-`site.repository` to the real repository URL (used for "Suggest a product", "Report an error" and
-"Edit this entry" links).
 
 ## Project structure
 
@@ -360,6 +383,7 @@ tooling makes the first draft fast and the review strict:
 | `npm run new -- <url>` | Reads a website and drafts entries (see below)                                               |
 | `npm run lint:content` | Editorial checks the schema cannot express                                                   |
 | `npm run build`        | Schema + relational validation + listing criteria — fails with "did you mean …?" hints       |
+| `docs/backlog.md`      | Screened leads: Swiss software companies not yet researched                                  |
 | Issue forms            | `Suggest a product` and `Report an error` for contributors without Git                       |
 
 ### What `npm run new` gathers automatically
@@ -600,7 +624,7 @@ SEO 100 on the tested content pages; `/compare/` and `/favourites/` are intentio
 
 ## Decisions and assumptions
 
-- **Seed dataset**: 59 products from 43 organisations, researched on 2026-10-15 from vendor
+- **Seed dataset**: 83 products from 65 organisations, researched on 2026-10-15/16 from vendor
   documentation, legal pages, commercial-register data and press releases. Where facts could not be
   confirmed they are `unknown`. Prices are recorded as published on that date and may change.
 - **"New" labels** are not shown for the initial dataset (`site.launchDate`); entries added later are
@@ -610,7 +634,9 @@ SEO 100 on the tested content pages; `/compare/` and `/favourites/` are intentio
 - **Logos** are fetched from vendors' own websites and normalised (see [Images and logos](#images-and-logos)).
 - **Licences**: code MIT ([LICENSE](LICENSE)), data CC BY 4.0 ([LICENSE-DATA.md](LICENSE-DATA.md)); logos
   and trademarks are excluded.
-- **Contact**: one public mailbox, `info@swiss-alternatives.ch` (configured in `src/config/site.ts`).
+- **Contact**: one public mailbox, shown on the [contact page](https://swiss-alternatives.ch/contact/) and
+  configured in `src/config/site.ts`. The address is never written into the HTML as plain text
+  (see `src/lib/email.ts`).
 - **Operator & repository** values in `src/config/site.ts` are placeholders and must be set before
   launch.
 - **Sponsors** are configured in `src/config/sponsors.ts` (empty by default) and governed by the policy

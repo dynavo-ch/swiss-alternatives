@@ -33,6 +33,9 @@ ownership:
     Swiss software company whose three founders still work in the company. The
     shareholder structure is not published. The group employs around 850
     people, about 570 of them at Abacus Research AG.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: portrait
@@ -59,3 +62,9 @@ sources:
     publisher: Netzwoche
     kind: press
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Abacus Research AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/abacus-research-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

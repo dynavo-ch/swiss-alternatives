@@ -1,0 +1,88 @@
+name: METANET AG
+shortName: METANET
+type: company
+description: >-
+  Zurich-based web hosting and domain provider in business since 2000, part of
+  the European hosting group group.one since 2022.
+website: https://www.metanet.ch
+founded: 2000
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Originally registered in the Swiss commercial register as METANET GmbH;
+    founder Mirco Schnarwiler. The company's swiss made software profile states
+    that it has been in business since 2000.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-105.519.847
+  url: https://www.zefix.ch/en/search/entity/list/firm/521209
+ownership:
+  swissOwned: no
+  parent: group.one (one.com Group AB)
+  parentCountry: SE
+  basis: vendor
+  source: privacy
+  note: >-
+    METANET joined the German dogado group in January 2022; dogado was then a
+    company of Triton's portfolio company European Directories. dogado later
+    merged with one.com to form group.one, whose legal notice names one.com
+    Group AB in Malmö, Sweden. METANET's privacy policy names dogado GmbH as its
+    100% parent within group.one.
+lastVerified: 2026-10-16
+sources:
+  - id: about
+    title: Über uns - METANET
+    url: https://www.metanet.ch/de/ueber-metanet/ueber-uns
+    publisher: METANET AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: privacy
+    title: Datenschutzerklärung - METANET
+    url: https://www.metanet.ch/de/ueber-metanet/datenschutzerklaerung
+    publisher: METANET AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: dogado
+    title: Swiss hosting provider METANET joins dogado group
+    url: https://www.group.one/news/swiss-hosting-provider-metanet-joins-dogado-group
+    publisher: group.one
+    kind: vendor
+    accessed: 2026-10-16
+  - id: triton
+    title: dogado continues M&A strategy with acquisition of METANET in Switzerland
+    url: https://www.triton-partners.com/news/dogado-continues-m-a-strategy-with-acquisition-of-metanet-in-switzerland
+    publisher: Triton Partners
+    kind: press
+    accessed: 2026-10-16
+  - id: groupone-history
+    title: History - group.one
+    url: https://www.group.one/company/history
+    publisher: group.one
+    kind: vendor
+    accessed: 2026-10-16
+  - id: groupone-legal
+    title: Legal Notice - group.one
+    url: https://www.group.one/legal-notice
+    publisher: one.com Group AB
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: METANET AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/metanet-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+  - id: zefix
+    title: METANET AG (CHE-105.519.847) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/521209
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16

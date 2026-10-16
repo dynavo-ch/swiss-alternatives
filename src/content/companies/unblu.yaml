@@ -1,0 +1,83 @@
+name: unblu inc.
+shortName: Unblu
+type: company
+description: >-
+  Basel-based software company, part of the Swiss Post group, that develops
+  secure messaging, video and co-browsing software for banks and wealth
+  managers.
+website: https://www.unblu.com
+founded: 2008
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    Unblu states that it was founded in Basel in 2008. Despite the "inc." in
+    its name, the company is a Swiss Aktiengesellschaft; according to the
+    commercial register its seat was in Sarnen (OW) until it moved to Basel in
+    December 2017.
+headquarters:
+  city: Basel
+  canton: BS
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.546.895
+  url: https://www.zefix.ch/en/search/entity/list/firm/924405
+ownership:
+  swissOwned: yes
+  parent: Die Schweizerische Post AG (Swiss Post)
+  parentCountry: CH
+  basis: verified
+  source: swisspost-deal
+  note: >-
+    Swiss Post acquired a majority stake in Unblu in November 2022; Unblu
+    continues to operate as a subsidiary under its own brand and describes
+    itself as part of the Swiss Post group. Swiss Post is owned by the Swiss
+    Confederation. In 2023 and 2025 unblu inc. absorbed its subsidiaries Unblu
+    Cloud GmbH and Unblu adiacom AG, and in May 2025 its articles were amended
+    to allow intra-group financing. The German subsidiary Unblu GmbH is based
+    in Frankfurt am Main.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: unblu inc. (CHE-114.546.895) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/924405
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About Us - Unblu
+    url: https://www.unblu.com/en/company
+    publisher: unblu inc.
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - Unblu
+    url: https://www.unblu.com/en/imprint
+    publisher: unblu inc.
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swisspost-deal
+    title: GP Bullhound advised Unblu on its acquisition by Swiss Post
+    url: https://www.gpbullhound.com/articles/unblu/
+    publisher: GP Bullhound
+    kind: press
+    accessed: 2026-10-16
+  - id: sms-news-2022
+    title: Strategic partnership with Swiss Post announced
+    url: https://www.swissmadesoftware.org/en/companies/unblu-inc./home/unblu-und-die-schweizerische-post-vereinbaren-strategische-partnerschaft.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: unblu inc. — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/unblu-inc./home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

@@ -30,6 +30,11 @@ ownership:
     The shareholders are not published. Co-founders Aarno Aukia and Patrick
     Mathers moved to the board of directors in 2021. No acquisition or foreign
     shareholder has been reported. VSHN also has an office in Vancouver, Canada.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: imprint
@@ -56,3 +61,9 @@ sources:
     publisher: Netzwoche
     kind: press
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: VSHN AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/vshn-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

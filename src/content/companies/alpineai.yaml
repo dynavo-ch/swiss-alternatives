@@ -35,6 +35,9 @@ ownership:
     president and CEO Pascal Kaufmann. A seed round closed in April 2026 was led by Swiss KMU
     Partners AG together with an unnamed international syndicate of tech
     investors. No controlling parent company was found.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: zefix
@@ -67,3 +70,9 @@ sources:
     publisher: AlpineAI AG
     kind: vendor
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: AlpineAi AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/alpineai-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

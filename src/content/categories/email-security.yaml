@@ -1,0 +1,10 @@
+name: Email Security
+noun: email security services
+group: security
+icon: mail-warning
+summary: Protection against phishing, malware and email fraud.
+intro: >-
+  Email security services filter phishing, malware and business-email compromise before messages
+  reach users, often in addition to the protection built into the mail platform.
+related: [network-security, email]
+added: 2026-10-16

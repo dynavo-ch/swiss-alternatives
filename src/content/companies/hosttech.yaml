@@ -1,0 +1,65 @@
+name: hosttech GmbH
+shortName: hosttech
+type: company
+description: >-
+  Web hosting and domain provider founded in 2004 in Richterswil, run by its two
+  founders and operating its own data centres in Switzerland.
+website: https://www.hosttech.ch
+founded: 2004
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: Founded in 2004 in Richterswil on Lake Zurich by Marius Meuwly and Manuel Kälin.
+headquarters:
+  city: Richterswil
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.992.562
+  url: https://www.zefix.ch/en/search/entity/list/firm/952670
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: imprint
+  note: >-
+    The imprint names the founders Manuel Kälin and Marius Meuwly as the
+    partners (Gesellschafter) of the GmbH; according to the company they serve
+    as CEO and CTO. The commercial register lists Manuel Kälin, a Swiss citizen,
+    as a partner. Separate companies named hosttech GmbH are registered in
+    Salzburg (AT) and Berlin (DE) for those markets. No acquisition has been
+    reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: about
+    title: Über die hosttech GmbH – Über uns
+    url: https://www.hosttech.ch/unternehmen/ueber-uns/
+    publisher: hosttech GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum – hosttech GmbH
+    url: https://www.hosttech.ch/impressum/
+    publisher: hosttech GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: hosttech GmbH (CHE-114.992.562) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/952670
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: hosttech GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/hosttech-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

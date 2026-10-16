@@ -1,0 +1,7 @@
+name: Cvent
+vendor: Cvent, Inc.
+vendorCountry: US
+parent: Blackstone
+summary: Event management platform for registration, attendee management, venues and virtual events.
+website: 'https://www.cvent.com'
+categories: [event-management]

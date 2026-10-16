@@ -34,6 +34,11 @@ ownership:
     investor or parent company is named; the nationality of the shareholders
     is not published. The company has more than 200 employees, a Swiss branch
     in Münchenstein BL and a German branch in Fürth.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: about
@@ -60,3 +65,9 @@ sources:
     publisher: Moneyhouse AG
     kind: registry
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Opacc Software AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/opacc-software-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

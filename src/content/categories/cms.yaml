@@ -1,0 +1,10 @@
+name: Content Management
+noun: content management systems
+group: business
+icon: layout-template
+summary: Build and manage websites and digital content.
+intro: >-
+  Content management systems (CMS) let teams create, structure and publish content for websites,
+  apps and other channels — from classic page editors to headless platforms.
+related: [web-hosting, e-commerce]
+added: 2026-10-16

@@ -152,3 +152,7 @@ export const FEATURE_KEYS = [
   'dataExport',
 ] as const;
 export type FeatureKey = (typeof FEATURE_KEYS)[number];
+
+/** Third-party Swiss labels a company can hold (membership claims, recorded with a source). */
+export const LABELS = ['swiss-made-software', 'swiss-hosting'] as const;
+export type Label = (typeof LABELS)[number];

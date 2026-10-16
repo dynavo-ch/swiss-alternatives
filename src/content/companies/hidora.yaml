@@ -27,6 +27,11 @@ ownership:
   note: >-
     Shareholders are not published. Founder Matthieu Robin is CEO; no
     acquisition or foreign shareholder has been reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: about
@@ -47,3 +52,9 @@ sources:
     publisher: Federal Office of Justice (Zefix)
     kind: registry
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Hidora — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/hidora/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

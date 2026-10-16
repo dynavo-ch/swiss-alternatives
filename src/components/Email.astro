@@ -1,0 +1,33 @@
+---
+/**
+ * Protected email link — see src/lib/email.ts. Shows the address (assembled
+ * by CSS) unless a `label` is given. Use the "before"/"after" slots for icons.
+ */
+import { site } from '~/config/site';
+import { encodeEmail, splitEmail } from '~/lib/email';
+import { paths } from '~/lib/paths';
+
+interface Props {
+  address?: string;
+  subject?: string;
+  body?: string;
+  label?: string;
+  class?: string;
+}
+
+const { address = site.contactEmail, subject, body, label, class: className } = Astro.props;
+const { user, domain } = splitEmail(address);
+---
+
+<a
+  href={paths.contact()}
+  class={className}
+  data-email={encodeEmail(address)}
+  data-subject={subject}
+  data-body={body}
+  rel="nofollow"
+>
+  <slot name="before" />
+  {label ?? <span class="eml" data-u={user} data-d={domain} />}
+  <slot name="after" />
+</a>

@@ -16,6 +16,7 @@ import {
   CERTIFICATIONS,
   DEPLOYMENTS,
   HOSTING_VALUES,
+  LABELS,
   PLATFORMS,
   TRI_VALUES,
   BASIS_VALUES,
@@ -143,6 +144,8 @@ const companies = defineCollection({
           ...provenance,
         })
         .default({ swissOwned: 'unknown' }),
+      /** Third-party labels (e.g. "swiss made software"), each with the source that lists it. */
+      labels: z.array(z.object({ label: z.enum(LABELS), source: z.string() })).default([]),
       lastVerified: date.optional(),
       sources: z.array(source).default([]),
     }),

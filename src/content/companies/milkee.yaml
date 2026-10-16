@@ -1,0 +1,63 @@
+name: MILKEE GmbH
+shortName: MILKEE
+type: company
+description: >-
+  Winterthur-based software company founded in 2022 that develops MILKEE, a
+  cloud accounting tool for self-employed people and small businesses in
+  Switzerland.
+website: https://milkee.ch
+founded: 2022
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in October 2022
+    with its seat in Zurich; the seat moved to Winterthur in May 2025.
+headquarters:
+  city: Winterthur
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-304.550.620
+  url: https://www.zefix.ch/en/search/entity/list/firm/1557480
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, founder and managing director
+    Nicolas Hämmerli, a Swiss citizen resident in Winterthur, holds all 250
+    capital contributions of the GmbH.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: MILKEE GmbH — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1557480
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - MILKEE
+    url: https://milkee.ch/impressum
+    publisher: MILKEE GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - MILKEE
+    url: https://milkee.ch/ueber-uns
+    publisher: MILKEE GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: MILKEE GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/milkee-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

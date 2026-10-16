@@ -43,6 +43,11 @@ ownership:
     company and contracting entity; its place under Infomaniak Group SA is
     inferred from the shared address, management and group references rather
     than stated explicitly in the sources consulted.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: uid-register
@@ -93,3 +98,9 @@ sources:
     publisher: Infomaniak Network SA
     kind: vendor
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Infomaniak Network SA/AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/infomaniak/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

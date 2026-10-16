@@ -6,7 +6,7 @@ visitor's own browser.
 
 ## Reporting a vulnerability
 
-Please report security issues **privately** to **info@swiss-alternatives.ch**
+Please report security issues **privately** to the address on the [contact page](https://swiss-alternatives.ch/contact/)
 (subject: "Security report") rather than opening a public issue. Include steps
 to reproduce and the affected URL or file. We will acknowledge the report and
 keep you informed while we fix it.

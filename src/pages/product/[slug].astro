@@ -223,6 +223,12 @@ const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/pr
                 <dd class="tnum">{priceText}</dd>
               </div>
             )}
+            {company.data.labels.length > 0 && (
+              <div>
+                <dt>{t('company.labels')}</dt>
+                <dd>{company.data.labels.map((l) => t(`label.${l.label}`)).join(', ')}</dd>
+              </div>
+            )}
             <div>
               <dt>{t('product.openSource')}</dt>
               <dd>

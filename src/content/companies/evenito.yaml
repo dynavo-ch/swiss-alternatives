@@ -1,0 +1,74 @@
+name: Evenito AG
+shortName: evenito
+type: company
+description: >-
+  Zurich-based company, founded in 2016, that develops the evenito event
+  management software for corporate event teams, with a further office in
+  Hamburg.
+website: https://evenito.com
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Evenito AG was entered in the commercial register of the canton of Zurich
+    in December 2016; its articles of association are dated 18 November 2016.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-272.774.030
+  url: https://www.zefix.ch/en/search/entity/list/firm/1286156
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    Privately held; the shareholder structure is not published. The first
+    financing round of CHF 1.7 million (announced in February 2020) came from
+    several private investors who were not named. The board members entered
+    in the commercial register are Swiss citizens, including Markus Popp as
+    delegate of the board. In May 2025 the articles were amended to allow the
+    company to finance or secure obligations of its shareholders, and two new
+    board members were entered in August 2026. No acquisition was found in
+    reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Evenito AG (CHE-272.774.030) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1286156
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About us - evenito
+    url: https://evenito.com/en/unternehmen/about-us
+    publisher: Evenito AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - evenito
+    url: https://evenito.com/en/imprint
+    publisher: Evenito AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: funding-2020
+    title: Event management software startup raises CHF 1.7 million
+    url: https://www.startupticker.ch/en/news/events-management-startup-raises-chf-1-7-million
+    publisher: Startupticker.ch
+    kind: press
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Evenito AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/evenito-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

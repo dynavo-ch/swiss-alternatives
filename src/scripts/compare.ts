@@ -59,7 +59,7 @@ export async function initCompare(root: HTMLElement) {
       ? `${escapeHtml(value)}${sub ? `<span class="cmp__sub">${escapeHtml(sub)}</span>` : ''}`
       : state('unknown');
   const footprint = (p: Record_) =>
-    `<span class="footprint footprint--lg" role="img" aria-label="${escapeHtml(
+    `<span class="footprint footprint--lg" data-fp role="img" aria-label="${escapeHtml(
       DIMENSIONS.map((d) => `${d}: ${p.footprint[d]}`).join(', '),
     )}">${DIMENSIONS.map((d) => `<span class="footprint__cell" data-state="${p.footprint[d]}"></span>`).join('')}</span>`;
 

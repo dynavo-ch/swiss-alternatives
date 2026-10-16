@@ -11,6 +11,12 @@ Thank you for helping make Swiss software easier to find.
 Please include sources. We publish only facts we can verify, and we mark each fact as _verified_,
 _vendor claim_ or _inferred_.
 
+## Looking for something to research?
+
+[docs/backlog.md](docs/backlog.md) lists Swiss software companies that have not been researched yet
+(leads from the public swiss made software member list). Pick one, check it against the listing
+criteria and open a pull request.
+
 ## Add or edit entries yourself
 
 1. Read [docs/CONTENT.md](docs/CONTENT.md) and the [listing criteria](https://swiss-alternatives.ch/methodology/).

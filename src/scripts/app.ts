@@ -15,6 +15,8 @@ import {
   toast,
   toggle,
 } from './store';
+import { initEmailLinks } from './email';
+import { initFootprintTips } from './footprint-tip';
 import type * as SearchApi from './search';
 
 type SearchModule = typeof SearchApi;
@@ -190,3 +192,9 @@ document.querySelectorAll<HTMLElement>('[data-search-inline]').forEach((root) =>
 document
   .querySelectorAll('[data-search-open]')
   .forEach((el) => el.addEventListener('pointerenter', () => void loadSearch(), { once: true }));
+
+/* Footprint explanations ------------------------------------------------ */
+initFootprintTips();
+
+/* Protected email links ------------------------------------------------- */
+initEmailLinks();

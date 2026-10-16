@@ -1,0 +1,77 @@
+name: Certifaction AG
+shortName: Certifaction
+type: company
+description: >-
+  Zurich-based provider of electronic signature software, founded in 2020, with a
+  subsidiary in Munich, Germany.
+website: https://certifaction.com
+founded: 2020
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the Zurich commercial register in March 2020 (articles dated 21
+    February 2020). Certifaction states that it was founded in 2020.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-343.475.910
+  url: https://www.zefix.ch/en/search/entity/list/firm/1429012
+ownership:
+  swissOwned: partial
+  basis: inferred
+  source: about
+  note: >-
+    Certifaction describes itself as owner-managed and backed by investors; the
+    shareholder structure is not published. Its 2020 first round was led by the
+    Swiss seed fund Wingman Ventures (now Founderful) with Seedcamp (London) and
+    Angel Invest Ventures (Berlin); a 2022 seed round also lists HV Capital and
+    Expa. Shareholders therefore include Swiss and foreign investors. No
+    acquisition of Certifaction was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Certifaction AG (CHE-343.475.910) - commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1429012
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Imprint - Certifaction
+    url: https://certifaction.com/imprint/
+    publisher: Certifaction AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: about
+    title: About Us - Certifaction
+    url: https://certifaction.com/about-us/
+    publisher: Certifaction AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: itreseller-2020
+    title: 1,1 Millionen Franken für Zürcher Certifaction
+    url: https://www.itreseller.ch/Artikel/91782/11_Millionen_Franken_fuer_Zuercher_Certifaction.html
+    publisher: IT Reseller
+    kind: press
+    accessed: 2026-10-16
+  - id: vcbacked
+    title: Certifaction - funding and investors
+    url: https://www.vcbacked.co/company/certifaction
+    publisher: VCBacked
+    kind: independent
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Certifaction AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/certifaction-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

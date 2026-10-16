@@ -37,6 +37,9 @@ ownership:
     Afinum had held a majority stake since 2020, and the founders left the
     company in 2024. Threema states that its headquarters, servers and
     management remain in Switzerland.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: about
@@ -93,3 +96,9 @@ sources:
     publisher: Privacy Guides
     kind: independent
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: Threema — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/threema/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

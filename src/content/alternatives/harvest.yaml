@@ -1,0 +1,8 @@
+name: Harvest
+vendor: Bending Spoons Operations S.p.A.
+vendorCountry: IT
+parent: Bending Spoons
+summary: Cloud time tracking and invoicing service for teams and agencies.
+website: 'https://www.getharvest.com'
+categories: [time-tracking, invoicing]
+aliases: [getharvest]

@@ -1,0 +1,8 @@
+name: Proofpoint
+vendor: Proofpoint, Inc.
+vendorCountry: US
+parent: Thoma Bravo
+summary: Email security and threat protection platform for organisations, including phishing and BEC defence.
+website: 'https://www.proofpoint.com'
+categories: [email-security]
+aliases: [proofpoint email protection]

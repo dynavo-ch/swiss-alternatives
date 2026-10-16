@@ -1,0 +1,10 @@
+name: Document Management
+noun: document management systems
+group: workplace
+icon: folder-archive
+summary: Store, organise, archive and share business documents.
+intro: >-
+  Document management systems (DMS) store and organise business documents with versioning,
+  permissions, workflows and compliant archiving.
+related: [cloud-storage, e-signatures, file-sharing]
+added: 2026-10-16

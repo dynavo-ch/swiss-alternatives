@@ -1,0 +1,83 @@
+name: ProTimer GmbH
+shortName: ProTimer
+type: company
+description: >-
+  Software company in Degersheim SG that has developed the ProTimer time and
+  attendance software since 1997. Since August 2025 it has belonged to Vierwald
+  Software AG.
+website: https://www.protimer.ch
+founded: 2001
+swissFounded:
+  value: yes
+  basis: verified
+  source: moneyhouse
+  note: >-
+    Entered in the commercial register on 2 November 2001. According to
+    ProTimer, the software had been developed since 1997 together with
+    fiduciary firms before the company was founded.
+headquarters:
+  city: Degersheim
+  canton: SG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-109.349.509
+  url: https://www.zefix.ch/en/search/entity/list/firm/656276
+ownership:
+  swissOwned: unknown
+  parent: Vierwald Software AG
+  parentCountry: CH
+  basis: verified
+  source: zefix
+  note: >-
+    ProTimer GmbH was sold to Vierwald Software AG on 12 August 2025 as a
+    succession arrangement; founder Roland Schärli remains managing director.
+    The commercial register (SOGC, 1 October 2025) lists Vierwald Software AG,
+    a holding company registered in Risch (Rotkreuz) ZG in 2024, as the sole
+    shareholder. Vierwald's own shareholders are not published, so ultimate
+    ownership is unknown.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: ProTimer GmbH — commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/656276
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: moneyhouse
+    title: ProTimer GmbH - commercial register data
+    url: https://www.moneyhouse.ch/de/company/protimer-gmbh-12048440321
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-16
+  - id: vierwald
+    title: Vierwald Software AG - commercial register data
+    url: https://www.moneyhouse.ch/de/company/vierwald-software-ag-3038760781
+    publisher: Moneyhouse AG
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über ProTimer GmbH
+    url: https://protimer.ch/ueber-protimer/
+    publisher: ProTimer GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - ProTimer
+    url: https://protimer.ch/impressum/
+    publisher: ProTimer GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: ProTimer GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/protimer-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

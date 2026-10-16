@@ -38,6 +38,9 @@ ownership:
     November 2024. Swiss Post is owned by the Swiss Confederation. Open Systems'
     former managed detection and response business had been split off as
     Ontinue, which stayed with EQT.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: uid-register

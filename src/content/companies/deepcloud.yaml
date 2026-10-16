@@ -1,0 +1,74 @@
+name: DeepCloud AG
+shortName: DeepCloud
+type: company
+description: >-
+  Wittenbach-based cloud software company founded in 2020 as a spin-off of Abacus
+  Research, offering document sharing, e-signature and digital identity services.
+website: https://www.deepcloud.swiss
+founded: 2020
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register in January 2020 with its seat in
+    Biel/Bienne; the seat moved to Wittenbach SG in December 2020. DeepCloud
+    describes itself as founded in 2020 as an Abacus spin-off.
+headquarters:
+  city: Wittenbach
+  canton: SG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-187.309.718
+  url: https://www.zefix.ch/en/search/entity/list/firm/1421293
+ownership:
+  swissOwned: yes
+  parent: Abacus Research AG
+  parentCountry: CH
+  parentCompany: abacus
+  basis: vendor
+  source: abacus-history
+  note: >-
+    DeepCloud calls Abacus Research AG (Wittenbach SG) its parent company. The
+    exact shareholding is not published. Abacus describes itself as an
+    owner-managed Swiss software company.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: DeepCloud AG (CHE-187.309.718) - commercial register (Zefix)
+    url: https://www.zefix.ch/en/search/entity/list/firm/1421293
+    publisher: Federal Office of Justice
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - DeepCloud
+    url: https://www.deepcloud.swiss/en/impressum/
+    publisher: DeepCloud AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: about
+    title: About us - DeepCloud
+    url: https://www.deepcloud.swiss/en/about-us/
+    publisher: DeepCloud AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: abacus-history
+    title: 'Four decades of Abacus: a story that shaped our path at DeepCloud'
+    url: https://www.deepcloud.swiss/en/newsroom/news/four-decades-of-abacus-a-story-that-shaped-our-path-at-deepcloud/
+    publisher: DeepCloud AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: DeepCloud AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/deepcloud-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

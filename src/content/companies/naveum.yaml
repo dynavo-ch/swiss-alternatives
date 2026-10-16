@@ -1,0 +1,78 @@
+name: Naveum AG
+shortName: Naveum
+type: company
+description: >-
+  Adliswil-based cloud provider founded in 2017 that offers infrastructure as a
+  service, private clouds and backup to IT service providers and resellers.
+website: https://naveum.ch
+founded: 2017
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: Entered in the commercial register in Zurich in May 2017; the seat moved to Adliswil in 2018.
+headquarters:
+  city: Adliswil
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-157.636.696
+  url: https://www.zefix.ch/en/search/entity/list/firm/1304440
+ownership:
+  swissOwned: yes
+  parent: Truecore AG
+  parentCountry: CH
+  basis: inferred
+  source: truecore
+  note: >-
+    Truecore AG, an IT services company in Adliswil, describes Naveum AG as its
+    subsidiary. Truecore's shareholders are not published since its conversion
+    into an AG in 2022; when it was a GmbH, the register listed two Swiss
+    citizens as partners, including Thomas Lüssi-Pataki, who is also chairman of
+    Naveum. No foreign shareholder has been reported.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: about
+    title: Unsere Werte und Identität - Naveum
+    url: https://naveum.ch/about-us/
+    publisher: Naveum AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Naveum
+    url: https://naveum.ch/impressum/
+    publisher: Naveum AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: truecore
+    title: Truecore - Cloud
+    url: https://truecore.ch/
+    publisher: Truecore AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: zefix
+    title: Naveum AG (CHE-157.636.696) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1304440
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: zefix-truecore
+    title: Truecore AG (CHE-198.858.952) - Central Business Names Index
+    url: https://www.zefix.ch/en/search/entity/list/firm/1143661
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Naveum AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/naveum-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16

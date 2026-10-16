@@ -37,6 +37,9 @@ ownership:
     names the holding company BSI Software AG (Baden, registered in 2020),
     while the privacy policy names BSI Business Systems Integration AG as
     controller.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
 lastVerified: 2026-10-15
 sources:
   - id: about
@@ -87,3 +90,9 @@ sources:
     publisher: Walder Wyss
     kind: press
     accessed: 2026-10-15
+  - id: swissmadesoftware
+    title: BSI Business Systems Integration AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/bsi-business-systems-integration-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
