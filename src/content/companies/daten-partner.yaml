@@ -1,0 +1,75 @@
+name: DATEN PARTNER GmbH
+shortName: Daten Partner
+type: company
+description: >-
+  Zurich company founded in 2017 that offers the data.share virtual data rooms
+  for property, foundation, art and estate documents; its owner also heads Meier
+  Planungsdienste GmbH.
+website: https://datenpartner.ch
+founded: 2017
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in May 2017, with
+    articles of association dated 26 April 2017. Daten Partner states that it was
+    founded as a further step of Meier Planungsdienste GmbH and that the
+    data.share platform, originally built for the construction sector, has been
+    in use since 2001.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-470.902.387
+  url: https://www.zefix.ch/en/search/entity/list/firm/1304239
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, Hans-Rudolf Meier, a Swiss citizen
+    living in Zurich, holds all 20 capital contributions of CHF 1,000 as sole
+    partner. Daten Partner describes itself as a family business run in the
+    second generation. No sale was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: DATEN PARTNER GmbH (CHE-470.902.387) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1304239
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - Daten Partner
+    url: https://datenpartner.ch/ueber_uns/
+    publisher: DATEN PARTNER GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - Daten Partner
+    url: https://datenpartner.ch/impressum/
+    publisher: DATEN PARTNER GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Daten Partner GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/daten-partner-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, 2017 gegründet, das die virtuellen Datenräume data.share für Liegenschafts-, Stiftungs-, Kunst- und Nachlassdokumente anbietet; ihr Inhaber leitet auch die Meier Planungsdienste GmbH.'
+    notes:
+      swissFounded.note: 'Im Mai 2017 im Handelsregister des Kantons Zürich eingetragen, mit Statuten vom 26. April 2017. Daten Partner gibt an, als weiterer Schritt der Meier Planungsdienste GmbH gegründet worden zu sein und dass die ursprünglich für die Baubranche entwickelte Plattform data.share seit 2001 im Einsatz ist.'
+      ownership.note: "Gemäss Handelsregister hält Hans-Rudolf Meier, Schweizer Bürger mit Wohnsitz in Zürich, als einziger Gesellschafter sämtliche 20 Stammanteile zu CHF 1'000. Daten Partner bezeichnet sich als Familienunternehmen in zweiter Generation. Bis Oktober 2026 wurde kein Verkauf gemeldet."

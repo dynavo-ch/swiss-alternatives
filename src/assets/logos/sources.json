@@ -44,6 +44,11 @@
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
   },
+  "aplixerp": {
+    "source": "manual/aplixerp.png",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
   "appuio": {
     "source": "https://www.google.com/s2/favicons?domain=www.appuio.ch&sz=256",
     "method": "favicon service",
@@ -63,6 +68,11 @@
     "source": "https://cdn.prod.website-files.com/694159454607d4764c350591/69aed5347350fb1cd46af449_favicon-large.svg",
     "method": "svg icon",
     "fetched": "2026-10-15"
+  },
+  "begasoft-kubernetes": {
+    "source": "manual/begasoft-kubernetes.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
   },
   "bexio": {
     "source": "https://cdn.bexio.com/img/favicons/icon.svg",
@@ -154,10 +164,20 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "company--begasoft": {
+    "source": "manual/company--begasoft.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
   "company--bexio": {
     "source": "https://cdn.bexio.com/img/favicons/icon.svg",
     "method": "svg icon",
     "fetched": "2026-10-15"
+  },
+  "company--boreas": {
+    "source": "manual/company--boreas.png",
+    "method": "manual",
+    "fetched": "2026-10-16"
   },
   "company--bsi": {
     "source": "https://res.bsi-software.com/baf83f4c-566a-431c-a9ac-891daf68d99b/static/android-chrome-192x192.png",
@@ -203,6 +223,11 @@
     "source": "https://www.cyon.ch/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
+  },
+  "company--daten-partner": {
+    "source": "https://datenpartner.ch/wp-content/uploads/2023/05/DP_Logo_v5-1.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
   },
   "company--deepcloud": {
     "source": "https://www.deepcloud.swiss/wp-content/themes/deepcloud/public/images/apple-touch-icon.18941c.png",
@@ -539,6 +564,11 @@
     "method": "svg icon",
     "fetched": "2026-10-16"
   },
+  "company--wiven-ai": {
+    "source": "https://www.wiven.ai/wp-content/uploads/2025/07/cropped-WIVEN-AI-180x180.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
   "company--worldsoft": {
     "source": "https://worldsoft.info/favicon.ico?v=d1fb9a10",
     "method": "apple-touch-icon",
@@ -568,6 +598,11 @@
     "source": "https://www.cyon.ch/apple-touch-icon.png",
     "method": "/apple-touch-icon.png",
     "fetched": "2026-10-15"
+  },
+  "data-share": {
+    "source": "https://datenpartner.ch/wp-content/uploads/2023/05/DP_Logo_v5-1.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
   },
   "deepbox": {
     "source": "https://www.deepbox.swiss/wp-content/themes/deepbox-system/public/images/deepbox/apple-touch-icon.f08930.png",
@@ -982,6 +1017,11 @@
   "whisperit": {
     "source": "https://whisperit.ai/favicon.svg",
     "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
+  "wivenllm": {
+    "source": "https://www.wiven.ai/wp-content/uploads/2025/07/cropped-WIVEN-AI-180x180.png",
+    "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
   "woelkli": {

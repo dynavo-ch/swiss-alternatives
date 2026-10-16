@@ -1,0 +1,74 @@
+name: Wiven AI Sàrl
+shortName: Wiven AI
+type: company
+description: >-
+  Company in Eysins VD, founded in 2025, that develops the WivenLLM private AI
+  assistant and the AgentHub platform for business AI agents.
+website: https://www.wiven.ai
+founded: 2025
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Vaud in April 2025, with
+    articles of association dated 13 March 2025.
+headquarters:
+  city: Eysins
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-324.312.064
+  url: https://www.zefix.ch/en/search/entity/list/firm/1687799
+ownership:
+  swissOwned: partial
+  basis: verified
+  source: zefix
+  note: >-
+    At its founding the three partners held roughly equal shares of the
+    CHF 20,000 capital: a Swiss citizen living in Echichens (CSO Daniel Aymé,
+    33%), a French national living in Annemasse, France (CEO Valdrin Latifi,
+    33.5%) and an Italian national living in Geneva (CTO Massimiliano Speranza,
+    33.5%). Aymé also holds signing authority for Mediasoft & Cie SA, an ERP
+    vendor at the same address that Wiven names as a partner. No later change
+    was published up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Wiven AI Sàrl (CHE-324.312.064) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1687799
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: about
+    title: About — Wiven AI, sovereign AI in Switzerland
+    url: https://www.wiven.ai/en/a-propos/
+    publisher: Wiven AI Sàrl
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Mentions légales — Wiven AI
+    url: https://www.wiven.ai/mentions-legales/
+    publisher: Wiven AI Sàrl
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Wiven AI — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/wiven-ai/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen in Eysins VD, 2025 gegründet, das den privaten KI-Assistenten WivenLLM und die Plattform AgentHub für KI-Agenten in Unternehmen entwickelt.'
+    notes:
+      swissFounded.note: 'Im April 2025 im Handelsregister des Kantons Waadt eingetragen, mit Statuten vom 13. März 2025.'
+      ownership.note: "Bei der Gründung hielten die drei Gesellschafter annähernd gleiche Anteile am Stammkapital von CHF 20'000: ein Schweizer Bürger mit Wohnsitz in Echichens (CSO Daniel Aymé, 33 %), ein französischer Staatsangehöriger mit Wohnsitz in Annemasse, Frankreich (CEO Valdrin Latifi, 33,5 %) und ein italienischer Staatsangehöriger mit Wohnsitz in Genf (CTO Massimiliano Speranza, 33,5 %). Aymé ist zudem zeichnungsberechtigt für die Mediasoft & Cie SA, einen ERP-Anbieter an derselben Adresse, den Wiven als Partner nennt. Bis Oktober 2026 wurde keine spätere Änderung veröffentlicht."

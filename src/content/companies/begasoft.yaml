@@ -1,0 +1,66 @@
+name: BEGASOFT AG
+shortName: BEGASOFT
+type: company
+description: >-
+  Bern IT company that provides managed cloud and Kubernetes hosting, IT
+  operations and custom software for public administrations and businesses.
+website: https://www.begasoft.ch
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    Registered in the commercial register of the canton of Bern, earlier under
+    the name BegaSoft AG. Its swiss made software profile describes it as a
+    Bern-based company active for a quarter of a century; the founding date is
+    not stated in the sources used.
+headquarters:
+  city: Bern
+  canton: BE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-104.149.015
+  url: https://www.zefix.ch/en/search/entity/list/firm/423031
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders are not published. The members of the board entered in the
+    commercial register are Swiss citizens living in the cantons of Bern and
+    Fribourg; a German national living in Düdingen sat on the board from 2024 to
+    2025. No acquisition was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: BEGASOFT AG (CHE-104.149.015) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/423031
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - BEGASOFT
+    url: https://www.begasoft.ch/impressum
+    publisher: BEGASOFT AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: BEGASOFT AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/begasoft-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Berner IT-Unternehmen, das Managed-Cloud- und Kubernetes-Hosting, IT-Betrieb und Individualsoftware für öffentliche Verwaltungen und Unternehmen anbietet.'
+    notes:
+      swissFounded.note: 'Im Handelsregister des Kantons Bern eingetragen, früher unter dem Namen BegaSoft AG. Sein Profil bei swiss made software beschreibt es als Berner Unternehmen, das seit einem Vierteljahrhundert tätig ist; das Gründungsdatum wird in den verwendeten Quellen nicht genannt.'
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht. Die im Handelsregister eingetragenen Verwaltungsratsmitglieder sind Schweizer Bürger mit Wohnsitz in den Kantonen Bern und Freiburg; ein deutscher Staatsangehöriger mit Wohnsitz in Düdingen gehörte dem Verwaltungsrat von 2024 bis 2025 an. Bis Oktober 2026 wurde keine Übernahme gemeldet.'

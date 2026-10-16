@@ -1,0 +1,75 @@
+name: boreas ag
+shortName: boreas
+type: company
+description: >-
+  ERP software company in Bertschikon (Gossau ZH) that develops and implements
+  aplixERP for Swiss SMEs in food, trade and production.
+website: https://boreas.ch
+founded: 2004
+swissFounded:
+  value: yes
+  basis: vendor
+  source: home
+  note: >-
+    boreas states that it was founded in 2004. The commercial register shows the
+    company as boreas gmbh in Gossau ZH, converted into a stock corporation in
+    2016.
+headquarters:
+  city: Gossau
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: The registered address and the operating office are in Bertschikon, part of Gossau ZH.
+jurisdiction: CH
+registry:
+  uid: CHE-110.607.807
+  url: https://www.zefix.ch/en/search/entity/list/firm/742866
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders of the stock corporation are not published. Shortly before
+    the 2016 conversion, the current chairman, a Swiss citizen, was entered as
+    holding a third of the capital of the GmbH. CEO and vice-chairman Uwe Singer
+    is entered as a German national living in Gossau ZH. No sale was found in
+    reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: boreas ag (CHE-110.607.807) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/742866
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: home
+    title: aplixERP – Schweizer ERP für Lebensmittel, Handel und Produktion
+    url: https://boreas.ch/
+    publisher: boreas ag
+    kind: vendor
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - boreas
+    url: https://boreas.ch/impressum.html
+    publisher: boreas ag
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: boreas ag — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/boreas-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'ERP-Softwareunternehmen in Bertschikon (Gossau ZH), das aplixERP für Schweizer KMU in Lebensmittelbranche, Handel und Produktion entwickelt und einführt.'
+    notes:
+      swissFounded.note: 'boreas gibt an, 2004 gegründet worden zu sein. Das Handelsregister führt das Unternehmen als boreas gmbh in Gossau ZH, die 2016 in eine Aktiengesellschaft umgewandelt wurde.'
+      headquarters.note: 'Die Domiziladresse und das operative Büro befinden sich in Bertschikon, einem Ortsteil von Gossau ZH.'
+      ownership.note: 'Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht. Kurz vor der Umwandlung 2016 wurde der heutige Präsident, ein Schweizer Bürger, mit einem Drittel des Kapitals der GmbH eingetragen. CEO und Vizepräsident Uwe Singer ist als deutscher Staatsangehöriger mit Wohnsitz in Gossau ZH eingetragen. Bis Oktober 2026 wurde kein Verkauf gemeldet.'
