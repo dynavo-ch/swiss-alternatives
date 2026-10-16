@@ -10,6 +10,9 @@ website: https://narrowin.com/en/diode
 status: active
 
 categories: [network-security]
+alternativesTo:
+  - id: illumio
+    note: Enforces segmentation with a hardware appliance in front of each device, aimed at equipment that cannot run software agents.
 
 audience: [business, enterprise, public-sector]
 deployment: [on-premises]
@@ -80,6 +83,7 @@ i18n:
     tagline: 'Plug-and-play-Appliance zur Mikrosegmentierung von Legacy-, Medizin- und OT-Geräten.'
     description: 'narrowin Diode ist eine Inline-Appliance aus Liestal, die nicht patchbare Geräte wie Medizin-, Labor- und OT-Geräte mikrosegmentiert, zentral verwaltet.'
     notes:
+      alternativesTo.illumio.note: 'Setzt die Segmentierung mit einer Hardware-Appliance vor jedem Gerät durch, ausgerichtet auf Geräte, auf denen keine Software-Agenten laufen können.'
       swiss.developed.note: 'narrowin bezeichnet seine Produkte als in der Schweiz hergestellte Netzwerk- und Sicherheitswerkzeuge, die vom eigenen Team gebaut werden; das Unternehmen hat seinen Sitz in Liestal.'
       swiss.hosted.note: 'Diode ist eine Hardware-Appliance, die im Netzwerk der Kundschaft installiert wird, und der narrowin-Controller, der sie verwaltet, kann in der Cloud oder vor Ort laufen. Wo der Cloud-Controller gehostet wird, wird nicht angegeben.'
       openSource.note: 'Von Diode wird kein Quellcode veröffentlicht; narrowin veröffentlicht andere Werkzeuge (networka, ansible-mikrotik) unter Apache-2.0.'
