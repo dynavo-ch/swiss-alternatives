@@ -1,0 +1,66 @@
+name: narrowin GmbH
+shortName: narrowin
+type: company
+description: >-
+  University spin-off in Liestal, founded in 2020, that develops network
+  visibility and segmentation products for IT and OT networks and offers
+  network security services.
+website: https://narrowin.com
+founded: 2020
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Basel-Landschaft in
+    August 2020, initially in Tenniken; the seat moved to Liestal in 2022.
+headquarters:
+  city: Liestal
+  canton: BL
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-177.290.572
+  url: https://www.zefix.ch/en/search/entity/list/firm/1448573
+ownership:
+  swissOwned: partial
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register (March 2026), the two managing
+    directors each hold 131 of 362 capital shares: Tim Senn, a Swiss citizen,
+    and Mischa Diehm, a German national living in Switzerland. The remaining
+    shares are held by Marco Pfatschbacher, a German national in Munich (41),
+    and EnPulse Ventures GmbH of Stuttgart, Germany (59). No acquisition was
+    found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: narrowin GmbH (CHE-177.290.572) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1448573
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: company
+    title: narrowin — Company
+    url: https://narrowin.com/en/company
+    publisher: narrowin GmbH
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: narrowin — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/narrowin/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Hochschul-Spin-off aus Liestal, 2020 gegründet, das Produkte für Netzwerktransparenz und Segmentierung in IT- und OT-Netzen entwickelt und Dienstleistungen für Netzwerksicherheit anbietet.'
+    notes:
+      swissFounded.note: 'Im August 2020 im Handelsregister des Kantons Basel-Landschaft eingetragen, zunächst in Tenniken; 2022 wurde der Sitz nach Liestal verlegt.'
+      ownership.note: 'Laut Handelsregister (März 2026) halten die beiden Geschäftsführer je 131 von 362 Stammanteilen: Tim Senn, Schweizer Bürger, und Mischa Diehm, deutscher Staatsangehöriger mit Wohnsitz in der Schweiz. Die übrigen Anteile halten Marco Pfatschbacher, deutscher Staatsangehöriger in München (41), und die EnPulse Ventures GmbH aus Stuttgart, Deutschland (59). Bis Oktober 2026 wurde keine Übernahme gemeldet.'

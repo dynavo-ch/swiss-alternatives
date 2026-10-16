@@ -1,0 +1,88 @@
+name: Digio AG
+shortName: Digio
+type: company
+description: >-
+  IT services company from the Zurich area, registered in Kilchberg ZH, that
+  offers software development, cyber security consulting and hosting and runs
+  the file transfer service transferly.
+website: https://www.digio.swiss
+founded: 2016
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in September 2016
+    as Digio GmbH and converted into a stock corporation in 2021.
+headquarters:
+  city: Kilchberg
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: The registered seat is in Kilchberg ZH; the imprint gives an office address in Zurich.
+jurisdiction: CH
+registry:
+  uid: CHE-286.123.005
+  url: https://www.zefix.ch/en/search/entity/list/firm/1277930
+ownership:
+  swissOwned: yes
+  basis: vendor
+  source: about
+  note: >-
+    transferly describes itself as a 100% Swiss company that is independent and
+    self-financed. Before the 2021 conversion into a stock corporation, the
+    commercial register listed as shareholders innopia GmbH (Kilchberg ZH), whose
+    sole partner is founder Damien Vouillamoz, and Tim Schrödel, both Swiss
+    citizens. The shareholders of the stock corporation are not published. No
+    acquisition was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: Digio AG (CHE-286.123.005) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1277930
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: zefix-innopia
+    title: innopia GmbH (CHE-229.017.873) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1369259
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - transferly
+    url: https://discover.transferly.swiss/impressum
+    publisher: Digio AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: about
+    title: Über transferly - Datensicherheit auf Schweizer Art
+    url: https://discover.transferly.swiss/ueber-uns
+    publisher: Digio AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: website
+    title: Digio AG
+    url: https://www.digio.swiss
+    publisher: Digio AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: Digio AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/digio-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'IT-Dienstleister aus dem Raum Zürich mit Sitz in Kilchberg ZH, der Softwareentwicklung, Cyber-Security-Beratung und Hosting anbietet und den Dateiübertragungsdienst transferly betreibt.'
+    notes:
+      swissFounded.note: 'Im September 2016 als Digio GmbH im Handelsregister des Kantons Zürich eingetragen und 2021 in eine Aktiengesellschaft umgewandelt.'
+      headquarters.note: 'Der Sitz ist in Kilchberg ZH; das Impressum nennt eine Büroadresse in Zürich.'
+      ownership.note: 'transferly bezeichnet sich als 100 % Schweizer Unternehmen, unabhängig und selbstfinanziert. Vor der Umwandlung in eine Aktiengesellschaft 2021 führte das Handelsregister als Gesellschafter die innopia GmbH (Kilchberg ZH), deren einziger Gesellschafter Gründer Damien Vouillamoz ist, und Tim Schrödel, beide Schweizer Bürger. Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht. Bis Oktober 2026 wurde keine Übernahme gemeldet.'

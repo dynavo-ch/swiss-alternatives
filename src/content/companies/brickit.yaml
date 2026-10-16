@@ -1,0 +1,62 @@
+name: brickit AG
+shortName: brickit
+type: company
+description: >-
+  Start-up in Rotkreuz (Risch ZG), founded in 2023, that develops brickit, a
+  cloud-based business management software for Swiss trades businesses.
+website: https://www.brickit.ch
+founded: 2023
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: Entered in the commercial register of the canton of Zug in December 2023.
+headquarters:
+  city: Risch
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+  note: The office address is in Rotkreuz, part of the municipality of Risch.
+jurisdiction: CH
+registry:
+  uid: CHE-330.375.015
+  url: https://www.zefix.ch/en/search/entity/list/firm/1618115
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders of the stock corporation are not published. The three
+    board members entered in the commercial register are Swiss citizens living
+    in Switzerland. No acquisition was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: brickit AG (CHE-330.375.015) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1618115
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - brickit
+    url: https://www.brickit.ch/impressum
+    publisher: brickit AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: brickit AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/brickit-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Start-up aus Rotkreuz (Risch ZG), 2023 gegründet, das brickit entwickelt, eine cloudbasierte Betriebssoftware für Schweizer Handwerksbetriebe.'
+    notes:
+      swissFounded.note: 'Im Dezember 2023 im Handelsregister des Kantons Zug eingetragen.'
+      headquarters.note: 'Die Geschäftsadresse liegt in Rotkreuz, einem Ortsteil der Gemeinde Risch.'
+      ownership.note: 'Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht. Die drei im Handelsregister eingetragenen Verwaltungsratsmitglieder sind Schweizer Bürger mit Wohnsitz in der Schweiz. Bis Oktober 2026 wurde keine Übernahme gemeldet.'

@@ -1,0 +1,73 @@
+name: compliag AG
+shortName: compliag
+type: company
+description: >-
+  Zug-based company founded in 2021 that provides IT infrastructure, compliance
+  services and software for regulated industries and develops VR therapy
+  medical devices.
+website: https://www.compliag.ch
+founded: 2021
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: Entered in the commercial register of the canton of Zug in August 2021.
+headquarters:
+  city: Zug
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-453.174.250
+  url: https://www.zefix.ch/en/search/entity/list/firm/1501154
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders of the stock corporation are not published. The chairman
+    entered in the commercial register, who according to compliag is also
+    interim managing director, is a German national living in Zug; the other
+    board member is a Swiss citizen. The share
+    capital was increased from CHF 100,000 to CHF 600,000 in December 2025. The
+    imprint names compliag GmbH in Vienna as responsible for the EU; how the two
+    companies are related is not stated. No acquisition was found in reporting up to October 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+  - label: swiss-hosting
+    source: swissmadesoftware
+lastVerified: 2026-10-16
+sources:
+  - id: zefix
+    title: compliag AG (CHE-453.174.250) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1501154
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-10-16
+  - id: imprint
+    title: Impressum - compliag
+    url: https://www.compliag.ch/impressum/
+    publisher: compliag AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: about
+    title: Über uns - compliag
+    url: https://www.compliag.ch/ueber-uns/
+    publisher: compliag AG
+    kind: vendor
+    accessed: 2026-10-16
+  - id: swissmadesoftware
+    title: compliag AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/compliag-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zuger Unternehmen, 2021 gegründet, das IT-Infrastruktur, Compliance-Dienstleistungen und Software für regulierte Branchen anbietet und VR-Therapie-Medizinprodukte entwickelt.'
+    notes:
+      swissFounded.note: 'Im August 2021 im Handelsregister des Kantons Zug eingetragen.'
+      ownership.note: "Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht. Der im Handelsregister eingetragene Verwaltungsratspräsident, laut compliag auch Geschäftsführer ad interim, ist deutscher Staatsangehöriger mit Wohnsitz in Zug; das weitere Verwaltungsratsmitglied ist Schweizer Bürgerin. Das Aktienkapital wurde im Dezember 2025 von CHF 100'000 auf CHF 600'000 erhöht. Das Impressum nennt die compliag GmbH in Wien als verantwortlich für die EU; wie die beiden Gesellschaften zusammenhängen, wird nicht angegeben. Bis Oktober 2026 wurde keine Übernahme gemeldet."

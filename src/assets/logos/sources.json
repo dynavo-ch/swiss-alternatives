@@ -79,6 +79,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "brickit": {
+    "source": "https://www.brickit.ch/icon.svg?icon.2v84rcnip5pwk.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "bsi-customer-suite": {
     "source": "https://res.bsi-software.com/baf83f4c-566a-431c-a9ac-891daf68d99b/static/android-chrome-192x192.png",
     "method": "manifest 192x192",
@@ -179,6 +184,11 @@
     "method": "manual",
     "fetched": "2026-10-16"
   },
+  "company--brickit": {
+    "source": "https://www.brickit.ch/icon.svg?icon.2v84rcnip5pwk.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--bsi": {
     "source": "https://res.bsi-software.com/baf83f4c-566a-431c-a9ac-891daf68d99b/static/android-chrome-192x192.png",
     "method": "manifest 192x192",
@@ -214,6 +224,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "company--compliag": {
+    "source": "manual/company--compliag.svg",
+    "method": "manual",
+    "fetched": "2026-10-16"
+  },
   "company--csti": {
     "source": "https://www.google.com/s2/favicons?domain=www.csti.ch&sz=256",
     "method": "favicon service",
@@ -237,6 +252,11 @@
   "company--deeplink": {
     "source": "https://www.deeplink.ai/wp-content/uploads/2026/01/cropped-favicon-180x180.png",
     "method": "apple-touch-icon",
+    "fetched": "2026-10-16"
+  },
+  "company--digio": {
+    "source": "https://www.digio.swiss/android-chrome-512x512.png",
+    "method": "manifest 512x512",
     "fetched": "2026-10-16"
   },
   "company--divio": {
@@ -379,6 +399,11 @@
     "method": "svg icon",
     "fetched": "2026-10-16"
   },
+  "company--narrowin": {
+    "source": "https://narrowin.com/assets/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "company--naveum": {
     "source": "https://naveum.ch/wp-content/uploads/2022/11/Untitled-design-11-1-300x300.png",
     "method": "apple-touch-icon",
@@ -471,6 +496,11 @@
   },
   "company--sherpany": {
     "source": "https://www.google.com/s2/favicons?domain=sherpany.com&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "company--sileo": {
+    "source": "https://www.google.com/s2/favicons?domain=sileo.swiss&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-16"
   },
@@ -779,6 +809,11 @@
     "method": "svg icon",
     "fetched": "2026-10-16"
   },
+  "narrowin-diode": {
+    "source": "https://narrowin.com/assets/favicon.svg",
+    "method": "svg icon",
+    "fetched": "2026-10-16"
+  },
   "naveum": {
     "source": "https://naveum.ch/wp-content/uploads/2022/11/Untitled-design-11-1-300x300.png",
     "method": "apple-touch-icon",
@@ -904,6 +939,11 @@
     "method": "favicon service",
     "fetched": "2026-10-16"
   },
+  "sileo-restore-it": {
+    "source": "https://www.google.com/s2/favicons?domain=sileo.swiss&sz=256",
+    "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
   "skribble": {
     "source": "https://www.skribble.com/safari-pinned-tab.svg",
     "method": "svg icon",
@@ -989,6 +1029,11 @@
     "method": "apple-touch-icon",
     "fetched": "2026-10-16"
   },
+  "transferly": {
+    "source": "https://discover.transferly.swiss/android-chrome-512x512.png",
+    "method": "manifest 512x512",
+    "fetched": "2026-10-16"
+  },
   "tresorit": {
     "source": "https://tresorit.com/hubfs/tresorit-favicon.svg",
     "method": "svg icon",
@@ -1042,6 +1087,11 @@
   "xorlab": {
     "source": "https://www.google.com/s2/favicons?domain=www.xorlab.com&sz=256",
     "method": "favicon service",
+    "fetched": "2026-10-16"
+  },
+  "zug-cloud": {
+    "source": "manual/zug-cloud.svg",
+    "method": "manual",
     "fetched": "2026-10-16"
   }
 }
