@@ -96,3 +96,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Baden, gegründet 1996, das die CRM- und Customer-Experience-Plattform BSI Customer Suite für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen entwickelt. Mehrheitlich im Besitz von Fonds, die von Bregal Unternehmerkapital beraten werden.'

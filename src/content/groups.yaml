@@ -4,33 +4,61 @@
   summary: Compute, storage, hosting, domains and the infrastructure underneath your services.
   icon: server
   order: 1
+  i18n:
+    de:
+      name: 'Cloud & Infrastruktur'
+      summary: 'Rechenleistung, Speicher, Hosting, Domains und die Infrastruktur, auf der Ihre Dienste laufen.'
 - id: workplace
   name: Workplace & Productivity
   summary: Email, files, documents, calendars, meetings and the tools teams use every day.
   icon: briefcase
   order: 2
+  i18n:
+    de:
+      name: 'Arbeitsplatz & Produktivität'
+      summary: 'E-Mail, Dateien, Dokumente, Kalender, Meetings und die Tools, die Teams jeden Tag nutzen.'
 - id: communication
   name: Communication
   summary: Messaging, team chat and internal communication.
   icon: message-square
   order: 3
+  i18n:
+    de:
+      name: 'Kommunikation'
+      summary: 'Messaging, Team-Chat und interne Kommunikation.'
 - id: security
   name: Security & Privacy
   summary: Password managers, VPNs, identity, authentication and network protection.
   icon: shield
   order: 4
+  i18n:
+    de:
+      name: 'Sicherheit & Datenschutz'
+      summary: 'Passwort-Manager, VPNs, Identität, Authentifizierung und Netzwerkschutz.'
 - id: business
   name: Business Software
   summary: Accounting, ERP, invoicing, payroll and customer management.
   icon: building-2
   order: 5
+  i18n:
+    de:
+      name: 'Unternehmenssoftware'
+      summary: 'Buchhaltung, ERP, Rechnungsstellung, Lohnbuchhaltung und Kundenverwaltung.'
 - id: ai
   name: AI & Data
   summary: AI assistants, language models and analytics.
   icon: sparkles
   order: 6
+  i18n:
+    de:
+      name: 'KI & Daten'
+      summary: 'KI-Assistenten, Sprachmodelle und Analyse.'
 - id: internet
   name: Internet & Consumer
   summary: Search engines, public DNS and other everyday internet services.
   icon: globe
   order: 7
+  i18n:
+    de:
+      name: 'Internet & Konsumenten'
+      summary: 'Suchmaschinen, öffentliches DNS und andere alltägliche Internetdienste.'

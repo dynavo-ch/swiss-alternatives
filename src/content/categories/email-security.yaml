@@ -8,3 +8,9 @@ intro: >-
   reach users, often in addition to the protection built into the mail platform.
 related: [network-security, email]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'E-Mail-Sicherheit'
+    noun: 'E-Mail-Sicherheitsdienste'
+    summary: 'Schutz vor Phishing, Malware und E-Mail-Betrug.'
+    intro: 'E-Mail-Sicherheitsdienste filtern Phishing, Malware und Business E-Mail Compromise, bevor Nachrichten die Nutzenden erreichen – oft zusätzlich zum Schutz, der in die Mailplattform integriert ist.'

@@ -67,3 +67,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen für DevOps und Managed Services, gegründet 2014, das die Container-Plattform APPUiO und Managed-Kubernetes-Dienste betreibt.'

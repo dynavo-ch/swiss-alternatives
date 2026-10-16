@@ -1,0 +1,8 @@
+---
+import ProsePage from '~/components/ProsePage.astro';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+---
+
+<ProsePage slug="privacy" />

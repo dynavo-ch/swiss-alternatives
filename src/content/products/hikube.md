@@ -122,6 +122,10 @@ sources:
     publisher: Hidora SA
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Kubernetes-basierte Cloud mit VMs, GPUs und S3-Speicher, repliziert über drei Schweizer Standorte.'
+    description: 'Hikube ist eine Cloud-Plattform der Genfer Hidora mit VMs, Managed Kubernetes, GPUs, Datenbanken und S3-Speicher in drei Rechenzentren in der Schweiz.'
 ---
 
 Hikube is a cloud platform operated by Hidora SA near Geneva. It offers Linux and

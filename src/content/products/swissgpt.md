@@ -116,6 +116,10 @@ sources:
     publisher: AlpineAI AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'KI-Assistenzplattform für regulierte Branchen, die Open-Source-Modelle in der Schweiz ausführt.'
+    description: 'SwissGPT ist die KI-Plattform von AlpineAI für Gesundheitswesen, Behörden und Hochschulen; sie führt Open-Source-Sprachmodelle auf eigener Hardware in Schweizer Rechenzentren aus.'
 ---
 
 SwissGPT is an AI platform for organisations in healthcare, public

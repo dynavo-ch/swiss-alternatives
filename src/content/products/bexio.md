@@ -129,6 +129,10 @@ sources:
     publisher: Borncity
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-basierte Unternehmenssoftware für Schweizer Kleinunternehmen, von der Rechnungsstellung bis zum Lohn.'
+    description: 'bexio ist Cloud-basierte Unternehmenssoftware aus Rapperswil-Jona für Schweizer Kleinunternehmen mit Buchhaltung, Rechnungsstellung, Lohnbuchhaltung und Kontaktverwaltung.'
 ---
 
 bexio is a cloud-based business software for small businesses, start-ups and

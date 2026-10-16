@@ -57,3 +57,6 @@ sources:
     publisher: Federal Office of Justice (Zefix)
     kind: registry
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Cloud-Unternehmen mit Sitz in Zug, 2009 in Zürich gegründet. Es entwickelt eine IaaS-Plattform, die es an eigenen Standorten betreibt und an Dienstleister lizenziert.'

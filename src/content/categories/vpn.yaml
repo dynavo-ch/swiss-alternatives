@@ -9,3 +9,9 @@ intro: >-
   jurisdiction, not the location of every server.
 related: [password-managers, dns-resolvers]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'VPN'
+    noun: 'VPN-Dienste'
+    summary: 'Verbindung verschlüsseln und Datenverkehr über einen anderen Standort leiten.'
+    intro: 'VPNs für Privatnutzer verschlüsseln den Datenverkehr zwischen Ihrem Gerät und den Servern des Anbieters. Die Exit-Server stehen weltweit; «Schweizer» bezieht sich hier daher auf das betreibende Unternehmen und dessen Rechtsraum, nicht auf den Standort jedes einzelnen Servers.'

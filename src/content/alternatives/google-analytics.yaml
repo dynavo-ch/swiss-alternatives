@@ -7,3 +7,6 @@ website: 'https://marketingplatform.google.com/about/analytics/'
 categories: [web-analytics]
 aliases: [ga4, ga]
 popular: true
+i18n:
+  de:
+    summary: 'Analysedienst von Google für Websites und Apps.'

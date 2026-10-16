@@ -6,3 +6,6 @@ summary: Web hosting, domain, server and cloud provider from Montabaur, part of 
 website: 'https://www.ionos.com'
 categories: [web-hosting, domain-registrars, vps-hosting]
 aliases: [1&1 IONOS, 1&1]
+i18n:
+  de:
+    summary: 'Anbieter von Webhosting, Domains, Servern und Cloud aus Montabaur, Teil der United-Internet-Gruppe.'

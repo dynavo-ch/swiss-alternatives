@@ -7,7 +7,7 @@
  */
 import MiniSearch, { type SearchResult } from 'minisearch';
 import { icons } from './icons';
-import { escapeHtml, t } from './store';
+import { escapeHtml, localPath, t } from './store';
 
 type DocType = 'alternative' | 'product' | 'category' | 'company';
 
@@ -39,7 +39,7 @@ const GROUP_LIMIT: Record<DocType, number> = {
 let indexPromise: Promise<{ engine: MiniSearch<Doc>; docs: Doc[] }> | undefined;
 
 function loadIndex() {
-  indexPromise ??= fetch('/search-index.json')
+  indexPromise ??= fetch(localPath('/search-index.json'))
     .then((r) => r.json() as Promise<{ docs: Doc[] }>)
     .then(({ docs }) => {
       const engine = new MiniSearch<Doc>({
@@ -314,7 +314,7 @@ export function mountInline(root: HTMLElement) {
 export function openDialog(initial = '') {
   const dialog = document.querySelector<HTMLDialogElement>('#search-dialog');
   if (!dialog) {
-    location.href = '/search/';
+    location.href = localPath('/search/');
     return;
   }
   const root = dialog.querySelector<HTMLElement>('.search')!;

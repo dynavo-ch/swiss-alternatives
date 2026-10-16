@@ -173,6 +173,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'No-Logs-VPN mit kostenloser Version, Open-Source-Apps und Multi-Hop-Routing über Secure Core.'
+    description: 'Proton VPN ist ein VPN-Dienst der Proton AG mit kostenlosem Plan, Open-Source-Apps, jährlichen No-Logs-Audits und Servern in mehr als 140 Ländern.'
 ---
 
 Proton VPN is a VPN service with apps for Windows, macOS, Linux, iOS, Android

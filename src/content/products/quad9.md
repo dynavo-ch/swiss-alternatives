@@ -131,6 +131,10 @@ sources:
     publisher: Quad9
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Kostenloser öffentlicher DNS-Resolver, der bekannte schädliche Domains blockiert.'
+    description: 'Quad9 ist ein kostenloser öffentlicher DNS-Resolver einer gemeinnützigen Stiftung mit Sitz in Zürich. Er blockiert schädliche Domains, validiert DNSSEC und unterstützt DoH und DoT.'
 ---
 
 Quad9 is a free public recursive DNS resolver operated by the Quad9 Foundation,

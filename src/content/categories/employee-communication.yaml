@@ -8,3 +8,9 @@ intro: >-
   chat, shift information and surveys in a mobile app.
 related: [team-chat]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Mitarbeiterkommunikation'
+    noun: 'Plattformen für Mitarbeiterkommunikation'
+    summary: 'Interne Kommunikation für Frontline-Mitarbeitende und verteilte Belegschaften.'
+    intro: 'Plattformen für Mitarbeiterkommunikation erreichen Mitarbeitende, die nicht am Schreibtisch arbeiten – mit News-Feeds, Chat, Schichtinformationen und Umfragen in einer mobilen App.'

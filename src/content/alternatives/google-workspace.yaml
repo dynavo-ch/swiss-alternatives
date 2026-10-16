@@ -7,3 +7,6 @@ website: 'https://workspace.google.com'
 categories: [office-suites, email, cloud-storage]
 aliases: [g suite, gsuite]
 popular: true
+i18n:
+  de:
+    summary: 'Office-Suite von Google für Organisationen, mit Gmail, Drive, Docs, Calendar und Meet.'

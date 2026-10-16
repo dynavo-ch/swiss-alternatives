@@ -7,3 +7,6 @@ website: 'https://drive.google.com'
 categories: [cloud-storage, file-sharing]
 aliases: [gdrive, google one]
 popular: true
+i18n:
+  de:
+    summary: 'Cloud-Speicher und Dateisynchronisation von Google, Teil von Google Workspace und Google One.'

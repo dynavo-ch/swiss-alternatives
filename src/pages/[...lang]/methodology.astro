@@ -1,0 +1,246 @@
+---
+/**
+ * Listing criteria and verification methodology. Prose lives in
+ * src/content/pages/<locale>/methodology-*.md; the rule tables are rendered
+ * from the same definitions the build uses (src/lib/signals.ts), so the
+ * published rules cannot drift from the implementation.
+ */
+import { render } from 'astro:content';
+import Badge from '~/components/Badge.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { getPage } from '~/lib/pages';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+import { CLASSIFICATIONS, SIGNAL_KEYS } from '~/lib/signals';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const { products } = await getDirectory(locale);
+const tierCount = (c: string) => products.filter((p) => p.classification === c).length;
+const { Content: Part1 } = await render(await getPage('methodology-1', locale));
+const { Content: Part2 } = await render(await getPage('methodology-2', locale));
+const { Content: Part3 } = await render(await getPage('methodology-3', locale));
+
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.methodology'), href: paths.methodology() },
+];
+
+const toc = [
+  ['summary', t('meth.toc.summary')],
+  ['criteria', t('meth.toc.criteria')],
+  ['tiers', t('meth.toc.tiers')],
+  ['footprint', t('meth.toc.footprint')],
+  ['badges', t('meth.toc.badges')],
+  ['verification', t('meth.toc.verification')],
+  ['ordering', t('meth.toc.ordering')],
+  ['limits', t('meth.toc.limits')],
+  ['corrections', t('meth.toc.corrections')],
+] as const;
+---
+
+<BaseLayout
+  title={t('methodology.title')}
+  description={t('methodology.description')}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.methodology')}
+    title={t('methodology.heading')}
+    lead={t('methodology.description')}
+  />
+
+  <div class="container section meth">
+    <nav class="meth__toc" aria-label={t('nav.onThisPage')}>
+      <ol role="list">
+        {toc.map(([id, label]) => (
+          <li>
+            <a href={`#${id}`}>{label}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+
+    <div class="prose meth__body">
+      <Part1 />
+    </div>
+
+    <div class="meth__wide">
+      <div class="table-wrap">
+        <table class="rules">
+          <thead>
+            <tr>
+              <th scope="col">{t('class.label')}</th>
+              <th scope="col">{t('meth.col.meaning')}</th>
+              <th scope="col">{t('meth.col.rule')}</th>
+              <th scope="col" class="num">
+                {t('meth.col.listed')}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {CLASSIFICATIONS.map((c) => (
+              <tr>
+                <th scope="row">{t(`class.${c}`)}</th>
+                <td>{t(`class.${c}.desc`)}</td>
+                <td class="rules__rule">{t(`meth.rule.${c}`)}</td>
+                <td class="num tnum">{tierCount(c)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="prose meth__body">
+      <Part2 />
+    </div>
+
+    <div class="meth__wide">
+      <div class="table-wrap">
+        <table class="rules">
+          <thead>
+            <tr>
+              <th scope="col">{t('meth.col.badge')}</th>
+              <th scope="col">{t('meth.col.meaning')}</th>
+              <th scope="col">{t('meth.col.rule')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {SIGNAL_KEYS.map((key) => (
+              <tr>
+                <th scope="row">
+                  <Badge signal={key} />
+                </th>
+                <td>{t(`signal.${key}.desc`)}</td>
+                <td class="rules__rule mono">{t(`meth.signalRule.${key}`)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="prose meth__body">
+      <Part3 />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .meth {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: 0 var(--s-12);
+  }
+
+  .meth__toc {
+    grid-row: 1 / span 10;
+  }
+
+  .meth__toc ol {
+    position: sticky;
+    top: calc(var(--header-h) + var(--s-6));
+    font-size: var(--fs-sm);
+  }
+
+  .meth__toc li + li {
+    margin-top: var(--s-2);
+  }
+
+  .meth__toc a {
+    color: var(--c-ink-3);
+    text-decoration: none;
+  }
+
+  .meth__toc a:hover {
+    color: var(--c-ink);
+  }
+
+  .meth__body,
+  .meth__wide {
+    grid-column: 2;
+  }
+
+  .meth__body :global(h2) {
+    scroll-margin-top: calc(var(--header-h) + var(--s-6));
+  }
+
+  .meth__body > :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .meth__wide {
+    margin-block: var(--s-6) var(--s-4);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+  }
+
+  .rules {
+    width: 100%;
+    min-width: 44rem;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+  }
+
+  .rules th,
+  .rules td {
+    padding: var(--s-3) var(--s-4);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .rules tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+
+  .rules thead th {
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--c-ink-3);
+    background: var(--c-sunken);
+  }
+
+  .rules tbody th {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .rules__rule {
+    color: var(--c-ink-3);
+    font-size: var(--fs-xs);
+  }
+
+  .rules .num {
+    text-align: right;
+  }
+
+  @media (max-width: 60rem) {
+    .meth {
+      grid-template-columns: 1fr;
+    }
+    .meth__toc {
+      display: none;
+    }
+    .meth__body,
+    .meth__wide {
+      grid-column: 1;
+    }
+  }
+</style>

@@ -10,7 +10,7 @@ import { formatDate } from '~/lib/format';
 import { paths } from '~/lib/paths';
 
 const t = useTranslations(Astro.currentLocale);
-const { buildDate } = await getDirectory();
+const { buildDate } = await getDirectory(Astro.currentLocale);
 
 const columns = [
   {
@@ -94,6 +94,9 @@ const columns = [
           © {buildDate.getUTCFullYear()} {site.name}
         </span>
         <span>{t('footer.dataAsOf', { date: formatDate(buildDate, Astro.currentLocale) })}</span>
+        <a href={`${paths.about()}#hosting`} class="footer__hosting">
+          {t('footer.hosting')}
+        </a>
         <span class="footer__private">
           <span class="cross" aria-hidden="true"></span>
           {t('footer.noTracking')}
@@ -177,6 +180,17 @@ const columns = [
     gap: var(--s-2) var(--s-6);
     font-family: var(--font-mono);
     font-size: var(--fs-xs);
+  }
+
+  .footer__hosting {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--c-line-strong);
+    text-underline-offset: 0.2em;
+  }
+
+  .footer__hosting:hover {
+    color: var(--c-red-ink);
   }
 
   .footer__private {

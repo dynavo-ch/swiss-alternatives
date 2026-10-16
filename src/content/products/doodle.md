@@ -112,6 +112,10 @@ sources:
     publisher: Doodle AG
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Gruppenumfragen, Buchungsseiten und Anmeldelisten zur Terminfindung.'
+    description: 'Doodle ist ein Terminplanungsdienst der Zürcher Doodle AG für Gruppenumfragen, Buchungsseiten und Anmeldelisten; die Daten werden auf AWS in Irland und der EU gehostet.'
 ---
 
 Doodle is a web-based scheduling service. Its group polls let participants vote

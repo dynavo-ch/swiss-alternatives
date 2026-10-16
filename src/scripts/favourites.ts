@@ -3,7 +3,17 @@ import { icons } from './icons';
 import type { ProductRecord as BaseRecord } from '~/lib/export';
 
 type ProductRecord = BaseRecord & { logo: string | null };
-import { copyText, escapeHtml, getList, logoTile, onChange, setList, t, toast } from './store';
+import {
+  copyText,
+  escapeHtml,
+  getList,
+  localPath,
+  logoTile,
+  onChange,
+  setList,
+  t,
+  toast,
+} from './store';
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
@@ -31,7 +41,7 @@ function row(p: ProductRecord, removable: string | null, removeLabel: string): s
 
 export async function initFavourites(root: HTMLElement) {
   const strings = JSON.parse(root.dataset.strings ?? '{}') as { remove: string };
-  const response = await fetch('/data/products.json');
+  const response = await fetch(localPath('/data/products.json'));
   const { products } = (await response.json()) as { products: ProductRecord[] };
   const byId = new Map(products.map((p) => [p.id, p]));
 
@@ -53,7 +63,7 @@ export async function initFavourites(root: HTMLElement) {
     favList.innerHTML = favs.map((id) => row(byId.get(id)!, 'fav', strings.remove)).join('');
     favEmpty.hidden = favs.length > 0;
     favActions.hidden = favs.length === 0;
-    compareLink.href = `/compare/?products=${favs.slice(0, 4).join(',')}`;
+    compareLink.href = `${localPath('/compare/')}?products=${favs.slice(0, 4).join(',')}`;
     compareLink.hidden = favs.length < 2;
 
     const recent = getList('recent').filter((id) => byId.has(id));

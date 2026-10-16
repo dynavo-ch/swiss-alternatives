@@ -7,3 +7,6 @@ website: 'https://www.google.com'
 categories: [search-engines]
 aliases: [google]
 popular: true
+i18n:
+  de:
+    summary: 'Websuchmaschine von Google.'

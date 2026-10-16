@@ -1,0 +1,32 @@
+# Repository labels, synced by .github/workflows/labels.yml.
+# Issue forms only apply labels that exist, so keep these in sync.
+- name: suggestion
+  color: 'd52b1e'
+  description: A product suggested for the directory
+- name: correction
+  color: 'b5221a'
+  description: Something on an entry is wrong or out of date
+- name: research
+  color: '5319e7'
+  description: Ask Claude to research this suggestion and open a pull request
+- name: content
+  color: '0e8a16'
+  description: Changes to directory data
+- name: logo
+  color: 'fbca04'
+  description: Logo missing, wrong or supplied by a vendor
+- name: translation
+  color: '1d76db'
+  description: German, French, Italian or English text
+- name: bug
+  color: 'd73a4a'
+  description: Something on the website does not work
+- name: enhancement
+  color: 'a2eeef'
+  description: New feature or improvement
+- name: good first issue
+  color: '7057ff'
+  description: Good for newcomers
+- name: dependencies
+  color: '0366d6'
+  description: Dependency updates

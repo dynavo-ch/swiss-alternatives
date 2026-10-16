@@ -132,6 +132,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'E-Mail-Marketing- und Newsletter-Software mit Automatisierung, entwickelt in Zürich.'
+    description: 'mailXpert ist ein E-Mail-Marketing-Dienst aus Zürich für Newsletter, automatisierte E-Mail-Abläufe und Umfragen, mit Datenspeicherung in Schweizer Rechenzentren.'
 ---
 
 mailXpert is an email marketing service developed by mailXpert GmbH in Zurich.

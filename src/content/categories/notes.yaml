@@ -7,3 +7,9 @@ intro: >-
   Note-taking and document apps keep personal and shared notes in sync across devices.
 related: [office-suites, cloud-storage]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Notizen & Dokumente'
+    noun: 'Notiz-Apps'
+    summary: 'Notizen, Dokumente und persönliche Wissensdatenbanken.'
+    intro: 'Notiz- und Dokument-Apps halten persönliche und geteilte Notizen geräteübergreifend synchron.'

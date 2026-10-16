@@ -128,6 +128,10 @@ sources:
     publisher: Nevis Security AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Customer Identity and Access Management mit passwortloser Anmeldung, On-Premises oder als SaaS.'
+    description: 'Nevis ID ist eine Plattform für Customer Identity and Access Management der Zürcher Nevis Security, die vor allem von Banken, Versicherungen und Behörden genutzt wird.'
 ---
 
 Nevis ID is a customer identity and access management (CIAM) platform from

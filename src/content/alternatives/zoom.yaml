@@ -6,3 +6,6 @@ website: 'https://zoom.us'
 categories: [video-conferencing]
 aliases: [zoom workplace]
 popular: true
+i18n:
+  de:
+    summary: 'Plattform für Videomeetings, Webinare und Team-Chat.'

@@ -8,3 +8,9 @@ intro: >-
   interactions.
 related: [invoicing, erp]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'CRM'
+    noun: 'CRM-Systeme'
+    summary: 'Kontakte, Verkaufschancen und Kundenbeziehungen verwalten.'
+    intro: 'Tools für das Kundenbeziehungsmanagement (CRM) erfassen Kontakte, Firmen, Verkaufschancen und Interaktionen.'

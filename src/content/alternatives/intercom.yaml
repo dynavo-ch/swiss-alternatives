@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Customer messaging and support platform with live chat, help desk and AI agent features.
 website: 'https://www.intercom.com'
 categories: [crm]
+i18n:
+  de:
+    summary: 'Plattform für Kundenkommunikation und Support mit Live-Chat, Helpdesk und KI-Agent-Funktionen.'

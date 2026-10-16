@@ -91,3 +91,6 @@ sources:
     publisher: IWS Solutions Ltd.
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, aus AdNovum ausgegliedert und seit 2020 eigenständig, das Produkte für Customer Identity and Access Management und Authentifizierung entwickelt.'

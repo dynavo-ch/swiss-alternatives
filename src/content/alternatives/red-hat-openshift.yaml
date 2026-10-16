@@ -6,3 +6,6 @@ summary: Enterprise Kubernetes platform, self-managed or as managed cloud servic
 website: 'https://www.redhat.com/en/technologies/cloud-computing/openshift'
 categories: [kubernetes, paas]
 aliases: [OpenShift, OpenShift Dedicated, ROSA]
+i18n:
+  de:
+    summary: 'Enterprise-Kubernetes-Plattform, selbst verwaltet oder als Managed Cloud Service wie OpenShift Dedicated und ROSA.'

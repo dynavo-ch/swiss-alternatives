@@ -6,3 +6,6 @@ summary: Google's calendar service, part of Google Workspace.
 website: 'https://calendar.google.com'
 categories: [calendars]
 aliases: [gcal]
+i18n:
+  de:
+    summary: 'Kalenderdienst von Google, Teil von Google Workspace.'

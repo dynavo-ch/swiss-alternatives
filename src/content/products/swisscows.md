@@ -115,6 +115,10 @@ sources:
     publisher: Moneyhouse AG
     kind: registry
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Werbefinanzierte Websuche ohne Nutzerprofile, mit optionaler kostenpflichtiger werbefreier Stufe.'
+    description: 'Swisscows ist eine Websuchmaschine der Swisscows AG aus Egnach, die keine Nutzerprofile erstellt, explizite Inhalte filtert und eine kostenpflichtige werbefreie Stufe anbietet.'
 ---
 
 Swisscows is a web search engine operated by Swisscows AG in Egnach, a

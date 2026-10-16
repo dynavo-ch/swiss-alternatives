@@ -112,6 +112,10 @@ sources:
     publisher: DeepCloud AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Dokumentablage und -austausch mit KI-Datenerfassung und ERP-Anbindung, gehostet in der Schweiz.'
+    description: 'DeepBox ist eine Plattform zur Ablage und zum Austausch von Dokumenten des Abacus-Spin-offs DeepCloud, mit KI-Datenerfassung, ERP- und Bankanbindungen und Hosting in der Schweiz.'
 ---
 
 DeepBox is a cloud platform for storing, organising and sharing business

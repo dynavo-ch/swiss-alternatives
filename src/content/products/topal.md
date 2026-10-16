@@ -147,6 +147,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Mehrmandantenfähige Software für Finanzbuchhaltung und Lohn für Schweizer Treuhandbüros und KMU.'
+    description: 'Topal ist Software für Finanzbuchhaltung und Swissdec-zertifizierte Lohnbuchhaltung aus Volketswil, ausgelegt für Schweizer Treuhandbüros und KMU mit unbeschränkter Mandantenzahl.'
 ---
 
 Topal is accounting software for fiduciaries (Treuhand) and small and

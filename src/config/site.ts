@@ -28,7 +28,7 @@ export const site = {
     street: '',
     postalCode: '9000',
     city: 'St. Gallen',
-    country: 'Switzerland',
+    country: 'CH', // ISO 3166-1 alpha-2
     email: `info@${domain}`,
   },
   /**
@@ -68,7 +68,7 @@ export const site = {
    * Entries added on or before this date form the initial dataset and are not
    * labelled "New" (otherwise every entry would be new at launch).
    */
-  launchDate: '2026-10-15',
+  launchDate: '2026-10-16',
   /** Maximum number of products in a comparison. */
   compareLimit: 4,
   /**

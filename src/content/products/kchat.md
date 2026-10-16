@@ -131,6 +131,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Team-Messaging mit Kanälen, Threads und Gastzugang, in kSuite enthalten.'
+    description: 'kChat ist die Team-Messaging-App von Infomaniak mit öffentlichen und privaten Kanälen und Gastzugang. Sie ist Teil von kSuite und in den Schweizer Rechenzentren von Infomaniak gehostet.'
 ---
 
 kChat is a team messaging service with public and private channels, threads,

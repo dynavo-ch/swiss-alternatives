@@ -8,3 +8,9 @@ intro: >-
   Where the media servers run determines where meeting data passes through.
 related: [team-chat, calendars]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Videokonferenzen'
+    noun: 'Videokonferenz-Tools'
+    summary: 'Videomeetings und Webkonferenzen.'
+    intro: 'Videokonferenz-Tools ermöglichen Online-Meetings mit Audio, Video und Bildschirmfreigabe. Wo die Medienserver betrieben werden, bestimmt, über welche Standorte die Meetingdaten laufen.'

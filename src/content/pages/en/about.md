@@ -33,6 +33,20 @@ The directory is plain text files in a public repository. You can read every ent
 
 Swiss Alternatives is an independent project. It is not affiliated with the Swiss Confederation, any canton, or any of the companies listed. Product names and trademarks belong to their owners.
 
+<h2 id="hosting">Where this website is hosted</h2>
+
+We ask every product five questions. Here are the answers for this website itself:
+
+| Question       | This website                                                     |
+| -------------- | ---------------------------------------------------------------- |
+| Headquarters   | Switzerland — operated by Dynavo, St. Gallen                     |
+| Ownership      | Swiss                                                            |
+| Development    | Switzerland                                                      |
+| Hosting        | **Not in Switzerland** — served from Cloudflare's global network |
+| Infrastructure | **Not Swiss** — Cloudflare, Inc. (USA)                           |
+
+Why: the directory is a static website without accounts, cookies or a database, so the only personal data involved is short-lived server logs (see [Privacy](/privacy/)). Cloudflare's free static hosting has no size limit and is fast worldwide; the Swiss plan we started with could not hold the site. We would prefer Swiss hosting — if you are a Swiss hosting provider and would like to host the project, please [get in touch](/contact/).
+
 ## Related directories
 
 Swiss Alternatives focuses on Switzerland. For a wider view:

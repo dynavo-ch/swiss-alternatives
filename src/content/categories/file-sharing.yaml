@@ -8,3 +8,9 @@ intro: >-
   workspaces, often with permissions, expiry dates and audit logs.
 related: [cloud-storage, file-transfer]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Dateifreigabe'
+    noun: 'Dienste zur Dateifreigabe'
+    summary: 'Ordner und Dateien mit Kolleginnen und Kollegen, Kunden und Partnern teilen.'
+    intro: 'Dienste zur Dateifreigabe ermöglichen das Teilen von Dokumenten und Ordnern über Links oder gemeinsame Arbeitsbereiche, oft mit Berechtigungen, Ablaufdaten und Audit-Logs.'

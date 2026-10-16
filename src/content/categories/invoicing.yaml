@@ -8,3 +8,9 @@ intro: >-
   Switzerland, support for QR-bills is essential.
 related: [accounting, crm]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Rechnungsstellung'
+    noun: 'Rechnungs-Tools'
+    summary: 'Offerten, Rechnungen, QR-Rechnungen und Mahnungen.'
+    intro: 'Rechnungs-Tools erstellen Offerten und Rechnungen, verfolgen Zahlungseingänge und versenden Mahnungen. In der Schweiz ist die Unterstützung der QR-Rechnung unerlässlich.'

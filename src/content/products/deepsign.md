@@ -110,6 +110,10 @@ sources:
     publisher: DeepCloud AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Einfache, fortgeschrittene und qualifizierte E-Signaturen nach ZertES und eIDAS, in der Schweiz gehostet.'
+    description: 'DeepSign ist ein Dienst für elektronische Signaturen von DeepCloud, einem Abacus-Spin-off in Wittenbach SG, mit SES, AES und QES nach Verbrauch und in der Schweiz gehosteten Daten.'
 ---
 
 DeepSign is a web-based service for signing PDF documents electronically. It

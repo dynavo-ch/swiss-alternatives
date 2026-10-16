@@ -5,3 +5,6 @@ summary: Password manager for individuals and businesses.
 website: 'https://www.lastpass.com'
 categories: [password-managers]
 popular: true
+i18n:
+  de:
+    summary: 'Passwort-Manager für Privatpersonen und Unternehmen.'

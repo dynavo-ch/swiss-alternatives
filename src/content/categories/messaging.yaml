@@ -8,3 +8,9 @@ intro: >-
   metadata handling and phone-number requirements differ considerably between apps.
 related: [team-chat, video-conferencing]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Sicheres Messaging'
+    noun: 'Messenger'
+    summary: 'Private Messaging-Apps für Einzel- und Gruppenchats.'
+    intro: 'Messenger für die private und berufliche Nutzung. Ende-zu-Ende-Verschlüsselung schützt die Nachrichteninhalte; beim Umgang mit Metadaten und bei der Pflicht zur Angabe einer Telefonnummer unterscheiden sich die Apps erheblich.'

@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Software- und Integrationsunternehmen für Dokumentenmanagement, Workflows und elektronische Signaturen, gegründet 2009, mit einer Tochtergesellschaft in Hamburg.'

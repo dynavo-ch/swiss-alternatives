@@ -80,6 +80,10 @@ sources:
     publisher: Moneycab
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Webhosting, Domains und Agentur-Server, betrieben auf eigener Hardware in Basel.'
+    description: 'cyon ist ein Basler Webhosting-Anbieter mit Shared Hosting inklusive E-Mail, Domainregistrierung, Agentur-Servern und Managed Servern auf eigener Hardware in Basel.'
 ---
 
 cyon is a web hosting provider from Basel, founded in 2003. Its offering covers

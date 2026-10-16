@@ -5,3 +5,6 @@ summary: Email marketing, transactional email and CRM platform, formerly known a
 website: 'https://www.brevo.com'
 categories: [email-marketing]
 aliases: [sendinblue]
+i18n:
+  de:
+    summary: 'Plattform für E-Mail-Marketing, Transaktions-E-Mails und CRM, früher unter dem Namen Sendinblue bekannt.'

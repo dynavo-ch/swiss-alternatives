@@ -10,9 +10,10 @@
  * locale can be introduced incrementally.
  */
 import { defaultLocale, localeTags, locales, type Locale } from './config';
+import { de } from './ui/de';
 import { en, type Dictionary, type UIKey, type UIValue } from './ui/en';
 
-const dictionaries: Record<Locale, Dictionary> = { en };
+const dictionaries: Record<Locale, Dictionary> = { en, de };
 
 export type Vars = Record<string, string | number>;
 export type Translate = (key: UIKey, vars?: Vars) => string;

@@ -66,6 +66,11 @@ function fact<T extends z.ZodType<string>>(value: T) {
     );
 }
 
+/** Optional translations: `i18n: { de: { name: …, summary: … } }`. English is the fallback. */
+function translations<T extends z.ZodRawShape>(shape: T) {
+  return z.record(z.string().regex(/^[a-z]{2}$/), z.object(shape).partial()).optional();
+}
+
 const source = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
@@ -86,6 +91,7 @@ const groups = defineCollection({
     summary: z.string(),
     icon: z.string(),
     order: z.number().int(),
+    i18n: translations({ name: z.string(), summary: z.string() }),
   }),
 });
 
@@ -101,6 +107,12 @@ const categories = defineCollection({
     intro: z.string(),
     related: z.array(slug).default([]),
     added: date,
+    i18n: translations({
+      name: z.string(),
+      noun: z.string(),
+      summary: z.string(),
+      intro: z.string(),
+    }),
   }),
 });
 
@@ -146,6 +158,7 @@ const companies = defineCollection({
         .default({ swissOwned: 'unknown' }),
       /** Third-party labels (e.g. "swiss made software"), each with the source that lists it. */
       labels: z.array(z.object({ label: z.enum(LABELS), source: z.string() })).default([]),
+      i18n: translations({ description: z.string() }),
       lastVerified: date.optional(),
       sources: z.array(source).default([]),
     }),
@@ -273,6 +286,8 @@ const products = defineCollection({
       updated: date.optional(),
       lastVerified: date.optional(),
       sources: z.array(source).default([]),
+      /** Optional translated short texts; the long description stays in the Markdown body. */
+      i18n: translations({ tagline: z.string().max(110), description: z.string().max(220) }),
     }),
 });
 
@@ -293,6 +308,7 @@ const alternatives = defineCollection({
     aliases: z.array(z.string()).default([]),
     popular: z.boolean().default(false),
     status: z.enum(['active', 'discontinued']).default('active'),
+    i18n: translations({ summary: z.string() }),
   }),
 });
 

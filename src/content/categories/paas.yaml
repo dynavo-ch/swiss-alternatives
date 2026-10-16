@@ -8,3 +8,9 @@ intro: >-
   container image, handling servers, scaling and TLS.
 related: [kubernetes, cloud-platforms]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Platform as a Service'
+    noun: 'PaaS-Anbieter'
+    summary: 'Anwendungen aus Code oder Containern bereitstellen, ohne Server zu verwalten.'
+    intro: 'Platform-as-a-Service-Angebote bauen und betreiben Anwendungen aus einem Git-Repository oder Container-Image und übernehmen Server, Skalierung und TLS.'

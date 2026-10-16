@@ -255,6 +255,20 @@ export const en = {
   'product.overview': 'Overview',
   'product.atAGlance': 'At a glance',
   'product.whySwiss': 'Why it may be a Swiss alternative',
+  'product.metaTitle': '{name} — Swiss {noun}',
+  'product.metaDescription': '{description} A Swiss alternative to {alternatives}.',
+  'product.operatedBySwiss':
+    '{product} is operated by {company}, which is headquartered in {place}.',
+  'product.operatedBy': '{product} is operated by {company}, which is headquartered in {place}.',
+  'product.why.hosted':
+    'According to the information we found, core customer data is hosted in Switzerland.',
+  'product.why.residency':
+    'Swiss hosting is available for part of the service or as an option — check the hosting details below before relying on it.',
+  'product.why.notePrefix': 'Note:',
+  'product.why.notHosted':
+    'although the company is Swiss, customer data is not hosted in Switzerland.',
+  'product.why.unknown': 'We could not verify where customer data is hosted.',
+  'product.englishOnly': 'The detailed description is available in English only.',
   'product.replaces': 'May replace',
   'product.replacesLead':
     'Foreign products with overlapping functionality. An alternative is not necessarily a one-to-one replacement.',
@@ -371,6 +385,8 @@ export const en = {
 
   /* Home ------------------------------------------------------------ */
   'home.titleSuffix': 'Swiss software, cloud services and digital products',
+  'home.description':
+    'An independent directory of software, cloud services and digital products from Swiss companies — with transparent information about ownership, hosting and data residency.',
   'home.eyebrow': 'Independent directory · {count} Swiss products',
   'home.title1': 'Find the',
   'home.title2': 'Swiss alternative',
@@ -435,6 +451,16 @@ export const en = {
     'Grouped by what you need to get done. Numbers show how many Swiss products we have verified.',
   'categories.jump': 'Jump to group',
   'category.related': 'Related categories',
+  'category.metaTitle': {
+    one: 'Swiss {name} — {count} Swiss alternative',
+    other: 'Swiss {name} — {count} Swiss alternatives',
+  },
+  'category.heading': 'Swiss {name}',
+  'category.metaDescription': '{count} {noun} from Swiss companies',
+  'category.metaDescriptionHosted': ', {count} hosted in Switzerland',
+  'category.metaDescriptionAlternatives': '. Alternatives to {names}',
+  'category.metaDescriptionEnd': '. Ownership, hosting and pricing compared.',
+  'category.metaDescriptionEmpty': 'We have not yet verified a Swiss {noun} — suggest one.',
   'category.emptyTitle': 'No verified Swiss {noun} yet',
   'category.emptyText':
     'We only list products after checking where the company is based and where data is hosted. Know a Swiss product that belongs here?',
@@ -467,6 +493,14 @@ export const en = {
     'We list products only after checking ownership and hosting. If you know a Swiss product that does what this one does, please suggest it.',
   'alt.browseCategory': 'Browse {category}',
   'alt.related': 'Related alternatives',
+  'alt.metaTitle': 'Swiss alternatives to {name}',
+  'alt.metaDescription': {
+    one: '{count} Swiss alternative to {name}: {products}. Compare ownership, hosting in Switzerland, pricing and open source.',
+    other:
+      '{count} Swiss alternatives to {name}: {products}. Compare ownership, hosting in Switzerland, pricing and open source.',
+  },
+  'alt.metaDescriptionEmpty':
+    'We have not yet verified a Swiss alternative to {name}. Suggest a Swiss product that replaces it.',
   'companies.title': 'Swiss software companies',
   'companies.heading': 'Companies',
   'companies.description':
@@ -478,6 +512,7 @@ export const en = {
   'companies.byCantonLead':
     'Headquarters of listed companies across {count} cantons. Select a canton to filter products.',
   'company.facts': 'Facts',
+  'company.metaProducts': 'Products listed: {names}.',
   'latest.title': 'Latest additions',
   'latest.heading': 'Latest additions & updates',
   'latest.description':
@@ -539,6 +574,40 @@ export const en = {
   'methodology.description':
     'Who qualifies for the directory, how products are classified, what every badge means and how facts are verified.',
 
+  'meth.toc.summary': 'Summary',
+  'meth.toc.criteria': 'Who qualifies',
+  'meth.toc.tiers': 'Classification',
+  'meth.toc.footprint': 'Swiss footprint',
+  'meth.toc.badges': 'Badges',
+  'meth.toc.verification': 'Verification',
+  'meth.toc.ordering': 'Ordering & independence',
+  'meth.toc.limits': 'Limitations',
+  'meth.toc.corrections': 'Corrections',
+  'meth.col.meaning': 'Meaning',
+  'meth.col.rule': 'Rule',
+  'meth.col.listed': 'Listed',
+  'meth.col.badge': 'Badge',
+  'meth.rule.swiss-native':
+    'Swiss headquarters and incorporation · Swiss ultimate owner (yes) · developed in Switzerland (yes or partly)',
+  'meth.rule.swiss-company':
+    'Swiss headquarters and incorporation · ownership mixed or unverified, or development mainly abroad',
+  'meth.rule.swiss-company-foreign-parent':
+    'Swiss headquarters and incorporation · ultimate owner outside Switzerland',
+  'meth.rule.swiss-open-source':
+    'No Swiss operating company · open-source licence · primarily developed in Switzerland',
+  'meth.rule.swiss-hosted-foreign':
+    'Foreign company · core customer data hosted in Switzerland by default',
+  'meth.signalRule.swiss-company': 'Company headquarters = CH and legal jurisdiction = CH',
+  'meth.signalRule.swiss-owned': 'Company ownership.swissOwned = yes',
+  'meth.signalRule.swiss-developed': 'Product swiss.developed = yes',
+  'meth.signalRule.swiss-hosted': 'Product swiss.hosted = yes',
+  'meth.signalRule.swiss-residency': 'Product swiss.hosted = optional or partial',
+  'meth.signalRule.swiss-infrastructure':
+    'swiss.hosted = yes and infrastructure operator Swiss-owned = yes',
+  'meth.signalRule.open-source': 'openSource = yes (client and server)',
+  'meth.signalRule.self-hostable': 'Deployment includes self-hosted or on-premises',
+  'meth.signalRule.free-plan': 'pricing.freePlan = yes',
+
   /* Suggest ---------------------------------------------------------- */
   'suggest.title': 'Suggest a product',
   'suggest.heading': 'Suggest a Swiss product',
@@ -589,6 +658,29 @@ export const en = {
   'contact.topics': 'What can we help with?',
   'contact.note':
     'We read everything but cannot promise individual replies. Messages about listings are handled like any contribution: the published criteria and sources decide.',
+  'contact.topic.suggest.title': 'Suggest a product',
+  'contact.topic.suggest.text':
+    'Know a Swiss product that should be listed? The suggestion page prepares a GitHub issue or an email with everything we need.',
+  'contact.topic.suggest.label': 'Suggest a product',
+  'contact.topic.correction.title': 'Report an error',
+  'contact.topic.correction.text':
+    'Every product page has a “Report an error” link. Please include a source — we update entries when the evidence supports it.',
+  'contact.topic.correction.label': 'Open a correction',
+  'contact.topic.vendor.title': 'Vendors',
+  'contact.topic.vendor.text':
+    'Correct your listing, send an official logo or tell us about hosting changes. Listings are free and cannot be bought; please disclose that you represent the vendor.',
+  'contact.topic.vendor.label': 'Email us as a vendor',
+  'contact.topic.sponsor.title': 'Sponsorship & partnerships',
+  'contact.topic.sponsor.text':
+    'Support the project without influencing it. Sponsorship never affects inclusion, classification or ordering.',
+  'contact.topic.sponsor.label': 'Sponsorship policy',
+  'contact.topic.press.title': 'Press',
+  'contact.topic.press.text': 'Questions about the project, the data or the methodology.',
+  'contact.topic.press.label': 'Email the team',
+  'contact.topic.security.title': 'Security',
+  'contact.topic.security.text':
+    'Found a vulnerability in this website? Please report it privately by email before disclosing it.',
+  'contact.topic.security.label': 'Report privately',
   'contribute.title': 'Contribute',
   'contribute.heading': 'Help build the directory',
   'contribute.description':
@@ -604,6 +696,47 @@ export const en = {
   'contribute.dataLead':
     'Everything on this site is also available as static JSON, regenerated with every build. Reuse it with attribution.',
   'contribute.license': 'Licence',
+  'contribute.licenseText':
+    'Directory data: CC BY 4.0 · Code: MIT · Logos and product names remain trademarks of their owners.',
+  'contribute.way.suggest.title': 'Suggest a product',
+  'contribute.way.suggest.text':
+    'No Git needed. The form prepares a GitHub issue or an email. Include where the company is registered and where data is hosted.',
+  'contribute.way.suggest.label': 'Suggest a product',
+  'contribute.way.correct.title': 'Correct an entry',
+  'contribute.way.correct.text':
+    'Use “Report an error” on any product page, or edit the file directly on GitHub. Corrections need a source.',
+  'contribute.way.correct.label': 'Report a correction',
+  'contribute.way.entries.title': 'Add or edit entries',
+  'contribute.way.entries.text':
+    'Every product, company and category is one small text file. Copy the template, fill in what you can verify, open a pull request. The build checks every reference.',
+  'contribute.way.entries.label': 'Content guide',
+  'contribute.way.logos.title': 'Logos',
+  'contribute.way.logos.text':
+    'Vendors and contributors can provide official logos (SVG preferred). They are normalised to a common format.',
+  'contribute.way.logos.label': 'Logo guidelines',
+  'contribute.way.translate.title': 'Translate',
+  'contribute.way.translate.text':
+    'The site is available in English and German and prepared for French and Italian. Interface text lives in one dictionary per language.',
+  'contribute.way.translate.label': 'Translation guide',
+  'contribute.way.code.title': 'Improve the code',
+  'contribute.way.code.text':
+    'Astro, TypeScript and plain CSS — no framework, minimal JavaScript. Run npm run verify before opening a pull request.',
+  'contribute.way.code.label': 'Contributing guide',
+  /* Rich text: may contain <strong>, <code> and <em>. */
+  'contribute.flow.1':
+    '<strong>Start from a URL.</strong> <code>npm run new -- https://example.ch</code> reads the website (and a GitHub repository, if given) and drafts an entry: name, description, languages, imprint and privacy links, the Swiss company register number and its registered seat.',
+  'contribute.flow.2':
+    '<strong>Verify and complete.</strong> Fill in ownership, development and hosting from the vendor’s legal pages. Mark each claim as <em>verified</em>, <em>vendor</em> or <em>inferred</em> and link the source. Leave anything you cannot confirm as <em>unknown</em>.',
+  'contribute.flow.3':
+    '<strong>Check.</strong> <code>npm run verify</code> validates the schema, every reference and the listing criteria, and lints the text.',
+  'contribute.flow.4':
+    '<strong>Open a pull request.</strong> A maintainer reviews the sources. Automated research help can be requested on an issue by mentioning <code>@claude</code>.',
+  'contribute.endpoint.products':
+    'All products with company, footprint, hosting, pricing, open-source status and features.',
+  'contribute.endpoint.directory':
+    'The full graph: products, companies, categories, groups and the foreign products they replace.',
+  'contribute.endpoint.search': 'The search index used by the site.',
+  'contribute.endpoint.rss': 'RSS feed of new entries.',
   'sponsors.title': 'Sponsors & partners',
   'sponsors.heading': 'Sponsors & partners',
   'sponsors.description':
@@ -621,6 +754,22 @@ export const en = {
     'Independence is the reason this directory is useful. These rules are not negotiable.',
   'sponsors.cta': 'Talk to us about sponsoring',
 
+  'sponsors.rule.1.title': 'Listings cannot be bought.',
+  /* Rich text: {methodology} is the methodology URL. */
+  'sponsors.rule.1.text':
+    'Inclusion follows the published <a href="{methodology}">listing criteria</a> only.',
+  'sponsors.rule.2.title': 'No influence on data or order.',
+  'sponsors.rule.2.text':
+    'Sponsors cannot change classifications, badges, footprint facts or sort order. Corrections need sources, like everyone else’s.',
+  'sponsors.rule.3.title': 'Always labelled.',
+  'sponsors.rule.3.text':
+    'Sponsors appear on this page and in the footer, marked as sponsors. Any sponsored or affiliate link on a product page is disclosed next to the link.',
+  'sponsors.rule.4.title': 'No tracking.',
+  'sponsors.rule.4.text':
+    'Sponsorship never adds cookies, trackers or third-party scripts to the site.',
+  'sponsors.rule.5.title': 'Public record.',
+  'sponsors.rule.5.text':
+    'Sponsors and partners are listed here with the date and the kind of support.',
   /* 404 ---------------------------------------------------------------- */
   'notFound.title': 'This page is not in the directory',
   'notFound.text': 'The link may be outdated, or the entry may have moved. Try searching instead.',
@@ -635,8 +784,11 @@ export const en = {
   'footer.rss': 'RSS feed',
   'footer.privacy': 'Privacy',
   'footer.imprint': 'Imprint',
+  'imprint.operator': 'Operator',
+  'imprint.email': 'Email',
   'footer.source': 'Source on GitHub',
   'footer.noTracking': 'No cookies. No trackers.',
+  'footer.hosting': 'Hosted on Cloudflare — why?',
   'footer.disclaimer':
     'Information is provided without warranty. Product names, logos and trademarks belong to their owners and are used only to identify their products; no affiliation or endorsement is implied.',
   'footer.dataAsOf': 'Data as of {date}',

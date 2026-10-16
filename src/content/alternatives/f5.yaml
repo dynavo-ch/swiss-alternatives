@@ -5,3 +5,6 @@ summary: Web application and API firewalls from F5, as BIG-IP Advanced WAF appli
 website: 'https://www.f5.com'
 categories: [network-security]
 aliases: [F5, F5 BIG-IP Advanced WAF, BIG-IP ASM, F5 Distributed Cloud WAAP]
+i18n:
+  de:
+    summary: 'Web-Application- und API-Firewalls von F5, als BIG-IP-Advanced-WAF-Appliances oder als Cloud-Dienst.'

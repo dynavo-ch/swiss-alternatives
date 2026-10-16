@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, seit 2016 tätig, das Software für Authentifizierung, Transaktionsbestätigung und Betrugserkennung für Banken, Zahlungsdienstleister und Fintechs entwickelt.'

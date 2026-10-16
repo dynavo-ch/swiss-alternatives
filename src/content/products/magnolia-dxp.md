@@ -123,6 +123,10 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Java-basiertes Enterprise-CMS und Digital-Experience-Plattform, selbst gehostet oder als Managed Service.'
+    description: 'Magnolia DXP ist eine Enterprise-Plattform für Content-Management und Digital Experience aus Basel, erhältlich selbst gehostet oder als Managed Cloud Service.'
 ---
 
 Magnolia DXP is a Java-based content management system and digital experience

@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Domain registrar and web hosting provider.
 website: 'https://www.godaddy.com'
 categories: [domain-registrars, web-hosting]
+i18n:
+  de:
+    summary: 'Domain-Registrar und Webhosting-Anbieter.'

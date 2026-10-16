@@ -123,6 +123,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Eventmanagement-Software für Einladungen, Anmeldung, Ticketing und Check-in.'
+    description: 'evenito ist Eventmanagement-Software aus Zürich für Corporate-Event-Teams, mit Einladungen, Anmeldung, Ticketing, Check-in und Online-Events.'
 ---
 
 evenito is an event management platform developed by Evenito AG in Zurich for

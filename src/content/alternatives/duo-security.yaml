@@ -5,3 +5,6 @@ summary: Multi-factor authentication and access security, part of Cisco.
 website: 'https://duo.com'
 categories: [authentication]
 aliases: [duo security, cisco duo]
+i18n:
+  de:
+    summary: 'Multi-Faktor-Authentifizierung und Zugriffssicherheit, Teil von Cisco.'

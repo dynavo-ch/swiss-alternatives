@@ -6,3 +6,6 @@ summary: Google's cloud platform for compute, storage, Kubernetes (GKE) and data
 website: 'https://cloud.google.com'
 categories: [cloud-platforms, kubernetes, object-storage]
 aliases: [gcp, google cloud platform]
+i18n:
+  de:
+    summary: 'Cloud-Plattform von Google für Rechenleistung, Speicher, Kubernetes (GKE) und Datendienste.'

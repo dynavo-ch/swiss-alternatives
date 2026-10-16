@@ -123,6 +123,10 @@ sources:
     publisher: Ergon Informatik AG
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Identitäts- und Zugriffsmanagement für Kunden, selbst gehostet oder als in der Schweiz gehosteter Dienst.'
+    description: 'Airlock IAM ist ein Produkt für Customer Identity and Access Management der Zürcher Ergon Informatik, betrieben auf Kundeninfrastruktur oder als Managed Cloud Service.'
 ---
 
 Airlock IAM is a customer identity and access management (cIAM) product from

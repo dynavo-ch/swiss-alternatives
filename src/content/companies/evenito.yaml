@@ -72,3 +72,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, gegründet 2016, das die Eventmanagement-Software evenito für Corporate-Event-Teams entwickelt, mit einem weiteren Büro in Hamburg.'

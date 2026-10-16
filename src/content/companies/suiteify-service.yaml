@@ -77,3 +77,6 @@ sources:
     publisher: Infoniqa Group Holding GmbH
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Unternehmen aus Stäfa, bis 2026 unter dem Namen Run my Accounts AG, das den Online-Buchhaltungsdienst und die Software Run my Accounts betreibt. Es gehört zur Suiteify-Gruppe (früher Infoniqa).'

@@ -8,3 +8,9 @@ intro: >-
   deploy containers without operating Kubernetes themselves.
 related: [cloud-platforms, paas]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Managed Kubernetes'
+    noun: 'Managed-Kubernetes-Dienste'
+    summary: 'Verwaltete Kubernetes-Cluster, deren Control Plane der Anbieter betreibt.'
+    intro: 'Managed-Kubernetes-Dienste betreiben die Control Plane des Clusters und den Lebenszyklus der Nodes, sodass Teams Container bereitstellen können, ohne Kubernetes selbst zu betreiben.'

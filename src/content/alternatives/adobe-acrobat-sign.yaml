@@ -5,3 +5,6 @@ summary: Adobe's electronic signature service, integrated with Acrobat.
 website: 'https://www.adobe.com/acrobat/business/sign.html'
 categories: [e-signatures]
 aliases: [adobe sign, echosign]
+i18n:
+  de:
+    summary: 'Dienst für elektronische Signaturen von Adobe, in Acrobat integriert.'

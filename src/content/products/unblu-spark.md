@@ -138,6 +138,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Plattform für sicheres Messaging, Video und Co-Browsing für Banken, Vermögensverwalter und Versicherer.'
+    description: 'Unblu Spark ist eine Plattform für Kundenkommunikation aus Basel für Finanzinstitute, die sicheren Chat, Video, Co-Browsing und KI-Assistenten vereint.'
 ---
 
 Unblu Spark is a client communication platform developed by Basel-based unblu

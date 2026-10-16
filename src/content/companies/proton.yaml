@@ -78,3 +78,6 @@ sources:
     publisher: Proton AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Unternehmen mit Sitz in Plan-les-Ouates bei Genf, das verschlüsselte Dienste für E-Mail, Kalender, Cloud-Speicher, Passwort-Manager, VPN und KI-Assistent entwickelt. Hauptaktionärin ist die gemeinnützige Proton Foundation.'

@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Platform as a service for deploying applications from Git.
 website: 'https://www.heroku.com'
 categories: [paas]
+i18n:
+  de:
+    summary: 'Platform as a Service für die Bereitstellung von Anwendungen aus Git.'

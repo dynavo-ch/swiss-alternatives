@@ -7,3 +7,6 @@ website: 'https://aws.amazon.com'
 categories: [cloud-platforms, object-storage, kubernetes, vps-hosting]
 aliases: [aws, amazon cloud, ec2, lightsail]
 popular: true
+i18n:
+  de:
+    summary: 'Cloud-Plattform von Amazon mit Rechenleistung (EC2), Speicher (S3), Managed Kubernetes und Hunderten weiterer Dienste.'

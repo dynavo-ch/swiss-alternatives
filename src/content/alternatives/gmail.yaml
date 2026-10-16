@@ -7,3 +7,6 @@ website: 'https://mail.google.com'
 categories: [email]
 aliases: [google mail, googlemail]
 popular: true
+i18n:
+  de:
+    summary: 'E-Mail-Dienst von Google für private Konten, auch in Google Workspace enthalten.'

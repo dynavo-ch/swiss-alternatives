@@ -117,6 +117,10 @@ sources:
     publisher: Apple
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Multi-Faktor-Authentifizierung und Transaktionsbestätigung für Banken und Fintechs.'
+    description: 'Futurae ist eine in Zürich entwickelte Authentifizierungsplattform für Banken und Fintechs mit Anmeldung per Push, QR, TOTP und FIDO2 sowie Transaktionssignierung per App oder SDK.'
 ---
 
 Futurae is an authentication platform from Futurae Technologies AG in Zurich,

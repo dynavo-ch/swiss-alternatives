@@ -9,3 +9,9 @@ intro: >-
   Microsoft 365.
 related: [email, cloud-storage, calendars]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Office-Suiten'
+    noun: 'Office-Suiten'
+    summary: 'E-Mail, Kalender, Dokumente und Dateispeicher für Teams in einem integrierten Paket.'
+    intro: 'Office-Suiten bündeln E-Mail, Kalender, Kontakte, Dateispeicher und gemeinsam bearbeitbare Dokumente unter einem Konto. Sie sind der häufigste Ersatz für Google Workspace und Microsoft 365.'

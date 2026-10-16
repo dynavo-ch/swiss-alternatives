@@ -138,6 +138,10 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Verschlüsselter Open-Source-Messenger ohne Telefonnummer, geroutet über dezentrale Knoten.'
+    description: 'Session ist ein Ende-zu-Ende-verschlüsselter Open-Source-Messenger, der keine Telefonnummer benötigt und Nachrichten über ein dezentrales Netzwerk von Community-Knoten leitet.'
 ---
 
 Session is a messenger for one-to-one and group chats that can be used without

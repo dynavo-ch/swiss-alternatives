@@ -1,0 +1,572 @@
+---
+import AlternativeCard from '~/components/AlternativeCard.astro';
+import CategoryCard from '~/components/CategoryCard.astro';
+import Icon from '~/components/Icon.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import ProductRow from '~/components/ProductRow.astro';
+import SearchBox from '~/components/SearchBox.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import Stats from '~/components/Stats.astro';
+import { site } from '~/config/site';
+import { resolveLocale, useTranslations } from '~/i18n';
+import { localeTags } from '~/i18n/config';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory, sortByAdded } from '~/lib/data';
+import { paths } from '~/lib/paths';
+import { websiteLd } from '~/lib/seo';
+import { FOOTPRINT_DIMENSIONS } from '~/lib/signals';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+const { alternatives, categories, products, stats } = await getDirectory(Astro.currentLocale);
+
+const popular = alternatives
+  .filter((a) => a.data.popular && a.products.length > 0)
+  .sort((a, b) => b.products.length - a.products.length || a.name.localeCompare(b.name))
+  .slice(0, 8);
+
+const quick = ['gmail', 'google-drive', 'aws', '1password', 'chatgpt', 'slack', 'google-analytics']
+  .map((id) => alternatives.find((a) => a.id === id))
+  .filter((a) => a !== undefined && a.products.length > 0);
+
+const topCategories = [...categories]
+  .filter((c) => c.products.length > 0)
+  .sort((a, b) => b.products.length - a.products.length || a.name.localeCompare(b.name))
+  .slice(0, 8);
+
+const hosted = products
+  .filter((p) => p.signals['swiss-hosted'])
+  .sort((a, b) => b.footprintScore - a.footprintScore || a.name.localeCompare(b.name))
+  .slice(0, 6);
+
+const openSource = products
+  .filter((p) => p.signals['open-source'] || p.data.openSource?.value === 'partial')
+  .slice(0, 6);
+const recent = sortByAdded(products).slice(0, 6);
+
+const reasons = [
+  { icon: 'scale', key: 'jurisdiction' },
+  { icon: 'map-pin', key: 'location' },
+  { icon: 'languages', key: 'support' },
+  { icon: 'banknote', key: 'chf' },
+  { icon: 'building-2', key: 'economy' },
+  { icon: 'shield-check', key: 'sovereignty' },
+] as const;
+
+const exampleFootprint = {
+  headquarters: 'yes',
+  ownership: 'yes',
+  development: 'yes',
+  hosting: 'partial',
+  infrastructure: 'unknown',
+} as const;
+let section = 0;
+const next = () => ++section;
+---
+
+<BaseLayout
+  documentTitle={`${site.name} — ${t('home.titleSuffix')}`}
+  description={t('home.description')}
+  jsonLd={websiteLd(t('home.description'), localeTags[resolveLocale(Astro.currentLocale)])}
+>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__main">
+        <p class="label hero__eyebrow">
+          <span class="cross" aria-hidden="true"></span>
+          {t('home.eyebrow', { count: stats.products })}
+        </p>
+        <h1 class="display hero__title">
+          {t('home.title1')}
+          <br />
+          {t('home.title2')}
+          <span class="hero__dot" aria-hidden="true">
+            .
+          </span>
+        </h1>
+        <p class="lead hero__lead">{t('home.lead')}</p>
+        <div class="hero__search">
+          <SearchBox variant="hero" id="hero-search" />
+        </div>
+        {quick.length > 0 && (
+          <div class="hero__quick">
+            <span class="label">{t('search.tryLabel')}</span>
+            <ul role="list">
+              {quick.map((a) => (
+                <li>
+                  <a href={a!.url}>{a!.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <aside class="specimen" aria-labelledby="specimen-h">
+        <p class="label">{t('home.specimenLabel')}</p>
+        <h2 id="specimen-h" class="specimen__title">
+          {t('home.specimenTitle')}
+        </h2>
+        <ol class="specimen__list" role="list">
+          {FOOTPRINT_DIMENSIONS.map((d, i) => (
+            <li>
+              <span
+                class="specimen__cell footprint__cell"
+                data-state={exampleFootprint[d]}
+                aria-hidden="true"
+              />
+              <span class="specimen__num mono">{String(i + 1).padStart(2, '0')}</span>
+              <span>
+                <strong>{t(`footprint.${d}`)}</strong>
+                <span class="specimen__q">{t(`footprint.${d}.q`)}</span>
+              </span>
+            </li>
+          ))}
+        </ol>
+        <p class="specimen__legend">
+          <span>
+            <span class="footprint__cell" data-state="yes" aria-hidden="true"></span>
+            {t('state.yes')}
+          </span>
+          <span>
+            <span class="footprint__cell" data-state="partial" aria-hidden="true"></span>
+            {t('state.partial')}
+          </span>
+          <span>
+            <span class="footprint__cell" data-state="no" aria-hidden="true"></span>
+            {t('state.no')}
+          </span>
+          <span>
+            <span class="footprint__cell" data-state="unknown" aria-hidden="true"></span>
+            {t('state.unknownShort')}
+          </span>
+        </p>
+        <a href={paths.methodology()} class="arrow-link">
+          {t('home.specimenLink')}
+          <Icon name="arrow-right" />
+        </a>
+      </aside>
+    </div>
+    <div class="container">
+      <Stats />
+    </div>
+  </section>
+
+  {popular.length > 0 && (
+    <section class="section container" aria-labelledby="popular-h">
+      <SectionHeader
+        id="popular-h"
+        number={next()}
+        eyebrow={t('home.popularEyebrow')}
+        title={t('home.popularTitle')}
+        lead={t('home.popularLead')}
+        href={paths.alternatives()}
+        linkLabel={t('common.viewAll')}
+      />
+      <ul class="grid-cards grid-cards--2up grid-cards--sm" role="list">
+        {popular.map((alternative) => (
+          <li>
+            <AlternativeCard alternative={alternative} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="section container" aria-labelledby="categories-h">
+    <SectionHeader
+      id="categories-h"
+      number={next()}
+      eyebrow={t('nav.categories')}
+      title={t('home.categoriesTitle')}
+      href={paths.categories()}
+      linkLabel={t('home.categoriesLink', { count: stats.categories })}
+    />
+    <ul class="grid-cards grid-cards--2up grid-cards--sm" role="list">
+      {topCategories.map((category) => (
+        <li>
+          <CategoryCard category={category} />
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {hosted.length > 0 && (
+    <section class="section container" aria-labelledby="hosted-h">
+      <SectionHeader
+        id="hosted-h"
+        number={next()}
+        eyebrow={t('signal.swiss-hosted')}
+        title={t('home.hostedTitle')}
+        lead={t('home.hostedLead')}
+        href={`${paths.products()}?f=swiss-hosted`}
+        linkLabel={t('home.hostedLink', { count: stats.swissHosted })}
+      />
+      <ul class="grid-cards rail grid-cards--lg" role="list">
+        {hosted.map((product) => (
+          <li>
+            <ProductCard product={product} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="section why" aria-labelledby="why-h">
+    <div class="container">
+      <SectionHeader
+        id="why-h"
+        number={next()}
+        eyebrow={t('home.whyEyebrow')}
+        title={t('home.whyTitle')}
+        lead={t('home.whyLead')}
+      />
+      <ol class="why__grid" role="list">
+        {reasons.map((reason, i) => (
+          <li class="why__item">
+            <span class="why__num mono">{String(i + 1).padStart(2, '0')}</span>
+            <Icon name={reason.icon} class="why__icon" />
+            <h3 class="why__title">{t(`home.why.${reason.key}`)}</h3>
+            <p class="why__text">{t(`home.why.${reason.key}.text`)}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="why__note">
+        <Icon name="info" />
+        <span>
+          {t('home.whyNote')} <a href={paths.methodology()}>{t('nav.methodology')}</a>
+        </span>
+      </p>
+    </div>
+  </section>
+
+  {openSource.length > 0 && (
+    <section class="section container" aria-labelledby="oss-h">
+      <SectionHeader
+        id="oss-h"
+        number={next()}
+        eyebrow={t('signal.open-source')}
+        title={t('home.ossTitle')}
+        lead={t('home.ossLead')}
+        href={`${paths.products()}?f=open-source`}
+        linkLabel={t('common.viewAll')}
+      />
+      <ul class="grid-cards rail grid-cards--lg" role="list">
+        {openSource.map((product) => (
+          <li>
+            <ProductCard product={product} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="section container" aria-labelledby="recent-h">
+    <SectionHeader
+      id="recent-h"
+      number={next()}
+      eyebrow={t('nav.latest')}
+      title={t('home.recentTitle')}
+      href={paths.latest()}
+      linkLabel={t('common.viewAll')}
+    />
+    <div class="recent">
+      {recent.map((product) => (
+        <ProductRow product={product} date={product.data.added} dateLabel={t('common.added')} />
+      ))}
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="explore-h">
+    <div class="explore">
+      <div>
+        <h2 id="explore-h" class="h2">
+          {t('home.exploreTitle', { count: stats.products })}
+        </h2>
+        <p class="explore__lead">{t('home.exploreLead')}</p>
+      </div>
+      <div class="explore__actions">
+        <a href={paths.products()} class="btn btn--primary btn--lg">
+          {t('nav.products')}
+          <Icon name="arrow-right" />
+        </a>
+        <a href={paths.products()} class="btn btn--lg" data-random>
+          <Icon name="shuffle" />
+          {t('common.random')}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-top: clamp(2.5rem, 1rem + 6vw, 6rem);
+    padding-bottom: var(--s-4);
+  }
+
+  .hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    gap: var(--s-12);
+    align-items: end;
+    padding-bottom: clamp(2.5rem, 1rem + 4vw, 5rem);
+  }
+
+  .hero__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    margin-bottom: var(--s-6);
+  }
+
+  .hero__title {
+    max-width: 11ch;
+  }
+
+  .hero__dot {
+    color: var(--c-red);
+  }
+
+  .hero__lead {
+    margin-top: var(--s-6);
+    font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+    max-width: 52ch;
+  }
+
+  .hero__search {
+    margin-top: var(--s-8);
+    max-width: 44rem;
+  }
+
+  .hero__quick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-2) var(--s-3);
+    margin-top: var(--s-4);
+  }
+
+  .hero__quick ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1) var(--s-3);
+  }
+
+  .hero__quick a {
+    font-size: var(--fs-sm);
+    font-weight: 520;
+    color: var(--c-ink-2);
+    text-decoration: underline;
+    text-decoration-color: var(--c-line-strong);
+    text-underline-offset: 0.25em;
+  }
+
+  .hero__quick a:hover {
+    color: var(--c-red-ink);
+    text-decoration-color: currentColor;
+  }
+
+  /* Specimen: explains the five footprint questions -------------- */
+  .specimen {
+    display: grid;
+    gap: var(--s-4);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    border-top: 2px solid var(--c-ink);
+    border-radius: 0 0 var(--r-2) var(--r-2);
+    background: var(--c-surface);
+  }
+
+  .specimen__title {
+    font-size: var(--fs-lg);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .specimen__list {
+    display: grid;
+    border-top: 1px solid var(--c-line);
+  }
+
+  .specimen__list li {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: start;
+    gap: var(--s-3);
+    padding: var(--s-3) 0;
+    border-bottom: 1px solid var(--c-line);
+    font-size: var(--fs-sm);
+  }
+
+  .specimen__cell {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-top: 0.2rem;
+  }
+
+  .specimen__num {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+    padding-top: 0.1rem;
+  }
+
+  .specimen__q {
+    display: block;
+    color: var(--c-ink-3);
+    font-size: var(--fs-xs);
+    line-height: 1.45;
+  }
+
+  .specimen__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2) var(--s-4);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .specimen__legend > span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+  }
+
+  @media (max-width: 64rem) {
+    .hero__grid {
+      grid-template-columns: 1fr;
+      gap: var(--s-10);
+    }
+    .specimen {
+      max-width: 36rem;
+    }
+  }
+
+  /* Why Swiss ---------------------------------------------------- */
+  .why {
+    background: var(--c-surface);
+    border-block: 1px solid var(--c-line);
+  }
+
+  .why + .section {
+    padding-top: var(--section);
+  }
+
+  .why__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--c-line);
+    border-left: 1px solid var(--c-line);
+  }
+
+  .why__item {
+    display: grid;
+    align-content: start;
+    gap: var(--s-3);
+    padding: var(--s-6);
+    border-right: 1px solid var(--c-line);
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .why__num {
+    font-size: var(--fs-xs);
+    color: var(--c-red-ink);
+  }
+
+  .why__item :global(.why__icon) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .why__title {
+    font-size: var(--fs-md);
+    letter-spacing: -0.015em;
+  }
+
+  .why__text {
+    font-size: var(--fs-sm);
+    line-height: 1.55;
+    color: var(--c-ink-2);
+  }
+
+  .why__note {
+    display: flex;
+    gap: var(--s-2);
+    margin-top: var(--s-6);
+    max-width: 70ch;
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .why__note :global(svg) {
+    flex: none;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+
+  @media (max-width: 60rem) {
+    .why__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 36rem) {
+    .why__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .recent {
+    border-top: 1px solid var(--c-line);
+  }
+
+  /* Closing band ------------------------------------------------- */
+  .explore {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s-6);
+    padding: var(--s-10) var(--s-8);
+    border-radius: var(--r-2);
+    background: var(--c-ink);
+    color: var(--c-inverse);
+  }
+
+  .explore__lead {
+    margin-top: var(--s-3);
+    max-width: 52ch;
+    opacity: 0.75;
+  }
+
+  .explore__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+
+  .explore .btn--primary {
+    --btn-bg: var(--c-inverse);
+    --btn-fg: var(--c-ink);
+    --btn-border: var(--c-inverse);
+  }
+
+  .explore .btn--primary:hover {
+    --btn-bg: var(--c-red-fill);
+    --btn-fg: var(--c-on-red);
+    --btn-border: var(--c-red-fill);
+  }
+
+  .explore .btn:not(.btn--primary) {
+    --btn-bg: transparent;
+    --btn-fg: var(--c-inverse);
+    --btn-border: color-mix(in srgb, var(--c-inverse) 40%, transparent);
+  }
+
+  .explore .btn:not(.btn--primary):hover {
+    --btn-border: var(--c-inverse);
+  }
+</style>

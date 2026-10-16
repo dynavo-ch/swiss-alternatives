@@ -7,3 +7,6 @@ website: 'https://www.whatsapp.com'
 categories: [messaging]
 aliases: [whatsapp business]
 popular: true
+i18n:
+  de:
+    summary: 'Messaging- und Telefonie-App im Besitz von Meta.'

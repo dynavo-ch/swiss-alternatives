@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Scheduling tool with booking pages connected to your calendar.
 website: 'https://calendly.com'
 categories: [scheduling]
+i18n:
+  de:
+    summary: 'Terminplanungs-Tool mit Buchungsseiten, die mit Ihrem Kalender verbunden sind.'

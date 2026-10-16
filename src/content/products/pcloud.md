@@ -132,6 +132,10 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-Speicher mit Lifetime-Plänen und optionaler clientseitiger Verschlüsselung, Speicherung in EU oder USA.'
+    description: 'pCloud ist ein Cloud-Speicher- und Dateifreigabedienst eines in Baar registrierten Unternehmens, mit Datenspeicherung in Luxemburg oder Texas und optionaler kostenpflichtiger Verschlüsselung.'
 ---
 
 pCloud offers cloud storage with desktop sync, a virtual drive, mobile apps with

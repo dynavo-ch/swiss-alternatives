@@ -99,6 +99,10 @@ sources:
     publisher: METANET AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Webhosting, Domains, E-Mail und virtuelle Server, gehostet in Schweizer Rechenzentren.'
+    description: 'METANET ist ein Zürcher Webhosting-Anbieter, Teil von group.one, mit Shared Hosting, Domains, E-Mail und virtuellen Servern aus Rechenzentren in der Schweiz.'
 ---
 
 METANET is a web hosting provider based in Zurich. It offers domain

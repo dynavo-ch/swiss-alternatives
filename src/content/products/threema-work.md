@@ -150,6 +150,10 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Verschlüsselter Business-Messenger mit zentraler Benutzerverwaltung und On-Premises-Option.'
+    description: 'Threema Work ist die Business-Version des Messengers Threema mit zentraler Benutzerverwaltung, MDM-Unterstützung und API, betrieben auf den Servern von Threema in der Schweiz.'
 ---
 
 Threema Work is the organisational edition of the Threema messenger, launched

@@ -160,6 +160,38 @@
         }
       }
     },
+    "labels": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": ["swiss-made-software", "swiss-hosting"]
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": ["label", "source"]
+      }
+    },
+    "i18n": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "lastVerified": {
       "type": "string",
       "format": "date-time"

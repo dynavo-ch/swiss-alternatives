@@ -9,3 +9,9 @@ intro: >-
   platform.
 related: [cloud-platforms, web-hosting]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'VPS & virtuelle Server'
+    noun: 'VPS-Anbieter'
+    summary: 'Virtuelle private Server und einfache virtuelle Maschinen, stunden- oder monatsweise abgerechnet.'
+    intro: 'Virtuelle private Server stellen Ihnen einen dedizierten Teil einer physischen Maschine mit Root-Zugriff zur Verfügung. Sie eignen sich für Websites, kleine Anwendungen und selbst gehostete Tools, die keine vollständige Cloud-Plattform benötigen.'

@@ -130,6 +130,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Cloud-Buchhaltung, Rechnungsstellung und Zeiterfassung für Selbstständige in der Schweiz.'
+    description: 'MILKEE ist Cloud-Buchhaltungssoftware aus Winterthur für Selbstständige und kleine Firmen, mit QR-Rechnungen, Zeiterfassung und einer App zum Scannen von Belegen.'
 ---
 
 MILKEE is a cloud accounting tool for self-employed people with a sole

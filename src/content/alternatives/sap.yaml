@@ -5,3 +5,6 @@ summary: SAP's ERP suite for finance, logistics, procurement and manufacturing.
 website: 'https://www.sap.com/products/erp/s4hana.html'
 categories: [erp]
 aliases: [sap erp, s/4hana, sap business one]
+i18n:
+  de:
+    summary: 'ERP-Suite von SAP für Finanzen, Logistik, Beschaffung und Produktion.'

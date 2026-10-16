@@ -8,3 +8,9 @@ intro: >-
   to other tools through integrations.
 related: [messaging, employee-communication, video-conferencing]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Team-Chat'
+    noun: 'Team-Chat-Tools'
+    summary: 'Kanäle, Threads und Direktnachrichten für Teams.'
+    intro: 'Team-Chat-Tools ordnen Gespräche am Arbeitsplatz in Kanäle und Threads und binden andere Tools über Integrationen an.'

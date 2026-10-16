@@ -5,3 +5,6 @@ parent: Thoma Bravo
 summary: AI-based threat detection and response for networks, email, cloud and endpoints.
 website: 'https://www.darktrace.com'
 categories: [network-security]
+i18n:
+  de:
+    summary: 'KI-basierte Erkennung und Abwehr von Bedrohungen für Netzwerke, E-Mail, Cloud und Endgeräte.'

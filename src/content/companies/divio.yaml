@@ -73,3 +73,6 @@ sources:
     publisher: Divio Technologies AB
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'In Zürich eingetragenes Unternehmen, das die Platform as a Service von Divio betreibt. Es ist eine hundertprozentige Tochtergesellschaft der Divio Technologies AB mit Hauptsitz in Stockholm.'

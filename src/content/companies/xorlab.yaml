@@ -66,3 +66,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, als Spin-off der ETH Zürich gegründet, das E-Mail-Sicherheitssoftware für Organisationen mit hohen Sicherheitsanforderungen entwickelt.'

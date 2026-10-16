@@ -5,3 +5,6 @@ summary: Meta's family of open-weight large language models.
 website: 'https://www.llama.com'
 categories: [language-models]
 aliases: [llama 3, llama 4]
+i18n:
+  de:
+    summary: 'Familie grosser Open-Weight-Sprachmodelle von Meta.'

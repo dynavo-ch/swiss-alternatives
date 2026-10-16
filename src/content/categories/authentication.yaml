@@ -8,3 +8,9 @@ intro: >-
   confirmation to apps and websites — typically via SDKs and APIs.
 related: [iam, password-managers]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Authentifizierung & MFA'
+    noun: 'Authentifizierungsplattformen'
+    summary: 'Multi-Faktor-Authentifizierung, Passkeys und betrugsresistente Anmeldung.'
+    intro: 'Authentifizierungsplattformen ergänzen Apps und Websites um eine starke, phishingresistente Anmeldung und Transaktionsbestätigung – meist über SDKs und APIs.'

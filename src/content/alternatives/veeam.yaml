@@ -6,3 +6,6 @@ summary: Backup and recovery software for virtual, physical, cloud and Microsoft
 website: 'https://www.veeam.com'
 categories: [backup]
 aliases: [Veeam, Veeam Backup & Replication]
+i18n:
+  de:
+    summary: 'Backup- und Wiederherstellungssoftware für virtuelle, physische, Cloud- und Microsoft-365-Workloads.'

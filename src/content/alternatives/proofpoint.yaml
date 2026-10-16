@@ -6,3 +6,6 @@ summary: Email security and threat protection platform for organisations, includ
 website: 'https://www.proofpoint.com'
 categories: [email-security]
 aliases: [proofpoint email protection]
+i18n:
+  de:
+    summary: 'Plattform für E-Mail-Sicherheit und Bedrohungsschutz für Organisationen, einschliesslich Abwehr von Phishing und BEC.'

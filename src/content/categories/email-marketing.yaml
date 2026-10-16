@@ -9,3 +9,9 @@ intro: >-
   protection law.
 related: [crm]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'E-Mail-Marketing'
+    noun: 'E-Mail-Marketing-Tools'
+    summary: 'Newsletter, Kampagnen und Verwaltung von Verteilerlisten.'
+    intro: 'E-Mail-Marketing-Tools verwalten Abonnentenlisten und versenden Newsletter und Kampagnen, mit Vorlagen, Automatisierung und Auswertungen. Datenschutzrechtlich relevant sind der Umgang mit Einwilligungen und der Speicherort der Abonnentendaten.'

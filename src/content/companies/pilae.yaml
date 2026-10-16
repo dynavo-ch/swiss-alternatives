@@ -61,3 +61,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen aus Lausanne, gegründet 2026, das Open-Source-Anwendungen und private KI für Organisationen betreibt, auf deren eigenen Servern oder in seiner eigenen Cloud.'

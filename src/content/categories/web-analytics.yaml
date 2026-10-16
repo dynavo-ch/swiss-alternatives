@@ -8,3 +8,9 @@ intro: >-
   avoid cookies and personal data, which can remove the need for a consent banner.
 related: []
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Webanalyse'
+    noun: 'Webanalyse-Tools'
+    summary: 'Website-Traffic und Zielgruppen messen.'
+    intro: 'Webanalyse-Tools messen Besuche, Verweisquellen und Conversions. Datenschutzfreundliche Tools verzichten auf Cookies und Personendaten, was ein Einwilligungsbanner überflüssig machen kann.'

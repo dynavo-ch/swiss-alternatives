@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Cybersicherheitsunternehmen, 2016 mit Wurzeln an der ETH Zürich gegründet, das Software für Network Detection and Response entwickelt.'

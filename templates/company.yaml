@@ -45,3 +45,8 @@ sources:
     url: https://example.ch/about
     kind: vendor
     accessed: 2026-01-01
+# Optional German translation (Swiss Standard German: «ss», never «ß»). Untranslated
+# fields fall back to English.
+i18n:
+  de:
+    description: Deutsche Fassung der Beschreibung.

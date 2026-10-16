@@ -85,3 +85,6 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Anbieter von Cloud-Speicher, eingetragen in Baar (Kanton Zug), 2013 von einem bulgarischen Team gegründet. Kundendaten werden in Luxemburg oder in den USA gespeichert.'

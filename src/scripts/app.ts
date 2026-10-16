@@ -7,6 +7,7 @@ import {
   copyText,
   currentTheme,
   getList,
+  localPath,
   onChange,
   pushRecent,
   setList,
@@ -139,7 +140,7 @@ if (viewed?.dataset.productView) pushRecent(viewed.dataset.productView);
 /* Random discovery ----------------------------------------------------- */
 async function goRandom(fallback: string) {
   try {
-    const response = await fetch('/data/products.json');
+    const response = await fetch(localPath('/data/products.json'));
     const data = (await response.json()) as { products: { url: string }[] };
     const pick = data.products[Math.floor(Math.random() * data.products.length)];
     location.href = pick?.url ?? fallback;
@@ -198,3 +199,14 @@ initFootprintTips();
 
 /* Protected email links ------------------------------------------------- */
 initEmailLinks();
+
+/* Language switch ------------------------------------------------------- */
+// Keep filters, compared products and the anchor when switching language.
+document.querySelectorAll<HTMLAnchorElement>('a[data-locale-link][hreflang]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const url = new URL(link.href);
+    url.search = location.search;
+    url.hash = location.hash;
+    link.href = url.href;
+  });
+});

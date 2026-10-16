@@ -25,6 +25,9 @@ them as fact-checking work, not copywriting.
   Swiss-hosted foreign service). The build enforces this.
 - Neutral, factual tone. No marketing language, no superlatives. Tagline ≤ 90
   characters, description 120–160 characters, body 2–3 short paragraphs.
+- The site is bilingual (English, German at `/de/`). When adding an entry, also
+  add the `i18n.de` block (see "Translations" in docs/CONTENT.md) in Swiss
+  Standard German (`ss`, never `ß`). Translate only; never add facts.
 
 ## Before opening a pull request
 
@@ -36,4 +39,4 @@ verified, which are vendor claims, and what remains unknown.
 
 Astro 7, TypeScript (strictest), hand-written CSS with tokens in
 `src/styles/tokens.css`, minimal client JavaScript in `src/scripts/`. UI
-strings live in `src/i18n/ui/en.ts`. Keep pages useful without JavaScript.
+strings live in `src/i18n/ui/en.ts` and `de.ts` — add every new key to both. Keep pages useful without JavaScript.

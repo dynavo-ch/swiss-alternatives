@@ -69,3 +69,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Genf, gegründet 2014, das eine Plattform für CRM, Kunden-Onboarding und Portfoliomanagement für Banken und andere Finanzinstitute entwickelt.'

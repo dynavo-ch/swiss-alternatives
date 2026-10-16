@@ -9,3 +9,9 @@ intro: >-
   between services.
 related: [language-models]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'KI-Assistenten'
+    noun: 'KI-Assistenten'
+    summary: 'Chat-Assistenten zum Schreiben, Recherchieren und für Alltagsfragen.'
+    intro: 'KI-Assistenten beantworten Fragen, entwerfen Texte und fassen Dokumente zusammen – auf Basis grosser Sprachmodelle. Wo Eingaben verarbeitet werden und ob sie für das Training verwendet werden, unterscheidet sich je nach Dienst.'

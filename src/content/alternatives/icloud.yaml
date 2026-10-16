@@ -5,3 +5,6 @@ summary: Apple's cloud service for file storage, photos, mail, calendars and dev
 website: 'https://www.icloud.com'
 categories: [cloud-storage, email, calendars]
 aliases: [icloud drive, icloud mail]
+i18n:
+  de:
+    summary: 'Cloud-Dienst von Apple für Dateispeicher, Fotos, E-Mail, Kalender und Gerätebackups.'

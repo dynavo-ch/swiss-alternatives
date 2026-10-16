@@ -172,6 +172,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Verschlüsselte E-Mail mit Ende-zu-Ende-Verschlüsselung zwischen Proton-Nutzenden.'
+    description: 'Proton Mail ist ein verschlüsselter E-Mail-Dienst der Proton AG bei Genf mit Web-, Mobile- und Desktop-Apps. Die Daten werden in der Schweiz, in Deutschland und in Norwegen gespeichert.'
 ---
 
 Proton Mail is an email service operated by Proton AG. Messages between Proton

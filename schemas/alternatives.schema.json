@@ -46,6 +46,21 @@
       "type": "string",
       "enum": ["active", "discontinued"]
     },
+    "i18n": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "$schema": {
       "type": "string"
     }

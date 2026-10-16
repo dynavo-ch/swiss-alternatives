@@ -1,0 +1,284 @@
+---
+import FactValue from '~/components/FactValue.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import SourceList from '~/components/SourceList.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory, type Company } from '~/lib/data';
+import { cantonName, countryName, displayHost, formatDate, isoDate } from '~/lib/format';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd, companyLd } from '~/lib/seo';
+import { localeRoutes } from '~/i18n/routing';
+
+export function getStaticPaths() {
+  return localeRoutes(async (locale) => {
+    const { companies } = await getDirectory(locale);
+    return companies.map((company) => ({ params: { slug: company.id }, props: { company } }));
+  });
+}
+
+interface Props {
+  company: Company;
+}
+
+const { company } = Astro.props;
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const c = company.data;
+const hq = c.headquarters;
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.companies'), href: paths.companies() },
+  { label: company.name, href: company.url },
+];
+const location = [
+  hq.city,
+  hq.canton ? cantonName(hq.canton) : undefined,
+  countryName(hq.country, locale),
+]
+  .filter(Boolean)
+  .join(', ');
+const ownershipText =
+  c.ownership.swissOwned === 'unknown'
+    ? undefined
+    : `${t(`state.${c.ownership.swissOwned}`)}${c.ownership.parent ? ` — ${c.ownership.parent}${c.ownership.parentCountry ? ` · ${countryName(c.ownership.parentCountry, locale)}` : ''}` : ''}`;
+const products = company.products;
+const description = [
+  c.description,
+  products.length
+    ? t('company.metaProducts', { names: products.map((p) => p.name).join(', ') })
+    : '',
+]
+  .join(' ')
+  .trim();
+---
+
+<BaseLayout
+  title={`${company.name} — ${location}`}
+  description={description.slice(0, 300)}
+  noindex={products.length === 0}
+  jsonLd={[companyLd(company), breadcrumbLd(crumbs)]}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={`${t(`company.type.${c.type}`)} · ${location}`}
+    title={company.name}
+    lead={c.description}
+  >
+    <p class="co-links">
+      <a href={c.website} class="btn" rel="noopener">
+        {displayHost(c.website)}
+        <Icon name="arrow-up-right" />
+      </a>
+      {c.registry?.url && (
+        <a href={c.registry.url} class="btn btn--ghost" rel="noopener nofollow">
+          {t('company.registry')}
+          {c.registry.uid && <span class="mono">{c.registry.uid}</span>}
+        </a>
+      )}
+    </p>
+  </PageHeader>
+
+  <section class="section container co-grid">
+    <div>
+      <SectionHeader number={1} title={t('company.facts')} level="h2" />
+      <dl class="co-facts">
+        <div>
+          <dt>{t('company.headquarters')}</dt>
+          <dd>
+            <FactValue
+              value={company.isSwiss ? 'yes' : 'no'}
+              text={location}
+              basis={hq.basis}
+              source={hq.source}
+              sources={c.sources}
+              anchorPrefix="csrc"
+              note={hq.note}
+            />
+          </dd>
+        </div>
+        <div>
+          <dt>{t('company.jurisdiction')}</dt>
+          <dd>
+            {c.jurisdiction ? (
+              <span class="state" data-state={c.jurisdiction === 'CH' ? 'yes' : 'no'}>
+                {countryName(c.jurisdiction, locale)}
+              </span>
+            ) : (
+              <span class="state" data-state="unknown">
+                {t('state.unknown')}
+              </span>
+            )}
+          </dd>
+        </div>
+        <div>
+          <dt>{t('company.ownership')}</dt>
+          <dd>
+            <FactValue
+              value={c.ownership.swissOwned}
+              text={ownershipText}
+              basis={c.ownership.basis}
+              source={c.ownership.source}
+              sources={c.sources}
+              anchorPrefix="csrc"
+              note={c.ownership.note}
+            />
+          </dd>
+        </div>
+        {company.parentCompany && (
+          <div>
+            <dt>{t('company.parent')}</dt>
+            <dd>
+              <a href={company.parentCompany.url}>{company.parentCompany.name}</a>
+            </dd>
+          </div>
+        )}
+        <div>
+          <dt>{t('company.swissFounded')}</dt>
+          <dd>
+            <FactValue
+              value={c.swissFounded?.value ?? 'unknown'}
+              basis={c.swissFounded?.basis}
+              source={c.swissFounded?.source}
+              sources={c.sources}
+              anchorPrefix="csrc"
+              note={c.swissFounded?.note}
+            />
+          </dd>
+        </div>
+        {c.labels.length > 0 && (
+          <div>
+            <dt>{t('company.labels')}</dt>
+            <dd>
+              <ul class="labels" role="list">
+                {c.labels.map((l) => {
+                  const src = c.sources.find((s) => s.id === l.source);
+                  return (
+                    <li>
+                      {src ? (
+                        <a href={src.url} rel="noopener nofollow">
+                          {t(`label.${l.label}`)}
+                        </a>
+                      ) : (
+                        t(`label.${l.label}`)
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+              <p class="labels__note">{t('company.labelsNote')}</p>
+            </dd>
+          </div>
+        )}
+        {c.founded && (
+          <div>
+            <dt>{t('common.founded')}</dt>
+            <dd class="tnum">{c.founded}</dd>
+          </div>
+        )}
+        {hq.canton && (
+          <div>
+            <dt>{t('company.canton')}</dt>
+            <dd>
+              <a href={`${paths.products()}?canton=${hq.canton}`}>{cantonName(hq.canton)}</a>{' '}
+              <span class="mono muted">{hq.canton}</span>
+            </dd>
+          </div>
+        )}
+      </dl>
+    </div>
+    <div>
+      <SectionHeader number={2} title={t('company.products')} level="h2" />
+      {products.length > 0 ? (
+        <ul class="grid-cards grid-cards--sm" role="list">
+          {products.map((product) => (
+            <li>
+              <ProductCard product={product} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="muted">{t('common.none')}</p>
+      )}
+    </div>
+  </section>
+
+  {c.sources.length > 0 && (
+    <section class="section container" aria-labelledby="co-sources">
+      <SectionHeader id="co-sources" number={3} title={t('product.sources')} />
+      <SourceList sources={c.sources} anchorPrefix="csrc" />
+      {c.lastVerified && (
+        <p class="co-verified">
+          <span class="label">{t('common.lastVerified')}</span>{' '}
+          <time class="mono" datetime={isoDate(c.lastVerified)}>
+            {formatDate(c.lastVerified, locale)}
+          </time>
+        </p>
+      )}
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .co-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-top: var(--s-6);
+  }
+
+  .co-links :global(svg) {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .co-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: var(--s-12);
+  }
+
+  @media (max-width: 60rem) {
+    .co-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .co-facts > div {
+    display: grid;
+    gap: var(--s-1);
+    padding: var(--s-3) 0;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .co-facts dt {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1);
+  }
+
+  .labels li {
+    padding: 0.05rem 0.5rem;
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-1);
+    font-size: var(--fs-sm);
+  }
+
+  .labels__note {
+    margin-top: var(--s-1);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .co-verified {
+    margin-top: var(--s-4);
+  }
+</style>

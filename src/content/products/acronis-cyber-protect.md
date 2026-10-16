@@ -129,6 +129,10 @@ sources:
     publisher: Mayer Brown
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Backup, Disaster Recovery und Endpoint-Schutz für Geräte und Server in Unternehmen.'
+    description: 'Acronis Cyber Protect vereint Backup, Disaster Recovery und Malware-Schutz für Endgeräte, Server und Microsoft 365, verwaltet aus der Cloud oder On-Premises.'
 ---
 
 Acronis Cyber Protect is backup and endpoint security software for businesses

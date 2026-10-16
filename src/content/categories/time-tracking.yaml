@@ -8,3 +8,9 @@ intro: >-
   legal requirements for recording working time.
 related: [payroll, invoicing, erp]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'Zeiterfassung'
+    noun: 'Zeiterfassungs-Tools'
+    summary: 'Arbeitszeit, Projektstunden und Absenzen erfassen.'
+    intro: 'Zeiterfassungs-Tools erfassen Stunden für Projekte, Kunden und die Lohnabrechnung. Schweizer Tools decken oft die gesetzlichen Vorgaben zur Arbeitszeiterfassung ab.'

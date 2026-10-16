@@ -6,3 +6,6 @@ summary: Cloud time tracking and invoicing service for teams and agencies.
 website: 'https://www.getharvest.com'
 categories: [time-tracking, invoicing]
 aliases: [getharvest]
+i18n:
+  de:
+    summary: 'Cloud-Dienst für Zeiterfassung und Rechnungsstellung für Teams und Agenturen.'

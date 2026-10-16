@@ -137,6 +137,10 @@ sources:
     publisher: DSwiss AG via PR Newswire
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Verschlüsselter Passwort-Manager und Dokumententresor, gehostet in der Schweiz.'
+    description: 'SecureSafe der Zürcher DSwiss ist ein Passwort-Manager und verschlüsselter Dateitresor für Privatpersonen und Organisationen, gehostet in Schweizer Rechenzentren.'
 ---
 
 SecureSafe is an online vault for passwords and documents operated by DSwiss AG

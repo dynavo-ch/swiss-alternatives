@@ -5,3 +5,6 @@ summary: Microsoft's cloud storage and file sync service, integrated into Window
 website: 'https://onedrive.live.com'
 categories: [cloud-storage, file-sharing]
 aliases: [onedrive, skydrive]
+i18n:
+  de:
+    summary: 'Cloud-Speicher und Dateisynchronisation von Microsoft, integriert in Windows und Microsoft 365.'

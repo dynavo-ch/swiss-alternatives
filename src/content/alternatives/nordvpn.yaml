@@ -6,3 +6,6 @@ summary: Consumer VPN service.
 website: 'https://nordvpn.com'
 categories: [vpn]
 aliases: [nord vpn]
+i18n:
+  de:
+    summary: 'VPN-Dienst für Privatnutzer.'

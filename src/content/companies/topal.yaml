@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Familienbesitz in Volketswil ZH, das seit 2006 Software für Finanzbuchhaltung und Lohn für Schweizer Treuhandbüros und KMU entwickelt.'

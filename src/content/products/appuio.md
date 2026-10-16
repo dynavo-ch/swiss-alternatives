@@ -134,6 +134,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Managed Container-Plattform auf Basis von Red Hat OpenShift, betrieben in Schweizer Cloud-Zonen.'
+    description: 'APPUiO ist eine Kubernetes-Container-Plattform auf Basis von Red Hat OpenShift, betrieben von der Zürcher VSHN auf Zonen von cloudscale und Exoscale in der Schweiz.'
 ---
 
 APPUiO is a container platform based on Red Hat OpenShift, operated by VSHN AG in

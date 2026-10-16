@@ -9,3 +9,9 @@ intro: >-
   hyperscalers, but publish clear data locations and contract under Swiss law.
 related: [vps-hosting, object-storage, kubernetes]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Cloud-Plattformen'
+    noun: 'Cloud-Plattformen'
+    summary: 'Infrastructure as a Service – virtuelle Maschinen, Netzwerk, Speicher und Managed Services.'
+    intro: 'Public-Cloud-Plattformen stellen Rechenleistung, Netzwerk und Speicher auf Abruf über eine API und eine Webkonsole bereit. Schweizer Anbieter bieten in der Regel weniger Managed Services als die globalen Hyperscaler, legen aber ihre Datenstandorte klar offen und schliessen Verträge nach Schweizer Recht ab.'

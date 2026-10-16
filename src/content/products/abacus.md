@@ -104,6 +104,10 @@ sources:
     publisher: Netzwoche
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Modulare ERP-Suite für Schweizer KMU mit Finanzen, HR, Lohn, CRM und Logistik.'
+    description: 'Abacus ist eine modulare ERP-Suite aus Wittenbach SG für Finanzen, HR und Lohn, CRM und Logistik, betrieben On-Premises oder über Partner in der Schweiz gehostet.'
 ---
 
 Abacus is an ERP and business software suite developed by Abacus Research AG in

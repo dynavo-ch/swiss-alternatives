@@ -6,3 +6,6 @@ summary: Amazon's object storage service and the de facto standard S3 API.
 website: 'https://aws.amazon.com/s3/'
 categories: [object-storage, backup]
 aliases: [s3]
+i18n:
+  de:
+    summary: 'Objektspeicher-Dienst von Amazon; seine S3-API gilt als De-facto-Standard.'

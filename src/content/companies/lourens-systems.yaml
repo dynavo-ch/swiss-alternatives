@@ -52,3 +52,6 @@ sources:
     publisher: Moneyhouse AG
     kind: registry
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, eingetragen 2009, das den Rechnungs- und CRM-Dienst smallinvoice für Kleinunternehmen entwickelt und betreibt.'

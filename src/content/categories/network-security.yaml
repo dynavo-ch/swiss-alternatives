@@ -8,3 +8,9 @@ intro: >-
   firewalls to DNS-based threat blocking.
 related: [dns-resolvers, iam]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Netzwerksicherheit'
+    noun: 'Dienste für Netzwerksicherheit'
+    summary: 'Schutz für Netzwerke, Gateways und Webanwendungen.'
+    intro: 'Produkte für Netzwerksicherheit schützen Datenverkehr und Anwendungen – von Web Application Firewalls bis zur DNS-basierten Blockierung von Bedrohungen.'

@@ -133,6 +133,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'E-Mail-Hosting mit Kalender und Kontakten, für kostenlose Adressen oder die eigene Domain.'
+    description: 'Infomaniak Mail ist ein E-Mail-Dienst mit Kalender und Kontakten, angeboten als kostenlose Adressen oder kostenpflichtige Postfächer mit eigener Domain, von Infomaniak in der Schweiz gehostet.'
 ---
 
 Infomaniak Mail is the email service behind both the free my kSuite addresses

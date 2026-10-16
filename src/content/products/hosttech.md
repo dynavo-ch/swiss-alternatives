@@ -104,6 +104,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Webhosting, Domains und virtuelle Server aus eigenen Rechenzentren in der Schweiz.'
+    description: 'hosttech ist ein Webhosting-Anbieter aus Richterswil mit Shared- und WordPress-Hosting, Domains, E-Mail und Servern aus eigenen Rechenzentren in der Schweiz.'
 ---
 
 hosttech is a web hosting provider founded in 2004 in Richterswil on Lake Zurich.

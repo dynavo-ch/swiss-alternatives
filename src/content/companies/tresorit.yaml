@@ -80,3 +80,6 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Anbieter von Ende-zu-Ende-verschlüsseltem Cloud-Speicher und Dateifreigabe, 2011 von ungarischen Entwicklern gegründet und vollständig im Besitz der Schweizerischen Post. Büros in Zürich, München und Budapest.'

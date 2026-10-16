@@ -112,6 +112,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Verwaltete Open-Source-Apps und private KI, auf eigenen Servern oder in einer Schweizer Region.'
+    description: 'Pilae betreibt rund 40 Open-Source-Apps und private KI-Modelle für Organisationen, auf deren eigenen Servern oder auf dedizierten Maschinen in Zürich oder anderen Regionen.'
 ---
 
 Pilae is a managed service from Pilae SA in Lausanne, founded in 2026, that

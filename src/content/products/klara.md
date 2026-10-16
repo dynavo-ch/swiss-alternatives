@@ -126,6 +126,10 @@ sources:
     publisher: ePost Service AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Modulare Cloud-Unternehmenssoftware für Schweizer KMU, von Buchhaltung und Rechnungsstellung bis Lohn.'
+    description: 'KLARA ist Cloud-basierte Unternehmenssoftware aus Luzern für Schweizer KMU mit Buchhaltung, Rechnungsstellung, Lohn, CRM und Kassensystem. Sie gehört zu ePost der Schweizerischen Post.'
 ---
 
 KLARA is cloud-based business software for small and medium-sized businesses

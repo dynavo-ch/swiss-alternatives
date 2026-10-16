@@ -108,6 +108,10 @@ sources:
     publisher: Agilentia AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Meeting-Management für Verwaltungsräte und Geschäftsleitungen, gehostet in Schweizer Rechenzentren.'
+    description: 'Sherpany ist Meeting-Software für Verwaltungsräte und Geschäftsleitungen aus Zürich, Teil der US-amerikanischen Datasite-Gruppe, mit Datenhaltung in Schweizer Rechenzentren.'
 ---
 
 Sherpany is a meeting management platform for boards of directors, executive

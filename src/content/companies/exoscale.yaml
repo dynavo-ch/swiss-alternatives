@@ -73,3 +73,6 @@ sources:
     publisher: Telekom Austria AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Unternehmen aus Lausanne, das die Cloud-Plattform Exoscale betreibt. Es gehört zu A1 Digital, einem Teil der österreichischen A1 Telekom Austria Group.'

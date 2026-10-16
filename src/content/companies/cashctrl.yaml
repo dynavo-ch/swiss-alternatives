@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Münchenstein BL, das CashCtrl entwickelt und betreibt, eine Cloud-Buchhaltungs- und Unternehmenssoftware für KMU, Vereine und Treuhandbüros.'

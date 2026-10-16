@@ -6,3 +6,6 @@ summary: Developer-focused cloud with virtual machines (Droplets), managed Kuber
 website: 'https://www.digitalocean.com'
 categories: [vps-hosting, cloud-platforms, kubernetes]
 aliases: [droplets]
+i18n:
+  de:
+    summary: 'Auf Entwickler ausgerichtete Cloud mit virtuellen Maschinen (Droplets), Managed Kubernetes und Objektspeicher.'

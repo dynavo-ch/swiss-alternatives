@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Password manager for individuals and businesses.
 website: 'https://www.dashlane.com'
 categories: [password-managers]
+i18n:
+  de:
+    summary: 'Passwort-Manager für Privatpersonen und Unternehmen.'

@@ -102,6 +102,10 @@ sources:
     publisher: TÜV Rheinland
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Virtuelle Rechenzentren, Hosted Private Clouds und Backup aus Schweizer Rechenzentren.'
+    description: 'Naveum ist ein Cloud-Anbieter aus Adliswil mit VMware-basierten virtuellen Rechenzentren, Hosted Private Clouds, Backup und Disaster Recovery in der Schweiz.'
 ---
 
 Naveum is a cloud provider in Adliswil near Zurich that sells mainly to IT

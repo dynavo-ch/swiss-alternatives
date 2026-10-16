@@ -9,3 +9,9 @@ intro: >-
   zones are in Switzerland.
 related: [backup, cloud-platforms]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Objektspeicher'
+    noun: 'Objektspeicher-Dienste'
+    summary: 'S3-kompatibler Speicher für Dateien, Backups, Medien und Anwendungsdaten.'
+    intro: 'Objektspeicher legt grosse Mengen unstrukturierter Daten hinter einer HTTP-API ab, meist kompatibel mit Amazon S3. Der Datenstandort wird in der Regel pro Bucket gewählt; prüfen Sie daher, welche Zonen in der Schweiz liegen.'

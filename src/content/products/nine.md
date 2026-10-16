@@ -127,6 +127,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Managed Kubernetes, App-Plattform, Datenbanken und Server auf Schweizer Infrastruktur.'
+    description: 'Nine ist ein Zürcher Cloud-Anbieter mit Managed Kubernetes (NKE), der App-Plattform Deploio, verwalteten Datenbanken, Objektspeicher und Servern in der Schweiz.'
 ---
 
 Nine is a managed cloud and hosting provider from Zurich. Its main offerings are

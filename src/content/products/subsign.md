@@ -108,6 +108,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Qualifizierte elektronische Signaturen und Siegel über Swisscom Trust Services, gehostet in der Schweiz.'
+    description: 'Subsign ist ein Webportal für qualifizierte elektronische Signaturen und fortgeschrittene Siegel nach ZertES und eIDAS der Zürcher OBJECT, gehostet in einem Schweizer Rechenzentrum.'
 ---
 
 Subsign is a web portal for signing documents with qualified electronic

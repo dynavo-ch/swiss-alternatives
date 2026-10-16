@@ -5,3 +5,6 @@ parent: Blackstone
 summary: Event management platform for registration, attendee management, venues and virtual events.
 website: 'https://www.cvent.com'
 categories: [event-management]
+i18n:
+  de:
+    summary: 'Eventmanagement-Plattform für Anmeldung, Teilnehmerverwaltung, Veranstaltungsorte und virtuelle Events.'

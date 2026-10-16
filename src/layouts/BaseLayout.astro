@@ -13,8 +13,9 @@ import Footer from '~/components/Footer.astro';
 import Header from '~/components/Header.astro';
 import SearchDialog from '~/components/SearchDialog.astro';
 import { site } from '~/config/site';
-import { localeTags } from '~/i18n/config';
+import { defaultLocale, localeTags, locales } from '~/i18n/config';
 import { clientStrings, resolveLocale, useTranslations } from '~/i18n';
+import { localisePath } from '~/i18n/routing';
 import { sha256, shortcutLabel, themeBootstrap } from '~/lib/inline-scripts';
 import { absolute, type JsonLd } from '~/lib/seo';
 
@@ -53,6 +54,14 @@ const locale = resolveLocale(Astro.currentLocale);
 const t = useTranslations(locale);
 const fullTitle = documentTitle ?? (title ? `${title} · ${site.name}` : site.name);
 const canonicalUrl = absolute(canonical);
+// Every page exists in every locale; untranslated content falls back to English.
+// The 404 page exists only once and has no alternates.
+const alternates = Astro.url.pathname.startsWith('/404')
+  ? []
+  : locales.map((l) => ({ hreflang: l, href: absolute(localisePath(canonical, l)) }));
+const defaultAlternate = absolute(localisePath(canonical, defaultLocale));
+/** Path prefix for client scripts (`''` or `/de`). */
+const base = locale === defaultLocale ? '' : `/${locale}`;
 const imageUrl = absolute(image);
 const ld = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
@@ -101,7 +110,12 @@ const strings = clientStrings(locale, [
 ---
 
 <!doctype html>
-<html lang={localeTags[locale]} class="no-js" data-compare-limit={site.compareLimit}>
+<html
+  lang={localeTags[locale]}
+  class="no-js"
+  data-base={base}
+  data-compare-limit={site.compareLimit}
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -125,8 +139,12 @@ const strings = clientStrings(locale, [
       title={`${site.name} — ${t('nav.latest')}`}
       href="/latest/rss.xml"
     />
-    <link rel="alternate" hreflang="en" href={canonicalUrl} />
-    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.hreflang} href={a.href} data-locale-link />
+    ))}
+    {alternates.length > 0 && (
+      <link rel="alternate" hreflang="x-default" href={defaultAlternate} data-locale-link />
+    )}
 
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={site.name} />

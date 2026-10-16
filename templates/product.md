@@ -113,6 +113,12 @@ sources:
     url: https://example.ch/pricing
     kind: vendor
     accessed: 2026-01-01
+# Optional German translation (Swiss Standard German: «ss», never «ß»). Untranslated
+# fields fall back to English. The Markdown body below stays English.
+i18n:
+  de:
+    tagline: Deutsche Kurzbeschreibung (max. 110 Zeichen).
+    description: Deutsche Beschreibung (max. 220 Zeichen).
 ---
 
 Two or three short, neutral paragraphs: what the product does, who it is for,

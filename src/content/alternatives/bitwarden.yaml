@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Open-source password manager with cloud and self-hosted options.
 website: 'https://bitwarden.com'
 categories: [password-managers]
+i18n:
+  de:
+    summary: 'Open-Source-Passwort-Manager, wahlweise in der Cloud oder selbst gehostet.'

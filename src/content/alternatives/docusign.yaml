@@ -6,3 +6,6 @@ website: 'https://www.docusign.com'
 categories: [e-signatures]
 aliases: [docu sign]
 popular: true
+i18n:
+  de:
+    summary: 'Plattform für elektronische Signaturen und Vertragsmanagement.'

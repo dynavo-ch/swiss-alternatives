@@ -72,3 +72,6 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Softwareunternehmen für Backup und Cybersicherheit, 2003 in Singapur gegründet, mit Hauptsitz in Schaffhausen und seit 2025 mehrheitlich im Besitz von EQT.'

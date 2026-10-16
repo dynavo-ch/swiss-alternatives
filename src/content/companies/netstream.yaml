@@ -85,3 +85,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Anbieter von Cloud, Konnektivität und TV-Streaming, gegründet 1998, mit Sitz in Wallisellen und eigenen Rechenzentren in Dübendorf.'

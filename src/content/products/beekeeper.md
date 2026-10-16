@@ -100,6 +100,10 @@ sources:
     publisher: Swisscom Ventures (Business Wire release)
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Mobile Kommunikations- und Workflow-App für Frontline-Mitarbeitende, heute Teil von LumApps.'
+    description: 'Beekeeper ist eine mobile App für Frontline-Mitarbeitende und Personal ohne Büroarbeitsplatz mit Messaging, Mitteilungen, Schichtplänen und Lohnabrechnungen; sie gehört seit 2025 zu LumApps.'
 ---
 
 Beekeeper is a mobile-first platform for frontline and deskless workers that

@@ -130,6 +130,10 @@ sources:
     publisher: SwissSign AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Qualifizierte elektronische Signaturen nach Schweizer Recht von einem Vertrauensdiensteanbieter der Post.'
+    description: 'Der Signaturdienst von SwissSign, einer Tochtergesellschaft der Schweizerischen Post, stellt qualifizierte und einfache elektronische Signaturen per Web, REST-API oder On-Premises-Integration aus.'
 ---
 
 SwissSign's signature service lets people and organisations sign PDF documents

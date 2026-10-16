@@ -8,3 +8,9 @@ intro: >-
   communication for conferences and corporate events.
 related: [email-marketing, crm]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'Eventmanagement'
+    noun: 'Eventmanagement-Plattformen'
+    summary: 'Einladungen, Anmeldung, Ticketing und Check-in für Veranstaltungen.'
+    intro: 'Eventmanagement-Plattformen übernehmen Einladungen, Anmeldung, Ticketing, Check-in und Kommunikation für Konferenzen und Firmenanlässe.'

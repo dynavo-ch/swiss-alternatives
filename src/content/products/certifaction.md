@@ -112,6 +112,10 @@ sources:
     publisher: Certifaction AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Elektronische Signaturen (SES, AES, QES) mit lokaler Dokumentverarbeitung und optionaler E2E-Verschlüsselung.'
+    description: 'Certifaction ist ein in Zürich entwickelter Dienst für elektronische Signaturen (SES, AES, QES), der Dokumente lokal verarbeitet; Speicherung in der Schweiz, in der EU oder On-Premises.'
 ---
 
 Certifaction is an electronic signature service for simple (SES), advanced

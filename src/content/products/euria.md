@@ -143,6 +143,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'KI-Assistent, der Open-Weight-Modelle auf der Schweizer Infrastruktur von Infomaniak ausführt.'
+    description: 'Euria ist der KI-Chat-Assistent von Infomaniak, kostenlos im Web und mobil nutzbar und in kSuite integriert; er führt Open-Weight-Modelle in den Schweizer Rechenzentren von Infomaniak aus.'
 ---
 
 Euria is an AI chat assistant launched in December 2025. It can be used without

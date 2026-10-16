@@ -5,3 +5,6 @@ summary: Cloud time tracker for freelancers and teams, with project reports and 
 website: 'https://toggl.com/track/'
 categories: [time-tracking]
 aliases: [toggl]
+i18n:
+  de:
+    summary: 'Cloud-Zeiterfassung für Freelancer und Teams, mit Projektberichten und verrechenbaren Stundensätzen.'

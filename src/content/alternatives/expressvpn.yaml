@@ -5,3 +5,6 @@ summary: Consumer VPN service.
 website: 'https://www.expressvpn.com'
 categories: [vpn]
 aliases: [express vpn]
+i18n:
+  de:
+    summary: 'VPN-Dienst für Privatnutzer.'

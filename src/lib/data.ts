@@ -11,6 +11,8 @@
 import type { ImageMetadata } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { site } from '~/config/site';
+import { defaultLocale, type Locale } from '~/i18n/config';
+import { resolveLocale } from '~/i18n';
 import { paths } from './paths';
 import {
   classify,
@@ -145,15 +147,36 @@ export interface Stats {
 const byName = <T extends { name: string }>(a: T, b: T) =>
   a.name.localeCompare(b.name, 'en', { sensitivity: 'base' });
 
-let cache: Promise<Directory> | undefined;
+const cache = new Map<string, Promise<Directory>>();
 
-/** Returns the fully resolved directory. Cached for the duration of the build. */
-export function getDirectory(): Promise<Directory> {
-  cache ??= buildDirectory();
-  return cache;
+/**
+ * Returns the fully resolved directory for a locale. Localised fields
+ * (`i18n.<locale>` in categories, groups, alternatives and products) are
+ * overlaid on the English data; anything not translated falls back to English.
+ * Cached per locale for the duration of the build.
+ */
+export function getDirectory(locale?: string): Promise<Directory> {
+  const lang = resolveLocale(locale);
+  let directory = cache.get(lang);
+  if (!directory) {
+    directory = buildDirectory(lang);
+    cache.set(lang, directory);
+  }
+  return directory;
 }
 
-async function buildDirectory(): Promise<Directory> {
+/** Overlays `data.i18n[locale]` onto `data`. */
+function localise<T extends { i18n?: Record<string, object> | undefined }>(
+  data: T,
+  locale: string,
+): T {
+  const overlay = locale === defaultLocale ? undefined : data.i18n?.[locale];
+  return overlay
+    ? { ...data, ...Object.fromEntries(Object.entries(overlay).filter(([, v]) => v !== undefined)) }
+    : data;
+}
+
+async function buildDirectory(locale: Locale): Promise<Directory> {
   const [groupEntries, categoryEntries, companyEntries, productEntries, alternativeEntries] =
     await Promise.all([
       getCollection('groups'),
@@ -170,7 +193,12 @@ async function buildDirectory(): Promise<Directory> {
   /* Groups ----------------------------------------------------------- */
   const groups = new Map<string, Group>();
   for (const entry of groupEntries) {
-    groups.set(entry.id, { id: entry.id, data: entry.data, categories: [], productCount: 0 });
+    groups.set(entry.id, {
+      id: entry.id,
+      data: localise(entry.data, locale),
+      categories: [],
+      productCount: 0,
+    });
   }
 
   /* Categories ------------------------------------------------------- */
@@ -183,12 +211,13 @@ async function buildDirectory(): Promise<Directory> {
       );
       continue;
     }
+    const data = localise(entry.data, locale);
     const category: Category = {
       id: entry.id,
-      data: entry.data,
-      name: entry.data.name,
-      noun: entry.data.noun ?? entry.data.name.toLowerCase(),
-      url: paths.category(entry.id),
+      data,
+      name: data.name,
+      noun: data.noun ?? data.name.toLowerCase(),
+      url: paths.category(entry.id, locale),
       group,
       products: [],
       alternatives: [],
@@ -215,10 +244,10 @@ async function buildDirectory(): Promise<Directory> {
     checkSources(file, entry.data.sources, entry.data, errors, warnings);
     companies.set(entry.id, {
       id: entry.id,
-      data: entry.data,
+      data: localise(entry.data, locale),
       name: entry.data.name,
       displayName: entry.data.shortName ?? entry.data.name,
-      url: paths.company(entry.id),
+      url: paths.company(entry.id, locale),
       isSwiss: isSwissCompany(entry.data),
       logo: entry.data.logo ?? companyLogo(entry.id),
       products: [],
@@ -245,9 +274,9 @@ async function buildDirectory(): Promise<Directory> {
     }
     alternatives.set(entry.id, {
       id: entry.id,
-      data: entry.data,
+      data: localise(entry.data, locale),
       name: entry.data.name,
-      url: paths.alternative(entry.id),
+      url: paths.alternative(entry.id, locale),
       categories: resolved,
       products: [],
     });
@@ -263,7 +292,7 @@ async function buildDirectory(): Promise<Directory> {
 
   for (const entry of productEntries) {
     const file = `products/${entry.id}.md`;
-    const data = entry.data;
+    const data = localise(entry.data, locale);
 
     const lowerName = data.name.toLowerCase();
     if (names.has(lowerName)) {
@@ -311,7 +340,7 @@ async function buildDirectory(): Promise<Directory> {
       entry,
       data,
       name: data.name,
-      url: paths.product(entry.id),
+      url: paths.product(entry.id, locale),
       company,
       categories: productCategories,
       primaryCategory: productCategories[0]!,

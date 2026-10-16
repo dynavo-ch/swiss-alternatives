@@ -5,3 +5,6 @@ summary: Cloud storage and file synchronisation service with sharing and collabo
 website: 'https://www.dropbox.com'
 categories: [cloud-storage, file-sharing]
 popular: true
+i18n:
+  de:
+    summary: 'Cloud-Speicher und Dateisynchronisation mit Funktionen für Freigabe und Zusammenarbeit.'

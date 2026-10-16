@@ -8,3 +8,9 @@ intro: >-
   providers add encryption at rest or end-to-end encryption between users.
 related: [office-suites, calendars]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'E-Mail'
+    noun: 'E-Mail-Dienste'
+    summary: 'E-Mail-Hosting für Privatpersonen, eigene Domains und Organisationen.'
+    intro: 'E-Mail-Anbieter hosten Ihr Postfach und bei Business-Angeboten auch Ihre eigene Domain. Datenschutzorientierte Anbieter ergänzen dies um die Verschlüsselung gespeicherter Daten oder um Ende-zu-Ende-Verschlüsselung zwischen Nutzenden.'

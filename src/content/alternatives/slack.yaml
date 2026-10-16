@@ -6,3 +6,6 @@ summary: Team chat platform with channels, threads and integrations.
 website: 'https://slack.com'
 categories: [team-chat]
 popular: true
+i18n:
+  de:
+    summary: 'Team-Chat-Plattform mit Kanälen, Threads und Integrationen.'

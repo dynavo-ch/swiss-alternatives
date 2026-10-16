@@ -4,3 +4,6 @@ vendorCountry: NZ
 summary: Cloud accounting software for small businesses.
 website: 'https://www.xero.com'
 categories: [accounting, invoicing]
+i18n:
+  de:
+    summary: 'Cloud-Buchhaltungssoftware für kleine Unternehmen.'

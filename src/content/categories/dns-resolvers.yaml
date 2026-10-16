@@ -9,3 +9,9 @@ intro: >-
   lookups in transit.
 related: [vpn, network-security]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Öffentliche DNS-Resolver'
+    noun: 'DNS-Resolver'
+    summary: 'Verschlüsseltes öffentliches DNS, oft mit Blockierung von Malware und Phishing.'
+    intro: 'Öffentliche DNS-Resolver übersetzen für Ihre Geräte Domainnamen in IP-Adressen. Mit der Wahl des Resolvers entscheiden Sie, wer sieht, welche Domains Sie aufrufen; verschlüsseltes DNS (DoH/DoT) schützt diese Abfragen bei der Übertragung.'

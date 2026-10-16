@@ -96,6 +96,10 @@ sources:
     publisher: Exeon Analytics AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Network Detection and Response auf Basis von Flow- und Log-Metadaten, betrieben auf Kundensystemen.'
+    description: 'Exeon.NDR ist Software für Network Detection and Response der Zürcher Exeon, die Metadaten des Datenverkehrs mit maschinellem Lernen analysiert, On-Premises oder in der Cloud.'
 ---
 
 Exeon.NDR is a network detection and response (NDR) product from Exeon

@@ -5,3 +5,6 @@ summary: Microsoft's ERP and CRM applications.
 website: 'https://www.microsoft.com/dynamics-365'
 categories: [erp, crm]
 aliases: [dynamics, navision, business central]
+i18n:
+  de:
+    summary: 'ERP- und CRM-Anwendungen von Microsoft.'

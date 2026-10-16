@@ -79,3 +79,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Unternehmen für Netzwerksicherheit, gegründet 1990 und seit 2024 im Besitz der Schweizerischen Post, das Managed SASE und Dienste für sichere Vernetzung betreibt.'

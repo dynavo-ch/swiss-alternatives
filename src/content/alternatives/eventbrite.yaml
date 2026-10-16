@@ -5,3 +5,6 @@ parent: Bending Spoons S.p.A.
 summary: Self-service ticketing and event registration platform with a public event marketplace.
 website: 'https://www.eventbrite.com'
 categories: [event-management]
+i18n:
+  de:
+    summary: 'Self-Service-Plattform für Ticketing und Eventanmeldungen mit öffentlichem Veranstaltungsmarktplatz.'

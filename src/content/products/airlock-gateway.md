@@ -118,6 +118,10 @@ sources:
     publisher: Ergon Informatik AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Web-Application- und API-Firewall mit Reverse Proxy, betrieben auf Kundeninfrastruktur.'
+    description: 'Airlock Gateway ist eine Web-Application- und API-Firewall der Zürcher Ergon Informatik, die Kunden selbst als virtuelle Appliance oder Cloud-Image installieren.'
 ---
 
 Airlock Gateway is a web application and API protection (WAAP) product from

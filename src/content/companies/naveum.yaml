@@ -76,3 +76,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Cloud-Anbieter aus Adliswil, gegründet 2017, der IT-Dienstleistern und Wiederverkäufern Infrastructure as a Service, Private Clouds und Backup anbietet.'

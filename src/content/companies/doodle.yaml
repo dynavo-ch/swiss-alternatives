@@ -62,3 +62,6 @@ sources:
     publisher: Moneyhouse AG
     kind: registry
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Unternehmen hinter dem Terminplanungsdienst Doodle, 2007 von zwei Studenten der ETH Zürich gegründet und heute eine Tochtergesellschaft der Schweizer Mediengruppe TX Group.'

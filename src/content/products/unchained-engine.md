@@ -107,6 +107,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Open-Source-Framework für Headless E-Commerce mit GraphQL-API, entwickelt in Zürich.'
+    description: 'Unchained Engine ist ein Open-Source-Framework für Headless E-Commerce aus Zürich für Node.js und MongoDB, selbst gehostet oder vom Entwickler in der Schweiz betrieben.'
 ---
 
 Unchained Engine is an open-source e-commerce framework developed by

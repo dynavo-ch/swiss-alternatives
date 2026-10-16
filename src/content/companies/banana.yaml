@@ -56,3 +56,6 @@ sources:
     publisher: Banana.ch SA
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Lugano, das seit 1989 die Desktop-Software Banana Accounting entwickelt.'

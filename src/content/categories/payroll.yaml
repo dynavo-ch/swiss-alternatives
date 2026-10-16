@@ -8,3 +8,9 @@ intro: >-
   insurances, ideally via the Swissdec standard.
 related: [accounting, erp]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Lohnbuchhaltung'
+    noun: 'Lohnsoftware'
+    summary: 'Lohnverarbeitung, Lohnabrechnungen und Meldungen an die Sozialversicherungen.'
+    intro: 'Lohnsoftware berechnet Löhne und Abzüge und meldet an die Schweizer Sozialversicherungen, idealerweise über den Swissdec-Standard.'

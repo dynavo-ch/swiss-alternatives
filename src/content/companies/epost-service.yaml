@@ -78,3 +78,6 @@ sources:
     publisher: Netzwoche
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Tochtergesellschaft der Schweizerischen Post mit Sitz in Luzern, früher KLARA Business AG, die die Unternehmenssoftware KLARA für KMU und die digitalen Postdienste von ePost entwickelt.'

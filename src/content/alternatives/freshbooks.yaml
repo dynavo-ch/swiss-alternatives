@@ -4,3 +4,6 @@ vendorCountry: CA
 summary: Cloud invoicing, time tracking and accounting software for freelancers and small businesses.
 website: 'https://www.freshbooks.com'
 categories: [invoicing, accounting]
+i18n:
+  de:
+    summary: 'Cloud-Software für Rechnungsstellung, Zeiterfassung und Buchhaltung für Freelancer und kleine Unternehmen.'

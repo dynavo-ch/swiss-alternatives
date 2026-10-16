@@ -73,3 +73,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, gegründet 2008, das SecureSafe entwickelt und betreibt, eine Plattform für die verschlüsselte Aufbewahrung von Passwörtern und Dokumenten und den sicheren Datenaustausch.'

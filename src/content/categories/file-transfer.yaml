@@ -8,3 +8,9 @@ intro: >-
   the classic use case of WeTransfer.
 related: [file-sharing, cloud-storage]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Dateiübertragung'
+    noun: 'Dienste zur Dateiübertragung'
+    summary: 'Grosse Dateien per Link versenden, ohne gemeinsamen Ordner.'
+    intro: 'Dienste zur Dateiübertragung laden eine Datei einmal hoch und versenden einen zeitlich begrenzten Download-Link – der klassische Anwendungsfall von WeTransfer.'

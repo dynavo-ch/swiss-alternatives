@@ -6,6 +6,9 @@
  *
  *   npm run lint:content          # warnings only
  *   npm run lint:content -- --strict   # exit 1 on any warning (CI)
+ *
+ * Missing translations are reported as a note, never as a warning: English
+ * is always a valid fallback.
  */
 import { readdirSync, readFileSync } from 'node:fs';
 import { parse } from 'yaml';
@@ -14,6 +17,27 @@ const root = new URL('../src/content/', import.meta.url);
 const strict = process.argv.includes('--strict');
 const warnings = [];
 const warn = (file, message) => warnings.push(`${file}: ${message}`);
+
+// Translated short texts (`i18n.<locale>`), per collection.
+const LOCALES = ['de'];
+const TRANSLATED = {
+  products: ['tagline', 'description'],
+  companies: ['description'],
+  categories: ['name', 'noun', 'summary', 'intro'],
+  alternatives: ['summary'],
+  groups: ['name', 'summary'],
+};
+const untranslated = Object.fromEntries(LOCALES.map((l) => [l, []]));
+
+function checkTranslations(file, collection, data) {
+  for (const locale of LOCALES) {
+    const fields = data.i18n?.[locale] ?? {};
+    const missing = TRANSLATED[collection].filter((f) => data[f] && !fields[f]);
+    if (missing.length) untranslated[locale].push(`${file} (${missing.join(', ')})`);
+    // Swiss Standard German has no «ß».
+    if (locale === 'de' && /ß/.test(JSON.stringify(fields))) warn(file, 'German text contains «ß»');
+  }
+}
 
 // Words that usually signal marketing copy rather than description.
 const HYPE =
@@ -64,6 +88,7 @@ for (const name of readdirSync(new URL('products/', root))) {
   checkFacts(file, { swiss: data.swiss });
   if (data.swiss?.hosted?.value === 'yes' && !data.swiss?.dataLocations?.length)
     warn(file, 'hosted: yes but no dataLocations');
+  checkTranslations(file, 'products', data);
 }
 
 for (const name of readdirSync(new URL('companies/', root))) {
@@ -79,6 +104,29 @@ for (const name of readdirSync(new URL('companies/', root))) {
     !data.ownership.source
   )
     warn(file, 'ownership claim without source');
+  checkTranslations(file, 'companies', data);
+}
+
+for (const collection of ['categories', 'alternatives']) {
+  for (const name of readdirSync(new URL(`${collection}/`, root))) {
+    const file = `${collection}/${name}`;
+    checkTranslations(file, collection, parse(readFileSync(new URL(file, root), 'utf8')));
+  }
+}
+for (const group of parse(readFileSync(new URL('groups.yaml', root), 'utf8'))) {
+  checkTranslations(`groups.yaml#${group.id}`, 'groups', group);
+}
+
+for (const [locale, files] of Object.entries(untranslated)) {
+  if (!files.length) continue;
+  console.log(
+    `ℹ ${files.length} entr${files.length === 1 ? 'y' : 'ies'} without "${locale}" translation (English is shown instead):\n` +
+      files
+        .slice(0, 15)
+        .map((f) => `  · ${f}`)
+        .join('\n') +
+      (files.length > 15 ? `\n  · … and ${files.length - 15} more` : ''),
+  );
 }
 
 if (warnings.length) {

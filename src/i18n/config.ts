@@ -1,16 +1,17 @@
 /**
  * Locale configuration.
  *
- * English is the canonical content language. German, French and Italian are
- * prepared: add the locale here, add a dictionary in `./ui/`, and Astro's i18n
- * routing will serve it under `/de/`, `/fr/`, `/it/`.
+ * English is the canonical content language and is served without a prefix;
+ * German lives under `/de/`. To add a locale: list it here, add a dictionary
+ * in `./ui/`, translate `src/content/pages/<locale>/` and the `i18n.<locale>`
+ * fields of the content collections (untranslated fields fall back to English).
  */
 export const defaultLocale = 'en' as const;
 
-export const locales = ['en'] as const;
+export const locales = ['en', 'de'] as const;
 
-/** Locales planned for later. Used only for documentation and hreflang planning. */
-export const plannedLocales = ['de', 'fr', 'it'] as const;
+/** Locales planned for later. */
+export const plannedLocales = ['fr', 'it'] as const;
 
 export type Locale = (typeof locales)[number];
 

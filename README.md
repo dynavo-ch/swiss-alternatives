@@ -172,7 +172,7 @@ Set the canonical URL with `PUBLIC_SITE_URL` for preview deployments, otherwise 
     │   ├── groups.yaml          # Top-level category groups
     │   ├── alternatives/*.yaml  # Foreign products people replace (Gmail, AWS …)
     │   └── pages/en/*.md        # Editorial pages (about, privacy, imprint) per locale
-    ├── i18n/                    # Locale config, dictionaries, t() helper
+    ├── i18n/                    # Locale config, routing, dictionaries, t() helper
     ├── lib/
     │   ├── data.ts              # Loads, resolves, validates and enriches all content
     │   ├── signals.ts           # Badges, footprint and classification rules
@@ -545,28 +545,43 @@ All three are computed in [`src/lib/signals.ts`](src/lib/signals.ts) and documen
 
 ## Internationalisation
 
-English is the canonical language; the architecture is ready for German, French and Italian.
+The site is published in **English** (canonical, at `/`) and **German** (Swiss Standard German, at
+`/de/`). French and Italian can be added the same way.
 
-- **Locales** are configured in [`src/i18n/config.ts`](src/i18n/config.ts) and wired into Astro's i18n
-  routing (`prefixDefaultLocale: false`, so English stays at `/` and others at `/de/`, `/fr/`, `/it/`).
-- **UI strings** live in one flat dictionary per locale ([`src/i18n/ui/en.ts`](src/i18n/ui/en.ts)).
-  Components call `useTranslations(Astro.currentLocale)`; plural forms use `Intl.PluralRules`. Missing
-  keys fall back to English, so a locale can be translated incrementally. Strings needed by client
-  scripts are embedded per page via `clientStrings()`.
-- **URLs** are built through [`src/lib/paths.ts`](src/lib/paths.ts), which already accepts a locale.
-- **Formatting** (dates, numbers, money, country and language names) uses `Intl` with `de-CH`,
-  `fr-CH`, `it-CH` tags.
+- **Locales** are configured in [`src/i18n/config.ts`](src/i18n/config.ts). Pages live in
+  [`src/pages/[...lang]/`](src/pages/[...lang]/) and are generated once per locale
+  ([`src/i18n/routing.ts`](src/i18n/routing.ts)); English has no prefix.
+- **Links**: components build URLs with [`src/lib/paths.ts`](src/lib/paths.ts) as usual.
+  [`src/middleware.ts`](src/middleware.ts) rewrites internal page links on `/de/` pages at build time,
+  so no component needs to pass the locale. Client scripts prefix fetches and links with
+  `<html data-base>`. The header links each page to its counterpart in the other language, and every
+  page carries `hreflang` alternates (also in the sitemap).
+- **UI strings** live in one flat dictionary per locale ([`en.ts`](src/i18n/ui/en.ts),
+  [`de.ts`](src/i18n/ui/de.ts)). Components call `useTranslations(Astro.currentLocale)`; plural forms
+  use `Intl.PluralRules`. Missing keys fall back to English, so a locale can be translated
+  incrementally. Strings needed by client scripts are embedded per page via `clientStrings()`.
+- **Directory content** stays in one file per entry. Short texts take optional translations next to
+  the English original, and untranslated fields fall back to English:
+
+  ```yaml
+  i18n:
+    de:
+      tagline: '…' # products: tagline, description
+      description:
+        '…' # companies: description; categories: name, noun, summary, intro;
+        # groups: name, summary; alternatives: summary
+  ```
+
+  The Markdown body of a product stays English; German pages mark it `lang="en"` and say so.
+  `npm run lint:content` reports entries without a German translation.
+
 - **Editorial pages** are Markdown files per locale in `src/content/pages/<locale>/`.
+- **Formatting** (dates, numbers, money, country and language names) uses `Intl` with `en-CH` /
+  `de-CH`.
+- **Orthography**: Swiss Standard German — `ss` instead of `ß`, quotation marks «…».
 
-To add German:
-
-1. Add `'de'` to `locales` in `src/i18n/config.ts`.
-2. Create `src/i18n/ui/de.ts` (`export const de: Dictionary = { … }`) and register it in
-   `src/i18n/index.ts`.
-3. Add `src/content/pages/de/*.md`.
-4. Add localised routes under `src/pages/de/` (or a `[locale]` segment) that reuse the same components.
-5. For translated product descriptions, add optional localised fields (e.g. `i18n.de.tagline`) to the
-   product schema and pick them in `data.ts`.
+To add another locale (e.g. French): add it to `locales`, create `src/i18n/ui/fr.ts` and register it
+in `src/i18n/index.ts`, add `src/content/pages/fr/*.md`, and translate the `i18n.fr` fields.
 
 ## Design system
 
@@ -624,7 +639,7 @@ SEO 100 on the tested content pages; `/compare/` and `/favourites/` are intentio
 
 ## Decisions and assumptions
 
-- **Seed dataset**: 83 products from 65 organisations, researched on 2026-10-15/16 from vendor
+- **Seed dataset**: 103 products from 84 organisations, researched on 2026-10-15/16 from vendor
   documentation, legal pages, commercial-register data and press releases. Where facts could not be
   confirmed they are `unknown`. Prices are recorded as published on that date and may change.
 - **"New" labels** are not shown for the initial dataset (`site.launchDate`); entries added later are

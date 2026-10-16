@@ -5,3 +5,6 @@ summary: Network detection and response platform using AI to detect attacks acro
 website: 'https://www.vectra.ai'
 categories: [network-security]
 aliases: [Vectra, Vectra NDR, Vectra Cognito]
+i18n:
+  de:
+    summary: 'Plattform für Network Detection and Response, die mit KI Angriffe über Netzwerk, Identitäten und Cloud hinweg erkennt.'

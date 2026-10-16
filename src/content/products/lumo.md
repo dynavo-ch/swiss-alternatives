@@ -193,6 +193,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'KI-Chat-Assistent mit verschlüsseltem Chatverlauf, betrieben auf Proton-Servern in Europa.'
+    description: 'Lumo ist der KI-Assistent von Proton. Er führt Open-Weight-Sprachmodelle auf von Proton kontrollierten Servern in Europa aus und speichert gesicherte Chats mit Zero-Access-Verschlüsselung.'
 ---
 
 Lumo is an AI chat assistant launched by Proton in July 2025. Proton lists the

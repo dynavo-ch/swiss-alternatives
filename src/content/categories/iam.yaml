@@ -8,3 +8,9 @@ intro: >-
   sign-on and authorisation for employees or customers.
 related: [authentication]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Identitäts- & Zugriffsmanagement'
+    noun: 'IAM-Plattformen'
+    summary: 'Anmeldung, Single Sign-on, Benutzerverwaltung und Zugriffskontrolle.'
+    intro: 'Produkte für Identitäts- und Zugriffsmanagement (IAM) übernehmen Registrierung, Anmeldung, Single Sign-on und Autorisierung für Mitarbeitende oder Kunden.'

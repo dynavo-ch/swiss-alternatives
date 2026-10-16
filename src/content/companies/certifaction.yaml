@@ -75,3 +75,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Anbieter von Software für elektronische Signaturen, gegründet 2020, mit einer Tochtergesellschaft in München (Deutschland).'

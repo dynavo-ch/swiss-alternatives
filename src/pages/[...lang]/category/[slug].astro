@@ -1,0 +1,213 @@
+---
+import CategoryCard from '~/components/CategoryCard.astro';
+import EmptyState from '~/components/EmptyState.astro';
+import FilterableList from '~/components/FilterableList.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import { useTranslations } from '~/i18n';
+import { defaultLocale } from '~/i18n/config';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory, type Category } from '~/lib/data';
+import { list } from '~/lib/format';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd, categoryLd } from '~/lib/seo';
+import { localeRoutes } from '~/i18n/routing';
+
+export function getStaticPaths() {
+  return localeRoutes(async (locale) => {
+    const { categories } = await getDirectory(locale);
+    return categories.map((category) => ({ params: { slug: category.id }, props: { category } }));
+  });
+}
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const { products } = category;
+const count = products.length;
+const hosted = products.filter((p) => p.signals['swiss-hosted']).length;
+const openSource = products.filter((p) => p.signals['open-source']).length;
+const alternatives = category.alternatives;
+const altNames = alternatives.slice(0, 4).map((a) => a.name);
+
+// Related: explicit relations first, then siblings in the same group.
+const related = [
+  ...new Set([...category.related, ...category.group.categories.filter((c) => c !== category)]),
+]
+  .filter((c) => c.products.length > 0)
+  .slice(0, 4);
+
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.categories'), href: paths.categories() },
+  { label: category.name, href: category.url },
+];
+
+const title =
+  count > 0
+    ? t('category.metaTitle', { name: category.name, count })
+    : t('category.heading', { name: category.name });
+const description =
+  count > 0
+    ? [
+        t('category.metaDescription', { count, noun: category.noun }),
+        hosted ? t('category.metaDescriptionHosted', { count: hosted }) : '',
+        altNames.length
+          ? t('category.metaDescriptionAlternatives', { names: list(altNames, locale) })
+          : '',
+        t('category.metaDescriptionEnd'),
+      ].join('')
+    : `${category.data.summary} ${t('category.metaDescriptionEmpty', {
+        // Crude English singular; other locales use the noun as is.
+        noun: locale === defaultLocale ? category.noun.replace(/s$/, '') : category.noun,
+        name: category.name,
+      })}`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  noindex={count === 0}
+  jsonLd={count > 0 ? [categoryLd(category, title), breadcrumbLd(crumbs)] : breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={category.group.data.name}
+    title={t('category.heading', { name: category.name })}
+    lead={category.data.intro}
+  >
+    <dl class="cat-facts">
+      <div>
+        <dt>{t('stats.products')}</dt>
+        <dd class="tnum">{count}</dd>
+      </div>
+      <div>
+        <dt>{t('stats.swissHosted')}</dt>
+        <dd class="tnum">{hosted}</dd>
+      </div>
+      <div>
+        <dt>{t('stats.openSource')}</dt>
+        <dd class="tnum">{openSource}</dd>
+      </div>
+    </dl>
+    {alternatives.length > 0 && (
+      <div class="cat-alts">
+        <p class="label">{t('alt.srPrefix')}</p>
+        <ul role="list">
+          {alternatives.map((alt) => (
+            <li>
+              <a href={alt.url} class="cat-alts__link">
+                {alt.name}
+                {alt.products.length > 0 && (
+                  <span class="cat-alts__n tnum">{alt.products.length}</span>
+                )}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </PageHeader>
+
+  <section class="section container" aria-label={category.name}>
+    {count > 0 ? (
+      <FilterableList products={products} id="category-list" />
+    ) : (
+      <EmptyState
+        title={t('category.emptyTitle', { noun: category.noun })}
+        text={t('category.emptyText')}
+      >
+        <a href={paths.suggest()} class="btn btn--primary">
+          <Icon name="plus" />
+          {t('nav.suggest')}
+        </a>
+      </EmptyState>
+    )}
+  </section>
+
+  {related.length > 0 && (
+    <section class="section container" aria-labelledby="related-h">
+      <SectionHeader
+        id="related-h"
+        title={t('category.related')}
+        href={paths.categories()}
+        linkLabel={t('common.viewAll')}
+      />
+      <ul class="grid-cards grid-cards--sm" role="list">
+        {related.map((c) => (
+          <li>
+            <CategoryCard category={c} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .cat-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-6);
+    margin-top: var(--s-8);
+  }
+
+  .cat-facts div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--s-1);
+  }
+
+  .cat-facts dt {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .cat-facts dd {
+    font-size: var(--fs-2xl);
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .cat-alts {
+    margin-top: var(--s-8);
+  }
+
+  .cat-alts ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-top: var(--s-2);
+  }
+
+  .cat-alts__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    min-height: 2rem;
+    padding: 0 var(--s-3);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+    font-size: var(--fs-sm);
+    font-weight: 540;
+    text-decoration: none;
+    transition: border-color var(--t-fast) var(--ease);
+  }
+
+  .cat-alts__link:hover {
+    border-color: var(--c-ink);
+  }
+
+  .cat-alts__n {
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    color: var(--c-red-ink);
+  }
+</style>

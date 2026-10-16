@@ -101,6 +101,10 @@ sources:
     publisher: Open Systems AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Managed SASE-Dienst mit SD-WAN, Firewall, Secure Web Gateway, CASB und ZTNA.'
+    description: 'Open Systems SASE ist ein Managed-Angebot für Secure Access Service Edge der Zürcher Open Systems, rund um die Uhr betrieben von den eigenen Ingenieuren des Anbieters.'
 ---
 
 Open Systems SASE is a managed secure access service edge (SASE) offering from

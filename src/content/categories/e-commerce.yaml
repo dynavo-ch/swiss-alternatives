@@ -8,3 +8,9 @@ intro: >-
   payment and logistics providers.
 related: [cms, invoicing]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'E-Commerce'
+    noun: 'E-Commerce-Plattformen'
+    summary: 'Onlineshops, Produktkataloge und Checkout.'
+    intro: 'E-Commerce-Plattformen betreiben Onlineshops: Produktkataloge, Warenkorb, Checkout und Anbindungen an Zahlungs- und Logistikanbieter.'

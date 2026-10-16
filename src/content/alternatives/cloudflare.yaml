@@ -5,3 +5,6 @@ summary: Edge network for CDN, DDoS protection, web application firewall and zer
 website: 'https://www.cloudflare.com'
 categories: [network-security]
 aliases: [Cloudflare WAF, Cloudflare One, Cloudflare Zero Trust]
+i18n:
+  de:
+    summary: 'Edge-Netzwerk für CDN, DDoS-Schutz, Web Application Firewall und Zero-Trust-Zugriff.'

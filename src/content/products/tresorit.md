@@ -145,6 +145,10 @@ sources:
     publisher: Glassdoor
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Ende-zu-Ende-verschlüsselter Cloud-Speicher und Dateifreigabe auf Microsoft Azure.'
+    description: 'Tresorit ist Ende-zu-Ende-verschlüsselter Cloud-Speicher und Dateifreigabe der Tresorit AG, einer Tochter der Schweizerischen Post, gehostet auf Microsoft Azure mit wählbaren Datenregionen.'
 ---
 
 Tresorit provides end-to-end encrypted cloud storage, file sync and sharing for

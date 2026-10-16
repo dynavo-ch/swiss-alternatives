@@ -10,3 +10,11 @@ intro: >-
   One to three sentences shown at the top of the category page.
 related: [] # other category slugs
 added: 2026-01-01
+# Optional German translation (Swiss Standard German: «ss», never «ß»). Untranslated
+# fields fall back to English.
+i18n:
+  de:
+    name: Kategoriename
+    noun: Sammelbegriff im Satz, z. B. «Buchhaltungssoftware»
+    summary: Kurzbeschreibung für Karten.
+    intro: Ein bis drei Sätze für den Seitenkopf.

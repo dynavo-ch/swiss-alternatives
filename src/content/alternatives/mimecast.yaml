@@ -5,3 +5,6 @@ parent: Permira
 summary: Cloud email security service with filtering, archiving and continuity features.
 website: 'https://www.mimecast.com'
 categories: [email-security]
+i18n:
+  de:
+    summary: 'Cloud-Dienst für E-Mail-Sicherheit mit Funktionen für Filterung, Archivierung und Betriebskontinuität.'

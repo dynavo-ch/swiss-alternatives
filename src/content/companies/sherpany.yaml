@@ -84,3 +84,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen hinter der Sitzungssoftware Sherpany für Verwaltungsräte und Geschäftsleitungen, gegründet 2011 und seit 2024 im Besitz der US-amerikanischen Datasite-Gruppe.'

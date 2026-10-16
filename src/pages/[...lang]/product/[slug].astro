@@ -1,0 +1,1183 @@
+---
+import { render } from 'astro:content';
+import Badge from '~/components/Badge.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import CompareButton from '~/components/CompareButton.astro';
+import FactValue from '~/components/FactValue.astro';
+import FavButton from '~/components/FavButton.astro';
+import Footprint from '~/components/Footprint.astro';
+import Icon from '~/components/Icon.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import ProductLogo from '~/components/ProductLogo.astro';
+import SourceList from '~/components/SourceList.astro';
+import SwissFootprint from '~/components/SwissFootprint.astro';
+import { site } from '~/config/site';
+import { useTranslations } from '~/i18n';
+import { defaultLocale } from '~/i18n/config';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { CERTIFICATION_LABELS, FEATURE_KEYS } from '~/lib/constants';
+import { getDirectory, similarProducts, type Product } from '~/lib/data';
+import {
+  cantonName,
+  placeName,
+  shortLocation,
+  countryName,
+  displayHost,
+  formatDate,
+  formatNumber,
+  formatPrice,
+  isoDate,
+  languageName,
+  list,
+} from '~/lib/format';
+import { paths } from '~/lib/paths';
+import { licenseClass } from '~/lib/licenses';
+import { breadcrumbLd, productLd } from '~/lib/seo';
+import { SIGNAL_KEYS } from '~/lib/signals';
+import { localeRoutes } from '~/i18n/routing';
+
+export function getStaticPaths() {
+  return localeRoutes(async (locale) => {
+    const { products } = await getDirectory(locale);
+    return products.map((product) => ({ params: { slug: product.id }, props: { product } }));
+  });
+}
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const d = product.data;
+const company = product.company;
+const hq = company.data.headquarters;
+const { Content } = await render(product.entry);
+
+const signals = SIGNAL_KEYS.filter((key) => product.signals[key]);
+const repo = product.repository;
+const similar = similarProducts(product, 3);
+const siblings = company.products.filter((p) => p !== product);
+const location = shortLocation(hq, locale);
+const verified = d.lastVerified ?? company.data.lastVerified;
+const altNames = product.alternatives.map((l) => l.alternative.name);
+
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.categories'), href: paths.categories() },
+  { label: product.primaryCategory.name, href: product.primaryCategory.url },
+  { label: product.name, href: product.url },
+];
+
+const price = d.pricing?.startingPrice;
+const priceText = price
+  ? formatPrice(price, (period) => t(`pricing.period.${period}`), locale)
+  : undefined;
+
+const features = FEATURE_KEYS.filter((key) => d.features[key] && d.features[key] !== 'unknown');
+const unknownFeatures = FEATURE_KEYS.filter(
+  (key) => !d.features[key] || d.features[key] === 'unknown',
+);
+
+const sections = [
+  { id: 'overview', label: t('product.overview') },
+  { id: 'why', label: t('product.whySwiss') },
+  { id: 'footprint', label: t('product.footprint') },
+  { id: 'features', label: t('product.features') },
+  { id: 'security', label: t('product.security') },
+  { id: 'pricing', label: t('product.pricing') },
+  ...(d.openSource && d.openSource.value !== 'unknown'
+    ? [{ id: 'open-source', label: t('product.openSource') }]
+    : []),
+  ...(d.sustainability ? [{ id: 'sustainability', label: t('product.sustainability') }] : []),
+  { id: 'company', label: t('product.company') },
+  { id: 'sources', label: t('product.sources') },
+];
+
+const title = t('product.metaTitle', {
+  name: product.name,
+  // Crude English singular ("ERP systems" → "ERP system"); other locales use the noun as is.
+  noun:
+    locale === defaultLocale
+      ? product.primaryCategory.noun.replace(/s$/, '')
+      : product.primaryCategory.noun,
+  category: product.primaryCategory.name,
+});
+const description =
+  altNames.length > 0
+    ? t('product.metaDescription', {
+        description: d.description,
+        alternatives: list(altNames.slice(0, 3), locale),
+      }).slice(0, 300)
+    : d.description;
+/** English-only content (Markdown body, notes) is marked up as such on other locales. */
+const englishOnly = locale === defaultLocale ? undefined : defaultLocale;
+const escape = (value: string) => value.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`);
+const operatedBy = t(company.isSwiss ? 'product.operatedBySwiss' : 'product.operatedBy', {
+  product: escape(product.name),
+  company: `<a href="${escape(company.url)}">${escape(company.name)}</a>`,
+  place: escape(company.isSwiss ? placeName(hq, locale) : countryName(hq.country, locale)),
+});
+
+const issueUrl = `${site.repository}/issues/new?template=correction.yml&title=${encodeURIComponent(`Correction: ${product.name}`)}&entry=${encodeURIComponent(`products/${product.id}.md`)}`;
+const editUrl = `${site.repository}/edit/${site.repositoryBranch}/src/content/products/${product.id}.md`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  jsonLd={[productLd(product), breadcrumbLd(crumbs)]}
+>
+  <article class="product" data-product-view={product.id}>
+    <header class="product__head">
+      <div class="container">
+        <Breadcrumbs crumbs={crumbs} />
+        <div class="product__hero">
+          <ProductLogo
+            name={product.name}
+            logo={product.logo}
+            normalized={product.logoNormalized}
+            size="lg"
+          />
+          <div class="product__titles">
+            <h1 class="h1 product__name">{product.name}</h1>
+            <p class="lead product__tagline">{d.tagline}</p>
+            <p class="product__meta">
+              <a href={company.url}>{company.name}</a>
+              <span aria-hidden="true">·</span>
+              <span>
+                <Icon name="map-pin" />
+                {hq.city ? `${location}, ` : ''}
+                {countryName(hq.country, locale)}
+              </span>
+              <span aria-hidden="true">·</span>
+              <span class="product__class">
+                <Footprint footprint={product.footprint} />
+                {t(`class.${product.classification}`)}
+              </span>
+            </p>
+            {signals.length > 0 && (
+              <ul class="badges product__badges" role="list">
+                {signals.map((signal) => (
+                  <li>
+                    <Badge signal={signal} interactive />
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <div class="product__actions">
+            <a
+              href={d.affiliate?.url ?? d.website}
+              class="btn btn--primary btn--lg"
+              rel={d.affiliate ? 'sponsored noopener' : 'noopener'}
+            >
+              {t('common.visitWebsite')}
+              <Icon name="arrow-up-right" />
+              <span class="visually-hidden">{t('common.externalLink')}</span>
+            </a>
+            <div class="product__secondary">
+              <FavButton id={product.id} name={product.name} variant="button" />
+              <CompareButton id={product.id} name={product.name} variant="button" />
+            </div>
+            <p class="product__site mono">{displayHost(d.website)}</p>
+            {d.affiliate && (
+              <p class="product__disclosure">
+                {t('common.affiliate')}
+                {d.affiliate.note ? ` — ${d.affiliate.note}` : ''}
+              </p>
+            )}
+          </div>
+        </div>
+        {d.status !== 'active' && (
+          <p class="product__status" role="note">
+            <Icon name="info" />
+            {t(`product.status.${d.status}`)}
+          </p>
+        )}
+      </div>
+    </header>
+
+    <div class="container product__layout">
+      <aside class="product__aside">
+        <div class="aside">
+          <h2 class="label">{t('product.atAGlance')}</h2>
+          <dl class="aside__facts">
+            <div>
+              <dt>{t('product.company')}</dt>
+              <dd>
+                <a href={company.url}>{company.displayName}</a>
+              </dd>
+            </div>
+            {hq.canton && (
+              <div>
+                <dt>{t('company.canton')}</dt>
+                <dd>
+                  {cantonName(hq.canton)} <span class="mono muted">{hq.canton}</span>
+                </dd>
+              </div>
+            )}
+            {company.data.founded && (
+              <div>
+                <dt>{t('common.founded')}</dt>
+                <dd class="tnum">{company.data.founded}</dd>
+              </div>
+            )}
+            <div>
+              <dt>{t('product.categories')}</dt>
+              <dd>
+                {product.categories.map((c, i) => (
+                  <>
+                    {i > 0 && ', '}
+                    <a href={c.url}>{c.name}</a>
+                  </>
+                ))}
+              </dd>
+            </div>
+            <div>
+              <dt>{t('pricing.tier')}</dt>
+              <dd>{t(`pricing.tier.${product.pricingTier}`)}</dd>
+            </div>
+            {priceText && (
+              <div>
+                <dt>{t('pricing.startingAt')}</dt>
+                <dd class="tnum">{priceText}</dd>
+              </div>
+            )}
+            {company.data.labels.length > 0 && (
+              <div>
+                <dt>{t('company.labels')}</dt>
+                <dd>{company.data.labels.map((l) => t(`label.${l.label}`)).join(', ')}</dd>
+              </div>
+            )}
+            <div>
+              <dt>{t('product.openSource')}</dt>
+              <dd>
+                {t(`oss.${d.openSource?.value ?? 'unknown'}`)}
+                {d.openSource?.license && <span class="mono muted"> · {d.openSource.license}</span>}
+              </dd>
+            </div>
+            {verified && (
+              <div>
+                <dt>{t('common.lastVerified')}</dt>
+                <dd>
+                  <time class="tnum" datetime={isoDate(verified)}>
+                    {formatDate(verified, locale)}
+                  </time>
+                </dd>
+              </div>
+            )}
+          </dl>
+          <nav class="aside__toc" aria-label={t('nav.onThisPage')}>
+            <ol role="list">
+              {sections.map((s) => (
+                <li>
+                  <a href={`#${s.id}`}>{s.label}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </div>
+      </aside>
+
+      <div class="product__main">
+        <section id="overview" class="psec" aria-labelledby="overview-h">
+          <h2 class="psec__title" id="overview-h">
+            {t('product.overview')}
+          </h2>
+          {englishOnly && <p class="product__lang-note muted">{t('product.englishOnly')}</p>}
+          <div class="prose" lang={englishOnly}>
+            <Content />
+          </div>
+        </section>
+
+        <section id="why" class="psec" aria-labelledby="why-h">
+          <h2 class="psec__title" id="why-h">
+            {t('product.whySwiss')}
+          </h2>
+          <div class="prose">
+            <p>
+              <Fragment set:html={operatedBy} /> {t(`class.${product.classification}.desc`)}
+            </p>
+            {product.signals['swiss-hosted'] ? (
+              <p>{t('product.why.hosted')}</p>
+            ) : product.signals['swiss-residency'] ? (
+              <p>{t('product.why.residency')}</p>
+            ) : d.swiss.hosted?.value === 'no' ? (
+              <p>
+                <strong>{t('product.why.notePrefix')}</strong> {t('product.why.notHosted')}
+              </p>
+            ) : (
+              <p>{t('product.why.unknown')}</p>
+            )}
+          </div>
+          {product.alternatives.length > 0 && (
+            <div class="replaces">
+              <h3 class="label">{t('product.replaces')}</h3>
+              <ul class="replaces__list" role="list">
+                {product.alternatives.map(({ alternative, note }) => (
+                  <li>
+                    <a href={alternative.url} class="replaces__item">
+                      <span class="replaces__name">{alternative.name}</span>
+                      <span class="replaces__vendor mono">
+                        {alternative.data.vendor} · {alternative.data.vendorCountry}
+                      </span>
+                      {note && (
+                        <span class="replaces__note" lang={englishOnly}>
+                          {note}
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p class="replaces__hint">{t('product.replacesLead')}</p>
+            </div>
+          )}
+        </section>
+
+        <section id="footprint" class="psec" aria-labelledby="footprint-h">
+          <h2 class="psec__title" id="footprint-h">
+            {t('product.footprint')}
+          </h2>
+          <p class="psec__lead">
+            {t('footprint.lead')}{' '}
+            <a href={`${paths.methodology()}#footprint`}>{t('footprint.howAssessed')}</a>
+          </p>
+          <SwissFootprint product={product} />
+        </section>
+
+        <section id="features" class="psec" aria-labelledby="features-h">
+          <h2 class="psec__title" id="features-h">
+            {t('product.features')}
+          </h2>
+          <dl class="kv">
+            <div>
+              <dt>{t('product.platforms')}</dt>
+              <dd>
+                {d.platforms.length ? (
+                  <ul class="tags" role="list">
+                    {d.platforms.map((p) => (
+                      <li>{t(`platform.${p}`)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span class="state" data-state="unknown">
+                    {t('state.unknown')}
+                  </span>
+                )}
+              </dd>
+            </div>
+            <div>
+              <dt>{t('product.deployment')}</dt>
+              <dd>
+                {d.deployment.length ? (
+                  <ul class="tags" role="list">
+                    {d.deployment.map((p) => (
+                      <li>{t(`deployment.${p}`)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span class="state" data-state="unknown">
+                    {t('state.unknown')}
+                  </span>
+                )}
+              </dd>
+            </div>
+            <div>
+              <dt>{t('product.audience')}</dt>
+              <dd>
+                {d.audience.length ? (
+                  <ul class="tags" role="list">
+                    {d.audience.map((p) => (
+                      <li>{t(`audience.${p}`)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span class="state" data-state="unknown">
+                    {t('state.unknown')}
+                  </span>
+                )}
+              </dd>
+            </div>
+            <div>
+              <dt>{t('product.languages')}</dt>
+              <dd>
+                {d.languages.interface.length ? (
+                  <ul class="tags" role="list">
+                    {d.languages.interface.map((l) => (
+                      <li>{languageName(l, locale)}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span class="state" data-state="unknown">
+                    {t('state.unknown')}
+                  </span>
+                )}
+              </dd>
+            </div>
+            {d.languages.support.length > 0 && (
+              <div>
+                <dt>{t('product.supportLanguages')}</dt>
+                <dd>
+                  <ul class="tags" role="list">
+                    {d.languages.support.map((l) => (
+                      <li>{languageName(l, locale)}</li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
+            )}
+            {d.launched && (
+              <div>
+                <dt>{t('product.launched')}</dt>
+                <dd class="tnum">{d.launched}</dd>
+              </div>
+            )}
+          </dl>
+        </section>
+
+        <section id="security" class="psec" aria-labelledby="security-h">
+          <h2 class="psec__title" id="security-h">
+            {t('product.security')}
+          </h2>
+          <dl class="kv kv--compact">
+            {features.map((key) => (
+              <div>
+                <dt>{t(`feature.${key}`)}</dt>
+                <dd>
+                  <span class="state" data-state={d.features[key]}>
+                    {t(`state.${d.features[key] as 'yes'}`)}
+                  </span>
+                </dd>
+              </div>
+            ))}
+            {unknownFeatures.length > 0 && (
+              <div>
+                <dt>{t('common.notVerified')}</dt>
+                <dd class="muted">
+                  {list(
+                    unknownFeatures.map((k) => t(`feature.${k}`)),
+                    locale,
+                  )}
+                </dd>
+              </div>
+            )}
+            <div>
+              <dt>{t('product.certifications')}</dt>
+              <dd>
+                {d.certifications.length ? (
+                  <ul class="tags" role="list">
+                    {d.certifications.map((c) => (
+                      <li>{CERTIFICATION_LABELS[c]}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span class="muted">{t('common.none')}</span>
+                )}
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="pricing" class="psec" aria-labelledby="pricing-h">
+          <h2 class="psec__title" id="pricing-h">
+            {t('product.pricing')}
+          </h2>
+          {d.pricing ? (
+            <>
+              {priceText && (
+                <p class="price">
+                  <span class="label">{t('pricing.startingAt')}</span>
+                  <span class="price__value tnum">{priceText}</span>
+                  {price?.note && (
+                    <span class="price__note" lang={englishOnly}>
+                      {price.note}
+                    </span>
+                  )}
+                </p>
+              )}
+              <dl class="kv kv--compact">
+                {d.pricing.model && (
+                  <div>
+                    <dt>{t('pricing.model')}</dt>
+                    <dd>{t(`pricing.model.${d.pricing.model}`)}</dd>
+                  </div>
+                )}
+                <div>
+                  <dt>{t('pricing.freePlan')}</dt>
+                  <dd>
+                    <span class="state" data-state={d.pricing.freePlan}>
+                      {d.pricing.freePlan === 'unknown'
+                        ? t('state.unknown')
+                        : t(`state.${d.pricing.freePlan}`)}
+                    </span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>{t('pricing.freeTrial')}</dt>
+                  <dd>
+                    <span class="state" data-state={d.pricing.freeTrial}>
+                      {d.pricing.freeTrial === 'unknown'
+                        ? t('state.unknown')
+                        : t(`state.${d.pricing.freeTrial}`)}
+                    </span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>{t('pricing.enterprise')}</dt>
+                  <dd>
+                    <span class="state" data-state={d.pricing.enterprise}>
+                      {d.pricing.enterprise === 'unknown'
+                        ? t('state.unknown')
+                        : t(`state.${d.pricing.enterprise}`)}
+                    </span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>{t('pricing.chfBilling')}</dt>
+                  <dd>
+                    <span class="state" data-state={d.pricing.chfBilling}>
+                      {d.pricing.chfBilling === 'unknown'
+                        ? t('state.unknown')
+                        : t(`state.${d.pricing.chfBilling}`)}
+                    </span>
+                  </dd>
+                </div>
+              </dl>
+              <p class="psec__foot">
+                {d.pricing.checked &&
+                  t('pricing.checked', { date: formatDate(d.pricing.checked, locale) })}{' '}
+                {d.pricing.url && (
+                  <a href={d.pricing.url} rel="noopener nofollow">
+                    {t('pricing.page')} ↗
+                  </a>
+                )}
+              </p>
+            </>
+          ) : (
+            <p class="muted">{t('state.unknown')}</p>
+          )}
+        </section>
+
+        {d.openSource && d.openSource.value !== 'unknown' && (
+          <section id="open-source" class="psec" aria-labelledby="oss-h">
+            <h2 class="psec__title" id="oss-h">
+              {t('product.openSource')}
+            </h2>
+            <dl class="kv kv--compact">
+              <div>
+                <dt>{t('product.openSource')}</dt>
+                <dd>
+                  <FactValue
+                    value={d.openSource.value}
+                    basis={d.openSource.basis}
+                    source={d.openSource.source}
+                    sources={d.sources}
+                    note={d.openSource.note}
+                  />
+                </dd>
+              </div>
+              {d.openSource.license && (
+                <div>
+                  <dt>{t('product.license')}</dt>
+                  <dd>
+                    <span class="mono">{d.openSource.license}</span>
+                    {licenseClass(d.openSource.license) === 'osi' && (
+                      <span class="basis" data-basis="verified">
+                        {' '}
+                        · {t('license.osi')}
+                      </span>
+                    )}
+                    {licenseClass(d.openSource.license) === 'source-available' && (
+                      <span class="basis"> · {t('license.sourceAvailable')}</span>
+                    )}
+                  </dd>
+                </div>
+              )}
+              {d.openSource.repository && (
+                <div>
+                  <dt>{t('product.repository')}</dt>
+                  <dd>
+                    <a href={d.openSource.repository} rel="noopener nofollow" class="mono">
+                      {displayHost(d.openSource.repository)}
+                      {new URL(d.openSource.repository).pathname.replace(/\/$/, '')}
+                    </a>
+                  </dd>
+                </div>
+              )}
+              {repo && (
+                <div>
+                  <dt>{t('repo.github')}</dt>
+                  <dd>
+                    <ul class="repo-stats" role="list">
+                      {repo.kind === 'repository' ? (
+                        <>
+                          <li>
+                            <span class="repo-stats__n tnum">
+                              {formatNumber(repo.stars ?? 0, locale)}
+                            </span>{' '}
+                            {t('repo.stars')}
+                          </li>
+                          <li>
+                            <span class="repo-stats__n tnum">
+                              {formatNumber(repo.forks ?? 0, locale)}
+                            </span>{' '}
+                            {t('repo.forks')}
+                          </li>
+                          {repo.license && <li class="mono">{repo.license}</li>}
+                          {repo.language && <li>{repo.language}</li>}
+                          {repo.archived && <li>{t('repo.archived')}</li>}
+                        </>
+                      ) : (
+                        <li>
+                          <span class="repo-stats__n tnum">{repo.publicRepos ?? 0}</span>{' '}
+                          {t('repo.publicRepos')}
+                        </li>
+                      )}
+                      {repo.lastPush && (
+                        <li>
+                          {t('repo.lastPush')}{' '}
+                          <time datetime={repo.lastPush}>
+                            {formatDate(new Date(repo.lastPush), locale)}
+                          </time>
+                        </li>
+                      )}
+                    </ul>
+                    <p class="repo-stats__note">
+                      {t('repo.fetched', { date: formatDate(new Date(repo.fetchedAt), locale) })}
+                    </p>
+                  </dd>
+                </div>
+              )}
+            </dl>
+          </section>
+        )}
+
+        {d.sustainability && (
+          <section id="sustainability" class="psec" aria-labelledby="sus-h">
+            <h2 class="psec__title" id="sus-h">
+              {t('product.sustainability')}
+            </h2>
+            <FactValue
+              value="yes"
+              text={d.sustainability.summary}
+              basis={d.sustainability.basis}
+              source={d.sustainability.source}
+              sources={d.sources}
+              note={d.sustainability.note}
+            />
+          </section>
+        )}
+
+        <section id="company" class="psec" aria-labelledby="company-h">
+          <h2 class="psec__title" id="company-h">
+            {t('product.company')}
+          </h2>
+          <div class="company-card">
+            <div>
+              <p class="company-card__name">
+                <a href={company.url}>{company.name}</a>
+              </p>
+              <p class="company-card__meta">
+                {t(`company.type.${company.data.type}`)} · {shortLocation(hq, locale)}
+                {company.data.founded && (
+                  <> · {t('common.since', { year: company.data.founded })}</>
+                )}
+              </p>
+              <p class="company-card__desc">{company.data.description}</p>
+            </div>
+            {siblings.length > 0 && (
+              <div class="company-card__more">
+                <h3 class="label">{t('product.alsoFrom', { company: company.displayName })}</h3>
+                <ul role="list">
+                  {siblings.map((p) => (
+                    <li>
+                      <a href={p.url}>{p.name}</a>
+                      <span class="muted"> — {p.primaryCategory.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {similar.length > 0 && (
+          <section class="psec" aria-labelledby="similar-h">
+            <h2 class="psec__title" id="similar-h">
+              {t('product.similar')}
+            </h2>
+            <ul class="grid-cards grid-cards--sm" role="list">
+              {similar.map((p) => (
+                <li>
+                  <ProductCard product={p} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section id="sources" class="psec" aria-labelledby="sources-h">
+          <h2 class="psec__title" id="sources-h">
+            {t('product.sources')}
+          </h2>
+          <p class="psec__lead">{t('product.sourcesLead')}</p>
+          <ul class="legend" role="list">
+            <li>
+              <span class="basis" data-basis="verified">
+                {t('basis.verified')}
+              </span>{' '}
+              {t('basis.verified.desc')}
+            </li>
+            <li>
+              <span class="basis">{t('basis.vendor')}</span> {t('basis.vendor.desc')}
+            </li>
+            <li>
+              <span class="basis">{t('basis.inferred')}</span> {t('basis.inferred.desc')}
+            </li>
+          </ul>
+          {d.sources.length > 0 && <SourceList sources={d.sources} anchorPrefix="src" />}
+          {company.data.sources.length > 0 && (
+            <>
+              <h3 class="label sources-h">{company.name}</h3>
+              <SourceList sources={company.data.sources} anchorPrefix="csrc" />
+            </>
+          )}
+          <div class="verify">
+            {verified && (
+              <p>
+                <span class="label">{t('common.lastVerified')}</span>{' '}
+                <time class="mono" datetime={isoDate(verified)}>
+                  {formatDate(verified, locale)}
+                </time>
+              </p>
+            )}
+            <a href={issueUrl} class="btn btn--sm" rel="noopener">
+              <Icon name="flag" />
+              {t('product.reportIssue')}
+            </a>
+            <a href={editUrl} class="btn btn--sm btn--ghost" rel="noopener">
+              <Icon name="pencil" />
+              {t('product.editEntry')}
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .product__head {
+    padding-block: var(--s-6) var(--s-10);
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .product__hero {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: var(--s-6) var(--s-8);
+    align-items: start;
+    margin-top: var(--s-8);
+  }
+
+  .product__name {
+    font-size: var(--fs-3xl);
+  }
+
+  .product__lang-note {
+    margin-bottom: var(--s-3);
+    font-size: var(--fs-sm);
+  }
+
+  .product__tagline {
+    margin-top: var(--s-3);
+  }
+
+  .product__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-2) var(--s-3);
+    margin-top: var(--s-4);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-2);
+  }
+
+  .product__meta > span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+  }
+
+  .product__meta :global(svg) {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+
+  .product__badges {
+    margin-top: var(--s-5);
+  }
+
+  .product__actions {
+    display: grid;
+    gap: var(--s-2);
+    justify-items: stretch;
+    min-width: 15rem;
+  }
+
+  .product__secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-2);
+  }
+
+  .product__secondary :global(.btn) {
+    font-size: var(--fs-sm);
+    padding-inline: var(--s-2);
+  }
+
+  .product__site,
+  .product__disclosure {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+    text-align: center;
+  }
+
+  .product__status {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    margin-top: var(--s-6);
+    padding: var(--s-3) var(--s-4);
+    border-left: 2px solid var(--c-red);
+    background: var(--c-red-tint);
+    font-weight: 540;
+  }
+
+  .product__status :global(svg) {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .product__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+    gap: var(--s-12);
+    padding-top: var(--s-10);
+  }
+
+  .aside {
+    position: sticky;
+    top: calc(var(--header-h) + var(--s-6));
+    display: grid;
+    gap: var(--s-6);
+  }
+
+  .aside__facts {
+    display: grid;
+    gap: var(--s-3);
+    font-size: var(--fs-sm);
+  }
+
+  .aside__facts dt {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .aside__facts dd {
+    font-weight: 520;
+  }
+
+  .aside__toc {
+    padding-top: var(--s-4);
+    border-top: 1px solid var(--c-line);
+    font-size: var(--fs-sm);
+  }
+
+  .aside__toc li + li {
+    margin-top: var(--s-2);
+  }
+
+  .aside__toc a {
+    color: var(--c-ink-3);
+    text-decoration: none;
+  }
+
+  .aside__toc a:hover {
+    color: var(--c-ink);
+  }
+
+  .psec {
+    padding-bottom: var(--s-12);
+    scroll-margin-top: calc(var(--header-h) + var(--s-6));
+  }
+
+  .psec + .psec {
+    padding-top: var(--s-8);
+    border-top: 1px solid var(--c-line);
+  }
+
+  .psec__title {
+    margin-bottom: var(--s-5);
+    font-size: var(--fs-xl);
+    letter-spacing: -0.03em;
+  }
+
+  .psec__lead {
+    margin: calc(var(--s-3) * -1) 0 var(--s-5);
+    color: var(--c-ink-3);
+    max-width: 62ch;
+  }
+
+  .psec__foot {
+    margin-top: var(--s-4);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .replaces {
+    margin-top: var(--s-6);
+  }
+
+  .replaces__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+    gap: var(--s-2);
+    margin-top: var(--s-3);
+  }
+
+  .replaces__item {
+    display: grid;
+    gap: var(--s-1);
+    height: 100%;
+    padding: var(--s-3) var(--s-4);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+    text-decoration: none;
+    transition: border-color var(--t-fast) var(--ease);
+  }
+
+  .replaces__item:hover {
+    border-color: var(--c-ink);
+  }
+
+  .replaces__name {
+    font-weight: 620;
+  }
+
+  .replaces__vendor {
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .replaces__note {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-2);
+    line-height: 1.45;
+  }
+
+  .replaces__hint {
+    margin-top: var(--s-3);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .kv {
+    display: grid;
+    border-top: 1px solid var(--c-line);
+  }
+
+  .kv > div {
+    display: grid;
+    grid-template-columns: minmax(0, 14rem) minmax(0, 1fr);
+    gap: var(--s-2) var(--s-6);
+    padding: var(--s-3) 0;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .kv dt {
+    color: var(--c-ink-2);
+    font-weight: 520;
+  }
+
+  @media (max-width: 36rem) {
+    .kv > div {
+      grid-template-columns: 1fr;
+      gap: var(--s-1);
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1);
+  }
+
+  .tags li {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-1);
+    font-size: var(--fs-sm);
+    background: var(--c-surface);
+  }
+
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--s-2) var(--s-4);
+    margin-bottom: var(--s-5);
+  }
+
+  .price__value {
+    font-size: var(--fs-2xl);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  .price__note {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .repo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-1) var(--s-4);
+  }
+
+  .repo-stats__n {
+    font-weight: 620;
+  }
+
+  .repo-stats__note {
+    margin-top: var(--s-1);
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+
+  .company-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: var(--s-6);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+  }
+
+  .company-card__name {
+    font-size: var(--fs-lg);
+    font-weight: 640;
+    letter-spacing: -0.02em;
+  }
+
+  .company-card__meta {
+    margin-top: var(--s-1);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .company-card__desc {
+    margin-top: var(--s-3);
+    color: var(--c-ink-2);
+  }
+
+  .company-card__more ul {
+    margin-top: var(--s-2);
+    font-size: var(--fs-sm);
+  }
+
+  .company-card__more li + li {
+    margin-top: var(--s-1);
+  }
+
+  .legend {
+    display: grid;
+    gap: var(--s-1);
+    margin-bottom: var(--s-6);
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  .legend .basis {
+    min-width: 6rem;
+  }
+
+  .sources-h {
+    margin-top: var(--s-8);
+    margin-bottom: var(--s-2);
+  }
+
+  .verify {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-3);
+    margin-top: var(--s-6);
+  }
+
+  .verify p {
+    margin-right: auto;
+  }
+
+  @media (max-width: 64rem) {
+    .product__hero {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+    .product__actions {
+      grid-column: 1 / -1;
+      grid-template-columns: auto auto;
+      justify-content: start;
+      align-items: center;
+    }
+    .product__secondary {
+      grid-template-columns: auto auto;
+    }
+    .product__site {
+      grid-column: 1 / -1;
+      text-align: left;
+    }
+    .product__layout {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding-top: var(--s-6);
+    }
+    .aside {
+      position: static;
+      margin-bottom: var(--s-8);
+      padding: var(--s-5);
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-2);
+      background: var(--c-surface);
+    }
+    .aside__facts {
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+    .aside__toc {
+      display: none;
+    }
+    .company-card {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 36rem) {
+    .product__hero {
+      grid-template-columns: 1fr;
+      gap: var(--s-4);
+    }
+    .product__actions {
+      grid-template-columns: 1fr;
+      justify-content: stretch;
+    }
+    .product__secondary {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

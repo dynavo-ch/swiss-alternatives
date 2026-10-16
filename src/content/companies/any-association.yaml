@@ -70,3 +70,6 @@ sources:
     publisher: Any Association
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'In Zug eingetragener Verein, der Anytype entwickelt und veröffentlicht, eine Local-first-App für Notizen und Wissen. Das Team arbeitet remote, mit einem Standort in Berlin, der von einer deutschen Tochtergesellschaft betrieben wird.'

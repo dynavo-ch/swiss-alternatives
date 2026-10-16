@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 import { site } from '~/config/site';
+import { defaultLocale, locales } from '~/i18n/config';
+import { localisePath } from '~/i18n/routing';
 import { getDirectory } from '~/lib/data';
 import { isoDate } from '~/lib/format';
 import { paths } from '~/lib/paths';
@@ -7,7 +9,8 @@ import { paths } from '~/lib/paths';
 /**
  * XML sitemap generated from the directory graph. Only indexable pages are
  * listed: entries without Swiss products (rendered `noindex`) and pages that
- * depend on local state (compare, favourites, search) are left out.
+ * depend on local state (compare, favourites, search) are left out. Every
+ * page is listed once per locale with hreflang alternates.
  */
 export const GET: APIRoute = async () => {
   const dir = await getDirectory();
@@ -45,15 +48,24 @@ export const GET: APIRoute = async () => {
       .map((c) => ({ path: c.url, lastmod: latest(c.products.map(productDate)) })),
   ];
 
+  const href = (path: string) => new URL(path, site.url).href;
   const body = urls
-    .map(
-      ({ path, lastmod }) =>
-        `  <url><loc>${new URL(path, site.url).href}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`,
-    )
+    .flatMap(({ path, lastmod }) => {
+      const alternates = [
+        ...locales.map((l) => [l, localisePath(path, l)] as const),
+        ['x-default', localisePath(path, defaultLocale)] as const,
+      ]
+        .map(([lang, p]) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${href(p)}"/>`)
+        .join('');
+      return locales.map(
+        (l) =>
+          `  <url><loc>${href(localisePath(path, l))}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}${alternates}</url>`,
+      );
+    })
     .join('\n');
 
   return new Response(
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`,
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${body}\n</urlset>\n`,
     { headers: { 'Content-Type': 'application/xml; charset=utf-8' } },
   );
 };

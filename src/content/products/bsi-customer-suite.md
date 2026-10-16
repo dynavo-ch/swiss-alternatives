@@ -108,6 +108,10 @@ sources:
     publisher: BSI Software AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'CRM- und Customer-Experience-Plattform für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen.'
+    description: 'BSI Customer Suite ist eine Plattform für CRM, Marketing-Automatisierung und Kundendaten aus Baden für Banken, Versicherungen, Detailhändler und Versorgungsunternehmen, angeboten als SaaS.'
 ---
 
 The BSI Customer Suite is a CRM and customer-experience platform for large

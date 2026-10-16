@@ -6,3 +6,6 @@ summary: Email marketing and marketing automation platform for newsletters, camp
 website: 'https://mailchimp.com'
 categories: [email-marketing]
 aliases: [intuit mailchimp]
+i18n:
+  de:
+    summary: 'Plattform für E-Mail-Marketing und Marketing-Automatisierung für Newsletter, Kampagnen und Zielgruppen.'

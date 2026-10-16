@@ -177,3 +177,9 @@ export function logoTile(
     ? `<span class="logo-tile${cls} logo-tile--img" aria-hidden="true"><img src="${escapeHtml(logo)}" alt="" loading="lazy"></span>`
     : `<span class="logo-tile logo-tile--mono${cls}" aria-hidden="true">${escapeHtml(mono)}</span>`;
 }
+
+/** Locale prefix of the current page (`''` or `/de`), set on <html data-base>. */
+export const base = document.documentElement.dataset.base ?? '';
+
+/** Prefixes a root-relative page or data path with the current locale. */
+export const localPath = (path: string): string => `${base}${path}`;

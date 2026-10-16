@@ -6,3 +6,6 @@ summary: Google's browser-based collaborative documents, spreadsheets and slides
 website: 'https://docs.google.com'
 categories: [office-suites, notes]
 aliases: [google sheets, google slides]
+i18n:
+  de:
+    summary: 'Browserbasierte, gemeinsam bearbeitbare Dokumente, Tabellen und Präsentationen von Google.'

@@ -34,6 +34,30 @@
       "type": "string",
       "format": "date-time"
     },
+    "i18n": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "noun": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "intro": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "$schema": {
       "type": "string"
     }

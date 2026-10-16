@@ -84,3 +84,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, gegründet 1984, das Individualsoftware baut und die Airlock-Produkte für Anwendungssicherheit und Identität entwickelt.'

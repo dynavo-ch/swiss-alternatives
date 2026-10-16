@@ -91,6 +91,10 @@ sources:
     publisher: IT Reseller
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Webhosting, Domainregistrierung und E-Mail-Hosting mit Servern in der Schweiz.'
+    description: 'Hostpoint ist ein Webhosting-Anbieter und Domain-Registrar aus Rapperswil-Jona mit Shared Hosting, Domains, E-Mail und Managed Servern, gehostet in der Schweiz.'
 ---
 
 Hostpoint is a web hosting provider based in Rapperswil-Jona. Its portfolio

@@ -6,3 +6,6 @@ summary: Google's video meeting service, part of Google Workspace.
 website: 'https://meet.google.com'
 categories: [video-conferencing]
 aliases: [hangouts]
+i18n:
+  de:
+    summary: 'Videomeeting-Dienst von Google, Teil von Google Workspace.'

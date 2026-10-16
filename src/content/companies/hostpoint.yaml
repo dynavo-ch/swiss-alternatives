@@ -67,3 +67,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Webhosting-Anbieter und ICANN-akkreditierter Domain-Registrar, 2001 in Rapperswil-Jona gegründet, im Besitz seiner Gründer und von ihnen geführt.'

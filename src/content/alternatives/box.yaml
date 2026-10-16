@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Cloud content management and file sharing platform for businesses.
 website: 'https://www.box.com'
 categories: [cloud-storage, file-sharing]
+i18n:
+  de:
+    summary: 'Cloud-Plattform für Content-Management und Dateifreigabe für Unternehmen.'

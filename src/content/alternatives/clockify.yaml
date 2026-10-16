@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Cloud time tracker and timesheet app with a free plan for teams.
 website: 'https://clockify.me'
 categories: [time-tracking]
+i18n:
+  de:
+    summary: 'Cloud-Zeiterfassung und Stundenrapport-App mit kostenlosem Plan für Teams.'

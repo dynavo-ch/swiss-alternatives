@@ -4,3 +4,6 @@ vendorCountry: US
 summary: End-to-end encrypted messenger operated by a US non-profit foundation.
 website: 'https://signal.org'
 categories: [messaging]
+i18n:
+  de:
+    summary: 'Ende-zu-Ende-verschlüsselter Messenger, betrieben von einer gemeinnützigen US-Stiftung.'

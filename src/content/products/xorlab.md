@@ -140,6 +140,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'E-Mail-Sicherheit gegen Phishing, BEC und Malware für Microsoft 365 oder On-Premises-Mailserver.'
+    description: 'xorlab ist eine E-Mail-Sicherheitsplattform aus Zürich, die Phishing, BEC und Malware mittels Verhaltensanalyse erkennt, angeboten als SaaS oder On-Premises.'
 ---
 
 xorlab is an email security platform developed by xorlab AG in Zurich. It

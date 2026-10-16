@@ -105,6 +105,10 @@ sources:
     publisher: CloudSigma Holding AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'IaaS-Cloud mit frei dimensionierbaren virtuellen Servern und einem Standort in der Schweiz.'
+    description: 'CloudSigma ist eine IaaS-Cloud der CloudSigma AG mit Sitz in Zug, mit Abrechnung pro Ressource und Standorten weltweit, darunter einem in Genf in der Schweiz.'
 ---
 
 CloudSigma is an infrastructure-as-a-service platform from a company founded in

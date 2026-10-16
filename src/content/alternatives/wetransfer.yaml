@@ -6,3 +6,6 @@ summary: Service for sending large files by download link.
 website: 'https://wetransfer.com'
 categories: [file-transfer]
 popular: true
+i18n:
+  de:
+    summary: 'Dienst zum Versenden grosser Dateien per Download-Link.'

@@ -6,7 +6,7 @@ import { formatNumber } from '~/lib/format';
 import { paths } from '~/lib/paths';
 
 const t = useTranslations(Astro.currentLocale);
-const { stats } = await getDirectory();
+const { stats } = await getDirectory(Astro.currentLocale);
 const items = [
   { value: stats.products, label: t('stats.products'), href: paths.products() },
   { value: stats.companies, label: t('stats.companies'), href: paths.companies() },

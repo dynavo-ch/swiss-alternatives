@@ -137,6 +137,10 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Ende-zu-Ende-verschlüsselter Messenger, nutzbar ohne Telefonnummer, mit Einmalkauf.'
+    description: 'Threema ist ein Ende-zu-Ende-verschlüsselter Messenger mit Open-Source-Apps, nutzbar ohne Telefonnummer oder E-Mail-Adresse, mit Servern in der Schweiz.'
 ---
 
 Threema is an instant messenger for text, voice and video calls, group chats,

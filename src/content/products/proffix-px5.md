@@ -120,6 +120,10 @@ sources:
     publisher: Forterro Schweiz Proffix AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Windows-basierte ERP-Software für Schweizer KMU, von Buchhaltung und Lohn bis Lagerverwaltung.'
+    description: 'Proffix Px5 ist modulare ERP-Software für Schweizer KMU mit Buchhaltung, Lohn, Auftragsbearbeitung und Lagerverwaltung. Sie läuft auf Windows und SQL Server.'
 ---
 
 Proffix Px5 is modular ERP and business software for small and medium-sized

@@ -1,0 +1,138 @@
+---
+/**
+ * Favourites and recently viewed products — stored only in this browser.
+ * A list can be shared as a URL (?ids=a,b,c) without any account.
+ */
+import EmptyState from '~/components/EmptyState.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { paths } from '~/lib/paths';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.favourites'), href: paths.favourites() },
+];
+const strings = {
+  remove: t('fav.remove'),
+  sharedTitle: t('fav.sharedTitle'),
+};
+---
+
+<BaseLayout title={t('fav.title')} description={t('fav.description')} noindex>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('fav.eyebrow')}
+    title={t('fav.heading')}
+    lead={t('fav.lead')}
+    size="md"
+  />
+
+  <div class="container section" data-favourites data-strings={JSON.stringify(strings)}>
+    <noscript>
+      <EmptyState title={t('compare.noJs')} text={t('fav.noJs')} />
+    </noscript>
+
+    <section class="js-only" data-shared hidden aria-labelledby="shared-h">
+      <div class="shared">
+        <div>
+          <h2 class="h3" id="shared-h">
+            {t('fav.sharedTitle')}
+          </h2>
+          <p class="muted">{t('fav.sharedLead')}</p>
+        </div>
+        <button type="button" class="btn btn--primary" data-import>
+          <Icon name="heart" />
+          {t('fav.import')}
+        </button>
+      </div>
+      <div class="fav-list" data-shared-list></div>
+    </section>
+
+    <section class="js-only" aria-labelledby="fav-h">
+      <SectionHeader id="fav-h" number={1} title={t('nav.favourites')} />
+      <div class="fav-actions" data-fav-actions hidden>
+        <a href={paths.compare()} class="btn" data-fav-compare>
+          <Icon name="columns-3" />
+          {t('fav.compare')}
+        </a>
+        <button type="button" class="btn" data-fav-share>
+          <Icon name="link" />
+          {t('fav.share')}
+        </button>
+        <button type="button" class="btn btn--ghost" data-fav-clear>
+          {t('fav.clear')}
+        </button>
+      </div>
+      <div class="fav-list" data-fav-list></div>
+      <div data-fav-empty hidden>
+        <EmptyState title={t('fav.emptyTitle')} text={t('fav.emptyText')}>
+          <a href={paths.products()} class="btn btn--primary">
+            {t('nav.products')}
+            <Icon name="arrow-right" />
+          </a>
+        </EmptyState>
+      </div>
+    </section>
+
+    <section class="js-only recent-section" data-recent-section hidden aria-labelledby="recent-h">
+      <SectionHeader id="recent-h" number={2} title={t('fav.recent')} lead={t('fav.recentLead')} />
+      <div class="fav-list" data-recent-list></div>
+      <p>
+        <button type="button" class="btn btn--ghost btn--sm" data-recent-clear>
+          {t('fav.recentClear')}
+        </button>
+      </p>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initFavourites } from '~/scripts/favourites';
+  const root = document.querySelector<HTMLElement>('[data-favourites]');
+  if (root) void initFavourites(root);
+</script>
+
+<style>
+  .shared {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-4);
+    margin-bottom: var(--s-4);
+    padding: var(--s-5);
+    border: 1px solid var(--c-ink);
+    border-radius: var(--r-2);
+    background: var(--c-surface);
+  }
+
+  [data-shared] {
+    margin-bottom: var(--section);
+  }
+
+  .fav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-bottom: var(--s-4);
+  }
+
+  .fav-list {
+    border-top: 1px solid var(--c-line);
+  }
+
+  .recent-section {
+    margin-top: var(--section);
+  }
+
+  .recent-section p {
+    margin-top: var(--s-4);
+  }
+</style>

@@ -81,3 +81,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Degersheim SG, das seit 1997 die Software ProTimer für Zeit- und Präsenzerfassung entwickelt. Seit August 2025 gehört es zur Vierwald Software AG.'

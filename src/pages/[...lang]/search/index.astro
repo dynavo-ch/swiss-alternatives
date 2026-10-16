@@ -1,0 +1,192 @@
+---
+/**
+ * Search page and complete A–Z index. Works without JavaScript (the index is
+ * static HTML); with JavaScript, ?q= queries are answered instantly.
+ */
+import PageHeader from '~/components/PageHeader.astro';
+import SearchBox from '~/components/SearchBox.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { paths } from '~/lib/paths';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+const dir = await getDirectory(Astro.currentLocale);
+
+type Entry = { name: string; url: string; type: string; detail: string };
+const entries: Entry[] = [
+  ...dir.products.map((p) => ({
+    name: p.name,
+    url: p.url,
+    type: t('search.type.product'),
+    detail: p.company.displayName,
+  })),
+  ...dir.categories
+    .filter((c) => c.products.length)
+    .map((c) => ({
+      name: c.name,
+      url: c.url,
+      type: t('search.type.category'),
+      detail: t('count.products', { count: c.products.length }),
+    })),
+  ...dir.alternatives.map((a) => ({
+    name: a.name,
+    url: a.url,
+    type: t('search.type.alternative'),
+    detail: a.products.length
+      ? t('count.swissAlternatives', { count: a.products.length })
+      : t('common.none'),
+  })),
+  ...dir.companies
+    .filter((c) => c.products.length)
+    .map((c) => ({
+      name: c.name,
+      url: c.url,
+      type: t('search.type.company'),
+      detail: c.data.headquarters.city ?? '',
+    })),
+].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+
+const letters = new Map<string, Entry[]>();
+for (const entry of entries) {
+  const first = entry.name.charAt(0).toUpperCase();
+  const letter = /[A-Z]/.test(first) ? first : '#';
+  letters.set(letter, [...(letters.get(letter) ?? []), entry]);
+}
+const anchor = (letter: string) => (letter === '#' ? 'num' : letter.toLowerCase());
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('search.page.title'), href: paths.search() },
+];
+---
+
+<BaseLayout title={t('search.page.title')} description={t('search.page.description')} noindex>
+  <PageHeader
+    crumbs={crumbs}
+    title={t('search.page.title')}
+    lead={t('search.page.description')}
+    size="md"
+  >
+    <div class="search-page">
+      <SearchBox variant="page" id="page-search" />
+    </div>
+  </PageHeader>
+
+  <section class="section container" data-search-index aria-labelledby="az-h">
+    <h2 class="label" id="az-h">
+      {t('search.page.index')}
+    </h2>
+    <nav class="az-nav" aria-label={t('search.page.index')}>
+      {[...letters.keys()].map((l) => (
+        <a href={`#az-${anchor(l)}`}>{l}</a>
+      ))}
+    </nav>
+    <div class="az">
+      {[...letters.entries()].map(([letter, list]) => (
+        <section
+          class="az__group"
+          id={`az-${anchor(letter)}`}
+          aria-labelledby={`az-${anchor(letter)}-h`}
+        >
+          <h3 class="az__letter" id={`az-${anchor(letter)}-h`}>
+            {letter}
+          </h3>
+          <ul role="list">
+            {list.map((entry) => (
+              <li>
+                <a href={entry.url}>{entry.name}</a>
+                <span class="az__type">{entry.type}</span>
+                <span class="az__detail">{entry.detail}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .search-page {
+    margin-top: var(--s-6);
+    max-width: 44rem;
+  }
+
+  .az-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: var(--s-4) 0 var(--s-8);
+  }
+
+  .az-nav a {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: var(--c-sunken);
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+  }
+
+  .az-nav a:hover {
+    background: var(--c-ink);
+    color: var(--c-inverse);
+  }
+
+  .az {
+    columns: 2 28rem;
+    column-gap: var(--s-12);
+  }
+
+  .az__group {
+    break-inside: avoid;
+    margin-bottom: var(--s-8);
+    scroll-margin-top: calc(var(--header-h) + var(--s-4));
+  }
+
+  .az__letter {
+    padding-bottom: var(--s-2);
+    border-bottom: 1px solid var(--c-ink);
+    font-size: var(--fs-2xl);
+    font-weight: 300;
+  }
+
+  .az__group li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0 var(--s-3);
+    padding: var(--s-2) 0;
+    border-bottom: 1px solid var(--c-line);
+    font-size: var(--fs-sm);
+  }
+
+  .az__group a {
+    font-weight: 560;
+    text-decoration: none;
+  }
+
+  .az__group a:hover {
+    color: var(--c-red-ink);
+    text-decoration: underline;
+  }
+
+  .az__type {
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--c-ink-3);
+    text-align: right;
+  }
+
+  .az__detail {
+    grid-column: 1 / -1;
+    font-size: var(--fs-xs);
+    color: var(--c-ink-3);
+  }
+</style>

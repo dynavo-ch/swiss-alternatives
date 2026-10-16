@@ -8,3 +8,9 @@ intro: >-
   permissions, workflows and compliant archiving.
 related: [cloud-storage, e-signatures, file-sharing]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'Dokumentenmanagement'
+    noun: 'Dokumentenmanagement-Systeme'
+    summary: 'Geschäftsdokumente speichern, ordnen, archivieren und teilen.'
+    intro: 'Dokumentenmanagement-Systeme (DMS) speichern und ordnen Geschäftsdokumente mit Versionierung, Berechtigungen, Workflows und rechtskonformer Archivierung.'

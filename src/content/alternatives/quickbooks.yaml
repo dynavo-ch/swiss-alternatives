@@ -5,3 +5,6 @@ summary: Accounting, invoicing and payroll software for small businesses.
 website: 'https://quickbooks.intuit.com'
 categories: [accounting, invoicing, payroll]
 aliases: [intuit]
+i18n:
+  de:
+    summary: 'Software für Buchhaltung, Rechnungsstellung und Lohn für kleine Unternehmen.'

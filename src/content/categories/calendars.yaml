@@ -8,3 +8,9 @@ intro: >-
   provider's own apps.
 related: [email, scheduling]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Kalender'
+    noun: 'Kalenderdienste'
+    summary: 'Gehostete Kalender mit Freigabe, Einladungen und Gerätesynchronisation.'
+    intro: 'Kalenderdienste speichern Termine und synchronisieren sie zwischen Geräten, meist über CalDAV oder die eigenen Apps des Anbieters.'

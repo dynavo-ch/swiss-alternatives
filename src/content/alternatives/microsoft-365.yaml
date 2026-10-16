@@ -6,3 +6,6 @@ website: 'https://www.microsoft.com/microsoft-365'
 categories: [office-suites, email, cloud-storage]
 aliases: [office 365, o365, m365, microsoft office]
 popular: true
+i18n:
+  de:
+    summary: 'Abonnement-Suite von Microsoft mit Office-Apps, Exchange-E-Mail, OneDrive, SharePoint und Teams.'

@@ -524,6 +524,26 @@
         "required": ["id", "title", "url"]
       }
     },
+    "i18n": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "tagline": {
+            "type": "string",
+            "maxLength": 110
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 220
+          }
+        }
+      }
+    },
     "$schema": {
       "type": "string"
     }

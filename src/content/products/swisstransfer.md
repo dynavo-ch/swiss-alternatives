@@ -114,6 +114,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Kostenlose Übertragung von Dateien bis 50 GB ohne Konto, gespeichert in der Schweiz.'
+    description: 'SwissTransfer ist der kostenlose Dienst von Infomaniak zum Versenden von Dateien bis 50 GB pro Übertragung ohne Konto, mit bis zu 30 Tage gültigen Links, gespeichert in der Schweiz.'
 ---
 
 SwissTransfer sends files of up to 50 GB per transfer, free of charge and

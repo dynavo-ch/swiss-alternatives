@@ -6,3 +6,6 @@ summary: Google's AI assistant and family of language models.
 website: 'https://gemini.google.com'
 categories: [ai-assistants, language-models]
 aliases: [gemini, bard]
+i18n:
+  de:
+    summary: 'KI-Assistent und Sprachmodellfamilie von Google.'

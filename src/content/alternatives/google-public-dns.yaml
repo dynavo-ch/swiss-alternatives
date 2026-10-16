@@ -6,3 +6,6 @@ summary: Google's public DNS resolver at 8.8.8.8.
 website: 'https://developers.google.com/speed/public-dns'
 categories: [dns-resolvers]
 aliases: [8.8.8.8]
+i18n:
+  de:
+    summary: 'Öffentlicher DNS-Resolver von Google unter 8.8.8.8.'

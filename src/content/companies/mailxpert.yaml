@@ -73,3 +73,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Unternehmen, das die E-Mail-Marketing-Software mailXpert, den Newsletter-Dienst Swiss Newsletter und den Versanddienst mailomat entwickelt und betreibt.'

@@ -3,5 +3,3 @@
 # file in manual/ instead if one is available from the vendor.
 exeon-ndr          # site icon is a product illustration, not the logo
 company--exeon
-cloudsigma         # only a blurry low-resolution favicon available
-company--cloudsigma

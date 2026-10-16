@@ -149,6 +149,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Europäische IaaS-Cloud mit Rechenleistung, Objektspeicher, Managed Kubernetes und Datenbanken.'
+    description: 'Exoscale ist eine IaaS-Cloud der Akenes SA mit Sitz in Lausanne, Teil der österreichischen A1 Group, mit zwei Schweizer Zonen unter acht Zonen in Europa.'
 ---
 
 Exoscale is an infrastructure-as-a-service cloud operated by Akenes SA in

@@ -5,3 +5,6 @@ summary: Microsoft's AI assistant, integrated into Windows, Edge and Microsoft 3
 website: 'https://copilot.microsoft.com'
 categories: [ai-assistants]
 aliases: [copilot, bing chat]
+i18n:
+  de:
+    summary: 'KI-Assistent von Microsoft, integriert in Windows, Edge und Microsoft 365.'

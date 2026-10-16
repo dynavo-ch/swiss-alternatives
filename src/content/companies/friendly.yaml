@@ -69,3 +69,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen in Hergiswil (Nidwalden), das Friendly Analytics entwickelt und vertreibt, einen in der Schweiz gehosteten Webanalyse-Dienst auf Basis von Matomo.'

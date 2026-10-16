@@ -8,3 +8,9 @@ intro: >-
   apps and other channels — from classic page editors to headless platforms.
 related: [web-hosting, e-commerce]
 added: 2026-10-16
+i18n:
+  de:
+    name: 'Content-Management'
+    noun: 'Content-Management-Systeme'
+    summary: 'Websites und digitale Inhalte erstellen und verwalten.'
+    intro: 'Mit Content-Management-Systemen (CMS) erstellen, strukturieren und veröffentlichen Teams Inhalte für Websites, Apps und andere Kanäle – von klassischen Seiteneditoren bis zu Headless-Plattformen.'

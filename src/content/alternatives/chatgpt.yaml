@@ -6,3 +6,6 @@ website: 'https://chatgpt.com'
 categories: [ai-assistants]
 aliases: [openai, gpt]
 popular: true
+i18n:
+  de:
+    summary: 'KI-Chat-Assistent von OpenAI.'

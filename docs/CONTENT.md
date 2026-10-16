@@ -266,6 +266,27 @@ popular: true # featured on the homepage
 Swiss products are linked to an alternative from the **product** side
 (`alternativesTo`). The alternative page is generated automatically.
 
+## Translations
+
+The site is published in English and German (`/de/`). Facts are language-neutral; only short texts
+are translated, in an optional `i18n` block at the end of the entry. Untranslated fields fall back
+to English, so a new entry can be added in English only.
+
+| Collection   | Translatable fields (`i18n.de.*`)  |
+| ------------ | ---------------------------------- |
+| Products     | `tagline`, `description`           |
+| Companies    | `description`                      |
+| Categories   | `name`, `noun`, `summary`, `intro` |
+| Groups       | `name`, `summary`                  |
+| Alternatives | `summary`                          |
+
+- Translate, do not rewrite: no facts added, dropped or softened.
+- Swiss Standard German: `ss` instead of `ß`, quotation marks «…», neutral tone.
+- A category `noun` is used inside sentences («{count} {noun} von Schweizer Unternehmen»), so give a
+  generic plural or mass noun such as «Buchhaltungssoftware» or «Passwort-Manager».
+- The Markdown body of a product stays English; German pages label it as English.
+- `npm run lint:content` lists entries that still lack a German translation.
+
 ## Derived values (never typed by hand)
 
 | Value                 | Derived from                                                                                                     |

@@ -60,3 +60,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Anbieter von Cloud- und Managed Hosting, gegründet 2000, mit eigener Infrastruktur in zwei Rechenzentren im Kanton Zürich.'

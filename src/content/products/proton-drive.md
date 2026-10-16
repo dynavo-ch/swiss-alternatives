@@ -177,6 +177,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Ende-zu-Ende-verschlüsselter Cloud-Speicher mit Dateifreigabe und Dokumenteditoren.'
+    description: 'Proton Drive ist ein Ende-zu-Ende-verschlüsselter Cloud-Speicher- und Dateifreigabedienst der Proton AG mit Sync-Apps und integrierten Editoren für Dokumente und Tabellen.'
 ---
 
 Proton Drive is a cloud storage service in which files and file names are

@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Identity platform for workforce single sign-on, MFA and lifecycle management.
 website: 'https://www.okta.com'
 categories: [iam, authentication]
+i18n:
+  de:
+    summary: 'Identitätsplattform für Single Sign-on für Mitarbeitende, MFA und Lifecycle-Management.'

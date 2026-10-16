@@ -136,6 +136,10 @@ sources:
     publisher: Skribble AG
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Elektronische Signaturen (SES, AES, QES) nach Schweizer ZertES und EU-eIDAS.'
+    description: 'Skribble ist ein Dienst für elektronische Signaturen mit Sitz in Zürich für einfache, fortgeschrittene und qualifizierte Signaturen; Konten bei der Schweizer Gesellschaft werden in Zürich gehostet.'
 ---
 
 Skribble is a web-based service for signing PDF documents electronically. It

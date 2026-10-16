@@ -113,6 +113,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Newsletter-Dienst für kleine Unternehmen und Vereine, mit kostenloser Stufe.'
+    description: 'Swiss Newsletter ist ein Newsletter-Dienst der Zürcher mailXpert für kleine Unternehmen und Vereine, mit kostenloser Stufe und Datenhaltung in der Schweiz.'
 ---
 
 Swiss Newsletter is a newsletter service operated by mailXpert GmbH in Zurich

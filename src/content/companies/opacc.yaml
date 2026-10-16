@@ -71,3 +71,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Rothenburg LU, gegründet 1988, das ERP-, CRM- und Onlineshop-Software für Handels- und Dienstleistungsunternehmen entwickelt und einen eigenen Cloud-Dienst betreibt.'

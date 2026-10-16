@@ -102,3 +102,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Unternehmen mit Sitz in Pfäffikon SZ (Gemeinde Freienbach), das den Ende-zu-Ende-verschlüsselten Messenger Threema für Privatpersonen und Organisationen entwickelt. Seit Anfang 2026 im Besitz der deutschen Investmentgesellschaft Comitis Capital.'

@@ -9,3 +9,9 @@ intro: >-
   larger providers.
 related: [dns-resolvers]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Suchmaschinen'
+    noun: 'Suchmaschinen'
+    summary: 'Websuche ohne Profilbildung.'
+    intro: 'Suchmaschinen indexieren das Web und beantworten Suchanfragen. Nur wenige betreiben einen vollständig unabhängigen Index; viele datenschutzorientierte Suchmaschinen kombinieren eigene Technologie mit Ergebnissen, die sie von grösseren Anbietern lizenzieren.'

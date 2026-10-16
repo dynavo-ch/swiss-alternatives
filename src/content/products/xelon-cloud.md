@@ -115,6 +115,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Public und Private Cloud, Kubernetes und Cloud-Backup aus Schweizer Rechenzentren.'
+    description: 'Xelon Cloud ist eine IaaS-Plattform der Xelon AG mit Sitz in Zug, mit virtuellen Servern, Managed Kubernetes und Backup mit Veeam oder Acronis, gehostet in der Schweiz.'
 ---
 
 Xelon Cloud is the infrastructure-as-a-service offering of Xelon AG in Zug. It

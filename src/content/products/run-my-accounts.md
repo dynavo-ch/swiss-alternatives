@@ -128,6 +128,10 @@ sources:
     publisher: Suiteify Service AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Ausgelagerte Online-Buchhaltung für Schweizer KMU, kombiniert mit eigener Buchhaltungssoftware.'
+    description: 'Run my Accounts ist ein Dienst für ausgelagerte Online-Buchhaltung für Schweizer KMU, der Buchhaltungs- und Rechnungssoftware mit Buchführung durch das eigene Team kombiniert.'
 ---
 
 Run my Accounts combines online accounting software with an outsourced

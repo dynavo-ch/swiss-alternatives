@@ -67,3 +67,6 @@ sources:
     publisher: Moneycab
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Schweizer Cloud-Anbieter, gegründet 2009 und in Baar (Zug) eingetragen, mit IaaS, Kubernetes, Objektspeicher und Mac-Hosting; Teil der Sonio-Gruppe.'

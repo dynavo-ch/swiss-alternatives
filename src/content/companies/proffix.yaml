@@ -90,3 +90,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen in Altendorf SZ, ursprünglich PROFFIX Software AG, das die ERP-Software Proffix für Schweizer KMU entwickelt. Es gehört seit 2023 zur Londoner Forterro-Gruppe.'

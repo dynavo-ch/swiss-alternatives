@@ -118,6 +118,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Cloud-Buchhaltung und Unternehmenssoftware mit kostenlosem Plan, gehostet in der Schweiz.'
+    description: 'CashCtrl ist Cloud-Buchhaltungssoftware aus Münchenstein mit Auftragsbearbeitung, Lohnbuchhaltung und Mehrmandantenfähigkeit, einem kostenlosen Plan und in der Schweiz gehosteten Daten.'
 ---
 
 CashCtrl is a browser-based accounting and business software for self-employed

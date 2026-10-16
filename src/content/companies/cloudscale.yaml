@@ -73,3 +73,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Infrastructure-as-a-Service-Anbieter, gegründet 2014, der seine Cloud-Plattform in zwei Rechenzentren in der Schweiz betreibt.'

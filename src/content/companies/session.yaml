@@ -67,3 +67,6 @@ sources:
     publisher: Wikipedia
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Gemeinnützige Stiftung in Zug, die den Messenger Session seit Oktober 2024 verantwortet und ihn von der australischen OPTF übernommen hat. Ihre Stiftungsratsmitglieder leben in Australien, Deutschland und Kanada.'

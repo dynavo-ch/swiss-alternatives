@@ -74,3 +74,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Anbieter von Diensten für elektronische Signaturen, gegründet 2018, mit einer deutschen Tochtergesellschaft in Karlsruhe.'

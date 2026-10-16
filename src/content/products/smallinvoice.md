@@ -117,6 +117,10 @@ sources:
     publisher: Lourens Systems GmbH
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Online-Rechnungsstellung mit Kontaktverwaltung, Zeiterfassung und QR-Rechnungen für kleine Unternehmen.'
+    description: 'smallinvoice ist ein Dienst für Online-Rechnungsstellung und CRM aus Zürich mit QR-Rechnungen, Offerten, Mahnungen, Zeiterfassung und Buchhaltungsexporten sowie einem kostenlosen Plan.'
 ---
 
 smallinvoice is a web-based invoicing service for small businesses. It

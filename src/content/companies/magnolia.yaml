@@ -89,3 +89,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen, 1997 in Basel gegründet, das die Content-Management- und Digital-Experience-Plattform Magnolia entwickelt; seit 2022 mehrheitlich im Besitz von GENUI.'

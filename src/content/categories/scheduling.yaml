@@ -7,3 +7,9 @@ intro: >-
   Scheduling tools help groups agree on a date or let others book time in your calendar.
 related: [calendars]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Terminplanung'
+    noun: 'Terminplanungs-Tools'
+    summary: 'Termine finden, Umfragen durchführen und Buchungsseiten anbieten.'
+    intro: 'Terminplanungs-Tools helfen Gruppen, sich auf einen Termin zu einigen, oder lassen andere Zeit in Ihrem Kalender buchen.'

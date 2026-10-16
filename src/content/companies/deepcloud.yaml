@@ -72,3 +72,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Cloud-Softwareunternehmen aus Wittenbach, 2020 als Spin-off von Abacus Research gegründet, mit Diensten für Dokumentenaustausch, elektronische Signaturen und digitale Identität.'

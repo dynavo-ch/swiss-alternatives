@@ -97,6 +97,10 @@ sources:
     publisher: Infomaniak Network SA
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Shared Webhosting und Domainregistrierung bei einem ICANN-akkreditierten Schweizer Registrar.'
+    description: 'Infomaniak bietet Shared Webhosting für WordPress und andere PHP-Websites und registriert Domains unter über 500 Endungen, betrieben in eigenen Rechenzentren in der Schweiz.'
 ---
 
 Infomaniak's shared web hosting includes 250 GB of SSD storage and up to 20

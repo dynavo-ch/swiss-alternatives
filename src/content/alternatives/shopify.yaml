@@ -4,3 +4,6 @@ vendorCountry: CA
 summary: Hosted e-commerce platform for building online shops, with payments, checkout and an app store.
 website: 'https://www.shopify.com'
 categories: [e-commerce]
+i18n:
+  de:
+    summary: 'Gehostete E-Commerce-Plattform für Onlineshops, mit Zahlungen, Checkout und App Store.'

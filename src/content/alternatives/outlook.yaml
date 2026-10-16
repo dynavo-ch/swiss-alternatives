@@ -5,3 +5,6 @@ summary: Microsoft's email and calendar service (Outlook.com) and email client, 
 website: 'https://outlook.com'
 categories: [email, calendars]
 aliases: [hotmail, outlook.com, exchange online]
+i18n:
+  de:
+    summary: 'E-Mail- und Kalenderdienst (Outlook.com) und E-Mail-Programm von Microsoft, Teil von Microsoft 365.'

@@ -111,6 +111,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Offene mehrsprachige Sprachmodelle (8B und 70B) mit veröffentlichten Gewichten, Daten und Code.'
+    description: 'Apertus ist eine Familie offener mehrsprachiger Sprachmodelle (8B und 70B) von EPFL, ETH Zürich und CSCS, veröffentlicht unter Apache 2.0 mit dokumentiertem Training.'
 ---
 
 Apertus is a family of open large language models developed by EPFL, ETH Zurich

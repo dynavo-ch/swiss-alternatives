@@ -1,0 +1,162 @@
+---
+import CantonGrid from '~/components/CantonGrid.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import SectionHeader from '~/components/SectionHeader.astro';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getDirectory } from '~/lib/data';
+import { cantonName, countryName } from '~/lib/format';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const locale = Astro.currentLocale;
+const t = useTranslations(locale);
+const { companies, stats } = await getDirectory(Astro.currentLocale);
+const listed = companies.filter((c) => c.products.length > 0);
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.companies'), href: paths.companies() },
+];
+const ownership = (value: string) =>
+  value === 'unknown' ? t('state.unknownShort') : t(`state.${value as 'yes'}`);
+---
+
+<BaseLayout
+  title={t('companies.title')}
+  description={t('companies.description', { count: listed.length })}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('count.companies', { count: listed.length })}
+    title={t('companies.heading')}
+    lead={t('companies.lead')}
+  />
+
+  <section class="section container" aria-labelledby="companies-h">
+    <SectionHeader id="companies-h" number={1} title={t('companies.all')} />
+    <div class="ctable-wrap">
+      <table class="ctable">
+        <caption class="visually-hidden">{t('companies.all')}</caption>
+        <thead>
+          <tr>
+            <th scope="col">{t('product.company')}</th>
+            <th scope="col">{t('company.headquarters')}</th>
+            <th scope="col">{t('company.canton')}</th>
+            <th scope="col">{t('common.founded')}</th>
+            <th scope="col">{t('signal.swiss-owned')}</th>
+            <th scope="col" class="num">
+              {t('company.products')}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {listed.map((company) => {
+            const hq = company.data.headquarters;
+            const own = company.data.ownership;
+            return (
+              <tr>
+                <th scope="row">
+                  <a href={company.url}>{company.name}</a>
+                  <span class="ctable__type">{t(`company.type.${company.data.type}`)}</span>
+                </th>
+                <td>{hq.city ?? countryName(hq.country, locale)}</td>
+                <td>
+                  {hq.canton ? (
+                    <span title={cantonName(hq.canton)} class="mono">
+                      {hq.canton}
+                    </span>
+                  ) : (
+                    <span class="muted">—</span>
+                  )}
+                </td>
+                <td class="tnum">{company.data.founded ?? <span class="muted">—</span>}</td>
+                <td>
+                  <span class="state" data-state={own.swissOwned}>
+                    {ownership(own.swissOwned)}
+                  </span>
+                  {own.parent && own.parentCountry && own.parentCountry !== 'CH' && (
+                    <span class="ctable__sub">
+                      {own.parent} · {own.parentCountry}
+                    </span>
+                  )}
+                </td>
+                <td class="num tnum">{company.products.length}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="cantons-h">
+    <SectionHeader
+      id="cantons-h"
+      number={2}
+      title={t('companies.byCanton')}
+      lead={t('companies.byCantonLead', { count: stats.cantons })}
+    />
+    <CantonGrid companies={companies} />
+  </section>
+</BaseLayout>
+
+<style>
+  .ctable-wrap {
+    overflow-x: auto;
+  }
+
+  .ctable {
+    width: 100%;
+    min-width: 40rem;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+  }
+
+  .ctable th,
+  .ctable td {
+    padding: var(--s-3) var(--s-4) var(--s-3) 0;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  .ctable thead th {
+    font-family: var(--font-mono);
+    font-size: var(--fs-micro);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--c-ink-3);
+    border-bottom-color: var(--c-ink);
+  }
+
+  .ctable tbody th {
+    font-weight: 600;
+  }
+
+  .ctable tbody th a {
+    text-decoration: none;
+  }
+
+  .ctable tbody th a:hover {
+    color: var(--c-red-ink);
+    text-decoration: underline;
+  }
+
+  .ctable__type,
+  .ctable__sub {
+    display: block;
+    font-size: var(--fs-xs);
+    font-weight: 400;
+    color: var(--c-ink-3);
+  }
+
+  .ctable .num {
+    text-align: right;
+    padding-right: 0;
+  }
+</style>

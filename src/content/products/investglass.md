@@ -132,6 +132,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Plattform für CRM, digitales Onboarding und Portfoliomanagement für Finanzinstitute.'
+    description: 'InvestGlass ist eine Plattform für CRM und Kunden-Onboarding aus Genf für Banken, Vermögensverwalter und Versicherer, gehostet in der Schweiz oder On-Premises installiert.'
 ---
 
 InvestGlass is a client relationship management platform aimed at banks,

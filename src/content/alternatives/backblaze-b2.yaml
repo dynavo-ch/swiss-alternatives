@@ -5,3 +5,6 @@ summary: S3-compatible cloud object storage, often used for backups.
 website: 'https://www.backblaze.com/cloud-storage'
 categories: [object-storage, backup]
 aliases: [backblaze]
+i18n:
+  de:
+    summary: 'S3-kompatibler Cloud-Objektspeicher, oft für Backups genutzt.'

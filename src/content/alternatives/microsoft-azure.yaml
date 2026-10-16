@@ -6,3 +6,6 @@ website: 'https://azure.microsoft.com'
 categories: [cloud-platforms, kubernetes, object-storage]
 aliases: [azure]
 popular: true
+i18n:
+  de:
+    summary: 'Cloud-Plattform von Microsoft für Rechenleistung, Speicher, Datenbanken und KI-Dienste.'

@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Customer identity platform for login, registration and authorisation in apps.
 website: 'https://auth0.com'
 categories: [iam, authentication]
+i18n:
+  de:
+    summary: 'Plattform für Kundenidentitäten mit Anmeldung, Registrierung und Autorisierung in Apps.'

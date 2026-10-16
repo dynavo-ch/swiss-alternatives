@@ -13,3 +13,8 @@ categories: [category-slug]
 aliases: [] # search synonyms
 popular: false # featured on the home page
 status: active # active | discontinued
+# Optional German translation (Swiss Standard German: «ss», never «ß»). Untranslated
+# fields fall back to English.
+i18n:
+  de:
+    summary: Deutsche Kurzbeschreibung.

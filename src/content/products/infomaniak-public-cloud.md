@@ -136,6 +136,10 @@ sources:
     publisher: OpenInfra Foundation
     kind: independent
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'IaaS auf Basis von OpenStack mit Instanzen, GPU, Block- und Objektspeicher, betrieben in der Schweiz.'
+    description: 'Infomaniak Public Cloud ist eine IaaS auf Basis von OpenStack mit VMs, GPUs, Block- und S3-kompatiblem Objektspeicher sowie Managed Kubernetes in Schweizer Rechenzentren.'
 ---
 
 Infomaniak Public Cloud is an infrastructure-as-a-service platform based on

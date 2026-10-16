@@ -68,3 +68,6 @@ sources:
     publisher: Baker McKenzie
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Zürcher Entwickler einer mobilen App für Frontline-Mitarbeitende, 2012 als Spin-off der ETH Zürich gegründet und seit 2025 Teil des französischen Softwareunternehmens LumApps.'

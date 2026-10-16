@@ -80,3 +80,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Tochtergesellschaft der Schweizerischen Post in Glattbrugg und anerkannter Vertrauensdiensteanbieter für Zertifikate, elektronische Signaturen und das SwissID-Login.'

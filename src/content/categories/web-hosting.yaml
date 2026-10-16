@@ -8,3 +8,9 @@ intro: >-
   are the simplest way for small organisations to publish a website on Swiss servers.
 related: [domain-registrars, vps-hosting]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Webhosting'
+    noun: 'Webhosting-Anbieter'
+    summary: 'Shared und Managed Hosting für Websites, WordPress und E-Mail.'
+    intro: 'Webhosting-Pakete bündeln Webspace, Datenbanken, E-Mail-Konten und oft Domains. Sie sind für kleine Organisationen der einfachste Weg, eine Website auf Schweizer Servern zu veröffentlichen.'

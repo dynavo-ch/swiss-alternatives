@@ -5,3 +5,6 @@ parent: Bending Spoons S.p.A.
 summary: Note-taking app for notes, web clips and documents.
 website: 'https://evernote.com'
 categories: [notes]
+i18n:
+  de:
+    summary: 'Notiz-App für Notizen, Webclips und Dokumente.'

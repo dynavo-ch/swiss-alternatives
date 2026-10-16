@@ -67,3 +67,6 @@ sources:
     publisher: Quad9
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Gemeinnützige Stiftung in Zürich, die den öffentlichen DNS-Resolver Quad9 betreibt. Sie verlegte ihren Hauptsitz 2021 von Kalifornien in die Schweiz.'

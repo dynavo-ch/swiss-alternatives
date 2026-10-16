@@ -70,3 +70,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Rapperswil-Jona, das Cloud-basierte Unternehmenssoftware für Kleinunternehmen in der Schweiz entwickelt. Es ist eine Tochtergesellschaft der Schweizer Versicherung Die Mobiliar.'

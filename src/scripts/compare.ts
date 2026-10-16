@@ -7,7 +7,7 @@ import { icons } from './icons';
 import type { ProductRecord } from '~/lib/export';
 
 type Record_ = ProductRecord & { logo: string | null };
-import { copyText, escapeHtml, getList, logoTile, setList, t, toast } from './store';
+import { copyText, escapeHtml, getList, localPath, logoTile, setList, t, toast } from './store';
 
 type Labels = {
   overview: string;
@@ -36,7 +36,7 @@ export async function initCompare(root: HTMLElement) {
   const addSelect = root.querySelector<HTMLSelectElement>('[data-add]');
   const diffToggle = root.querySelector<HTMLInputElement>('[data-diff]');
 
-  const response = await fetch('/data/products.json');
+  const response = await fetch(localPath('/data/products.json'));
   if (!response.ok) throw new Error(`Could not load product data (${response.status})`);
   const data = (await response.json()) as { products: Record_[] };
   const byId = new Map(data.products.map((p) => [p.id, p]));

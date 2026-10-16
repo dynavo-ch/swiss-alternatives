@@ -164,6 +164,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Verschlüsselter Kalender, in jedem Proton-Konto enthalten.'
+    description: 'Proton Calendar ist ein verschlüsselter Kalender der Proton AG, der Titel, Beschreibungen, Orte und Teilnehmende von Terminen verschlüsselt, mit Web- und Mobile-Apps.'
 ---
 
 Proton Calendar is a calendar service included with every Proton account. Event

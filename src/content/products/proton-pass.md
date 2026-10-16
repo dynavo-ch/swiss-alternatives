@@ -170,6 +170,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Ende-zu-Ende-verschlüsselter Passwort-Manager mit Passkeys und E-Mail-Aliassen.'
+    description: 'Proton Pass ist ein Ende-zu-Ende-verschlüsselter Passwort-Manager der Proton AG mit Passkey-Unterstützung, integrierten 2FA-Codes und Hide-my-email-Aliassen auf allen Plattformen.'
 ---
 
 Proton Pass is a password manager that encrypts logins, notes, credit cards and

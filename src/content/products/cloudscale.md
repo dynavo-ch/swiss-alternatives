@@ -137,6 +137,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-Server, Objektspeicher und Load Balancer im Self-Service, gehostet in der Schweiz.'
+    description: 'cloudscale ist eine IaaS-Cloud mit Sitz in Zürich, die virtuelle Server, GPU-Server, S3-kompatiblen Objektspeicher und Load Balancer aus zwei Schweizer Rechenzentren anbietet.'
 ---
 
 cloudscale is an infrastructure-as-a-service platform from cloudscale.ch AG in

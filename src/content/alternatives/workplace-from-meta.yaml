@@ -6,3 +6,6 @@ website: 'https://www.workplace.com'
 categories: [employee-communication, team-chat]
 aliases: [facebook workplace, workplace by facebook]
 status: discontinued
+i18n:
+  de:
+    summary: 'Plattform für Unternehmenskommunikation von Meta. Meta kündigte 2024 an, Workplace einzustellen.'

@@ -8,3 +8,9 @@ intro: >-
   Registrars accredited for .ch and .li domains are listed by SWITCH.
 related: [web-hosting]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Domain-Registrare'
+    noun: 'Domain-Registrare'
+    summary: '.ch- und internationale Domainnamen sowie DNS registrieren und verwalten.'
+    intro: 'Domain-Registrare registrieren Domainnamen in Ihrem Auftrag und bieten meist auch DNS-Hosting an. Die für .ch- und .li-Domains akkreditierten Registrare sind bei SWITCH aufgeführt.'

@@ -116,6 +116,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Arbeits- und Projektzeiterfassung mit Absenzen, Spesen und Rechnungsstellung.'
+    description: 'TimeStatement ist ein Cloud-Dienst zur Zeiterfassung aus Baar für Arbeitszeiten, Projekte, Absenzen und Spesen, mit Rechnungsstellung und kostenlosem Plan für Einzelnutzer.'
 ---
 
 TimeStatement is a cloud service for recording working hours, project time

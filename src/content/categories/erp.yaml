@@ -8,3 +8,9 @@ intro: >-
   inventory and production in one platform.
 related: [accounting, payroll, crm]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'ERP'
+    noun: 'ERP-Systeme'
+    summary: 'Integrierte Lösungen für Finanzen, HR, Lohn, Lager und Betrieb.'
+    intro: 'ERP-Systeme (Enterprise Resource Planning) vereinen Finanzen, HR, Lohn, Einkauf, Lager und Produktion in einer Plattform.'

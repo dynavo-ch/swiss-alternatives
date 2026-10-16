@@ -1,0 +1,138 @@
+---
+import Email from '~/components/Email.astro';
+import Icon from '~/components/Icon.astro';
+import PageHeader from '~/components/PageHeader.astro';
+import { site } from '~/config/site';
+import { useTranslations } from '~/i18n';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { paths } from '~/lib/paths';
+import { breadcrumbLd } from '~/lib/seo';
+import { localeStaticPaths } from '~/i18n/routing';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+const crumbs = [
+  { label: t('nav.home'), href: paths.home() },
+  { label: t('nav.contact'), href: paths.contact() },
+];
+
+const topics = [
+  { id: 'suggest', icon: 'plus', href: paths.suggest() },
+  {
+    id: 'correction',
+    icon: 'flag',
+    href: `${site.repository}/issues/new?template=correction.yml`,
+  },
+  { id: 'vendor', icon: 'building-2', subject: 'Vendor: ' },
+  { id: 'sponsor', icon: 'handshake', href: paths.sponsors() },
+  { id: 'press', icon: 'newspaper', subject: 'Press: ' },
+  { id: 'security', icon: 'shield-alert', subject: 'Security report' },
+] as const satisfies readonly { id: string; icon: string; href?: string; subject?: string }[];
+---
+
+<BaseLayout
+  title={t('contact.title')}
+  description={t('contact.description')}
+  jsonLd={breadcrumbLd(crumbs)}
+>
+  <PageHeader
+    crumbs={crumbs}
+    eyebrow={t('nav.contact')}
+    title={t('contact.heading')}
+    lead={t('contact.lead')}
+  >
+    <p class="contact-mail">
+      <Email class="btn btn--primary btn--lg">
+        <Icon name="mail" slot="before" />
+      </Email>
+    </p>
+  </PageHeader>
+
+  <section class="section container" aria-labelledby="topics-h">
+    <h2 class="label" id="topics-h">
+      {t('contact.topics')}
+    </h2>
+    <ul class="topics" role="list">
+      {topics.map((topic) => (
+        <li class="topic">
+          <Icon name={topic.icon} class="topic__icon" />
+          <h3>{t(`contact.topic.${topic.id}.title`)}</h3>
+          <p>{t(`contact.topic.${topic.id}.text`)}</p>
+          {'subject' in topic ? (
+            <Email
+              class="arrow-link"
+              subject={topic.subject}
+              label={t(`contact.topic.${topic.id}.label`)}
+            >
+              <Icon name="arrow-right" slot="after" />
+            </Email>
+          ) : (
+            <a href={topic.href} class="arrow-link">
+              {t(`contact.topic.${topic.id}.label`)}
+              <Icon name="arrow-right" />
+            </a>
+          )}
+        </li>
+      ))}
+    </ul>
+    <p class="contact-note">{t('contact.note')}</p>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-mail {
+    margin-top: var(--s-6);
+  }
+
+  .topics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--s-4);
+  }
+
+  .topic {
+    display: grid;
+    align-content: start;
+    justify-items: start;
+    gap: var(--s-3);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    border-top: 2px solid var(--c-ink);
+    background: var(--c-surface);
+  }
+
+  .topic :global(.topic__icon) {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .topic h3 {
+    font-size: var(--fs-md);
+  }
+
+  .topic p {
+    font-size: var(--fs-sm);
+    color: var(--c-ink-2);
+  }
+
+  .contact-note {
+    margin-top: var(--s-8);
+    max-width: 62ch;
+    font-size: var(--fs-sm);
+    color: var(--c-ink-3);
+  }
+
+  @media (max-width: 60rem) {
+    .topics {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 36rem) {
+    .topics {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

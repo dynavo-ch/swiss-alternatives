@@ -104,3 +104,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Cloud-Anbieter aus Genf mit eigenen Rechenzentren in der Schweiz, der Webhosting, Cloud-Infrastruktur, Kollaborationstools und KI-Dienste anbietet. Seine Gruppenholding ist seit Oktober 2026 an der SIX Swiss Exchange kotiert.'

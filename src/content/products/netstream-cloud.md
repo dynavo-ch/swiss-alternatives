@@ -116,6 +116,10 @@ sources:
     publisher: Netstream AG
     kind: vendor
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Virtuelle Rechenzentren, Managed Kubernetes, S3-Speicher und Backup aus Schweizer Rechenzentren.'
+    description: 'Netstream Cloud bietet Unternehmen virtuelle Rechenzentren, Managed Kubernetes, S3-kompatiblen Objektspeicher und Backup aus Rechenzentren in der Schweiz.'
 ---
 
 Netstream Cloud is the business cloud offering of Netstream, a Wallisellen-based

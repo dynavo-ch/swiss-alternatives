@@ -35,7 +35,9 @@ ownership:
     company of Triton's portfolio company European Directories. dogado later
     merged with one.com to form group.one, whose legal notice names one.com
     Group AB in Malmö, Sweden. METANET's privacy policy names dogado GmbH as its
-    100% parent within group.one.
+    100% parent within group.one. In December 2022 the Seventh Cinven Fund (UK)
+    and Ontario Teachers' Pension Plan (Canada) agreed to acquire and combine
+    group.ONE and dogado; their current holding was not re-confirmed for 2026.
 lastVerified: 2026-10-16
 sources:
   - id: about
@@ -62,6 +64,12 @@ sources:
     publisher: Triton Partners
     kind: press
     accessed: 2026-10-16
+  - id: cinven
+    title: Cinven and Ontario Teachers' to invest in the combination of group.ONE and dogado group
+    url: https://www.cinven.com/news-insights/cinven-and-ontario-teachers-to-invest-in-the-combination-of-group-one-and-dogado-group/
+    publisher: Cinven
+    kind: press
+    accessed: 2026-10-16
   - id: groupone-history
     title: History - group.one
     url: https://www.group.one/company/history
@@ -86,3 +94,6 @@ sources:
     publisher: Federal Office of Justice (Zefix)
     kind: registry
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher Webhosting- und Domain-Anbieter, seit 2000 tätig und seit 2022 Teil der europäischen Hosting-Gruppe group.one.'

@@ -29,14 +29,15 @@ export function breadcrumbLd(crumbs: Crumb[]): JsonLd {
   };
 }
 
-export function websiteLd(): JsonLd {
+/** `description` and `language` default to the site's English values. */
+export function websiteLd(description: string = site.description, language = 'en'): JsonLd {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: site.name,
     url: site.url,
-    description: site.description,
-    inLanguage: 'en',
+    description,
+    inLanguage: language,
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -130,13 +131,15 @@ export function itemListLd(name: string, url: string, products: Product[]): Json
   };
 }
 
-export function categoryLd(category: Category): JsonLd {
-  return itemListLd(`Swiss ${category.noun}`, category.url, category.products);
+/** Item list of a category's products; `name` is the localised page title. */
+export function categoryLd(category: Category, name: string): JsonLd {
+  return itemListLd(name, category.url, category.products);
 }
 
-export function alternativeLd(alternative: Alternative): JsonLd {
+/** Item list of the Swiss products replacing a foreign one; `name` is the localised page title. */
+export function alternativeLd(alternative: Alternative, name: string): JsonLd {
   return itemListLd(
-    `Swiss alternatives to ${alternative.name}`,
+    name,
     alternative.url,
     alternative.products.map((l) => l.product),
   );

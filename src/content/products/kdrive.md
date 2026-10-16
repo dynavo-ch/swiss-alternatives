@@ -131,6 +131,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-Speicher und Dateifreigabe mit Online-Dokumentbearbeitung, gehostet in der Schweiz.'
+    description: 'kDrive ist der Cloud-Speicher- und Dateifreigabedienst von Infomaniak mit Sync-Apps, Bearbeitung in OnlyOffice und WebDAV-Zugriff, gehostet in den Schweizer Rechenzentren von Infomaniak.'
 ---
 
 kDrive is Infomaniak's cloud storage service for files and photos. It offers

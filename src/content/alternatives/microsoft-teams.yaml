@@ -6,3 +6,6 @@ website: 'https://www.microsoft.com/microsoft-teams'
 categories: [team-chat, video-conferencing]
 aliases: [ms teams, teams]
 popular: true
+i18n:
+  de:
+    summary: 'Plattform von Microsoft für Team-Chat und Videomeetings, Teil von Microsoft 365.'

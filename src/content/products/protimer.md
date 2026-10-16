@@ -162,6 +162,10 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    tagline: 'Zeit- und Präsenzerfassung in der Cloud mit eigenen Terminals für Schweizer KMU.'
+    description: 'ProTimer ist Software für Zeit- und Präsenzerfassung in der Cloud aus Degersheim mit eigenen Terminals, Absenzenverwaltung und optionaler Lohnbuchhaltung, gehostet in der Schweiz.'
 ---
 
 ProTimer is a cloud-based time and attendance system for small and

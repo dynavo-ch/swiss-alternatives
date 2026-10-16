@@ -9,3 +9,9 @@ intro: >-
   provider cannot read them.
 related: [file-sharing, backup, file-transfer]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Cloud-Speicher'
+    noun: 'Cloud-Speicher'
+    summary: 'Dateien geräteübergreifend synchronisieren, speichern und abrufen.'
+    intro: 'Cloud-Speicherdienste synchronisieren Dateien zwischen Ihren Geräten und halten eine Kopie online vor. Einige verschlüsseln Dateien vor dem Hochladen auf Ihrem Gerät (Ende-zu-Ende-Verschlüsselung), sodass der Anbieter sie nicht lesen kann.'

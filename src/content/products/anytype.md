@@ -128,6 +128,10 @@ sources:
     publisher: Any Association
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Local-first-App für Notizen und Wissen mit Verschlüsselung auf dem Gerät und Peer-to-Peer-Synchronisation.'
+    description: 'Anytype ist eine Local-first-App für Notizen, Dokumente und Aufgaben der Any Association mit Sitz in Zug, mit Verschlüsselung auf dem Gerät und optional selbst gehosteter Synchronisation.'
 ---
 
 Anytype is a local-first app for notes, documents, tasks and linked objects,

@@ -125,6 +125,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-Server, Kubernetes, Objektspeicher und Mac-Hosting aus Schweizer Rechenzentren.'
+    description: 'Flow Swiss bietet virtuelle Maschinen, Managed Kubernetes, eine App-Plattform, S3-kompatiblen Objektspeicher und Mac Bare Metal aus Rechenzentren in der Schweiz.'
 ---
 
 Flow Swiss provides a self-service cloud with virtual machines (up to 32 vCPUs

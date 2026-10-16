@@ -61,3 +61,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Winterthur, gegründet 2022, das MILKEE entwickelt, ein Cloud-Buchhaltungstool für Selbstständige und Kleinunternehmen in der Schweiz.'

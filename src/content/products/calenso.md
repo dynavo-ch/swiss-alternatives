@@ -110,6 +110,10 @@ sources:
     publisher: IT Reseller
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Online-Terminbuchung für Unternehmen und Behörden.'
+    description: 'Calenso ist eine Plattform für Online-Terminbuchungen für Unternehmen und Behörden der Calenso AG aus der Nähe von Luzern, mit Servern in der Schweiz.'
 ---
 
 Calenso is an online booking platform that lets customers book appointments

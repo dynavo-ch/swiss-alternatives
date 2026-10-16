@@ -108,6 +108,10 @@ sources:
     publisher: Infomaniak
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Cloud-Backup für Geräte über Acronis oder S3-, Swift- und SFTP-Speicher, in der Schweiz aufbewahrt.'
+    description: 'Swiss Backup ist das Cloud-Backup von Infomaniak, mit Acronis-Software für Geräte oder S3-, Swift- und SFTP-Speicher und drei Kopien in zwei Schweizer Rechenzentren.'
 ---
 
 Swiss Backup offers two ways to back up data to Infomaniak's cloud. The first

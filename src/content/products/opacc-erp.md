@@ -113,6 +113,10 @@ sources:
     publisher: Opacc Software AG
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'ERP-Software für Schweizer Handels- und Dienstleistungsunternehmen, On-Premises oder in der Opacc-Cloud.'
+    description: 'Opacc ERP ist Unternehmenssoftware aus Rothenburg LU für Handels-, Dienstleistungs- und Produktionsunternehmen, betrieben On-Premises oder in der eigenen Schweizer Cloud von Opacc.'
 ---
 
 Opacc ERP is business software for trading, service and manufacturing

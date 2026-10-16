@@ -4,3 +4,6 @@ vendorCountry: US
 summary: Workspace for notes, documents, wikis and project databases.
 website: 'https://www.notion.com'
 categories: [notes]
+i18n:
+  de:
+    summary: 'Arbeitsbereich für Notizen, Dokumente, Wikis und Projektdatenbanken.'

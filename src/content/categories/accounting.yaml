@@ -8,3 +8,9 @@ intro: >-
   products tend to support local requirements such as QR-bills and eBill out of the box.
 related: [invoicing, erp, payroll]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Buchhaltung'
+    noun: 'Buchhaltungssoftware'
+    summary: 'Buchhaltung, MWST und Jahresabschlüsse – auf Schweizer Anforderungen ausgelegt.'
+    intro: 'Buchhaltungssoftware deckt Finanzbuchhaltung, Schweizer MWST, QR-Rechnungen und Jahresabschlüsse ab. Schweizer Produkte unterstützen lokale Anforderungen wie QR-Rechnung und eBill in der Regel standardmässig.'

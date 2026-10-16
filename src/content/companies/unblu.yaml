@@ -81,3 +81,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Basel, Teil des Konzerns der Schweizerischen Post, das Software für sicheres Messaging, Video und Co-Browsing für Banken und Vermögensverwalter entwickelt.'

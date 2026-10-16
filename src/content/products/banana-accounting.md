@@ -107,6 +107,10 @@ sources:
     publisher: Banana.ch SA
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Desktop-Buchhaltungssoftware mit tabellenähnlicher Oberfläche, entwickelt in Lugano.'
+    description: 'Banana Accounting ist Buchhaltungssoftware aus Lugano für Windows, macOS und Linux; die Dateien werden dort gespeichert, wo die Nutzenden es wählen, nicht in einer Cloud des Herstellers.'
 ---
 
 Banana Accounting is double-entry and cash-book accounting software developed by

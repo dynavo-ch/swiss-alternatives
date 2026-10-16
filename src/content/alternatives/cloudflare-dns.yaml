@@ -5,3 +5,6 @@ summary: Cloudflare's public DNS resolver at 1.1.1.1.
 website: 'https://one.one.one.one'
 categories: [dns-resolvers]
 aliases: [1.1.1.1, cloudflare dns]
+i18n:
+  de:
+    summary: 'Öffentlicher DNS-Resolver von Cloudflare unter 1.1.1.1.'

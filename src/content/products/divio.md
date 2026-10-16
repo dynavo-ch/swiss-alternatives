@@ -133,6 +133,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Container-basierte PaaS für Webanwendungen, mit Wahl von Cloud und Region.'
+    description: 'Divio ist eine PaaS für Docker-basierte Web-Apps der Zürcher Divio AG, betrieben auf AWS, Exoscale oder Azure, mit der AWS-Region Zürich als Hosting-Option in der Schweiz.'
 ---
 
 Divio is a platform-as-a-service for deploying containerised web applications;

@@ -142,6 +142,10 @@ sources:
     publisher: Infomaniak
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Kollaborationssuite mit E-Mail, Kalender, Cloud-Speicher, Office-Bearbeitung, Chat und Video.'
+    description: 'kSuite ist die Kollaborationssuite von Infomaniak mit Mail, Kalender, kDrive-Speicher, Bearbeitung in OnlyOffice, kChat, kMeet und dem Assistenten Euria, gehostet in der Schweiz.'
 ---
 
 kSuite bundles Infomaniak's collaboration services: Mail with calendar and

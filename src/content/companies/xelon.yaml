@@ -68,3 +68,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Cloud-Anbieter aus Zug, gegründet 2016, der Public- und Private-Cloud-Infrastruktur, Kubernetes und Cloud-Backup aus Rechenzentren in der Schweiz anbietet.'

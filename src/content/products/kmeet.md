@@ -120,6 +120,10 @@ sources:
     publisher: GitHub
     kind: documentation
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Kostenlose Videomeetings auf Basis von Jitsi Meet, betrieben auf Infomaniak-Servern in der Schweiz.'
+    description: 'kMeet ist ein kostenloser Videokonferenzdienst von Infomaniak auf Basis von Jitsi Meet, mit Browser-, Desktop- und Mobile-Apps; Anrufe laufen über die Schweizer Server von Infomaniak.'
 ---
 
 kMeet is a free video conferencing service that works in Chromium- and

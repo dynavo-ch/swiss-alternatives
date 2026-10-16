@@ -8,3 +8,9 @@ intro: >-
   (ZertES), only a qualified electronic signature (QES) is equivalent to a handwritten one.
 related: [file-sharing]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Elektronische Signaturen'
+    noun: 'Signaturdienste'
+    summary: 'Dokumente elektronisch unterschreiben, einschliesslich qualifizierter Signaturen nach Schweizer Recht.'
+    intro: 'Dienste für elektronische Signaturen holen rechtsverbindliche Unterschriften online ein. Nach Schweizer Recht (ZertES) ist nur die qualifizierte elektronische Signatur (QES) der eigenhändigen Unterschrift gleichgestellt.'

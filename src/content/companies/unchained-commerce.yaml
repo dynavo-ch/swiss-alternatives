@@ -63,3 +63,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Zürcher E-Commerce- und Digitalagentur, die die Open-Source-Software Unchained Engine entwickelt sowie Onlineshops, B2B-Portale und Webanwendungen baut und betreibt.'

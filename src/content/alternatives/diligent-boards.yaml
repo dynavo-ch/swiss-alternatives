@@ -5,3 +5,6 @@ summary: Board portal for distributing meeting materials, minutes and approvals 
 website: 'https://www.diligent.com'
 categories: [document-management]
 aliases: [diligent, diligent board portal]
+i18n:
+  de:
+    summary: 'Board-Portal zur Verteilung von Sitzungsunterlagen, Protokollen und Genehmigungen an Verwaltungsräte.'

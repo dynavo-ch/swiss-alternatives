@@ -5,3 +5,6 @@ summary: Website builder and hosting platform that also registers domains.
 website: 'https://www.squarespace.com'
 categories: [web-hosting, domain-registrars]
 aliases: [google domains]
+i18n:
+  de:
+    summary: 'Plattform für Website-Erstellung und Hosting, die auch Domains registriert.'

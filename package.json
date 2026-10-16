@@ -30,7 +30,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "verify": "npm run check && npm run lint && npm run lint:content && npm run build && npm run check:links",
+    "verify": "npm run format:check && npm run check && npm run lint && npm run lint:content && npm run build && npm run check:links",
     "astro": "astro",
     "lint:content": "node scripts/lint-content.mjs",
     "sync:repos": "node scripts/sync-repos.mjs",

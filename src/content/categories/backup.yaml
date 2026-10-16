@@ -8,3 +8,9 @@ intro: >-
   hardware failure or ransomware. Look at where copies are stored and who holds the keys.
 related: [object-storage, cloud-storage]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Backup'
+    noun: 'Backup-Dienste'
+    summary: 'Externe Datensicherung für Computer, Server und Cloud-Daten.'
+    intro: 'Backup-Dienste halten unabhängige Kopien Ihrer Daten vor, damit Sie diese nach einer Löschung, einem Hardwaredefekt oder einem Ransomware-Angriff wiederherstellen können. Achten Sie darauf, wo die Kopien gespeichert sind und wer die Schlüssel hält.'

@@ -5,3 +5,6 @@ summary: Cloud security platform for secure web gateway, zero-trust access and S
 website: 'https://www.zscaler.com'
 categories: [network-security]
 aliases: [Zscaler Internet Access, Zscaler Private Access, ZIA, ZPA]
+i18n:
+  de:
+    summary: 'Cloud-Sicherheitsplattform für Secure Web Gateway, Zero-Trust-Zugriff und SASE-Dienste.'

@@ -5,3 +5,6 @@ summary: Cloud CRM platform for sales, service and marketing.
 website: 'https://www.salesforce.com'
 categories: [crm]
 aliases: [sales cloud]
+i18n:
+  de:
+    summary: 'Cloud-CRM-Plattform für Vertrieb, Service und Marketing.'

@@ -61,3 +61,6 @@ sources:
     publisher: swiss made software
     kind: independent
     accessed: 2026-10-16
+i18n:
+  de:
+    description: 'Basler Webhosting-Anbieter, gegründet 2003, der seine eigene Hardware in einem Rechenzentrum des Basler Versorgungsunternehmens IWB betreibt.'

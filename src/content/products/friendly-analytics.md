@@ -103,6 +103,10 @@ sources:
     publisher: Markt & Kommunikation
     kind: press
     accessed: 2026-10-15
+i18n:
+  de:
+    tagline: 'Webanalyse auf Basis von Matomo, gehostet in der Schweiz, standardmässig ohne Cookies.'
+    description: 'Friendly Analytics ist ein Webanalyse-Dienst auf Basis von Open-Source-Matomo, betrieben von der Friendly GmbH in Hergiswil und gehostet in Schweizer Rechenzentren.'
 ---
 
 Friendly Analytics is a web analytics service from Friendly GmbH in Hergiswil

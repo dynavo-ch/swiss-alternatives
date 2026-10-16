@@ -8,3 +8,9 @@ intro: >-
   be run on your own infrastructure, which keeps prompts and data in a location you choose.
 related: [ai-assistants]
 added: 2026-10-15
+i18n:
+  de:
+    name: 'Sprachmodelle'
+    noun: 'Sprachmodelle'
+    summary: 'Grosse Sprachmodelle, die Sie herunterladen, ausführen oder als Grundlage nutzen können.'
+    intro: 'Grosse Sprachmodelle (LLMs) sind die Grundlage von KI-Assistenten und -Anwendungen. Open-Weight-Modelle lassen sich auf eigener Infrastruktur betreiben, sodass Eingaben und Daten an einem selbst gewählten Ort bleiben.'

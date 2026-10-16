@@ -56,3 +56,6 @@ sources:
     publisher: Swiss AI Initiative
     kind: vendor
     accessed: 2026-10-15
+i18n:
+  de:
+    description: 'Nationale Forschungsinitiative, 2023 gestartet und gemeinsam von EPFL und ETH Zürich geleitet, mit dem Schweizerischen Nationalen Hochleistungsrechenzentrum (CSCS), die offene KI-Modelle wie Apertus entwickelt.'
