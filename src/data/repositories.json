@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-10-15T20:47:30.401Z",
+  "fetchedAt": "2026-10-26T10:08:30.049Z",
   "repos": {
     "https://github.com/Infomaniak": {
       "url": "https://github.com/Infomaniak",
       "kind": "organisation",
       "name": "Infomaniak",
       "description": "",
-      "publicRepos": 168,
-      "lastPush": "2026-10-15T18:03:19Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "publicRepos": 169,
+      "lastPush": "2026-10-26T10:02:47Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/android-euria": {
       "url": "https://github.com/Infomaniak/android-euria",
@@ -22,15 +22,15 @@
       "language": "Kotlin",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-09-18T06:38:35Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-22T14:26:08Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/android-infomaniak-meet": {
       "url": "https://github.com/Infomaniak/android-infomaniak-meet",
       "kind": "repository",
       "name": "Infomaniak/android-infomaniak-meet",
       "description": "kMeet application for Android",
-      "stars": 27,
+      "stars": 28,
       "forks": 1,
       "openIssues": 0,
       "license": "GPL-3.0",
@@ -38,7 +38,7 @@
       "topics": [],
       "archived": false,
       "lastPush": "2026-09-17T13:55:46Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/android-kMail": {
       "url": "https://github.com/Infomaniak/android-kMail",
@@ -46,14 +46,14 @@
       "name": "Infomaniak/android-kMail",
       "description": "Infomaniak Mail application for Android",
       "stars": 220,
-      "forks": 19,
+      "forks": 20,
       "openIssues": 15,
       "license": "GPL-3.0",
       "language": "Kotlin",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-10-15T06:06:55Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-22T14:25:30Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/desktop-kDrive": {
       "url": "https://github.com/Infomaniak/desktop-kDrive",
@@ -62,13 +62,15 @@
       "description": ":computer: Desktop Syncing Client for kDrive",
       "stars": 120,
       "forks": 33,
-      "openIssues": 28,
+      "openIssues": 35,
       "license": "GPL-3.0",
       "language": "C++",
-      "topics": [],
+      "topics": [
+        "sync"
+      ],
       "archived": false,
-      "lastPush": "2026-10-15T16:18:51Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T08:42:47Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/mobile-kchat": {
       "url": "https://github.com/Infomaniak/mobile-kchat",
@@ -82,23 +84,23 @@
       "language": "TypeScript",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-10-15T13:22:32Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T08:57:28Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Infomaniak/multiplatform-SwissTransfer": {
       "url": "https://github.com/Infomaniak/multiplatform-SwissTransfer",
       "kind": "repository",
       "name": "Infomaniak/multiplatform-SwissTransfer",
       "description": "Core KMP for SwissTransfer application",
-      "stars": 28,
+      "stars": 29,
       "forks": 3,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "GPL-3.0",
       "language": "Kotlin",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-10-13T09:45:51Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-23T13:16:47Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ProtonDriveApps": {
       "url": "https://github.com/ProtonDriveApps",
@@ -106,8 +108,8 @@
       "name": "Proton Drive",
       "description": "Free end-to-end encrypted cloud storage made by Proton AG. Securely backup and share your files. Open source, publicly audited, and Swiss based.",
       "publicRepos": 11,
-      "lastPush": "2026-10-09T14:52:29Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-23T08:22:40Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ProtonLumo": {
       "url": "https://github.com/ProtonLumo",
@@ -115,17 +117,17 @@
       "name": "Lumo by Proton",
       "description": "No tracking. No profiling. No side-eye. A new breed of AI assistant, Lumo gives you the help you need, but keeps every chat confidential.",
       "publicRepos": 2,
-      "lastPush": "2026-10-01T12:35:40Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-22T08:50:13Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ProtonMail/WebClients": {
       "url": "https://github.com/ProtonMail/WebClients",
       "kind": "repository",
       "name": "ProtonMail/WebClients",
       "description": "Monorepo hosting the proton web clients",
-      "stars": 5636,
-      "forks": 731,
-      "openIssues": 161,
+      "stars": 5656,
+      "forks": 736,
+      "openIssues": 158,
       "license": "GPL-3.0",
       "language": "TypeScript",
       "topics": [
@@ -140,8 +142,8 @@
         "yarn"
       ],
       "archived": false,
-      "lastPush": "2026-10-15T20:16:25Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-23T20:16:05Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ProtonVPN": {
       "url": "https://github.com/ProtonVPN",
@@ -149,8 +151,8 @@
       "name": "ProtonVPN",
       "description": "",
       "publicRepos": 35,
-      "lastPush": "2026-10-14T07:21:00Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-22T08:38:46Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/Quad9DNS": {
       "url": "https://github.com/Quad9DNS",
@@ -158,17 +160,26 @@
       "name": "Quad9 DNS",
       "description": "Quad9 DNS Recursive resolver OSS repository",
       "publicRepos": 14,
-      "lastPush": "2026-10-15T10:00:05Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T10:00:05Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
+    },
+    "https://github.com/Xelon-AG": {
+      "url": "https://github.com/Xelon-AG",
+      "kind": "organisation",
+      "name": "Xelon AG",
+      "description": "",
+      "publicRepos": 12,
+      "lastPush": "2026-10-26T08:24:45Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/anyproto": {
       "url": "https://github.com/anyproto",
       "kind": "organisation",
       "name": "Any Association",
       "description": "",
-      "publicRepos": 95,
-      "lastPush": "2026-10-15T19:03:11Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "publicRepos": 97,
+      "lastPush": "2026-10-26T05:30:46Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/appuio": {
       "url": "https://github.com/appuio",
@@ -176,8 +187,8 @@
       "name": "APPUiO",
       "description": "APPUiO - Swiss Container Platform",
       "publicRepos": 215,
-      "lastPush": "2026-10-15T20:36:26Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T02:43:20Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/cloudscale-ch": {
       "url": "https://github.com/cloudscale-ch",
@@ -185,8 +196,8 @@
       "name": "cloudscale.ch AG",
       "description": "Your cluster. In best hands.",
       "publicRepos": 87,
-      "lastPush": "2026-10-15T20:23:09Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T10:07:30Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/divio/divio-cli": {
       "url": "https://github.com/divio/divio-cli",
@@ -201,7 +212,7 @@
       "topics": [],
       "archived": false,
       "lastPush": "2026-04-24T06:46:47Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/exoscale/cli": {
       "url": "https://github.com/exoscale/cli",
@@ -210,13 +221,15 @@
       "description": "Command-line tool for everything at Exoscale: compute, storage, dns.",
       "stars": 93,
       "forks": 33,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "language": "Go",
-      "topics": ["scoop-bucket"],
+      "topics": [
+        "scoop-bucket"
+      ],
       "archived": false,
-      "lastPush": "2026-10-15T09:24:24Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-26T10:07:08Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/flowswiss/cli": {
       "url": "https://github.com/flowswiss/cli",
@@ -231,7 +244,7 @@
       "topics": [],
       "archived": false,
       "lastPush": "2026-09-24T08:48:08Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ledger123/runmyaccounts": {
       "url": "https://github.com/ledger123/runmyaccounts",
@@ -245,8 +258,64 @@
       "language": "Perl",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-10-06T08:24:12Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-23T07:19:55Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
+    },
+    "https://github.com/libracore/erpnextswiss": {
+      "url": "https://github.com/libracore/erpnextswiss",
+      "kind": "repository",
+      "name": "libracore/erpnextswiss",
+      "description": "ERPNext application for Switzerland-specific use cases",
+      "stars": 104,
+      "forks": 83,
+      "openIssues": 7,
+      "license": "AGPL-3.0",
+      "language": "Python",
+      "topics": [
+        "banking",
+        "erpnext",
+        "erpnext-application",
+        "tax"
+      ],
+      "archived": false,
+      "lastPush": "2026-10-21T11:58:45Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
+    },
+    "https://github.com/nextcloud/server": {
+      "url": "https://github.com/nextcloud/server",
+      "kind": "repository",
+      "name": "nextcloud/server",
+      "description": "☁️ Nextcloud server, a safe home for all your data",
+      "stars": 37300,
+      "forks": 5309,
+      "openIssues": 3825,
+      "license": "AGPL-3.0",
+      "language": "PHP",
+      "topics": [
+        "cloud",
+        "collaboration",
+        "decentralized",
+        "design",
+        "distributed",
+        "enterprise",
+        "federation",
+        "file-sharing",
+        "free-software",
+        "hacktoberfest",
+        "javascript",
+        "nextcloud",
+        "open-source",
+        "opensource",
+        "owncloud",
+        "php",
+        "self-hosting",
+        "sharing",
+        "usability",
+        "ux"
+      ],
+      "archived": false,
+      "lastPush": "2026-10-26T09:55:05Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/ninech/nctl": {
       "url": "https://github.com/ninech/nctl",
@@ -255,13 +324,13 @@
       "description": "Interact with Nine API resources.",
       "stars": 16,
       "forks": 9,
-      "openIssues": 11,
+      "openIssues": 10,
       "license": "Apache-2.0",
       "language": "Go",
       "topics": [],
       "archived": false,
-      "lastPush": "2026-10-15T14:10:53Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-22T09:49:13Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/protonpass": {
       "url": "https://github.com/protonpass",
@@ -269,26 +338,26 @@
       "name": "Proton Pass",
       "description": "Free and fully encrypted password manager to keep your login credentials safe.",
       "publicRepos": 16,
-      "lastPush": "2026-10-15T12:44:37Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-21T11:05:00Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/session-foundation": {
       "url": "https://github.com/session-foundation",
       "kind": "organisation",
       "name": "Session Technology Foundation (STF)",
       "description": "The Session Technology Foundation is a Swiss-based foundation dedicated to advancing digital rights and innovation.",
-      "publicRepos": 61,
-      "lastPush": "2026-10-15T17:43:17Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "publicRepos": 62,
+      "lastPush": "2026-10-26T04:53:51Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/swiss-ai": {
       "url": "https://github.com/swiss-ai",
       "kind": "organisation",
       "name": "Swiss AI",
       "description": "",
-      "publicRepos": 137,
-      "lastPush": "2026-10-15T17:24:55Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "publicRepos": 138,
+      "lastPush": "2026-10-26T09:46:57Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     },
     "https://github.com/threema-ch": {
       "url": "https://github.com/threema-ch",
@@ -296,8 +365,38 @@
       "name": "Threema AG",
       "description": "Seriously Secure Messaging. Impressum: threema.ch/impressum",
       "publicRepos": 23,
-      "lastPush": "2026-10-12T11:03:03Z",
-      "fetchedAt": "2026-10-15T20:47:30.401Z"
+      "lastPush": "2026-10-25T19:35:39Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
+    },
+    "https://github.com/unchainedshop/unchained": {
+      "url": "https://github.com/unchainedshop/unchained",
+      "kind": "repository",
+      "name": "unchainedshop/unchained",
+      "description": "High-Performance Headless Node.js ESM E-Commerce Framework",
+      "stars": 204,
+      "forks": 24,
+      "openIssues": 56,
+      "license": "EUPL-1.2",
+      "language": "TypeScript",
+      "topics": [
+        "cart",
+        "digital-commerce",
+        "docker",
+        "e-commerce",
+        "graphql",
+        "headless",
+        "headless-commerce",
+        "javascript",
+        "marketplace",
+        "mongodb",
+        "node-js",
+        "open-source",
+        "shop",
+        "shopping-cart"
+      ],
+      "archived": false,
+      "lastPush": "2026-10-25T08:22:32Z",
+      "fetchedAt": "2026-10-26T10:08:30.049Z"
     }
   }
 }
