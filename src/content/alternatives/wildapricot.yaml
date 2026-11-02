@@ -1,0 +1,10 @@
+name: WildApricot
+vendor: Personify, Inc.
+vendorCountry: US
+summary: Membership management software for associations, clubs and non-profits, with dues, events, a member portal and website.
+website: 'https://www.wildapricot.com'
+categories: [crm]
+aliases: [Wild Apricot, WildApricot by Personify]
+i18n:
+  de:
+    summary: 'Software zur Mitgliederverwaltung für Verbände, Vereine und Non-Profit-Organisationen, mit Beiträgen, Anlässen, Mitgliederportal und Website.'

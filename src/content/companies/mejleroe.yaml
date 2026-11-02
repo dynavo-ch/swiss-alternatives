@@ -1,0 +1,66 @@
+name: The Mejlerö Company GmbH
+shortName: The Mejlerö Company
+type: company
+description: >-
+  IT consulting and technology company in Engelberg OW, founded in 2022, that
+  offers CTO-as-a-service and process automation and runs the business
+  platform Flitz.ai.
+website: https://ctotmc.com
+founded: 2022
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Obwalden in May 2022
+    (articles of association dated 11 May 2022).
+headquarters:
+  city: Engelberg
+  canton: OW
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-427.768.797
+  url: https://www.zefix.ch/en/search/entity/list/firm/1537190
+ownership:
+  swissOwned: partial
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register entry of May 2022, the sole partner
+    and managing director is Robert Mejlerö, a Swedish national living in
+    Engelberg, with all 200 capital shares. Recorded as partial because the
+    owner is a foreign national resident in Switzerland; there is no parent
+    company. No later change was published, and no acquisition was found in
+    reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: The Mejlerö Company GmbH (CHE-427.768.797) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1537190
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: about
+    title: About Flitz.ai
+    url: https://flitz.ai/about
+    publisher: The Mejlerö Company GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: The Mejlerö Company GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/the-mejler--company-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'IT-Beratungs- und Technologieunternehmen in Engelberg OW, 2022 gegründet, das CTO-as-a-Service und Prozessautomatisierung anbietet und die Business-Plattform Flitz.ai betreibt.'
+    notes:
+      swissFounded.note: 'Im Mai 2022 im Handelsregister des Kantons Obwalden eingetragen (Statuten vom 11. Mai 2022).'
+      ownership.note: 'Laut Handelsregistereintrag vom Mai 2022 ist Robert Mejlerö, schwedischer Staatsangehöriger mit Wohnsitz in Engelberg, einziger Gesellschafter und Geschäftsführer mit allen 200 Stammanteilen. Als teilweise erfasst, weil der Eigentümer ein ausländischer Staatsangehöriger mit Wohnsitz in der Schweiz ist; es gibt keine Muttergesellschaft. Eine spätere Änderung wurde nicht publiziert, und bis November 2026 wurde keine Übernahme gemeldet.'

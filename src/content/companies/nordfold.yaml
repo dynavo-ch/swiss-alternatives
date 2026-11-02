@@ -1,0 +1,74 @@
+name: Nordfold GmbH
+shortName: Nordfold
+type: company
+description: >-
+  Zurich software company, founded in 2023, that develops the network security
+  automation platform Kona and offers software development and integration
+  services with a focus on network and IT security.
+website: https://www.nordfold.ch
+founded: 2023
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in June 2023
+    (articles of association dated 24 May 2023).
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: The registered address is c/o Genossenschaft coalist, Seefeldstrasse 62, Zurich.
+jurisdiction: CH
+registry:
+  uid: CHE-391.118.855
+  url: https://www.zefix.ch/en/search/entity/list/firm/1590307
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register entry of June 2023, founder Sebastian
+    Schrepfer, a Swiss citizen, holds all 1,000 capital shares of CHF 20 (share
+    capital CHF 20,000) and is the sole managing director. No later change of
+    partners has been published (last publication December 2024, change of
+    address). Nordfold describes itself as independent and self-funded. No
+    acquisition was found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: Nordfold GmbH (CHE-391.118.855) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1590307
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: imprint
+    title: Legal Notice – Nordfold GmbH
+    url: https://nordfold.ch/legal-notice
+    publisher: Nordfold GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: company
+    title: Company | Kona by Nordfold
+    url: https://kona.ch/company
+    publisher: Nordfold GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: Nordfold GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/nordfold-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'Zürcher Softwareunternehmen, 2023 gegründet, das die Plattform Kona zur Automatisierung der Netzwerksicherheit entwickelt und Softwareentwicklung und Integration mit Schwerpunkt Netzwerk- und IT-Sicherheit anbietet.'
+    notes:
+      swissFounded.note: 'Im Juni 2023 im Handelsregister des Kantons Zürich eingetragen (Statuten vom 24. Mai 2023).'
+      headquarters.note: 'Die eingetragene Adresse lautet c/o Genossenschaft coalist, Seefeldstrasse 62, Zürich.'
+      ownership.note: 'Laut Handelsregistereintrag vom Juni 2023 hält Gründer Sebastian Schrepfer, Schweizer Bürger, alle 1000 Stammanteile zu CHF 20 (Stammkapital CHF 20 000) und ist einziger Geschäftsführer. Eine spätere Änderung der Gesellschafter wurde nicht publiziert (letzte Publikation Dezember 2024, Adressänderung). Nordfold bezeichnet sich als unabhängig und selbstfinanziert. Bis November 2026 wurde keine Übernahme gemeldet.'

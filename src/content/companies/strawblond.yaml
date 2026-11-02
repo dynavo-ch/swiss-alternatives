@@ -1,0 +1,73 @@
+name: STRAWBLOND GmbH
+shortName: StrawBlond
+type: company
+description: >-
+  Software company in Wolfhausen (Bubikon ZH) that develops and operates Blond,
+  business administration software for Swiss freelancers and small businesses.
+website: https://blond.swiss
+founded: 2025
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in December 2025
+    (articles of association dated 25 November 2025), with its seat in Bubikon.
+headquarters:
+  city: Bubikon
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: The address is in Wolfhausen, a village in the municipality of Bubikon.
+jurisdiction: CH
+registry:
+  uid: CHE-403.783.955
+  url: https://www.zefix.ch/en/search/entity/list/firm/1723218
+ownership:
+  swissOwned: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    According to the commercial register entry of December 2025, VanillaDust AG
+    of Bubikon holds 120 of 200 capital shares, and three Swiss citizens hold
+    the rest (Jonas Schwendener 40, Diego Paladino 20, Corina Vonplon 20). The
+    shareholders of VanillaDust AG are not published; its sole board member,
+    Tom Behrens, a Swiss citizen, is also the managing director of
+    STRAWBLOND GmbH. No acquisition was found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: STRAWBLOND GmbH (CHE-403.783.955) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1723218
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: zefix-vanilladust
+    title: VanillaDust AG (CHE-154.858.214) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1587221
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: imprint
+    title: Impressum - Blond
+    url: https://blond.swiss/de/impressum
+    publisher: STRAWBLOND GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: STRAWBLOND GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/strawblond/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'Softwareunternehmen in Wolfhausen (Bubikon ZH), das Blond entwickelt und betreibt, eine Software für die Geschäftsadministration von Schweizer Selbständigen und kleinen Unternehmen.'
+    notes:
+      swissFounded.note: 'Im Dezember 2025 im Handelsregister des Kantons Zürich eingetragen (Statuten vom 25. November 2025), mit Sitz in Bubikon.'
+      headquarters.note: 'Die Adresse liegt in Wolfhausen, einem Dorf der Gemeinde Bubikon.'
+      ownership.note: 'Laut Handelsregistereintrag vom Dezember 2025 hält die VanillaDust AG aus Bubikon 120 von 200 Stammanteilen, die übrigen halten drei Schweizer Bürger (Jonas Schwendener 40, Diego Paladino 20, Corina Vonplon 20). Die Aktionäre der VanillaDust AG werden nicht veröffentlicht; ihr einziges Verwaltungsratsmitglied, Tom Behrens, Schweizer Bürger, ist zugleich Geschäftsführer der STRAWBLOND GmbH. Bis November 2026 wurde keine Übernahme gemeldet.'

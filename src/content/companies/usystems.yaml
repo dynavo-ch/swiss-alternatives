@@ -1,0 +1,77 @@
+name: uSystems GmbH
+shortName: uSystems
+type: company
+description: >-
+  Winterthur software company, founded in 2008 by four friends from a scout
+  group, that develops and operates the association software Webling and the
+  room booking service Raumkalender.
+website: https://www.webling.ch
+founded: 2008
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    uSystems states that its four founders from Winterthur set up the company
+    in 2008. The commercial register lists the company with its seat in
+    Winterthur.
+headquarters:
+  city: Winterthur
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-114.494.554
+  url: https://www.zefix.ch/en/search/entity/list/firm/921206
+ownership:
+  swissOwned: unknown
+  basis: vendor
+  source: team
+  note: >-
+    uSystems states that the four founders still work together on Webling and
+    that all work is done in Winterthur. The partners of the GmbH could not be
+    confirmed from the SOGC publications available online. No acquisition was
+    found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: uSystems GmbH (CHE-114.494.554) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/921206
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: about
+    title: Wer hinter der Vereinssoftware steht | Webling
+    url: https://www.webling.ch/ueberuns
+    publisher: uSystems GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: team
+    title: Team | Webling
+    url: https://www.webling.ch/team
+    publisher: uSystems GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: imprint
+    title: Impressum - Wer macht Webling?
+    url: https://www.webling.ch/impressum
+    publisher: uSystems GmbH
+    kind: vendor
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: uSystems GmbH — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/usystems-gmbh/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Winterthur, 2008 von vier Freunden aus einer Pfadi-Abteilung gegründet, das die Vereinssoftware Webling und den Reservationsdienst Raumkalender entwickelt und betreibt.'
+    notes:
+      swissFounded.note: 'uSystems gibt an, dass die vier Gründer aus Winterthur das Unternehmen 2008 gegründet haben. Das Handelsregister führt das Unternehmen mit Sitz in Winterthur.'
+      ownership.note: 'uSystems gibt an, dass die vier Gründer weiterhin gemeinsam an Webling arbeiten und alle Arbeiten in Winterthur erledigt werden. Die Gesellschafter der GmbH konnten anhand der online verfügbaren SHAB-Publikationen nicht bestätigt werden. Bis November 2026 wurde keine Übernahme gemeldet.'
