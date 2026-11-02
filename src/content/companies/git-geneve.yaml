@@ -1,0 +1,64 @@
+name: GIT Gestion et Informatique pour tous SA
+shortName: GIT
+type: company
+description: >-
+  Geneva-area publisher of accounting, payroll and business management
+  software, founded in 1981, known for WinEUR (formerly TOP MAN), WinSAL and
+  Peppermint.
+website: https://git.ch
+founded: 1981
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    GIT states that it was founded in Geneva in 1981. The company moved its
+    registered seat from Geneva to Plan-les-Ouates in 2022.
+headquarters:
+  city: Plan-les-Ouates
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-108.010.221
+  url: https://www.zefix.ch/en/search/entity/list/firm/70501
+ownership:
+  swissOwned: unknown
+  basis: vendor
+  source: about
+  note: >-
+    The shareholders of the stock corporation are not published. GIT states
+    that all its software is produced at its offices in Geneva and that it
+    keeps full control of the product chain. No acquisition was found in
+    reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: GIT Gestion et Informatique pour tous SA (CHE-108.010.221) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/70501
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: about
+    title: À propos - GIT Business Software
+    url: https://git.ch/a-propos/
+    publisher: GIT Gestion et Informatique pour tous SA
+    kind: vendor
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: GIT S.A. — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/git-s.a./home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'Herausgeber von Buchhaltungs-, Lohn- und Unternehmenssoftware aus der Region Genf, 1981 gegründet, bekannt für WinEUR (früher TOP MAN), WinSAL und Peppermint.'
+    notes:
+      swissFounded.note: 'GIT gibt an, 1981 in Genf gegründet worden zu sein. 2022 verlegte das Unternehmen seinen Sitz von Genf nach Plan-les-Ouates.'
+      ownership.note: 'Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht. GIT gibt an, dass alle seine Programme in den Büros in Genf entstehen und es die gesamte Produktkette kontrolliert. Bis November 2026 wurde keine Übernahme gemeldet.'

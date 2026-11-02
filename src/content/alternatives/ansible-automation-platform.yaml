@@ -1,0 +1,11 @@
+name: Red Hat Ansible Automation Platform
+vendor: Red Hat, Inc.
+vendorCountry: US
+parent: International Business Machines Corporation (IBM)
+summary: Enterprise automation platform for network, infrastructure and security tasks, with role-based access, self-service and audit.
+website: 'https://www.redhat.com/en/technologies/management/ansible'
+categories: [network-security]
+aliases: [Ansible, Ansible Tower, AAP]
+i18n:
+  de:
+    summary: 'Enterprise-Automatisierungsplattform für Netzwerk-, Infrastruktur- und Sicherheitsaufgaben, mit rollenbasiertem Zugriff, Self-Service und Audit.'

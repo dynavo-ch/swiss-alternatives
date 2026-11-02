@@ -1,0 +1,73 @@
+name: Oniva AG
+shortName: Oniva
+type: company
+description: >-
+  Event software company in Dübendorf ZH, spun off from Swisscom Broadcast in
+  2024, that develops and operates the event management platform Oniva
+  (formerly Zoon).
+website: https://www.oniva.events
+founded: 2024
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Zurich in January 2024
+    with its seat in Zurich; the seat moved to Dübendorf in 2026. The software
+    was developed from 2019 by Swisscom Broadcast AG under the name Zoon.
+headquarters:
+  city: Dübendorf
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-262.252.215
+  url: https://www.zefix.ch/en/search/entity/list/firm/1623637
+ownership:
+  swissOwned: unknown
+  basis: vendor
+  source: press
+  note: >-
+    Oniva was spun off from Swisscom Broadcast on 1 March 2024 by members of the
+    Zoon team. Its CEO told Netzwoche that Swisscom holds no stake. The
+    shareholders of the stock corporation are not published; the four board
+    members, who are also the co-founders, are Swiss citizens according to the
+    commercial register. No acquisition was found in reporting up to November
+    2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-02
+sources:
+  - id: zefix
+    title: Oniva AG (CHE-262.252.215) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1623637
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-02
+  - id: about
+    title: About the Oniva event platform
+    url: https://www.oniva.events/en/about
+    publisher: Oniva AG
+    kind: vendor
+    accessed: 2026-11-02
+  - id: press
+    title: Aus der Eventmanagement-Software von Swisscom wird ein Start-up
+    url: https://www.netzwoche.ch/news/2024-03-05/aus-der-eventmanagement-software-von-swisscom-wird-ein-start-up
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-11-02
+  - id: swissmadesoftware
+    title: Oniva AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/oniva-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-02
+i18n:
+  de:
+    description: 'Softwareunternehmen für Events in Dübendorf ZH, 2024 von Swisscom Broadcast ausgegründet, das die Eventmanagement-Plattform Oniva (früher Zoon) entwickelt und betreibt.'
+    notes:
+      swissFounded.note: 'Im Januar 2024 mit Sitz in Zürich im Handelsregister des Kantons Zürich eingetragen; 2026 wurde der Sitz nach Dübendorf verlegt. Die Software wurde ab 2019 von der Swisscom Broadcast AG unter dem Namen Zoon entwickelt.'
+      ownership.note: 'Oniva wurde am 1. März 2024 von Mitgliedern des Zoon-Teams aus der Swisscom Broadcast ausgegründet. Gegenüber Netzwoche sagte der CEO, dass Swisscom nicht beteiligt ist. Die Aktionäre der Aktiengesellschaft werden nicht veröffentlicht; die vier Verwaltungsratsmitglieder, zugleich Mitgründer, sind laut Handelsregister Schweizer Bürger. Bis November 2026 wurde keine Übernahme gemeldet.'
