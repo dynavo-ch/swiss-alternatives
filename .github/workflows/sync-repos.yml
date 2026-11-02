@@ -1,5 +1,7 @@
 # Weekly refresh of GitHub statistics (stars, forks, licence, last commit) for
 # open-source products. Opens a pull request instead of committing directly.
+# Requires Settings → Actions → General → Workflow permissions →
+# «Allow GitHub Actions to create and approve pull requests».
 name: Sync repository statistics
 
 on:
@@ -28,6 +30,8 @@ jobs:
         with:
           branch: chore/sync-repository-stats
           commit-message: 'chore: refresh GitHub repository statistics'
+          author: Dynavo <noreply@swiss-alternatives.ch>
+          committer: Dynavo <noreply@swiss-alternatives.ch>
           title: 'Refresh GitHub repository statistics'
           body: Automated weekly update of `src/data/repositories.json`.
           add-paths: src/data/repositories.json
