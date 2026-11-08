@@ -1,0 +1,70 @@
+name: Inova Solutions AG
+shortName: inova:solutions
+type: company
+description: >-
+  Software company in Ostermundigen BE that develops finance and planning
+  software for public administrations and the time tracking service inova:time
+  for Swiss SMEs.
+website: https://www.inova.ch
+swissFounded:
+  value: yes
+  basis: vendor
+  source: portrait
+  note: >-
+    inova:solutions states that it has offered software products and services
+    for a quarter of a century. The commercial register lists the company with
+    its seat in Ostermundigen.
+headquarters:
+  city: Ostermundigen
+  canton: BE
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-103.421.746
+  url: https://www.zefix.ch/en/search/entity/list/firm/362148
+ownership:
+  swissOwned: unknown
+  basis: verified
+  source: zefix
+  note: >-
+    The shareholders of the company limited by shares are not published. All
+    board members entered in the commercial register are Swiss citizens; the
+    chair changed in May 2026. No acquisition was found in reporting up to
+    November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: Inova Solutions AG (CHE-103.421.746) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/362148
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: portrait
+    title: Firmenportrait – inova:solutions AG
+    url: https://www.inova.ch/unternehmen/firmenportrait
+    publisher: Inova Solutions AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: imprint
+    title: Impressum – inova:solutions AG
+    url: https://www.inova.ch/impressum
+    publisher: Inova Solutions AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: inova:solutions AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/inova-solutions-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Softwareunternehmen in Ostermundigen BE, das Finanz- und Planungssoftware für öffentliche Verwaltungen sowie den Zeiterfassungsdienst inova:time für Schweizer KMU entwickelt.'
+    notes:
+      swissFounded.note: 'inova:solutions gibt an, seit einem Vierteljahrhundert Softwareprodukte und Dienstleistungen anzubieten. Das Handelsregister führt das Unternehmen mit Sitz in Ostermundigen.'
+      ownership.note: 'Die Aktionäre der Aktiengesellschaft werden nicht publiziert. Alle im Handelsregister eingetragenen Verwaltungsratsmitglieder sind Schweizer Bürger; das Präsidium wechselte im Mai 2026. Bis November 2026 wurde keine Übernahme gemeldet.'

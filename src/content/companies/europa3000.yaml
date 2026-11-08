@@ -1,0 +1,74 @@
+name: europa3000 AG
+shortName: europa3000
+type: company
+description: >-
+  Aarau software company that has developed ERP software for Swiss SMEs for more
+  than 35 years and has been part of the German SelectLine Group since January
+  2026.
+website: https://www.europa3000.ch
+swissFounded:
+  value: yes
+  basis: vendor
+  source: about
+  note: >-
+    europa3000 states that it has offered ERP software for Swiss SMEs for more
+    than 35 years. The commercial register lists the company in Aarau, where it
+    moved from Oberentfelden in 2016.
+headquarters:
+  city: Aarau
+  canton: AG
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-112.015.670
+  url: https://www.zefix.ch/en/search/entity/list/firm/769369
+ownership:
+  swissOwned: no
+  parent: SelectLine Holding GmbH
+  parentCountry: DE
+  basis: vendor
+  source: about
+  note: >-
+    europa3000 states that it has been part of the SelectLine Group since 15
+    January 2026, together with SelectLine Software AG and groupe.iD SA, and that
+    operational management stays in Switzerland. The group's imprint names
+    SelectLine Holding GmbH in Magdeburg, Germany. In February 2026 two German
+    nationals, one of them the managing director of SelectLine Holding, joined
+    the board, according to the commercial register.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: europa3000 AG (CHE-112.015.670) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/769369
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: about
+    title: Über uns | europa3000
+    url: https://www.europa3000.ch/ueber-uns/
+    publisher: europa3000 AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: group
+    title: Impressum & rechtliche Informationen | SelectLine Group
+    url: https://www.selectline-group.com/impressum/
+    publisher: SelectLine Holding GmbH
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: europa3000 AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/europa3000-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Softwareunternehmen aus Aarau, das seit über 35 Jahren ERP-Software für Schweizer KMU entwickelt und seit Januar 2026 zur deutschen SelectLine Group gehört.'
+    notes:
+      swissFounded.note: 'europa3000 gibt an, seit über 35 Jahren ERP-Software für Schweizer KMU anzubieten. Das Handelsregister führt das Unternehmen in Aarau, wohin es 2016 von Oberentfelden umgezogen ist.'
+      ownership.note: 'europa3000 gibt an, seit dem 15. Januar 2026 zusammen mit der SelectLine Software AG und der groupe.iD SA Teil der SelectLine Group zu sein und dass die operative Führung in der Schweiz bleibt. Das Impressum der Gruppe nennt die SelectLine Holding GmbH in Magdeburg, Deutschland. Im Februar 2026 traten laut Handelsregister zwei deutsche Staatsangehörige in den Verwaltungsrat ein, darunter der Geschäftsführer der SelectLine Holding.'

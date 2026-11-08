@@ -639,7 +639,7 @@ SEO 100 on the tested content pages; `/compare/` and `/favourites/` are intentio
 
 ## Decisions and assumptions
 
-- **Seed dataset**: 129 products from 110 organisations, researched from 2026-10-15 to 2026-11-02 from vendor
+- **Seed dataset**: 135 products from 116 organisations, researched from 2026-10-15 to 2026-11-08 from vendor
   documentation, legal pages, commercial-register data and press releases. Where facts could not be
   confirmed they are `unknown`. Prices are recorded as published on that date and may change.
 - **"New" labels** are not shown for the initial dataset (`site.launchDate`); entries added later are

@@ -1,0 +1,76 @@
+name: FIDUCIAL WINBIZ SA
+shortName: Winbiz
+type: company
+description: >-
+  Geneva-based publisher of the Winbiz business software for Swiss SMEs, with
+  offices in Lausanne and Martigny, owned by the French Fiducial group.
+website: https://www.winbiz.ch
+founded: 1972
+swissFounded:
+  value: yes
+  basis: verified
+  source: press
+  note: >-
+    A 2013 trade press report describes the original developer, La Gestion
+    Electronique of Martigny, as founded in 1972. The commercial register shows
+    that the company moved its seat from Martigny to Geneva in 2014 as LOGICIAL SA
+    and took its current name in 2020.
+headquarters:
+  city: Genève
+  canton: GE
+  country: CH
+  basis: verified
+  source: zefix
+  note: The company has branch offices in Lausanne and Martigny.
+jurisdiction: CH
+registry:
+  uid: CHE-107.016.356
+  url: https://www.zefix.ch/en/search/entity/list/firm/69131
+ownership:
+  swissOwned: no
+  parent: Fiducial
+  parentCountry: FR
+  basis: verified
+  source: press
+  note: >-
+    In March 2013 the French group Fiducial announced the takeover of La Gestion
+    Electronique, the developer of Winbiz. Winbiz states that it benefits from
+    the support of an international group. Most board members entered in the
+    commercial register are French nationals living in France. No later change
+    of ownership was found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: FIDUCIAL WINBIZ SA (CHE-107.016.356) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/69131
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: press
+    title: Schweizer ERP-Hersteller kommt in französische Hände
+    url: https://www.itreseller.ch/Artikel/72519/Schweizer_ERP-Hersteller_kommt_in_franzoesische_Haende.html
+    publisher: IT Reseller
+    kind: press
+    accessed: 2026-11-08
+  - id: about
+    title: About us - Winbiz
+    url: https://www.winbiz.ch/en/winbiz/
+    publisher: FIDUCIAL WINBIZ SA
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: FIDUCIAL WINBIZ SA — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/winbiz/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Genfer Herausgeber der Business-Software Winbiz für Schweizer KMU, mit Niederlassungen in Lausanne und Martigny, im Besitz der französischen Fiducial-Gruppe.'
+    notes:
+      swissFounded.note: 'Ein Fachmedienbericht von 2013 beschreibt die ursprüngliche Entwicklerin, La Gestion Electronique aus Martigny, als 1972 gegründet. Laut Handelsregister verlegte die Gesellschaft 2014 als LOGICIAL SA ihren Sitz von Martigny nach Genf und trägt seit 2020 den heutigen Namen.'
+      headquarters.note: 'Das Unternehmen hat Zweigniederlassungen in Lausanne und Martigny.'
+      ownership.note: 'Im März 2013 gab die französische Gruppe Fiducial die Übernahme von La Gestion Electronique bekannt, der Entwicklerin von Winbiz. Winbiz gibt an, von der Unterstützung einer internationalen Gruppe zu profitieren. Die meisten im Handelsregister eingetragenen Verwaltungsratsmitglieder sind französische Staatsangehörige mit Wohnsitz in Frankreich. Bis November 2026 wurde keine spätere Änderung der Eigentumsverhältnisse gemeldet.'

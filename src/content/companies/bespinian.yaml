@@ -1,0 +1,73 @@
+name: bespinian GmbH
+shortName: bespinian
+type: company
+description: >-
+  Bern software engineering company, founded in 2019, that advises on cloud-native
+  platforms and Kubernetes and develops the AI gateway Keera.
+website: https://bespinian.io
+founded: 2019
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Bern in March 2019
+    (articles of association dated 5 March 2019), with its seat in Muri bei Bern.
+headquarters:
+  city: Muri bei Bern
+  canton: BE
+  country: CH
+  basis: verified
+  source: zefix
+  note: The registered office is in Gümligen; the company also has an office in Bern.
+jurisdiction: CH
+registry:
+  uid: CHE-179.829.594
+  url: https://www.zefix.ch/en/search/entity/list/firm/1384758
+ownership:
+  swissOwned: yes
+  basis: verified
+  source: zefix
+  note: >-
+    According to the commercial register, the two founding partners, Swiss
+    citizens Lena Fuhrimann and Mathis Kretz, each hold 100 capital shares of
+    CHF 100 (share capital CHF 20,000) and manage the company. No later change
+    of partners has been published (last publication February 2022). Keera
+    states that bespinian has no US parent, no US subsidiary and no US
+    sub-processors. No acquisition was found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: bespinian GmbH (CHE-179.829.594) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1384758
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: imprint
+    title: Imprint - Keera by bespinian
+    url: https://keera.ch/en/imprint
+    publisher: bespinian GmbH
+    kind: vendor
+    accessed: 2026-11-08
+  - id: sovereignty
+    title: AI sovereignty in Switzerland - Keera
+    url: https://keera.ch/en/sovereignty
+    publisher: bespinian GmbH
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: bespinian — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/bespinian/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Berner Software-Engineering-Unternehmen, 2019 gegründet, das zu Cloud-native-Plattformen und Kubernetes berät und das KI-Gateway Keera entwickelt.'
+    notes:
+      swissFounded.note: 'Im März 2019 im Handelsregister des Kantons Bern eingetragen (Statuten vom 5. März 2019), mit Sitz in Muri bei Bern.'
+      headquarters.note: 'Der eingetragene Sitz ist in Gümligen; das Unternehmen hat zudem ein Büro in Bern.'
+      ownership.note: 'Laut Handelsregister halten die beiden Gründungsgesellschafter, die Schweizer Bürger Lena Fuhrimann und Mathis Kretz, je 100 Stammanteile zu CHF 100 (Stammkapital CHF 20 000) und führen das Unternehmen. Eine spätere Änderung der Gesellschafter wurde nicht publiziert (letzte Publikation Februar 2022). Keera gibt an, dass bespinian keine US-Muttergesellschaft, keine US-Tochtergesellschaft und keine US-Unterauftragsbearbeiter hat. Bis November 2026 wurde keine Übernahme gemeldet.'

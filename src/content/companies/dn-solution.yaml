@@ -1,0 +1,71 @@
+name: DN Solution SA
+shortName: DN Solution
+type: company
+description: >-
+  Lausanne company, founded in 2024, that develops and operates DigLM, a
+  generative AI platform for Swiss SMEs and public administrations running
+  open-weight models on servers in Switzerland.
+website: https://www.diglm.ch
+founded: 2024
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    Entered in the commercial register of the canton of Vaud in April 2024
+    (articles of association dated 21 March 2024).
+headquarters:
+  city: Lausanne
+  canton: VD
+  country: CH
+  basis: verified
+  source: zefix
+jurisdiction: CH
+registry:
+  uid: CHE-300.975.535
+  url: https://www.zefix.ch/en/search/entity/list/firm/1633360
+ownership:
+  swissOwned: unknown
+  basis: verified
+  source: zefix
+  note: >-
+    The shareholders of the company limited by shares are not published. According
+    to the founding entry of April 2024, the share capital is CHF 100,000 (half
+    paid in) and the sole board member is Vanessa Noirjean, a Swiss citizen. No
+    later change has been published, and no acquisition was found in reporting
+    up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: DN Solution SA (CHE-300.975.535) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1633360
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: privacy
+    title: Politique de confidentialité | DigLM
+    url: https://www.diglm.ch/politique-de-confidentialite
+    publisher: DN Solution SA
+    kind: vendor
+    accessed: 2026-11-08
+  - id: contact
+    title: Contactez-nous | DigLM
+    url: https://www.diglm.ch/contactez-nous
+    publisher: DN Solution SA
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: DN Solution SA / DigLM — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/dn-solution-sa/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Lausanner Unternehmen, 2024 gegründet, das DigLM entwickelt und betreibt, eine Plattform für generative KI für Schweizer KMU und öffentliche Verwaltungen, die Open-Weight-Modelle auf Servern in der Schweiz betreibt.'
+    notes:
+      swissFounded.note: 'Im April 2024 im Handelsregister des Kantons Waadt eingetragen (Statuten vom 21. März 2024).'
+      ownership.note: 'Die Aktionäre der Aktiengesellschaft werden nicht publiziert. Laut Gründungseintrag vom April 2024 beträgt das Aktienkapital CHF 100 000 (zur Hälfte liberiert), und einziges Mitglied des Verwaltungsrats ist Vanessa Noirjean, Schweizer Bürgerin. Eine spätere Änderung wurde nicht publiziert, und bis November 2026 wurde keine Übernahme gemeldet.'
