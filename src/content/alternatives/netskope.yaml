@@ -1,0 +1,10 @@
+name: Netskope
+vendor: Netskope, Inc.
+vendorCountry: US
+summary: Cloud security platform with cloud access security broker (CASB), secure web gateway and data loss prevention.
+website: 'https://www.netskope.com'
+categories: [network-security]
+aliases: [Netskope One, Netskope CASB]
+i18n:
+  de:
+    summary: 'Cloud-Sicherheitsplattform mit Cloud Access Security Broker (CASB), Secure Web Gateway und Data Loss Prevention.'

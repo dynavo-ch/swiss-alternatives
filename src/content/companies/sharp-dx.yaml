@@ -1,0 +1,88 @@
+name: Sharp DX (Schweiz) AG
+shortName: Sharp DX
+type: company
+description: >-
+  Rotkreuz IT service provider, formerly ITpoint Systems, that runs the ORIA
+  cloud and managed services; part of the Sharp group since 2021.
+website: https://www.oria.ch
+swissFounded:
+  value: yes
+  basis: verified
+  source: zefix
+  note: >-
+    The company is registered in Risch (Rotkreuz) in the canton of Zug, where it
+    traded as IT Point AG, ITpoint AG and ITpoint Systems AG before taking its
+    current name in July 2026. Sharp DX states that it has more than 20 years of
+    experience.
+headquarters:
+  city: Risch
+  canton: ZG
+  country: CH
+  basis: verified
+  source: zefix
+  note: >-
+    The office address is in Rotkreuz, part of the municipality of Risch. Further
+    locations are listed in Bern and Geneva.
+jurisdiction: CH
+registry:
+  uid: CHE-109.370.171
+  url: https://www.zefix.ch/en/search/entity/list/firm/655831
+ownership:
+  swissOwned: no
+  parent: Sharp Corporation
+  parentCountry: JP
+  basis: verified
+  source: press-acquisition
+  note: >-
+    Sharp Electronics Europe acquired all shares of ITpoint Systems with effect
+    from 12 March 2021. Since 2025 the board has been chaired by Japanese
+    nationals living in London, according to the commercial register, and in
+    August 2026 the company was renamed Sharp DX as part of Sharp Europe's IT
+    services brand. Sharp Corporation names Taiwan's Hon Hai Precision Industry,
+    which holds 34.1% of the voting rights directly and through a subsidiary, as
+    its parent company.
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: Sharp DX (Schweiz) AG (CHE-109.370.171) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/655831
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: press-acquisition
+    title: Sharp schluckt Itpoint
+    url: https://www.itreseller.ch/Artikel/93450/Sharp_schluckt_Itpoint.html
+    publisher: Swiss IT Reseller
+    kind: press
+    accessed: 2026-11-08
+  - id: press-rebrand
+    title: ITpoint heisst neu Sharp DX
+    url: https://www.netzwoche.ch/news/2026-08-03/itpoint-heisst-neu-sharp-dx
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-11-08
+  - id: rebrand
+    title: 'ITpoint wird zur Sharp DX (Schweiz) AG: Sharp Europe stärkt digitales Transformationsgeschäft in der Schweiz'
+    url: https://www.oria.ch/post/sharp-dx-rebranding
+    publisher: Sharp DX (Schweiz) AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: sharp-parent
+    title: Matters Concerning Controlling Shareholder, Etc. (23 June 2026)
+    url: https://global.sharp/corporate/ir/topics/pdf/260623-1.pdf
+    publisher: Sharp Corporation
+    kind: documentation
+    accessed: 2026-11-08
+  - id: about
+    title: About us - ORIA
+    url: https://www.oria.ch/en/about
+    publisher: Sharp DX (Schweiz) AG
+    kind: vendor
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'IT-Dienstleister aus Rotkreuz, ehemals ITpoint Systems, der die Cloud- und Managed Services ORIA betreibt; seit 2021 Teil der Sharp-Gruppe.'
+    notes:
+      swissFounded.note: 'Das Unternehmen ist in Risch (Rotkreuz) im Kanton Zug eingetragen, wo es als IT Point AG, ITpoint AG und ITpoint Systems AG firmierte, bevor es im Juli 2026 seinen heutigen Namen annahm. Sharp DX gibt an, über mehr als 20 Jahre Erfahrung zu verfügen.'
+      headquarters.note: 'Die Geschäftsadresse liegt in Rotkreuz, das zur Gemeinde Risch gehört. Weitere Standorte werden in Bern und Genf genannt.'
+      ownership.note: 'Sharp Electronics Europe übernahm per 12. März 2021 sämtliche Aktien der ITpoint Systems. Seit 2025 wird der Verwaltungsrat laut Handelsregister von japanischen Staatsangehörigen mit Wohnsitz in London präsidiert, und im August 2026 wurde das Unternehmen im Rahmen der IT-Service-Marke von Sharp Europe in Sharp DX umbenannt. Die Sharp Corporation nennt die taiwanesische Hon Hai Precision Industry, die direkt und über eine Tochtergesellschaft 34,1 % der Stimmrechte hält, als ihre Muttergesellschaft.'

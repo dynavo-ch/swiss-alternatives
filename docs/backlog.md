@@ -4,20 +4,15 @@ Companies that may offer products for the directory and have not been researched
 
 - **Source of leads:** the public member list of [swiss made software](https://www.swissmadesoftware.org/en/companies.html),
   screened on 2026-10-16 (members with a profile description; agencies and consultancies excluded).
-- **Categories are a rough automatic guess** from the profile text — not verified.
+  As of 2026-11-08 every candidate from that list has been researched: each was either added to the
+  directory or recorded under "Screened, not listed" below. New leads come from suggestions.
 - **Membership is not inclusion.** Each candidate must be researched against the
   [listing criteria](https://swiss-alternatives.ch/methodology/) like any other entry: Swiss
   headquarters and registration, ownership, development and hosting from primary sources.
 - To work on one, open an issue (or add the `research` label to a suggestion) and remove it from
   this list in the pull request that adds it.
 
-3 candidates.
-
-| Candidate             | Likely categories                    | Swiss hosting label | Profile                                                                                 |
-| --------------------- | ------------------------------------ | ------------------- | --------------------------------------------------------------------------------------- |
-| e3 AG                 | cloud / hosting, security / identity |                     | [profile](https://www.swissmadesoftware.org/en/companies/e3-ag/home.html)               |
-| Sharp DX (Schweiz) AG | cloud / hosting                      |                     | [profile](https://www.swissmadesoftware.org/en/companies/sharp-dx-schweiz-ag/home.html) |
-| Bison Schweiz AG      | erp                                  |                     | [profile](https://www.swissmadesoftware.org/en/companies/bison-schweiz-ag/home.html)    |
+0 candidates.
 
 ## Screened, not listed
 

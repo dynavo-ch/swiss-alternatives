@@ -1,0 +1,91 @@
+name: e3 AG
+shortName: e3
+type: company
+description: >-
+  Zurich IT security company that develops encryption and data loss prevention
+  software and provides security and business analysis consulting.
+website: https://www.e3ag.ch
+founded: 2000
+swissFounded:
+  value: yes
+  basis: inferred
+  source: company
+  note: >-
+    e3 states that it has worked for its customers for 25 years, and its website
+    copyright runs from 2000. The current operating company e3 AG was entered in
+    the commercial register of the canton of Zurich later; the group's holding
+    company, e3 Holding AG in Zurich, previously traded as e3 Consulting AG and
+    e3 AG.
+headquarters:
+  city: Zürich
+  canton: ZH
+  country: CH
+  basis: verified
+  source: zefix
+  note: >-
+    e3 has a further office in Bern and lists companies in Frankfurt am Main and
+    Eindhoven. In April 2026 its consulting business was transferred to the newly
+    registered e3 Consulting AG in Bern.
+jurisdiction: CH
+registry:
+  uid: CHE-389.167.324
+  url: https://www.zefix.ch/en/search/entity/list/firm/1246749
+ownership:
+  swissOwned: unknown
+  basis: inferred
+  source: zefix
+  note: >-
+    The shareholders are not published. The board members named in commercial
+    register publications since 2016 are a Swiss citizen and an Italian national,
+    both living in Switzerland; they also sit on the board of e3 Holding AG at
+    the same Zurich address. CEO Thomas Fürling, a Swiss citizen, is a board
+    member of e3 Consulting AG. No acquisition was found in reporting up to
+    November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: e3 AG (CHE-389.167.324) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1246749
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: zefix-holding
+    title: e3 Holding AG (CHE-105.603.459) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/530169
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: zefix-consulting
+    title: e3 Consulting AG (CHE-226.720.545) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/1744273
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: company
+    title: Unternehmen - e3 AG
+    url: https://www.e3ag.ch/unternehmen/
+    publisher: e3 AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: imprint
+    title: Impressum - e3 AG
+    url: https://www.e3ag.ch/impressum/
+    publisher: e3 AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: e3 AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/e3-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'Zürcher IT-Sicherheitsunternehmen, das Software für Verschlüsselung und Data Loss Prevention entwickelt und Beratung in Sicherheit und Business-Analyse anbietet.'
+    notes:
+      swissFounded.note: 'e3 gibt an, seit 25 Jahren für seine Kundschaft tätig zu sein, und das Copyright der Website beginnt im Jahr 2000. Die heutige operative Gesellschaft e3 AG wurde später ins Handelsregister des Kantons Zürich eingetragen; die Holdinggesellschaft der Gruppe, die e3 Holding AG in Zürich, firmierte früher als e3 Consulting AG und e3 AG.'
+      headquarters.note: 'e3 hat einen weiteren Standort in Bern und nennt Gesellschaften in Frankfurt am Main und Eindhoven. Im April 2026 wurde das Beratungsgeschäft auf die neu eingetragene e3 Consulting AG in Bern übertragen.'
+      ownership.note: 'Die Aktionäre werden nicht veröffentlicht. Die seit 2016 in Handelsregisterpublikationen genannten Verwaltungsratsmitglieder sind ein Schweizer Bürger und ein italienischer Staatsangehöriger, beide mit Wohnsitz in der Schweiz; sie sitzen auch im Verwaltungsrat der e3 Holding AG an derselben Zürcher Adresse. CEO Thomas Fürling, Schweizer Bürger, ist Verwaltungsratsmitglied der e3 Consulting AG. Bis November 2026 wurde keine Übernahme gemeldet.'

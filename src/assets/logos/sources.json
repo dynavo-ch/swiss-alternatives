@@ -79,6 +79,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "bison-erp": {
+    "source": "https://www.bison-group.com/wp-content/uploads/2025/10/Favicon-300x300.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-11-08"
+  },
   "blond": {
     "source": "https://blond.swiss/favicons/favicon.svg",
     "method": "svg icon",
@@ -704,6 +709,11 @@
     "method": "svg icon",
     "fetched": "2026-10-15"
   },
+  "e3-centraya": {
+    "source": "https://www.e3ag.ch/wp-content/uploads/2021/02/e3_grey_medium-e1613061072111.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-11-08"
+  },
   "esignr": {
     "source": "https://www.esignr.ch/wp-content/uploads/sites/136/2021/09/cropped-eSignR_Favicon_Zeichenfla%CC%88che-1-1-180x180.png",
     "method": "apple-touch-icon",
@@ -938,6 +948,16 @@
     "source": "https://www.google.com/s2/favicons?domain=www.open-systems.com&sz=256",
     "method": "favicon service",
     "fetched": "2026-10-15"
+  },
+  "oria-enterprise-cloud": {
+    "source": "https://cdn.prod.website-files.com/68415d1422f2edede066251c/6863d4e141b833f04ba821fe_favicon-256.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-11-08"
+  },
+  "oria-kubernetes": {
+    "source": "https://cdn.prod.website-files.com/68415d1422f2edede066251c/6863d4e141b833f04ba821fe_favicon-256.png",
+    "method": "apple-touch-icon",
+    "fetched": "2026-11-08"
   },
   "oriented-net": {
     "source": "https://www.google.com/s2/favicons?domain=oriented.net&sz=256",

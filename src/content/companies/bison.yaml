@@ -1,0 +1,90 @@
+name: Bison Schweiz AG
+shortName: BISON
+type: company
+description: >-
+  Sursee IT company that develops ERP software for retail, wholesale,
+  agricultural and energy trading and is the IT provider of the fenaco-LANDI group.
+website: https://www.bison-group.com
+swissFounded:
+  value: yes
+  basis: inferred
+  source: zefix
+  note: >-
+    Registered in Oberkirch in the canton of Lucerne, earlier under the name
+    Alpha Intersoftware AG; between 2002 and 2016 it absorbed an earlier Bison
+    Schweiz AG of Sursee and Bison Holding AG. BISON states more than 40 years of
+    market experience; the founding date is not stated in the sources used.
+headquarters:
+  city: Oberkirch
+  canton: LU
+  country: CH
+  basis: verified
+  source: zefix
+  note: >-
+    The registered seat is Oberkirch; the office address is in Sursee. Further
+    offices are in Bern, Winterthur and Puidoux, and the subsidiary Bison
+    Deutschland GmbH is based in Kaiserslautern.
+jurisdiction: CH
+registry:
+  uid: CHE-105.910.097
+  url: https://www.zefix.ch/en/search/entity/list/firm/330180
+ownership:
+  swissOwned: yes
+  parent: fenaco Genossenschaft
+  parentCountry: CH
+  basis: vendor
+  source: fenaco-report
+  note: >-
+    The 2025 annual report of fenaco, the Swiss agricultural cooperative behind
+    the LANDI stores, lists Bison Schweiz AG and Bison Deutschland GmbH as 100%
+    subsidiaries. fenaco took over all shares in 2014, and on 1 January 2025 its
+    internal IT unit fenaco Informatik was merged into BISON. No change of
+    ownership was found in reporting up to November 2026.
+labels:
+  - label: swiss-made-software
+    source: swissmadesoftware
+lastVerified: 2026-11-08
+sources:
+  - id: zefix
+    title: Bison Schweiz AG (CHE-105.910.097) - commercial register entry and SOGC publications
+    url: https://www.zefix.ch/en/search/entity/list/firm/330180
+    publisher: Federal Office of Justice (Zefix)
+    kind: registry
+    accessed: 2026-11-08
+  - id: fenaco-report
+    title: fenaco Geschäftsbericht 2025
+    url: https://www.fenaco.com/sites/default/files/media/document/fenaco_geschaeftsbericht_2025.pdf
+    publisher: fenaco Genossenschaft
+    kind: documentation
+    accessed: 2026-11-08
+  - id: press-2014
+    title: Fenaco übernimmt Bison, Fehlmann nimmt den Hut
+    url: https://www.itreseller.ch/Artikel/78620/Fenaco_uebernimmt_Bison_Fehlmann_nimmt_den_Hut.html
+    publisher: Swiss IT Reseller
+    kind: press
+    accessed: 2026-11-08
+  - id: press-2024
+    title: Bison und Fenaco Informatik fusionieren
+    url: https://www.netzwoche.ch/news/2024-03-26/bison-und-fenaco-informatik-fusionieren
+    publisher: Netzwoche
+    kind: press
+    accessed: 2026-11-08
+  - id: imprint
+    title: Impressum - BISON Group
+    url: https://www.bison-group.com/bison-group/impressum/
+    publisher: Bison Schweiz AG
+    kind: vendor
+    accessed: 2026-11-08
+  - id: swissmadesoftware
+    title: Bison Schweiz AG — swiss made software member profile
+    url: https://www.swissmadesoftware.org/en/companies/bison-schweiz-ag/home.html
+    publisher: swiss made software
+    kind: independent
+    accessed: 2026-11-08
+i18n:
+  de:
+    description: 'IT-Unternehmen aus Sursee, das ERP-Software für Detailhandel, Grosshandel, Agrar- und Energiehandel entwickelt und IT-Dienstleister der fenaco-LANDI Gruppe ist.'
+    notes:
+      swissFounded.note: 'Eingetragen in Oberkirch im Kanton Luzern, früher unter dem Namen Alpha Intersoftware AG; zwischen 2002 und 2016 übernahm es eine frühere Bison Schweiz AG aus Sursee und die Bison Holding AG. BISON gibt über 40 Jahre Markterfahrung an; das Gründungsdatum wird in den verwendeten Quellen nicht genannt.'
+      headquarters.note: 'Der eingetragene Sitz ist Oberkirch; die Geschäftsadresse liegt in Sursee. Weitere Standorte sind Bern, Winterthur und Puidoux, und die Tochtergesellschaft Bison Deutschland GmbH hat ihren Sitz in Kaiserslautern.'
+      ownership.note: 'Der Geschäftsbericht 2025 der fenaco, der Schweizer Agrargenossenschaft hinter den LANDI-Läden, führt die Bison Schweiz AG und die Bison Deutschland GmbH als 100-prozentige Tochtergesellschaften. fenaco übernahm 2014 sämtliche Aktien, und am 1. Januar 2025 wurde die interne IT-Einheit fenaco Informatik in BISON integriert. Bis November 2026 wurde keine Änderung der Eigentumsverhältnisse gemeldet.'
